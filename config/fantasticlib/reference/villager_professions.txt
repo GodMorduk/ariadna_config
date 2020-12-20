@@ -1,0 +1,12 @@
+minecraft:farmer
+minecraft:librarian
+minecraft:priest
+minecraft:smith
+minecraft:butcher
+minecraft:nitwit
+vampirism:hunter_expert
+vampirism:vampire_expert
+rewired:runner
+bewitchment:hedge_witch
+bewitchment:alchemist
+immersiveengineering:engineer

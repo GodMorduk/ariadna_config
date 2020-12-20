@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+ <recipe name="Alloy: Enderium Base (Thermal Expansion)" required="false">
+ <alloying energy="4000" exp="0">
+ <input name="ingotLead" amount="3"/>
+ <input name="ingotPlatinum"/>
+ <input name="oredict:enderpearl" amount="4"/>
+ <output name="ingotEnderiumBase" amount="1"/>
+ </alloying>
+ </recipe>
+
+</enderio:recipes>

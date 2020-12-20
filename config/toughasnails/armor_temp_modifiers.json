@@ -1,0 +1,56 @@
+[
+	{
+		"names": [
+			"toughasnails:jelled_slime_helmet",
+			"toughasnails:jelled_slime_chestplate",
+			"toughasnails:jelled_slime_leggings",
+			"toughasnails:jelled_slime_boots"
+		],
+		"modifier": -1
+	},
+	{
+		"names": [
+			"toughasnails:wool_helmet",
+			"toughasnails:wool_chestplate",
+			"toughasnails:wool_leggings",
+			"toughasnails:wool_boots"
+		],
+		"modifier": 1
+	},
+	{
+		"names": [
+			"bewitchment:witches_cowl",
+			"bewitchment:witches_hat",
+			"bewitchment:witches_robes",
+			"bewitchment:witches_pants"
+		],
+		"modifier": -1
+	},
+	{
+		"names": [
+			"bewitchment:besmirched_cowl",
+			"bewitchment:besmirched_hat",
+			"bewitchment:besmirched_robes",
+			"bewitchment:besmirched_pants"
+		],
+		"modifier": -1
+	},
+	{
+		"names": [
+			"bewitchment:alchemist_cowl",
+			"bewitchment:alchemist_hat",
+			"bewitchment:alchemist_robes",
+			"bewitchment:alchemist_pants"
+		],
+		"modifier": -1
+	},
+	{
+		"names": [
+			"bewitchment:green_witch_cowl",
+			"bewitchment:green_witch_hat",
+			"bewitchment:green_witch_robes",
+			"bewitchment:green_witch_pants"
+		],
+		"modifier": -1
+	}
+]

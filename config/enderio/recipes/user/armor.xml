@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+    <recipe required="true" name="Dark Steel Upgrade" disabled="true">
+    </recipe>
+
+    <recipe required="true" name="Dark Steel Helmet" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Dark Steel Boots" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="Dark Steel Shield" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="End Steel Helmet" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="End Steel Chestplate" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="End Steel Leggings" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="End Steel Shield" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="Dark Shears" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="The Ender" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="End Steel Sword" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Dark Pickaxe" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="Dark Axe" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Dark Crook" disabled="true">
+    </recipe>
+
+	<recipe required="true" name="Dark Hand" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="End Pickaxe" disabled="true">
+    </recipe>
+</enderio:recipes>
