@@ -1,0 +1,15 @@
+brewing.removeRecipe(<minecraft:potion>, <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:glowstone_dust>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:magma_cream>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:nether_wart>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:sugar>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:spider_eye>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:blaze_powder>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:fermented_spider_eye>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:speckled_melon>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:ghast_tear>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:rabbit_foot>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:redstone>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:golden_carrot>);
+brewing.removeRecipe(<minecraft:potion>, <minecraft:fish>);

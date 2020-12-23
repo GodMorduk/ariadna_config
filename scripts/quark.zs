@@ -8,7 +8,7 @@ recipes.removeByRecipeName("quark:custom_chest_5");
 recipes.removeByRecipeName("quark:custom_chest_6");
 recipes.removeByRecipeName("quark:custom_chest_7");
 recipes.removeByRecipeName("quark:custom_chest_8");
-
+recipes.removeByRecipeName("quark:stone_sword");
 
 recipes.addShaped("custom_chest", <quark:custom_chest>,
  [[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
