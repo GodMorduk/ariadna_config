@@ -2,9 +2,6 @@ import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
-val girafi_tomb_loottable = LootTweaker.getTable("atum:chests/girafi_tomb").getPool("main");
-
-
 
 val lighthouse_loottable = LootTweaker.getTable("atum:chests/lighthouse");
 lighthouse_loottable.removePool("atum:lighthouse_artifact");
@@ -19,7 +16,6 @@ lighthouse_crate_pool.removeEntry("disenchanting_scroll");
 lighthouse_crate_pool.removeEntry("enchanted_book");
 lighthouse_crate_pool.removeEntry("totem_of_undying");
 lighthouse_crate_pool.removeEntry("enchanted_book_treasure");
-lighthouse_crate_pool.removeEntry("lighthouse_artifact");
 
 
 
@@ -37,6 +33,7 @@ pharaoh_pool.removeEntry("atum:chests/subloot/diamond_armor_35");
 pharaoh_pool.removeEntry("totem_of_undying");
 pharaoh_pool.removeEntry("disenchanting_scroll");
 pharaoh_pool.removeEntry("enchanted_book");
+
 
 
 val pyramid_chest_loottable = LootTweaker.getTable("atum:chests/pyramid_chest");
@@ -72,5 +69,27 @@ tomb_pool.removeEntry("disenchanting_scroll");
 tomb_pool.removeEntry("enchanted_book");
 tomb_pool.removeEntry("totem_of_undying");
 
+
+
+val crate_loottable = LootTweaker.getTable("atum:chests/tomb");
+crate_loottable.removePool("atum:ruins_artifact");
+val crate_pool = crate_loottable.getPool("atum:crate");
+crate_pool.removeEntry("atum:chests/subloot/limestone_weapons_0");
+crate_pool.removeEntry("atum:chests/subloot/iron_weapons_0");
+crate_pool.removeEntry("atum:chests/subloot/iron_weapons_25");
+crate_pool.removeEntry("atum:chests/subloot/iron_armor_0");
+crate_pool.removeEntry("atum:chests/subloot/iron_armor_25");
+crate_pool.removeEntry("disenchanting_scroll");
+crate_pool.removeEntry("enchanted_book");
+crate_pool.removeEntry("graverobbers_map");
+crate_pool.removeEntry("desert_wolf_iron_armor");
+crate_pool.removeEntry("desert_wolf_gold_armor");
+crate_pool.removeEntry("desert_wolf_diamond_armor");
+crate_pool.removeEntry("camel_iron_armor");
+crate_pool.removeEntry("camel_gold_armor");
+crate_pool.removeEntry("camel_diamond_armor");
+
 LootTweaker.getTable("atum:chests/sarcophagus_artifact").removePool("atum:sarcophagus_guaranteed_artifact");
 LootTweaker.getTable("atum:entities/warlord").removePool("atum:warlord_desert_armor");
+LootTweaker.getTable("atum:blocks/relic_ore").removePool("atum:relic_ore_artifact");
+LootTweaker.getTable("atum:chests/girafi_tomb").removePool("atum:girafi_tomb_idol");

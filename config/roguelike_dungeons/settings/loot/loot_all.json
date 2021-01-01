@@ -1,0 +1,14 @@
+{
+  "name": "loot:all",
+  "loot_rules": [
+    {
+      "level": [0, 1, 2, 3, 4],
+      "loot": [
+        {"data": {"name": "minecraft:painting"}, "weight": 150},
+        {"data": {"name": "toughasnails:purified_water_bottle", "meta": 0}, "weight": 150}
+      ],
+      "each": true,
+      "quantity": 2
+    }
+  ]
+}

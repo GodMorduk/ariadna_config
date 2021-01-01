@@ -1,0 +1,6 @@
+{
+  "name": "loot:modded",
+  "inherit": [
+    "loot:all"
+  ]
+}

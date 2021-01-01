@@ -1,0 +1,52 @@
+I tier
+-
+II tier
+// <botania:manaresource> - вес ~50;
+<botania:manaresource:1> - вес ~25; 
+// <botania:manabottle> - вес ~20; 
+<extrabotany:candy> - вес ~15;
+<extrabotany:candy:1> - вес ~15;
+<extrabotany:candy:2> - вес ~15; 
+<extrabotany:friedchicken> - вес ~20;
+III tier
+// <botania:blacklotus> - вес ~5
+<botania:manaresource:2> - вес ~15; 
+<botania:manaresource:18> - вес ~12; 
+<botania:manacookie> - вес ~20; 
+<extrabotany:nightmarefuel> - вес ~15;
+IV tier
+<botania:rune> - вес ~10; 
+<botania:rune:1> - вес ~10; 
+<botania:rune:2> - вес ~10; 
+<botania:rune:3> - вес ~10;
+V tier
+<botania:brewvial> - вес ~2, это ВСЕ зелья я так пометил, по весу;
+<botania:brewvial>.withTag({brewKey: "speed"});
+<botania:brewvial>.withTag({brewKey: "strength"});
+<botania:brewvial>.withTag({brewKey: "haste"});
+<botania:brewvial>.withTag({brewKey: "healing"});
+<botania:brewvial>.withTag({brewKey: "jumpBoost"});
+<botania:brewvial>.withTag({brewKey: "regen"});
+<botania:brewvial>.withTag({brewKey: "regenWeak"});
+<botania:brewvial>.withTag({brewKey: "resistance"});
+<botania:brewvial>.withTag({brewKey: "fireResistance"});
+<botania:brewvial>.withTag({brewKey: "waterBreathing"});
+<botania:brewvial>.withTag({brewKey: "nightVision"});
+<botania:brewvial>.withTag({brewKey: "absorption"});
+<botania:brewvial>.withTag({brewKey: "overload"});
+<botania:brewvial>.withTag({brewKey: "soulCross"});
+<botania:brewvial>.withTag({brewKey: "featherFeet"});
+<botania:brewvial>.withTag({brewKey: "emptiness"});
+<botania:brewvial>.withTag({brewKey: "bloodthirst"});
+<botania:brewvial>.withTag({brewKey: "allure"});
+<botania:brewvial>.withTag({brewKey: "clear"});
+<botania:brewvial>.withTag({brewKey: "warpWard"});
+<botania:brewvial>.withTag({brewKey: "revolution"});
+<botania:brewvial>.withTag({brewKey: "shell"});
+<botania:brewvial>.withTag({brewKey: "oneforall"});
+<botania:brewvial>.withTag({brewKey: "deadpool"});
+<botania:brewvial>.withTag({brewKey: "floating"});
+// <botania:overgrowthseed> - вес ~2;
+<botania:manaresource:4> - вес ~5;
+// <botania:lexicon> - вес 5; 
+<botania:manaresource:15> - вес ~2;

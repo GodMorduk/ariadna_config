@@ -10,5 +10,4 @@ materials_pool.removeEntry("bewitchment:fortunes_favor");
 
 val nether_materials_pool = LootTweaker.getTable("bewitchment:chests/nether_materials").getPool("nether_materials");
 nether_materials_pool.removeEntry("bewitchment:hecates_visage");
-nether_materials_pool.removeEntry("bewitchment:triskelion");
 nether_materials_pool.removeEntry("bewitchment:fortunes_favor");

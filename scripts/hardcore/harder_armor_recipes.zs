@@ -772,7 +772,7 @@ recipes.addShaped("armor/manyullyn_chestplate", <tcomplement:manyullyn_chestplat
 
 
 recipes.removeByRecipeName("endreborn:items/dragon_scales");
-recipes.addShapeless("endreborn:items/dragon_scales", <endreborn:dragon_scales>, [<endreborn:tool_hammer_iron:*>, <minecraft:dragon_egg>]);
+recipes.addShapeless("items/dragon_scales", <endreborn:dragon_scales>, [<endreborn:tool_hammer_iron:*>, <minecraft:dragon_egg>]);
 
 recipes.addShaped("equipment/armor/silver_helmet", <bewitchment:silver_helmet>, [[<ore:blockSilver>, <ore:ingotSilver>, <ore:blockSilver>], [<ore:ingotSilver>, null, <ore:ingotSilver>]]);
 recipes.addShaped("equipment/armor/silver_boots", <bewitchment:silver_boots>, [[<ore:ingotSilver>, null, <ore:ingotSilver>], [<ore:blockSilver>, null, <ore:blockSilver>]]);
