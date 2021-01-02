@@ -1,0 +1,15 @@
+I
+<abyssalcraft:coralium> - вес ~25;
+<abyssalcraft:ccluster2> - вес ~25;
+II
+
+III
+<abyssalcraft:ccluster5> - вес ~10;
+<abyssalcraft:ccluster6> - вес ~10;
+<abyssalcraft:shadowshard> - вес ~10;
+IV
+<abyssalcraft:ccluster7> - вес ~5;
+<abyssalcraft:ccluster8> - вес ~5;
+<abyssalcraft:shadowgem> - вес ~5;
+V
+<abyssalcraft:ccluster9> - вес ~2;

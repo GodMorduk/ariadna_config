@@ -1,0 +1,61 @@
+#priority 15
+
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
+
+function add_4_tier_stuff (loot_table as string, min_value as int, max_value as int) {
+	val table_as_table = LootTweaker.getTable(loot_table);
+	val pool = table_as_table.addPool("fourth_tier_loot", min_value, max_value, 0, 0);
+	pool.addItemEntry(<abyssalcraft:ccluster7>, 10);
+	pool.addItemEntry(<abyssalcraft:ccluster8>, 10);
+	pool.addItemEntry(<abyssalcraft:shadowgem>, 10);
+	pool.addItemEntry(<astralsorcery:itemconstellationpaper>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.gelu"}}), 10);
+	pool.addItemEntry(<astralsorcery:itemconstellationpaper>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.ulteria"}}), 10);
+	pool.addItemEntry(<astralsorcery:itemconstellationpaper>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.alcara"}}), 10);
+	pool.addItemEntry(<astralsorcery:itemconstellationpaper>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.vorux"}}), 10);
+	pool.addItemEntry(<astralsorcery:itemcraftingcomponent:4>, 10);
+	pool.addItemEntry(<astralsorcery:itemperkseal>, 10);
+	pool.addItemEntry(<enderio:item_material:39>, 10);
+	pool.addItemEntry(<enderio:item_alloy_ingot:7>, 10);
+	pool.addItemEntry(<enderio:item_alloy_ingot:10>, 10);
+	pool.addItemEntry(<enderio:item_alloy_ingot:2>, 10);
+	pool.addItemEntry(<metallurgy:orichalcum_ingot>, 10);
+	pool.addItemEntry(<metallurgy:shadow_steel_ingot>, 10);
+	pool.addItemEntry(<metallurgy:black_steel_ingot>, 10);
+	pool.addItemEntry(<metallurgy:adamantine_ingot>, 10);
+	pool.addItemEntry(<metallurgy:lutetium_ingot>, 10);
+	pool.addItemEntry(<metallurgy:carmot_ingot>, 10);
+	pool.addItemEntry(<metallurgy:celenegil_ingot>, 10);
+	pool.addItemEntry(<metallurgy:shadow_iron_ingot>, 10);
+	pool.addItemEntry(<thermalfoundation:material:167>, 10);
+	pool.addItemEntry(<thermalfoundation:material:136>, 10);
+	pool.addItemEntry(<thermalfoundation:material:1310>, 10);
+	pool.addItemEntry(<bigreactors:ingotblutonium>, 10);
+	pool.addItemEntry(<enderio:item_material:14>, 10);
+	pool.addItemEntry(<techguns:itemshared:43>, 10);
+	pool.addItemEntry(<techguns:itemshared:34>, 10);
+	pool.addItemEntry(<immersiveengineering:material:16>, 10);
+	pool.addItemEntry(<immersiveengineering:material:110>, 10);
+	pool.addItemEntry(<immersiveengineering:material:14>, 10);
+	pool.addItemEntry(<immersiveengineering:material:9>, 10);
+	pool.addItemEntry(<techguns:itemshared:101>, 10);
+	pool.addItemEntry(<thermalfoundation:material:3107>, 10);
+	pool.addItemEntry(<thermalfoundation:material:3108>, 10);
+	pool.addItemEntry(<thermalfoundation:material:326>, 10);
+	pool.addItemEntry(<thermalfoundation:material:327>, 10);
+	pool.addItemEntry(<thermalfoundation:material:294>, 10);
+	pool.addItemEntry(<thermalfoundation:material:293>, 10);
+	pool.addItemEntry(<thermalfoundation:material:263>, 10);
+	pool.addItemEntry(<thermalfoundation:material:262>, 10);
+	pool.addItemEntry(<thaumcraft:loot_bag:1>, 10);
+	pool.addItemEntry(<thaumcraft:mind>, 10);
+	pool.addItemEntry(<thaumcraft:module>, 10);
+	pool.addItemEntry(<thaumcraft:module:1>, 10);
+	pool.addItemEntry(<thaumcraft:plate:2>, 10);
+	pool.addItemEntry(<thaumcraft:loot_bag:1>, 10);
+	pool.addItemEntry(<thaumcraft:mind>, 10);
+	pool.addItemEntry(<thaumcraft:module>, 10);
+	pool.addItemEntry(<thaumcraft:module:1>, 10);
+	pool.addItemEntry(<thaumcraft:plate:2>, 10);
+}

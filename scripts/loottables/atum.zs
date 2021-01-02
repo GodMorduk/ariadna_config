@@ -70,8 +70,7 @@ tomb_pool.removeEntry("enchanted_book");
 tomb_pool.removeEntry("totem_of_undying");
 
 
-
-val crate_loottable = LootTweaker.getTable("atum:chests/tomb");
+val crate_loottable = LootTweaker.getTable("atum:chests/crate");
 crate_loottable.removePool("atum:ruins_artifact");
 val crate_pool = crate_loottable.getPool("atum:crate");
 crate_pool.removeEntry("atum:chests/subloot/limestone_weapons_0");

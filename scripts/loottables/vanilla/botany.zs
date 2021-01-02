@@ -4,7 +4,7 @@ import loottweaker.vanilla.loot.LootPool;
 
 function add_botany_stuff (loot_table as string) {
 	val table_as_table = LootTweaker.getTable(loot_table);
-	val pool = table_as_table.addPool("first_tier_loot", 1, 1, 0, 0);
+	val pool = table_as_table.addPool("botania_extra_loot", 1, 1, 0, 0);
 	pool.addItemEntry(<botania:manaresource:1>, 25);
 	pool.addItemEntry(<extrabotany:candy>, 15);
 	pool.addItemEntry(<extrabotany:candy:1>, 15);
