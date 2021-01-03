@@ -56,7 +56,7 @@
 			}
 		},
 		"silver": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
@@ -93,7 +93,7 @@
 			}
 		},
 		"lead": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [

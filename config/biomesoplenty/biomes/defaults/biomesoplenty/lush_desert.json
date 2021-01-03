@@ -136,7 +136,7 @@
       },
       "maxRadius": 7,
       "amountPerChunk": 5.0,
-      "enable": true
+      "enable": false
     },
     "tiny_cacti": {
       "with": {
