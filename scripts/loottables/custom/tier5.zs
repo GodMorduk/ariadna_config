@@ -8,10 +8,19 @@ function add_5_tier_stuff (loot_table as string, min_value as int, max_value as 
 	val table_as_table = LootTweaker.getTable(loot_table);
 	val pool = table_as_table.addPool("fifth_tier_loot", min_value, max_value, 0, 0);
 	pool.addItemEntry(<abyssalcraft:ccluster9>, 5);
-	pool.addItemEntry(<astralsorcery:itemjournal>, 5);
+	pool.addItemEntry(<astralsorcery:itemjournal>, 2);
 	pool.addItemEntry(<astralsorcery:blockgemcrystals:3>, 5);
 	pool.addItemEntry(<astralsorcery:blockgemcrystals:2>, 5);
 	pool.addItemEntry(<astralsorcery:blockgemcrystals:1>, 5);
+	pool.addItemEntry(<enderio:item_material:15>, 5);
+	pool.addItemEntry(<techguns:itemshared:39>, 5);
+	pool.addItemEntry(<techguns:itemshared:58>, 5);
+	pool.addItemEntry(<techguns:itemshared:35>, 5);
+	pool.addItemEntry(<techguns:itemshared:54>, 5);
+	pool.addItemEntry(<thermalfoundation:material:359>, 5);
+	pool.addItemEntry(<thermalfoundation:material:328>, 5);
+	pool.addItemEntry(<thermalfoundation:material:295>, 5);
+	pool.addItemEntry(<thermalfoundation:material:264>, 5);
 	pool.addItemEntry(<enderio:item_alloy_ingot:8>, 5);
 	pool.addItemEntry(<metallurgy:midasium_ingot>, 5);
 	pool.addItemEntry(<metallurgy:krik_ingot>, 5);
@@ -37,16 +46,7 @@ function add_5_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<tconstruct:ingots:1>, 5);
 	pool.addItemEntry(<tconstruct:ingots:2>, 5);
 	pool.addItemEntry(<techguns:itemshared:85>, 5);
-	pool.addItemEntry(<enderio:item_material:15>, 5);
-	pool.addItemEntry(<techguns:itemshared:39>, 5);
-	pool.addItemEntry(<techguns:itemshared:58>, 5);
-	pool.addItemEntry(<techguns:itemshared:35>, 5);
-	pool.addItemEntry(<techguns:itemshared:54>, 5);
-	pool.addItemEntry(<thermalfoundation:material:359>, 5);
-	pool.addItemEntry(<thermalfoundation:material:328>, 5);
-	pool.addItemEntry(<thermalfoundation:material:295>, 5);
-	pool.addItemEntry(<thermalfoundation:material:264>, 5);
 	pool.addItemEntry(<thaumcraft:loot_bag:2>, 5);
-	pool.addItemEntry(<thaumcraft:mind:1>, 5);
+	pool.addItemEntry(<thaumcraft:mind:1>, 2);
 	pool.addItemEntry(<thaumcraft:plate:3>, 5);
 }

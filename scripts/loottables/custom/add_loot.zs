@@ -7,21 +7,21 @@ import scripts.loottables.custom.tier4 as t4;
 import scripts.loottables.custom.tier5 as t5;
 
 function add_common_loot_stuff (loot_table as string) {
-	t1.add_1_tier_stuff(loot_table, 3, 6);
-	t2.add_2_tier_stuff(loot_table, 4, 8);
-	t3.add_3_tier_stuff(loot_table, 2, 4);
+	t1.add_1_tier_stuff(loot_table, 2, 4);
+	t2.add_2_tier_stuff(loot_table, 3, 6);
+	t3.add_3_tier_stuff(loot_table, 1, 2);
 }
 
 function add_rare_loot_stuff (loot_table as string) {
-	t2.add_2_tier_stuff(loot_table, 5, 10);
-	t3.add_3_tier_stuff(loot_table, 4, 8);
-	t4.add_4_tier_stuff(loot_table, 2, 4);
+	t2.add_2_tier_stuff(loot_table, 3, 6);
+	t3.add_3_tier_stuff(loot_table, 2, 4);
+	t4.add_4_tier_stuff(loot_table, 1, 2);
 }
 
 function add_super_rare_loot_stuff (loot_table as string) {
-	t3.add_3_tier_stuff(loot_table, 5, 10);
-	t4.add_4_tier_stuff(loot_table, 4, 8);
-	t5.add_5_tier_stuff(loot_table, 2, 4);
+	t3.add_3_tier_stuff(loot_table, 3, 6);
+	t4.add_4_tier_stuff(loot_table, 2, 4);
+	t5.add_5_tier_stuff(loot_table, 1, 2);
 }
 
 add_common_loot_stuff("minecraft:chests/igloo_chest");

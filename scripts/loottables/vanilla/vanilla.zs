@@ -8,6 +8,7 @@ abandoned_mineshaft_chest.removeEntry("minecraft:golden_apple#0");
 abandoned_mineshaft_chest.removeEntry("minecraft:book");
 abandoned_mineshaft_chest.removeEntry("cyberware:neuropozyne");
 abandoned_mineshaft_chest.removeEntry("minecraft:iron_pickaxe");
+abandoned_mineshaft_chest.addItemEntry(<betterrecords:record>, 10);
 
 val desert_pyramid_chest = LootTweaker.getTable("minecraft:chests/desert_pyramid").getPool("main");
 desert_pyramid_chest.removeEntry("minecraft:golden_apple");
@@ -21,6 +22,7 @@ desert_pyramid_chest.removeEntry("minecraft:golden_horse_armor");
 desert_pyramid_chest.removeEntry("minecraft:diamond_horse_armor");
 desert_pyramid_chest.removeEntry("astralsorcery:constellation_paper");
 desert_pyramid_chest.addItemEntry(<astralsorcery:itemconstellationpaper>, 2);
+desert_pyramid_chest.addItemEntry(<betterrecords:record>, 10);
 
 val end_city_treasure_chest = LootTweaker.getTable("minecraft:chests/end_city_treasure").getPool("main");
 end_city_treasure_chest.removeEntry("minecraft:iron_horse_armor");
@@ -40,11 +42,13 @@ end_city_treasure_chest.removeEntry("minecraft:iron_leggings");
 end_city_treasure_chest.removeEntry("minecraft:iron_helmet");
 end_city_treasure_chest.removeEntry("minecraft:iron_pickaxe");
 end_city_treasure_chest.removeEntry("minecraft:iron_shovel");
+end_city_treasure_chest.addItemEntry(<betterrecords:record>, 10);
 
 val igloo_chest_chest = LootTweaker.getTable("minecraft:chests/igloo_chest").getPool("main");
 igloo_chest_chest.removeEntry("minecraft:emerald");
 igloo_chest_chest.removeEntry("astralsorcery:constellation_paper");
 igloo_chest_chest.addItemEntry(<astralsorcery:itemconstellationpaper>, 2);
+igloo_chest_chest.addItemEntry(<betterrecords:record>, 10);
 
 val jungle_temple_chest = LootTweaker.getTable("minecraft:chests/jungle_temple").getPool("main");
 jungle_temple_chest.removeEntry("minecraft:book");
@@ -55,6 +59,7 @@ jungle_temple_chest.removeEntry("minecraft:saddle");
 jungle_temple_chest.removeEntry("minecraft:iron_horse_armor");
 jungle_temple_chest.removeEntry("minecraft:golden_horse_armor");
 jungle_temple_chest.removeEntry("minecraft:diamond_horse_armor");
+jungle_temple_chest.addItemEntry(<betterrecords:record>, 10);
 
 val nether_bridge_chest = LootTweaker.getTable("minecraft:chests/nether_bridge").getPool("main");
 nether_bridge_chest.removeEntry("minecraft:iron_horse_armor");
@@ -62,6 +67,7 @@ nether_bridge_chest.removeEntry("minecraft:golden_horse_armor");
 nether_bridge_chest.removeEntry("minecraft:diamond_horse_armor");
 nether_bridge_chest.removeEntry("cyberware:surgery_apparatus");
 nether_bridge_chest.removeEntry("minecraft:diamond");
+nether_bridge_chest.addItemEntry(<betterrecords:record>, 10);
 
 val simple_dungeon_chest = LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("main");
 simple_dungeon_chest.removeEntry("minecraft:golden_apple");
@@ -73,7 +79,7 @@ simple_dungeon_chest.removeEntry("minecraft:saddle");
 simple_dungeon_chest.removeEntry("minecraft:iron_horse_armor");
 simple_dungeon_chest.removeEntry("minecraft:golden_horse_armor");
 simple_dungeon_chest.removeEntry("minecraft:diamond_horse_armor");
-
+simple_dungeon_chest.addItemEntry(<betterrecords:record>, 10);
 
 
 val stronghold_corridor_chest = LootTweaker.getTable("minecraft:chests/stronghold_corridor").getPool("main");
@@ -86,11 +92,13 @@ stronghold_corridor_chest.removeEntry("minecraft:iron_chestplate");
 stronghold_corridor_chest.removeEntry("minecraft:iron_leggings");
 stronghold_corridor_chest.removeEntry("minecraft:iron_helmet");
 stronghold_corridor_chest.removeEntry("minecraft:iron_pickaxe");
+stronghold_corridor_chest.addItemEntry(<betterrecords:record>, 10);
 
 val stronghold_crossing_chest = LootTweaker.getTable("minecraft:chests/stronghold_crossing").getPool("main");
 stronghold_crossing_chest.removeEntry("minecraft:book");
 stronghold_crossing_chest.removeEntry("cyberware:neuropozyne");
 stronghold_crossing_chest.removeEntry("minecraft:iron_pickaxe");
+stronghold_crossing_chest.addItemEntry(<betterrecords:record>, 10);
 
 val stronghold_library_chest = LootTweaker.getTable("minecraft:chests/stronghold_library").getPool("main");
 stronghold_library_chest.removeEntry("minecraft:book#0");
@@ -98,9 +106,11 @@ stronghold_library_chest.removeEntry("cyberware:neuropozyne");
 stronghold_library_chest.removeEntry("blueprint_electrode");
 stronghold_library_chest.removeEntry("astralsorcery:constellation_paper");
 stronghold_library_chest.addItemEntry(<astralsorcery:itemconstellationpaper>, 2);
+stronghold_library_chest.addItemEntry(<betterrecords:record>, 10);
 
 val village_blacksmith_chest = LootTweaker.getTable("minecraft:chests/village_blacksmith").getPool("main");
 village_blacksmith_chest.removeEntry("blueprint_electrode");
+village_blacksmith_chest.addItemEntry(<betterrecords:record>, 10);
 
 val woodland_mansion_chest = LootTweaker.getTable("minecraft:chests/woodland_mansion").getPool("main");
 woodland_mansion_chest.removeEntry("minecraft:diamond_chestplate");
@@ -109,3 +119,4 @@ woodland_mansion_chest.removeEntry("minecraft:book");
 woodland_mansion_chest.removeEntry("minecraft:chainmail_chestplate");
 woodland_mansion_chest.removeEntry("minecraft:golden_apple#0");
 woodland_mansion_chest.removeEntry("minecraft:golden_apple");
+woodland_mansion_chest.addItemEntry(<betterrecords:record>, 10);
