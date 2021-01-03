@@ -1482,6 +1482,1006 @@
 				"MOUNTAIN", "HILLS", "COLD", "SNOWY", "WASTELAND"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:eximite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockeximite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:meutoite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmeutoite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:ignatius_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockignatius",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 13,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"metallurgy:lemurite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklemurite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 13,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"metallurgy:shadow_iron_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockshadowiron",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 13,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"metallurgy:alduorite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockalduorite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:kalendrite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockkalendrite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:midasium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmidasium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:vulcanite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockvulcanite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:vyroxeres_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockvyroxeres",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:ceruclase_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockceruclase",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:sanguinite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksanguinite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 5,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:manganese_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmanganese",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.005,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "HOT", "SANDY", "WASTELAND", "MESA"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:phosphorite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockphosphorite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.005,
+			"biomes": [
+				"FOREST", "PLAINS", "SPARCE", "SAVANNA"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:potash_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockpotash",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.005,
+			"biomes": [
+				"FOREST", "LUSH", "SWAMP", "JUNGLE"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:sulfur_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksulfur",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.005,
+			"biomes": [
+				"SANDY", "DEAD", "WASTELAND", "MESA", "SAVANNA"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:prometheum_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockprometheum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.025,
+			"biomes": [
+				"CONIFEROUS", "MEGA_TAIGA_TREES", "MEGA_TAIGA_SPRUCE_TREES"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:zinc_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockzinc",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 128,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.025,
+			"biomes": [
+				"PLAINS", "SWAMP", "WET", "HILLS", "MOUNTAIN"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:deep_iron_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdeepiron",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.1,
+			"biomes": [
+				"WATER", "SWAMP", "WET"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:infuscolium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockinfuscolium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.1,
+			"biomes": [
+				"SANDY", "HOT", "MESA", "DEAD", "SPOOKY"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:carmot_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcarmot",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.1,
+			"biomes": [
+				"SAVANNA", "PLAINS", "BEACH", "WASTELAND"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:oureclase_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockoureclase",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"SANDY", "HOT", "MUSHROOM", "RARE"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:rubracium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockrubracium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"COLD", "SNOWY", "MUSHROOM", "RARE"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:adamantine_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockadamantine",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "RARE", "MAGICAL", "SPOOKY"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:atlarus_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockatlarus",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "RARE", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:lutetium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklutetium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"SPOOKY", "WASTELAND", "RARE", "DEAD"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:mithril_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmithril",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MAGICAL", "HILLS", "RARE", "MOUNTAIN"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:orichalcum_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockorichalcum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"CONIFEROUS", "MEGA_TAIGA_TREES", "MEGA_TAIGA_SPRUCE_TREES", "HILLS", "RARE", "MOUNTAIN"
+			],
+			"isWhitelist": true
 		}
 	],
 	"stones": [{
