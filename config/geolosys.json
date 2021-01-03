@@ -732,6 +732,306 @@
 				"MOUNTAIN", "HILLS"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:0",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockamethyst",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:1",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockruby",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "HOT"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockperidot",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "LUSH", "PLAINS"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktopaz",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "HOT", "DENSE", "WET"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:4",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktanzanite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "COLD", "SNOWY"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmalachite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "SWAMP"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:6",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksapphire",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 128,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.5,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "WATER", "BEACH", "OCEAN", "OASIS"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thaumcraft:ore_amber",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockamber",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 128,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.025,
+			"biomes": [
+				"MOUNTAIN", "HILLS", "FOREST", "DENSE"
+			],
+			"isWhitelist": true
 		}
 	],
 	"stones": [{
