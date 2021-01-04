@@ -12,11 +12,6 @@
         "type": "item",
         "name": "twilightforest:torchberries",
         "functions": [{ "function": "set_count", "count": { "min": 1, "max": 16 } }]
-      },
-      {
-        "type": "item",
-        "name": "minecraft:pumpkin_pie",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 6 } }]
       }
     ]
   }]

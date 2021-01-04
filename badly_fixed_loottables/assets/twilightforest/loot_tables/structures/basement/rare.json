@@ -10,15 +10,7 @@
       },
       {
         "type": "item",
-        "name": "minecraft:apple",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 12 } }]
-      },
-      {
-        "type": "item",
         "name": "minecraft:map"
-      },{
-        "type": "item",
-        "name": "twilightforest:charm_of_keeping_1"
       }
     ]
   }]

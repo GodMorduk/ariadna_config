@@ -1,20 +1,6 @@
 {
   "pools": [
     {
-      "name": "bow",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "twilightforest:triple_bow"
-        },
-        {
-          "type": "item",
-          "name": "twilightforest:seeker_bow"
-        }
-      ]
-    },
-    {
       "name": "ice",
       "rolls": { "min": 1, "max": 4 },
       "entries": [{
@@ -44,33 +30,6 @@
         "functions": [{ "function": "set_data", "data": 5 }]
       }]
     }, {
-      "name": "shader",
-      "rolls": 1,
-      "conditions": [{ "condition": "twilightforest:mod_exists", "mod_id": "immersiveengineering" }],
-      "entries": [{
-        "type": "item",
-        "name": "twilightforest:ice_bomb",
-        "functions": [{
-          "function": "twilightforest:item_or_default",
-          "item": "twilightforest:shader",
-          "default": "twilightforest:ice_bomb"
-        }, {
-          "function": "set_nbt",
-          "tag": "{\"shader_type\":\"Snow Queen\"}"
-        }]
-      }]
-    }, {
-      "name": "shader",
-      "rolls": 1,
-      "conditions": [{ "condition": "twilightforest:mod_exists", "mod_id": "immersiveengineering" }],
-      "entries": [{
-        "type": "item",
-        "name": "twilightforest:ice_bomb",
-        "functions": [{
-          "function": "twilightforest:item_or_default",
-          "item": "twilightforest:shader_bag",
-          "default": "twilightforest:ice_bomb"
-        }, {
           "function": "set_nbt",
           "tag": "{\"shader_rarity\":\"Twilight\"}"
         }]

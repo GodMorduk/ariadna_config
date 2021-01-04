@@ -11,7 +11,7 @@
       {
         "type": "item",
         "name": "minecraft:diamond",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 6 } }]
+        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }]
       }
     ]
   }]

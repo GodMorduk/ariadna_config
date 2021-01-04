@@ -15,16 +15,6 @@
       },
       {
         "type": "item",
-        "name": "minecraft:arrow",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 12 } }]
-      },
-      {
-        "type": "item",
-        "name": "twilightforest:maze_wafer",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 9 } }]
-      },
-      {
-        "type": "item",
         "name": "minecraft:ice",
         "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }]
       },
@@ -36,7 +26,7 @@
       {
         "type": "item",
         "name": "twilightforest:ironwood_ingot",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 2 } }]
+        "functions": [{ "function": "set_count", "count": { "min": 2, "max": 4 } }]
       }
     ]
   }]

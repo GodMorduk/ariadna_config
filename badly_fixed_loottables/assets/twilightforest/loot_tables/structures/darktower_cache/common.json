@@ -18,16 +18,6 @@
       },
       {
         "type": "item",
-        "name": "minecraft:arrow",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 12 } }]
-      },
-      {
-        "type": "item",
-        "name": "twilightforest:experiment_115",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 9 } }]
-      },
-      {
-        "type": "item",
         "name": "minecraft:wool",
         "functions": [{ "function": "set_data", "data": 14 }]
       },

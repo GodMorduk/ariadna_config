@@ -18,15 +18,6 @@
     },
 
     {
-      "name": "uncommon",
-      "rolls": 2,
-      "entries": [{
-        "type": "loot_table",
-        "name": "twilightforest:structures/basement/uncommon"
-      }]
-    },
-
-    {
       "name": "rare",
       "rolls": 1,
       "entries": [

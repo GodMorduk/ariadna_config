@@ -10,11 +10,6 @@
       },
       {
         "type": "item",
-        "name": "minecraft:carrot",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }]
-      },
-      {
-        "type": "item",
         "name": "minecraft:ladder",
         "functions": [{ "function": "set_count", "count": { "min": 1, "max": 6 } }]
       },

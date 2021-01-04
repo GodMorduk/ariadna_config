@@ -10,20 +10,7 @@
       },
       {
         "type": "item",
-        "name": "minecraft:shears"
-      },
-      {
-        "type": "item",
         "name": "minecraft:saddle"
-      },
-      {
-        "type": "item",
-        "name": "minecraft:bow"
-      },
-      {
-        "type": "item",
-        "name": "minecraft:apple",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 2 } }]
       }
     ]
   }]

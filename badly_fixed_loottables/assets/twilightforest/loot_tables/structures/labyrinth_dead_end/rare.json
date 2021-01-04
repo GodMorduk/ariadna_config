@@ -10,12 +10,8 @@
       },
       {
         "type": "item",
-        "name": "minecraft:golden_apple"
-      },
-      {
-        "type": "item",
         "name": "minecraft:blaze_rod",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 2 } }]
+        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 1 } }]
       }
     ]
   }]

@@ -10,11 +10,6 @@
       },
       {
         "type": "item",
-        "name": "twilightforest:experiment_115",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 12 } }]
-      },
-      {
-        "type": "item",
         "name": "minecraft:gunpowder",
         "functions": [{ "function": "set_count", "count": { "min": 1, "max": 4 } }]
       },
@@ -36,7 +31,7 @@
       {
         "type": "item",
         "name": "minecraft:glowstone_dust",
-        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 12 } }]
+        "functions": [{ "function": "set_count", "count": { "min": 1, "max": 6 } }]
       }
     ]
   }]

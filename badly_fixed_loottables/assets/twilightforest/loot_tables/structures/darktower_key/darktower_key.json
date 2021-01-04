@@ -25,15 +25,6 @@
         "type": "loot_table",
         "name": "twilightforest:structures/darktower_key/uncommon"
       }]
-    },
-
-    {
-      "name": "rare",
-      "rolls": 1,
-      "entries": [{
-        "type": "loot_table",
-        "name": "twilightforest:structures/darktower_key/rare"
-      }]
     }
   ]
 }

@@ -24,11 +24,6 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "twilightforest:structures/stronghold_cache/ultrarare",
-          "weight": 25
-        },
-        {
-          "type": "loot_table",
           "name": "twilightforest:structures/stronghold_cache/rare",
           "weight": 75
         }
