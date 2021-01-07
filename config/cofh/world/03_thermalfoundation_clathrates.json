@@ -2,7 +2,7 @@
 	"dependencies": "thermalfoundation",
 	"populate": {
 		"redstone_clathrate": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
