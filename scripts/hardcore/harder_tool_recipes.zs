@@ -39,7 +39,7 @@ recipes.removeByRecipeName("embers:blockbronze_axe");
 recipes.removeByRecipeName("embers:blocktin_axe");
 
 
-recipes.removeByRecipeName("abyssalcraft:cincinnasite_pickaxe_diamond");
+recipes.removeByRecipeName("betternether:cincinnasite_pickaxe_diamond");
 recipes.removeByRecipeName("betternether:cincinnasite_axe_diamond");
 recipes.removeByRecipeName("betternether:cincinnasite_pickaxe");
 recipes.removeByRecipeName("betternether:cincinnasite_axe");
@@ -54,10 +54,10 @@ recipes.removeByRecipeName("abyssalcraft:ethaxiumshovel");
 recipes.removeByRecipeName("thebetweenlands:octine_axe");
 recipes.removeByRecipeName("thebetweenlands:octine_pickaxe");
 recipes.removeByRecipeName("thebetweenlands:octine_shovel");
-recipes.removeByRecipeName("embers:blockdawnstone_hoe");
-recipes.removeByRecipeName("embers:blockdawnstone_pickaxe");
-recipes.removeByRecipeName("embers:blockdawnstone_axe");
-recipes.removeByRecipeName("embers:blockdawnstone_shovel");
+recipes.removeByRecipeName("embers:ingotdawnstone_hoe");
+recipes.removeByRecipeName("embers:ingotdawnstone_pickaxe");
+recipes.removeByRecipeName("embers:ingotdawnstone_axe");
+recipes.removeByRecipeName("embers:ingotdawnstone_shovel");
 recipes.removeByRecipeName("thebetweenlands:valonite_pickaxe");
 recipes.removeByRecipeName("thebetweenlands:valonite_greataxe");
 recipes.removeByRecipeName("thebetweenlands:valonite_axe");
@@ -76,6 +76,16 @@ recipes.removeByRecipeName("thaumcraft:voidaxe");
 recipes.removeByRecipeName("thaumcraft:voidshovel");
 
 
+recipes.removeByRecipeName("tcomplement:armor/steel_helmet");
+recipes.removeByRecipeName("tcomplement:armor/steel_chestplate");
+recipes.removeByRecipeName("tcomplement:armor/steel_leggings");
+recipes.removeByRecipeName("tcomplement:armor/steel_boots");
+
+recipes.removeByRecipeName("embers:ingotaluminum_axe");
+recipes.removeByRecipeName("embers:ingotelectrum_axe");
+recipes.removeByRecipeName("embers:ingotnickel_axe");
+recipes.removeByRecipeName("embers:ingotbronze_axe");
+recipes.removeByRecipeName("embers:ingottin_axe");
 
 recipes.addShaped("cincinnasite_pickaxe_diamond", <betternether:cincinnasite_pickaxe_diamond>, [[<ore:blockDiamond>, <betternether:cincinnasite_pickaxe>, <ore:blockDiamond>]]);
 recipes.addShaped("cincinnasite_axe_diamond", <betternether:cincinnasite_axe_diamond>, [[null, <ore:blockDiamond>], [<ore:blockDiamond>, <betternether:cincinnasite_axe>]]);

@@ -14,10 +14,13 @@ val quicksilver = <ticmat:quicksilver>;
 quicksilver.miningSpeedHead = 8.5;
 
 val pink_slime = <ticmat:integrationforegoing.pink_slime>;
-pink_slime.bowDrawSpeed = 1.25;
+pink_slime.bowDrawSpeed = 1.4;
+
+val reinforced_pink_slime = <ticmat:integrationforegoing.reinforced_pink_slime>;
+reinforced_pink_slime.bowDrawSpeed = 1.3;
 
 val plastic = <ticmat:integrationforegoing.plastic>;
-plastic.bowDrawSpeed = 1;
+plastic.bowDrawSpeed = 1.4;
 
 val air_thaumium = <ticmat:aer_thaumium>;
 air_thaumium.miningSpeedHead = 9;

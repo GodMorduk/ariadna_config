@@ -59,6 +59,31 @@ add_super_rare_loot_stuff("thebetweenlands:loot/cragrock_tower_chest");
 add_super_rare_loot_stuff("thebetweenlands:loot/sludge_worm_dungeon_chest");
 add_super_rare_loot_stuff("thebetweenlands:loot/wight_fortress_chest");
 
+add_common_loot_stuff("twilightforest:structures/stronghold_cache/stronghold_cache");
+add_common_loot_stuff("twilightforest:structures/labyrinth_dead_end/labyrinth_dead_end");
+add_common_loot_stuff("twilightforest:structures/darktower_cache/darktower_cache");
+add_common_loot_stuff("twilightforest:structures/graveyard/graveyard");
+add_common_loot_stuff("twilightforest:structures/basement/basement");
+add_common_loot_stuff("twilightforest:structures/tree_cache/tree_cache");
+add_common_loot_stuff("twilightforest:structures/useless");
+add_common_loot_stuff("twilightforest:structures/hill_1/hill_1");
+add_common_loot_stuff("twilightforest:structures/hill_2/hill_2");
+add_common_loot_stuff("twilightforest:structures/hill_3/hill_3");
+add_common_loot_stuff("twilightforest:structures/aurora_cache/aurora_cache");
+add_rare_loot_stuff("twilightforest:structures/stronghold_room/stronghold_room");
+add_rare_loot_stuff("twilightforest:structures/labyrinth_room/labyrinth_room");
+add_rare_loot_stuff("twilightforest:structures/hedge_maze/hedge_maze");
+add_rare_loot_stuff("twilightforest:structures/darktower_key/darktower_key");
+add_rare_loot_stuff("twilightforest:structures/troll_vault/troll_vault");
+add_rare_loot_stuff("twilightforest:structures/troll_garden/troll_garden");
+add_rare_loot_stuff("twilightforest:structures/tower_room/tower_room");
+add_rare_loot_stuff("twilightforest:structures/tower_library/tower_library");
+add_rare_loot_stuff("twilightforest:structures/aurora_room/aurora_room");
+add_super_rare_loot_stuff("twilightforest:structures/stronghold_boss/stronghold_boss");
+add_super_rare_loot_stuff("twilightforest:structures/labyrinth_vault/labyrinth_vault");
+add_super_rare_loot_stuff("twilightforest:structures/darktower_boss/darktower_boss");
+
+
 
 
 

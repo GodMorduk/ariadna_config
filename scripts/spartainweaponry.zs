@@ -510,8 +510,7 @@ recipes.addShaped("boomerang_diamond", <spartanweaponry:boomerang_diamond>, [[<o
 recipes.addShaped("boomerang_gold", <spartanweaponry:boomerang_gold>, [[<ore:blockGold>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
 recipes.addShaped("boomerang_iron", <spartanweaponry:boomerang_iron>, [[<ore:blockIron>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
 recipes.addShaped("boomerang_wood", <spartanweaponry:boomerang_wood>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("caestus", <spartanweaponry:caestus>, [[<ore:leather>, <minecraft:wool:*>]]);
-recipes.addShaped("caestus_studded", <spartanweaponry:caestus_studded>, [[<ore:blockIron>], [<spartanweaponry:caestus>]]);
+
 recipes.addShaped("club_studded", <spartanweaponry:club_studded>, [[<ore:blockIron>], [<spartanweaponry:club_wood>]]);
 recipes.addShaped("club_wood", <spartanweaponry:club_wood>, [[null, <ore:logWood>], [<ore:logWood>, null]]);
 recipes.addShaped("crossbow_diamond", <spartanweaponry:crossbow_diamond>, [[<minecraft:bow>, <ore:string>, <ore:gemDiamond>], [<ore:string>, <ore:logWood>, null], [<ore:gemDiamond>, null, <spartanweaponry:material>]]);
@@ -952,3 +951,16 @@ recipes.addShapeless("handle_dreamwood_leather", <spartanweaponryarcana:material
 recipes.addShapeless("handle_dreamwood_wool", <spartanweaponryarcana:material:2> * 4, [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <minecraft:wool:*>]);
 recipes.addShapeless("handle_livingwood_leather", <spartanweaponryarcana:material> * 4, [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <ore:leather>]);
 recipes.addShapeless("handle_livingwood_wool", <spartanweaponryarcana:material> * 4, [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <minecraft:wool:*>]);
+
+
+recipes.addShaped("caestus", <spartanweaponry:caestus>, [
+	[<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>], 
+	[<ore:itemTieNormal>, <ore:itemTieNormal>, <ore:ingotIron>], 
+	[<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]
+]);
+
+recipes.addShaped("caestus_studded", <spartanweaponry:caestus_studded>,[
+	[null, <ore:ingotIron>, null], 
+	[<ore:blockIron>, <spartanweaponry:caestus>, <ore:blockIron>], 
+	[null, <ore:ingotIron>, null]
+]);
