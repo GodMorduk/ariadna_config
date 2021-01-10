@@ -1,0 +1,27 @@
+{
+    "enabled": {
+        "book": true,
+        "scroll": true,
+        "wands": true,
+        "npcs": true,
+        "dispensers": true,
+        "commands": true,
+        "treasure": true,
+        "trades": true,
+        "looting": true
+    },
+    "tier": "master",
+    "element": "sorcery",
+    "type": "utility",
+    "cost": 200,
+    "chargeup": 0,
+    "cooldown": 6000,
+    "base_properties": {
+        "strength_duration": 1200,
+        "strength_strength": 1,
+        "night_vision_duration": 1200,
+        "night_vision_strength": 0,
+        "speed_duration": 1200,
+        "speed_strength": 3
+    }
+}

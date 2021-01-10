@@ -1,0 +1,23 @@
+{
+    "enabled": {
+        "book": true,
+        "scroll": true,
+        "wands": true,
+        "npcs": true,
+        "dispensers": true,
+        "commands": true,
+        "treasure": true,
+        "trades": true,
+        "looting": true
+    },
+    "tier": "advanced",
+    "element": "necromancy",
+    "type": "utility",
+    "cost": 125,
+    "chargeup": 0,
+    "cooldown": 4800,
+    "base_properties": {
+        "vampirism_duration": 400,
+        "vampirism_strength": 0
+    }
+}
