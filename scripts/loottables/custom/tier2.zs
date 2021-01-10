@@ -154,4 +154,12 @@ function add_2_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ventus"}]}), 30);
 	pool.addItemEntry(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "visum"}]}), 30);
 	pool.addItemEntry(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "imperium"}]}), 30);
+	pool.addItemEntry(<botania:manaresource:1>, 35);
+	pool.addItemEntry(<botania:manaresource:2>, 20);
+	pool.addItemEntry(<botania:manaresource:18>, 20);
+	pool.addItemEntry(<botania:manaresource>, 45);
+	pool.addItemEntry(<extrabotany:nightmarefuel>, 30);
+	pool.addItemEntry(<botania:manabottle>, 30);
+	pool.addItemEntry(<minecraft:quartz>, 30);
+	pool.addItemEntry(<minecraft:nether_wart>, 20);
 }

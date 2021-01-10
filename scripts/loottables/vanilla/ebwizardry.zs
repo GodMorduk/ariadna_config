@@ -10,6 +10,7 @@ dungeon_additions_pool.removeEntry("ebwizardry:subsets/elemental_crystals");
 dungeon_additions_pool.removeEntry("ebwizardry:subsets/wizard_armour");
 dungeon_additions_pool.removeEntry("ebwizardry:subsets/arcane_tomes");
 dungeon_additions_pool.removeEntry("ebwizardry:subsets/wand_upgrades");
+dungeon_additions_pool.removeEntry("ebwizardry:spell_book");
 dungeon_additions_pool.addItemEntryJson(<ebwizardry:spell_book>, 10, 0, [{"ignore_weighting": false, "undiscovered_bias": 0.3, "function": "ebwizardry:random_spell"}], []);
 dungeon_additions_pool.removeEntry("ebwizardry:armour_upgrade");
 dungeon_additions_pool.removeEntry("ebwizardry:astral_diamond");

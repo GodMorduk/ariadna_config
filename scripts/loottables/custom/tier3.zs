@@ -20,6 +20,8 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<techguns:itemshared:38>, 15);
 	pool.addItemEntry(<techguns:itemshared:57>, 15);
 	pool.addItemEntry(<techguns:itemshared:33>, 15);
+	pool.addItemEntry(<minecraft:emerald>, 15);
+	pool.addItemEntry(<minecraft:diamond>, 15);
 	pool.addItemEntry(<immersiveengineering:wirecoil:7>, 15);
 	pool.addItemEntry(<immersiveengineering:wirecoil:2>, 15);
 	pool.addItemEntry(<immersiveengineering:material:23>, 15);
@@ -57,4 +59,14 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<techguns:itemshared:84>, 15);
 	pool.addItemEntry(<thaumcraft:loot_bag>, 15);
 	pool.addItemEntry(<thaumcraft:plate>, 15);
+	pool.addItemEntry(<botania:rune>, 15);
+	pool.addItemEntry(<botania:rune:1>, 15);
+	pool.addItemEntry(<botania:rune:2>, 15);
+	pool.addItemEntry(<botania:rune:3>, 15);
+	pool.addItemEntry(<botania:blacklotus>, 25);
+	pool.addItemEntry(<botania:overgrowthseed>, 10);
+	pool.addItemEntry(<bewitchment:opal>, 15);
+	pool.addItemEntry(<bewitchment:salt>, 15);
+	pool.addItemEntry(<bewitchment:amethyst>, 15);
+	pool.addItemEntry(<bewitchment:garnet>, 15);
 }
