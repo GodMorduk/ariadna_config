@@ -57,7 +57,6 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<thermalfoundation:material:165>, 15);
 	pool.addItemEntry(<thermalfoundation:material:134>, 15);
 	pool.addItemEntry(<techguns:itemshared:84>, 15);
-	pool.addItemEntry(<thaumcraft:loot_bag>, 15);
 	pool.addItemEntry(<thaumcraft:plate>, 15);
 	pool.addItemEntry(<botania:rune>, 15);
 	pool.addItemEntry(<botania:rune:1>, 15);

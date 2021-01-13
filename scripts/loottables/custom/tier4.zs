@@ -47,12 +47,6 @@ function add_4_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<thermalfoundation:material:167>, 10);
 	pool.addItemEntry(<thermalfoundation:material:136>, 10);
 	pool.addItemEntry(<thermalfoundation:material:135>, 10);
-	pool.addItemEntry(<thaumcraft:loot_bag:1>, 5);
-	pool.addItemEntry(<thaumcraft:mind>, 5);
-	pool.addItemEntry(<thaumcraft:module>, 5);
-	pool.addItemEntry(<thaumcraft:module:1>, 5);
-	pool.addItemEntry(<thaumcraft:plate:2>, 7);
-	pool.addItemEntry(<thaumcraft:loot_bag:1>, 5);
 	pool.addItemEntry(<thaumcraft:mind>, 5);
 	pool.addItemEntry(<thaumcraft:module>, 5);
 	pool.addItemEntry(<thaumcraft:module:1>, 5);
