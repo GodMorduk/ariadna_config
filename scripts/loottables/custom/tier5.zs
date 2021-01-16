@@ -46,7 +46,6 @@ function add_5_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<tconstruct:ingots:1>, 5);
 	pool.addItemEntry(<tconstruct:ingots:2>, 5);
 	pool.addItemEntry(<techguns:itemshared:85>, 5);
-	pool.addItemEntry(<thaumcraft:loot_bag:2>, 5);
 	pool.addItemEntry(<thaumcraft:mind:1>, 2);
 	pool.addItemEntry(<thaumcraft:plate:3>, 5);
 }
