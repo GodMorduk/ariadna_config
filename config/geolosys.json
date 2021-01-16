@@ -3194,7 +3194,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 25,
+			"chance": 17,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -3822,7 +3822,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 20,
+			"chance": 30,
 			"size": 150,
 			"dimBlacklist": [
 				1,
