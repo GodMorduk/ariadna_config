@@ -9,6 +9,15 @@
 	
 	<recipe required="true" name="Dark Steel Boots" disabled="true">
     </recipe>
+	
+	<recipe required="true" name="Dark Steel Chestplate" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Dark Steel Leggings" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Dark Bow" disabled="true">
+    </recipe>
 
 	<recipe required="true" name="Dark Steel Shield" disabled="true">
     </recipe>
@@ -38,6 +47,15 @@
     </recipe>
 
 	<recipe required="true" name="Dark Axe" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Ender Axe" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Ender Bow" disabled="true">
+    </recipe>
+	
+	<recipe required="true" name="Ender Boots" disabled="true">
     </recipe>
 	
 	<recipe required="true" name="Dark Crook" disabled="true">
