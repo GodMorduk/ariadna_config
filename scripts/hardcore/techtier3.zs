@@ -353,17 +353,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:wooden_de
 ]);
 
 
-recipes.removeByRecipeName("immersivecables:wire_coil_refined_s");
-recipes.removeByRecipeName("immersivecables:wire_coil_refined_t");
-mods.extendedcrafting.TableCrafting.addShaped(0, <immersivecables:wire_coil:3>, [
-	[null, null, null, null, null], 
-	[null, null, <refinedstorage:quartz_enriched_iron>, null, null], 
-	[null, <ore:wireAluminum>, <ore:stickWood>, <ore:wireAluminum>, null], 
-	[null, null, <refinedstorage:quartz_enriched_iron>, null, null], 
-	[null, null, null, null, null]
-]);
-
-
 recipes.removeByRecipeName("immersiveengineering:wire_coil_electrum");
 mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:metal_decoration0:1>, [
 	[null, null, null, null, null], 
@@ -374,8 +363,8 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:metal_dec
 ]);
 
 
-recipes.removeByRecipeName("immersivecables:solar_panel_2");
-recipes.removeByRecipeName("immersivecables:solar_panel_2_upgrade");
+recipes.removeByRecipeName("enderio:solar_panel_2");
+recipes.removeByRecipeName("enderio:solar_panel_2_upgrade");
 mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_solar_panel:1>, [
 	[null, null, null, null, null], 
 	[<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>], 

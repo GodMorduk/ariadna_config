@@ -12,7 +12,6 @@ dungeon_additions_pool.removeEntry("ebwizardry:subsets/arcane_tomes");
 dungeon_additions_pool.removeEntry("ebwizardry:subsets/wand_upgrades");
 dungeon_additions_pool.removeEntry("ebwizardry:spell_book");
 dungeon_additions_pool.addItemEntryJson(<ebwizardry:spell_book>, 10, 0, [{"ignore_weighting": false, "undiscovered_bias": 0.3, "function": "ebwizardry:random_spell"}], []);
-dungeon_additions_pool.removeEntry("ebwizardry:armour_upgrade");
 dungeon_additions_pool.removeEntry("ebwizardry:astral_diamond");
 dungeon_additions_pool.removeEntry("ebwizardry:grand_crystal");
 
@@ -37,7 +36,6 @@ wizard_tower_pool.removeEntry("ebwizardry:subsets/elemental_crystals");
 wizard_tower_pool.removeEntry("ebwizardry:subsets/wizard_armour");
 wizard_tower_pool.removeEntry("ebwizardry:subsets/arcane_tomes");
 wizard_tower_pool.removeEntry("ebwizardry:subsets/wand_upgrades");
-wizard_tower_pool.removeEntry("ebwizardry:armour_upgrade");
 
 LootTweaker.getTable("ebwizardry:gameplay/fishing/treasure_additions").removePool("wizardry");
 LootTweaker.getTable("ebwizardry:entities/mob_additions").removePool("wizardry");
