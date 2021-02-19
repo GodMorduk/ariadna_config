@@ -39,6 +39,40 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:nitreore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksaltpeter",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 80,
+			"yMax": 176,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
 				"abyssalcraft:abynitore",
 				100
 			],
@@ -115,6 +149,74 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:abyore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockabyssalnite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 5,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abyore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockabyssalnite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 5,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"abyssalcraft:abydreadore",
 				80,
 				"abyssalcraft:dreadore",
@@ -151,14 +253,14 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:coraliumore",
+				100
+			],
+			"samples": [
 				"simpleoresamples:sampleblockcoralium",
 				25,
 				"minecraft:air",
 				75
-			],
-			"samples": [
-				"minecraft:air",
-				100
 			],
 			"yMin": 40,
 			"yMax": 128,
@@ -189,11 +291,45 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:coraliumore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcoralium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 80,
+			"yMax": 176,
+			"chance": 5,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"abyssalcraft:abycorore",
 				100
 			],
 			"samples": [
-				"simpleoresamples:sampleblockabyssalnite",
+				"simpleoresamples:sampleblockcoralium",
 				25,
 				"minecraft:air",
 				75
@@ -258,6 +394,74 @@
 				"MOUNTAIN", "HILLS"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"aetherworks:aether_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockaether",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"aetherworks:aether_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockaether",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
 		},
 		{
 			"blocks": [
@@ -503,6 +707,74 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksilver",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.0025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksilver",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.0025
+		},
+		{
+			"blocks": [
 				"thermalfoundation:ore:0",
 				80,
 				"thermalfoundation:ore:2",
@@ -540,6 +812,78 @@
 				"PLAINS", "SPARSE", "MESA"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:0",
+				80,
+				"thermalfoundation:ore:2",
+				20
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcopper",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 20,
+			"size": 150,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:0",
+				80,
+				"thermalfoundation:ore:2",
+				20
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcopper",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 20,
+			"size": 150,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
 		},
 		{
 			"blocks": [
@@ -583,6 +927,78 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore:3",
+				66,
+				"thermalfoundation:ore:2",
+				34
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklead",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.0025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:3",
+				66,
+				"thermalfoundation:ore:2",
+				34
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklead",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.0025
+		},
+		{
+			"blocks": [
 				"bewitchment:salt_ore",
 				100
 			],
@@ -621,11 +1037,151 @@
 		},
 		{
 			"blocks": [
+				"bewitchment:salt_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksalt",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 20,
+			"size": 150,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
 				"bewitchment:amethyst_ore",
 				100
 			],
 			"samples": [
 				"simpleoresamples:sampleblockamethyst",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"MOUNTAIN", "HILLS"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"bewitchment:amethyst_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockamethyst",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"bewitchment:amethyst_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockamethyst",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"bewitchment:garnet_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockgarnet",
 				25,
 				"minecraft:air",
 				75
@@ -668,11 +1224,12 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 20,
-			"yMax": 40,
+			"yMin": 10,
+			"yMax": 50,
 			"chance": 15,
 			"size": 50,
 			"dimBlacklist": [
+				0,
 				1,
 				50,
 				51,
@@ -684,16 +1241,45 @@
 				28885,
 				111,
 				14676,
-				10,
 				4,
 				7,
 				17
 			],
-			"density": 0.05,
-			"biomes": [
-				"MOUNTAIN", "HILLS"
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"bewitchment:garnet_ore",
+				100
 			],
-			"isWhitelist": true
+			"samples": [
+				"simpleoresamples:sampleblockgarnet",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -732,6 +1318,74 @@
 				"MOUNTAIN", "HILLS"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"bewitchment:opal_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockopal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"bewitchment:opal_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockopal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -807,6 +1461,40 @@
 		},
 		{
 			"blocks": [
+				"biomesoplenty:gem_ore:1",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockruby",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"biomesoplenty:gem_ore:2",
 				100
 			],
@@ -842,6 +1530,40 @@
 				"MOUNTAIN", "HILLS", "LUSH", "PLAINS"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockperidot",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -883,6 +1605,40 @@
 		},
 		{
 			"blocks": [
+				"biomesoplenty:gem_ore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktopaz",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"biomesoplenty:gem_ore:4",
 				100
 			],
@@ -918,6 +1674,40 @@
 				"MOUNTAIN", "HILLS", "COLD", "SNOWY"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:4",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktanzanite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -959,6 +1749,40 @@
 		},
 		{
 			"blocks": [
+				"biomesoplenty:gem_ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmalachite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"biomesoplenty:gem_ore:6",
 				100
 			],
@@ -994,6 +1818,40 @@
 				"MOUNTAIN", "HILLS", "WATER", "BEACH", "OCEAN", "OASIS"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"biomesoplenty:gem_ore:6",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksapphire",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -1035,6 +1893,40 @@
 		},
 		{
 			"blocks": [
+				"thaumcraft:ore_amber",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockamber",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 246,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
 				"ebwizardry:crystal_ore",
 				100
 			],
@@ -1073,6 +1965,40 @@
 		},
 		{
 			"blocks": [
+				"ebwizardry:crystal_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 246,
+			"chance": 20,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"thaumcraft:ore_quartz",
 				100
 			],
@@ -1099,6 +2025,74 @@
 				111,
 				14676,
 				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.075
+		},
+		{
+			"blocks": [
+				"thaumcraft:ore_quartz",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockquartz",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 18,
+			"size": 75,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.075
+		},
+		{
+			"blocks": [
+				"thaumcraft:ore_quartz",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockquartz",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 256,
+			"chance": 18,
+			"size": 75,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
 				4,
 				7,
 				17
@@ -1451,6 +2445,74 @@
 		},
 		{
 			"blocks": [
+				"immersiveengineering:ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockuranium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 20,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"immersiveengineering:ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockuranium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 236,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"mekanism:oreblock:0",
 				100
 			],
@@ -1486,6 +2548,74 @@
 				"MOUNTAIN", "HILLS", "COLD", "SNOWY", "WASTELAND"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"mekanism:oreblock:0",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockosmium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"mekanism:oreblock:0",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockosmium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -1935,6 +3065,40 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:manganese_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmanganese",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
 				"metallurgy:phosphorite_ore",
 				100
 			],
@@ -1970,6 +3134,74 @@
 				"FOREST", "PLAINS", "SPARCE", "SAVANNA"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:phosphorite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockphosphorite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 50,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
+				"metallurgy:phosphorite_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockphosphorite",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 196,
+			"yMax": 256,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
 		},
 		{
 			"blocks": [
@@ -2011,6 +3243,40 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:potash_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockpotash",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
 				"metallurgy:sulfur_ore",
 				100
 			],
@@ -2046,6 +3312,40 @@
 				"SANDY", "DEAD", "WASTELAND", "MESA", "SAVANNA"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:sulfur_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksulfur",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
 		},
 		{
 			"blocks": [
@@ -2087,6 +3387,40 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:prometheum_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockprometheum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"metallurgy:zinc_ore",
 				100
 			],
@@ -2122,6 +3456,40 @@
 				"PLAINS", "SWAMP", "WET", "HILLS", "MOUNTAIN"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:zinc_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockzinc",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 246,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -2163,6 +3531,40 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:deep_iron_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdeepiron",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 256,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
 				"metallurgy:infuscolium_ore",
 				100
 			],
@@ -2198,6 +3600,74 @@
 				"SANDY", "HOT", "MESA", "DEAD", "SPOOKY"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:infuscolium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockinfuscolium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"metallurgy:infuscolium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockinfuscolium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 10,
+			"size": 20,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
 		},
 		{
 			"blocks": [
@@ -2239,6 +3709,74 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:carmot_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcarmot",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
+				"metallurgy:carmot_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcarmot",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.1
+		},
+		{
+			"blocks": [
 				"metallurgy:oureclase_ore",
 				100
 			],
@@ -2274,6 +3812,74 @@
 				"SANDY", "HOT", "MUSHROOM", "RARE"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:oureclase_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockoureclase",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:oureclase_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockoureclase",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -2315,6 +3921,74 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:rubracium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockrubracium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:rubracium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockrubracium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"metallurgy:adamantine_ore",
 				100
 			],
@@ -2350,6 +4024,74 @@
 				"MOUNTAIN", "HILLS", "RARE", "MAGICAL", "SPOOKY"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:adamantine_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockadamantine",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:adamantine_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockadamantine",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -2391,6 +4133,74 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:atlarus_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockatlarus",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:atlarus_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockatlarus",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"metallurgy:lutetium_ore",
 				100
 			],
@@ -2426,6 +4236,74 @@
 				"SPOOKY", "WASTELAND", "RARE", "DEAD"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:lutetium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklutetium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:lutetium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklutetium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -2467,6 +4345,74 @@
 		},
 		{
 			"blocks": [
+				"metallurgy:mithril_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmithril",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:mithril_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockmithril",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
 				"metallurgy:orichalcum_ore",
 				100
 			],
@@ -2502,6 +4448,74 @@
 				"CONIFEROUS", "MEGA_TAIGA_TREES", "MEGA_TAIGA_SPRUCE_TREES", "HILLS", "RARE", "MOUNTAIN"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"metallurgy:orichalcum_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockorichalcum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
+		},
+		{
+			"blocks": [
+				"metallurgy:orichalcum_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockorichalcum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 3,
+			"size": 10,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.5
 		},
 		{
 			"blocks": [
@@ -2577,6 +4591,40 @@
 		},
 		{
 			"blocks": [
+				"pyrotech:dense_coal_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcoal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 2,
+			"chance": 4,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
 				"pyrotech:fossil_ore",
 				100
 			],
@@ -2603,6 +4651,40 @@
 				111,
 				14676,
 				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
+				"pyrotech:fossil_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockfossil",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 7,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
 				4,
 				7,
 				17
@@ -2683,6 +4765,74 @@
 		},
 		{
 			"blocks": [
+				"techguns:basicore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktitan",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 10,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"techguns:basicore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktitan",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 10,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"thaumcraft:ore_cinnabar",
 				100
 			],
@@ -2756,6 +4906,40 @@
 				"HOT", "SANDY", "MESA", "SAVANNA"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thaumcraft:ore_cinnabar",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcinnabar",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 246,
+			"chance": 10,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -2930,6 +5114,74 @@
 				"PLAINS", "SPARSE", "MESA"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:0",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcopper",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 10,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:0",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcopper",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 10,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
 		},
 		{
 			"blocks": [
@@ -3117,6 +5369,74 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklead",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:3",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklead",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"erebus:ore_lead",
 				100
 			],
@@ -3218,6 +5538,74 @@
 				"COLD", "HILLS", "MOUNTAIN"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocknickel",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 17,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:5",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocknickel",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 17,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -3391,6 +5779,74 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore:1",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktin",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:1",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktin",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"erebus:ore_tin",
 				100
 			],
@@ -3492,6 +5948,74 @@
 				"HOT", "JUNGLE", "LUSH"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:4",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockaluminium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 10,
+			"yMax": 50,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:4",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockaluminium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 206,
+			"yMax": 246,
+			"chance": 25,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -3599,6 +6123,74 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore_fluid:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockredstone",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore_fluid:2",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockredstone",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"thermalfoundation:ore:7",
 				100
 			],
@@ -3637,6 +6229,74 @@
 		},
 		{
 			"blocks": [
+				"thermalfoundation:ore:7",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockiridium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:7",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockiridium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"thermalfoundation:ore:6",
 				100
 			],
@@ -3672,6 +6332,74 @@
 				"HILLS", "MOUNTAIN"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:6",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockplatinum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore:6",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockplatinum",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -3777,6 +6505,40 @@
 		},
 		{
 			"blocks": [
+				"minecraft:coal_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcoal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 226,
+			"chance": 15,
+			"size": 300,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.005
+		},
+		{
+			"blocks": [
 				"erebus:ore_coal",
 				100
 			],
@@ -3837,6 +6599,40 @@
 				111,
 				14676,
 				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
+				"minecraft:iron_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockiron",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 30,
+			"yMax": 246,
+			"chance": 30,
+			"size": 250,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
 				4,
 				7,
 				17
@@ -3914,6 +6710,74 @@
 				"MESA", "SANDY", "HOT", "JUNGLE"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"minecraft:gold_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockgold",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"minecraft:gold_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockgold",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -4023,6 +6887,74 @@
 		},
 		{
 			"blocks": [
+				"minecraft:redstone_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockredstone",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"minecraft:redstone_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockredstone",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
 				"erebus:ore_redstone",
 				100
 			],
@@ -4126,6 +7058,74 @@
 				"SANDY", "HOT", "JUNGLE", "OCEAN", "OASIS", "WATER"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"minecraft:lapis_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklapis",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"minecraft:lapis_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklapis",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -4235,6 +7235,74 @@
 		},
 		{
 			"blocks": [
+				"minecraft:diamond_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdiamond",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"minecraft:diamond_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdiamond",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"erebus:ore_diamond",
 				100
 			],
@@ -4338,6 +7406,74 @@
 				"HILLS", "MOUNTAIN"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"minecraft:emerald_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockemerald",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"minecraft:emerald_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockemerald",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 216,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -4447,6 +7583,74 @@
 		},
 		{
 			"blocks": [
+				"ancientspellcraft:crystal_ore_fire",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockfirecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_fire",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockfirecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"ancientspellcraft:crystal_ore_earth",
 				100
 			],
@@ -4482,6 +7686,74 @@
 				"FOREST", "MAGICAL"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_earth",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockearthcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_earth",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockearthcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -4523,6 +7795,74 @@
 		},
 		{
 			"blocks": [
+				"ancientspellcraft:crystal_ore_healing",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockhealingcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_healing",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockhealingcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"ancientspellcraft:crystal_ore_ice",
 				100
 			],
@@ -4558,6 +7898,74 @@
 				"COLD", "MAGICAL"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_ice",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockicecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_ice",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockicecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
@@ -4599,6 +8007,74 @@
 		},
 		{
 			"blocks": [
+				"ancientspellcraft:crystal_ore_lightning",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklightningcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_lightning",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklightningcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"ancientspellcraft:crystal_ore_necromancy",
 				100
 			],
@@ -4637,6 +8113,74 @@
 		},
 		{
 			"blocks": [
+				"ancientspellcraft:crystal_ore_necromancy",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocknecromancycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_necromancy",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocknecromancycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"ancientspellcraft:crystal_ore_sorcery",
 				100
 			],
@@ -4672,6 +8216,74 @@
 				"PLAINS", "MAGICAL"
 			],
 			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_sorcery",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksorcerycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_sorcery",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksorcerycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
 		},
 		{
 			"blocks": [
