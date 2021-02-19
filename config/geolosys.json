@@ -3773,7 +3773,7 @@
 				7,
 				17
 			],
-			"density": 0.001
+			"density": 0.005
 		},
 		{
 			"blocks": [
@@ -3807,7 +3807,7 @@
 				7,
 				17
 			],
-			"density": 0.001
+			"density": 0.005
 		},
 		{
 			"blocks": [
@@ -4402,6 +4402,306 @@
 				14676,
 				10,
 				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_fire",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockfirecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"SANDY", "HOT", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_earth",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockearthcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"FOREST", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_healing",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockhealingcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"JUNGLE", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_ice",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockicecrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"COLD", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_lightning",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocklightningcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"HILLS", "MOUNTAIN", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_necromancy",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocknecromancycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"SWAMP", "SPOOKY", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:crystal_ore_sorcery",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocksorcerycrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"PLAINS", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"vs_world:valkyrium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockvalkyrium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 80,
+			"chance": 60,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
 				7,
 				17
 			],
