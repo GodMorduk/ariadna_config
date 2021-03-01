@@ -999,3 +999,165 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<industrialforegoing:fortune_addon>)
   .create();
+
+// 4 Tier
+
+// Black Hole Unit
+safeRemoveRecipe("industrialforegoing:black_hole_unit");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<enderio:item_alloy_ingot:8>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <enderio:item_alloy_ingot:8>],
+    [<thermalfoundation:material:359>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <thermalfoundation:material:359>],
+    [<minecraft:ender_eye>, <mekanism:basicblock:6>.withTag({tier: 3}), <ore:itemEnhancedMachineChassi>, <mekanism:basicblock:6>.withTag({tier: 3}), <minecraft:ender_eye>],
+    [<thermalfoundation:material:359>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <thermalfoundation:material:359>],
+    [<enderio:item_alloy_ingot:8>, <thermalfoundation:material:359>, <minecraft:ender_eye>, <thermalfoundation:material:359>, <enderio:item_alloy_ingot:8>]])
+  .setFluid(<liquid:ender> * 16000)
+  .setSecondaryIngredients([<mekanism:controlcircuit:3>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<artisanworktables:artisans_solderer_iron>, 175)
+  .addTool(<artisanworktables:artisans_spanner_iron>, 175)
+  .addTool(<artisanworktables:artisans_driver_iron>, 175)
+  .addOutput(<industrialforegoing:black_hole_unit>)
+  .create();
+
+// Mob Duplicator
+safeRemoveRecipe("industrialforegoing:mob_duplicator");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateEnderium>, null, null],
+    [<ore:plateEnderium>, <enderio:item_basic_capacitor:2>, <industrialforegoing:animal_growth_increaser>, <enderio:item_basic_capacitor:2>, <ore:plateEnderium>],
+    [<ore:alloyUltimate>, <ore:itemPrecientCrystal>, <ore:itemUnsouledMachineChassi>, <ore:itemPrecientCrystal>, <ore:alloyUltimate>],
+    [<ore:plateEnderium>, <techguns:itemshared:69>, <enderio:block_experience_obelisk>, <techguns:itemshared:69>, <ore:plateEnderium>],
+    [null, null, <ore:plateEnderium>, null, null]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<ore:artisansSolderer>, 250)
+  .addTool(<ore:artisansSpanner>, 250)
+  .addTool(<ore:artisansDriver>, 250)
+  .addOutput(<industrialforegoing:mob_duplicator>)
+  .create();
+
+// Black Hole Controller
+safeRemoveRecipe("industrialforegoing:black_hole_controller_reworked");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotEndSteel>, <thermalfoundation:glass_alloy:7>, <refinedstorage:controller>, <thermalfoundation:glass_alloy:7>, <ore:ingotEndSteel>],
+    [<ore:plateEnderium>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:black_hole_unit>, <industrialforegoing:pink_slime_ingot>, <ore:plateEnderium>],
+    [<refinedstorage:interface>, <thermalfoundation:material:295>, <enderio:item_material:54>, <thermalfoundation:material:295>, <refinedstorage:fluid_interface>],
+    [<ore:plateEnderium>, <storagedrawers:controller>, <minecraft:ender_chest>, <storagedrawers:controller>, <ore:plateEnderium>],
+    [<ore:ingotEndSteel>, <ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>, <ore:ingotEndSteel>]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <mekanism:controlcircuit:3>, <enderio:item_basic_capacitor:2> * 4, <techguns:itemshared:69> * 4])
+  .addTool(<ore:artisansSolderer>, 200)
+  .addTool(<ore:artisansSpanner>, 200)
+  .addTool(<ore:artisansDriver>, 200)
+  .addOutput(<industrialforegoing:black_hole_controller_reworked>)
+  .create();
+
+// Black Hole Tank
+safeRemoveRecipe("industrialforegoing:black_hole_tank");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotEndSteel>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <ore:ingotEndSteel>],
+    [<ore:plateEnderium>, <ore:itemEnderCrystal>, <mekanism:machineblock2:11>.withTag({tier: 3}), <ore:itemEnderCrystal>, <ore:plateEnderium>],
+    [<ore:pearlEnderEye>, <mekanism:machineblock2:11>.withTag({tier: 3}), <ore:itemEnhancedMachineChassi>, <mekanism:machineblock2:11>.withTag({tier: 3}), <ore:pearlEnderEye>],
+    [<ore:plateEnderium>, <ore:itemEnderCrystal>, <mekanism:machineblock2:11>.withTag({tier: 3}), <ore:itemEnderCrystal>, <ore:plateEnderium>],
+    [<ore:ingotEndSteel>, <ore:plateEnderium>, <ore:pearlEnderEye>, <ore:plateEnderium>, <ore:ingotEndSteel>]])
+  .setFluid(<liquid:ender> * 16000)
+  .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<ore:artisansSolderer>, 175)
+  .addTool(<ore:artisansSpanner>, 175)
+  .addTool(<ore:artisansDriver>, 175)
+  .addOutput(<industrialforegoing:black_hole_tank>)
+  .create();
+
+// Energy Field Provider
+safeRemoveRecipe("industrialforegoing:energy_field_provider");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotEndSteel>, <ore:plateEnderium>, <thermalfoundation:glass_alloy:7>, <ore:plateEnderium>, <ore:ingotEndSteel>],
+    [<ore:plateEnderium>, <ore:itemVibrantCrystal>, <industrialforegoing:energy_field_addon>, <ore:itemVibrantCrystal>, <ore:plateEnderium>],
+    [<thermalfoundation:glass_alloy:7>, <enderio:block_enhanced_wireless_charger>, <ore:itemEnhancedMachineChassi>, <enderio:block_enhanced_wireless_charger>, <thermalfoundation:glass_alloy:7>],
+    [<ore:plateEnderium>, <ore:itemVibrantCrystal>, <enderio:block_wireless_charger>, <ore:itemVibrantCrystal>, <ore:plateEnderium>],
+    [<ore:ingotEndSteel>, <ore:plateEnderium>, <thermalfoundation:glass_alloy:7>, <ore:plateEnderium>, <ore:ingotEndSteel>]])
+  .setFluid(<liquid:redstone> * 16000)
+  .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<ore:artisansSolderer>, 200)
+  .addTool(<ore:artisansSpanner>, 200)
+  .addTool(<ore:artisansDriver>, 200)
+  .addOutput(<industrialforegoing:energy_field_provider>)
+  .create();
+
+// Infinity Drill
+safeRemoveRecipe("industrialforegoing:infinity_drill_0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:alloyUltimate>, <industrialforegoing:range_addon:11>, <enderio:block_infinity:2>, <industrialforegoing:laser_drill>, <techguns:itemshared:142>],
+    [<ore:alloyUltimate>, <enderio:item_material:71>, <industrialforegoing:laser_drill>, <industrialforegoing:laser_base>, <industrialforegoing:laser_drill>],
+    [<enderio:item_material:71>, <industrialforegoing:pink_slime_ingot>, <thermalinnovation:drill:4>, <industrialforegoing:laser_drill>, <enderio:block_infinity:2>],
+    [<enderio:item_material:73>, <immersiveengineering:drill>.withTag({upgrades: {damage: 1, oiled: 1 as byte, speed: 2.0 as float, capacity: 2000}}), <industrialforegoing:black_hole_tank>, <industrialforegoing:pink_slime_ingot>, <mekanism:energycube>.withTag({tier: 3})],
+    [<techguns:miningdrill>.withTag({miningHead: 1}), <enderio:item_material:73>, <industrialforegoing:black_hole_controller_reworked>, <techguns:itemshared:130>, <ore:alloyUltimate>]])
+  .setFluid(<liquid:pyrotheum> * 16000)
+  .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<ore:artisansSolderer>, 500)
+  .addTool(<ore:artisansSpanner>, 500)
+  .addTool(<ore:artisansDriver>, 500)
+  .addOutput(<industrialforegoing:infinity_drill>.withTag({Energy: 0 as long, Fluid: {FluidName: "biofuel", Amount: 0}, Special: 0 as byte, Selected: "POOR"}))
+  .create();
+
+// Range Addon +10
+safeRemoveRecipe("industrialforegoing:range_addon_9");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<minecraft:diamond>, <thermalfoundation:material:26>, <minecraft:diamond>],
+    [<minecraft:diamond>, <artisanworktables:artisans_lens_diamond>, <minecraft:diamond>],
+    [<minecraft:diamond>, <thermalfoundation:material:26>, <minecraft:diamond>]])
+  .setSecondaryIngredients([<mekanism:controlcircuit:3>])
+  .addTool(<ore:artisansSolderer>, 150)
+  .addTool(<ore:artisansGemCutter>, 150)
+  .addTool(<ore:artisansGroover>, 150)
+  .addOutput(<industrialforegoing:range_addon:9>)
+  .create();
+
+// Range Addon +11
+safeRemoveRecipe("industrialforegoing:range_addon_10");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:platePlatinum>, <ore:gearPlatinum>, <ore:platePlatinum>],
+    [<ore:platePlatinum>, <artisanworktables:artisans_lens_platinum>, <ore:platePlatinum>],
+    [<ore:platePlatinum>, <ore:gearPlatinum>, <ore:platePlatinum>]])
+  .setSecondaryIngredients([<ore:circuitUltimate>])
+  .addTool(<ore:artisansSolderer>, 150)
+  .addTool(<ore:artisansDriver>, 150)
+  .addTool(<ore:artisansGroover>, 150)
+  .addOutput(<industrialforegoing:range_addon:10>)
+  .create();
+
+// Range Addon +12
+safeRemoveRecipe("industrialforegoing:range_addon_11");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gemEmerald>, <ore:gearEmerald>, <ore:gemEmerald>],
+    [<ore:gemEmerald>, <ore:itemVibrantCrystal>, <ore:gemEmerald>],
+    [<ore:gemEmerald>, <ore:gearEmerald>, <ore:gemEmerald>]])
+  .setSecondaryIngredients([<ore:circuitUltimate>])
+  .addTool(<ore:artisansSolderer>, 150)
+  .addTool(<ore:artisansGroover>, 150)
+  .addTool(<ore:artisansDriver>, 150)
+  .addOutput(<industrialforegoing:range_addon:11>)
+  .create();
+
+// Energy Field Addon
+safeRemoveRecipe("industrialforegoing:energy_field_addon");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>, <ore:itemCompressedRedstone>, <ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>],
+    [<ore:ingotRedstoneAlloy>, <industrialforegoing:pink_slime_ingot>, <enderio:block_enhanced_wireless_charger>, <industrialforegoing:pink_slime_ingot>, <ore:ingotRedstoneAlloy>],
+    [<ore:itemCompressedRedstone>, <ore:itemVibrantCrystal>, <industrialforegoing:range_addon:9>, <ore:itemVibrantCrystal>, <ore:itemCompressedRedstone>],
+    [<ore:ingotRedstoneAlloy>, <industrialforegoing:pink_slime_ingot>, <enderio:block_enhanced_wireless_charger>, <industrialforegoing:pink_slime_ingot>, <ore:ingotRedstoneAlloy>],
+    [<ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>, <ore:itemCompressedRedstone>, <ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>]])
+  .setFluid(<liquid:redstone> * 16000)
+  .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
+  .addTool(<ore:artisansSolderer>, 150)
+  .addTool(<ore:artisansSpanner>, 150)
+  .addTool(<ore:artisansDriver>, 150)
+  .addOutput(<industrialforegoing:energy_field_addon>)
+  .create();
