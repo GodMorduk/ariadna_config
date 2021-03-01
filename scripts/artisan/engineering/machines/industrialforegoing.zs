@@ -748,7 +748,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateSignalum>, <ore:plateObsidianSteel>, <ore:plateTitanium>, <ore:plateObsidianSteel>, <ore:plateSignalum>],
     [<ore:plateTitanium>, <ore:alloyElite>, <enderio:block_experience_obelisk>, <ore:alloyElite>, <ore:plateTitanium>],
     [<ore:plateObsidianSteel>, <industrialforegoing:fortune_addon>, <ore:itemEnhancedMachineChassi>, <industrialforegoing:fortune_addon>, <ore:plateObsidianSteel>],
-    [<ore:ingotDarkSteel>, <ore:gearLumium>, <thermalinnovation:drill:3>.withTag({Energy: 100000, Mode: 3}), <ore:gearLumium>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:gearLumium>, <thermalinnovation:drill:3>, <ore:gearLumium>, <ore:ingotDarkSteel>],
     [<ore:plateSignalum>, <ore:plateObsidianSteel>, <ore:ingotDarkSteel>, <ore:plateObsidianSteel>, <ore:plateSignalum>]])
   .setFluid(<liquid:xpjuice> * 16000)
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
@@ -779,9 +779,9 @@ safeRemoveRecipe("industrialforegoing:material_stonework_factory");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
-    [<ore:plateTitanium>, <ore:plateMithril>, <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:plateMithril>, <ore:plateTitanium>],
-    [null, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:itemEnhancedMachineChassi>, <thermalexpansion:machine:1>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [3, 1, 0, 2, 2, 2] as byte[] as byte[]}), null],
-    [<ore:ingotDarkSteel>, <ore:gearVibrant>, <thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:gearVibrant>, <ore:ingotDarkSteel>],
+    [<ore:plateTitanium>, <ore:plateMithril>, <thermalexpansion:machine>.withTag({Level: 3 as byte}), <ore:plateMithril>, <ore:plateTitanium>],
+    [null, <thermalexpansion:machine:11>.withTag({Level: 3 as byte}), <ore:itemEnhancedMachineChassi>, <thermalexpansion:machine:1>.withTag({Level: 3 as byte}), null],
+    [<ore:ingotDarkSteel>, <ore:gearVibrant>, <thermalexpansion:machine:15>.withTag({Level: 3 as byte}), <ore:gearVibrant>, <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])
   .setFluid(<liquid:lubricant> * 1000)
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
@@ -798,7 +798,7 @@ RecipeBuilder.get("engineer")
     [null, null, <ore:plateTitanium>, null, null],
     [<ore:plateTitanium>, <ore:plateLumium>, <enderio:block_experience_obelisk>, <ore:plateLumium>, <ore:plateTitanium>],
     [null, <ore:gearEmerald>, <enderio:item_material:54>, <ore:gearEmerald>, null],
-    [<ore:ingotDarkSteel>, <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <thermalexpansion:machine>.withTag({Level: 3 as byte}), <thermalexpansion:machine>.withTag({Level: 3 as byte}), <thermalexpansion:machine>.withTag({Level: 3 as byte}), <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
   .addTool(<ore:artisansSolderer>, 80)
