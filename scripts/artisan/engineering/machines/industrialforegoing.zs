@@ -151,7 +151,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateIron>, <industrialforegoing:plastic>, <ore:plateIron>],
     [<ore:gearIron>, <minecraft:dispenser>, <ore:gearIron>],
     [<ore:plateIron>, <industrialforegoing:conveyor>, <ore:plateIron>]])
-  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansDriver>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade>)
   .create();
 
@@ -162,7 +162,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateCopper>, <industrialforegoing:plastic>, <ore:plateCopper>],
     [<ore:gearCopper>, <minecraft:dropper>, <ore:gearCopper>],
     [<ore:plateCopper>, <industrialforegoing:conveyor>, <ore:plateCopper>]])
-  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansDriver>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:1>)
   .create();
 
@@ -173,7 +173,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateSilver>, <minecraft:light_weighted_pressure_plate>, <ore:plateSilver>],
     [<ore:gearSilver>, <minecraft:comparator>, <ore:gearSilver>],
     [<ore:plateSilver>, <industrialforegoing:conveyor>, <ore:plateSilver>]])
-  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansDriver>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:2>)
   .create();
 
@@ -184,7 +184,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateAluminum>, <ore:blockSlime>, <ore:plateAluminum>],
     [<ore:gearAluminum>, <ore:craftingPiston>, <ore:gearAluminum>],
     [<ore:plateAluminum>, <industrialforegoing:conveyor>, <ore:plateAluminum>]])
-  .addTool(<ore:artisansTrowel>, 15)
+  .addTool(<ore:artisansTrowel>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:3>)
   .create();
 
@@ -195,7 +195,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateLead>, <immersiveengineering:metal_decoration1_slab:1>, <ore:plateLead>],
     [<ore:gearLead>, <minecraft:dropper>, <ore:gearLead>],
     [<ore:plateLead>, <industrialforegoing:conveyor>, <ore:plateLead>]])
-  .addTool(<ore:artisansFile>, 15)
+  .addTool(<ore:artisansFile>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:4>)
   .create();
 
@@ -206,7 +206,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateSilver>, <minecraft:chorus_fruit>, <ore:plateSilver>],
     [<ore:gearSilver>, <ore:pearlEnderEye>, <ore:gearSilver>],
     [<ore:plateSilver>, <industrialforegoing:conveyor>, <ore:plateSilver>]])
-  .addTool(<ore:artisansCompass>, 15)
+  .addTool(<ore:artisansCompass>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:5>)
   .create();
 
@@ -217,7 +217,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateTin>, <industrialforegoing:conveyor>, <ore:plateTin>],
     [<ore:gearTin>, <minecraft:hopper>, <ore:gearTin>],
     [<ore:plateTin>, <industrialforegoing:conveyor>, <ore:plateTin>]])
-  .addTool(<ore:artisansSpanner>, 15)
+  .addTool(<ore:artisansSpanner>, 5)
   .addOutput(<industrialforegoing:conveyor_upgrade:6>)
   .create();
 
@@ -261,7 +261,7 @@ RecipeBuilder.get("engineer")
     [<industrialforegoing:plastic>, <thermalfoundation:material:259>, <industrialforegoing:plastic>],
     [<thermaldynamics:duct_32>, <thermaldynamics:servo>, <thermaldynamics:duct_32>],
     [<industrialforegoing:plastic>, <thermalfoundation:material:259>, <industrialforegoing:plastic>]])
-  .addTool(<ore:artisansSolderer>, 15)
+  .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<industrialforegoing:itemstack_transfer_addon_pull>)
   .create();
 
@@ -272,7 +272,7 @@ RecipeBuilder.get("engineer")
     [<industrialforegoing:plastic>, <ore:gearCopper>, <industrialforegoing:plastic>],
     [<thermaldynamics:duct_32>, <thermaldynamics:servo>, <thermaldynamics:duct_32>],
     [<industrialforegoing:plastic>, <ore:gearCopper>, <industrialforegoing:plastic>]])
-  .addTool(<ore:artisansSolderer>, 15)
+  .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<industrialforegoing:itemstack_transfer_addon_push>)
   .create();
 
@@ -283,7 +283,7 @@ RecipeBuilder.get("engineer")
     [<industrialforegoing:plastic>, <ore:gearSilver>, <industrialforegoing:plastic>],
     [<thermaldynamics:duct_16>, <thermaldynamics:servo>, <thermaldynamics:duct_16>],
     [<industrialforegoing:plastic>, <ore:gearSilver>, <industrialforegoing:plastic>]])
-  .addTool(<ore:artisansSolderer>, 15)
+  .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<industrialforegoing:fluid_transfer_addon_pull>)
   .create();
 
@@ -294,18 +294,18 @@ RecipeBuilder.get("engineer")
     [<industrialforegoing:plastic>, <ore:gearNickel>, <industrialforegoing:plastic>],
     [<thermaldynamics:duct_16>, <thermaldynamics:servo>, <thermaldynamics:duct_16>],
     [<industrialforegoing:plastic>, <ore:gearNickel>, <industrialforegoing:plastic>]])
-  .addTool(<ore:artisansSolderer>, 15)
+  .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<industrialforegoing:fluid_transfer_addon_push>)
   .create();
 
 // White Conveyor Belt
-safeRemoveRecipe("industrialforegoing:conveyor_0_white");
+safeRemoveRecipe("industrialforegoing:conveyor_0");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>],
     [<ore:plateIron>, <thermalfoundation:material:512>, <ore:plateIron>],
     [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>]])
-  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansDriver>, 5)
   .addOutput(<industrialforegoing:conveyor> * 4)
   .create();
 
@@ -583,47 +583,6 @@ RecipeBuilder.get("engineer")
   .addOutput(<industrialforegoing:protein_generator>)
   .create();
 
-// Hydrator
-safeRemoveRecipe("industrialforegoing:hydrator");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateSteel>, <industrialforegoing:block_placer>, <ore:plateSteel>],
-    [<ore:gearElectrum>, <mekanism:basicblock:8>, <ore:gearElectrum>],
-    [<industrialforegoing:fluid_transfer_addon_push>, <industrialforegoing:fluid_pump>, <industrialforegoing:fluid_transfer_addon_push>]])
-  .setSecondaryIngredients([<industrialforegoing:plastic> * 16, <immersiveengineering:material:27> * 2, <ore:circuitAdvanced>, <ore:itemChassiParts>])
-  .addTool(<ore:artisansSpanner>, 40)
-  .addTool(<ore:artisansDriver>, 40)
-  .addOutput(<industrialforegoing:hydrator>)
-  .create();
-
-// Wither Builder
-safeRemoveRecipe("industrialforegoing:wither_builder");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<techguns:itemshared:51>, <minecraft:nether_star>, <techguns:itemshared:51>],
-    [<enderio:item_material:12>, <mekanism:basicblock:8>, <enderio:item_material:12>],
-    [<industrialforegoing:block_placer>, <industrialforegoing:block_placer>, <industrialforegoing:block_placer>]])
-  .setFluid(<liquid:lubricant> * 100)
-  .setSecondaryIngredients([<industrialforegoing:plastic> * 16, <immersiveengineering:material:27> * 2, <mekanism:controlcircuit:1>, <enderio:item_material:2>])
-  .addTool(<ore:artisansDriver>, 40)
-  .addTool(<ore:artisansSpanner>, 40)
-  .addOutput(<industrialforegoing:wither_builder>)
-  .create();
-
-// Plant Interactor
-safeRemoveRecipe("industrialforegoing:plant_interactor");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateGold>, <industrialforegoing:crop_recolector>, <ore:plateGold>],
-    [<ore:gearSteel>, <mekanism:basicblock:8>, <ore:gearSteel>],
-    [<techguns:itemshared:59>, <ore:itemPulsatingCrystal>, <techguns:itemshared:59>]])
-  .setFluid(<liquid:lubricant> * 100)
-  .setSecondaryIngredients([<industrialforegoing:plastic> * 16, <immersiveengineering:material:27> * 2, <ore:circuitAdvanced>, <ore:itemChassiParts>])
-  .addTool(<ore:artisansSolderer>, 40)
-  .addTool(<ore:artisansDriver>, 40)
-  .addOutput(<industrialforegoing:plant_interactor>)
-  .create();
-
 // Meat Feeder
 safeRemoveRecipe("industrialforegoing:meat_feeder");
 RecipeBuilder.get("engineer")
@@ -711,4 +670,332 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSolderer>, 30)
   .addTool(<ore:artisansDriver>, 30)
   .addOutput(<industrialforegoing:leaf_shearing>)
+  .create();
+
+// 3 Tier
+
+// Petrified Fuel Generator
+safeRemoveRecipe("industrialforegoing:petrified_fuel_generator");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateMithril>, <enderio:item_basic_capacitor:1>, <ore:plateMithril>, <ore:plateTitanium>],
+    [null, <ore:gearSignalum>, <ore:itemEnhancedMachineChassi>, <ore:gearSignalum>, null],
+    [<enderio:item_alloy_ingot:6>, <ore:plateMithril>, <industrialforegoing:lava_fabricator>, <ore:plateMithril>, <enderio:item_alloy_ingot:6>],
+    [null, null, <enderio:item_alloy_ingot:6>, null, null]])
+  .setFluid(<liquid:lubricant> * 1000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
+  .addTool(<ore:artisansSolderer>, 60)
+  .addTool(<ore:artisansSpanner>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addOutput(<industrialforegoing:petrified_fuel_generator>)
+  .create();
+
+// Plant Fertilizer
+safeRemoveRecipe("industrialforegoing:crop_enrich_material_injector");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateLumium>, <enderio:item_basic_capacitor:1>, <ore:plateLumium>, <ore:plateTitanium>],
+    [null, <ore:gearMithril>, <ore:itemEnhancedMachineChassi>, <ore:gearMithril>, null],
+    [<ore:ingotDarkSteel>, <ore:plateLumium>, <industrialforegoing:crop_sower>, <ore:plateLumium>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <enderio:item_material:68>])
+  .addTool(<ore:artisansSolderer>, 60)
+  .addTool(<ore:artisansSpanner>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addOutput(<industrialforegoing:crop_enrich_material_injector>)
+  .create();
+
+// Laser Base
+safeRemoveRecipe("industrialforegoing:laser_base");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:alloyElite>, <ore:plateEnderium>, <ore:plateTitanium>, <ore:plateEnderium>, <ore:alloyElite>],
+    [<ore:plateTitanium>, <industrialforegoing:pink_slime_ingot>, <ore:itemPulsatingCrystal>, <industrialforegoing:pink_slime_ingot>, <ore:plateTitanium>],
+    [<ore:plateEnderium>, <ore:gearDiamond>, <ore:itemVibrantCrystal>, <ore:gearDiamond>, <ore:plateEnderium>],
+    [<ore:ingotDarkSteel>, <ore:gearEnderium>, <enderio:item_material:54>, <ore:gearEnderium>, <ore:ingotDarkSteel>],
+    [<ore:alloyElite>, <ore:plateEnderium>, <ore:ingotDarkSteel>, <ore:plateEnderium>, <ore:alloyElite>]])
+  .setFluid(<liquid:glowstone> * 16000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansGemCutter>, 100)
+  .addTool(<ore:artisansDriver>, 100)
+  .addOutput(<industrialforegoing:laser_base>)
+  .create();
+
+// Laser Drill
+safeRemoveRecipe("industrialforegoing:laser_drill");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:alloyElite>, <ore:plateEnderium>, <ore:plateTitanium>, <ore:plateEnderium>, <ore:alloyElite>],
+    [<ore:plateTitanium>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:laser_lens>, <industrialforegoing:pink_slime_ingot>, <ore:plateTitanium>],
+    [<ore:plateEnderium>, <ore:gearVibrant>, <enderio:item_material:14>, <ore:gearVibrant>, <ore:plateEnderium>],
+    [<ore:ingotDarkSteel>, <ore:gearEmerald>, <enderio:item_material:54>, <ore:gearEmerald>, <ore:ingotDarkSteel>],
+    [<ore:alloyElite>, <ore:plateEnderium>, <ore:ingotDarkSteel>, <ore:plateEnderium>, <ore:alloyElite>]])
+  .setFluid(<liquid:glowstone> * 16000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <enderio:item_material:68>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansGroover>, 100)
+  .addTool(<ore:artisansSolderer>, 100)
+  .addOutput(<industrialforegoing:laser_drill>)
+  .create();
+
+// Ore Processor
+safeRemoveRecipe("industrialforegoing:ore_processor");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSignalum>, <ore:plateObsidianSteel>, <ore:plateTitanium>, <ore:plateObsidianSteel>, <ore:plateSignalum>],
+    [<ore:plateTitanium>, <ore:alloyElite>, <enderio:block_experience_obelisk>, <ore:alloyElite>, <ore:plateTitanium>],
+    [<ore:plateObsidianSteel>, <industrialforegoing:fortune_addon>, <ore:itemEnhancedMachineChassi>, <industrialforegoing:fortune_addon>, <ore:plateObsidianSteel>],
+    [<ore:ingotDarkSteel>, <ore:gearLumium>, <thermalinnovation:drill:3>.withTag({Energy: 100000, Mode: 3}), <ore:gearLumium>, <ore:ingotDarkSteel>],
+    [<ore:plateSignalum>, <ore:plateObsidianSteel>, <ore:ingotDarkSteel>, <ore:plateObsidianSteel>, <ore:plateSignalum>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:ore_processor>)
+  .create();
+
+// Animal Grower
+safeRemoveRecipe("industrialforegoing:animal_growth_increaser");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateSignalum>, <industrialforegoing:animal_stock_increaser>, <ore:plateSignalum>, <ore:plateTitanium>],
+    [null, <ore:gearLumium>, <ore:itemEnhancedMachineChassi>, <ore:gearLumium>, null],
+    [<enderio:item_alloy_ingot:6>, <ore:plateSignalum>, <industrialforegoing:animal_resource_harvester>, <ore:plateSignalum>, <enderio:item_alloy_ingot:6>],
+    [null, null, <enderio:item_alloy_ingot:6>, null, null]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
+  .addTool(<ore:artisansSolderer>, 60)
+  .addTool(<ore:artisansSpanner>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addOutput(<industrialforegoing:animal_growth_increaser>)
+  .create();
+
+// Material StoneWork Factory
+safeRemoveRecipe("industrialforegoing:material_stonework_factory");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateMithril>, <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:plateMithril>, <ore:plateTitanium>],
+    [null, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:itemEnhancedMachineChassi>, <thermalexpansion:machine:1>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [3, 1, 0, 2, 2, 2] as byte[] as byte[]}), null],
+    [<ore:ingotDarkSteel>, <ore:gearVibrant>, <thermalexpansion:machine:15>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:gearVibrant>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setFluid(<liquid:lubricant> * 1000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:material_stonework_factory>)
+  .create();
+
+// Resourceful Furnace
+safeRemoveRecipe("industrialforegoing:resourceful_furnace");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateLumium>, <enderio:block_experience_obelisk>, <ore:plateLumium>, <ore:plateTitanium>],
+    [null, <ore:gearEmerald>, <enderio:item_material:54>, <ore:gearEmerald>, null],
+    [<ore:ingotDarkSteel>, <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 3 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:resourceful_furnace>)
+  .create();
+
+// Hydrator
+safeRemoveRecipe("industrialforegoing:hydrator");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateEnderium>, <industrialforegoing:water_condensator>, <ore:plateEnderium>, <ore:plateTitanium>],
+    [null, <ore:gearDiamond>, <ore:itemEnhancedMachineChassi>, <ore:gearDiamond>, null],
+    [<ore:ingotDarkSteel>, <industrialforegoing:fluid_transfer_addon_push>, <industrialforegoing:crop_enrich_material_injector>, <industrialforegoing:fluid_transfer_addon_push>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:hydrator>)
+  .create();
+
+// Wither Builder
+safeRemoveRecipe("industrialforegoing:wither_builder");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateObsidianSteel>, <ore:plateEnderium>, <ore:netherStar>, <ore:plateEnderium>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <industrialforegoing:block_placer>, <industrialforegoing:block_placer>, <industrialforegoing:block_placer>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <industrialforegoing:block_placer>, <industrialforegoing:block_placer>, <industrialforegoing:block_placer>, <ore:plateObsidianSteel>],
+    [<enderio:item_alloy_ingot:6>, <ore:gearVibrant>, <industrialforegoing:block_placer>, <ore:gearVibrant>, <enderio:item_alloy_ingot:6>],
+    [<enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>, <ore:itemEnhancedMachineChassi>, <enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>]])
+  .setFluid(<liquid:lubricant> * 1000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addTool(<ore:artisansDriver>, 100)
+  .addOutput(<industrialforegoing:wither_builder>)
+  .create();
+
+// Plant Interactor
+safeRemoveRecipe("industrialforegoing:plant_interactor");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <enderio:item_basic_capacitor:1>, <industrialforegoing:crop_recolector>, <enderio:item_basic_capacitor:1>, <ore:plateTitanium>],
+    [null, <ore:gearVibrant>, <ore:itemEnhancedMachineChassi>, <ore:gearVibrant>, null],
+    [<ore:ingotDarkSteel>, <industrialforegoing:pink_slime_ingot>, <ore:itemPulsatingCrystal>, <industrialforegoing:pink_slime_ingot>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setFluid(<liquid:lubricant> * 4000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 1)
+  .addTool(<ore:artisansSpanner>, 1)
+  .addTool(<ore:artisansDriver>, 1)
+  .addOutput(<industrialforegoing:plant_interactor>)
+  .create();
+
+// Washing Factory
+safeRemoveRecipe("industrialforegoing:ore_washer");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateLumium>, <industrialforegoing:meat_feeder>, <ore:plateLumium>, <ore:plateTitanium>],
+    [null, <ore:gearMithril>, <ore:itemEnhancedMachineChassi>, <ore:gearMithril>, null],
+    [<ore:ingotDarkSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:conveyor_upgrade:6>, <industrialforegoing:pink_slime_ingot>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setFluid(<liquid:meat> * 4000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:ore_washer>)
+  .create();
+
+// Fermentation Station
+safeRemoveRecipe("industrialforegoing:ore_fermenter");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateMithril>, <industrialforegoing:animal_growth_increaser>, <ore:plateMithril>, <ore:plateTitanium>],
+    [null, <ore:gearSignalum>, <ore:itemEnhancedMachineChassi>, <ore:gearSignalum>, null],
+    [<ore:ingotDarkSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:crop_enrich_material_injector>, <industrialforegoing:pink_slime_ingot>, <ore:ingotDarkSteel>],
+    [null, null, <ore:ingotDarkSteel>, null, null]])
+  .setFluid(<liquid:nutrient_distillation> * 4000)
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:ore_fermenter>)
+  .create();
+
+// Fluid Sieving Machine
+safeRemoveRecipe("industrialforegoing:ore_sieve");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateTitanium>, null, null],
+    [<ore:plateTitanium>, <ore:plateObsidianSteel>, <ore:slimeballPink>, <ore:plateObsidianSteel>, <ore:plateTitanium>],
+    [null, <ore:gearEnderium>, <ore:itemEnhancedMachineChassi>, <ore:gearEnderium>, null],
+    [<enderio:item_alloy_ingot:6>, <industrialforegoing:pink_slime_ingot>, <enderio:item_basic_capacitor:1>, <industrialforegoing:pink_slime_ingot>, <enderio:item_alloy_ingot:6>],
+    [null, null, <enderio:item_alloy_ingot:6>, null, null]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
+  .addTool(<ore:artisansSolderer>, 80)
+  .addTool(<ore:artisansSpanner>, 80)
+  .addTool(<ore:artisansDriver>, 80)
+  .addOutput(<industrialforegoing:ore_sieve>)
+  .create();
+
+// Laser Lens
+val glassPaneDef = <minecraft:stained_glass_pane>.definition;
+var lensDef = <industrialforegoing:laser_lens>.definition;
+for i in 0 to 15 {
+  safeRemoveRecipe("industrialforegoing:laser_lens_" + i);
+  RecipeBuilder.get("engineer")
+    .setShaped([
+      [null, null, <ore:slimeballPink>, null, null],
+      [null, <industrialforegoing:pink_slime_ingot>, <ore:itemVibrantCrystal>, <industrialforegoing:pink_slime_ingot>, null],
+      [<ore:slimeballPink>, <ore:itemPulsatingCrystal>, glassPaneDef.makeStack(i), <ore:itemPulsatingCrystal>, <ore:slimeballPink>],
+      [null, <industrialforegoing:pink_slime_ingot>, <ore:itemVibrantCrystal>, <industrialforegoing:pink_slime_ingot>, null],
+      [null, null, <ore:slimeballPink>, null, null]])
+    .setSecondaryIngredients([<enderio:item_material:33> * 32])
+    .addTool(<ore:artisansGemCutter>, 100)
+    .addTool(<ore:artisansCompass>, 100)
+    .addTool(<ore:artisansGroover>, 100)
+    .addOutput(lensDef.makeStack(i))
+    .create();
+}
+
+// Laser Lens (Inverted)
+var invLensDef = <industrialforegoing:laser_lens_inverted>.definition;
+for i in 0 to 15 {
+  safeRemoveRecipe("industrialforegoing:laser_lens_inverted_" + i);
+  RecipeBuilder.get("engineer")
+    .setShaped([
+      [<industrialforegoing:pink_slime_ingot>, <ore:plateSignalum>, <industrialforegoing:pink_slime_ingot>],
+      [<ore:plateSignalum>, glassPaneDef.makeStack(i), <ore:plateSignalum>],
+      [<industrialforegoing:pink_slime_ingot>, <ore:plateSignalum>, <industrialforegoing:pink_slime_ingot>]])
+    .setSecondaryIngredients([<ore:dustNetherQuartz> * 32])
+    .addTool(<ore:artisansGemCutter>, 60)
+    .addTool(<ore:artisansCompass>, 60)
+    .addTool(<ore:artisansGroover>, 60)
+    .addOutput(invLensDef.makeStack(i))
+    .create();
+}
+
+// Range Addon + 7
+safeRemoveRecipe("industrialforegoing:range_addon_6");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSilver>, <ore:gearSilver>, <ore:plateSilver>],
+    [<ore:plateSilver>, <artisanworktables:artisans_lens_silver>, <ore:plateSilver>],
+    [<ore:plateSilver>, <ore:gearSilver>, <ore:plateSilver>]])
+  .setSecondaryIngredients([<techguns:itemshared:66>])
+  .addTool(<ore:artisansSolderer>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addTool(<ore:artisansGroover>, 60)
+  .addOutput(<industrialforegoing:range_addon:6>)
+  .create();
+
+// Range Addon + 8
+safeRemoveRecipe("industrialforegoing:range_addon_7");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateGold>, <ore:gearGold>, <ore:plateGold>],
+    [<ore:plateGold>, <artisanworktables:artisans_lens_gold>, <ore:plateGold>],
+    [<ore:plateGold>, <ore:gearGold>, <ore:plateGold>]])
+  .setSecondaryIngredients([<techguns:itemshared:66>])
+  .addTool(<ore:artisansSolderer>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addTool(<ore:artisansGroover>, 60)
+  .addOutput(<industrialforegoing:range_addon:7>)
+  .create();
+
+// Range Addon + 9
+safeRemoveRecipe("industrialforegoing:range_addon_8");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gemQuartz>, <ore:blockQuartz>, <ore:gemQuartz>],
+    [<refinedstorage:quartz_enriched_iron>, <ore:fusedQuartz>, <refinedstorage:quartz_enriched_iron>],
+    [<ore:gemQuartz>, <ore:blockQuartz>, <ore:gemQuartz>]])
+  .setSecondaryIngredients([<techguns:itemshared:66>])
+  .addTool(<ore:artisansGemCutter>, 60)
+  .addTool(<ore:artisansGroover>, 60)
+  .addTool(<ore:artisansDriver>, 60)
+  .addOutput(<industrialforegoing:range_addon:8>)
+  .create();
+
+// Fortune Addon
+safeRemoveRecipe("industrialforegoing:fortune_addon");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemPulsatingCrystal>, <ore:itemVibrantCrystal>, <ore:itemPulsatingCrystal>],
+    [<ore:gearEmerald>, <industrialforegoing:pink_slime_ingot>, <ore:gearEmerald>],
+    [<ore:itemPulsatingCrystal>, <ore:itemVibrantCrystal>, <ore:itemPulsatingCrystal>]])
+  .setSecondaryIngredients([<industrialforegoing:plastic> * 16, <techguns:itemshared:66>, <mekanism:controlcircuit:2>])
+  .addTool(<ore:artisansSolderer>, 100)
+  .addTool(<ore:artisansGemCutter>, 100)
+  .addTool(<ore:artisansDriver>, 100)
+  .addOutput(<industrialforegoing:fortune_addon>)
   .create();
