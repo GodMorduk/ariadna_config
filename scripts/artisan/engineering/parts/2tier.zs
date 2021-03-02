@@ -1,5 +1,21 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.remove(<thermalfoundation:material:22>);
+recipes.remove(<thermalfoundation:material:23>);
+recipes.removeByRecipeName("thermalfoundation:material_62");
+recipes.removeByRecipeName("thermalfoundation:material_78");
+recipes.removeByRecipeName("thermalfoundation:material_77");
+recipes.removeByRecipeName("thermalfoundation:material_76");
+recipes.removeByRecipeName("thermalfoundation:material_75");
+recipes.removeByRecipeName("thermalfoundation:material_71");
+recipes.removeByRecipeName("thermalfoundation:material_72");
+recipes.removeByRecipeName("thermalfoundation:material_74");
+
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:33>, <minecraft:gold_ingot>, <immersiveengineering:mold>, 3000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:356>, <thermalfoundation:material:164>, <immersiveengineering:mold>, 3000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:352>, <thermalfoundation:material:160>, <immersiveengineering:mold>, 3000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:353>, <thermalfoundation:material:161>, <immersiveengineering:mold>, 3000);
+
 recipes.removeByRecipeName("enderio:gear_energized");
 RecipeBuilder.get("engineer")
   .setShaped([

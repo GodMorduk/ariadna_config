@@ -1,5 +1,12 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByRecipeName("thermalfoundation:material_81");
+recipes.removeByRecipeName("thermalfoundation:material_79");
+recipes.removeByRecipeName("thermalfoundation:material_80");
+recipes.removeByRecipeName("thermalfoundation:material_73");
+recipes.removeByRecipeName("thermalfoundation:material_64");
+recipes.removeByRecipeName("thermalfoundation:material_63");
+
 recipes.removeByRecipeName("enderio:gear_vibrant");
 RecipeBuilder.get("engineer")
   .setShaped([
