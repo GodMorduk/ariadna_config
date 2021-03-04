@@ -22,13 +22,13 @@ recipes.removeByRecipeName("techguns:itemshared_38_ironbarrel");
 recipes.removeByRecipeName("techguns:itemshared_37_stonebarrel");
 recipes.removeByRecipeName("techguns:itemshared_33_ironreceiver");
 recipes.removeByRecipeName("techguns:itemshared_60_heavycloth");
-
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:32>, <minecraft:iron_ingot>, <immersiveengineering:mold>, 3000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:320>, <thermalfoundation:material:128>, <immersiveengineering:mold>, 3000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:322>, <thermalfoundation:material:130>, <immersiveengineering:mold>, 3000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>, <thermalfoundation:material:132>, <immersiveengineering:mold>, 3000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <thermalfoundation:material:131>, <immersiveengineering:mold>, 3000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <thermalfoundation:material:133>, <immersiveengineering:mold>, 3000);
+ 
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:32>, <minecraft:iron_ingot>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:320>, <thermalfoundation:material:128>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:322>, <thermalfoundation:material:130>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>, <thermalfoundation:material:132>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <thermalfoundation:material:131>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <thermalfoundation:material:133>, <immersiveengineering:mold>, 8000);
 
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotIron>, <ore:ingotIron>])
@@ -52,7 +52,7 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotSteel>, <ore:ingotSteel>])
-  .addTool(<ore:artisansHammer>, 1)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:material:2>)
   .setExtraOutputOne(<immersiveengineering:material:2>, 0.15)
   .create();
@@ -195,9 +195,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("techguns:itemshared_68_coil");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <ore:wireCopper>, <ore:stickIron>],
-    [<ore:wireCopper>, <ore:stickIron>, <ore:wireCopper>],
-    [<ore:stickIron>, <ore:wireCopper>, null]])
+    [null, <immersiveengineering:wirecoil>, <ore:stickIron>],
+    [<immersiveengineering:wirecoil>, <ore:stickIron>, <immersiveengineering:wirecoil>],
+    [<ore:stickIron>, <immersiveengineering:wirecoil>, null]])
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<techguns:itemshared:68>)
   .create();
@@ -217,7 +217,7 @@ MetalPress.removeRecipe(<techguns:itemshared:62>);
 MetalPress.addRecipe("ingotCopper", "ingotCopper", <techguns:itemshared:62>, 4, true);
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:plateCopper>])
-  .addTool(<artisanworktables:artisans_cutters_iron>, 5)
+  .addTool(<ore:artisansCutters>, 5)
   .addOutput(<techguns:itemshared:62>)
   .setExtraOutputOne(<techguns:itemshared:62>, 0.2)
   .create();
@@ -244,14 +244,26 @@ RecipeBuilder.get("engineer")
     [<ore:dustRedstone>, <ore:oc:materialCircuitBoardPrinted>, <ore:dustRedstone>],
     [<ore:wireCopper>, <refinedstorage:processor:3>, <ore:wireCopper>]])
   .addTool(<ore:artisansSolderer>, 10)
-  .addOutput(<techguns:itemshared:65> * 3)
+  .addOutput(<techguns:itemshared:65>)
   .create();
 
 recipes.removeByRecipeName("refinedstorage:processor_binding");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:string>, <techguns:itemshared:61>, <ore:string>]])
+  .addTool(<ore:artisansBeaker>, 5)
   .addOutput(<refinedstorage:processor_binding> * 4)
+  .create();
+
+recipes.removeByRecipeName("techguns:itemshared_61_biomass");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>],
+    [<enderio:item_material:48>, <ore:blockSlime>, <enderio:item_material:48>],
+    [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>]])
+  .setFluid(<liquid:water> * 1000)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<techguns:itemshared:61>)
   .create();
 
 recipes.removeByRecipeName("refinedstorage:raw_basic_processor");
@@ -266,9 +278,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalfoundation:material_84");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <ore:wireCopper>, <ore:dustRedstone>],
-    [<ore:wireCopper>, <ore:ingotSilver>, <ore:wireCopper>],
-    [<ore:dustRedstone>, <ore:wireCopper>, null]])
+    [null, <immersiveengineering:wirecoil>, <ore:dustRedstone>],
+    [<immersiveengineering:wirecoil>, <ore:ingotSilver>, <immersiveengineering:wirecoil>],
+    [<ore:dustRedstone>, <immersiveengineering:wirecoil>, null]])
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<thermalfoundation:material:514>)
   .create();
@@ -276,9 +288,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalfoundation:material_83");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <ore:wireCopper>, <ore:dustRedstone>],
-    [<ore:wireCopper>, <ore:ingotGold>, <ore:wireCopper>],
-    [<ore:dustRedstone>, <ore:wireCopper>, null]])
+    [null, <immersiveengineering:wirecoil>, <ore:dustRedstone>],
+    [<immersiveengineering:wirecoil>, <ore:ingotGold>, <immersiveengineering:wirecoil>],
+    [<ore:dustRedstone>, <immersiveengineering:wirecoil>, null]])
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<thermalfoundation:material:513>)
   .create();
@@ -295,9 +307,7 @@ RecipeBuilder.get("engineer")
 
 recipes.removeByRecipeName("enderio:photovoltaic_powder");
 RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:dustLapis>, <ore:dustCoal>],
-    [<ore:itemSilicon>, null]])
+  .setShapeless([<ore:dustLapis>, <ore:dustCoal>, <ore:itemSilicon>])
   .addTool(<ore:artisansMortar>, 5)
   .addOutput(<enderio:item_material:38>)
   .create();
