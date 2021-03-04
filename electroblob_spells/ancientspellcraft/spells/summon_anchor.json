@@ -1,0 +1,25 @@
+{
+    "enabled": {
+        "book": true,
+        "scroll": true,
+        "wands": true,
+        "npcs": true,
+        "dispensers": true,
+        "commands": true,
+        "treasure": true,
+        "trades": true,
+        "looting": true
+    },
+    "tier": "advanced",
+    "element": "necromancy",
+    "type": "alteration",
+    "cost": 35,
+    "chargeup": 40,
+    "cooldown": 400,
+    "base_properties": {
+        "blast_radius": 6,
+        "duration": 600,
+        "health": 2,
+        "max_affected_entities": 6
+    }
+}

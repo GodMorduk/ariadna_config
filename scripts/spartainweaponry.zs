@@ -1,966 +1,649 @@
-recipes.removeByRecipeName("spartanweaponry:arrow_diamond");
-recipes.removeByRecipeName("spartanweaponry:arrow_iron");
-recipes.removeByRecipeName("spartanweaponry:arrow_wood");
-recipes.removeByRecipeName("spartanweaponry:battleaxe_diamond");
-recipes.removeByRecipeName("spartanweaponry:battleaxe_gold");
-recipes.removeByRecipeName("spartanweaponry:battleaxe_iron");
-recipes.removeByRecipeName("spartanweaponry:battleaxe_stone");
-recipes.removeByRecipeName("spartanweaponry:battleaxe_wood");
-recipes.removeByRecipeName("spartanweaponry:bolt");
-recipes.removeByRecipeName("spartanweaponry:bolt_diamond");
-recipes.removeByRecipeName("spartanweaponry:boomerang_diamond");
-recipes.removeByRecipeName("spartanweaponry:boomerang_gold");
-recipes.removeByRecipeName("spartanweaponry:boomerang_iron");
-recipes.removeByRecipeName("spartanweaponry:boomerang_stone");
-recipes.removeByRecipeName("spartanweaponry:boomerang_wood");
-recipes.removeByRecipeName("spartanweaponry:caestus");
-recipes.removeByRecipeName("spartanweaponry:caestus_studded");
-recipes.removeByRecipeName("spartanweaponry:club_studded");
-recipes.removeByRecipeName("spartanweaponry:club_wood");
-recipes.removeByRecipeName("spartanweaponry:crossbow_diamond");
-recipes.removeByRecipeName("spartanweaponry:crossbow_iron");
-recipes.removeByRecipeName("spartanweaponry:crossbow_leather");
-recipes.removeByRecipeName("spartanweaponry:crossbow_wood");
-recipes.removeByRecipeName("spartanweaponry:dagger_diamond");
-recipes.removeByRecipeName("spartanweaponry:dagger_gold");
-recipes.removeByRecipeName("spartanweaponry:dagger_iron");
-recipes.removeByRecipeName("spartanweaponry:dagger_stone");
-recipes.removeByRecipeName("spartanweaponry:dagger_wood");
-recipes.removeByRecipeName("spartanweaponry:dynamite");
-recipes.removeByRecipeName("spartanweaponry:explosive_charge");
-recipes.removeByRecipeName("spartanweaponry:glaive_diamond");
-recipes.removeByRecipeName("spartanweaponry:glaive_gold");
-recipes.removeByRecipeName("spartanweaponry:glaive_iron");
-recipes.removeByRecipeName("spartanweaponry:glaive_stone");
-recipes.removeByRecipeName("spartanweaponry:glaive_wood");
-recipes.removeByRecipeName("spartanweaponry:greatsword_diamond");
-recipes.removeByRecipeName("spartanweaponry:greatsword_gold");
-recipes.removeByRecipeName("spartanweaponry:greatsword_iron");
-recipes.removeByRecipeName("spartanweaponry:greatsword_stone");
-recipes.removeByRecipeName("spartanweaponry:greatsword_wood");
-recipes.removeByRecipeName("spartanweaponry:halberd_diamond");
-recipes.removeByRecipeName("spartanweaponry:halberd_gold");
-recipes.removeByRecipeName("spartanweaponry:halberd_iron");
-recipes.removeByRecipeName("spartanweaponry:halberd_stone");
-recipes.removeByRecipeName("spartanweaponry:halberd_wood");
-recipes.removeByRecipeName("spartanweaponry:hammer_diamond");
-recipes.removeByRecipeName("spartanweaponry:hammer_gold");
-recipes.removeByRecipeName("spartanweaponry:hammer_iron");
-recipes.removeByRecipeName("spartanweaponry:hammer_stone");
-recipes.removeByRecipeName("spartanweaponry:hammer_wood");
-recipes.removeByRecipeName("spartanweaponry:handle_string");
-recipes.removeByRecipeName("spartanweaponry:javelin_diamond");
-recipes.removeByRecipeName("spartanweaponry:javelin_gold");
-recipes.removeByRecipeName("spartanweaponry:javelin_iron");
-recipes.removeByRecipeName("spartanweaponry:javelin_stone");
-recipes.removeByRecipeName("spartanweaponry:javelin_wood");
-recipes.removeByRecipeName("spartanweaponry:katana_diamond");
-recipes.removeByRecipeName("spartanweaponry:katana_gold");
-recipes.removeByRecipeName("spartanweaponry:katana_iron");
-recipes.removeByRecipeName("spartanweaponry:katana_stone");
-recipes.removeByRecipeName("spartanweaponry:katana_wood");
-recipes.removeByRecipeName("spartanweaponry:lance_diamond");
-recipes.removeByRecipeName("spartanweaponry:lance_gold");
-recipes.removeByRecipeName("spartanweaponry:lance_iron");
-recipes.removeByRecipeName("spartanweaponry:lance_stone");
-recipes.removeByRecipeName("spartanweaponry:lance_wood");
-recipes.removeByRecipeName("spartanweaponry:longbow_diamond");
-recipes.removeByRecipeName("spartanweaponry:longbow_iron");
-recipes.removeByRecipeName("spartanweaponry:longbow_leather");
-recipes.removeByRecipeName("spartanweaponry:longbow_wood");
-recipes.removeByRecipeName("spartanweaponry:longsword_diamond");
-recipes.removeByRecipeName("spartanweaponry:longsword_gold");
-recipes.removeByRecipeName("spartanweaponry:longsword_iron");
-recipes.removeByRecipeName("spartanweaponry:longsword_stone");
-recipes.removeByRecipeName("spartanweaponry:longsword_wood");
-recipes.removeByRecipeName("spartanweaponry:mace_diamond");
-recipes.removeByRecipeName("spartanweaponry:mace_gold");
-recipes.removeByRecipeName("spartanweaponry:mace_iron");
-recipes.removeByRecipeName("spartanweaponry:mace_stone");
-recipes.removeByRecipeName("spartanweaponry:mace_wood");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/battleaxe_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/boomerang_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/crossbow_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/dagger_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/glaive_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/greatsword_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/halberd_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/hammer_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/javelin_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/katana_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/lance_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/longbow_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/longsword_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/mace_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/pike_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/quarterstaff_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/rapier_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/saber_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/spear_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_axe_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/throwing_knife_tin");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_bronze");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_copper");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_electrum");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_invar");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_lead");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_nickel");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_platinum");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_silver");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_steel");
-recipes.removeByRecipeName("spartanweaponry:modded/warhammer_tin");
-recipes.removeByRecipeName("spartanweaponry:pike_diamond");
-recipes.removeByRecipeName("spartanweaponry:pike_gold");
-recipes.removeByRecipeName("spartanweaponry:pike_iron");
-recipes.removeByRecipeName("spartanweaponry:pike_stone");
-recipes.removeByRecipeName("spartanweaponry:pike_wood");
-recipes.removeByRecipeName("spartanweaponry:pole_leather");
-recipes.removeByRecipeName("spartanweaponry:pole_string");
-recipes.removeByRecipeName("spartanweaponry:pole_wool");
-recipes.removeByRecipeName("spartanweaponry:quarterstaff_diamond");
-recipes.removeByRecipeName("spartanweaponry:quarterstaff_gold");
-recipes.removeByRecipeName("spartanweaponry:quarterstaff_iron");
-recipes.removeByRecipeName("spartanweaponry:quarterstaff_stone");
-recipes.removeByRecipeName("spartanweaponry:quarterstaff_wood");
-recipes.removeByRecipeName("spartanweaponry:quiver_arrow");
-recipes.removeByRecipeName("spartanweaponry:quiver_arrow_heavy");
-recipes.removeByRecipeName("spartanweaponry:quiver_arrow_moderate");
-recipes.removeByRecipeName("spartanweaponry:quiver_bolt");
-recipes.removeByRecipeName("spartanweaponry:quiver_bolt_heavy");
-recipes.removeByRecipeName("spartanweaponry:quiver_bolt_moderate");
-recipes.removeByRecipeName("spartanweaponry:rapier_diamond");
-recipes.removeByRecipeName("spartanweaponry:rapier_gold");
-recipes.removeByRecipeName("spartanweaponry:rapier_iron");
-recipes.removeByRecipeName("spartanweaponry:rapier_stone");
-recipes.removeByRecipeName("spartanweaponry:rapier_wood");
-recipes.removeByRecipeName("spartanweaponry:saber_diamond");
-recipes.removeByRecipeName("spartanweaponry:saber_gold");
-recipes.removeByRecipeName("spartanweaponry:saber_iron");
-recipes.removeByRecipeName("spartanweaponry:saber_stone");
-recipes.removeByRecipeName("spartanweaponry:saber_wood");
-recipes.removeByRecipeName("spartanweaponry:spear_diamond");
-recipes.removeByRecipeName("spartanweaponry:spear_gold");
-recipes.removeByRecipeName("spartanweaponry:spear_iron");
-recipes.removeByRecipeName("spartanweaponry:spear_stone");
-recipes.removeByRecipeName("spartanweaponry:spear_wood");
-recipes.removeByRecipeName("spartanweaponry:throwing_axe_diamond");
-recipes.removeByRecipeName("spartanweaponry:throwing_axe_gold");
-recipes.removeByRecipeName("spartanweaponry:throwing_axe_iron");
-recipes.removeByRecipeName("spartanweaponry:throwing_axe_stone");
-recipes.removeByRecipeName("spartanweaponry:throwing_axe_wood");
-recipes.removeByRecipeName("spartanweaponry:throwing_knife_diamond");
-recipes.removeByRecipeName("spartanweaponry:throwing_knife_gold");
-recipes.removeByRecipeName("spartanweaponry:throwing_knife_iron");
-recipes.removeByRecipeName("spartanweaponry:throwing_knife_stone");
-recipes.removeByRecipeName("spartanweaponry:throwing_knife_wood");
-recipes.removeByRecipeName("spartanweaponry:warhammer_diamond");
-recipes.removeByRecipeName("spartanweaponry:warhammer_gold");
-recipes.removeByRecipeName("spartanweaponry:warhammer_iron");
-recipes.removeByRecipeName("spartanweaponry:warhammer_stone");
-recipes.removeByRecipeName("spartanweaponry:warhammer_wood");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:battleaxe_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:boomerang_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_limb_dreamwood");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:crossbow_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:dagger_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:glaive_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:greatsword_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:halberd_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:hammer_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_dreamwood_string");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_livingwood_string");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:javelin_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:katana_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:lance_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:longbow_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:longsword_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:mace_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:pike_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_dreamwood_leather");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_dreamwood_string");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_dreamwood_wool");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_livingwood_leather");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_livingwood_string");
-recipes.removeByRecipeName("spartanweaponryarcana:pole_livingwood_wool");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:quarterstaff_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:rapier_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:saber_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:spear_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_axe_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:throwing_knife_voidmetal");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_dawnstone");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_elementium");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_manasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_terrasteel");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_thaumium");
-recipes.removeByRecipeName("spartanweaponryarcana:warhammer_voidmetal");
-recipes.removeByRecipeName("spartanweaponry:arrow_explosive");
-recipes.removeByRecipeName("spartanweaponry:arrow_wood_tipped");
-recipes.removeByRecipeName("spartanweaponry:handle_leather");
-recipes.removeByRecipeName("spartanweaponry:handle_wool");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_dreamwood_leather");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_dreamwood_wool");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_livingwood_leather");
-recipes.removeByRecipeName("spartanweaponryarcana:handle_livingwood_wool");
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.addShaped("arrow_diamond", <spartanweaponry:arrow_diamond> * 4, [[null, <ore:gemDiamond>, null], [null, <ore:stickWood>, null], [null, <ore:feather>, null]]);
-recipes.addShaped("arrow_iron", <spartanweaponry:arrow_iron> * 4, [[null, <ore:blockIron>, null], [null, <ore:stickWood>, null], [null, <ore:feather>, null]]);
-recipes.addShaped("arrow_wood", <spartanweaponry:arrow_wood> * 4, [[null, <ore:plankWood>, null], [null, <ore:stickWood>, null], [null, <ore:feather>, null]]);
-recipes.addShaped("battleaxe_diamond", <spartanweaponry:battleaxe_diamond>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:stickWood>, <ore:gemDiamond>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_gold", <spartanweaponry:battleaxe_gold>, [[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>], [<ore:blockGold>, <ore:stickWood>, <ore:blockGold>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_iron", <spartanweaponry:battleaxe_iron>, [[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>], [<ore:blockIron>, <ore:stickWood>, <ore:blockIron>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_wood", <spartanweaponry:battleaxe_wood>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, <ore:stickWood>, <ore:plankWood>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("bolt", <spartanweaponry:bolt> * 4, [[null, null, <ore:blockIron>], [null, <ore:nuggetIron>, null], [<ore:feather>, null, null]]);
-recipes.addShaped("bolt_diamond", <spartanweaponry:bolt_diamond> * 4, [[null, null, <ore:gemDiamond>], [null, <ore:nuggetIron>, null], [<ore:feather>, null, null]]);
-recipes.addShaped("boomerang_diamond", <spartanweaponry:boomerang_diamond>, [[<ore:gemDiamond>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_gold", <spartanweaponry:boomerang_gold>, [[<ore:blockGold>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_iron", <spartanweaponry:boomerang_iron>, [[<ore:blockIron>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_wood", <spartanweaponry:boomerang_wood>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-
-recipes.addShaped("club_studded", <spartanweaponry:club_studded>, [[<ore:blockIron>], [<spartanweaponry:club_wood>]]);
-recipes.addShaped("club_wood", <spartanweaponry:club_wood>, [[null, <ore:logWood>], [<ore:logWood>, null]]);
-recipes.addShaped("crossbow_diamond", <spartanweaponry:crossbow_diamond>, [[<minecraft:bow>, <ore:string>, <ore:gemDiamond>], [<ore:string>, <ore:logWood>, null], [<ore:gemDiamond>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_iron", <spartanweaponry:crossbow_iron>, [[<minecraft:bow>, <ore:string>, <ore:blockIron>], [<ore:string>, <ore:logWood>, null], [<ore:blockIron>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_leather", <spartanweaponry:crossbow_leather>, [[<minecraft:bow>, <ore:string>, <ore:leather>], [<ore:string>, <ore:logWood>, null], [<ore:leather>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_wood", <spartanweaponry:crossbow_wood>, [[<minecraft:bow>, <ore:string>, <ore:plankWood>], [<ore:string>, <ore:logWood>, null], [<ore:plankWood>, null, <spartanweaponry:material>]]);
-recipes.addShaped("dagger_diamond", <spartanweaponry:dagger_diamond>, [[<ore:gemDiamond>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_gold", <spartanweaponry:dagger_gold>, [[<ore:blockGold>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_iron", <spartanweaponry:dagger_iron>, [[<ore:blockIron>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_wood", <spartanweaponry:dagger_wood>, [[<ore:plankWood>], [<spartanweaponry:material>]]);
-recipes.addShaped("dynamite", <spartanweaponry:dynamite> * 2, [[null, null, <ore:string>], [null, <spartanweaponry:material:2>, null], [<spartanweaponry:material:2>, null, null]]);
-recipes.addShaped("explosive_charge", <spartanweaponry:material:2> * 4, [[<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>]]);
-recipes.addShaped("glaive_diamond", <spartanweaponry:glaive_diamond>, [[null, <ore:gemDiamond>], [null, <ore:gemDiamond>], [<ore:gemDiamond>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_gold", <spartanweaponry:glaive_gold>, [[null, <ore:blockGold>], [null, <ore:blockGold>], [<ore:blockGold>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_iron", <spartanweaponry:glaive_iron>, [[null, <ore:blockIron>], [null, <ore:blockIron>], [<ore:blockIron>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_wood", <spartanweaponry:glaive_wood>, [[null, <ore:plankWood>], [null, <ore:plankWood>], [<ore:plankWood>, <spartanweaponry:material:1>]]);
-recipes.addShaped("greatsword_diamond", <spartanweaponry:greatsword_diamond>, [[null, <ore:gemDiamond>, null], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <spartanweaponry:material>, <ore:gemDiamond>]]);
-recipes.addShaped("greatsword_gold", <spartanweaponry:greatsword_gold>, [[null, <ore:blockGold>, null], [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>], [<ore:blockGold>, <spartanweaponry:material>, <ore:blockGold>]]);
-recipes.addShaped("greatsword_iron", <spartanweaponry:greatsword_iron>, [[null, <ore:blockIron>, null], [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>], [<ore:blockIron>, <spartanweaponry:material>, <ore:blockIron>]]);
-recipes.addShaped("greatsword_wood", <spartanweaponry:greatsword_wood>, [[null, <ore:plankWood>, null], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, <spartanweaponry:material>, <ore:plankWood>]]);
-recipes.addShaped("halberd_diamond", <spartanweaponry:halberd_diamond>, [[null, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_gold", <spartanweaponry:halberd_gold>, [[null, <ore:blockGold>], [<ore:blockGold>, <ore:blockGold>], [<ore:blockGold>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_iron", <spartanweaponry:halberd_iron>, [[null, <ore:blockIron>], [<ore:blockIron>, <ore:blockIron>], [<ore:blockIron>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_wood", <spartanweaponry:halberd_wood>, [[null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, <spartanweaponry:material:1>]]);
-recipes.addShaped("hammer_diamond", <spartanweaponry:hammer_diamond>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_gold", <spartanweaponry:hammer_gold>, [[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>], [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_iron", <spartanweaponry:hammer_iron>, [[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>], [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_wood", <spartanweaponry:hammer_wood>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("handle_string", <spartanweaponry:material>, [[<ore:stickWood>, <ore:string>]]);
-recipes.addShaped("javelin_diamond", <spartanweaponry:javelin_diamond>, [[<spartanweaponry:material:1>, <ore:gemDiamond>]]);
-recipes.addShaped("javelin_gold", <spartanweaponry:javelin_gold>, [[<spartanweaponry:material:1>, <ore:blockGold>]]);
-recipes.addShaped("javelin_iron", <spartanweaponry:javelin_iron>, [[<spartanweaponry:material:1>, <ore:blockIron>]]);
-recipes.addShaped("javelin_wood", <spartanweaponry:javelin_wood>, [[<spartanweaponry:material:1>, <ore:plankWood>]]);
-recipes.addShaped("katana_diamond", <spartanweaponry:katana_diamond>, [[null, null, <ore:gemDiamond>], [null, <ore:gemDiamond>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_gold", <spartanweaponry:katana_gold>, [[null, null, <ore:blockGold>], [null, <ore:blockGold>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_iron", <spartanweaponry:katana_iron>, [[null, null, <ore:blockIron>], [null, <ore:blockIron>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_wood", <spartanweaponry:katana_wood>, [[null, null, <ore:plankWood>], [null, <ore:plankWood>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("lance_diamond", <spartanweaponry:lance_diamond>, [[<ore:gemDiamond>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_gold", <spartanweaponry:lance_gold>, [[<ore:blockGold>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_iron", <spartanweaponry:lance_iron>, [[<ore:blockIron>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_wood", <spartanweaponry:lance_wood>, [[<ore:plankWood>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("longbow_diamond", <spartanweaponry:longbow_diamond>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:gemDiamond>], [<ore:stickWood>, null, <ore:string>], [<ore:gemDiamond>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_iron", <spartanweaponry:longbow_iron>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockIron>], [<ore:stickWood>, null, <ore:string>], [<ore:blockIron>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_leather", <spartanweaponry:longbow_leather>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:leather>], [<ore:stickWood>, null, <ore:string>], [<ore:leather>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_wood", <spartanweaponry:longbow_wood>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:plankWood>], [<ore:stickWood>, null, <ore:string>], [<ore:plankWood>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longsword_diamond", <spartanweaponry:longsword_diamond>, [[null, <ore:gemDiamond>, null], [null, <ore:gemDiamond>, null], [<ore:gemDiamond>, <spartanweaponry:material>, <ore:gemDiamond>]]);
-recipes.addShaped("longsword_gold", <spartanweaponry:longsword_gold>, [[null, <ore:blockGold>, null], [null, <ore:blockGold>, null], [<ore:blockGold>, <spartanweaponry:material>, <ore:blockGold>]]);
-recipes.addShaped("longsword_iron", <spartanweaponry:longsword_iron>, [[null, <ore:blockIron>, null], [null, <ore:blockIron>, null], [<ore:blockIron>, <spartanweaponry:material>, <ore:blockIron>]]);
-recipes.addShaped("longsword_wood", <spartanweaponry:longsword_wood>, [[null, <ore:plankWood>, null], [null, <ore:plankWood>, null], [<ore:plankWood>, <spartanweaponry:material>, <ore:plankWood>]]);
-recipes.addShaped("mace_diamond", <spartanweaponry:mace_diamond>, [[null, <ore:gemDiamond>, <ore:gemDiamond>], [null, <ore:stickWood>, <ore:gemDiamond>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_gold", <spartanweaponry:mace_gold>, [[null, <ore:blockGold>, <ore:blockGold>], [null, <ore:stickWood>, <ore:blockGold>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_iron", <spartanweaponry:mace_iron>, [[null, <ore:blockIron>, <ore:blockIron>], [null, <ore:stickWood>, <ore:blockIron>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_wood", <spartanweaponry:mace_wood>, [[null, <ore:plankWood>, <ore:plankWood>], [null, <ore:stickWood>, <ore:plankWood>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("battleaxe_bronze", <spartanweaponry:battleaxe_bronze>, [[<ore:blockBronze>, <ore:blockBronze>, <ore:blockBronze>], [<ore:blockBronze>, <ore:stickWood>, <ore:blockBronze>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_copper", <spartanweaponry:battleaxe_copper>, [[<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>], [<ore:blockCopper>, <ore:stickWood>, <ore:blockCopper>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_electrum", <spartanweaponry:battleaxe_electrum>, [[<ore:blockElectrum>, <ore:blockElectrum>, <ore:blockElectrum>], [<ore:blockElectrum>, <ore:stickWood>, <ore:blockElectrum>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_invar", <spartanweaponry:battleaxe_invar>, [[<ore:blockInvar>, <ore:blockInvar>, <ore:blockInvar>], [<ore:blockInvar>, <ore:stickWood>, <ore:blockInvar>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_lead", <spartanweaponry:battleaxe_lead>, [[<ore:blockLead>, <ore:blockLead>, <ore:blockLead>], [<ore:blockLead>, <ore:stickWood>, <ore:blockLead>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_nickel", <spartanweaponry:battleaxe_nickel>, [[<ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>], [<ore:blockNickel>, <ore:stickWood>, <ore:blockNickel>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_platinum", <spartanweaponry:battleaxe_platinum>, [[<ore:blockPlatinum>, <ore:blockPlatinum>, <ore:blockPlatinum>], [<ore:blockPlatinum>, <ore:stickWood>, <ore:blockPlatinum>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_silver", <spartanweaponry:battleaxe_silver>, [[<ore:blockSilver>, <ore:blockSilver>, <ore:blockSilver>], [<ore:blockSilver>, <ore:stickWood>, <ore:blockSilver>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_steel", <spartanweaponry:battleaxe_steel>, [[<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<ore:blockSteel>, <ore:stickWood>, <ore:blockSteel>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_tin", <spartanweaponry:battleaxe_tin>, [[<ore:blockTin>, <ore:blockTin>, <ore:blockTin>], [<ore:blockTin>, <ore:stickWood>, <ore:blockTin>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("boomerang_bronze", <spartanweaponry:boomerang_bronze>, [[<ore:blockBronze>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_copper", <spartanweaponry:boomerang_copper>, [[<ore:blockCopper>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_electrum", <spartanweaponry:boomerang_electrum>, [[<ore:blockElectrum>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_invar", <spartanweaponry:boomerang_invar>, [[<ore:blockInvar>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_lead", <spartanweaponry:boomerang_lead>, [[<ore:blockLead>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_nickel", <spartanweaponry:boomerang_nickel>, [[<ore:blockNickel>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_platinum", <spartanweaponry:boomerang_platinum>, [[<ore:blockPlatinum>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_silver", <spartanweaponry:boomerang_silver>, [[<ore:blockSilver>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_steel", <spartanweaponry:boomerang_steel>, [[<ore:blockSteel>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_tin", <spartanweaponry:boomerang_tin>, [[<ore:blockTin>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("crossbow_bronze", <spartanweaponry:crossbow_bronze>, [[<minecraft:bow>, <ore:string>, <ore:blockBronze>], [<ore:string>, <ore:logWood>, null], [<ore:blockBronze>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_copper", <spartanweaponry:crossbow_copper>, [[<minecraft:bow>, <ore:string>, <ore:blockCopper>], [<ore:string>, <ore:logWood>, null], [<ore:blockCopper>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_electrum", <spartanweaponry:crossbow_electrum>, [[<minecraft:bow>, <ore:string>, <ore:blockElectrum>], [<ore:string>, <ore:logWood>, null], [<ore:blockElectrum>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_invar", <spartanweaponry:crossbow_invar>, [[<minecraft:bow>, <ore:string>, <ore:blockInvar>], [<ore:string>, <ore:logWood>, null], [<ore:blockInvar>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_lead", <spartanweaponry:crossbow_lead>, [[<minecraft:bow>, <ore:string>, <ore:blockLead>], [<ore:string>, <ore:logWood>, null], [<ore:blockLead>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_nickel", <spartanweaponry:crossbow_nickel>, [[<minecraft:bow>, <ore:string>, <ore:blockNickel>], [<ore:string>, <ore:logWood>, null], [<ore:blockNickel>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_platinum", <spartanweaponry:crossbow_platinum>, [[<minecraft:bow>, <ore:string>, <ore:blockPlatinum>], [<ore:string>, <ore:logWood>, null], [<ore:blockPlatinum>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_silver", <spartanweaponry:crossbow_silver>, [[<minecraft:bow>, <ore:string>, <ore:blockSilver>], [<ore:string>, <ore:logWood>, null], [<ore:blockSilver>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_steel", <spartanweaponry:crossbow_steel>, [[<minecraft:bow>, <ore:string>, <ore:blockSteel>], [<ore:string>, <ore:logWood>, null], [<ore:blockSteel>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_tin", <spartanweaponry:crossbow_tin>, [[<minecraft:bow>, <ore:string>, <ore:blockTin>], [<ore:string>, <ore:logWood>, null], [<ore:blockTin>, null, <spartanweaponry:material>]]);
-recipes.addShaped("dagger_bronze", <spartanweaponry:dagger_bronze>, [[<ore:blockBronze>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_copper", <spartanweaponry:dagger_copper>, [[<ore:blockCopper>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_electrum", <spartanweaponry:dagger_electrum>, [[<ore:blockElectrum>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_invar", <spartanweaponry:dagger_invar>, [[<ore:blockInvar>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_lead", <spartanweaponry:dagger_lead>, [[<ore:blockLead>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_nickel", <spartanweaponry:dagger_nickel>, [[<ore:blockNickel>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_platinum", <spartanweaponry:dagger_platinum>, [[<ore:blockPlatinum>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_silver", <spartanweaponry:dagger_silver>, [[<ore:blockSilver>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_steel", <spartanweaponry:dagger_steel>, [[<ore:blockSteel>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_tin", <spartanweaponry:dagger_tin>, [[<ore:blockTin>], [<spartanweaponry:material>]]);
-recipes.addShaped("glaive_bronze", <spartanweaponry:glaive_bronze>, [[null, <ore:blockBronze>], [null, <ore:blockBronze>], [<ore:blockBronze>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_copper", <spartanweaponry:glaive_copper>, [[null, <ore:blockCopper>], [null, <ore:blockCopper>], [<ore:blockCopper>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_electrum", <spartanweaponry:glaive_electrum>, [[null, <ore:blockElectrum>], [null, <ore:blockElectrum>], [<ore:blockElectrum>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_invar", <spartanweaponry:glaive_invar>, [[null, <ore:blockInvar>], [null, <ore:blockInvar>], [<ore:blockInvar>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_lead", <spartanweaponry:glaive_lead>, [[null, <ore:blockLead>], [null, <ore:blockLead>], [<ore:blockLead>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_nickel", <spartanweaponry:glaive_nickel>, [[null, <ore:blockNickel>], [null, <ore:blockNickel>], [<ore:blockNickel>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_platinum", <spartanweaponry:glaive_platinum>, [[null, <ore:blockPlatinum>], [null, <ore:blockPlatinum>], [<ore:blockPlatinum>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_silver", <spartanweaponry:glaive_silver>, [[null, <ore:blockSilver>], [null, <ore:blockSilver>], [<ore:blockSilver>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_steel", <spartanweaponry:glaive_steel>, [[null, <ore:blockSteel>], [null, <ore:blockSteel>], [<ore:blockSteel>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_tin", <spartanweaponry:glaive_tin>, [[null, <ore:blockTin>], [null, <ore:blockTin>], [<ore:blockTin>, <spartanweaponry:material:1>]]);
-recipes.addShaped("greatsword_bronze", <spartanweaponry:greatsword_bronze>, [[null, <ore:blockBronze>, null], [<ore:blockBronze>, <ore:blockBronze>, <ore:blockBronze>], [<ore:blockBronze>, <spartanweaponry:material>, <ore:blockBronze>]]);
-recipes.addShaped("greatsword_copper", <spartanweaponry:greatsword_copper>, [[null, <ore:blockCopper>, null], [<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>], [<ore:blockCopper>, <spartanweaponry:material>, <ore:blockCopper>]]);
-recipes.addShaped("greatsword_electrum", <spartanweaponry:greatsword_electrum>, [[null, <ore:blockElectrum>, null], [<ore:blockElectrum>, <ore:blockElectrum>, <ore:blockElectrum>], [<ore:blockElectrum>, <spartanweaponry:material>, <ore:blockElectrum>]]);
-recipes.addShaped("greatsword_invar", <spartanweaponry:greatsword_invar>, [[null, <ore:blockInvar>, null], [<ore:blockInvar>, <ore:blockInvar>, <ore:blockInvar>], [<ore:blockInvar>, <spartanweaponry:material>, <ore:blockInvar>]]);
-recipes.addShaped("greatsword_lead", <spartanweaponry:greatsword_lead>, [[null, <ore:blockLead>, null], [<ore:blockLead>, <ore:blockLead>, <ore:blockLead>], [<ore:blockLead>, <spartanweaponry:material>, <ore:blockLead>]]);
-recipes.addShaped("greatsword_nickel", <spartanweaponry:greatsword_nickel>, [[null, <ore:blockNickel>, null], [<ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>], [<ore:blockNickel>, <spartanweaponry:material>, <ore:blockNickel>]]);
-recipes.addShaped("greatsword_platinum", <spartanweaponry:greatsword_platinum>, [[null, <ore:blockPlatinum>, null], [<ore:blockPlatinum>, <ore:blockPlatinum>, <ore:blockPlatinum>], [<ore:blockPlatinum>, <spartanweaponry:material>, <ore:blockPlatinum>]]);
-recipes.addShaped("greatsword_silver", <spartanweaponry:greatsword_silver>, [[null, <ore:blockSilver>, null], [<ore:blockSilver>, <ore:blockSilver>, <ore:blockSilver>], [<ore:blockSilver>, <spartanweaponry:material>, <ore:blockSilver>]]);
-recipes.addShaped("greatsword_steel", <spartanweaponry:greatsword_steel>, [[null, <ore:blockSteel>, null], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<ore:blockSteel>, <spartanweaponry:material>, <ore:blockSteel>]]);
-recipes.addShaped("greatsword_tin", <spartanweaponry:greatsword_tin>, [[null, <ore:blockTin>, null], [<ore:blockTin>, <ore:blockTin>, <ore:blockTin>], [<ore:blockTin>, <spartanweaponry:material>, <ore:blockTin>]]);
-recipes.addShaped("halberd_bronze", <spartanweaponry:halberd_bronze>, [[null, <ore:blockBronze>], [<ore:blockBronze>, <ore:blockBronze>], [<ore:blockBronze>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_copper", <spartanweaponry:halberd_copper>, [[null, <ore:blockCopper>], [<ore:blockCopper>, <ore:blockCopper>], [<ore:blockCopper>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_electrum", <spartanweaponry:halberd_electrum>, [[null, <ore:blockElectrum>], [<ore:blockElectrum>, <ore:blockElectrum>], [<ore:blockElectrum>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_invar", <spartanweaponry:halberd_invar>, [[null, <ore:blockInvar>], [<ore:blockInvar>, <ore:blockInvar>], [<ore:blockInvar>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_lead", <spartanweaponry:halberd_lead>, [[null, <ore:blockLead>], [<ore:blockLead>, <ore:blockLead>], [<ore:blockLead>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_nickel", <spartanweaponry:halberd_nickel>, [[null, <ore:blockNickel>], [<ore:blockNickel>, <ore:blockNickel>], [<ore:blockNickel>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_platinum", <spartanweaponry:halberd_platinum>, [[null, <ore:blockPlatinum>], [<ore:blockPlatinum>, <ore:blockPlatinum>], [<ore:blockPlatinum>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_silver", <spartanweaponry:halberd_silver>, [[null, <ore:blockSilver>], [<ore:blockSilver>, <ore:blockSilver>], [<ore:blockSilver>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_steel", <spartanweaponry:halberd_steel>, [[null, <ore:blockSteel>], [<ore:blockSteel>, <ore:blockSteel>], [<ore:blockSteel>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_tin", <spartanweaponry:halberd_tin>, [[null, <ore:blockTin>], [<ore:blockTin>, <ore:blockTin>], [<ore:blockTin>, <spartanweaponry:material:1>]]);
-recipes.addShaped("hammer_bronze", <spartanweaponry:hammer_bronze>, [[<ore:blockBronze>, <ore:blockBronze>, <ore:blockBronze>], [<ore:blockBronze>, <ore:blockBronze>, <ore:blockBronze>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_copper", <spartanweaponry:hammer_copper>, [[<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>], [<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_electrum", <spartanweaponry:hammer_electrum>, [[<ore:blockElectrum>, <ore:blockElectrum>, <ore:blockElectrum>], [<ore:blockElectrum>, <ore:blockElectrum>, <ore:blockElectrum>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_invar", <spartanweaponry:hammer_invar>, [[<ore:blockInvar>, <ore:blockInvar>, <ore:blockInvar>], [<ore:blockInvar>, <ore:blockInvar>, <ore:blockInvar>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_lead", <spartanweaponry:hammer_lead>, [[<ore:blockLead>, <ore:blockLead>, <ore:blockLead>], [<ore:blockLead>, <ore:blockLead>, <ore:blockLead>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_nickel", <spartanweaponry:hammer_nickel>, [[<ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>], [<ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_platinum", <spartanweaponry:hammer_platinum>, [[<ore:blockPlatinum>, <ore:blockPlatinum>, <ore:blockPlatinum>], [<ore:blockPlatinum>, <ore:blockPlatinum>, <ore:blockPlatinum>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_silver", <spartanweaponry:hammer_silver>, [[<ore:blockSilver>, <ore:blockSilver>, <ore:blockSilver>], [<ore:blockSilver>, <ore:blockSilver>, <ore:blockSilver>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_steel", <spartanweaponry:hammer_steel>, [[<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_tin", <spartanweaponry:hammer_tin>, [[<ore:blockTin>, <ore:blockTin>, <ore:blockTin>], [<ore:blockTin>, <ore:blockTin>, <ore:blockTin>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("javelin_bronze", <spartanweaponry:javelin_bronze>, [[<spartanweaponry:material:1>, <ore:blockBronze>]]);
-recipes.addShaped("javelin_copper", <spartanweaponry:javelin_copper>, [[<spartanweaponry:material:1>, <ore:blockCopper>]]);
-recipes.addShaped("javelin_electrum", <spartanweaponry:javelin_electrum>, [[<spartanweaponry:material:1>, <ore:blockElectrum>]]);
-recipes.addShaped("javelin_invar", <spartanweaponry:javelin_invar>, [[<spartanweaponry:material:1>, <ore:blockInvar>]]);
-recipes.addShaped("javelin_lead", <spartanweaponry:javelin_lead>, [[<spartanweaponry:material:1>, <ore:blockLead>]]);
-recipes.addShaped("javelin_nickel", <spartanweaponry:javelin_nickel>, [[<spartanweaponry:material:1>, <ore:blockNickel>]]);
-recipes.addShaped("javelin_platinum", <spartanweaponry:javelin_platinum>, [[<spartanweaponry:material:1>, <ore:blockPlatinum>]]);
-recipes.addShaped("javelin_silver", <spartanweaponry:javelin_silver>, [[<spartanweaponry:material:1>, <ore:blockSilver>]]);
-recipes.addShaped("javelin_steel", <spartanweaponry:javelin_steel>, [[<spartanweaponry:material:1>, <ore:blockSteel>]]);
-recipes.addShaped("javelin_tin", <spartanweaponry:javelin_tin>, [[<spartanweaponry:material:1>, <ore:blockTin>]]);
-recipes.addShaped("katana_bronze", <spartanweaponry:katana_bronze>, [[null, null, <ore:blockBronze>], [null, <ore:blockBronze>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_copper", <spartanweaponry:katana_copper>, [[null, null, <ore:blockCopper>], [null, <ore:blockCopper>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_electrum", <spartanweaponry:katana_electrum>, [[null, null, <ore:blockElectrum>], [null, <ore:blockElectrum>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_invar", <spartanweaponry:katana_invar>, [[null, null, <ore:blockInvar>], [null, <ore:blockInvar>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_lead", <spartanweaponry:katana_lead>, [[null, null, <ore:blockLead>], [null, <ore:blockLead>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_nickel", <spartanweaponry:katana_nickel>, [[null, null, <ore:blockNickel>], [null, <ore:blockNickel>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_platinum", <spartanweaponry:katana_platinum>, [[null, null, <ore:blockPlatinum>], [null, <ore:blockPlatinum>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_silver", <spartanweaponry:katana_silver>, [[null, null, <ore:blockSilver>], [null, <ore:blockSilver>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_steel", <spartanweaponry:katana_steel>, [[null, null, <ore:blockSteel>], [null, <ore:blockSteel>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_tin", <spartanweaponry:katana_tin>, [[null, null, <ore:blockTin>], [null, <ore:blockTin>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("lance_bronze", <spartanweaponry:lance_bronze>, [[<ore:blockBronze>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_copper", <spartanweaponry:lance_copper>, [[<ore:blockCopper>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_electrum", <spartanweaponry:lance_electrum>, [[<ore:blockElectrum>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_invar", <spartanweaponry:lance_invar>, [[<ore:blockInvar>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_lead", <spartanweaponry:lance_lead>, [[<ore:blockLead>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_nickel", <spartanweaponry:lance_nickel>, [[<ore:blockNickel>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_platinum", <spartanweaponry:lance_platinum>, [[<ore:blockPlatinum>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_silver", <spartanweaponry:lance_silver>, [[<ore:blockSilver>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_steel", <spartanweaponry:lance_steel>, [[<ore:blockSteel>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_tin", <spartanweaponry:lance_tin>, [[<ore:blockTin>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("longbow_bronze", <spartanweaponry:longbow_bronze>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockBronze>], [<ore:stickWood>, null, <ore:string>], [<ore:blockBronze>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_copper", <spartanweaponry:longbow_copper>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockCopper>], [<ore:stickWood>, null, <ore:string>], [<ore:blockCopper>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_electrum", <spartanweaponry:longbow_electrum>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockElectrum>], [<ore:stickWood>, null, <ore:string>], [<ore:blockElectrum>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_invar", <spartanweaponry:longbow_invar>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockInvar>], [<ore:stickWood>, null, <ore:string>], [<ore:blockInvar>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_lead", <spartanweaponry:longbow_lead>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockLead>], [<ore:stickWood>, null, <ore:string>], [<ore:blockLead>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_nickel", <spartanweaponry:longbow_nickel>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockNickel>], [<ore:stickWood>, null, <ore:string>], [<ore:blockNickel>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_platinum", <spartanweaponry:longbow_platinum>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockPlatinum>], [<ore:stickWood>, null, <ore:string>], [<ore:blockPlatinum>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_silver", <spartanweaponry:longbow_silver>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockSilver>], [<ore:stickWood>, null, <ore:string>], [<ore:blockSilver>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_steel", <spartanweaponry:longbow_steel>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockSteel>], [<ore:stickWood>, null, <ore:string>], [<ore:blockSteel>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_tin", <spartanweaponry:longbow_tin>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockTin>], [<ore:stickWood>, null, <ore:string>], [<ore:blockTin>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longsword_bronze", <spartanweaponry:longsword_bronze>, [[null, <ore:blockBronze>, null], [null, <ore:blockBronze>, null], [<ore:blockBronze>, <spartanweaponry:material>, <ore:blockBronze>]]);
-recipes.addShaped("longsword_copper", <spartanweaponry:longsword_copper>, [[null, <ore:blockCopper>, null], [null, <ore:blockCopper>, null], [<ore:blockCopper>, <spartanweaponry:material>, <ore:blockCopper>]]);
-recipes.addShaped("longsword_electrum", <spartanweaponry:longsword_electrum>, [[null, <ore:blockElectrum>, null], [null, <ore:blockElectrum>, null], [<ore:blockElectrum>, <spartanweaponry:material>, <ore:blockElectrum>]]);
-recipes.addShaped("longsword_invar", <spartanweaponry:longsword_invar>, [[null, <ore:blockInvar>, null], [null, <ore:blockInvar>, null], [<ore:blockInvar>, <spartanweaponry:material>, <ore:blockInvar>]]);
-recipes.addShaped("longsword_lead", <spartanweaponry:longsword_lead>, [[null, <ore:blockLead>, null], [null, <ore:blockLead>, null], [<ore:blockLead>, <spartanweaponry:material>, <ore:blockLead>]]);
-recipes.addShaped("longsword_nickel", <spartanweaponry:longsword_nickel>, [[null, <ore:blockNickel>, null], [null, <ore:blockNickel>, null], [<ore:blockNickel>, <spartanweaponry:material>, <ore:blockNickel>]]);
-recipes.addShaped("longsword_platinum", <spartanweaponry:longsword_platinum>, [[null, <ore:blockPlatinum>, null], [null, <ore:blockPlatinum>, null], [<ore:blockPlatinum>, <spartanweaponry:material>, <ore:blockPlatinum>]]);
-recipes.addShaped("longsword_silver", <spartanweaponry:longsword_silver>, [[null, <ore:blockSilver>, null], [null, <ore:blockSilver>, null], [<ore:blockSilver>, <spartanweaponry:material>, <ore:blockSilver>]]);
-recipes.addShaped("longsword_steel", <spartanweaponry:longsword_steel>, [[null, <ore:blockSteel>, null], [null, <ore:blockSteel>, null], [<ore:blockSteel>, <spartanweaponry:material>, <ore:blockSteel>]]);
-recipes.addShaped("longsword_tin", <spartanweaponry:longsword_tin>, [[null, <ore:blockTin>, null], [null, <ore:blockTin>, null], [<ore:blockTin>, <spartanweaponry:material>, <ore:blockTin>]]);
-recipes.addShaped("mace_bronze", <spartanweaponry:mace_bronze>, [[null, <ore:blockBronze>, <ore:blockBronze>], [null, <ore:stickWood>, <ore:blockBronze>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_copper", <spartanweaponry:mace_copper>, [[null, <ore:blockCopper>, <ore:blockCopper>], [null, <ore:stickWood>, <ore:blockCopper>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_electrum", <spartanweaponry:mace_electrum>, [[null, <ore:blockElectrum>, <ore:blockElectrum>], [null, <ore:stickWood>, <ore:blockElectrum>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_invar", <spartanweaponry:mace_invar>, [[null, <ore:blockInvar>, <ore:blockInvar>], [null, <ore:stickWood>, <ore:blockInvar>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_lead", <spartanweaponry:mace_lead>, [[null, <ore:blockLead>, <ore:blockLead>], [null, <ore:stickWood>, <ore:blockLead>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_nickel", <spartanweaponry:mace_nickel>, [[null, <ore:blockNickel>, <ore:blockNickel>], [null, <ore:stickWood>, <ore:blockNickel>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_platinum", <spartanweaponry:mace_platinum>, [[null, <ore:blockPlatinum>, <ore:blockPlatinum>], [null, <ore:stickWood>, <ore:blockPlatinum>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_silver", <spartanweaponry:mace_silver>, [[null, <ore:blockSilver>, <ore:blockSilver>], [null, <ore:stickWood>, <ore:blockSilver>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_steel", <spartanweaponry:mace_steel>, [[null, <ore:blockSteel>, <ore:blockSteel>], [null, <ore:stickWood>, <ore:blockSteel>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_tin", <spartanweaponry:mace_tin>, [[null, <ore:blockTin>, <ore:blockTin>], [null, <ore:stickWood>, <ore:blockTin>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("pike_bronze", <spartanweaponry:pike_bronze>, [[<ore:blockBronze>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_copper", <spartanweaponry:pike_copper>, [[<ore:blockCopper>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_electrum", <spartanweaponry:pike_electrum>, [[<ore:blockElectrum>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_invar", <spartanweaponry:pike_invar>, [[<ore:blockInvar>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_lead", <spartanweaponry:pike_lead>, [[<ore:blockLead>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_nickel", <spartanweaponry:pike_nickel>, [[<ore:blockNickel>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_platinum", <spartanweaponry:pike_platinum>, [[<ore:blockPlatinum>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_silver", <spartanweaponry:pike_silver>, [[<ore:blockSilver>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_steel", <spartanweaponry:pike_steel>, [[<ore:blockSteel>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_tin", <spartanweaponry:pike_tin>, [[<ore:blockTin>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("quarterstaff_bronze", <spartanweaponry:staff_bronze>, [[<spartanweaponry:material:1>], [<ore:blockBronze>]]);
-recipes.addShaped("quarterstaff_copper", <spartanweaponry:staff_copper>, [[<spartanweaponry:material:1>], [<ore:blockCopper>]]);
-recipes.addShaped("quarterstaff_electrum", <spartanweaponry:staff_electrum>, [[<spartanweaponry:material:1>], [<ore:blockElectrum>]]);
-recipes.addShaped("quarterstaff_invar", <spartanweaponry:staff_invar>, [[<spartanweaponry:material:1>], [<ore:blockInvar>]]);
-recipes.addShaped("quarterstaff_lead", <spartanweaponry:staff_lead>, [[<spartanweaponry:material:1>], [<ore:blockLead>]]);
-recipes.addShaped("quarterstaff_nickel", <spartanweaponry:staff_nickel>, [[<spartanweaponry:material:1>], [<ore:blockNickel>]]);
-recipes.addShaped("quarterstaff_platinum", <spartanweaponry:staff_platinum>, [[<spartanweaponry:material:1>], [<ore:blockPlatinum>]]);
-recipes.addShaped("quarterstaff_silver", <spartanweaponry:staff_silver>, [[<spartanweaponry:material:1>], [<ore:blockSilver>]]);
-recipes.addShaped("quarterstaff_steel", <spartanweaponry:staff_steel>, [[<spartanweaponry:material:1>], [<ore:blockSteel>]]);
-recipes.addShaped("quarterstaff_tin", <spartanweaponry:staff_tin>, [[<spartanweaponry:material:1>], [<ore:blockTin>]]);
-recipes.addShaped("rapier_bronze", <spartanweaponry:rapier_bronze>, [[null, null, <ore:blockBronze>], [<ore:blockBronze>, <ore:blockBronze>, null], [<spartanweaponry:material>, <ore:blockBronze>, null]]);
-recipes.addShaped("rapier_copper", <spartanweaponry:rapier_copper>, [[null, null, <ore:blockCopper>], [<ore:blockCopper>, <ore:blockCopper>, null], [<spartanweaponry:material>, <ore:blockCopper>, null]]);
-recipes.addShaped("rapier_electrum", <spartanweaponry:rapier_electrum>, [[null, null, <ore:blockElectrum>], [<ore:blockElectrum>, <ore:blockElectrum>, null], [<spartanweaponry:material>, <ore:blockElectrum>, null]]);
-recipes.addShaped("rapier_invar", <spartanweaponry:rapier_invar>, [[null, null, <ore:blockInvar>], [<ore:blockInvar>, <ore:blockInvar>, null], [<spartanweaponry:material>, <ore:blockInvar>, null]]);
-recipes.addShaped("rapier_lead", <spartanweaponry:rapier_lead>, [[null, null, <ore:blockLead>], [<ore:blockLead>, <ore:blockLead>, null], [<spartanweaponry:material>, <ore:blockLead>, null]]);
-recipes.addShaped("rapier_nickel", <spartanweaponry:rapier_nickel>, [[null, null, <ore:blockNickel>], [<ore:blockNickel>, <ore:blockNickel>, null], [<spartanweaponry:material>, <ore:blockNickel>, null]]);
-recipes.addShaped("rapier_platinum", <spartanweaponry:rapier_platinum>, [[null, null, <ore:blockPlatinum>], [<ore:blockPlatinum>, <ore:blockPlatinum>, null], [<spartanweaponry:material>, <ore:blockPlatinum>, null]]);
-recipes.addShaped("rapier_silver", <spartanweaponry:rapier_silver>, [[null, null, <ore:blockSilver>], [<ore:blockSilver>, <ore:blockSilver>, null], [<spartanweaponry:material>, <ore:blockSilver>, null]]);
-recipes.addShaped("rapier_steel", <spartanweaponry:rapier_steel>, [[null, null, <ore:blockSteel>], [<ore:blockSteel>, <ore:blockSteel>, null], [<spartanweaponry:material>, <ore:blockSteel>, null]]);
-recipes.addShaped("rapier_tin", <spartanweaponry:rapier_tin>, [[null, null, <ore:blockTin>], [<ore:blockTin>, <ore:blockTin>, null], [<spartanweaponry:material>, <ore:blockTin>, null]]);
-recipes.addShaped("saber_bronze", <spartanweaponry:saber_bronze>, [[null, <ore:blockBronze>], [null, <ore:blockBronze>], [<ore:blockBronze>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_copper", <spartanweaponry:saber_copper>, [[null, <ore:blockCopper>], [null, <ore:blockCopper>], [<ore:blockCopper>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_electrum", <spartanweaponry:saber_electrum>, [[null, <ore:blockElectrum>], [null, <ore:blockElectrum>], [<ore:blockElectrum>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_invar", <spartanweaponry:saber_invar>, [[null, <ore:blockInvar>], [null, <ore:blockInvar>], [<ore:blockInvar>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_lead", <spartanweaponry:saber_lead>, [[null, <ore:blockLead>], [null, <ore:blockLead>], [<ore:blockLead>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_nickel", <spartanweaponry:saber_nickel>, [[null, <ore:blockNickel>], [null, <ore:blockNickel>], [<ore:blockNickel>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_platinum", <spartanweaponry:saber_platinum>, [[null, <ore:blockPlatinum>], [null, <ore:blockPlatinum>], [<ore:blockPlatinum>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_silver", <spartanweaponry:saber_silver>, [[null, <ore:blockSilver>], [null, <ore:blockSilver>], [<ore:blockSilver>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_steel", <spartanweaponry:saber_steel>, [[null, <ore:blockSteel>], [null, <ore:blockSteel>], [<ore:blockSteel>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_tin", <spartanweaponry:saber_tin>, [[null, <ore:blockTin>], [null, <ore:blockTin>], [<ore:blockTin>, <spartanweaponry:material>]]);
-recipes.addShaped("spear_bronze", <spartanweaponry:spear_bronze>, [[<ore:blockBronze>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_copper", <spartanweaponry:spear_copper>, [[<ore:blockCopper>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_electrum", <spartanweaponry:spear_electrum>, [[<ore:blockElectrum>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_invar", <spartanweaponry:spear_invar>, [[<ore:blockInvar>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_lead", <spartanweaponry:spear_lead>, [[<ore:blockLead>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_nickel", <spartanweaponry:spear_nickel>, [[<ore:blockNickel>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_platinum", <spartanweaponry:spear_platinum>, [[<ore:blockPlatinum>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_silver", <spartanweaponry:spear_silver>, [[<ore:blockSilver>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_steel", <spartanweaponry:spear_steel>, [[<ore:blockSteel>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_tin", <spartanweaponry:spear_tin>, [[<ore:blockTin>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("throwing_axe_bronze", <spartanweaponry:throwing_axe_bronze>, [[<spartanweaponry:material>, <ore:blockBronze>], [null, <ore:blockBronze>]]);
-recipes.addShaped("throwing_axe_copper", <spartanweaponry:throwing_axe_copper>, [[<spartanweaponry:material>, <ore:blockCopper>], [null, <ore:blockCopper>]]);
-recipes.addShaped("throwing_axe_electrum", <spartanweaponry:throwing_axe_electrum>, [[<spartanweaponry:material>, <ore:blockElectrum>], [null, <ore:blockElectrum>]]);
-recipes.addShaped("throwing_axe_invar", <spartanweaponry:throwing_axe_invar>, [[<spartanweaponry:material>, <ore:blockInvar>], [null, <ore:blockInvar>]]);
-recipes.addShaped("throwing_axe_lead", <spartanweaponry:throwing_axe_lead>, [[<spartanweaponry:material>, <ore:blockLead>], [null, <ore:blockLead>]]);
-recipes.addShaped("throwing_axe_nickel", <spartanweaponry:throwing_axe_nickel>, [[<spartanweaponry:material>, <ore:blockNickel>], [null, <ore:blockNickel>]]);
-recipes.addShaped("throwing_axe_platinum", <spartanweaponry:throwing_axe_platinum>, [[<spartanweaponry:material>, <ore:blockPlatinum>], [null, <ore:blockPlatinum>]]);
-recipes.addShaped("throwing_axe_silver", <spartanweaponry:throwing_axe_silver>, [[<spartanweaponry:material>, <ore:blockSilver>], [null, <ore:blockSilver>]]);
-recipes.addShaped("throwing_axe_steel", <spartanweaponry:throwing_axe_steel>, [[<spartanweaponry:material>, <ore:blockSteel>], [null, <ore:blockSteel>]]);
-recipes.addShaped("throwing_axe_tin", <spartanweaponry:throwing_axe_tin>, [[<spartanweaponry:material>, <ore:blockTin>], [null, <ore:blockTin>]]);
-recipes.addShaped("throwing_knife_bronze", <spartanweaponry:throwing_knife_bronze>, [[<spartanweaponry:material>, <ore:blockBronze>]]);
-recipes.addShaped("throwing_knife_copper", <spartanweaponry:throwing_knife_copper>, [[<spartanweaponry:material>, <ore:blockCopper>]]);
-recipes.addShaped("throwing_knife_electrum", <spartanweaponry:throwing_knife_electrum>, [[<spartanweaponry:material>, <ore:blockElectrum>]]);
-recipes.addShaped("throwing_knife_invar", <spartanweaponry:throwing_knife_invar>, [[<spartanweaponry:material>, <ore:blockInvar>]]);
-recipes.addShaped("throwing_knife_lead", <spartanweaponry:throwing_knife_lead>, [[<spartanweaponry:material>, <ore:blockLead>]]);
-recipes.addShaped("throwing_knife_nickel", <spartanweaponry:throwing_knife_nickel>, [[<spartanweaponry:material>, <ore:blockNickel>]]);
-recipes.addShaped("throwing_knife_platinum", <spartanweaponry:throwing_knife_platinum>, [[<spartanweaponry:material>, <ore:blockPlatinum>]]);
-recipes.addShaped("throwing_knife_silver", <spartanweaponry:throwing_knife_silver>, [[<spartanweaponry:material>, <ore:blockSilver>]]);
-recipes.addShaped("throwing_knife_steel", <spartanweaponry:throwing_knife_steel>, [[<spartanweaponry:material>, <ore:blockSteel>]]);
-recipes.addShaped("throwing_knife_tin", <spartanweaponry:throwing_knife_tin>, [[<spartanweaponry:material>, <ore:blockTin>]]);
-recipes.addShaped("warhammer_bronze", <spartanweaponry:warhammer_bronze>, [[null, <ore:blockBronze>], [<ore:blockBronze>, <ore:blockBronze>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_copper", <spartanweaponry:warhammer_copper>, [[null, <ore:blockCopper>], [<ore:blockCopper>, <ore:blockCopper>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_electrum", <spartanweaponry:warhammer_electrum>, [[null, <ore:blockElectrum>], [<ore:blockElectrum>, <ore:blockElectrum>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_invar", <spartanweaponry:warhammer_invar>, [[null, <ore:blockInvar>], [<ore:blockInvar>, <ore:blockInvar>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_lead", <spartanweaponry:warhammer_lead>, [[null, <ore:blockLead>], [<ore:blockLead>, <ore:blockLead>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_nickel", <spartanweaponry:warhammer_nickel>, [[null, <ore:blockNickel>], [<ore:blockNickel>, <ore:blockNickel>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_platinum", <spartanweaponry:warhammer_platinum>, [[null, <ore:blockPlatinum>], [<ore:blockPlatinum>, <ore:blockPlatinum>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_silver", <spartanweaponry:warhammer_silver>, [[null, <ore:blockSilver>], [<ore:blockSilver>, <ore:blockSilver>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_steel", <spartanweaponry:warhammer_steel>, [[null, <ore:blockSteel>], [<ore:blockSteel>, <ore:blockSteel>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_tin", <spartanweaponry:warhammer_tin>, [[null, <ore:blockTin>], [<ore:blockTin>, <ore:blockTin>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("pike_diamond", <spartanweaponry:pike_diamond>, [[<ore:gemDiamond>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_gold", <spartanweaponry:pike_gold>, [[<ore:blockGold>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_iron", <spartanweaponry:pike_iron>, [[<ore:blockIron>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_wood", <spartanweaponry:pike_wood>, [[<ore:plankWood>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pole_leather", <spartanweaponry:material:1> * 4, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [<ore:stickWood>, <ore:stickWood>, <ore:leather>]]);
-recipes.addShaped("pole_string", <spartanweaponry:material:1>, [[<ore:stickWood>, null], [<ore:stickWood>, <ore:string>], [<ore:stickWood>, null]]);
-recipes.addShaped("pole_wool", <spartanweaponry:material:1> * 4, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], [<ore:stickWood>, <ore:stickWood>, <minecraft:wool:*>]]);
-recipes.addShaped("quarterstaff_diamond", <spartanweaponry:staff_diamond>, [[<spartanweaponry:material:1>], [<ore:gemDiamond>]]);
-recipes.addShaped("quarterstaff_gold", <spartanweaponry:staff_gold>, [[<spartanweaponry:material:1>], [<ore:blockGold>]]);
-recipes.addShaped("quarterstaff_iron", <spartanweaponry:staff_iron>, [[<spartanweaponry:material:1>], [<ore:blockIron>]]);
-recipes.addShaped("quarterstaff_wood", <spartanweaponry:staff>, [[<spartanweaponry:material:1>], [<ore:plankWood>]]);
-recipes.addShaped("quiver_arrow", <spartanweaponry:quiver_arrow>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemArrow>, <ore:leather>], [<ore:string>, <ore:blockIron>, <ore:string>]]);
-recipes.addShaped("quiver_arrow_heavy", <spartanweaponry:quiver_arrow_heavy>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemArrow>, <ore:leather>], [<ore:string>, <ore:gemDiamond>, <ore:string>]]);
-recipes.addShaped("quiver_arrow_moderate", <spartanweaponry:quiver_arrow_moderate>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemArrow>, <ore:leather>], [<ore:string>, <ore:blockGold>, <ore:string>]]);
-recipes.addShaped("quiver_bolt", <spartanweaponry:quiver_bolt>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemBolt>, <ore:leather>], [<ore:string>, <ore:blockIron>, <ore:string>]]);
-recipes.addShaped("quiver_bolt_heavy", <spartanweaponry:quiver_bolt_heavy>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemBolt>, <ore:leather>], [<ore:string>, <ore:gemDiamond>, <ore:string>]]);
-recipes.addShaped("quiver_bolt_moderate", <spartanweaponry:quiver_bolt_moderate>.withTag({}), [[<ore:leather>, <ore:string>, <ore:leather>], [<ore:leather>, <ore:itemBolt>, <ore:leather>], [<ore:string>, <ore:blockGold>, <ore:string>]]);
-recipes.addShaped("rapier_diamond", <spartanweaponry:rapier_diamond>, [[null, null, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, null], [<spartanweaponry:material>, <ore:gemDiamond>, null]]);
-recipes.addShaped("rapier_gold", <spartanweaponry:rapier_gold>, [[null, null, <ore:blockGold>], [<ore:blockGold>, <ore:blockGold>, null], [<spartanweaponry:material>, <ore:blockGold>, null]]);
-recipes.addShaped("rapier_iron", <spartanweaponry:rapier_iron>, [[null, null, <ore:blockIron>], [<ore:blockIron>, <ore:blockIron>, null], [<spartanweaponry:material>, <ore:blockIron>, null]]);
-recipes.addShaped("rapier_wood", <spartanweaponry:rapier_wood>, [[null, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, null], [<spartanweaponry:material>, <ore:plankWood>, null]]);
-recipes.addShaped("saber_diamond", <spartanweaponry:saber_diamond>, [[null, <ore:gemDiamond>], [null, <ore:gemDiamond>], [<ore:gemDiamond>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_gold", <spartanweaponry:saber_gold>, [[null, <ore:blockGold>], [null, <ore:blockGold>], [<ore:blockGold>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_iron", <spartanweaponry:saber_iron>, [[null, <ore:blockIron>], [null, <ore:blockIron>], [<ore:blockIron>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_wood", <spartanweaponry:saber_wood>, [[null, <ore:plankWood>], [null, <ore:plankWood>], [<ore:plankWood>, <spartanweaponry:material>]]);
-recipes.addShaped("spear_diamond", <spartanweaponry:spear_diamond>, [[<ore:gemDiamond>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_gold", <spartanweaponry:spear_gold>, [[<ore:blockGold>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_iron", <spartanweaponry:spear_iron>, [[<ore:blockIron>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_wood", <spartanweaponry:spear_wood>, [[<ore:plankWood>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("throwing_axe_diamond", <spartanweaponry:throwing_axe_diamond>, [[<spartanweaponry:material>, <ore:gemDiamond>], [null, <ore:gemDiamond>]]);
-recipes.addShaped("throwing_axe_gold", <spartanweaponry:throwing_axe_gold>, [[<spartanweaponry:material>, <ore:blockGold>], [null, <ore:blockGold>]]);
-recipes.addShaped("throwing_axe_iron", <spartanweaponry:throwing_axe_iron>, [[<spartanweaponry:material>, <ore:blockIron>], [null, <ore:blockIron>]]);
-recipes.addShaped("throwing_axe_wood", <spartanweaponry:throwing_axe_wood>, [[<spartanweaponry:material>, <ore:plankWood>], [null, <ore:plankWood>]]);
-recipes.addShaped("throwing_knife_diamond", <spartanweaponry:throwing_knife_diamond>, [[<spartanweaponry:material>, <ore:gemDiamond>]]);
-recipes.addShaped("throwing_knife_gold", <spartanweaponry:throwing_knife_gold>, [[<spartanweaponry:material>, <ore:blockGold>]]);
-recipes.addShaped("throwing_knife_iron", <spartanweaponry:throwing_knife_iron>, [[<spartanweaponry:material>, <ore:blockIron>]]);
-recipes.addShaped("throwing_knife_wood", <spartanweaponry:throwing_knife_wood>, [[<spartanweaponry:material>, <ore:plankWood>]]);
-recipes.addShaped("warhammer_diamond", <spartanweaponry:warhammer_diamond>, [[null, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_gold", <spartanweaponry:warhammer_gold>, [[null, <ore:blockGold>], [<ore:blockGold>, <ore:blockGold>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_iron", <spartanweaponry:warhammer_iron>, [[null, <ore:blockIron>], [<ore:blockIron>, <ore:blockIron>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_wood", <spartanweaponry:warhammer_wood>, [[null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("battleaxe_elementium", <spartanweaponryarcana:battleaxe_elementium>, [[<botania:storage:2>, <botania:storage:2>, <botania:storage:2>], [<botania:storage:2>, <botania:manaresource:13>, <botania:storage:2>], [null, <spartanweaponryarcana:material:2>, null]]);
-recipes.addShaped("battleaxe_manasteel", <spartanweaponryarcana:battleaxe_manasteel>, [[<botania:storage>, <botania:storage>, <botania:storage>], [<botania:storage>, <botania:manaresource:3>, <botania:storage>], [null, <spartanweaponryarcana:material>, null]]);
-recipes.addShaped("battleaxe_terrasteel", <spartanweaponryarcana:battleaxe_terrasteel>, [[<botania:storage:1>, <botania:storage:1>, <botania:storage:1>], [<botania:storage:1>, <botania:manaresource:3>, <botania:storage:1>], [null, <spartanweaponryarcana:material>, null]]);
-recipes.addShaped("battleaxe_thaumium", <spartanweaponryarcana:battleaxe_thaumium>, [[<ore:blockThaumium>, <ore:blockThaumium>, <ore:blockThaumium>], [<ore:blockThaumium>, <ore:stickWood>, <ore:blockThaumium>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("battleaxe_voidmetal", <spartanweaponryarcana:battleaxe_voidmetal>, [[<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>], [<ore:blockVoid>, <ore:stickWood>, <ore:blockVoid>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("boomerang_elementium", <spartanweaponryarcana:boomerang_elementium>, [[<botania:storage:2>, <botania:dreamwood:1>, <botania:dreamwood:1>], [<botania:dreamwood:1>, null, null], [<botania:dreamwood:1>, null, null]]);
-recipes.addShaped("boomerang_manasteel", <spartanweaponryarcana:boomerang_manasteel>, [[<botania:storage>, <botania:livingwood:1>, <botania:livingwood:1>], [<botania:livingwood:1>, null, null], [<botania:livingwood:1>, null, null]]);
-recipes.addShaped("boomerang_terrasteel", <spartanweaponryarcana:boomerang_terrasteel>, [[<botania:storage:1>, <botania:livingwood:1>, <botania:livingwood:1>], [<botania:livingwood:1>, null, null], [<botania:livingwood:1>, null, null]]);
-recipes.addShaped("boomerang_thaumium", <spartanweaponryarcana:boomerang_thaumium>, [[<ore:blockThaumium>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("boomerang_voidmetal", <spartanweaponryarcana:boomerang_voidmetal>, [[<ore:blockVoid>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, null], [<ore:plankWood>, null, null]]);
-recipes.addShaped("crossbow_elementium", <spartanweaponryarcana:crossbow_elementium>, [[<spartanweaponryarcana:material:4>, <botania:storage:2>, <botania:storage:2>], [<botania:storage:2>, <botania:dreamwood>, null], [<botania:storage:2>, null, <spartanweaponryarcana:material:2>]]);
-recipes.addShaped("crossbow_limb_dreamwood", <spartanweaponryarcana:material:4>, [[null, <botania:manaresource:13>, <botania:storage>], [<botania:manaresource:13>, null, <botania:storage>], [null, <botania:manaresource:13>, <botania:storage>]]);
-recipes.addShaped("crossbow_manasteel", <spartanweaponryarcana:crossbow_manasteel>, [[<botania:livingwoodbow>, <botania:storage>, <botania:storage>], [<botania:storage>, <botania:livingwood>, null], [<botania:storage>, null, <spartanweaponryarcana:material>]]);
-recipes.addShaped("crossbow_terrasteel", <spartanweaponryarcana:crossbow_terrasteel>, [[<botania:livingwoodbow>, <botania:storage:1>, <botania:storage:1>], [<botania:storage:1>, <botania:livingwood>, null], [<botania:storage:1>, null, <spartanweaponryarcana:material>]]);
-recipes.addShaped("crossbow_thaumium", <spartanweaponryarcana:crossbow_thaumium>, [[<minecraft:bow>, <ore:string>, <ore:blockThaumium>], [<ore:string>, <ore:logWood>, null], [<ore:blockThaumium>, null, <spartanweaponry:material>]]);
-recipes.addShaped("crossbow_voidmetal", <spartanweaponryarcana:crossbow_voidmetal>, [[<minecraft:bow>, <ore:string>, <ore:blockVoid>], [<ore:string>, <ore:logWood>, null], [<ore:blockVoid>, null, <spartanweaponry:material>]]);
-recipes.addShaped("dagger_elementium", <spartanweaponryarcana:dagger_elementium>, [[<botania:storage:2>], [<spartanweaponryarcana:material:2>]]);
-recipes.addShaped("dagger_manasteel", <spartanweaponryarcana:dagger_manasteel>, [[<botania:storage>], [<spartanweaponryarcana:material>]]);
-recipes.addShaped("dagger_terrasteel", <spartanweaponryarcana:dagger_terrasteel>, [[<botania:storage:1>], [<spartanweaponryarcana:material>]]);
-recipes.addShaped("dagger_thaumium", <spartanweaponryarcana:dagger_thaumium>, [[<ore:blockThaumium>], [<spartanweaponry:material>]]);
-recipes.addShaped("dagger_voidmetal", <spartanweaponryarcana:dagger_voidmetal>, [[<ore:blockVoid>], [<spartanweaponry:material>]]);
-recipes.addShaped("glaive_elementium", <spartanweaponryarcana:glaive_elementium>, [[null, <botania:storage:2>], [null, <botania:storage:2>], [<botania:storage:2>, <spartanweaponryarcana:material:3>]]);
-recipes.addShaped("glaive_manasteel", <spartanweaponryarcana:glaive_manasteel>, [[null, <botania:storage>], [null, <botania:storage>], [<botania:storage>, <spartanweaponryarcana:material:1>]]);
-recipes.addShaped("glaive_terrasteel", <spartanweaponryarcana:glaive_terrasteel>, [[null, <botania:storage:1>], [null, <botania:storage:1>], [<botania:storage:1>, <spartanweaponryarcana:material:1>]]);
-recipes.addShaped("glaive_thaumium", <spartanweaponryarcana:glaive_thaumium>, [[null, <ore:blockThaumium>], [null, <ore:blockThaumium>], [<ore:blockThaumium>, <spartanweaponry:material:1>]]);
-recipes.addShaped("glaive_voidmetal", <spartanweaponryarcana:glaive_voidmetal>, [[null, <ore:blockVoid>], [null, <ore:blockVoid>], [<ore:blockVoid>, <spartanweaponry:material:1>]]);
-recipes.addShaped("greatsword_elementium", <spartanweaponryarcana:greatsword_elementium>, [[null, <botania:storage:2>, null], [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>], [<botania:storage:2>, <spartanweaponryarcana:material:2>, <botania:storage:2>]]);
-recipes.addShaped("greatsword_manasteel", <spartanweaponryarcana:greatsword_manasteel>, [[null, <botania:storage>, null], [<botania:storage>, <botania:storage>, <botania:storage>], [<botania:storage>, <spartanweaponryarcana:material>, <botania:storage>]]);
-recipes.addShaped("greatsword_terrasteel", <spartanweaponryarcana:greatsword_terrasteel>, [[null, <botania:storage:1>, null], [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>], [<botania:storage:1>, <spartanweaponryarcana:material>, <botania:storage:1>]]);
-recipes.addShaped("greatsword_thaumium", <spartanweaponryarcana:greatsword_thaumium>, [[null, <ore:blockThaumium>, null], [<ore:blockThaumium>, <ore:blockThaumium>, <ore:blockThaumium>], [<ore:blockThaumium>, <spartanweaponry:material>, <ore:blockThaumium>]]);
-recipes.addShaped("greatsword_voidmetal", <spartanweaponryarcana:greatsword_voidmetal>, [[null, <ore:blockVoid>, null], [<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>], [<ore:blockVoid>, <spartanweaponry:material>, <ore:blockVoid>]]);
-recipes.addShaped("halberd_elementium", <spartanweaponryarcana:halberd_elementium>, [[null, <botania:storage:2>], [<botania:storage:2>, <botania:storage:2>], [<botania:storage:2>, <spartanweaponryarcana:material:3>]]);
-recipes.addShaped("halberd_manasteel", <spartanweaponryarcana:halberd_manasteel>, [[null, <botania:storage>], [<botania:storage>, <botania:storage>], [<botania:storage>, <spartanweaponryarcana:material:1>]]);
-recipes.addShaped("halberd_terrasteel", <spartanweaponryarcana:halberd_terrasteel>, [[null, <botania:storage:1>], [<botania:storage:1>, <botania:storage:1>], [<botania:storage:1>, <spartanweaponryarcana:material:1>]]);
-recipes.addShaped("halberd_thaumium", <spartanweaponryarcana:halberd_thaumium>, [[null, <ore:blockThaumium>], [<ore:blockThaumium>, <ore:blockThaumium>], [<ore:blockThaumium>, <spartanweaponry:material:1>]]);
-recipes.addShaped("halberd_voidmetal", <spartanweaponryarcana:halberd_voidmetal>, [[null, <ore:blockVoid>], [<ore:blockVoid>, <ore:blockVoid>], [<ore:blockVoid>, <spartanweaponry:material:1>]]);
-recipes.addShaped("hammer_elementium", <spartanweaponryarcana:hammer_elementium>, [[<botania:storage:2>, <botania:storage:2>, <botania:storage:2>], [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>], [null, <spartanweaponryarcana:material:2>, null]]);
-recipes.addShaped("hammer_manasteel", <spartanweaponryarcana:hammer_manasteel>, [[<botania:storage>, <botania:storage>, <botania:storage>], [<botania:storage>, <botania:storage>, <botania:storage>], [null, <spartanweaponryarcana:material>, null]]);
-recipes.addShaped("hammer_terrasteel", <spartanweaponryarcana:hammer_terrasteel>, [[<botania:storage:1>, <botania:storage:1>, <botania:storage:1>], [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>], [null, <spartanweaponryarcana:material>, null]]);
-recipes.addShaped("hammer_thaumium", <spartanweaponryarcana:hammer_thaumium>, [[<ore:blockThaumium>, <ore:blockThaumium>, <ore:blockThaumium>], [<ore:blockThaumium>, <ore:blockThaumium>, <ore:blockThaumium>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("hammer_voidmetal", <spartanweaponryarcana:hammer_voidmetal>, [[<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>], [<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>], [null, <spartanweaponry:material>, null]]);
-recipes.addShaped("handle_dreamwood_string", <spartanweaponryarcana:material:2>, [[<botania:manaresource:13>, <ore:string>]]);
-recipes.addShaped("handle_livingwood_string", <spartanweaponryarcana:material>, [[<botania:manaresource:3>, <ore:string>]]);
-recipes.addShaped("javelin_elementium", <spartanweaponryarcana:javelin_elementium>, [[<spartanweaponryarcana:material:3>, <botania:storage:2>]]);
-recipes.addShaped("javelin_manasteel", <spartanweaponryarcana:javelin_manasteel>, [[<spartanweaponryarcana:material:1>, <botania:storage>]]);
-recipes.addShaped("javelin_terrasteel", <spartanweaponryarcana:javelin_terrasteel>, [[<spartanweaponryarcana:material:1>, <botania:storage:1>]]);
-recipes.addShaped("javelin_thaumium", <spartanweaponryarcana:javelin_thaumium>, [[<spartanweaponry:material:1>, <ore:blockThaumium>]]);
-recipes.addShaped("javelin_voidmetal", <spartanweaponryarcana:javelin_voidmetal>, [[<spartanweaponry:material:1>, <ore:blockVoid>]]);
-recipes.addShaped("katana_elementium", <spartanweaponryarcana:katana_elementium>, [[null, null, <botania:storage:2>], [null, <botania:storage:2>, null], [<spartanweaponryarcana:material:2>, null, null]]);
-recipes.addShaped("katana_manasteel", <spartanweaponryarcana:katana_manasteel>, [[null, null, <botania:storage>], [null, <botania:storage>, null], [<spartanweaponryarcana:material>, null, null]]);
-recipes.addShaped("katana_terrasteel", <spartanweaponryarcana:katana_terrasteel>, [[null, null, <botania:storage:1>], [null, <botania:storage:1>, null], [<spartanweaponryarcana:material>, null, null]]);
-recipes.addShaped("katana_thaumium", <spartanweaponryarcana:katana_thaumium>, [[null, null, <ore:blockThaumium>], [null, <ore:blockThaumium>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("katana_voidmetal", <spartanweaponryarcana:katana_voidmetal>, [[null, null, <ore:blockVoid>], [null, <ore:blockVoid>, null], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("lance_elementium", <spartanweaponryarcana:lance_elementium>, [[<botania:storage:2>], [<spartanweaponryarcana:material:3>], [<spartanweaponryarcana:material:2>]]);
-recipes.addShaped("lance_manasteel", <spartanweaponryarcana:lance_manasteel>, [[<botania:storage>], [<spartanweaponryarcana:material:1>], [<spartanweaponryarcana:material>]]);
-recipes.addShaped("lance_terrasteel", <spartanweaponryarcana:lance_terrasteel>, [[<botania:storage:1>], [<spartanweaponryarcana:material:1>], [<spartanweaponryarcana:material>]]);
-recipes.addShaped("lance_thaumium", <spartanweaponryarcana:lance_thaumium>, [[<ore:blockThaumium>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("lance_voidmetal", <spartanweaponryarcana:lance_voidmetal>, [[<ore:blockVoid>], [<spartanweaponry:material:1>], [<spartanweaponry:material>]]);
-recipes.addShaped("longbow_elementium", <spartanweaponryarcana:longbow_elementium>, [[<spartanweaponryarcana:material:2>, <botania:manaresource:13>, <botania:storage:2>], [<botania:manaresource:13>, null, <botania:storage:2>], [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>]]);
-recipes.addShaped("longbow_manasteel", <spartanweaponryarcana:longbow_manasteel>, [[<spartanweaponryarcana:material>, <botania:manaresource:3>, <botania:storage>], [<botania:manaresource:3>, null, <botania:storage>], [<botania:storage>, <botania:storage>, <botania:storage>]]);
-recipes.addShaped("longbow_terrasteel", <spartanweaponryarcana:longbow_terrasteel>, [[<spartanweaponryarcana:material>, <botania:manaresource:3>, <botania:storage:1>], [<botania:manaresource:3>, null, <botania:storage:1>], [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>]]);
-recipes.addShaped("longbow_thaumium", <spartanweaponryarcana:longbow_thaumium>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockThaumium>], [<ore:stickWood>, null, <ore:string>], [<ore:blockThaumium>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longbow_voidmetal", <spartanweaponryarcana:longbow_voidmetal>, [[<spartanweaponry:material>, <ore:stickWood>, <ore:blockVoid>], [<ore:stickWood>, null, <ore:string>], [<ore:blockVoid>, <ore:string>, <ore:string>]]);
-recipes.addShaped("longsword_elementium", <spartanweaponryarcana:longsword_elementium>, [[null, <botania:storage:2>, null], [null, <botania:storage:2>, null], [<botania:storage:2>, <spartanweaponryarcana:material:2>, <botania:storage:2>]]);
-recipes.addShaped("longsword_manasteel", <spartanweaponryarcana:longsword_manasteel>, [[null, <botania:storage>, null], [null, <botania:storage>, null], [<botania:storage>, <spartanweaponryarcana:material>, <botania:storage>]]);
-recipes.addShaped("longsword_terrasteel", <spartanweaponryarcana:longsword_terrasteel>, [[null, <botania:storage:1>, null], [null, <botania:storage:1>, null], [<botania:storage:1>, <spartanweaponryarcana:material>, <botania:storage:1>]]);
-recipes.addShaped("longsword_thaumium", <spartanweaponryarcana:longsword_thaumium>, [[null, <ore:blockThaumium>, null], [null, <ore:blockThaumium>, null], [<ore:blockThaumium>, <spartanweaponry:material>, <ore:blockThaumium>]]);
-recipes.addShaped("longsword_voidmetal", <spartanweaponryarcana:longsword_voidmetal>, [[null, <ore:blockVoid>, null], [null, <ore:blockVoid>, null], [<ore:blockVoid>, <spartanweaponry:material>, <ore:blockVoid>]]);
-recipes.addShaped("mace_elementium", <spartanweaponryarcana:mace_elementium>, [[null, <botania:storage:2>, <botania:storage:2>], [null, <botania:manaresource:13>, <botania:storage:2>], [<spartanweaponryarcana:material:2>, null, null]]);
-recipes.addShaped("mace_manasteel", <spartanweaponryarcana:mace_manasteel>, [[null, <botania:storage>, <botania:storage>], [null, <botania:manaresource:3>, <botania:storage>], [<spartanweaponryarcana:material>, null, null]]);
-recipes.addShaped("mace_terrasteel", <spartanweaponryarcana:mace_terrasteel>, [[null, <botania:storage:1>, <botania:storage:1>], [null, <botania:manaresource:3>, <botania:storage:1>], [<spartanweaponryarcana:material>, null, null]]);
-recipes.addShaped("mace_thaumium", <spartanweaponryarcana:mace_thaumium>, [[null, <ore:blockThaumium>, <ore:blockThaumium>], [null, <ore:stickWood>, <ore:blockThaumium>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("mace_voidmetal", <spartanweaponryarcana:mace_voidmetal>, [[null, <ore:blockVoid>, <ore:blockVoid>], [null, <ore:stickWood>, <ore:blockVoid>], [<spartanweaponry:material>, null, null]]);
-recipes.addShaped("pike_elementium", <spartanweaponryarcana:pike_elementium>, [[<botania:storage:2>], [<spartanweaponryarcana:material:3>], [<spartanweaponryarcana:material:3>]]);
-recipes.addShaped("pike_manasteel", <spartanweaponryarcana:pike_manasteel>, [[<botania:storage>], [<spartanweaponryarcana:material:1>], [<spartanweaponryarcana:material:1>]]);
-recipes.addShaped("pike_terrasteel", <spartanweaponryarcana:pike_terrasteel>, [[<botania:storage:1>], [<spartanweaponryarcana:material:1>], [<spartanweaponryarcana:material:1>]]);
-recipes.addShaped("pike_thaumium", <spartanweaponryarcana:pike_thaumium>, [[<ore:blockThaumium>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pike_voidmetal", <spartanweaponryarcana:pike_voidmetal>, [[<ore:blockVoid>], [<spartanweaponry:material:1>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("pole_dreamwood_leather", <spartanweaponryarcana:material:3> * 4, [[<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>], [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>], [<botania:manaresource:13>, <botania:manaresource:13>, <ore:leather>]]);
-recipes.addShaped("pole_dreamwood_string", <spartanweaponryarcana:material:3>, [[<botania:manaresource:13>, null], [<botania:manaresource:13>, <ore:string>], [<botania:manaresource:13>, null]]);
-recipes.addShaped("pole_dreamwood_wool", <spartanweaponryarcana:material:3> * 4, [[<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>], [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>], [<botania:manaresource:13>, <botania:manaresource:13>, <minecraft:wool:*>]]);
-recipes.addShaped("pole_livingwood_leather", <spartanweaponryarcana:material:1> * 4, [[<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>], [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>], [<botania:manaresource:3>, <botania:manaresource:3>, <ore:leather>]]);
-recipes.addShaped("pole_livingwood_string", <spartanweaponryarcana:material:1>, [[<botania:manaresource:3>, null], [<botania:manaresource:3>, <ore:string>], [<botania:manaresource:3>, null]]);
-recipes.addShaped("pole_livingwood_wool", <spartanweaponryarcana:material:1> * 4, [[<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>], [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>], [<botania:manaresource:3>, <botania:manaresource:3>, <minecraft:wool:*>]]);
-recipes.addShaped("quarterstaff_elementium", <spartanweaponryarcana:staff_elementium>, [[<spartanweaponryarcana:material:3>], [<botania:storage:2>]]);
-recipes.addShaped("quarterstaff_manasteel", <spartanweaponryarcana:staff_manasteel>, [[<spartanweaponryarcana:material:1>], [<botania:storage>]]);
-recipes.addShaped("quarterstaff_terrasteel", <spartanweaponryarcana:staff_terrasteel>, [[<spartanweaponryarcana:material:1>], [<botania:storage:1>]]);
-recipes.addShaped("quarterstaff_thaumium", <spartanweaponryarcana:staff_thaumium>, [[<spartanweaponry:material:1>], [<ore:blockThaumium>]]);
-recipes.addShaped("quarterstaff_voidmetal", <spartanweaponryarcana:staff_voidmetal>, [[<spartanweaponry:material:1>], [<ore:blockVoid>]]);
-recipes.addShaped("rapier_elementium", <spartanweaponryarcana:rapier_elementium>, [[null, null, <botania:storage:2>], [<botania:storage:2>, <botania:storage:2>, null], [<spartanweaponryarcana:material:2>, <botania:storage:2>, null]]);
-recipes.addShaped("rapier_manasteel", <spartanweaponryarcana:rapier_manasteel>, [[null, null, <botania:storage>], [<botania:storage>, <botania:storage>, null], [<spartanweaponryarcana:material>, <botania:storage>, null]]);
-recipes.addShaped("rapier_terrasteel", <spartanweaponryarcana:rapier_terrasteel>, [[null, null, <botania:storage:1>], [<botania:storage:1>, <botania:storage:1>, null], [<spartanweaponryarcana:material>, <botania:storage:1>, null]]);
-recipes.addShaped("rapier_thaumium", <spartanweaponryarcana:rapier_thaumium>, [[null, null, <ore:blockThaumium>], [<ore:blockThaumium>, <ore:blockThaumium>, null], [<spartanweaponry:material>, <ore:blockThaumium>, null]]);
-recipes.addShaped("rapier_voidmetal", <spartanweaponryarcana:rapier_voidmetal>, [[null, null, <ore:blockVoid>], [<ore:blockVoid>, <ore:blockVoid>, null], [<spartanweaponry:material>, <ore:blockVoid>, null]]);
-recipes.addShaped("saber_elementium", <spartanweaponryarcana:saber_elementium>, [[null, <botania:storage:2>], [null, <botania:storage:2>], [<botania:storage:2>, <spartanweaponryarcana:material:2>]]);
-recipes.addShaped("saber_manasteel", <spartanweaponryarcana:saber_manasteel>, [[null, <botania:storage>], [null, <botania:storage>], [<botania:storage>, <spartanweaponryarcana:material>]]);
-recipes.addShaped("saber_terrasteel", <spartanweaponryarcana:saber_terrasteel>, [[null, <botania:storage:1>], [null, <botania:storage:1>], [<botania:storage:1>, <spartanweaponryarcana:material>]]);
-recipes.addShaped("saber_thaumium", <spartanweaponryarcana:saber_thaumium>, [[null, <ore:blockThaumium>], [null, <ore:blockThaumium>], [<ore:blockThaumium>, <spartanweaponry:material>]]);
-recipes.addShaped("saber_voidmetal", <spartanweaponryarcana:saber_voidmetal>, [[null, <ore:blockVoid>], [null, <ore:blockVoid>], [<ore:blockVoid>, <spartanweaponry:material>]]);
-recipes.addShaped("spear_elementium", <spartanweaponryarcana:spear_elementium>, [[<botania:storage:2>], [<spartanweaponryarcana:material:3>]]);
-recipes.addShaped("spear_manasteel", <spartanweaponryarcana:spear_manasteel>, [[<botania:storage>], [<spartanweaponryarcana:material:1>]]);
-recipes.addShaped("spear_terrasteel", <spartanweaponryarcana:spear_terrasteel>, [[<botania:storage:1>], [<spartanweaponryarcana:material:1>]]);
-recipes.addShaped("spear_thaumium", <spartanweaponryarcana:spear_thaumium>, [[<ore:blockThaumium>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("spear_voidmetal", <spartanweaponryarcana:spear_voidmetal>, [[<ore:blockVoid>], [<spartanweaponry:material:1>]]);
-recipes.addShaped("throwing_axe_elementium", <spartanweaponryarcana:throwing_axe_elementium>, [[<spartanweaponryarcana:material:2>, <botania:storage:2>], [null, <botania:storage:2>]]);
-recipes.addShaped("throwing_axe_manasteel", <spartanweaponryarcana:throwing_axe_manasteel>, [[<spartanweaponryarcana:material>, <botania:storage>], [null, <botania:storage>]]);
-recipes.addShaped("throwing_axe_terrasteel", <spartanweaponryarcana:throwing_axe_terrasteel>, [[<spartanweaponryarcana:material>, <botania:storage:1>], [null, <botania:storage:1>]]);
-recipes.addShaped("throwing_axe_thaumium", <spartanweaponryarcana:throwing_axe_thaumium>, [[<spartanweaponry:material>, <ore:blockThaumium>], [null, <ore:blockThaumium>]]);
-recipes.addShaped("throwing_axe_voidmetal", <spartanweaponryarcana:throwing_axe_voidmetal>, [[<spartanweaponry:material>, <ore:blockVoid>], [null, <ore:blockVoid>]]);
-recipes.addShaped("throwing_knife_elementium", <spartanweaponryarcana:throwing_knife_elementium>, [[<spartanweaponryarcana:material:2>, <botania:storage:2>]]);
-recipes.addShaped("throwing_knife_manasteel", <spartanweaponryarcana:throwing_knife_manasteel>, [[<spartanweaponryarcana:material>, <botania:storage>]]);
-recipes.addShaped("throwing_knife_terrasteel", <spartanweaponryarcana:throwing_knife_terrasteel>, [[<spartanweaponryarcana:material>, <botania:storage:1>]]);
-recipes.addShaped("throwing_knife_thaumium", <spartanweaponryarcana:throwing_knife_thaumium>, [[<spartanweaponry:material>, <ore:blockThaumium>]]);
-recipes.addShaped("throwing_knife_voidmetal", <spartanweaponryarcana:throwing_knife_voidmetal>, [[<spartanweaponry:material>, <ore:blockVoid>]]);
-recipes.addShaped("warhammer_elementium", <spartanweaponryarcana:warhammer_elementium>, [[null, <botania:storage:2>], [<botania:storage:2>, <botania:storage:2>], [null, <spartanweaponryarcana:material:2>]]);
-recipes.addShaped("warhammer_manasteel", <spartanweaponryarcana:warhammer_manasteel>, [[null, <botania:storage>], [<botania:storage>, <botania:storage>], [null, <spartanweaponryarcana:material>]]);
-recipes.addShaped("warhammer_terrasteel", <spartanweaponryarcana:warhammer_terrasteel>, [[null, <botania:storage:1>], [<botania:storage:1>, <botania:storage:1>], [null, <spartanweaponryarcana:material>]]);
-recipes.addShaped("warhammer_thaumium", <spartanweaponryarcana:warhammer_thaumium>, [[null, <ore:blockThaumium>], [<ore:blockThaumium>, <ore:blockThaumium>], [null, <spartanweaponry:material>]]);
-recipes.addShaped("warhammer_voidmetal", <spartanweaponryarcana:warhammer_voidmetal>, [[null, <ore:blockVoid>], [<ore:blockVoid>, <ore:blockVoid>], [null, <spartanweaponry:material>]]);
-recipes.addShapeless("arrow_explosive", <spartanweaponry:arrow_explosive>, [<minecraft:arrow>, <spartanweaponry:material:2>]);
-recipes.addShapeless("handle_leather", <spartanweaponry:material> * 4, [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:leather>]);
-recipes.addShapeless("handle_wool", <spartanweaponry:material> * 4, [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <minecraft:wool:*>]);
-recipes.addShapeless("handle_dreamwood_leather", <spartanweaponryarcana:material:2> * 4, [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <ore:leather>]);
-recipes.addShapeless("handle_dreamwood_wool", <spartanweaponryarcana:material:2> * 4, [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <minecraft:wool:*>]);
-recipes.addShapeless("handle_livingwood_leather", <spartanweaponryarcana:material> * 4, [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <ore:leather>]);
-recipes.addShapeless("handle_livingwood_wool", <spartanweaponryarcana:material> * 4, [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <minecraft:wool:*>]);
+recipes.removeByMod("spartanweaponry");
+recipes.removeByMod("spartanweaponryarcana");
 
 
-recipes.addShaped("caestus", <spartanweaponry:caestus>, [
-	[<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>], 
-	[<ore:itemTieNormal>, <ore:itemTieNormal>, <ore:ingotIron>], 
-	[<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]
-]);
+function create_recipe(builder as RecipeBuilder, weapon_type as string, block as IOreDictEntry, material as string) as void {
 
-recipes.addShaped("caestus_studded", <spartanweaponry:caestus_studded>,[
-	[null, <ore:ingotIron>, null], 
-	[<ore:blockIron>, <spartanweaponry:caestus>, <ore:blockIron>], 
-	[null, <ore:ingotIron>, null]
-]);
+	var handle as IItemStack;
+	var pole as IItemStack;
+	var stick as IOreDictEntry;
+	var recipe_string as IOreDictEntry;
+	var planks as IOreDictEntry;
+	var bow as IItemStack;
+
+	if (material == "Elementium") {
+		handle = <spartanweaponryarcana:material:2>;
+		pole = <spartanweaponryarcana:material:3>;
+		stick = <ore:dreamwoodTwig>;
+		recipe_string = <ore:manaString>;
+		bow = <spartanweaponryarcana:material:4>;
+		planks = <ore:plankDreamwood>;
+	} else if (material == "Manasteel" || material == "Terrasteel") {
+		handle = <spartanweaponryarcana:material>;
+		pole = <spartanweaponryarcana:material:1>;
+		stick = <ore:livingwoodTwig>;
+		recipe_string = <ore:manaString>;
+		bow = <botania:livingwoodbow>;
+		planks = <ore:plankLivingwood>;
+	} else {
+		handle = <spartanweaponry:material>;
+		pole = <spartanweaponry:material:1>;
+		stick = <ore:stickWood>;
+		recipe_string = <ore:string>;
+		bow = <minecraft:bow>;
+		planks = <ore:plankWood>;
+	}
+
+
+	if (weapon_type == "battleaxe") {
+		builder.setShaped([[block, block, block], [block, stick, block], [null, handle, null]]);
+		return;
+	} else if (weapon_type == "boomerang") {
+		builder.setShaped([[block, planks, planks], [planks, null, null], [planks, null, null]]);
+		return;
+	} else if (weapon_type == "crossbow") {
+		builder.setShaped([[bow, recipe_string, block], [recipe_string, block, null], [block, null, handle]]);
+		return;
+	} else if (weapon_type == "dagger") {
+		builder.setShaped([[block], [handle]]);
+		return;
+	} else if (weapon_type == "glaive") {
+		builder.setShaped([[null, block], [null, block], [block, pole]]);
+		return;
+	} else if (weapon_type == "pike") {
+		builder.setShaped([[block], [pole], [pole]]);
+		return;
+	} else if (weapon_type == "halberd") {
+		builder.setShaped([[null, block], [block, block], [block, pole]]);
+		return;
+	} else if (weapon_type == "hammer") {
+		builder.setShaped([[block, block, block], [block, block, block], [null, handle, null]]);
+		return;
+	} else if (weapon_type == "greatsword") {
+		builder.setShaped([[null, block, null], [block, block, block], [block, handle, block]]);
+		return;
+	} else if (weapon_type == "javelin") {
+		builder.setShaped([[pole, block]]);
+		return;
+	} else if (weapon_type == "katana") {
+		builder.setShaped([[null, null, block], [null, block, null], [handle, null, null]]);
+		return;
+	} else if (weapon_type == "lance") {
+		builder.setShaped([[block], [pole], [handle]]);
+		return;
+	} else if (weapon_type == "longbow") {
+		builder.setShaped([[handle, stick, block], [stick, null, recipe_string], [block, recipe_string, recipe_string]]);
+		return;
+	} else if (weapon_type == "longsword") {
+		builder.setShaped([[null, block, null], [null, block, null], [block, handle, block]]);
+		return;
+	} else if (weapon_type == "mace") {
+		builder.setShaped([[null, block, block], [null, stick, block], [handle, null, null]]);
+		return;
+	} else if (weapon_type == "staff") {
+		builder.setShaped([[pole], [block]]);
+		return;
+	} else if (weapon_type == "rapier") {
+		builder.setShaped([[null, null, block], [block, block, null], [handle, block, null]]);
+		return;
+	} else if (weapon_type == "saber") {
+		builder.setShaped([[null, block], [null, block], [block, handle]]);
+		return;
+	} else if (weapon_type == "spear") {
+		builder.setShaped([[block], [pole]]);
+		return;
+	} else if (weapon_type == "axe") {
+		builder.setShaped([[handle, block], [null, block]]);
+		return;
+	} else if (weapon_type == "knife") {
+		builder.setShaped([[handle, block]]);
+		return;
+	} else if (weapon_type == "warhammer") {
+		builder.setShaped([[null, block], [block, block], [null, handle]]);
+		return;
+	}
+}
+
+val weapons = [ 
+	"spartanweaponry:battleaxe_wood", "spartanweaponry:boomerang_wood", "spartanweaponry:crossbow_wood",
+	"spartanweaponry:dagger_wood", "spartanweaponry:glaive_wood", "spartanweaponry:greatsword_wood",
+	"spartanweaponry:halberd_wood", "spartanweaponry:hammer_wood", "spartanweaponry:javelin_wood",
+	"spartanweaponry:katana_wood", "spartanweaponry:lance_wood", "spartanweaponry:longbow_wood",
+	"spartanweaponry:longsword_wood", "spartanweaponry:mace_wood", "spartanweaponry:pike_wood",
+	"spartanweaponry:rapier_wood", "spartanweaponry:saber_wood", "spartanweaponry:spear_wood",
+	"spartanweaponry:throwing_axe_wood", "spartanweaponry:throwing_knife_wood", "spartanweaponry:warhammer_wood",
+	"spartanweaponry:battleaxe_diamond", "spartanweaponry:boomerang_diamond", "spartanweaponry:crossbow_diamond",
+	"spartanweaponry:dagger_diamond", "spartanweaponry:greatsword_diamond", "spartanweaponry:javelin_diamond",
+	"spartanweaponry:halberd_diamond", "spartanweaponry:glaive_diamond", "spartanweaponry:mace_diamond",
+	"spartanweaponry:longsword_diamond", "spartanweaponry:longbow_diamond", "spartanweaponry:lance_diamond",
+	"spartanweaponry:katana_diamond", "spartanweaponry:hammer_diamond", "spartanweaponry:rapier_diamond",
+	"spartanweaponry:staff_diamond", "spartanweaponry:warhammer_diamond", "spartanweaponry:pike_diamond",
+	"spartanweaponry:saber_diamond", "spartanweaponry:spear_diamond", "spartanweaponry:throwing_axe_diamond",
+	"spartanweaponry:throwing_knife_diamond", "spartanweaponry:battleaxe_gold", "spartanweaponry:battleaxe_iron",
+	"spartanweaponry:battleaxe_bronze", "spartanweaponry:battleaxe_copper", "spartanweaponry:battleaxe_electrum",
+	"spartanweaponry:battleaxe_invar", "spartanweaponry:battleaxe_lead", "spartanweaponry:battleaxe_nickel",
+	"spartanweaponry:battleaxe_platinum", "spartanweaponry:battleaxe_silver", "spartanweaponry:battleaxe_steel",
+	"spartanweaponry:battleaxe_tin", "spartanweaponry:boomerang_bronze", "spartanweaponry:boomerang_copper",
+	"spartanweaponry:boomerang_electrum", "spartanweaponry:boomerang_invar", "spartanweaponry:boomerang_lead",
+	"spartanweaponry:boomerang_nickel", "spartanweaponry:boomerang_platinum", "spartanweaponry:boomerang_silver",
+	"spartanweaponry:boomerang_steel", "spartanweaponry:boomerang_tin", "spartanweaponry:boomerang_gold",
+	"spartanweaponry:boomerang_iron", "spartanweaponry:crossbow_bronze", "spartanweaponry:crossbow_copper",
+	"spartanweaponry:crossbow_electrum", "spartanweaponry:crossbow_invar", "spartanweaponry:crossbow_lead",
+	"spartanweaponry:crossbow_nickel", "spartanweaponry:crossbow_platinum", "spartanweaponry:crossbow_silver",
+	"spartanweaponry:crossbow_steel", "spartanweaponry:crossbow_tin", "spartanweaponry:crossbow_iron",
+	"spartanweaponry:crossbow_leather", "spartanweaponry:dagger_gold", "spartanweaponry:dagger_iron",
+	"spartanweaponry:dagger_bronze", "spartanweaponry:dagger_copper", "spartanweaponry:dagger_electrum",
+	"spartanweaponry:dagger_invar", "spartanweaponry:dagger_lead", "spartanweaponry:dagger_nickel",
+	"spartanweaponry:dagger_platinum", "spartanweaponry:dagger_silver", "spartanweaponry:dagger_steel",
+	"spartanweaponry:dagger_tin", "spartanweaponry:glaive_gold", "spartanweaponry:glaive_iron",
+	"spartanweaponry:glaive_bronze", "spartanweaponry:glaive_copper", "spartanweaponry:glaive_electrum",
+	"spartanweaponry:glaive_invar", "spartanweaponry:glaive_lead", "spartanweaponry:glaive_nickel",
+	"spartanweaponry:glaive_platinum", "spartanweaponry:glaive_silver", "spartanweaponry:glaive_steel",
+	"spartanweaponry:glaive_tin", "spartanweaponry:greatsword_gold", "spartanweaponry:greatsword_iron",
+	"spartanweaponry:greatsword_bronze", "spartanweaponry:greatsword_copper", "spartanweaponry:greatsword_electrum",
+	"spartanweaponry:greatsword_invar", "spartanweaponry:greatsword_lead", "spartanweaponry:greatsword_nickel",
+	"spartanweaponry:greatsword_platinum", "spartanweaponry:greatsword_silver", "spartanweaponry:greatsword_steel",
+	"spartanweaponry:greatsword_tin", "spartanweaponry:halberd_bronze", "spartanweaponry:halberd_copper",
+	"spartanweaponry:halberd_electrum", "spartanweaponry:halberd_invar", "spartanweaponry:halberd_lead",
+	"spartanweaponry:halberd_nickel", "spartanweaponry:halberd_platinum", "spartanweaponry:halberd_silver",
+	"spartanweaponry:halberd_steel", "spartanweaponry:halberd_tin", "spartanweaponry:halberd_gold",
+	"spartanweaponry:halberd_iron", "spartanweaponry:hammer_bronze", "spartanweaponry:hammer_copper",
+	"spartanweaponry:hammer_electrum", "spartanweaponry:hammer_invar", "spartanweaponry:hammer_lead",
+	"spartanweaponry:hammer_nickel", "spartanweaponry:hammer_platinum", "spartanweaponry:hammer_silver",
+	"spartanweaponry:hammer_steel", "spartanweaponry:hammer_tin", "spartanweaponry:hammer_gold",
+	"spartanweaponry:hammer_iron", "spartanweaponry:javelin_bronze", "spartanweaponry:javelin_copper",
+	"spartanweaponry:javelin_electrum", "spartanweaponry:javelin_invar", "spartanweaponry:javelin_lead",
+	"spartanweaponry:javelin_nickel", "spartanweaponry:javelin_platinum", "spartanweaponry:javelin_silver",
+	"spartanweaponry:javelin_steel", "spartanweaponry:javelin_tin", "spartanweaponry:javelin_gold",
+	"spartanweaponry:javelin_iron", "spartanweaponry:katana_bronze", "spartanweaponry:katana_copper",
+	"spartanweaponry:katana_electrum", "spartanweaponry:katana_invar", "spartanweaponry:katana_lead",
+	"spartanweaponry:katana_nickel", "spartanweaponry:katana_platinum", "spartanweaponry:katana_silver",
+	"spartanweaponry:katana_steel", "spartanweaponry:katana_tin", "spartanweaponry:katana_gold",
+	"spartanweaponry:katana_iron", "spartanweaponry:lance_bronze", "spartanweaponry:lance_copper",
+	"spartanweaponry:lance_electrum", "spartanweaponry:lance_invar", "spartanweaponry:lance_lead",
+	"spartanweaponry:lance_nickel", "spartanweaponry:lance_platinum", "spartanweaponry:lance_silver",
+	"spartanweaponry:lance_steel", "spartanweaponry:lance_tin", "spartanweaponry:lance_gold",
+	"spartanweaponry:lance_iron", "spartanweaponry:longbow_bronze", "spartanweaponry:longbow_copper",
+	"spartanweaponry:longbow_electrum", "spartanweaponry:longbow_invar", "spartanweaponry:longbow_lead",
+	"spartanweaponry:longbow_nickel", "spartanweaponry:longbow_platinum", "spartanweaponry:longbow_silver",
+	"spartanweaponry:longbow_steel", "spartanweaponry:longbow_tin", "spartanweaponry:longbow_iron",
+	"spartanweaponry:longbow_leather", "spartanweaponry:longsword_bronze", "spartanweaponry:longsword_copper",
+	"spartanweaponry:longsword_electrum", "spartanweaponry:longsword_invar", "spartanweaponry:longsword_lead",
+	"spartanweaponry:longsword_nickel", "spartanweaponry:longsword_platinum", "spartanweaponry:longsword_silver",
+	"spartanweaponry:longsword_steel", "spartanweaponry:longsword_tin", "spartanweaponry:longsword_gold",
+	"spartanweaponry:longsword_iron", "spartanweaponry:mace_bronze", "spartanweaponry:mace_copper",
+	"spartanweaponry:mace_electrum", "spartanweaponry:mace_invar", "spartanweaponry:mace_lead",
+	"spartanweaponry:mace_nickel", "spartanweaponry:mace_platinum", "spartanweaponry:mace_silver",
+	"spartanweaponry:mace_steel", "spartanweaponry:mace_tin", "spartanweaponry:mace_gold",
+	"spartanweaponry:mace_iron", "spartanweaponry:pike_gold", "spartanweaponry:pike_iron",
+	"spartanweaponry:pike_bronze", "spartanweaponry:pike_copper", "spartanweaponry:pike_electrum",
+	"spartanweaponry:pike_invar", "spartanweaponry:pike_lead", "spartanweaponry:pike_nickel",
+	"spartanweaponry:pike_platinum", "spartanweaponry:pike_silver", "spartanweaponry:pike_steel",
+	"spartanweaponry:pike_tin", "spartanweaponry:staff_gold", "spartanweaponry:staff_iron",
+	"spartanweaponry:staff_bronze", "spartanweaponry:staff_copper", "spartanweaponry:staff_electrum",
+	"spartanweaponry:staff_invar", "spartanweaponry:staff_lead", "spartanweaponry:staff_nickel",
+	"spartanweaponry:staff_platinum", "spartanweaponry:staff_silver", "spartanweaponry:staff_steel",
+	"spartanweaponry:staff_tin", "spartanweaponry:rapier_gold", "spartanweaponry:rapier_iron",
+	"spartanweaponry:rapier_bronze", "spartanweaponry:rapier_copper", "spartanweaponry:rapier_electrum",
+	"spartanweaponry:rapier_invar", "spartanweaponry:rapier_lead", "spartanweaponry:rapier_nickel",
+	"spartanweaponry:rapier_platinum", "spartanweaponry:rapier_silver", "spartanweaponry:rapier_steel",
+	"spartanweaponry:rapier_tin", "spartanweaponry:saber_gold", "spartanweaponry:saber_iron",
+	"spartanweaponry:saber_bronze", "spartanweaponry:saber_copper", "spartanweaponry:saber_electrum",
+	"spartanweaponry:saber_invar", "spartanweaponry:saber_lead", "spartanweaponry:saber_nickel",
+	"spartanweaponry:saber_platinum", "spartanweaponry:saber_silver", "spartanweaponry:saber_steel",
+	"spartanweaponry:saber_tin", "spartanweaponry:spear_bronze", "spartanweaponry:spear_copper",
+	"spartanweaponry:spear_electrum", "spartanweaponry:spear_invar", "spartanweaponry:spear_lead",
+	"spartanweaponry:spear_nickel", "spartanweaponry:spear_platinum", "spartanweaponry:spear_silver",
+	"spartanweaponry:spear_steel", "spartanweaponry:spear_tin", "spartanweaponry:spear_gold",
+	"spartanweaponry:spear_iron", "spartanweaponry:throwing_axe_bronze", "spartanweaponry:throwing_axe_copper",
+	"spartanweaponry:throwing_axe_electrum", "spartanweaponry:throwing_axe_invar", "spartanweaponry:throwing_axe_lead",
+	"spartanweaponry:throwing_axe_nickel", "spartanweaponry:throwing_axe_platinum", "spartanweaponry:throwing_axe_silver",
+	"spartanweaponry:throwing_axe_steel", "spartanweaponry:throwing_axe_tin", "spartanweaponry:throwing_axe_gold",
+	"spartanweaponry:throwing_axe_iron", "spartanweaponry:throwing_knife_bronze", "spartanweaponry:throwing_knife_copper",
+	"spartanweaponry:throwing_knife_electrum", "spartanweaponry:throwing_knife_invar", "spartanweaponry:throwing_knife_lead",
+	"spartanweaponry:throwing_knife_nickel", "spartanweaponry:throwing_knife_platinum", "spartanweaponry:throwing_knife_silver",
+	"spartanweaponry:throwing_knife_steel", "spartanweaponry:throwing_knife_tin", "spartanweaponry:throwing_knife_gold",
+	"spartanweaponry:throwing_knife_iron", "spartanweaponry:warhammer_bronze", "spartanweaponry:warhammer_copper",
+	"spartanweaponry:warhammer_electrum", "spartanweaponry:warhammer_invar", "spartanweaponry:warhammer_lead",
+	"spartanweaponry:warhammer_nickel", "spartanweaponry:warhammer_platinum", "spartanweaponry:warhammer_silver",
+	"spartanweaponry:warhammer_steel", "spartanweaponry:warhammer_tin", "spartanweaponry:warhammer_gold",
+	"spartanweaponry:warhammer_iron", "spartanweaponryarcana:crossbow_thaumium", "spartanweaponryarcana:crossbow_voidmetal",
+	"spartanweaponryarcana:dagger_thaumium", "spartanweaponryarcana:dagger_voidmetal", "spartanweaponryarcana:battleaxe_terrasteel",
+	"spartanweaponryarcana:battleaxe_thaumium", "spartanweaponryarcana:boomerang_thaumium", "spartanweaponryarcana:boomerang_voidmetal",
+	"spartanweaponryarcana:javelin_thaumium", "spartanweaponryarcana:javelin_voidmetal", "spartanweaponryarcana:greatsword_thaumium",
+	"spartanweaponryarcana:greatsword_voidmetal", "spartanweaponryarcana:glaive_thaumium", "spartanweaponryarcana:glaive_voidmetal",
+	"spartanweaponryarcana:hammer_thaumium", "spartanweaponryarcana:hammer_voidmetal", "spartanweaponryarcana:halberd_thaumium",
+	"spartanweaponryarcana:halberd_voidmetal", "spartanweaponryarcana:longbow_thaumium", "spartanweaponryarcana:longbow_voidmetal",
+	"spartanweaponryarcana:longsword_thaumium", "spartanweaponryarcana:longsword_voidmetal", "spartanweaponryarcana:lance_thaumium",
+	"spartanweaponryarcana:lance_voidmetal", "spartanweaponryarcana:katana_thaumium", "spartanweaponryarcana:katana_voidmetal",
+	"spartanweaponryarcana:staff_thaumium", "spartanweaponryarcana:staff_voidmetal", "spartanweaponryarcana:rapier_thaumium",
+	"spartanweaponryarcana:rapier_voidmetal", "spartanweaponryarcana:saber_thaumium", "spartanweaponryarcana:saber_voidmetal",
+	"spartanweaponryarcana:spear_thaumium", "spartanweaponryarcana:spear_voidmetal", "spartanweaponryarcana:throwing_axe_thaumium",
+	"spartanweaponryarcana:throwing_axe_voidmetal", "spartanweaponryarcana:throwing_knife_thaumium", "spartanweaponryarcana:throwing_knife_voidmetal",
+	"spartanweaponryarcana:warhammer_thaumium", "spartanweaponryarcana:warhammer_voidmetal", "spartanweaponryarcana:pike_thaumium",
+	"spartanweaponryarcana:pike_voidmetal", "spartanweaponryarcana:mace_thaumium", "spartanweaponryarcana:mace_voidmetal",
+	"spartanweaponryarcana:battleaxe_elementium", "spartanweaponryarcana:battleaxe_manasteel", "spartanweaponryarcana:battleaxe_voidmetal",
+	"spartanweaponryarcana:boomerang_elementium", "spartanweaponryarcana:boomerang_manasteel", "spartanweaponryarcana:boomerang_terrasteel",
+	"spartanweaponryarcana:crossbow_elementium", "spartanweaponryarcana:crossbow_manasteel", "spartanweaponryarcana:crossbow_terrasteel",
+	"spartanweaponryarcana:dagger_elementium", "spartanweaponryarcana:dagger_manasteel", "spartanweaponryarcana:dagger_terrasteel",
+	"spartanweaponryarcana:glaive_elementium", "spartanweaponryarcana:glaive_manasteel", "spartanweaponryarcana:glaive_terrasteel",
+	"spartanweaponryarcana:greatsword_elementium", "spartanweaponryarcana:greatsword_manasteel", "spartanweaponryarcana:greatsword_terrasteel",
+	"spartanweaponryarcana:halberd_elementium", "spartanweaponryarcana:halberd_manasteel", "spartanweaponryarcana:halberd_terrasteel",
+	"spartanweaponryarcana:hammer_elementium", "spartanweaponryarcana:hammer_manasteel", "spartanweaponryarcana:hammer_terrasteel",
+	"spartanweaponryarcana:javelin_elementium", "spartanweaponryarcana:javelin_manasteel", "spartanweaponryarcana:javelin_terrasteel",
+	"spartanweaponryarcana:katana_elementium", "spartanweaponryarcana:katana_manasteel", "spartanweaponryarcana:katana_terrasteel",
+	"spartanweaponryarcana:lance_elementium", "spartanweaponryarcana:lance_manasteel", "spartanweaponryarcana:lance_terrasteel",
+	"spartanweaponryarcana:longbow_elementium", "spartanweaponryarcana:longbow_manasteel", "spartanweaponryarcana:longbow_terrasteel",
+	"spartanweaponryarcana:longsword_elementium", "spartanweaponryarcana:longsword_manasteel", "spartanweaponryarcana:longsword_terrasteel",
+	"spartanweaponryarcana:mace_elementium", "spartanweaponryarcana:mace_manasteel", "spartanweaponryarcana:mace_terrasteel",
+	"spartanweaponryarcana:pike_elementium", "spartanweaponryarcana:pike_manasteel", "spartanweaponryarcana:pike_terrasteel",
+	"spartanweaponryarcana:staff_elementium", "spartanweaponryarcana:staff_manasteel", "spartanweaponryarcana:staff_terrasteel",
+	"spartanweaponryarcana:rapier_elementium", "spartanweaponryarcana:rapier_manasteel", "spartanweaponryarcana:rapier_terrasteel",
+	"spartanweaponryarcana:saber_elementium", "spartanweaponryarcana:saber_manasteel", "spartanweaponryarcana:saber_terrasteel",
+	"spartanweaponryarcana:spear_elementium", "spartanweaponryarcana:spear_manasteel", "spartanweaponryarcana:spear_terrasteel",
+	"spartanweaponryarcana:throwing_axe_elementium", "spartanweaponryarcana:throwing_axe_manasteel", "spartanweaponryarcana:throwing_axe_terrasteel",
+	"spartanweaponryarcana:throwing_knife_elementium", "spartanweaponryarcana:throwing_knife_manasteel", "spartanweaponryarcana:throwing_knife_terrasteel",
+	"spartanweaponryarcana:warhammer_elementium", "spartanweaponryarcana:warhammer_manasteel", "spartanweaponryarcana:warhammer_terrasteel"
+] as string[];
+
+for weapon in weapons {
+
+	var material_lowercase as string;
+	var weapon_type as string;
+	var block as IOreDictEntry;
+
+	val full_name_as_array = weapon.split(":")[1].split("_");
+
+	if full_name_as_array[0] == "throwing" {
+		weapon_type = full_name_as_array[1];
+		material_lowercase = full_name_as_array[2];
+	} else {
+		weapon_type = full_name_as_array[0];
+		material_lowercase = full_name_as_array[1];
+	}
+
+
+	val material as string = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
+
+
+	if material == "Wood" {
+		block = <ore:logWood>;
+	} else if material == "Voidmetal" {
+		block = <ore:blockVoid>;
+	} else if material == "Stone" {
+		block = <ore:cobblestone>;
+	} else {
+		block = oreDict["block" ~ material];
+	}
+
+	if material == "Diamond" {
+		val builder = RecipeBuilder.get("jeweler");
+		builder.addTool(<ore:artisansGemCutter>, 250);
+		create_recipe(builder, weapon_type, block, material);
+		builder.addOutput(itemUtils.getItem(weapon)).create();
+	} else if material == "Wood" {
+		val builder = RecipeBuilder.get("basic");
+		builder.addTool(<ore:artisansHandsaw>, 50);
+		builder.addTool(<ore:artisansFramingHammer>, 50);
+		create_recipe(builder, weapon_type, block, material);
+		builder.addOutput(itemUtils.getItem(weapon)).create();
+	} else if material == "Stone" {
+		val builder = RecipeBuilder.get("basic");
+		builder.addTool(<ore:artisansChisel>, 50);
+		builder.addTool(<ore:artisansFramingHammer>, 50);
+		create_recipe(builder, weapon_type, block, material);
+		builder.addOutput(itemUtils.getItem(weapon)).create();
+	} else {
+		val builder = RecipeBuilder.get("blacksmith");
+		builder.addTool(<ore:artisansHammer>, 100);
+		builder.addTool(<ore:artisansBurner>, 100);
+		create_recipe(builder, weapon_type, block, material);
+		builder.addOutput(itemUtils.getItem(weapon)).create();
+	}	
+}
+
+
+// Материалы и стафф
+
+RecipeBuilder.get("basic") // Взрывные заряды
+  .setShaped([
+    [<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>],
+    [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
+    [<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<spartanweaponry:material:2> * 4)
+  .create();
+
+RecipeBuilder.get("basic") // Динамит
+  .setShaped([
+    [null, null, <ore:string>],
+    [null, <spartanweaponry:material:2>, null],
+    [<spartanweaponry:material:2>, null, null]])
+  .addOutput(<spartanweaponry:dynamite>)
+  .setExtraOutputOne(<minecraft:gunpowder> * 2, 0.1)
+  .setExtraOutputTwo(<minecraft:gunpowder>, 0.2)
+  .create();
+
+RecipeBuilder.get("mage") // Наконечник арбалета  из дерева мечтаний
+  .setShaped([
+    [null, <botania:manaresource:13>, <botania:storage>],
+    [<botania:manaresource:13>, null, <botania:storage>],
+    [null, <botania:manaresource:13>, <botania:storage>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<spartanweaponryarcana:material:4>)
+  .create();
+
+// Рукояти обычные (Короткие)
+
+RecipeBuilder.get("carpenter") // Короткая рукоять
+  .setShaped([
+    [<ore:stickWood>, <ore:string>]])
+  .addOutput(<spartanweaponry:material>)
+  .create();
+
+RecipeBuilder.get("carpenter") // Короткие рукояти с использованием кожи
+  .setShaped([
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <minecraft:leather>, null]])
+  .addOutput(<spartanweaponry:material> * 4)
+  .create();
+
+RecipeBuilder.get("carpenter") // Короткие рукояти с использованием шерсти
+  .setShaped([
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:wool>, null]])
+  .addOutput(<spartanweaponry:material> * 4)
+  .create();
+
+// Рукояти магические (Короткие)
+
+RecipeBuilder.get("mage") // Короткая рукоять из дерева мечтаний
+  .setShaped([
+    [<botania:manaresource:13>, <ore:string>]])
+  .addOutput(<spartanweaponryarcana:material:2>)
+  .create();
+
+RecipeBuilder.get("mage") // Короткие рукояти из дерева мечтаний с использованием кожи
+  .setShaped([
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <minecraft:leather>, null]])
+  .addOutput(<spartanweaponryarcana:material:2> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Короткие рукояти из дерева мечтаний с использованием шерсти
+  .setShaped([
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <ore:wool>, null]])
+  .addOutput(<spartanweaponryarcana:material:2> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Короткая рукоять из жизнедерева
+  .setShaped([
+    [<botania:manaresource:3>, <ore:string>]])
+  .addOutput(<spartanweaponryarcana:material>)
+  .create();
+
+RecipeBuilder.get("mage") // Короткие рукояти из жизнедерева с использованием кожи
+  .setShaped([
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <minecraft:leather>, null]])
+  .addOutput(<spartanweaponryarcana:material> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Короткие рукояти из жизнедерева с использованием шерсти
+  .setShaped([
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <ore:wool>, null]])
+  .addOutput(<spartanweaponryarcana:material> * 4)
+  .create();
+
+// Рукояти обычные (Длинные)
+
+RecipeBuilder.get("carpenter") // Длинная рукоять с использованием нити
+  .setShaped([
+    [<ore:stickWood>, null],
+    [<ore:stickWood>, <ore:string>],
+    [<ore:stickWood>, null]])
+  .addOutput(<spartanweaponry:material:1>)
+  .create();
+
+RecipeBuilder.get("carpenter") // Длинные рукояти с использованием кожи
+  .setShaped([
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:stickWood>, <minecraft:leather>]])
+  .addOutput(<spartanweaponry:material:1> * 4)
+  .create();
+
+RecipeBuilder.get("carpenter") // Длинные рукояти с использованием шерсти
+  .setShaped([
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:stickWood>, <ore:wool>]])
+  .addOutput(<spartanweaponry:material:1> * 4)
+  .create();
+
+// Рукояти магические (Длинные)
+
+RecipeBuilder.get("mage") // Длинная рукоять из дерева мечтаний
+  .setShaped([
+    [<botania:manaresource:13>, null],
+    [<botania:manaresource:13>, <ore:string>],
+    [<botania:manaresource:13>, null]])
+  .addOutput(<spartanweaponryarcana:material:3>)
+  .create();
+
+RecipeBuilder.get("mage") // Длинные рукояти из дерева мечтаний с использованием кожи
+  .setShaped([
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <botania:manaresource:13>, <minecraft:leather>]])
+  .addOutput(<spartanweaponryarcana:material:3> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Длинные рукояти из дерева мечтаний с использованием шерсти
+  .setShaped([
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
+    [<botania:manaresource:13>, <botania:manaresource:13>, <ore:wool>]])
+  .addOutput(<spartanweaponryarcana:material:3> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Длинная рукоять из жизнедерева
+  .setShaped([
+    [<botania:manaresource:3>, null],
+    [<botania:manaresource:3>, <ore:string>],
+    [<botania:manaresource:3>, null]])
+  .addOutput(<spartanweaponryarcana:material:1>)
+  .create();
+
+RecipeBuilder.get("mage") // Длинные рукояти из жизнедерева с использованием кожи
+  .setShaped([
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <botania:manaresource:3>, <minecraft:leather>]])
+  .addOutput(<spartanweaponryarcana:material:1> * 4)
+  .create();
+
+RecipeBuilder.get("mage") // Длинные рукояти из жизнедерева с использованием шерсти
+  .setShaped([
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, <botania:manaresource:3>, <ore:wool>]])
+  .addOutput(<spartanweaponryarcana:material:1> * 4)
+  .create();
+
+// Оружие обычное (Ближнее)
+
+RecipeBuilder.get("carpenter") // Деревянный шест
+  .setShaped([
+    [<spartanweaponry:material:1>],
+    [<ore:plankWood>]])
+  .addOutput(<spartanweaponry:staff>)
+  .create();
+
+RecipeBuilder.get("tanner") // Цест
+  .setShaped([
+    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
+    [<ore:string>, <ore:string>, <ore:blockIron>],
+    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addOutput(<spartanweaponry:caestus>)
+  .create();
+
+RecipeBuilder.get("blacksmith") // Шипованный цест
+  .setShaped([
+    [null, <ore:blockIron>, null],
+    [<ore:blockIron>, <spartanweaponry:caestus>, <ore:blockIron>],
+    [null, <ore:blockIron>, null]])
+  .addTool(<ore:artisansHammer>, 300)
+  .addOutput(<spartanweaponry:caestus_studded>)
+  .setMinimumTier(2)
+  .create();
+
+RecipeBuilder.get("carpenter") // Деревянная дубина
+  .setShaped([
+    [null, <ore:plankWood>],
+    [<ore:plankWood>, null]])
+  .addTool(<ore:artisansKnife>, 200)
+  .addOutput(<spartanweaponry:club_wood>)
+  .create();
+
+RecipeBuilder.get("blacksmith") // Шипованная дубина
+  .setShaped([
+    [<ore:blockIron>],
+    [<spartanweaponry:club_wood>]])
+  .addTool(<ore:artisansHammer>, 300)
+  .addOutput(<spartanweaponry:club_studded>)
+  .setMinimumTier(2)
+  .create();
+
+// Оружие магическое (Ближнее)
+
+// Оружие обычное (Дальнее)
+
+// Оружие магическое (Дальнее)
+
+// Стрелы и болты
+
+RecipeBuilder.get("basic") // Деревянные стрелы
+  .setShaped([
+    [<ore:plankWood>],
+    [<ore:stickWood>],
+    [<ore:feather>]])
+  .addTool(<ore:artisansKnife>, 5)
+  .addOutput(<spartanweaponry:arrow_wood> * 4)
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железные стрелы
+  .setShaped([
+    [<ore:blockIron>],
+    [<ore:stickWood>],
+    [<ore:feather>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<spartanweaponry:arrow_iron> * 4)
+  .create();
+
+RecipeBuilder.get("jeweler") // Алмазные стрелы
+  .setShaped([
+    [<ore:blockDiamond>],
+    [<ore:stickWood>],
+    [<ore:feather>]])
+  .addTool(<ore:artisansLens>, 20)
+  .addTool(<ore:artisansGemCutter>, 20)
+  .addOutput(<spartanweaponry:arrow_diamond> * 4)
+  .setMinimumTier(2)
+  .create();
+
+RecipeBuilder.get("basic") // Взрывные стрелы
+  .setShaped([
+    [<minecraft:arrow>, <spartanweaponry:material:2>]])
+  .addOutput(<spartanweaponry:arrow_explosive>)
+  .setMinimumTier(2)
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железные болты
+  .setShaped([
+    [null, null, <ore:blockIron>],
+    [null, <ore:nuggetIron>, null],
+    [<ore:feather>, null, null]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<spartanweaponry:bolt> * 4)
+  .create();
+
+RecipeBuilder.get("jeweler") // Алмазные болты
+  .setShaped([
+    [null, null, <ore:blockDiamond>],
+    [null, <ore:nuggetIron>, null],
+    [<ore:feather>, null, null]])
+  .addTool(<ore:artisansLens>, 20)
+  .addTool(<ore:artisansGemCutter>, 20)
+  .addOutput(<spartanweaponry:bolt> * 4)
+  .setMinimumTier(2)
+  .create();
+
+// Колчаны для стрел
+
+RecipeBuilder.get("tanner") // Колчан для стрел (маленький)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemArrow>, <minecraft:leather>],
+    [<ore:string>, <ore:blockIron>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addOutput(<spartanweaponry:quiver_arrow>.withTag({}))
+  .create();
+
+RecipeBuilder.get("tanner") // Колчан для стрел (средний)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemArrow>, <minecraft:leather>],
+    [<ore:string>, <ore:blockGold>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addOutput(<spartanweaponry:quiver_arrow_moderate>.withTag({}))
+  .create();
+
+RecipeBuilder.get("tanner") // Колчан для стрел (большой)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemArrow>, <minecraft:leather>],
+    [<ore:string>, <ore:blockDiamond>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<spartanweaponry:quiver_arrow_heavy>.withTag({}))
+  .setMinimumTier(2)
+  .create();
+
+// Колчаны для болтов
+
+RecipeBuilder.get("tanner") // Колчан для болтов (маленький)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemBolt>, <minecraft:leather>],
+    [<ore:string>, <ore:blockIron>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addOutput(<spartanweaponry:quiver_bolt>.withTag({}))
+  .create();
+
+RecipeBuilder.get("tanner") // Колчан для болтов (средний)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemBolt>, <minecraft:leather>],
+    [<ore:string>, <ore:blockGold>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addOutput(<spartanweaponry:quiver_bolt_moderate>.withTag({}))
+  .create();
+
+RecipeBuilder.get("tanner") // Колчан для болтов (большой)
+  .setShaped([
+    [<minecraft:leather>, <ore:string>, <minecraft:leather>],
+    [<minecraft:leather>, <ore:itemBolt>, <minecraft:leather>],
+    [<ore:string>, <ore:blockDiamond>, <ore:string>]])
+  .addTool(<ore:artisansCutters>, 200)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<spartanweaponry:quiver_bolt_heavy>.withTag({}))
+  .setMinimumTier(2)
+  .create();

@@ -1,0 +1,20 @@
+{
+  "name": "loot:materials",
+  "loot_rules": [
+    {
+      "level": [0, 1, 2, 3, 4],
+      "loot": [
+        {"data": {"name": "bewitchment:opal"}, "weight": 100},
+		{"data": {"name": "bewitchment:salt"}, "weight": 100},
+		{"data": {"name": "bewitchment:amethyst"}, "weight": 100},
+		{"data": {"name": "bewitchment:elder_sapling"}, "weight": 100},
+		{"data": {"name": "bewitchment:juniper_sapling"}, "weight": 100},
+		{"data": {"name": "bewitchment:cypress_sapling"}, "weight": 100},
+		{"data": {"name": "bewitchment:silver_ingot"}, "weight": 100},
+		{"data": {"name": "bewitchment:garnet"}, "weight": 100}
+      ],
+      "each": true,
+      "quantity": 1
+    }
+  ]
+}

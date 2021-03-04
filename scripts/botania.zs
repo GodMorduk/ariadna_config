@@ -1,5 +1,26 @@
-  recipes.removeByRecipeName("extrabotany:recipe_tribloodstone");//Удаление кровавого камня
-recipes.addShaped("bloodstonecore", <extrabotany:material:10>, [[<botania:storage:3>, <botania:spellcloth>, <botania:storage>], [<ore:runeEarthB>, <botania:autocraftinghalo>, <ore:runeFireB>], [<ore:runeWaterB>, <botania:manatablet>, <ore:runeAirB>]]);
+import mods.artisanworktables.builder.RecipeBuilder;
+
+  
+<ore:blockElementium>.add(<botania:storage:2>);
+<ore:blockManasteel>.add(<botania:storage>);
+<ore:blockTerrasteel>.add(<botania:storage:1>); 
+<ore:plankLivingwood>.add(<botania:livingwood:1>);
+<ore:plankDreamwood>.add(<botania:dreamwood:1>);
+
+recipes.removeByRecipeName("extrabotany:recipe_tribloodstone");//Удаление кровавого камня
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:3>, <botania:spellcloth>, <botania:storage>],
+    [<botania:rune:2>, <botania:autocraftinghalo>, <botania:rune:1>],
+    [<botania:rune>, <botania:manatablet>.withTag({}), <botania:rune:3>]])
+  .addTool(<ore:artisansPliers>, 50)
+  .addTool(<ore:artisansLens>, 50)
+  .addOutput(<extrabotany:material:10>)
+  .setExtraOutputOne(<botania:rune:1>, 0.2)
+  .setExtraOutputTwo(<botania:rune>, 0.2)
+  .setExtraOutputThree(<botania:rune:3>, 0.2)
+  .create();
+
   
   recipes.removeByRecipeName("botania:manaring");//Удаление мана кольца
 mods.botania.RuneAltar.addRecipe(<botania:manaring>.withTag({}),[<botania:manatablet>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
@@ -185,12 +206,1744 @@ mods.botania.RuneAltar.addRecipe(<extrabotany:masterhandbag>,[<ore:leather>, <ex
 mods.botania.RuneAltar.addRecipe(<botania:baublebox>,[<botanicadds:rune_tp>, <botania:storage>, <botanicadds:rune_tp>, <botania:storage>, <ore:chest>, <ore:blockGold>, <botanicadds:rune_tp>, <botania:storage>, <botanicadds:rune_tp>], 500000);
 
   recipes.removeByRecipeName("botanicadds:mana_stealer_sword");// Удаление лезвия кражи маны
-recipes.addShaped("StealingBlade",<botanicadds:mana_stealer_sword>,[[null, <ore:blockGaiasteel>, null], [<ore:blockGaiasteel>, <ore:blockGaiasteel>, <ore:blockGaiasteel>], [null, <botania:terrasword>, null]]);
-
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botanicadds:gaiasteel_block>, null],
+    [<botanicadds:gaiasteel_block>, <botanicadds:gaiasteel_block>, <botanicadds:gaiasteel_block>],
+    [null, <botania:terrasword>, null]])
+  .addTool(<ore:artisansHammer>, 400)
+  .addTool(<ore:artisansGrimoire>, 400)
+  .addOutput(<botanicadds:mana_stealer_sword>)
+  .create();
+ 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:material:1>); //Удаление рецепта орихалкоса
 mods.botania.RuneAltar.addRecipe(<extrabotany:material:1>*6, [<ore:eternalLifeEssence>, <ore:gaiaIngot>, <ore:gaiaIngot>, <ore:eternalLifeEssence>, <ore:eternalLifeEssence>, <extrabotany:material:3>, <ore:eternalLifeEssence>, <extrabotany:gildedmashedpotato>], 1000000);
+  recipes.removeByRecipeName("botania:manasteelboots");//Удаление ботинок из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage>, null, <botania:storage>],
+    [<botania:manaresource>, null, <botania:manaresource>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addOutput(<botania:manasteelboots>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manasteellegs");//Удаление легенсов из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, <botania:storage>, <botania:manaresource>],
+    [<botania:storage>, null, <botania:storage>],
+    [<botania:manaresource>, null, <botania:manaresource>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addOutput(<botania:manasteellegs>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manasteelchest");//Удаление нагрудника из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, null, <botania:manaresource>],
+    [<botania:storage>, <botania:storage>, <botania:storage>],
+    [<botania:manaresource>, <botania:manaresource>, <botania:manaresource>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addOutput(<botania:manasteelchest>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manasteelhelm");//Удаление шлем из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, <botania:storage>, <botania:manaresource>],
+    [<botania:storage>, null, <botania:storage>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addOutput(<botania:manasteelhelm>)
+  .create();
+  
+//Удаление брони из элементния
+  recipes.removeByRecipeName("botania:elementiumboots");
+  recipes.removeByRecipeName("botania:elementiumchest");
+  recipes.removeByRecipeName("botania:elementiumhelm");
+  recipes.removeByRecipeName("botania:elementiumlegs");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:blockorichalcos>, null, <extrabotany:blockorichalcos>],
+    [<botania:manaresource:7>, null, <botania:manaresource:7>]])
+  .setSecondaryIngredients([<botania:storage:4>])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addOutput(<botania:elementiumboots>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, <botania:storage:2>, <botania:manaresource:7>],
+    [<botania:storage:2>, null, <botania:storage:2>],
+    [<botania:manaresource:7>, null, <botania:manaresource:7>]])
+  .setSecondaryIngredients([<botania:storage:4>])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addOutput(<botania:elementiumlegs>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, null, <botania:manaresource:7>],
+    [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>],
+    [<botania:manaresource:7>, <botania:manaresource:7>, <botania:manaresource:7>]])
+  .setSecondaryIngredients([<botania:storage:4>])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addOutput(<botania:elementiumchest>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, <botania:storage:2>, <botania:manaresource:7>],
+    [<botania:storage:2>, null, <botania:storage:2>]])
+  .setSecondaryIngredients([<botania:storage:4>])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addOutput(<botania:elementiumhelm>)
+  .create();
+  
+//Удаление брони из террастали 
+  recipes.removeByRecipeName("botania:terrasteelboots");
+  recipes.removeByRecipeName("botania:terrasteelchest");
+  recipes.removeByRecipeName("botania:terrasteelhelm");
+  recipes.removeByRecipeName("botania:terrasteellegs");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:9>, null, <botania:rune:11>, null, <botania:manaresource:9>],
+    [<botania:worldseed>, <botania:manaresource:3>, <botania:rune:7>, <botania:manaresource:3>, <botania:worldseed>],
+    [null, <botania:storage:1>, <botania:manasteelboots>, <botania:storage:1>, null],
+    [null, <botania:manaresource:9>, <botania:storage:1>, <botania:manaresource:9>, null],
+    [<botania:manaresource:9>, null, <botania:worldseed>, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:terrasteelboots>)
+  .setExtraOutputOne(<botania:worldseed>, 1.0)
+  .setExtraOutputTwo(<botania:worldseed>, 0.5)
+  .setExtraOutputThree(<botania:worldseed>, 0.1)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:9>, null, <botania:rune:14>, null, <botania:manaresource:9>],
+    [<botania:worldseed>, <botania:manaresource:3>, <botania:rune:6>, <botania:manaresource:3>, <botania:worldseed>],
+    [null, <botania:storage:1>, <botania:manasteellegs>, <botania:storage:1>, null],
+    [null, <botania:manaresource:9>, <botania:storage:1>, <botania:manaresource:9>, null],
+    [<botania:manaresource:9>, null, <botania:worldseed>, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:terrasteellegs>)
+  .setExtraOutputOne(<botania:worldseed>, 1.0)
+  .setExtraOutputTwo(<botania:worldseed>, 0.5)
+  .setExtraOutputThree(<botania:worldseed>, 0.1)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:9>, null, <botania:rune:15>, null, <botania:manaresource:9>],
+    [<botania:worldseed>, <botania:manaresource:3>, <botania:rune:5>, <botania:manaresource:3>, <botania:worldseed>],
+    [null, <botania:storage:1>, <botania:manasteelchest>, <botania:storage:1>, null],
+    [null, <botania:manaresource:9>, <botania:storage:1>, <botania:manaresource:9>, null],
+    [<botania:manaresource:9>, null, <botania:worldseed>, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:terrasteelchest>)
+  .setExtraOutputOne(<botania:worldseed>, 1.0)
+  .setExtraOutputTwo(<botania:worldseed>, 0.5)
+  .setExtraOutputThree(<botania:worldseed>, 0.1)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:9>, null, <botania:rune:13>, null, <botania:manaresource:9>],
+    [<botania:worldseed>, <botania:manaresource:3>, <botania:rune:4>, <botania:manaresource:3>, <botania:worldseed>],
+    [null, <botania:storage:1>, <botania:manasteelhelm>, <botania:storage:1>, null],
+    [null, <botania:manaresource:9>, <botania:storage:1>, <botania:manaresource:9>, null],
+    [<botania:manaresource:9>, null, <botania:worldseed>, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:terrasteelhelm>.withTag({}))
+  .setExtraOutputOne(<botania:worldseed>, 1.0)
+  .setExtraOutputTwo(<botania:worldseed>, 0.5)
+  .setExtraOutputThree(<botania:worldseed>, 0.1)
+  .create();
+  
+  recipes.removeByRecipeName("botania:terrasword");//Удаление терралезвия
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage:1>, null],
+    [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
+  .addOutput(<botania:terrasword>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:lexicon");// Удаление лексики ботании
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:flower:1>, <minecraft:book>]])
+  .addOutput(<botania:lexicon>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("botania:manaresource_22");// Удаление манаткани
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:16>, null],
+    [<botania:manaresource:16>, <botania:manaresource:16>, <botania:manaresource:16>],
+    [null, <botania:manaresource:16>, null]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<botania:manaresource:22>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:monocle");// Удаление монокля
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:managlass>, <minecraft:gold_nugget>],
+    [<botania:manaresource>, <minecraft:gold_nugget>],
+    [null, <minecraft:gold_nugget>]])
+  .addTool(<ore:artisansPliers>, 10)
+  .addOutput(<botania:monocle>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manadetector");// Удаление манадетектора
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:redstone>, <botania:livingrock>, <minecraft:redstone>],
+    [<botania:livingrock>, <minecraft:comparator>, <botania:livingrock>],
+    [<minecraft:redstone>, <botania:livingrock>, <minecraft:redstone>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:manadetector>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:turntable");// Удаление поворотного стола
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
+    [<botania:livingwood>, <minecraft:sticky_piston>, <botania:livingwood>],
+    [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:turntable>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:tinyplanet");// Удаление микропланеты
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <minecraft:stone>, <botania:livingrock>],
+    [<minecraft:stone>, <botania:manaresource:1>, <minecraft:stone>],
+    [<botania:livingrock>, <minecraft:stone>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:tinyplanet>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:tinyplanetblock");// Удаление микропланеты блока
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:tinyplanet>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:tinyplanetblock>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:starsword");// Удаление призывателя звёзд
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage:2>, <botania:storage:2>],
+    [<botania:manaresource:15>, <botania:storage:4>, <botania:storage:2>],
+    [<botania:terrasword>, <botania:manaresource:15>, null]])
+  .addTool(<ore:artisansHammer>, 500)
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addOutput(<botania:starsword>)
+  .create();
 
-//Cношу предметы
+  recipes.removeByRecipeName("botania:thundersword");// Удаление призывателя молний
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage:2>, <botania:storage:2>],
+    [<botania:manaresource:15>, <botania:storage:3>, <botania:storage:2>],
+    [<botania:terrasword>, <botania:manaresource:15>, null]])
+  .addTool(<ore:artisansHammer>, 500)
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addOutput(<botania:thundersword>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:alchemycatalyst");// Удаление алхимического катализатора
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <minecraft:gold_block>, <botania:livingrock>],
+    [<minecraft:brewing_stand>, <botania:manaresource:1>, <minecraft:brewing_stand>],
+    [<botania:livingrock>, <minecraft:gold_block>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<botania:alchemycatalyst>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("botanicadds:terra_catalyst");// Удаление терра катализатора
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:shimmerrock>, <botania:manaresource:5>, <botania:shimmerrock>],
+    [<botania:manaresource:4>, <botania:alchemycatalyst>, <botania:manaresource:4>],
+    [<botania:shimmerrock>, <botania:storage:1>, <botania:shimmerrock>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botanicadds:terra_catalyst>)
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_dimensioncatalyst");// Удаление катализатора измерений
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <minecraft:ender_eye>, <botania:livingrock>],
+    [<extrabotany:material:5>, <botania:alchemycatalyst>, <extrabotany:material:5>],
+    [<botania:livingrock>, <extrabotany:material:5>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<extrabotany:dimensioncatalyst>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:conjurationcatalyst");// Удаление колдовского катализатора 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:manaresource:8>, <botania:livingrock>],
+    [<botania:manaresource:7>, <botania:alchemycatalyst>, <botania:manaresource:7>],
+    [<botania:livingrock>, <botania:storage:2>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<botania:conjurationcatalyst>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:corporeacrystalcube");// Удаление кристалического куба хранилища
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:corporeaspark>],
+    [<botania:elfglass>],
+    [<botania:dreamwood>]])
+  .addTool(<ore:artisansGrimoire>, 30 )
+  .addOutput(<botania:corporeacrystalcube>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:pool_0");// Удаление мана бассейна
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, null, <botania:livingrock>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:pool>)
+  .create();
+
+  recipes.removeByRecipeName("botania:pool_2");// Удаление бассейна разбавенной маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock0slab>, null, <botania:livingrock0slab>],
+    [<botania:livingrock0slab>, <botania:livingrock0slab>, <botania:livingrock0slab>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:pool:2>)
+  .create();
+
+  recipes.removeByRecipeName("botania:pool_3");// Удаление сказочного бассейна маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:shimmerrock>, null, <botania:shimmerrock>],
+    [<botania:shimmerrock>, <botania:shimmerrock>, <botania:shimmerrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addTool(<ore:artisansHammer>, 30)
+  .addOutput(<botania:pool:3>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manavoid");// Удаление мана-пустоты
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<minecraft:obsidian>, null, <minecraft:obsidian>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:manavoid>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:forestdrum_0");// Удаление барабана дикой природе
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood>, <minecraft:leather>, <botania:livingwood>],
+    [<botania:livingwood>, <botania:grasshorn>, <botania:livingwood>],
+    [<botania:livingwood>, <minecraft:leather>, <botania:livingwood>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:forestdrum>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:forestdrum_1");// Удаление барабана сбора
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:dreamwood>, <minecraft:leather>, <botania:dreamwood>],
+    [<botania:dreamwood>, <botania:manaresource:7>, <botania:dreamwood>],
+    [<botania:dreamwood>, <minecraft:leather>, <botania:dreamwood>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:forestdrum:1>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:forestdrum_2");// Удаление барабана уничтожения листвы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood>, <minecraft:leather>, <botania:livingwood>],
+    [<botania:livingwood>, <botania:grasshorn:1>, <botania:livingwood>],
+    [<botania:livingwood>, <minecraft:leather>, <botania:livingwood>]])
+  .addTool(<ore:artisansTSquare>, 10)
+  .addOutput(<botania:forestdrum:2>)
+  .create();
+
+  recipes.removeByRecipeName("botania:pylon_0");// Удаление мана-пилон
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <minecraft:gold_block>, null],
+    [<botania:storage>, <botania:manaresource:2>, <botania:storage>],
+    [null, <minecraft:gold_block>, null]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:pylon>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:pylon_1");// Удаление природного пилона
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:4>, null],
+    [<botania:manaresource:4>, <botania:pylon>, <botania:manaresource:4>],
+    [null, <minecraft:ender_eye>, null]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:pylon:1>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:pylon_2");// Удаление Гайа пилона
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:8>, null],
+    [<botania:storage:2>, <botania:pylon>, <botania:storage:2>],
+    [null, <botania:manaresource:8>, null]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:pylon:2>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manaresource_14");// Удаление слитка духа Гайи
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:5>, null],
+    [<botania:manaresource:5>, <botania:manaresource:4>, <botania:manaresource:5>],
+    [null, <botania:manaresource:5>, null]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansAthame>, 100)
+  .addTool(<ore:artisansGrimoire>, 70)
+  .addOutput(<botania:manaresource:14>)
+  .create();
+
+  recipes.removeByRecipeName("botania:endereyeblock");// Удаление наблюдателя
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:redstone>, <minecraft:ender_eye>, <minecraft:redstone>],
+    [<minecraft:ender_eye>, <minecraft:obsidian>, <minecraft:ender_eye>],
+    [<minecraft:redstone>, <minecraft:ender_eye>, <minecraft:redstone>]])
+  .addTool(<ore:artisansToolHardcarbon>, 10)
+  .addOutput(<botania:endereyeblock>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:sextant");// Удаление секстанта
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:3>, <botania:manaresource>],
+    [null, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource>, <botania:storage>, <botania:manaresource>]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<botania:sextant>)
+  .create();  
+
+  recipes.removeByRecipeName("botania:obediencestick");// Удаление жезла массового связывания
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:storage>],
+    [null, <botania:manaresource:3>, <botania:manaresource:3>],
+    [<botania:manaresource:3>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:obediencestick>)
+  .create();
+ 
+  recipes.removeByRecipeName("botania:clip");// Удаление зажима для линз
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:dreamwood>, null],
+    [<botania:dreamwood>, <botania:manaresource:1>, <botania:dreamwood>],
+    [<botania:dreamwood>, <botania:dreamwood>, null]])
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:clip>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:enderdagger");// Удаление зажима для линз
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:1>],
+    [<botania:storage>],
+    [<botania:manaresource:3>]])
+  .addTool(<ore:artisansHammer>, 1)
+  .addTool(<ore:artisansGrimoire>, 1)
+  .addOutput(<botania:enderdagger>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:corporeaspark");// Удаление искры хранилища
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:spark>, <botania:manaresource:8>],
+    [<botania:manaresource:15>, null]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:corporeaspark>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manaweavehelm");// Удаление манатканного капюшона
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [<botania:manaresource:22>, null, <botania:manaresource:22>]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 8])
+  .addTool(<ore:artisansNeedle>, 20)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manaweavehelm>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manaweavechest");// Удаление манатканной мантии
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:22>, null, <botania:manaresource:22>],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 24])
+  .addTool(<ore:artisansNeedle>, 20)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manaweavechest>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manaweavelegs");// Удаление манатканных шаровар
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [<botania:manaresource:22>, null, <botania:manaresource:22>],
+    [<botania:manaresource:22>, null, <botania:manaresource:22>]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 16])
+  .addTool(<ore:artisansNeedle>, 20)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manaweavelegs>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manaweaveboots");// Удаление манатканных сапог
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:22>, null, <botania:manaresource:22>],
+    [<botania:manaresource:22>, null, <botania:manaresource:22>]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 8])
+  .addTool(<ore:artisansNeedle>, 20)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manaweaveboots>)
+  .create();
+
+  recipes.removeByRecipeName("botania:livingwoodbow");// Удаление лука из жизнедрева
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:3>, <botania:manaresource:16>],
+    [<botania:manaresource:3>, null, <botania:manaresource:16>],
+    [null, <botania:manaresource:3>, <botania:manaresource:16>]])
+  .addOutput(<botania:livingwoodbow>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:crystalbow");// Удаление кристаллического лука
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:9>, <botania:manaresource:16>],
+    [<botania:manaresource:3>, null, <botania:manaresource:16>],
+    [null, <botania:manaresource:9>, <botania:manaresource:16>]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:crystalbow>)
+  .create();
+
+  recipes.removeByRecipeName("botania:terrapick");// Удаление терра кирки
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage:1>, <botania:manatablet>.withTag({}), <botania:storage:1>, null],
+    [<botania:storage:1>, null, <botania:manaresource:3>, null, <botania:storage:1>],
+    [null, null, <botania:manaresource:3>, null, null],
+    [null, null, <botania:manaresource:3>, null, null]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 140)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:terrapick>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("botania:terraaxe");// Удаление терра топора
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:1>, <botania:storage:1>, <minecraft:glowstone>],
+    [<botania:storage:1>, <botania:manaresource:3>, <botania:storage:1>],
+    [<botania:storage:1>, <botania:manaresource:3>, null],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 140)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:terraaxe>)
+  .create();
+
+  recipes.removeByRecipeName("botania:blackholetalisman");// Удаление тилисмана черной дыры
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:5>, null],
+    [<botania:storage:2>, <botania:manaresource:15>, <botania:storage:2>],
+    [null, <botania:storage:2>, null]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:blackholetalisman>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("botania:distributor");// Удаление распределителя маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:manaresource>, <botania:manaresource:1>, <botania:manaresource>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansGrimoire>, 40)
+  .addOutput(<botania:distributor>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manatablet");// Удаление распределителя маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manatablet>.withTag({}))
+  .create(); 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:manaresource:1>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:manatablet>.withTag({}))
+  .create();  
+  
+  //Удаление брони плеяд
+  recipes.removeByRecipeName("extrabotany:recipe_cmhelm");
+  recipes.removeByRecipeName("extrabotany:recipe_cmchest");
+  recipes.removeByRecipeName("extrabotany:recipe_cmlegs");
+  recipes.removeByRecipeName("extrabotany:recipe_cmboots");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:14>, <botania:manaresource:14>, <botania:manaresource:14>, null],
+    [<botania:manaresource:14>, <extrabotany:material:7>, <botania:terrasteelhelm>, <extrabotany:material:7>, <botania:manaresource:14>],
+    [null, <extrabotany:material:7>, <extrabotany:material:7>, <extrabotany:material:7>, null]])
+  .setSecondaryIngredients([<botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000})])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:combatmaidhelm>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <extrabotany:material:7>, <extrabotany:material:7>, <extrabotany:material:7>, null],
+    [<botania:manaresource:14>, <extrabotany:material:7>, <botania:terrasteelchest>, <extrabotany:material:7>, <botania:manaresource:14>],
+    [null, <botania:manaresource:14>, <botania:manaresource:14>, <botania:manaresource:14>, null]])
+  .setSecondaryIngredients([<botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000})])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:combatmaidchest>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:material:7>, <extrabotany:material:7>, <botania:manaresource:14>, <extrabotany:material:7>, <extrabotany:material:7>],
+    [null, <botania:manaresource:14>, <botania:terrasteellegs>.withTag({}), <botania:manaresource:14>, null],
+    [null, <botania:manaresource:14>, <extrabotany:material:7>, <botania:manaresource:14>, null]])
+  .setSecondaryIngredients([<botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000})])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:combatmaidlegs>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <extrabotany:material:7>, <extrabotany:material:7>, <extrabotany:material:7>, null],
+    [<botania:manaresource:14>, <botania:manaresource:14>, <botania:terrasteelboots>, <botania:manaresource:14>, <botania:manaresource:14>],
+    [null, <extrabotany:material:7>, <botania:manaresource:14>, <extrabotany:material:7>, null]])
+  .setSecondaryIngredients([<botania:manatablet>.withTag({mana: 500000}), <botania:manatablet>.withTag({mana: 500000})])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:combatmaidboots>.withTag({}))
+  .create();
+  
+  //Удаление брони убийцы гоблинов
+  recipes.removeByRecipeName("extrabotany:recipe_gshelm");
+  recipes.removeByRecipeName("extrabotany:recipe_gschest");
+  recipes.removeByRecipeName("extrabotany:recipe_gslegs");
+  recipes.removeByRecipeName("extrabotany:recipe_gsboots");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:spiritfuel>, null, <extrabotany:material:8>, null, <extrabotany:spiritfuel>],
+    [null, <extrabotany:blockphotonium>, <extrabotany:blockphotonium>, <extrabotany:blockphotonium>, null],
+    [null, <extrabotany:material:8>, <extrabotany:material:2>, <extrabotany:material:8>, null],
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:goblinslayerhelm>.withTag({isday: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>],
+    [null, <extrabotany:material:8>, <extrabotany:material:2>, <extrabotany:material:8>, null],
+    [<extrabotany:material:8>, <extrabotany:blockphotonium>, <extrabotany:blockphotonium>, <extrabotany:blockphotonium>, <extrabotany:material:8>],
+    [null, <extrabotany:material:8>, <extrabotany:material:8>, <extrabotany:material:8>, null],
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:goblinslayerchest>.withTag({isday: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>],
+    [null, <extrabotany:material:8>, <extrabotany:blockphotonium>, <extrabotany:material:8>, null],
+    [<extrabotany:material:8>, <extrabotany:blockphotonium>, <extrabotany:gildedmashedpotato>, <extrabotany:blockphotonium>, <extrabotany:material:8>],
+    [null, <extrabotany:material:8>, null, <extrabotany:material:8>, null],
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:goblinslayerlegs>.withTag({isday: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>],
+    [<extrabotany:material:8>, <extrabotany:blockphotonium>, <extrabotany:material:2>, <extrabotany:blockphotonium>, <extrabotany:material:8>],
+    [null, <extrabotany:material:8>, null, <extrabotany:material:8>, null],
+    [<extrabotany:spiritfuel>, null, null, null, <extrabotany:spiritfuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:goblinslayerboots>.withTag({isday: 0 as byte}))
+  .create();
+  
+  //Удаление брони воина тени
+  recipes.removeByRecipeName("extrabotany:recipe_swhelm");
+  recipes.removeByRecipeName("extrabotany:recipe_swchest");
+  recipes.removeByRecipeName("extrabotany:recipe_swlegs");
+  recipes.removeByRecipeName("extrabotany:recipe_swboots");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:nightmarefuel>, null, <extrabotany:material:5>, null, <extrabotany:nightmarefuel>],
+    [null, <extrabotany:blockshadowium>, <extrabotany:blockshadowium>, <extrabotany:blockshadowium>, null],
+    [null, <extrabotany:material:5>, <extrabotany:nightmarefuel>, <extrabotany:material:5>, null],
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:shadowwarriorhelm>.withTag({isnight: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>],
+    [null, <extrabotany:material:5>, <extrabotany:nightmarefuel>, <extrabotany:material:5>, null],
+    [<extrabotany:material:5>, <extrabotany:blockshadowium>, <extrabotany:blockshadowium>, <extrabotany:blockshadowium>, <extrabotany:material:5>],
+    [null, <extrabotany:material:5>, <extrabotany:material:5>, <extrabotany:material:5>, null],
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:shadowwarriorchest>.withTag({isnight: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>],
+    [null, <extrabotany:material:5>, <extrabotany:blockshadowium>, <extrabotany:material:5>, null],
+    [null, <extrabotany:blockshadowium>, <extrabotany:nightmarefuel>, <extrabotany:blockshadowium>, null],
+    [null, <extrabotany:material:5>, null, <extrabotany:material:5>, null],
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:shadowwarriorlegs>.withTag({isnight: 0 as byte}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>],
+    [<extrabotany:material:5>, <extrabotany:blockshadowium>, <extrabotany:nightmarefuel>, <extrabotany:blockshadowium>, <extrabotany:material:5>],
+    [null, <extrabotany:material:5>, null, <extrabotany:material:5>, null],
+    [<extrabotany:nightmarefuel>, null, null, null, <extrabotany:nightmarefuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:shadowwarriorboots>.withTag({isnight: 0 as byte}))
+  .create();
+  
+  //Удаление брони Мику
+  recipes.removeByRecipeName("extrabotany:recipe_cosmhelm");
+  recipes.removeByRecipeName("extrabotany:recipe_cosmchest");
+  recipes.removeByRecipeName("extrabotany:recipe_cosmlegs");
+  recipes.removeByRecipeName("extrabotany:recipe_cosmboots");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:manaresource:22>, null, null],
+    [null, <botania:manaresource:22>, <botania:manaweavehelm>, <botania:manaresource:22>, null],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manasteelhelm>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [null, null, <botania:manaresource:22>, null, null]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 8])
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansShears>, 200)
+  .addOutput(<extrabotany:cosmeticmaidhelm>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:manaresource:22>, null, null],
+    [null, <botania:manaresource:22>, <botania:manaweavechest>, <botania:manaresource:22>, null],
+    [null, <botania:manaresource:22>, <botania:manasteelchest>, <botania:manaresource:22>, null],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [null, null, <botania:manaresource:22>, null, null]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 24])
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansShears>, 200)
+  .addOutput(<extrabotany:cosmeticmaidchest>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:manaresource:22>, null, null],
+    [null, <botania:manaresource:22>, <botania:manaweavelegs>, <botania:manaresource:22>, null],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manasteellegs>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [null, <botania:manaresource:22>, <botania:manaresource:22>, <botania:manaresource:22>, null],
+    [null, null, <botania:manaresource:22>, null, null]])
+  .setSecondaryIngredients([<botania:manaresource:16> * 16])
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansShears>, 200)
+  .addOutput(<extrabotany:cosmeticmaidlegs>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:manaresource:22>, null, null],
+    [null, <botania:manaresource:22>, <botania:manaweaveboots>, <botania:manaresource:22>, null],
+    [<botania:manaresource:22>, <botania:manaresource:22>, <botania:manasteelboots>, <botania:manaresource:22>, <botania:manaresource:22>],
+    [<botania:manaresource:22>, null, <botania:manaresource:22>, null, <botania:manaresource:22>]])
+  .addTool(<ore:artisansNeedle>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansShears>, 200)
+  .addOutput(<extrabotany:cosmeticmaidboots>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_manabarrel");//Удаление буфера маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:pool:3>, <botania:lens>.withTag({}), <botania:pool:3>],
+    [<botania:pool:3>, <botania:manaresource:14>, <botania:pool:3>],
+    [<botania:pool:3>, <botania:lens>.withTag({}), <botania:pool:3>]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<extrabotany:manabarrel>)
+  .create();
+
+  recipes.removeByRecipeName("extrabotany:recipe_quantummanabuffer");//Удаление квантового буфера маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:manabarrel>, <extrabotany:manabarrel>, <extrabotany:manabarrel>],
+    [<extrabotany:manabarrel>, <extrabotany:material:1>, <extrabotany:manabarrel>],
+    [<extrabotany:manabarrel>, <extrabotany:manabarrel>, <extrabotany:manabarrel>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<extrabotany:quantummanabuffer>)
+  .create();
+  
+  //Удаление молотов из ботании
+  recipes.removeByRecipeName("extrabotany:recipe_manasteelhammer");
+  recipes.removeByRecipeName("extrabotany:recipe_elementiumhammer");
+  recipes.removeByRecipeName("extrabotany:recipe_terrasteelhammer");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage>, <botania:storage>, <botania:storage>],
+    [<botania:storage>, <botania:storage>, <botania:storage>],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansPliers>, 50)
+  .addOutput(<extrabotany:manasteelhammer>)
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>],
+    [<extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPliers>, 100)
+  .addOutput(<extrabotany:elementiumhammer>)
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>],
+    [<botania:storage:1>, <botania:storage:1>, <botania:storage:1>],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addOutput(<extrabotany:terrasteelhammer>)
+  .create();
+
+  recipes.removeByRecipeName("botania:spawnerclaw");//Удаление вдоха жизни
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <minecraft:blaze_rod>, null, null],
+    [null, <minecraft:blaze_rod>, <botania:manaresource:5>, <minecraft:blaze_rod>, null],
+    [null, <minecraft:prismarine:2>, <botania:storage>, <minecraft:prismarine:2>, null],
+    [<minecraft:prismarine:2>, <botania:manaresource:15>, <botania:storage>, <botania:manaresource:15>, <minecraft:prismarine:2>],
+    [null, <minecraft:prismarine:2>, null, <minecraft:prismarine:2>, null]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansPliers>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<botania:spawnerclaw>)
+  .create();  
+  
+  recipes.removeByRecipeName("botania:spawnermover");//Удаление агрегатора жизни
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:15>, null, <botania:manaresource:5>, null, <botania:manaresource:15>],
+    [null, <botania:manaresource:15>, <botania:storage:2>, <botania:manaresource:15>, null],
+    [null, <botania:manaresource:5>, <botania:storage:4>, <botania:manaresource:5>, null],
+    [null, <botania:manaresource:15>, <botania:storage:2>, <botania:manaresource:15>, null],
+    [<botania:manaresource:15>, null, <botania:manaresource:5>, null, <botania:manaresource:15>]])
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:spawnermover>)
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_cocoondesire");//Удаление кокона желаний
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:material:2>, <botania:manaresource:4>, null, <botania:manaresource:4>, <extrabotany:material:2>],
+    [<botania:manaresource:4>, <botania:rune:2>, <extrabotany:material:2>, <botania:rune:1>, <botania:manaresource:4>],
+    [null, <extrabotany:material:2>, <extrabotany:material:3>, <extrabotany:material:2>, null],
+    [<botania:manaresource:4>, <botania:rune:3>, <extrabotany:material:2>, <botania:rune>, <botania:manaresource:4>],
+    [<extrabotany:material:2>, <botania:manaresource:4>, null, <botania:manaresource:4>, <extrabotany:material:2>]])
+  .addTool(<ore:artisansPan>, 250)
+  .addTool(<ore:artisansLens>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
+  .addOutput(<extrabotany:cocoondesire>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:astrolabe");//Удаление астролябии мирового шейпера
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:5>, <botania:manaresource:7>, <botania:manaresource:5>],
+    [<botania:manaresource:7>, <botania:storage:2>, <botania:manaresource:7>],
+    [<botania:manaresource:5>, <botania:manaresource:7>, <botania:dreamwood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:astrolabe>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_voidcaller");//Удаление зова пустоты
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:5>, null, null, null, <botania:manaresource:5>],
+    [null, <botania:manaresource:5>, null, <botania:manaresource:5>, null],
+    [<extrabotany:material:5>, <extrabotany:material:5>, <extrabotany:material:3>, <extrabotany:material:8>, <extrabotany:material:8>],
+    [null, <botania:manaresource:5>, null, <botania:manaresource:5>, null],
+    [<botania:manaresource:5>, null, null, null, <botania:manaresource:5>]])
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansShears>, 200)
+  .addOutput(<extrabotany:material:9>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:sparkupgrade_0");//Удаление дополнителя искр: рассеивающая
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:manaresource>],
+    [<botania:rune>, null],
+    [<botania:manaresource>, null]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<botania:sparkupgrade>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:sparkupgrade_1");//Удаление дополнителя искр: доминантный
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:manaresource>],
+    [<botania:rune:1>, null],
+    [<botania:manaresource>, null]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<botania:sparkupgrade:1>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:sparkupgrade_2");//Удаление дополнителя искр: рецессивный
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:manaresource>],
+    [<botania:rune:2>, null],
+    [<botania:manaresource>, null]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<botania:sparkupgrade:2>)
+  .create();
+ 
+  recipes.removeByRecipeName("botania:sparkupgrade_3");//Удаление дополнителя искр: изолирующий
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:manaresource>],
+    [<botania:rune:3>, null],
+    [<botania:manaresource>, null]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<botania:sparkupgrade:3>)
+  .create();  
+  
+  recipes.removeByRecipeName("botania:virus_0");//Удаление вируса зомби 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:vineball>, <minecraft:magma_cream>],
+    [<minecraft:fermented_spider_eye>, <minecraft:ender_eye>, <minecraft:skull:2>],
+    [<botania:manaresource:9>, null, null]])
+  .addTool(<ore:artisansBeaker>, 100)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:virus>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:virus_1");//Удаление вируса скелета
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:8>, <botania:vineball>, <minecraft:magma_cream>],
+    [<minecraft:fermented_spider_eye>, <minecraft:ender_eye>, <minecraft:skull>],
+    [<botania:manaresource:9>, null, null]])
+  .addTool(<ore:artisansBeaker>, 100)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:virus:1>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:worldseed");//Удаление семя мира
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <minecraft:grass>, null],
+    [<botania:manaresource:8>, <minecraft:wheat_seeds>, <botania:manaresource:8>],
+    [null, <botania:manaresource:9>, null]])
+  .addTool(<ore:artisansSifter>, 30)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:worldseed>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:thornchakram_0");//Удаление шипастой чакры 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <minecraft:vine>, null, null],
+    [null, <minecraft:vine>, <botania:manaresource:4>, <minecraft:vine>, null],
+    [<minecraft:vine>, <botania:manaresource:4>, null, <botania:manaresource:4>, <minecraft:vine>],
+    [null, <minecraft:vine>, <botania:manaresource:4>, <minecraft:vine>, null],
+    [null, null, <minecraft:vine>, null, null]])
+  .addTool(<ore:artisansTSquare>, 150)
+  .addTool(<ore:artisansShears>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<botania:thornchakram> * 2)
+  .create();
+  
+  recipes.removeByRecipeName("botania:thornchakram_1");//Удаление огненной чакры   
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <minecraft:blaze_powder>, null, null],
+    [null, <minecraft:blaze_powder>, <botania:manaresource:8>, <minecraft:blaze_powder>, null],
+    [<minecraft:blaze_powder>, <botania:thornchakram>, null, <botania:thornchakram>, <minecraft:blaze_powder>],
+    [null, <minecraft:blaze_powder>, <botania:manaresource:8>, <minecraft:blaze_powder>, null],
+    [null, null, <minecraft:blaze_powder>, null, null]])
+  .addTool(<ore:artisansTSquare>, 100)
+  .addTool(<ore:artisansShears>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:thornchakram:1>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:lens_0_glass_pane");//Удаление линзы маны 
+  recipes.removeByRecipeName("botania:lens_0_glass_block");//Удаление линзы маны    
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, <botania:manaresource>, <botania:manaresource>],
+    [<botania:manaresource>, <minecraft:glass_pane>, <botania:manaresource>],
+    [<botania:manaresource>, <botania:manaresource>, <botania:manaresource>]])
+  .addTool(<ore:artisansLens>, 25)
+  .addTool(<ore:artisansCompass>, 25)
+  .addOutput(<botania:lens>.withTag({}))
+  .create();
+  RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, <botania:manaresource>, <botania:manaresource>],
+    [<botania:manaresource>, <minecraft:glass>, <botania:manaresource>],
+    [<botania:manaresource>, <botania:manaresource>, <botania:manaresource>]])
+  .addTool(<ore:artisansLens>, 25)
+  .addTool(<ore:artisansCompass>, 25)
+  .addOutput(<botania:lens>.withTag({}))
+  .create();
+  
+  //Удаление линз
+  recipes.removeByRecipeName("botania:lens_1");
+  recipes.removeByRecipeName("botania:lens_2");
+  recipes.removeByRecipeName("botania:lens_3");
+  recipes.removeByRecipeName("botania:lens_4");
+  recipes.removeByRecipeName("botania:lens_5");
+  recipes.removeByRecipeName("botania:lens_6");
+  recipes.removeByRecipeName("botania:lens_7");
+  recipes.removeByRecipeName("botania:lens_8");
+  recipes.removeByRecipeName("botania:lens_9");
+  recipes.removeByRecipeName("botania:lens_10");
+  recipes.removeByRecipeName("botania:lens_11");
+  recipes.removeByRecipeName("botania:lens_12");
+  recipes.removeByRecipeName("botania:lens_13");
+  recipes.removeByRecipeName("botania:lens_14");
+  recipes.removeByRecipeName("botania:lens_15");
+  recipes.removeByRecipeName("botania:lens_16");
+  recipes.removeByRecipeName("botania:lens_17");
+  recipes.removeByRecipeName("botania:lens_17_alt");
+  recipes.removeByRecipeName("botania:lens_18"); 
+  recipes.removeByRecipeName("botania:lens_19");
+  recipes.removeByRecipeName("botania:lens_20");   
+  recipes.removeByRecipeName("botania:lens_21");   
+  recipes.removeByRecipeName("botania:lens_22"); 
+  recipes.removeByRecipeName("botania:lens_23"); 
+  recipes.removeByRecipeName("extrabotany:recipe_lenspush");   
+  recipes.removeByRecipeName("extrabotany:recipe_lenssmelt"); 
+  recipes.removeByRecipeName("extrabotany:recipe_lensmana"); 
+  recipes.removeByRecipeName("extrabotany:recipe_lenspotion"); 
+  recipes.removeByRecipeName("extrabotany:recipe_lenscloud"); 
+  recipes.removeByRecipeName("extrabotany:recipe_lenstrack");   
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:3>, <botania:lens>.withTag({}), <botania:rune:3>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:1>.withTag({}))
+  .create();
+ 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:1>, <botania:lens>.withTag({}), <botania:rune:1>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:2>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:2>, <botania:lens>.withTag({}), <botania:rune:2>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:3>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune>, <botania:lens>.withTag({}), <botania:rune>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:4>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:5>, <botania:lens>.withTag({}), <botania:rune:5>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:5>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:7>, <botania:lens>.withTag({}), <botania:rune:7>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:6>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:piston>, null, <minecraft:piston>],
+    [<minecraft:dye:4>, <botania:lens>.withTag({}), <minecraft:dye:4>],
+    [<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:7>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:13>, <botania:lens>.withTag({}), <botania:rune:13>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:8>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:platform>, null],
+    [<botania:platform>, <botania:lens>.withTag({}), <botania:platform>],
+    [null, <botania:platform>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:9>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <minecraft:gold_ingot>, null],
+    [<minecraft:gold_ingot>, <botania:lens>.withTag({}), <minecraft:iron_ingot>],
+    [null, <minecraft:iron_ingot>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:10>.withTag({}))
+  .create();
+ 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:14>, <botania:lens>.withTag({}), <botania:rune:14>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:11>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:prismarine_shard>, <botania:rune:3>, <minecraft:prismarine_shard>],
+    [<minecraft:prismarine_shard>, <botania:lens>.withTag({}), <minecraft:prismarine_shard>],
+    [<minecraft:prismarine_shard>, <botania:rune:3>, <minecraft:prismarine_shard>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:12>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:prismarine_shard>, <botania:rune>, <minecraft:prismarine_shard>],
+    [<minecraft:prismarine_shard>, <botania:lens>.withTag({}), <minecraft:prismarine_shard>],
+    [<minecraft:prismarine_shard>, <botania:rune>, <minecraft:prismarine_shard>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:13>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, <botania:manaresource:7>, <botania:manaresource:7>],
+    [<ore:wool>, <botania:lens>.withTag({}), <ore:wool>],
+    [<botania:manaresource:7>, <botania:manaresource:7>, <botania:manaresource:7>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:14>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <minecraft:fire_charge>, null],
+    [<minecraft:fire_charge>, <botania:lens>.withTag({}), <minecraft:fire_charge>],
+    [null, <minecraft:fire_charge>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:15>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:pistonrelay>, null],
+    [<botania:pistonrelay>, <botania:lens>.withTag({}), <botania:pistonrelay>],
+    [null, <botania:pistonrelay>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:16>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:glowstone>, <minecraft:fire_charge>, <minecraft:glowstone>],
+    [<minecraft:fire_charge>, <botania:lens>.withTag({}), <minecraft:fire_charge>],
+    [<minecraft:glowstone>, <minecraft:fire_charge>, <minecraft:glowstone>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:17>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:8>, null],
+    [<botania:manaresource:8>, <botania:lens>.withTag({}), <botania:manaresource:8>],
+    [null, <botania:manaresource:8>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:18>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:7>, null],
+    [<botania:livingwood>, <botania:lens>.withTag({}), <botania:livingwood>],
+    [null, <botania:manaresource:7>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:19>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:7>, null],
+    [<minecraft:fireworks>, <botania:lens>.withTag({}), <minecraft:fireworks>],
+    [null, <botania:manaresource:7>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:20>.withTag({}))
+  .create();
+ 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:7>, null],
+    [<botania:elfglass>, <botania:lens>.withTag({}), <botania:elfglass>],
+    [null, <botania:manaresource:7>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:21>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
+    [<minecraft:paper>, <botania:lens>.withTag({}), <minecraft:paper>],
+    [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:22>.withTag({}))
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:7>, null],
+    [<minecraft:tripwire_hook>, <botania:lens>.withTag({}), <minecraft:tripwire_hook>],
+    [null, <botania:manaresource:7>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lens:23>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:23>, null],
+    [<botania:rune:2>, <botania:lens>.withTag({}), <botania:rune:2>],
+    [null, <botania:manaresource:23>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<extrabotany:lens>.withTag({}))
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:23>, null],
+    [<botania:rune:1>, <botania:lens>.withTag({}), <botania:rune:1>],
+    [null, <botania:manaresource:23>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<extrabotany:lens:1>.withTag({}))
+  .create();
+ 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:23>, null],
+    [<botania:rune:8>, <botania:lens>.withTag({}), <botania:rune:8>],
+    [null, <botania:manaresource:23>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<extrabotany:lens:2>.withTag({}))
+  .create();
+ 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:23>, <botania:manaresource:15>, null],
+    [<botania:rune:4>, <botania:lens>.withTag({}), <botania:rune:4>],
+    [null, <botania:manaresource:9>, <botania:manaresource:23>]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<extrabotany:lens:3>.withTag({}))
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:15>, <botania:manaresource:23>],
+    [<botania:rune:6>, <botania:lens>.withTag({}), <botania:rune:6>],
+    [<botania:manaresource:23>, <botania:manaresource:9>, null]])
+  .addTool(<ore:artisansPliers>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<extrabotany:lens:4>.withTag({}))
+  .create();
+  
+  recipes.removeByRecipeName("botania:spreader_0");// Удаление распределителя маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
+    [<minecraft:gold_ingot>, <botania:petal>, null],
+    [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]])
+  .addTool(<ore:artisansHandsaw>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:spreader>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:spreader_2");// Удаление эльфийского распределителя маны  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>],
+    [<botania:manaresource:7>, <botania:petal:11>, null],
+    [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>]])
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addTool(<ore:artisansGrimoire>, 60)
+  .addOutput(<botania:spreader:2>)
+  .create();
+
+  recipes.removeByRecipeName("botania:spreader_3");// Удаление распределителя маны Гайи  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <botania:manaresource:9>],
+    [<botanicadds:gaia_shard>, <botania:spreader:2>, <botania:lens>.withTag({})],
+    [null, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansPliers>, 100)
+  .addTool(<ore:artisansGrimoire>, 120)
+  .addOutput(<botania:spreader:3>)
+  .create();
+ 
+  recipes.removeByRecipeName("botania:terraplate");// Удаление терраплиты 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:lapis_block>, <minecraft:lapis_block>, <minecraft:lapis_block>],
+    [<botania:rune>, <botania:storage>, <botania:rune:1>],
+    [<botania:rune:2>, <botania:rune:8>, <botania:rune:3>]])
+  .addTool(<ore:artisansHammer>, 400)
+  .addTool(<ore:artisansGrimoire>, 400)
+  .addOutput(<botania:terraplate>)
+  .create();
+  
+  recipes.removeByRecipeName("botanicadds:gaia_plate");// Удаление Гайа плиты 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botanicadds:elven_lapis_block>, <botanicadds:elven_lapis_block>, <botanicadds:elven_lapis_block>, null],
+    [<botanicadds:elven_lapis_block>, <botanicadds:rune_energy>, <botania:terraplate>, <botanicadds:rune_tp>, <botanicadds:elven_lapis_block>],
+    [<botanicadds:rune_energy>, <botanicadds:gaia_shard>, <botanicadds:gaia_shard>, <botanicadds:gaia_shard>, <botanicadds:rune_tp>],
+    [null, null, <botanicadds:gaia_shard>, null, null]])
+  .addTool(<ore:artisansPliers>, 400)
+  .addTool(<ore:artisansHammer>, 400)
+  .addTool(<ore:artisansGrimoire>, 400)
+  .addOutput(<botanicadds:gaia_plate>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:manaresource_12_alt");// Удаление красной нити 
+  recipes.removeByRecipeName("botania:manaresource_12");// Удаление красной нити
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:16>, <minecraft:redstone_block>],
+    [<botania:manaresource:15>, <botania:manaresource:8>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addTool(<ore:artisansShears>, 30)
+  .addOutput(<botania:manaresource:12>)
+  .create();
+
+//Удаление светлячков 
+  recipes.removeByRecipeName("botania:lightrelay_0");
+  recipes.removeByRecipeName("botania:lightrelay_1"); 
+  recipes.removeByRecipeName("botania:lightrelay_2"); 
+  recipes.removeByRecipeName("botania:lightrelay_3");
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:12>, <botania:manaresource:9>],
+    [<minecraft:glowstone>, <minecraft:glowstone>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .addOutput(<botania:lightrelay>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:lightrelay>, <minecraft:redstone>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .addOutput(<botania:lightrelay:1>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:lightrelay>, <minecraft:redstone_torch>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .addOutput(<botania:lightrelay:2>)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:lightrelay>, <minecraft:lever>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .addOutput(<botania:lightrelay:3>)
+  .create();
+
+  recipes.removeByRecipeName("botania:hourglass");//Удаление песочных часов
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:gold_ingot>, <botania:managlass>, <minecraft:gold_ingot>],
+    [<minecraft:redstone>, <botania:manaresource>, <minecraft:redstone>],
+    [<minecraft:gold_ingot>, <botania:managlass>, <minecraft:gold_ingot>]])
+  .addTool(<ore:artisansLens>, 25)
+  .addTool(<ore:artisansRazor>, 30)
+  .addOutput(<botania:hourglass>)
+  .create();
+
+  recipes.removeByRecipeName("botania:redstringrelay");//Удаление обманки с красной ниткой  
+  RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:spreader>, <botania:manaresource:12>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:redstringrelay>)
+  .create();
+
+  recipes.removeByRecipeName("botania:lightlauncher");//Удаление пусковой светоустановки 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>],
+    [<botania:dreamwood>, <botania:lightrelay>, <botania:dreamwood>]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:lightlauncher>)
+  .create();
+
+  recipes.removeByRecipeName("botania:runealtar");//Удаление руннического алтаря
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage>, <botania:livingrock>, <botania:storage>],
+    [<botania:livingrock>, <botania:storage:3>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<botania:runealtar>)
+  .create();
+ 
+  recipes.removeByRecipeName("botanicadds:elven_altar");//Удаление Эльфийского алтаря 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botanicadds:dreamrock>, <botanicadds:dreamrock>, <botanicadds:dreamrock>],
+    [<botanicadds:dreamrock>, <botania:storage:4>, <botanicadds:dreamrock>],
+    [<botanicadds:dreamrock>, <botania:runealtar>, <botanicadds:dreamrock>]])
+  .addTool(<ore:artisansHammer>, 250)
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addOutput(<botanicadds:elven_altar>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:managun");//Удаление излучателя маны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:spreader:1>, <botanicadds:rune_tp>, <botania:storage:3>],
+    [null, <botania:livingwood>, <minecraft:tnt>],
+    [null, null, <botania:livingwood>]])
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:managun>.withTag({}))
+  .create();
+ 
+  recipes.removeByRecipeName("botania:cocoon");//Удаление кокона жизни
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:16>, <botania:manaresource:16>, <botania:manaresource:16>],
+    [<botania:manaresource:22>, <botania:felpumpkin>, <botania:manaresource:22>],
+    [<botania:manaresource:16>, <botania:manaresource:8>, <botania:manaresource:16>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:cocoon>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:pump");//Удаление мана-насос 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:storage>, <minecraft:bucket>, <botania:storage>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansPliers>, 50)
+  .addOutput(<botania:pump>)
+  .create();
+
+  recipes.removeByRecipeName("botania:avatar");//Удаление Тотем из жизнедрева
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:livingwood>, null],
+    [<botania:livingwood>, <botania:storage:3>, <botania:livingwood>],
+    [<botania:livingwood>, null, <botania:livingwood>]])
+  .addTool(<ore:artisansHandsaw>, 25)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<botania:avatar>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:sparkchanger");//Удаление тинкер-искры  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:4>, <botania:livingrock>, <botania:storage:4>],
+    [<botania:livingrock>, <minecraft:redstone>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<botania:sparkchanger>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:bellows");//Удаление Манамеха  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood0slab>, <botania:livingwood0slab>, <botania:livingwood0slab>],
+    [<botania:rune:3>, <minecraft:leather>, null],
+    [<botania:livingwood0slab>, <botania:livingwood0slab>, <botania:livingwood0slab>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addOutput(<botania:bellows>)
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_chargepad");//Удаление силой рамы   
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource>, <botania:storage>, <botania:manaresource>],
+    [<botania:manaresource:8>, <botania:livingrock>, <botania:manaresource:8>],
+    [<botania:manaresource>, <botania:storage>, <botania:manaresource>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<extrabotany:chargepad>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manabomb");//Удаление манабомбы  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingwood>, <minecraft:tnt>, <botania:livingwood>],
+    [<minecraft:tnt>, <botania:manaresource:14>, <minecraft:tnt>],
+    [<botania:livingwood>, <minecraft:tnt>, <botania:livingwood>]])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<botania:manabomb>)
+  .create();
+ 
+  recipes.removeByRecipeName("extrabotany:recipe_ticket");//Удаление билета на вызов  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:5>, <extrabotany:material:5>, <botania:manaresource:5>],
+    [<extrabotany:material:8>, <botania:manaresource:14>, <extrabotany:material:8>],
+    [<botania:manaresource:5>, <extrabotany:material:5>, <botania:manaresource:5>]])
+  .addTool(<ore:artisansHammer>, 300)
+  .addTool(<ore:artisansGrimoire>, 400)
+  .addOutput(<extrabotany:material:6>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:redstringdispenser");//Удаление раздатчика с красной ниткой  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <minecraft:dispenser>, <botania:manaresource:12>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:redstringdispenser>)
+  .create();
+
+  recipes.removeByRecipeName("botania:redstringfertilizer");//Удаление опылитель с красной ниткой  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:fertilizer>, <botania:manaresource:12>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:redstringfertilizer>)
+  .create();
+
+  recipes.removeByRecipeName("botania:redstringcomparator");//Компаратор опылитель с красной ниткой 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <minecraft:comparator>, <botania:manaresource:12>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:redstringcomparator>)
+  .create();
+
+  recipes.removeByRecipeName("botania:redstringcontainer");//Компаратор опылитель с красной ниткой
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <minecraft:chest>, <botania:manaresource:12>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addOutput(<botania:redstringcontainer>)
+  .create();
+
+  recipes.removeByRecipeName("botania:manasteelsword");//Удаление меча из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage>, null],
+    [<botania:storage>, <botania:storage>, <botania:storage>],
+    [null, <botania:manaresource:3>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<botania:manasteelsword>)
+  .create();
+
+  recipes.removeByRecipeName("botania:elementiumsword");//Удаление меча из елементия
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:storage:2>, null],
+    [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>],
+    [null, <botania:manaresource:13>, null]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<botania:elementiumsword>)
+  .create();
+
+  recipes.removeByRecipeName("extrabotany:recipe_shadowkatana");//Удаление теневой катаны
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <extrabotany:nightmarefuel>, null, null],
+    [null, null, <extrabotany:blockshadowium>, null, null],
+    [null, null, <extrabotany:blockshadowium>, null, null],
+    [null, <extrabotany:blockshadowium>, <botania:manaresource:3>, <extrabotany:blockshadowium>, null],
+    [<extrabotany:nightmarefuel>, null, <botania:manaresource:3>, null, <extrabotany:nightmarefuel>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:shadowkatana>.withTag({isnight: 1 as byte}))
+  .create();
+
+  recipes.removeByRecipeName("extrabotany:recipe_flyingboatmanasteel");//Удаление летающей лодки из манастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage>, null, <botania:manatablet>.withTag({}), null, <botania:storage>],
+    [<minecraft:dragon_breath>, <botania:storage>, <botania:storage>, <botania:storage>, <minecraft:dragon_breath>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<extrabotany:flyingboat>)
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_flyingboatelementium");//Удаление летающей лодки из элементния
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:2>, <botania:manaresource:9>, <extrabotany:flyingboat>, <botania:manaresource:9>, <botania:storage:2>],
+    [null, <botania:storage:2>, <botania:storage:2>, <botania:storage:2>, null]])
+  .addTool(<ore:artisansHammer>, 300)
+  .addTool(<ore:artisansPliers>, 300)
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addOutput(<extrabotany:flyingboat:1>)
+  .create();
+  
+  recipes.removeByRecipeName("extrabotany:recipe_flyingboatterrasteel");//Удаление летающей лодки из террастали
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:1>, <botania:manaresource:2>, <extrabotany:flyingboat:1>, <botania:manaresource:2>, <botania:storage:1>],
+    [null, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, null]])
+  .addTool(<ore:artisansHammer>, 400)
+  .addTool(<ore:artisansPliers>, 400)
+  .addTool(<ore:artisansGrimoire>, 400)
+  .addOutput(<extrabotany:flyingboat:2>)
+  .create();
+  
   recipes.removeByRecipeName("botania:invisibilitycloak");// Удаление плаща невидимки
   recipes.removeByRecipeName("extrabotany:recipe_camera");// Удаление камеры шамеймару
   recipes.removeByRecipeName("extrabotany:recipe_failnaught");// Удаление лука неудачи(Failnaught)
@@ -199,3 +1952,10 @@ mods.botania.RuneAltar.addRecipe(<extrabotany:material:1>*6, [<ore:eternalLifeEs
   recipes.removeByRecipeName("extrabotany:recipe_spearsubspace");// Удаление копья подпространства
   recipes.removeByRecipeName("extrabotany:recipe_judahoath");// Удаление клятны Иуды
   mods.botania.Brew.removeRecipe("invisibility");//Удаление рецепта зелья невидимости
+  recipes.removeByRecipeName("extrabotany:recipe_coregod");// Удаление ядра бога
+  recipes.removeByRecipeName("botania:teruterubozu");// Удаление Теру-Теру-Бодзу
+  //Удаление щитов
+  recipes.removeByRecipeName("extrabotany:recipe_elementiumshield");
+  recipes.removeByRecipeName("extrabotany:recipe_manasteelshield");
+  recipes.removeByRecipeName("extrabotany:recipe_relicshield");
+  recipes.removeByRecipeName("extrabotany:recipe_terrasteelshield");

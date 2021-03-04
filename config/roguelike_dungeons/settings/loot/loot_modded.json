@@ -1,6 +1,14 @@
 {
   "name": "loot:modded",
   "inherit": [
-    "loot:all"
+    "loot:all",
+    "loot:tier1",
+    "loot:tier2",
+    "loot:tier3",
+    "loot:tier4",
+    "loot:tier5",
+    "loot:botany",
+    "loot:materials",
+	"loot_tables:rewards"
   ]
 }

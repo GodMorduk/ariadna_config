@@ -1,0 +1,28 @@
+{
+  "name": "loot:botany",
+  "loot_rules": [
+    {
+      "level": [0, 1, 2, 3, 4],
+      "loot": [
+        {"data": {"name": "botania:manaresource", "meta": 1}, "weight": 100},
+		{"data": {"name": "botania:manaresource", "meta": 2}, "weight": 100},
+		{"data": {"name": "botania:manaresource", "meta": 18}, "weight": 100},
+		{"data": {"name": "botania:manacookie"}, "weight": 100},
+		{"data": {"name": "botania:rune"}, "weight": 100},
+		{"data": {"name": "botania:rune", "meta":1}, "weight": 100},
+		{"data": {"name": "botania:rune", "meta":2}, "weight": 100},
+		{"data": {"name": "botania:rune", "meta":3}, "weight": 100},
+		{"data": {"name": "botania:manaresource", "meta": 4}, "weight": 100},
+		{"data": {"name": "botania:lexicon"}, "weight": 100},
+		{"data": {"name": "botania:manaresource", "meta": 15}, "weight": 100},
+        {"data": {"name": "extrabotany:candy"}, "weight": 100},
+		{"data": {"name": "extrabotany:candy", "meta" : 1}, "weight": 100},
+		{"data": {"name": "extrabotany:candy", "meta" : 2}, "weight": 100},
+		{"data": {"name": "extrabotany:friedchicken"}, "weight": 100},
+		{"data": {"name": "extrabotany:nightmarefuel"}, "weight": 100}
+      ],
+      "each": true,
+      "quantity": 1
+    }
+  ]
+}

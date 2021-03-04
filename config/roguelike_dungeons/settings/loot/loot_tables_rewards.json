@@ -1,0 +1,23 @@
+  {
+  "name": "loot_tables:rewards",
+
+  "loot_tables": [
+	{"level": 0, "type": "REWARD", "table": "minecraft:chests/igloo_chest"},
+	{"level": 0, "type": "REWARD", "table": "minecraft:chests/nether_bridge"},
+	{"level": 1, "type": "REWARD", "table": "minecraft:chests/igloo_chest"},
+	{"level": 1, "type": "REWARD", "table": "minecraft:chests/nether_bridge"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/abandoned_mineshaft"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/desert_pyramid"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/jungle_temple"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/simple_dungeon"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/stronghold_corridor"},
+	{"level": 2, "type": "REWARD", "table": "minecraft:chests/stronghold_crossing"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/abandoned_mineshaft"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/desert_pyramid"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/jungle_temple"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/simple_dungeon"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/stronghold_corridor"},
+	{"level": 3, "type": "REWARD", "table": "minecraft:chests/stronghold_crossing"},
+	{"level": 4, "type": "REWARD", "table": "minecraft:chests/end_city_treasure"}
+  ]
+}

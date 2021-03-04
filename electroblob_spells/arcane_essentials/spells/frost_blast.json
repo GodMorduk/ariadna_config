@@ -1,0 +1,26 @@
+{
+  "enabled": {
+    "book": true,
+    "scroll": true,
+    "wands": true,
+    "npcs": true,
+    "dispensers": true,
+    "commands": true,
+    "treasure": true,
+    "trades": true,
+    "looting": true
+  },
+  "tier": "apprentice",
+  "element": "ice",
+  "type": "attack",
+  "cost": 30,
+  "chargeup": 0,
+  "cooldown": 40,
+  "base_properties": {
+    "damage": 4,
+    "range": 2.5,
+    "effect_radius": 2,
+    "effect_strength": 0.625,
+    "swords": 1
+  }
+}

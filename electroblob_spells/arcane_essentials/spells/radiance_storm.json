@@ -1,0 +1,29 @@
+{
+  "enabled": {
+    "book": true,
+    "scroll": true,
+    "wands": true,
+    "npcs": true,
+    "dispensers": true,
+    "commands": true,
+    "treasure": true,
+    "trades": true,
+    "looting": true
+  },
+  "tier": "master",
+  "element": "healing",
+  "type": "attack",
+  "cost": 120,
+  "chargeup": 60,
+  "cooldown": 240,
+  "base_properties": {
+    "damage": 9,
+    "burn_duration": 10,
+    "blast_radius": 1.5,
+    "effect_radius": 6,
+    "light_beams": 9,
+    "knockback_mult": 1.5,
+    "explosion_damage": 5,
+    "swords": 0
+  }
+}

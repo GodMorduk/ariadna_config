@@ -1,0 +1,24 @@
+{
+    "enabled": {
+        "book": true,
+        "scroll": true,
+        "wands": true,
+        "npcs": false,
+        "dispensers": true,
+        "commands": true,
+        "treasure": false,
+        "trades": false,
+        "looting": false
+    },
+    "tier": "advanced",
+    "element": "magic",
+    "type": "construct",
+    "cost": 40,
+    "chargeup": 0,
+    "cooldown": 100,
+    "base_properties": {
+        "duration": 600,
+        "range": 20,
+        "effect_radius": 15
+    }
+}

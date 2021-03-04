@@ -1,0 +1,25 @@
+{
+  "enabled": {
+    "book": true,
+    "scroll": true,
+    "wands": true,
+    "npcs": true,
+    "dispensers": true,
+    "commands": true,
+    "treasure": true,
+    "trades": true,
+    "looting": true
+  },
+  "tier": "master",
+  "element": "lightning",
+  "type": "utility",
+  "cost": 75,
+  "chargeup": 0,
+  "cooldown": 280,
+  "base_properties": {
+    "effect_radius": 3.5,
+    "range": 80,
+    "damage": 5,
+    "swords": 1
+  }
+}

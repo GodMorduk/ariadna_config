@@ -1,0 +1,25 @@
+{
+  "enabled": {
+    "book": true,
+    "scroll": true,
+    "wands": true,
+    "npcs": true,
+    "dispensers": true,
+    "commands": true,
+    "treasure": true,
+    "trades": true,
+    "looting": true
+  },
+  "tier": "advanced",
+  "element": "fire",
+  "type": "attack",
+  "cost": 65,
+  "chargeup": 10,
+  "cooldown": 130,
+  "base_properties": {
+    "damage": 5,
+    "effect_duration": 4,
+    "range": 10,
+    "swords": 1
+  }
+}

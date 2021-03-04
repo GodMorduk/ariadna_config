@@ -1,0 +1,105 @@
+{
+  "name": "loot:tier1",
+  "loot_rules": [
+      {
+      "level": 0,
+      "type": "TOOLS",
+      "loot": [
+        {"data": {"name": "abyssalcraft:coralium", "level": 0}, "weight": 50},
+        {"data": {"name": "abyssalcraft:ccluster2", "level": 0}, "weight": 50},
+		{"data": {"name": "mekanism:ingot", "meta": 1, "level": 0}, "weight": 50},
+		{"data": {"name": "metallurgy:manganese_ingot", "level": 0}, "weight": 50},
+		{"data": {"name": "metallurgy:prometheum_ingot", "level": 0}, "weight": 50},
+		{"data": {"name": "immersiveengineering:material", "meta": 6, "level": 0}, "weight": 50},
+		{"data": {"name": "thermalfoundation:material", "meta": 128, "level": 0}, "weight": 50},
+		{"data": {"name": "thermalfoundation:material", "meta": 132, "level": 0}, "weight": 50},
+		{"data": {"name": "thermalfoundation:material", "meta": 131, "level": 0}, "weight": 50},
+		{"data": {"name": "thermalfoundation:material", "meta": 130, "level": 0}, "weight": 50},
+		{"data": {"name": "thermalfoundation:material", "meta": 133, "level": 0}, "weight": 50},
+		{"data": {"name": "geolosys:ingot", "meta": 7, "level": 0}, "weight": 50}
+      ],
+      "each": true,
+      "quantity": 1
+    },
+    {
+      "level": 1,
+      "type": "TOOLS",
+      "loot": [
+        {"data": {"name": "abyssalcraft:coralium", "level": 1}, "weight": 40},
+        {"data": {"name": "abyssalcraft:ccluster2", "level": 1}, "weight": 40},
+		{"data": {"name": "mekanism:ingot", "meta": 1, "level": 1}, "weight": 40},
+		{"data": {"name": "metallurgy:manganese_ingot", "level": 1}, "weight": 40},
+		{"data": {"name": "metallurgy:prometheum_ingot", "level": 1}, "weight": 40},
+		{"data": {"name": "immersiveengineering:material", "meta": 6, "level": 1}, "weight": 40},
+		{"data": {"name": "thermalfoundation:material", "meta": 128, "level": 1}, "weight": 40},
+		{"data": {"name": "thermalfoundation:material", "meta": 132, "level": 1}, "weight": 40},
+		{"data": {"name": "thermalfoundation:material", "meta": 131, "level": 1}, "weight": 40},
+		{"data": {"name": "thermalfoundation:material", "meta": 130, "level": 1}, "weight": 40},
+		{"data": {"name": "thermalfoundation:material", "meta": 133, "level": 1}, "weight": 40},
+		{"data": {"name": "geolosys:ingot", "meta": 7, "level": 1}, "weight": 40}
+      ],
+      "each": true,
+      "quantity": 1
+    },
+    {
+      "level": 2,
+      "type": "TOOLS",
+      "loot": [
+        {"data": {"name": "abyssalcraft:coralium", "level": 2}, "weight": 30},
+        {"data": {"name": "abyssalcraft:ccluster2", "level": 2}, "weight": 30},
+		{"data": {"name": "mekanism:ingot", "meta": 1, "level": 2}, "weight": 30},
+		{"data": {"name": "metallurgy:manganese_ingot", "level": 2}, "weight": 30},
+		{"data": {"name": "metallurgy:prometheum_ingot", "level": 2}, "weight": 30},
+		{"data": {"name": "immersiveengineering:material", "meta": 6, "level": 2}, "weight": 30},
+		{"data": {"name": "thermalfoundation:material", "meta": 128, "level": 2}, "weight": 30},
+		{"data": {"name": "thermalfoundation:material", "meta": 132, "level": 2}, "weight": 30},
+		{"data": {"name": "thermalfoundation:material", "meta": 131, "level": 2}, "weight": 30},
+		{"data": {"name": "thermalfoundation:material", "meta": 130, "level": 2}, "weight": 30},
+		{"data": {"name": "thermalfoundation:material", "meta": 133, "level": 2}, "weight": 30},
+		{"data": {"name": "geolosys:ingot", "meta": 7, "level": 2}, "weight": 30}
+      ],
+      "each": true,
+      "quantity": 1
+    },
+    {
+      "level": 3,
+      "type": "TOOLS",
+      "loot": [
+        {"data": {"name": "abyssalcraft:coralium", "level": 3}, "weight": 20},
+        {"data": {"name": "abyssalcraft:ccluster2", "level": 3}, "weight": 20},
+		{"data": {"name": "mekanism:ingot", "meta": 1, "level": 3}, "weight": 20},
+		{"data": {"name": "metallurgy:manganese_ingot", "level": 3}, "weight": 20},
+		{"data": {"name": "metallurgy:prometheum_ingot", "level": 3}, "weight": 20},
+		{"data": {"name": "immersiveengineering:material", "meta": 6, "level": 3}, "weight": 20},
+		{"data": {"name": "thermalfoundation:material", "meta": 128, "level": 3}, "weight": 20},
+		{"data": {"name": "thermalfoundation:material", "meta": 132, "level": 3}, "weight": 20},
+		{"data": {"name": "thermalfoundation:material", "meta": 131, "level": 3}, "weight": 20},
+		{"data": {"name": "thermalfoundation:material", "meta": 130, "level": 3}, "weight": 20},
+		{"data": {"name": "thermalfoundation:material", "meta": 133, "level": 3}, "weight": 20},
+		{"data": {"name": "geolosys:ingot", "meta": 7, "level": 3}, "weight": 20}
+      ],
+      "each": true,
+      "quantity": 1
+    },
+    {
+      "level": 4,
+      "type": "TOOLS",
+      "loot": [
+        {"data": {"name": "abyssalcraft:coralium", "level": 4}, "weight": 10},
+        {"data": {"name": "abyssalcraft:ccluster2", "level": 4}, "weight": 10},
+		{"data": {"name": "mekanism:ingot", "meta": 1, "level": 4}, "weight": 10},
+		{"data": {"name": "metallurgy:manganese_ingot", "level": 4}, "weight": 10},
+		{"data": {"name": "metallurgy:prometheum_ingot", "level": 4}, "weight": 10},
+		{"data": {"name": "immersiveengineering:material", "meta": 6, "level": 4}, "weight": 10},
+		{"data": {"name": "thermalfoundation:material", "meta": 128, "level": 4}, "weight": 10},
+		{"data": {"name": "thermalfoundation:material", "meta": 132, "level": 4}, "weight": 10},
+		{"data": {"name": "thermalfoundation:material", "meta": 131, "level": 4}, "weight": 10},
+		{"data": {"name": "thermalfoundation:material", "meta": 130, "level": 4}, "weight": 10},
+		{"data": {"name": "thermalfoundation:material", "meta": 133, "level": 4}, "weight": 10},
+		{"data": {"name": "geolosys:ingot", "meta": 7, "level": 4}, "weight": 10}
+      ],
+      "each": true,
+      "quantity": 1
+    }
+  ]
+}

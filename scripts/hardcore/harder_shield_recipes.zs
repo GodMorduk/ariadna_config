@@ -1,3 +1,7 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.artisanworktables.builder.RecipeBuilder;
+
 recipes.removeByRecipeName("atum:stoneguard_shield");
 recipes.removeByRecipeName("erebus:bamboo_shield");
 recipes.removeByRecipeName("erebus:exoskeleton_shield");
@@ -58,35 +62,6 @@ recipes.removeByRecipeName("spartanshields:shield_vanilla_obsidian");
 recipes.removeByRecipeName("spartanshields:shield_vanilla_stone");
 recipes.removeByRecipeName("spartanshields:shield_vanilla_wood_1");
 recipes.removeByRecipeName("spartanshields:shield_vanilla_wood_2");
-//recipes.removeByRecipeName("superiorshields:botania_shield_elementium");
-//recipes.removeByRecipeName("superiorshields:botania_shield_manasteel");
-//recipes.removeByRecipeName("superiorshields:botania_shield_terrasteel");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_ds_conductive_iron");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_ds_energetic_alloy");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_ds_vibrant_alloy");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_es_conductive_iron");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_es_energetic_alloy");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_es_vibrant_alloy");
-//recipes.removeByRecipeName("superiorshields:enderio_shield_soularium");
-//recipes.removeByRecipeName("superiorshields:if_shield_meat");
-//recipes.removeByRecipeName("superiorshields:if_shield_pink_slime");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_aerotheum");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_basic");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_cryotheum");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_enderium");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_hardened");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_petrotheum");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_pyrotheum");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_reinforced");
-//recipes.removeByRecipeName("superiorshields:thermal_shield_signalum");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_diamond");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_emerald");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_endstone");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_gold");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_iron");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_obsidian");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_stone");
-//recipes.removeByRecipeName("superiorshields:vanilla_shield_wood");
 recipes.removeByRecipeName("techguns:advanced_shield");
 recipes.removeByRecipeName("techguns:ballistic_shield");
 recipes.removeByRecipeName("techguns:itemshared_129_shieldedtitaniumbarrel");
@@ -105,121 +80,153 @@ recipes.removeByRecipeName("twilightforest:equipment/knightmetal_shield");
 recipes.removeByRecipeName("thebetweenlands:living_weedwood_shield");
 recipes.removeByRecipeName("aether_legacy:shield_from_skyroot");
 
+RecipeBuilder.get("basic")
+  .setShaped([
+	[<ore:logWood>, null, <ore:logWood>], 
+	[<ore:logWood>, <ore:stickWood>, <ore:logWood>], 
+	[<ore:logWood>, null , <ore:logWood>]])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansHandsaw>, 100)
+  .addOutput(<spartanshields:shield_basic_wood>)
+  .create();
 
-recipes.addShaped("bamboo_shield", <erebus:bamboo_shield>, [[<erebus:materials:3>, <ore:blockIron>, <erebus:materials:3>], [<erebus:materials:3>, <erebus:materials:3>, <erebus:materials:3>], [null, <erebus:materials:3>, null]]);
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <ore:obsidian>, null], 
+	[<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], 
+	[null, <ore:obsidian>, null]])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansHandsaw>, 100)
+  .addOutput(<spartanshields:shield_tower_wood>)
+  .create();
 
-recipes.addShaped("exoskeleton_shield", <erebus:exoskeleton_shield>, [[<erebus:materials>, <ore:blockIron>, <erebus:materials>], [<erebus:materials>, <ore:blockIron>, <erebus:materials>], [null, <ore:blockIron>, null]]);
-recipes.addShaped("jade_shield", <erebus:jade_shield>, [[<ore:gemJade>, <ore:blockJade>, <ore:gemJade>], [<ore:blockJade>, <ore:gemJade>, <ore:blockJade>], [null, <ore:blockJade>, null]]);
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <ore:obsidian>, null], 
+	[<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], 
+	[null, <ore:obsidian>, null]])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansChisel>, 100)
+  .addOutput(<spartanshields:shield_tower_obsidian>)
+  .create();
+  
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <ore:cobblestone>, null], 
+	[<ore:cobblestone>, <spartanshields:shield_tower_wood>, <ore:cobblestone>], 
+	[null, <ore:cobblestone>, null]])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansChisel>, 100)
+  .addOutput(<spartanshields:shield_tower_stone>)
+  .create();
+  
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <ore:cobblestone>, null], 
+	[<ore:cobblestone>, <spartanshields:shield_basic_wood>, <ore:cobblestone>], 
+	[null, <ore:cobblestone>, null]])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansChisel>, 100)
+  .addOutput(<spartanshields:shield_basic_stone>)
+  .create();
+  
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <ore:obsidian>, null], 
+	[<ore:obsidian>, <spartanshields:shield_basic_wood>, <ore:obsidian>], 
+	[null, <ore:obsidian>, null]])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansChisel>, 100)
+  .addOutput(<spartanshields:shield_basic_obsidian>)
+  .create();
+  
+RecipeBuilder.get("basic")
+  .setShaped([
+	[null, <abyssalcraft:cobblestone>, null], 
+	[<abyssalcraft:cobblestone>, <spartanshields:shield_basic_wood>, <abyssalcraft:cobblestone>], 
+	[null, <abyssalcraft:cobblestone>, null]])
+  .addTool(<ore:artisansCarver>, 100)
+  .addTool(<ore:artisansChisel>, 100)
+  .addOutput(<spartanshields:shield_abyssalcraft_darkstone>)
+  .create();
+  
+  
 
-
-recipes.addShaped("heavy_shield", <immersiveengineering:shield>, [[<ore:blockSteel>, <ore:plankTreatedWood>, <ore:blockSteel>], [<ore:ingotSteel>, <minecraft:shield>, <ore:ingotSteel>], [<ore:blockSteel>, <ore:plankTreatedWood>, <ore:blockSteel>]]);
-
-recipes.addShaped("shield", <minecraft:shield>, [[<ore:logWood>, <ore:blockIron>, <ore:logWood>], [<ore:blockIron>, <ore:logWood>, <ore:blockIron>], [null, <ore:logWood>, null]]);
-
-
-recipes.addShaped("shield_abyssalcraft_abyssalnite", <spartanshields:shield_abyssalcraft_abyssalnite>, [[null, <ore:blockAbyssalnite>, null], [<ore:blockAbyssalnite>, <spartanshields:shield_basic_wood>, <ore:blockAbyssalnite>], [null, <ore:blockAbyssalnite>, null]]);
-recipes.addShaped("shield_abyssalcraft_coralium", <spartanshields:shield_abyssalcraft_coralium>, [[null, <ore:blockLiquifiedCoralium>, null], [<ore:blockLiquifiedCoralium>, <spartanshields:shield_basic_wood>, <ore:blockLiquifiedCoralium>], [null, <ore:blockLiquifiedCoralium>, null]]);
-recipes.addShaped("shield_abyssalcraft_darkstone", <spartanshields:shield_abyssalcraft_darkstone>, [[null, <abyssalcraft:cobblestone>, null], [<abyssalcraft:cobblestone>, <spartanshields:shield_basic_wood>, <abyssalcraft:cobblestone>], [null, <abyssalcraft:cobblestone>, null]]);
-recipes.addShaped("shield_abyssalcraft_dreadium", <spartanshields:shield_abyssalcraft_dreadium>, [[null, <ore:blockDreadium>, null], [<ore:blockDreadium>, <spartanshields:shield_basic_wood>, <ore:blockDreadium>], [null, <ore:blockDreadium>, null]]);
-recipes.addShaped("shield_abyssalcraft_ethaxium", <spartanshields:shield_abyssalcraft_ethaxium>, [[null, <ore:blockEthaxium>, null], [<ore:blockEthaxium>, <spartanshields:shield_basic_wood>, <ore:blockEthaxium>], [null, <ore:blockEthaxium>, null]]);
-
-recipes.addShaped("shield_botania_elementium", <spartanshields:shield_botania_elementium>, [[<botania:storage:2>, <botania:rune:5>, <botania:storage:2>], [<botania:storage:2>, <botania:manaresource:13>, <botania:storage:2>], [null, <botania:rune:8>, null]]);
-recipes.addShaped("shield_botania_manasteel", <spartanshields:shield_botania_manasteel>, [[<botania:storage>, <botania:rune:2>, <botania:storage>], [<botania:storage>, <botania:manaresource:3>, <botania:storage>], [null, <botania:rune:8>, null]]);
-recipes.addShaped("shield_botania_terrasteel", <spartanshields:shield_botania_terrasteel>, [[<botania:storage:1>, <botania:rune:15>, <botania:storage:1>], [<botania:storage:1>, <botania:manaresource:3>, <botania:storage:1>], [null, <botania:rune:8>, null]]);
-
-recipes.addShaped("shield_mod_bronze", <spartanshields:shield_basic_bronze>, [[null, <ore:blockBronze>, null], [<ore:blockBronze>, <spartanshields:shield_basic_wood>, <ore:blockBronze>], [null, <ore:blockBronze>, null]]);
-recipes.addShaped("shield_mod_constantan", <spartanshields:shield_basic_constantan>, [[null, <ore:blockConstantan>, null], [<ore:blockConstantan>, <spartanshields:shield_basic_wood>, <ore:blockConstantan>], [null, <ore:blockConstantan>, null]]);
-recipes.addShaped("shield_mod_copper", <spartanshields:shield_basic_copper>, [[null, <ore:blockCopper>, null], [<ore:blockCopper>, <spartanshields:shield_basic_wood>, <ore:blockCopper>], [null, <ore:blockCopper>, null]]);
-recipes.addShaped("shield_mod_electrum", <spartanshields:shield_basic_electrum>, [[null, <ore:blockElectrum>, null], [<ore:blockElectrum>, <spartanshields:shield_basic_wood>, <ore:blockElectrum>], [null, <ore:blockElectrum>, null]]);
-recipes.addShaped("shield_mod_invar", <spartanshields:shield_basic_invar>, [[null, <ore:blockInvar>, null], [<ore:blockInvar>, <spartanshields:shield_basic_wood>, <ore:blockInvar>], [null, <ore:blockInvar>, null]]);
-recipes.addShaped("shield_mod_lead", <spartanshields:shield_basic_lead>, [[null, <ore:blockLead>, null], [<ore:blockLead>, <spartanshields:shield_basic_wood>, <ore:blockLead>], [null, <ore:blockLead>, null]]);
-recipes.addShaped("shield_mod_nickel", <spartanshields:shield_basic_nickel>, [[null, <ore:blockNickel>, null], [<ore:blockNickel>, <spartanshields:shield_basic_wood>, <ore:blockNickel>], [null, <ore:blockNickel>, null]]);
-recipes.addShaped("shield_mod_platinum", <spartanshields:shield_basic_platinum>, [[null, <ore:blockPlatinum>, null], [<ore:blockPlatinum>, <spartanshields:shield_basic_wood>, <ore:blockPlatinum>], [null, <ore:blockPlatinum>, null]]);
-recipes.addShaped("shield_mod_silver", <spartanshields:shield_basic_silver>, [[null, <ore:blockSilver>, null], [<ore:blockSilver>, <spartanshields:shield_basic_wood>, <ore:blockSilver>], [null, <ore:blockSilver>, null]]);
-recipes.addShaped("shield_mod_steel", <spartanshields:shield_basic_steel>, [[null, <ore:blockSteel>, null], [<ore:blockSteel>, <spartanshields:shield_basic_wood>, <ore:blockSteel>], [null, <ore:blockSteel>, null]]);
-recipes.addShaped("shield_mod_tin", <spartanshields:shield_basic_tin>, [[null, <ore:blockTin>, null], [<ore:blockTin>, <spartanshields:shield_basic_wood>, <ore:blockTin>], [null, <ore:blockTin>, null]]);
-recipes.addShaped("shield_mod_tower_bronze", <spartanshields:shield_tower_bronze>, [[null, <ore:blockBronze>, null], [<ore:blockBronze>, <spartanshields:shield_tower_wood>, <ore:blockBronze>], [null, <ore:blockBronze>, null]]);
-recipes.addShaped("shield_mod_tower_constantan", <spartanshields:shield_tower_constantan>, [[null, <ore:blockConstantan>, null], [<ore:blockConstantan>, <spartanshields:shield_tower_wood>, <ore:blockConstantan>], [null, <ore:blockConstantan>, null]]);
-recipes.addShaped("shield_mod_tower_copper", <spartanshields:shield_tower_copper>, [[null, <ore:blockCopper>, null], [<ore:blockCopper>, <spartanshields:shield_tower_wood>, <ore:blockCopper>], [null, <ore:blockCopper>, null]]);
-recipes.addShaped("shield_mod_tower_electrum", <spartanshields:shield_tower_electrum>, [[null, <ore:blockElectrum>, null], [<ore:blockElectrum>, <spartanshields:shield_tower_wood>, <ore:blockElectrum>], [null, <ore:blockElectrum>, null]]);
-recipes.addShaped("shield_mod_tower_invar", <spartanshields:shield_tower_invar>, [[null, <ore:blockInvar>, null], [<ore:blockInvar>, <spartanshields:shield_tower_wood>, <ore:blockInvar>], [null, <ore:blockInvar>, null]]);
-recipes.addShaped("shield_mod_tower_lead", <spartanshields:shield_tower_lead>, [[null, <ore:blockLead>, null], [<ore:blockLead>, <spartanshields:shield_tower_wood>, <ore:blockLead>], [null, <ore:blockLead>, null]]);
-recipes.addShaped("shield_mod_tower_nickel", <spartanshields:shield_tower_nickel>, [[null, <ore:blockNickel>, null], [<ore:blockNickel>, <spartanshields:shield_tower_wood>, <ore:blockNickel>], [null, <ore:blockNickel>, null]]);
-recipes.addShaped("shield_mod_tower_platinum", <spartanshields:shield_tower_platinum>, [[null, <ore:blockPlatinum>, null], [<ore:blockPlatinum>, <spartanshields:shield_tower_wood>, <ore:blockPlatinum>], [null, <ore:blockPlatinum>, null]]);
-recipes.addShaped("shield_mod_tower_silver", <spartanshields:shield_tower_silver>, [[null, <ore:blockSilver>, null], [<ore:blockSilver>, <spartanshields:shield_tower_wood>, <ore:blockSilver>], [null, <ore:blockSilver>, null]]);
-recipes.addShaped("shield_mod_tower_steel", <spartanshields:shield_tower_steel>, [[null, <ore:blockSteel>, null], [<ore:blockSteel>, <spartanshields:shield_tower_wood>, <ore:blockSteel>], [null, <ore:blockSteel>, null]]);
-recipes.addShaped("shield_mod_tower_tin", <spartanshields:shield_tower_tin>, [[null, <ore:blockTin>, null], [<ore:blockTin>, <spartanshields:shield_tower_wood>, <ore:blockTin>], [null, <ore:blockTin>, null]]);
-
-recipes.addShaped("shield_thaumcraft_thaumium", <spartanshields:shield_tc_thaumium>, [[null, <ore:blockThaumium>, null], [<ore:blockThaumium>, <spartanshields:shield_basic_wood>, <ore:blockThaumium>], [null, <ore:blockThaumium>, null]]);
-recipes.addShaped("shield_thaumcraft_void", <spartanshields:shield_tc_void>, [[null, <ore:blockVoid>, null], [<ore:blockVoid>, <spartanshields:shield_basic_wood>, <ore:blockVoid>], [null, <ore:blockVoid>, null]]);
-
-recipes.addShaped("shield_thermal_enderium", <spartanshields:shield_basic_enderium>, [[null, <ore:blockEnderium>, null], [<ore:blockEnderium>, <spartanshields:shield_basic_wood>, <ore:blockEnderium>], [null, <ore:blockEnderium>, null]]);
-recipes.addShaped("shield_thermal_lumium", <spartanshields:shield_basic_lumium>, [[null, <ore:blockLumium>, null], [<ore:blockLumium>, <spartanshields:shield_basic_wood>, <ore:blockLumium>], [null, <ore:blockLumium>, null]]);
-recipes.addShaped("shield_thermal_signalum", <spartanshields:shield_basic_signalum>, [[null, <ore:blockSignalum>, null], [<ore:blockSignalum>, <spartanshields:shield_basic_wood>, <ore:blockSignalum>], [null, <ore:blockSignalum>, null]]);
-recipes.addShaped("shield_tower_diamond", <spartanshields:shield_tower_diamond>, [[null, <ore:blockDiamond>, null], [<ore:blockDiamond>, <spartanshields:shield_tower_wood>, <ore:blockDiamond>], [null, <ore:blockDiamond>, null]]);
-recipes.addShaped("shield_tower_gold", <spartanshields:shield_tower_gold>, [[null, <ore:blockGold>, null], [<ore:blockGold>, <spartanshields:shield_tower_wood>, <ore:blockGold>], [null, <ore:blockGold>, null]]);
-recipes.addShaped("shield_tower_iron", <spartanshields:shield_tower_iron>, [[null, <ore:blockIron>, null], [<ore:blockIron>, <spartanshields:shield_tower_wood>, <ore:blockIron>], [null, <ore:blockIron>, null]]);
-recipes.addShaped("shield_tower_obsidian", <spartanshields:shield_tower_obsidian>, [[null, <ore:obsidian>, null], [<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], [null, <ore:obsidian>, null]]);
-recipes.addShaped("shield_tower_stone", <spartanshields:shield_tower_stone>, [[null, <ore:cobblestone>, null], [<ore:cobblestone>, <spartanshields:shield_tower_wood>, <ore:cobblestone>], [null, <ore:cobblestone>, null]]);
-recipes.addShaped("shield_tower_wood", <spartanshields:shield_tower_wood>, [[<ore:logWood>, <ore:logWood>, <ore:logWood>], [<ore:logWood>, <ore:stickWood>, <ore:logWood>], [null, <ore:logWood>, null]]);
-recipes.addShaped("shield_vanilla_diamond", <spartanshields:shield_basic_diamond>, [[null, <ore:blockDiamond>, null], [<ore:blockDiamond>, <spartanshields:shield_basic_wood>, <ore:blockDiamond>], [null, <ore:blockDiamond>, null]]);
-recipes.addShaped("shield_vanilla_gold", <spartanshields:shield_basic_gold>, [[null, <ore:blockGold>, null], [<ore:blockGold>, <spartanshields:shield_basic_wood>, <ore:blockGold>], [null, <ore:blockGold>, null]]);
-recipes.addShaped("shield_vanilla_iron", <spartanshields:shield_basic_iron>, [[null, <ore:blockIron>, null], [<ore:blockIron>, <spartanshields:shield_basic_wood>, <ore:blockIron>], [null, <ore:blockIron>, null]]);
-recipes.addShaped("shield_vanilla_obsidian", <spartanshields:shield_basic_obsidian>, [[null, <ore:obsidian>, null], [<ore:obsidian>, <spartanshields:shield_basic_wood>, <ore:obsidian>], [null, <ore:obsidian>, null]]);
-recipes.addShaped("shield_vanilla_stone", <spartanshields:shield_basic_stone>, [[null, <ore:cobblestone>, null], [<ore:cobblestone>, <spartanshields:shield_basic_wood>, <ore:cobblestone>], [null, <ore:cobblestone>, null]]);
-recipes.addShaped("shield_vanilla_wood_1", <spartanshields:shield_basic_wood>, [[<ore:logWood>, <ore:logWood>, null], [<ore:logWood>, <ore:stickWood>, <ore:logWood>], [null, <ore:logWood>, <ore:logWood>]]);
-recipes.addShaped("shield_vanilla_wood_2", <spartanshields:shield_basic_wood>, [[null, <ore:logWood>, <ore:logWood>], [<ore:logWood>, <ore:stickWood>, <ore:logWood>], [<ore:logWood>, <ore:logWood>, null]]);
-
-
-// На гипотетическое будущее
-//recipes.addShaped("botania_shield_elementium", <superiorshields:botania_shield_elementium>, [[<ore:dreamwoodTwig>, <ore:ingotElvenElementium>, <ore:dreamwoodTwig>], [<ore:ingotElvenElementium>, <ore:elvenDragonstone>, <ore:ingotElvenElementium>], [<ore:dreamwoodTwig>, <ore:ingotElvenElementium>, <ore:dreamwoodTwig>]]);
-//recipes.addShaped("botania_shield_manasteel", <superiorshields:botania_shield_manasteel>, [[<ore:livingwoodTwig>, <ore:ingotManasteel>, <ore:livingwoodTwig>], [<ore:ingotManasteel>, <ore:manaDiamond>, <ore:ingotManasteel>], [<ore:livingwoodTwig>, <ore:ingotManasteel>, <ore:livingwoodTwig>]]);
-//recipes.addShaped("botania_shield_terrasteel", <superiorshields:botania_shield_terrasteel>, [[<ore:livingwoodTwig>, <ore:ingotTerrasteel>, <ore:livingwoodTwig>], [<ore:ingotTerrasteel>, <botania:manatablet>, <ore:ingotTerrasteel>], [<ore:livingwoodTwig>, <ore:ingotTerrasteel>, <ore:livingwoodTwig>]]);
-//recipes.addShaped("enderio_shield_ds_conductive_iron", <superiorshields:enderio_ds_shield_conductive_iron>.withTag({energy: 0}), [[null, <ore:ingotConductiveIron>, null], [<ore:ingotDarkSteel>, <enderio:item_basic_capacitor>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotConductiveIron>, <ore:ingotDarkSteel>]]);
-//recipes.addShaped("enderio_shield_ds_energetic_alloy", <superiorshields:enderio_ds_shield_energetic_alloy>.withTag({energy: 0}), [[null, <ore:ingotEnergeticAlloy>, null], [<ore:ingotDarkSteel>, <enderio:item_basic_capacitor:1>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotEnergeticAlloy>, <ore:ingotDarkSteel>]]);
-//recipes.addShaped("enderio_shield_ds_vibrant_alloy", <superiorshields:enderio_ds_shield_vibrant_alloy>.withTag({energy: 0}), [[null, <ore:ingotVibrantAlloy>, null], [<ore:ingotDarkSteel>, <enderio:item_basic_capacitor:2>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotVibrantAlloy>, <ore:ingotDarkSteel>]]);
-//recipes.addShaped("enderio_shield_es_conductive_iron", <superiorshields:enderio_es_shield_conductive_iron>.withTag({energy: 0}), [[null, <ore:ingotConductiveIron>, null], [<ore:ingotEndSteel>, <enderio:item_basic_capacitor>, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <ore:ingotConductiveIron>, <ore:ingotEndSteel>]]);
-//recipes.addShaped("enderio_shield_es_energetic_alloy", <superiorshields:enderio_es_shield_energetic_alloy>.withTag({energy: 0}), [[null, <ore:ingotEnergeticAlloy>, null], [<ore:ingotEndSteel>, <enderio:item_basic_capacitor:1>, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <ore:ingotEnergeticAlloy>, <ore:ingotEndSteel>]]);
-//recipes.addShaped("enderio_shield_es_vibrant_alloy", <superiorshields:enderio_es_shield_vibrant_alloy>.withTag({energy: 0}), [[null, <ore:ingotVibrantAlloy>, null], [<ore:ingotEndSteel>, <enderio:item_basic_capacitor:2>, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <ore:ingotVibrantAlloy>, <ore:ingotEndSteel>]]);
-//recipes.addShaped("enderio_shield_soularium", <superiorshields:enderio_shield_soularium>.withTag({energy: 0}), [[<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>], [<ore:ingotSoularium>, <enderio:item_basic_capacitor:2>, <ore:ingotSoularium>], [<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>]]);
-//recipes.addShaped("if_shield_meat", <superiorshields:if_meat_shield>.withTag({energy: 0}), [[null, <industrialforegoing:plastic>, null], [<industrialforegoing:plastic>, <industrialforegoing:meat_feeder>, <industrialforegoing:plastic>], [<industrialforegoing:range_addon:8>, <industrialforegoing:plastic>, <industrialforegoing:range_addon:8>]]);
-//recipes.addShaped("if_shield_pink_slime", <superiorshields:if_pink_slime_shield>.withTag({energy: 0}), [[<industrialforegoing:plastic>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:plastic>], [<industrialforegoing:pink_slime_ingot>, <industrialforegoing:energy_field_addon>, <industrialforegoing:pink_slime_ingot>], [<industrialforegoing:plastic>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:plastic>]]);
-//recipes.addShaped("thermal_shield_aerotheum", <superiorshields:thermal_shield_aerotheum>.withTag({energy: 0}), [[null, <ore:dustAerotheum>, null], [<ore:ingotLumium>, <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), <ore:ingotLumium>], [<ore:dustAerotheum>, <ore:gearLumium>, <ore:dustAerotheum>]]);
-//recipes.addShaped("thermal_shield_basic", <superiorshields:thermal_shield_basic>.withTag({energy: 0}), [[null, <thermalfoundation:material:515>, null], [<ore:ingotSilver>, <thermalfoundation:material:640>, <ore:ingotSilver>], [<ore:ingotTin>, <ore:gearIron>, <ore:ingotTin>]]);
-//recipes.addShaped("thermal_shield_cryotheum", <superiorshields:thermal_shield_cryotheum>.withTag({energy: 0}), [[null, <ore:dustCryotheum>, null], [<ore:ingotLumium>, <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), <ore:ingotLumium>], [<ore:dustCryotheum>, <ore:gearLumium>, <ore:dustCryotheum>]]);
-//recipes.addShaped("thermal_shield_enderium", <superiorshields:thermal_shield_enderium>.withTag({energy: 0}), [[null, <ore:ingotLumium>, null], [<ore:ingotEnderium>, <superiorshields:thermal_shield_signalum>.withTag({energy: 0}), <ore:ingotEnderium>], [<ore:ingotLumium>, <ore:gearEnderium>, <ore:ingotLumium>]]);
-//recipes.addShaped("thermal_shield_hardened", <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), [[null, <ore:ingotCopper>, null], [<ore:ingotInvar>, <superiorshields:thermal_shield_basic>.withTag({energy: 0}), <ore:ingotInvar>], [<ore:ingotCopper>, <ore:gearInvar>, <ore:ingotCopper>]]);
-//recipes.addShaped("thermal_shield_petrotheum", <superiorshields:thermal_shield_petrotheum>.withTag({energy: 0}), [[null, <ore:dustPetrotheum>, null], [<ore:ingotLumium>, <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), <ore:ingotLumium>], [<ore:dustPetrotheum>, <ore:gearLumium>, <ore:dustPetrotheum>]]);
-//recipes.addShaped("thermal_shield_pyrotheum", <superiorshields:thermal_shield_pyrotheum>.withTag({energy: 0}), [[null, <ore:dustPyrotheum>, null], [<ore:ingotLumium>, <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), <ore:ingotLumium>], [<ore:dustPyrotheum>, <ore:gearLumium>, <ore:dustPyrotheum>]]);
-//recipes.addShaped("thermal_shield_reinforced", <superiorshields:thermal_shield_reinforced>.withTag({energy: 0}), [[null, <ore:gemDiamond>, null], [<ore:ingotElectrum>, <superiorshields:thermal_shield_hardened>.withTag({energy: 0}), <ore:ingotElectrum>], [<ore:gemDiamond>, <ore:gearElectrum>, <ore:gemDiamond>]]);
-//recipes.addShaped("thermal_shield_signalum", <superiorshields:thermal_shield_signalum>.withTag({energy: 0}), [[null, <ore:dustPetrotheum>, null], [<ore:ingotSignalum>, <superiorshields:thermal_shield_reinforced>.withTag({energy: 0}), <ore:ingotSignalum>], [<ore:dustPetrotheum>, <ore:gearSignalum>, <ore:dustPetrotheum>]]);
-//recipes.addShaped("vanilla_shield_diamond", <superiorshields:vanilla_shield_diamond>, [[null, <ore:gemDiamond>, null], [<ore:gemDiamond>, <minecraft:redstone_torch>, <ore:gemDiamond>], [null, <ore:gemDiamond>, null]]);
-//recipes.addShaped("vanilla_shield_emerald", <superiorshields:vanilla_shield_emerald>, [[null, <ore:gemEmerald>, null], [<ore:gemEmerald>, <minecraft:redstone_torch>, <ore:gemEmerald>], [null, <ore:gemEmerald>, null]]);
-//recipes.addShaped("vanilla_shield_endstone", <superiorshields:vanilla_shield_endstone>, [[null, <ore:endstone>, null], [<ore:endstone>, <minecraft:shulker_shell>, <ore:endstone>], [null, <ore:endstone>, null]]);
-//recipes.addShaped("vanilla_shield_gold", <superiorshields:vanilla_shield_gold>, [[null, <ore:ingotGold>, null], [<ore:ingotGold>, <minecraft:redstone_torch>, <ore:ingotGold>], [null, <ore:ingotGold>, null]]);
-//recipes.addShaped("vanilla_shield_iron", <superiorshields:vanilla_shield_iron>, [[null, <ore:ingotIron>, null], [<ore:ingotIron>, <minecraft:redstone_torch>, <ore:ingotIron>], [null, <ore:ingotIron>, null]]);
-//recipes.addShaped("vanilla_shield_obsidian", <superiorshields:vanilla_shield_obsidian>, [[null, <ore:obsidian>, null], [<ore:obsidian>, <minecraft:redstone_torch>, <ore:obsidian>], [null, <ore:obsidian>, null]]);
-//recipes.addShaped("vanilla_shield_stone", <superiorshields:vanilla_shield_stone>, [[null, <ore:stone>, null], [<ore:stone>, <ore:stickWood>, <ore:stone>], [null, <ore:stone>, null]]);
-//recipes.addShaped("vanilla_shield_wood", <superiorshields:vanilla_shield_wood>, [[null, <ore:logWood>, null], [<ore:logWood>, <ore:stickWood>, <ore:logWood>], [null, <ore:logWood>, null]]);
-
-
-//recipes.addShaped("advanced_shield", <techguns:advanced_shield>, [[<ore:plateCarbon>, <ore:paneGlass>, <ore:plateCarbon>], [<ore:plateCarbon>, <minecraft:shield>, <ore:plateCarbon>], [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]]);
-//recipes.addShaped("ballistic_shield", <techguns:ballistic_shield>, [[<ore:plateObsidianSteel>, <ore:paneGlass>, <ore:plateObsidianSteel>], [<ore:plateObsidianSteel>, <minecraft:shield>, <ore:plateObsidianSteel>], [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
-//recipes.addShaped("itemshared_129_shieldedtitaniumbarrel", <techguns:itemshared:129>, [[<ore:plateTitanium>, <ore:circuitElite>, <ore:plateTitanium>], [<ore:plateLead>, <techguns:itemshared:40>, <ore:plateLead>], [<ore:plateTitanium>, <ore:circuitElite>, <ore:plateTitanium>]]);
-//recipes.addShaped("riot_shield", <techguns:riot_shield>, [[<ore:ingotSteel>, <ore:paneGlass>, <ore:ingotSteel>], [<ore:ingotSteel>, <minecraft:shield>, <ore:ingotSteel>], [<ore:ingotSteel>, <ore:paneGlass>, <ore:ingotSteel>]]);
-
-
-//recipes.addShaped("bone_shield", <thebetweenlands:bone_shield>, [[<thebetweenlands:slimy_bone_block>, <thebetweenlands:items_misc:7>, <thebetweenlands:slimy_bone_block>], [<thebetweenlands:slimy_bone_block>, <thebetweenlands:slimy_bone_block>, <thebetweenlands:slimy_bone_block>], [null, <thebetweenlands:slimy_bone_block>, null]]);
-//recipes.addShaped("dentrothyst_shield_green", <thebetweenlands:dentrothyst_shield_green>, [[<thebetweenlands:dentrothyst>, <thebetweenlands:items_misc:20>, <thebetweenlands:dentrothyst>], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<thebetweenlands:dentrothyst>, <thebetweenlands:dentrothyst>, <thebetweenlands:dentrothyst>]]);
-//recipes.addShaped("dentrothyst_shield_green_polished", <thebetweenlands:dentrothyst_shield_green_polished>, [[<thebetweenlands:polished_dentrothyst>, <thebetweenlands:items_misc:20>, <thebetweenlands:polished_dentrothyst>], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<thebetweenlands:polished_dentrothyst>, <thebetweenlands:polished_dentrothyst>, <thebetweenlands:polished_dentrothyst>]]);
-//recipes.addShaped("dentrothyst_shield_orange", <thebetweenlands:dentrothyst_shield_orange>, [[<thebetweenlands:dentrothyst:1>, <thebetweenlands:items_misc:20>, <thebetweenlands:dentrothyst:1>], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<thebetweenlands:dentrothyst:1>, <thebetweenlands:dentrothyst:1>, <thebetweenlands:dentrothyst:1>]]);
-//recipes.addShaped("dentrothyst_shield_orange_polished", <thebetweenlands:dentrothyst_shield_orange_polished>, [[<thebetweenlands:polished_dentrothyst:1>, <thebetweenlands:items_misc:20>, <thebetweenlands:polished_dentrothyst:1>], [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>], [<thebetweenlands:polished_dentrothyst:1>, <thebetweenlands:polished_dentrothyst:1>, <thebetweenlands:polished_dentrothyst:1>]]);
-recipes.addShaped("lurker_skin_shield", <thebetweenlands:lurker_skin_shield>, [[<thebetweenlands:items_misc:4>, <thebetweenlands:items_misc:20>, <thebetweenlands:items_misc:4>], [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>], [null, <thebetweenlands:items_misc:4>, null]]);
-//recipes.addShaped("octine_shield", <thebetweenlands:octine_shield>, [[<ore:blokcOctine>, <ore:blokcOctine>, <ore:blokcOctine>], [<thebetweenlands:octine_ingot>, <thebetweenlands:octine_ingot>, <thebetweenlands:octine_ingot>], [<ore:blokcOctine>, <ore:blokcOctine>, <ore:blokcOctine>]]);
-//recipes.addShaped("syrmorite_shield", <thebetweenlands:syrmorite_shield>, [[<ore:blockSyrmorite>,<ore:blockSyrmorite>, <ore:blockSyrmorite>], [<thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>], [<ore:blockSyrmorite>, <ore:blockSyrmorite>, <ore:blockSyrmorite>]]);
-//recipes.addShaped("valonite_shield", <thebetweenlands:valonite_shield>, [[<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>], [<thebetweenlands:items_misc:19>, <thebetweenlands:items_misc:19>, <thebetweenlands:items_misc:19>], [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>]]);
-//recipes.addShaped("weedwood_shield", <thebetweenlands:weedwood_shield>, [[<thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>, <thebetweenlands:items_misc:7>, <thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>], [<thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>, <thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>, <thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>], [null, <thebetweenlands:log_weedwood> | <thebetweenlands:log_weedwood:12>, null]]);
-//recipes.addShapeless("living_weedwood_shield", <thebetweenlands:living_weedwood_shield>, [<thebetweenlands:spirit_tree_face_small_mask_animated>, <thebetweenlands:weedwood_shield>]);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+	[<botania:storage>, <botania:rune:2>, <botania:storage>],
+	[<botania:storage>, <botania:manaresource:3>, <botania:storage>], 
+	[null, <botania:rune:8>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<spartanshields:shield_botania_manasteel>)
+  .create();
+  
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+	[<botania:storage:2>, <botania:rune:5>, <botania:storage:2>], 
+	[<botania:storage:2>, <botania:manaresource:13>, <botania:storage:2>], 
+	[null, <botania:rune:8>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<spartanshields:shield_botania_elementium>)
+  .create();
+  
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+	[<botania:storage:1>, <botania:rune:15>, <botania:storage:1>], 
+	[<botania:storage:1>, <botania:manaresource:3>, <botania:storage:1>], 
+	[null, <botania:rune:8>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<spartanshields:shield_botania_terrasteel>)
+  .create();
 
 
-recipes.addShaped("equipment/knightmetal_shield", <twilightforest:knightmetal_shield>, [[<ore:blockKnightmetal>, <twilightforest:tower_wood> | <twilightforest:tower_wood:2> | <twilightforest:tower_wood:3>], [<ore:blockKnightmetal>, <twilightforest:knightmetal_ring>], [<ore:blockKnightmetal>, <twilightforest:tower_wood> | <twilightforest:tower_wood:2> | <twilightforest:tower_wood:3>]]);
+val shields_tower = ["spartanshields:shield_tower_bronze", "spartanshields:shield_tower_constantan", "spartanshields:shield_tower_copper", "spartanshields:shield_tower_electrum", "spartanshields:shield_tower_invar", "spartanshields:shield_tower_lead", "spartanshields:shield_tower_nickel", "spartanshields:shield_tower_platinum", "spartanshields:shield_tower_silver", "spartanshields:shield_tower_steel", "spartanshields:shield_tower_tin", "spartanshields:shield_tower_gold", "spartanshields:shield_tower_iron"] as string[];
+for shield in shields_tower {
+	val material_lowercase = shield.split(":")[1].split("_")[2];
+	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
+	
+	val block = oreDict["block" ~ material];
+	val shield = itemUtils.getItem(shield);
+	
+	RecipeBuilder.get("blacksmith")
+	  .setShaped([
+		[null, block, null],
+		[block, <spartanshields:shield_tower_wood>, block],
+		[null, block, null]])
+	  .addTool(<ore:artisansHammer>, 100)
+	  .addTool(<ore:artisansBurner>, 100)
+	  .addOutput(shield)
+	  .create();
+}
+
+val shields = ["spartanshields:shield_basic_bronze", "spartanshields:shield_basic_constantan", "spartanshields:shield_basic_copper", "spartanshields:shield_basic_electrum", "spartanshields:shield_basic_invar", "spartanshields:shield_basic_lead", "spartanshields:shield_basic_nickel", "spartanshields:shield_basic_platinum", "spartanshields:shield_basic_silver", "spartanshields:shield_basic_steel", "spartanshields:shield_basic_tin", "spartanshields:shield_tc_thaumium", "spartanshields:shield_tc_void", "spartanshields:shield_basic_enderium", "spartanshields:shield_basic_lumium", "spartanshields:shield_basic_signalum","spartanshields:shield_basic_gold", "spartanshields:shield_basic_iron", "spartanshields:shield_basic_diamond", "spartanshields:shield_abyssalcraft_abyssalnite", "spartanshields:shield_abyssalcraft_dreadium", "spartanshields:shield_abyssalcraft_ethaxium"] as string[];
+for shield in shields {
+	val material_lowercase = shield.split(":")[1].split("_")[2];
+	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
+	
+	val block = oreDict["block" ~ material];
+	val shield = itemUtils.getItem(shield);
+	
+	RecipeBuilder.get("blacksmith")
+	  .setShaped([
+		[null, block, null],
+		[block, <spartanshields:shield_basic_wood>, block],
+		[null, block, null]])
+	  .addTool(<ore:artisansHammer>, 100)
+	  .addTool(<ore:artisansBurner>, 100)
+	  .addOutput(shield)
+	  .create();
+}
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+	[null, <ore:blockLiquifiedCoralium>, null], 
+	[<ore:blockLiquifiedCoralium>, <spartanshields:shield_basic_wood>, <ore:blockLiquifiedCoralium>], 
+	[null, <ore:blockLiquifiedCoralium>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<spartanshields:shield_abyssalcraft_coralium>)
+  .create();

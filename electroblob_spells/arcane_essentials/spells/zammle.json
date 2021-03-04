@@ -1,0 +1,27 @@
+{
+  "enabled": {
+    "book": true,
+    "scroll": true,
+    "wands": true,
+    "npcs": true,
+    "dispensers": true,
+    "commands": true,
+    "treasure": true,
+    "trades": true,
+    "looting": true
+  },
+  "tier": "apprentice",
+  "element": "necromancy",
+  "type": "attack",
+  "cost": 35,
+  "chargeup": 0,
+  "cooldown": 65,
+  "base_properties": {
+    "damage": 9,
+    "life_steal": 0.4,
+    "range": 18,
+    "effect_radius": 0.85,
+    "effect_strength": 1.25,
+    "swords": 1
+  }
+}

@@ -10,10 +10,215 @@
   },
   {
     "state": {
+      "block": "cuisine:fire_pit",
+      "properties": {
+        "burning": "true"
+      }
+    },
+    "temperature": 5.0
+  },
+  {
+    "state": {
       "block": "minecraft:lit_furnace",
       "properties": {}
     },
     "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "atum:limestone_furnace_lit",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "betternether:netherrack_furnace",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "bewitchment:witches_oven",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "industrialforegoing:petrified_fuel_generator",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "industrialforegoing:resourceful_furnace",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "engineersdecor:small_lab_furnace",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "engineersdecor:small_electrical_furnace",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_alloy_smelter",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_enhanced_alloy_smelter",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_simple_alloy_smelter",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_simple_sag_mill",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_simple_furnace",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_stirling_generator",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_stirling_generator",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_combustion_generator",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "enderio:block_simple_stirling_generator",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "thermalexpansion:machine",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "thermalexpansion:dynamo",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:stone_kiln",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:stone_oven",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:wither_forge",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:bloomery",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:brick_kiln",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "pyrotech:brick_oven",
+      "properties": {}
+    },
+    "temperature": 3.0
+  },
+  {
+    "state": {
+      "block": "minecraft:glowstone",
+      "properties": {}
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "minecraft:lit_pumpkin",
+      "properties": {}
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "minecraft:torch",
+      "properties": {}
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "botania:animatedtorch",
+      "properties": {}
+    },
+    "temperature": 1.0
   },
   {
     "state": {

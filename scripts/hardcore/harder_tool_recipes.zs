@@ -1,44 +1,29 @@
+import mods.artisanworktables.builder.RecipeBuilder;
 
 recipes.removeByRecipeName("tinkersaether:valkyrie_pickaxe");
 recipes.removeByRecipeName("tinkersaether:valkyrie_axe");
 recipes.removeByRecipeName("tinkersaether:valkyrie_shovel");
-
 recipes.removeByRecipeName("aether_legacy:zanite_pickaxe");
 recipes.removeByRecipeName("aether_legacy:zanite_axe");
 recipes.removeByRecipeName("aether_legacy:zanite_shovel");
-
 recipes.removeByRecipeName("aether_legacy:gravitite_pickaxe");
 recipes.removeByRecipeName("aether_legacy:gravitite_axe");
 recipes.removeByRecipeName("aether_legacy:gravitite_shovel");
-
-
 recipes.removeByRecipeName("aether_legacy:holystone_pickaxe");
 recipes.removeByRecipeName("aether_legacy:holystone_axe");
 recipes.removeByRecipeName("aether_legacy:holystone_shovel");
-
-
 recipes.removeByRecipeName("immersiveengineering:tool/steel_pickaxe");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_shovel");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_axe");
-
-
-recipes.removeByRecipeName("immersiveengineering:armor/steel_helmet");
-recipes.removeByRecipeName("immersiveengineering:armor/steel_chestplate");
-recipes.removeByRecipeName("immersiveengineering:armor/steel_leggings");
-recipes.removeByRecipeName("immersiveengineering:armor/steel_boots");
-
 recipes.removeByRecipeName("thebetweenlands:weedwood_sword");
 recipes.removeByRecipeName("thebetweenlands:weedwood_shovel");
 recipes.removeByRecipeName("thebetweenlands:weedwood_axe");
 recipes.removeByRecipeName("thebetweenlands:weedwood_pickaxe");
-
 recipes.removeByRecipeName("embers:blockelectrum_axe");
 recipes.removeByRecipeName("embers:blockaluminium_axe");
 recipes.removeByRecipeName("embers:blocknickel_axe");
 recipes.removeByRecipeName("embers:blockbronze_axe");
 recipes.removeByRecipeName("embers:blocktin_axe");
-
-
 recipes.removeByRecipeName("betternether:cincinnasite_pickaxe_diamond");
 recipes.removeByRecipeName("betternether:cincinnasite_axe_diamond");
 recipes.removeByRecipeName("betternether:cincinnasite_pickaxe");
@@ -47,10 +32,6 @@ recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_axe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_hoe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_pickaxe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_shovel");
-recipes.removeByRecipeName("abyssalcraft:ethaxiumpickaxe");
-recipes.removeByRecipeName("abyssalcraft:ethaxiumaxe");
-recipes.removeByRecipeName("abyssalcraft:ethaxiumhoe");
-recipes.removeByRecipeName("abyssalcraft:ethaxiumshovel");
 recipes.removeByRecipeName("thebetweenlands:octine_axe");
 recipes.removeByRecipeName("thebetweenlands:octine_pickaxe");
 recipes.removeByRecipeName("thebetweenlands:octine_shovel");
@@ -66,75 +47,242 @@ recipes.removeByRecipeName("twilightforest:equipment/ironwood_axe");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_pickaxe");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_hoe");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_shovel");
-recipes.removeByRecipeName("thaumicbases:thauminitepickaxe");
-recipes.removeByRecipeName("thaumicbases:thauminiteaxe");
-recipes.removeByRecipeName("thaumicbases:thauminitehoe");
-recipes.removeByRecipeName("thaumicbases:thauminiteshovel");
-recipes.removeByRecipeName("thaumcraft:voidpick");
-recipes.removeByRecipeName("thaumcraft:voidhoe");
-recipes.removeByRecipeName("thaumcraft:voidaxe");
-recipes.removeByRecipeName("thaumcraft:voidshovel");
-
-
 recipes.removeByRecipeName("tcomplement:armor/steel_helmet");
 recipes.removeByRecipeName("tcomplement:armor/steel_chestplate");
 recipes.removeByRecipeName("tcomplement:armor/steel_leggings");
 recipes.removeByRecipeName("tcomplement:armor/steel_boots");
-
 recipes.removeByRecipeName("embers:ingotaluminum_axe");
 recipes.removeByRecipeName("embers:ingotelectrum_axe");
 recipes.removeByRecipeName("embers:ingotnickel_axe");
 recipes.removeByRecipeName("embers:ingotbronze_axe");
 recipes.removeByRecipeName("embers:ingottin_axe");
 
-recipes.addShaped("cincinnasite_pickaxe_diamond", <betternether:cincinnasite_pickaxe_diamond>, [[<ore:blockDiamond>, <betternether:cincinnasite_pickaxe>, <ore:blockDiamond>]]);
-recipes.addShaped("cincinnasite_axe_diamond", <betternether:cincinnasite_axe_diamond>, [[null, <ore:blockDiamond>], [<ore:blockDiamond>, <betternether:cincinnasite_axe>]]);
-recipes.addShaped("cincinnasite_pickaxe", <betternether:cincinnasite_pickaxe>, [[<betternether:cincinnasite_block>, <betternether:cincinnasite_block>, <betternether:cincinnasite_block>], [null, <betternether:nether_reed>, null], [null, <betternether:nether_reed>, null]]);
-recipes.addShaped("cincinnasite_axe", <betternether:cincinnasite_axe>, [[<betternether:cincinnasite_block>, <betternether:cincinnasite_block>], [<betternether:cincinnasite_block>, <betternether:nether_reed>], [null, <betternether:nether_reed>]]);
+RecipeBuilder.get("blacksmith") // Цинцианитовая кирка
+  .setShaped([
+    [<betternether:cincinnasite_block>, <betternether:cincinnasite_block>, <betternether:cincinnasite_block>],
+    [null, <betternether:nether_reed>, null],
+    [null, <betternether:nether_reed>, null]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addOutput(<betternether:cincinnasite_pickaxe>)
+  .create();
 
+RecipeBuilder.get("jeweler") // Цинцианитовая алмазная кирка
+  .setShaped([
+    [<ore:blockDiamond>, <betternether:cincinnasite_pickaxe>, <ore:blockDiamond>]])
+  .addTool(<ore:artisansLens>, 100)
+  .addTool(<ore:artisansGemCutter>, 400)
+  .addTool(<ore:artisansSolderer>, 250)
+  .addOutput(<betternether:cincinnasite_pickaxe_diamond>)
+  .create();
 
-recipes.addShaped("equipment/tool/cold_iron_axe", <bewitchment:cold_iron_axe>, [[<ore:blockColdIron>, <ore:blockColdIron>], [<ore:blockColdIron>, <ore:stickWood>], [null, <ore:stickWood>]]);
-recipes.addShaped("equipment/tool/cold_iron_hoe", <bewitchment:cold_iron_hoe>, [[<ore:blockColdIron>, <ore:blockColdIron>], [null, <ore:stickWood>], [null, <ore:stickWood>]]);
-recipes.addShaped("equipment/tool/cold_iron_pickaxe", <bewitchment:cold_iron_pickaxe>, [[<ore:blockColdIron>, <ore:blockColdIron>, <ore:blockColdIron>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("equipment/tool/cold_iron_shovel", <bewitchment:cold_iron_shovel>, [[<ore:blockColdIron>], [<ore:blockColdIron>], [<ore:stickWood>]]);
+RecipeBuilder.get("blacksmith") // Цинцианитовый топор
+  .setShaped([
+    [<betternether:cincinnasite_block>, <betternether:cincinnasite_block>],
+    [<betternether:cincinnasite_block>, <betternether:nether_reed>],
+    [null, <betternether:nether_reed>]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addOutput(<betternether:cincinnasite_axe>)
+  .create();
 
+RecipeBuilder.get("jeweler") // Цинцианитовый алмазный топор
+  .setShaped([
+    [null, <ore:blockDiamond>],
+    [<ore:blockDiamond>, <betternether:cincinnasite_axe>]])
+  .addTool(<ore:artisansLens>, 100)
+  .addTool(<ore:artisansGemCutter>, 400)
+  .addTool(<ore:artisansSolderer>, 250)
+  .addOutput(<betternether:cincinnasite_axe_diamond>)
+  .create();
 
-recipes.addShaped("ethaxiumpickaxe", <abyssalcraft:ethaxiumpickaxe>, [[<ore:blockEthaxium>, <ore:blockEthaxium>, <ore:blockEthaxium>], [null, <abyssalcraft:ethbrick>, null], [null, <abyssalcraft:ethbrick>, null]]);
-recipes.addShaped("ethaxiumaxe", <abyssalcraft:ethaxiumaxe>, [[<ore:blockEthaxium>, <ore:blockEthaxium>], [<ore:blockEthaxium>, <abyssalcraft:ethbrick>], [null, <abyssalcraft:ethbrick>]]);
-recipes.addShaped("ethaxiumhoe", <abyssalcraft:ethaxiumhoe>, [[<ore:blockEthaxium>, <ore:blockEthaxium>], [null, <abyssalcraft:ethbrick>], [null, <abyssalcraft:ethbrick>]]);
-recipes.addShaped("ethaxiumshovel", <abyssalcraft:ethaxiumshovel>, [[<ore:blockEthaxium>], [<ore:blockEthaxium>], [<abyssalcraft:ethbrick>]]);
+RecipeBuilder.get("blacksmith") // Топор из холодного железа
+  .setShaped([
+    [<ore:blockColdIron>, <ore:blockColdIron>],
+    [<ore:blockColdIron>, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<bewitchment:cold_iron_axe>)
+  .create();
 
+RecipeBuilder.get("blacksmith") // Мотыга из холодного железа
+  .setShaped([
+    [<ore:blockColdIron>, <ore:blockColdIron>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<bewitchment:cold_iron_hoe>)
+  .create();
 
-recipes.addShaped("octine_axe", <thebetweenlands:octine_axe>, [[<ore:blockOctine>, <ore:blockOctine>], [<ore:blockOctine>, <thebetweenlands:items_misc:20>], [null, <thebetweenlands:items_misc:20>]]);
-recipes.addShaped("octine_pickaxe", <thebetweenlands:octine_pickaxe>, [[<ore:blockOctine>, <ore:blockOctine>, <ore:blockOctine>], [null, <thebetweenlands:items_misc:20>, null], [null, <thebetweenlands:items_misc:20>, null]]);
-recipes.addShaped("octine_shovel", <thebetweenlands:octine_shovel>, [[<ore:blockOctine>], [<ore:blockOctine>], [<thebetweenlands:items_misc:20>]]);
+RecipeBuilder.get("blacksmith") // Кирка из холодного железа
+  .setShaped([
+    [<ore:blockColdIron>, <ore:blockColdIron>, <ore:blockColdIron>],
+    [null, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<bewitchment:cold_iron_pickaxe>)
+  .create();
 
+RecipeBuilder.get("blacksmith") // Лопата из холодного железа
+  .setShaped([
+    [<ore:blockColdIron>],
+    [<ore:blockColdIron>],
+    [<ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<bewitchment:cold_iron_shovel>)
+  .create();
 
-recipes.addShaped("blockdawnstone_hoe", <embers:hoe_dawnstone>, [[null, <ore:blockDawnstone>, <ore:blockDawnstone>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("blockdawnstone_pickaxe", <embers:pickaxe_dawnstone>, [[<ore:blockDawnstone>, <ore:blockDawnstone>, <ore:blockDawnstone>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("blockdawnstone_axe", <embers:axe_dawnstone>, [[null, <ore:blockDawnstone>, <ore:blockDawnstone>], [null, <ore:stickWood>, <ore:blockDawnstone>], [null, <ore:stickWood>, null]]);
-recipes.addShaped("blockdawnstone_shovel", <embers:shovel_dawnstone>, [[null, <ore:blockDawnstone>, null], [null, <ore:blockDawnstone>, null], [null, <ore:stickWood>, null]]);
+RecipeBuilder.get("blacksmith") // Октиновый топор
+  .setShaped([
+    [<thebetweenlands:octine_block>, <thebetweenlands:octine_block>],
+    [<thebetweenlands:octine_block>, <thebetweenlands:items_misc:20>],
+    [null, <thebetweenlands:items_misc:20>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<thebetweenlands:octine_axe>)
+  .create();
 
+RecipeBuilder.get("blacksmith") // Октиновая кирка
+  .setShaped([
+    [<ore:blockOctine>, <ore:blockOctine>, <ore:blockOctine>],
+    [null, <thebetweenlands:items_misc:20>, null],
+    [null, <thebetweenlands:items_misc:20>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<thebetweenlands:octine_pickaxe>)
+  .create();
 
-recipes.addShaped("valonite_pickaxe", <thebetweenlands:valonite_pickaxe>, [[<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>], [null, <thebetweenlands:items_misc:20>, null], [null, <thebetweenlands:items_misc:20>, null]]);
-recipes.addShaped("valonite_greataxe", <thebetweenlands:valonite_greataxe>, [[null, <ore:blockValonite>, <thebetweenlands:valonite_axe>], [null, <thebetweenlands:items_misc:20>, <ore:blockValonite>], [<thebetweenlands:items_misc:20>, null, null]]);
-recipes.addShaped("valonite_axe", <thebetweenlands:valonite_axe>, [[<ore:blockValonite>, <ore:blockValonite>], [<ore:blockValonite>, <thebetweenlands:items_misc:20>], [null, <thebetweenlands:items_misc:20>]]);
-recipes.addShaped("valonite_shovel", <thebetweenlands:valonite_shovel>, [[<ore:blockValonite>], [<ore:blockValonite>], [<thebetweenlands:items_misc:20>]]);
+RecipeBuilder.get("blacksmith") // Октиновая лопата
+  .setShaped([
+    [<ore:blockOctine>],
+    [<ore:blockOctine>],
+    [<thebetweenlands:items_misc:20>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<thebetweenlands:octine_pickaxe>)
+  .create();
 
+RecipeBuilder.get("blacksmith") // Золотитовая мотыга
+  .setShaped([
+    [<embers:block_dawnstone>, <embers:block_dawnstone>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<embers:hoe_dawnstone>)
+  .create();
 
-recipes.addShaped("equipment/ironwood_axe", <twilightforest:ironwood_axe>.withTag({ench: [{lvl: 1 as short, id: 35 as short}]}), [[<twilightforest:block_storage>, <twilightforest:block_storage>], [<twilightforest:block_storage>, <ore:stickWood>], [null, <ore:stickWood>]]);
-recipes.addShaped("equipment/ironwood_pickaxe", <twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32 as short}]}), [[<twilightforest:block_storage>, <twilightforest:block_storage>, <twilightforest:block_storage>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("equipment/ironwood_hoe", <twilightforest:ironwood_hoe>, [[<twilightforest:block_storage>, <twilightforest:block_storage>], [null, <ore:stickWood>], [null, <ore:stickWood>]]);
-recipes.addShaped("equipment/ironwood_shovel", <twilightforest:ironwood_shovel>.withTag({ench: [{lvl: 1 as short, id: 34 as short}]}), [[<twilightforest:block_storage>], [<twilightforest:block_storage>], [<ore:stickWood>]]);
+RecipeBuilder.get("blacksmith") // Золотитовая кирка
+  .setShaped([
+    [<embers:block_dawnstone>, <embers:block_dawnstone>, <embers:block_dawnstone>],
+    [null, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<embers:pickaxe_dawnstone>)
+  .create();
 
+RecipeBuilder.get("blacksmith") // Золотитовый топор
+  .setShaped([
+    [<embers:block_dawnstone>, <embers:block_dawnstone>],
+    [<embers:block_dawnstone>, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<embers:axe_dawnstone>)
+  .create();
 
-recipes.addShaped("thauminitepickaxe", <thaumicbases:thauminitepickaxe>, [[<thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("thauminiteaxe", <thaumicbases:thauminiteaxe>, [[<thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>, null], [<thaumicbases:blockthauminite>, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("thauminitehoe", <thaumicbases:thauminitehoe>, [[<thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>, null], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("thauminiteshovel", <thaumicbases:thauminiteshovel>, [[null, <thaumicbases:blockthauminite>, null], [null, <thaumicbases:blockthauminite>, null], [null, <ore:stickWood>, null]]);
+RecipeBuilder.get("blacksmith") // Золотитовая лопата
+  .setShaped([
+    [<embers:block_dawnstone>],
+    [<embers:block_dawnstone>],
+    [<ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<embers:shovel_dawnstone>)
+  .create();
 
+RecipeBuilder.get("jeweler") // Валонитовая лопата
+  .setShaped([
+    [<thebetweenlands:valonite_block>],
+    [<thebetweenlands:valonite_block>],
+    [<thebetweenlands:items_misc:20>]])
+  .addTool(<ore:artisansLens>, 150)
+  .addTool(<ore:artisansGemCutter>, 350)
+  .addOutput(<thebetweenlands:valonite_shovel>)
+  .create();
 
-recipes.addShaped("voidpick", <thaumcraft:void_pick>, [[<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
-recipes.addShaped("voidhoe", <thaumcraft:void_hoe>, [[<ore:blockVoid>, <ore:blockVoid>], [<ore:stickWood>, null], [<ore:stickWood>, null]]);
-recipes.addShaped("voidaxe", <thaumcraft:void_axe>, [[<ore:blockVoid>, <ore:blockVoid>], [<ore:stickWood>, <ore:blockVoid>], [<ore:stickWood>, null]]);
-recipes.addShaped("voidshovel", <thaumcraft:void_shovel>, [[<ore:blockVoid>], [<ore:blockVoid>], [<ore:stickWood>]]);
+RecipeBuilder.get("jeweler") // Валонитовая  кирка
+  .setShaped([
+    [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
+    [null, <thebetweenlands:items_misc:20>, null],
+    [null, <thebetweenlands:items_misc:20>, null]])
+  .addTool(<ore:artisansLens>, 150)
+  .addTool(<ore:artisansGemCutter>, 350)
+  .addOutput(<thebetweenlands:valonite_pickaxe>)
+  .create();
+
+RecipeBuilder.get("jeweler") // Валонитовый топор
+  .setShaped([
+    [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
+    [<thebetweenlands:valonite_block>, <thebetweenlands:items_misc:20>],
+    [null, <thebetweenlands:items_misc:20>]])
+  .addTool(<ore:artisansLens>, 150)
+  .addTool(<ore:artisansGemCutter>, 350)
+  .addOutput(<thebetweenlands:valonite_axe>)
+  .create();
+
+RecipeBuilder.get("jeweler") // Валонитовый великий топор
+  .setShaped([
+    [null, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_axe>],
+    [null, <thebetweenlands:items_misc:20>, <thebetweenlands:valonite_block>],
+    [<thebetweenlands:items_misc:20>, null, null]])
+  .addTool(<ore:artisansLens>, 250)
+  .addTool(<ore:artisansGemCutter>, 500)
+  .addTool(<ore:artisansSolderer>, 300)
+  .addOutput(<thebetweenlands:valonite_greataxe>)
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железнодревесная лопата
+  .setShaped([
+    [<twilightforest:block_storage>],
+    [<twilightforest:block_storage>],
+    [<ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<twilightforest:ironwood_shovel>.withTag({ench: [{lvl: 1 as short, id: 34}]}))
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железнодревесная кирка
+  .setShaped([
+    [<twilightforest:block_storage>, <twilightforest:block_storage>, <twilightforest:block_storage>],
+    [null, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32}]}))
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железнодревесный топор
+  .setShaped([
+    [<twilightforest:block_storage>, <twilightforest:block_storage>],
+    [<twilightforest:block_storage>, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<twilightforest:ironwood_axe>.withTag({ench: [{lvl: 1 as short, id: 35}]}))
+  .create();
+
+RecipeBuilder.get("blacksmith") // Железнодревесная мотыга
+  .setShaped([
+    [<twilightforest:block_storage>, <twilightforest:block_storage>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .addOutput(<twilightforest:ironwood_hoe>)
+  .create();
