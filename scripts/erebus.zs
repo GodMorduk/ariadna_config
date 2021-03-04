@@ -1,1 +1,0 @@
-recipes.removeByRecipeName("erebus:bamboo_torch");
