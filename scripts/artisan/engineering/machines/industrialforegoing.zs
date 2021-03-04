@@ -1013,9 +1013,9 @@ RecipeBuilder.get("engineer")
     [<enderio:item_alloy_ingot:8>, <thermalfoundation:material:359>, <minecraft:ender_eye>, <thermalfoundation:material:359>, <enderio:item_alloy_ingot:8>]])
   .setFluid(<liquid:ender> * 16000)
   .setSecondaryIngredients([<mekanism:controlcircuit:3>, <enderio:item_basic_capacitor:2> * 4])
-  .addTool(<artisanworktables:artisans_solderer_iron>, 175)
-  .addTool(<artisanworktables:artisans_spanner_iron>, 175)
-  .addTool(<artisanworktables:artisans_driver_iron>, 175)
+  .addTool(<ore:artisansSolderer>, 175)
+  .addTool(<ore:artisansSpanner>, 175)
+  .addTool(<ore:artisansDriver>, 175)
   .addOutput(<industrialforegoing:black_hole_unit>)
   .create();
 
