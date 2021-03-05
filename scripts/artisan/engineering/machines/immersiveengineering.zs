@@ -1120,7 +1120,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersiveengineering:steel_armor_head>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:metal_decoration/auto_lubricator");
+recipes.removeByRecipeName("immersivepetroleum:metal_decoration/auto_lubricator");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:blockGlass>, null],
@@ -1131,7 +1131,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:metal_device>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:metal_decoration/generator");
+recipes.removeByRecipeName("immersivepetroleum:metal_decoration/generator");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
@@ -1142,8 +1142,8 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:metal_device:1>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:stone_decoration/asphalt");
-recipes.removeByRecipeName("immersiveengineering:stone_decoration/asphalt2");
+recipes.removeByRecipeName("immersivepetroleum:stone_decoration/asphalt");
+recipes.removeByRecipeName("immersivepetroleum:stone_decoration/asphalt2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:itemSlag>, <immersivepetroleum:material>, <ore:itemSlag>],
@@ -1164,7 +1164,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:stone_decoration> * 8)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:tool/projector");
+recipes.removeByRecipeName("immersivepetroleum:tool/projector");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:blockGlass>, null, null],
@@ -1175,7 +1175,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:schematic>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/speedboat");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/speedboat");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:4>, <immersiveengineering:material:8>],
@@ -1185,7 +1185,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:speedboat>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/reinforced_hull");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/reinforced_hull");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSteel>, null, <ore:plateSteel>],
@@ -1195,7 +1195,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:upgrades>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/icebreaker_bow");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/icebreaker_bow");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:stickSteel>, null, <ore:plateSteel>],
@@ -1206,7 +1206,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:upgrades:1>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/expanded_tank");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/expanded_tank");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateSteel>, null],
@@ -1217,7 +1217,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:upgrades:2>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:tool/oil_can");
+recipes.removeByRecipeName("immersivepetroleum:tool/oil_can");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSteel>, <immersiveengineering:wooden_device0:1>, <ore:plateSteel>]])
@@ -1226,7 +1226,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:oil_can>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/rudders");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/rudders");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:stickSteel>, <ore:stickSteel>],
@@ -1237,7 +1237,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:upgrades:3>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:speedboat/emergency_paddles");
+recipes.removeByRecipeName("immersivepetroleum:speedboat/emergency_paddles");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>],
