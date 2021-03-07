@@ -69,9 +69,9 @@ recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_redstone2");
 RecipeBuilder.get("engineer")
   .setMinimumTier(1)
   .setShaped([
-    [null, <ore:ingotRedstoneAlloy>, null],
-    [<ore:ingotRedstoneAlloy>, <ore:stickWood>, <ore:ingotRedstoneAlloy>],
-    [null, <ore:ingotRedstoneAlloy>, null]])
+    [null, <ore:wireAluminum>, null],
+    [<ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>],
+    [null, <ore:wireAluminum>, null]])
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<immersiveengineering:wirecoil:5>*2)
   .create();
@@ -81,7 +81,7 @@ RecipeBuilder.get("engineer")
   .setMinimumTier(1)
   .setShaped([
     [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>],
-    [<immersiveengineering:wirecoil:1>, <immersiveengineering:material:8>, <immersiveengineering:wirecoil:1>],
+    [<immersiveengineering:wirecoil:1>, <ore:ingotIron>, <immersiveengineering:wirecoil:1>],
     [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>]])
   .addTool(<ore:artisansCutters>, 10)
   .addOutput(<immersiveengineering:metal_decoration0:1>)
@@ -92,7 +92,7 @@ RecipeBuilder.get("engineer")
   .setMinimumTier(1)
   .setShaped([
     [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>],
-    [<immersiveengineering:wirecoil:2>, <immersiveengineering:material:9>, <immersiveengineering:wirecoil:2>],
+    [<immersiveengineering:wirecoil:2>, <ore:ingotIron>, <immersiveengineering:wirecoil:2>],
     [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>]])
   .addTool(<ore:artisansCutters>, 10)
   .addOutput(<immersiveengineering:metal_decoration0:2>)
@@ -262,30 +262,6 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansFramingHammer>, 25)
   .addOutput(<mekanism:basicblock:8>)
-  .create();
-
-recipes.removeByRecipeName("thermalexpansion:frame");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateIron>, <ore:blockGlass>, <ore:plateIron>],
-    [<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
-    [<ore:plateIron>, <ore:blockGlass>, <ore:plateIron>]])
-  .setSecondaryIngredients([<techguns:itemshared:68> * 4])
-  .addTool(<ore:artisansDriver>, 25)
-  .addTool(<ore:artisansFramingHammer>, 25)
-  .addOutput(<thermalexpansion:frame>)
-  .create();
-
-recipes.removeByRecipeName("thermalexpansion:frame_1");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateTin>, <ore:blockGlass>, <ore:plateTin>],
-    [<ore:blockGlass>, <ore:gearCopper>, <ore:blockGlass>],
-    [<ore:plateTin>, <ore:blockGlass>, <ore:plateTin>]])
-  .setSecondaryIngredients([<techguns:itemshared:68> * 2])
-  .addTool(<ore:artisansDriver>, 25)
-  .addTool(<ore:artisansFramingHammer>, 25)
-  .addOutput(<thermalexpansion:frame:64>)
   .create();
 
 recipes.removeByRecipeName("enderio:pulsating_crystal");
