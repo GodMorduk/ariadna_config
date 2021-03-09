@@ -915,7 +915,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:armoredjetpack>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_3_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_3_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:battery>, <mekanism:basicblock2:3>.withTag({tier: 0}), <ore:battery>],
@@ -927,7 +927,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock2:3>.withTag({tier: 1}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_3_alt_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_3_alt_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:battery>, <mekanism:basicblock2:3>.withTag({tier: 1}), <ore:battery>],
@@ -939,7 +939,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock2:3>.withTag({tier: 2}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_3_alt_alt_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_3_alt_alt_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:battery>, <mekanism:basicblock2:3>.withTag({tier: 2}), <ore:battery>],
@@ -951,7 +951,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock2:3>.withTag({tier: 3}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_4_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_4_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:circuitAdvanced>, <mekanism:basicblock2:4>.withTag({tier: 0}), <ore:circuitAdvanced>],
@@ -963,7 +963,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock2:4>.withTag({tier: 1}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_4_alt_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_4_alt_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:circuitElite>, <mekanism:basicblock2:4>.withTag({tier: 1}), <ore:circuitElite>],
@@ -1066,7 +1066,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:flamethrower>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke3_1");
+recipes.removeByRecipeName("mekanism:machineblock3_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateLumium>, <mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>, <ore:plateLumium>],
@@ -1080,7 +1080,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock3:1>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_2");
+recipes.removeByRecipeName("mekanism:machineblock2_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateSteel>, <ore:alloyAdvanced>, <ore:plateSteel>, null],
@@ -1094,7 +1094,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:2>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_3");
+recipes.removeByRecipeName("mekanism:machineblock2_3");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:gearDiamond>, <ore:plateInvar>, <ore:alloyAdvanced>, <ore:plateInvar>, <ore:gearDiamond>],
@@ -1108,7 +1108,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:3>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_10");
+recipes.removeByRecipeName("mekanism:machineblock2_10");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:gearElectrum>, <ore:plateSignalum>, <ore:alloyAdvanced>, <ore:plateSignalum>, <ore:gearElectrum>],
@@ -1137,7 +1137,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock:7> * 3)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke_11");
+recipes.removeByRecipeName("mekanism:machineblock_11");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:itemEnhancedChassiParts>, <ore:electronTube>, <ore:alloyUltimate>, <ore:electronTube>, <ore:itemEnhancedChassiParts>],
@@ -1152,7 +1152,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock:11>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke_4");
+recipes.removeByRecipeName("mekanism:machineblock_4");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:itemEnhancedChassiParts>, <techguns:itemshared:69>, <enderio:item_basic_capacitor:2>, <techguns:itemshared:69>, <ore:itemEnhancedChassiParts>],
@@ -1167,7 +1167,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock:4>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_6");
+recipes.removeByRecipeName("mekanism:machineblock2_6");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateTitanium>, <ore:gearEnderium>, <ore:alloyAdvanced>, <ore:gearEnderium>, <ore:plateTitanium>],
@@ -1182,7 +1182,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:6>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_7");
+recipes.removeByRecipeName("mekanism:machineblock2_7");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateTitanium>, <ore:gearLumium>, <mekanism:enrichedalloy>, <ore:gearLumium>, <ore:plateTitanium>],
@@ -1197,7 +1197,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:7>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_8");
+recipes.removeByRecipeName("mekanism:machineblock2_8");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateTitanium>, <ore:gearSignalum>, <ore:alloyAdvanced>, <ore:gearSignalum>, <ore:plateTitanium>],
@@ -1212,7 +1212,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:8>.withTag({mekData: {}}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_13");
+recipes.removeByRecipeName("mekanism:machineblock2_13");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:alloyElite>, <ore:battery>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, null],
@@ -1224,7 +1224,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:13>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_14");
+recipes.removeByRecipeName("mekanism:machineblock2_14");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>],
@@ -1238,7 +1238,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:14>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke2_15");
+recipes.removeByRecipeName("mekanism:machineblock2_15");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateInvar>, <mekanism:machineblock:13>.withTag({mekData: {security: 0, ownerUUID: "39c07df4-7731-3ec5-9ebf-2833db36f8eb", energyStored: 12000.0, Items: []}}), <ore:plateInvar>],
@@ -1250,7 +1250,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:15>)
   .create();
 
-recipes.removeByRecipeName("mekanism:machinebloke3_0");
+recipes.removeByRecipeName("mekanism:machineblock3_0");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotRefinedObsidian>, <ore:alloyAdvanced>, <ore:ingotRefinedObsidian>, <ore:alloyAdvanced>, <ore:ingotRefinedObsidian>],
@@ -1355,3 +1355,28 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanismgenerators:reactor>)
   .create();
 
+recipes.removeByRecipeName("mekanism:portableteleport");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, null],
+    [<ore:plateSteel>, <ore:alloyUltimate>, <ore:itemEnderCrystal>, <ore:alloyUltimate>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:circuitUltimate>, <mekanism:teleportationcore>, <ore:circuitUltimate>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:alloyUltimate>, <ore:itemEnderCrystal>, <ore:alloyUltimate>, <ore:plateSteel>],
+    [null, <ore:plateSteel>, <ore:itemInfinityRod>, <ore:plateSteel>, null]])
+  .addTool(<artisanworktables:artisans_driver_iron>, 250)
+  .addTool(<artisanworktables:artisans_solderer_iron>, 250)
+  .addTool(<artisanworktables:artisans_file_iron>, 250)
+  .addOutput(<mekanism:portableteleporter>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:basicblock_6_alt_alt_alt");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:circuitUltimate>, <ore:plateSteel>],
+    [<ore:alloyUltimate>, <mekanism:basicblock:6>.withTag({tier: 2}), <ore:alloyUltimate>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addOutput(<mekanism:basicblock:6>.withTag({tier: 3}))
+  .create();
