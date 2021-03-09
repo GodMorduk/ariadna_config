@@ -234,7 +234,7 @@ RecipeBuilder.get("engineer")
 
 recipes.removeByRecipeName("techguns:itemshared_62_copperwire");
 MetalPress.removeRecipe(<techguns:itemshared:62>);
-MetalPress.addRecipe("ingotCopper", "ingotCopper", <techguns:itemshared:62>, 4, true);
+MetalPress.addRecipe("ingotCopper", "ingotCopper", <techguns:itemshared:62>*4, false);
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:plateCopper>])
   .addTool(<artisanworktables:artisans_cutters_iron>, 5)
