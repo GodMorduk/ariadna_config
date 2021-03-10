@@ -407,24 +407,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersiveengineering:material:13>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:tool/hammer");
-recipes.removeByRecipeName("immersiveengineering:tool/wirecutters");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [null, <ore:plateIron>, <ore:fiberHemp>],
-    [null, <ore:stickWood>, <ore:plateIron>],
-    [<ore:stickWood>, null, null]])
-  .addOutput(<immersiveengineering:tool>)
-  .create();
-
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:stickWood>, <ore:plateIron>],
-    [null, <ore:stickWood>]])
-  .addOutput(<immersiveengineering:tool:1>)
-  .create();
-
-recipes.removeByRecipeName("immersiveengineering:tool/woltmeter");
+recipes.removeByRecipeName("immersiveengineering:tool/voltmeter");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:wireAluminum>, null],
@@ -1322,3 +1305,4 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<immersiveengineering:metal_device1:3>)
   .create();
+
