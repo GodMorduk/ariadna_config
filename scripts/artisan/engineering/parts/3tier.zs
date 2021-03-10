@@ -71,28 +71,24 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("techguns:itemshared_66_circuitboardelite");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:alloyAdvanced>, null, <ore:electronTube>, null, <ore:alloyAdvanced>],
-    [null, <ore:wireCopper>, <refinedstorage:processor:4>, <ore:wireCopper>, null],
-    [<ore:electronTube>, <enderio:item_basic_capacitor>, <ore:circuitBasic>, <enderio:item_basic_capacitor>, <ore:electronTube>],
-    [null, <ore:wireCopper>, <refinedstorage:processor:4>, <ore:wireCopper>, null],
-    [<ore:alloyAdvanced>, null, <ore:electronTube>, null, <ore:alloyAdvanced>]])
-  .addTool(<ore:artisansSolderer>, 15)
-  .addTool(<ore:artisansDriver>, 15)
-  .addTool(<ore:artisansTSquare>, 15)
+    [<ore:wireCopper>, <refinedstorage:processor:4>, <ore:wireCopper>],
+    [<enderio:item_basic_capacitor>, <ore:circuitBasic>, <enderio:item_basic_capacitor>],
+    [<ore:wireCopper>, <refinedstorage:processor:4>, <ore:wireCopper>]])
+  .setSecondaryIngredients([<ore:electronTube> * 12, <ore:alloyAdvanced> * 8])
+  .addTool(<ore:artisansSolderer>, 20)
+  .addTool(<ore:artisansDriver>, 20)
   .addOutput(<techguns:itemshared:66>)
   .create();
 
 recipes.removeByRecipeName("mekanism:controlcircuit_2");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <ore:electronTube>, null, null],
-    [null, <ore:wireGold>, <refinedstorage:processor:4>, <ore:wireGold>, null],
-    [<ore:electronTube>, <ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>, <ore:electronTube>],
-    [null, <ore:wireGold>, <refinedstorage:processor:4>, <ore:wireGold>, null],
-    [null, null, <ore:electronTube>, null, null]])
-  .addTool(<ore:artisansSolderer>, 15)
-  .addTool(<ore:artisansDriver>, 15)
-  .addTool(<ore:artisansLens>, 15)
+    [<ore:wireGold>, <refinedstorage:processor:4>, <ore:wireGold>],
+    [<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>],
+    [<ore:wireGold>, <refinedstorage:processor:4>, <ore:wireGold>]])
+  .setSecondaryIngredients([<ore:electronTube> * 10])
+  .addTool(<ore:artisansSolderer>, 20)
+  .addTool(<ore:artisansDriver>, 20)
   .addOutput(<mekanism:controlcircuit:2>)
   .create();
 
@@ -110,17 +106,14 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("enderio:capacitor_2");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <ore:electronTube>, null, null],
-    [null, <ore:alloyAdvanced>, <ore:ingotEnergeticAlloy>, <ore:alloyAdvanced>, null],
-    [<ore:electronTube>, <enderio:item_basic_capacitor>, <ore:dustCoal>, <enderio:item_basic_capacitor>, <ore:electronTube>],
-    [null, <ore:alloyAdvanced>, <ore:ingotEnergeticAlloy>, <ore:alloyAdvanced>, null],
-    [null, null, <ore:electronTube>, null, null]])
-  .addTool(<ore:artisansSolderer>, 15)
-  .addTool(<ore:artisansDriver>, 15)
-  .addTool(<ore:artisansLens>, 15)
+    [<ore:alloyAdvanced>, <ore:ingotEnergeticAlloy>, <ore:alloyAdvanced>],
+    [<enderio:item_basic_capacitor>, <ore:dustCoal>, <enderio:item_basic_capacitor>],
+    [<ore:alloyAdvanced>, <ore:ingotEnergeticAlloy>, <ore:alloyAdvanced>]])
+  .setSecondaryIngredients([<ore:electronTube> * 6])
+  .addTool(<ore:artisansSolderer>, 20)
+  .addTool(<ore:artisansDriver>, 20)
   .addOutput(<enderio:item_basic_capacitor:1>)
   .create();
-
 recipes.removeByRecipeName("techguns:itemshared_129_shieldedtitaniumbarrel");
 RecipeBuilder.get("engineer")
   .setShaped([

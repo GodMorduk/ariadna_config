@@ -327,3 +327,23 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansMortar>, 5)
   .addOutput(<enderio:item_material:38>)
   .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/light_engineering");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
+    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addOutput(<immersiveengineering:metal_decoration0:4>)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/redstone_engineering");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>],
+    [<immersiveengineering:wirecoil:5>, <ore:ingotCopper>, <immersiveengineering:wirecoil:5>],
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<immersiveengineering:metal_decoration0:3>)
+  .create();

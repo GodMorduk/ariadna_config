@@ -67,7 +67,6 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_redstone");
 recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_redstone2");
 RecipeBuilder.get("engineer")
-  .setMinimumTier(1)
   .setShaped([
     [null, <ore:wireAluminum>, null],
     [<ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>],
@@ -172,28 +171,6 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSolderer>, 15)
   .addTool(<ore:artisansLens>, 15)
   .addOutput(<mekanism:controlcircuit:1>)
-  .create();
-
-recipes.removeByRecipeName("immersiveengineering:metal_decoration/redstone_engineering");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>],
-    [<immersiveengineering:wirecoil:5>, <ore:ingotCopper>, <immersiveengineering:wirecoil:5>],
-    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]])
-  .addTool(<ore:artisansDriver>, 25)
-  .addTool(<ore:artisansFramingHammer>, 25)
-  .addOutput(<immersiveengineering:metal_decoration0:3>)
-  .create();
-
-recipes.removeByRecipeName("immersiveengineering:metal_decoration/light_engineering");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
-    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
-  .addTool(<ore:artisansDriver>, 15)
-  .addTool(<ore:artisansFramingHammer>, 15)
-  .addOutput(<immersiveengineering:metal_decoration0:4>)
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/heavy_engineering");
