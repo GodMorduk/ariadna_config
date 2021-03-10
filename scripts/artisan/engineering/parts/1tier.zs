@@ -30,6 +30,12 @@ mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>,
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <thermalfoundation:material:131>, <immersiveengineering:mold>, 3000);
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <thermalfoundation:material:133>, <immersiveengineering:mold>, 3000);
 
+recipes.addShaped(fireworks, <minecraft:fireworks>, [
+	[null, <ore:itemRubber>, null], 
+	[<ore:itemRubber>, <ore:gunpowder>, <ore:itemRubber>], 
+	[<ore:itemRubber>, <ore:gunpowder>, <ore:string>]
+]);
+
 recipes.removeByRecipeName("thermalexpansion:frame");
 RecipeBuilder.get("engineer")
   .setShaped([
