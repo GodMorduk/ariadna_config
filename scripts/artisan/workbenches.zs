@@ -7,7 +7,7 @@ recipes.addShaped(0, <artisanworktables:worktable:6>,  [
 	[<immersiveengineering:tool>, <bigreactors:wrench>, <immersiveengineering:tool:1>]
 ]);
 
-recipes.addShapedaddShaped(0, <artisanworktables:toolbox>, [
+recipes.addShaped(0, <artisanworktables:toolbox>, [
 	[<ore:gearWood>, <ore:logWood>, <ore:gearWood>], 
 	[<ore:logWood>, <ore:chest>, <ore:logWood>], 
 	[<ore:logWood>, <ore:gearWood>, <ore:logWood>]
