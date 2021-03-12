@@ -42,3 +42,28 @@ RecipeBuilder.get("engineer")
   .addOutput(<artisanworktables:workshop:6>)
   .create();
 
+recipes.addShaped(<artisanworktables:worktable:11>, [
+  [<ore:toolPot>, <ore:toolSkillet>, <ore:toolSaucepan>],
+  [<cuisine:placed_dish>, <ore:toolCuttingboard>, <cookingforblockheads:recipe_book>],
+  [<ore:toolMortarandpestle>, <ore:workbench>, <ore:toolBakeware>]
+]);
+
+RecipeBuilder.get("chef")
+  .setShaped([
+    [<cuisine:manual>, <cuisine:wok>, <spiceoflife:bookfoodjournal>],
+    [<cuisine:iron_spatula>, <artisanworktables:worktable:11>, <cuisine:kitchen_knife>],
+    [<artisanworktables:artisans_cutting_board_iron>, <futuremc:smoker>, <artisanworktables:artisans_pan_iron>]])
+  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 50)
+  .addOutput(<artisanworktables:workstation:11>)
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShaped([
+    [<cookingforblockheads:counter>, <cookingforblockheads:oven>, <cookingforblockheads:sink>],
+    [<cookingforblockheads:fridge>, <artisanworktables:workstation:11>, <cookingforblockheads:toaster>],
+    [<cookingforblockheads:fridge>, <cookingforblockheads:recipe_book:2>, <cuisine:drinkro>]])
+  .setSecondaryIngredients([<artisanworktables:artisans_cutting_board_steel>, <artisanworktables:artisans_beaker_steel>, <artisanworktables:artisans_burner_steel>, <artisanworktables:artisans_sifter_steel>, <artisanworktables:artisans_shears_steel>])
+  .addTool(<ore:artisansToolIron>, 100)
+  .addTool(<ore:artisansDriver>, 100)
+  .addOutput(<artisanworktables:workshop:11>)
+  .create();
