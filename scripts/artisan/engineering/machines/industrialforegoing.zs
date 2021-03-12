@@ -226,7 +226,7 @@ safeRemoveRecipe("industrialforegoing:range_addon_0");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:cobblestone>, <ore:gearStone>, <ore:cobblestone>],
-    [<ore:cobblestone>, <artisanworktables:artisans_lens_stone>, <ore:cobblestone>],
+    [<ore:cobblestone>, <minecraft:stained_glass_pane:7>, <ore:cobblestone>],
     [<ore:cobblestone>, <ore:gearStone>, <ore:cobblestone>]])
   .addTool(<ore:artisansGroover>, 15)
   .addOutput(<industrialforegoing:range_addon>)
@@ -237,7 +237,7 @@ safeRemoveRecipe("industrialforegoing:range_addon_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:gemLapis>, <ore:gearLead>, <ore:gemLapis>],
-    [<ore:gemLapis>, <artisanworktables:artisans_lens_stone>, <ore:gemLapis>],
+    [<ore:gemLapis>, <minecraft:stained_glass_pane:11>, <ore:gemLapis>],
     [<ore:gemLapis>, <ore:gearLead>, <ore:gemLapis>]])
   .addTool(<ore:artisansGroover>, 15)
   .addOutput(<industrialforegoing:range_addon:1>)
