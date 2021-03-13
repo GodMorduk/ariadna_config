@@ -29,34 +29,16 @@
         "thermalfoundation:tile.thermalfoundation.ore.aluminum"
       ],
       "output": [
+        "thermalfoundation:material:196",
         "embers:nugget_aluminum:0",
         "immersiveengineering:metal:21",
-        "libvulpes:productnugget:9",
-        "thermalfoundation:material:196"
-      ]
-    },
-    "oreArdite": {
-      "slagColor": "e85e17",
-      "langKey": [
-        "tconstruct:tile.tconstruct.ore.ardite"
-      ],
-      "output": [
-        "tconstruct:nuggets:1"
-      ]
-    },
-    "oreCobalt": {
-      "slagColor": "1c5bc1",
-      "langKey": [
-        "tconstruct:tile.tconstruct.ore.cobalt"
-      ],
-      "output": [
-        "tconstruct:nuggets:0"
+        "libvulpes:productnugget:9"
       ]
     },
     "oreCopper": {
       "slagColor": "ffaa1c",
       "langKey": [
-        "abyssalcraft:tile.abycopore",
+        "thermalfoundation:tile.thermalfoundation.ore.copper",
         "better_diving:item.copper_ore",
         "embers:tile.ore_copper",
         "immersiveengineering:tile.immersiveengineering.ore.copper",
@@ -64,25 +46,25 @@
         "mekanism:tile.OreBlock.CopperOre",
         "metallurgy:tile.metallurgy.copper_ore",
         "techguns:tile.techguns.basicore.0",
-        "thermalfoundation:tile.thermalfoundation.ore.copper"
+        "abyssalcraft:tile.abycopore"
       ],
       "output": [
+        "thermalfoundation:material:192",
         "embers:nugget_copper:0",
         "immersiveengineering:metal:20",
         "libvulpes:productnugget:4",
         "mekanism:nugget:5",
         "metallurgy:copper_nugget:0",
         "techguns:itemshared:86",
-        "thaumcraft:nugget:1",
-        "thermalfoundation:material:192"
+        "thaumcraft:nugget:1"
       ]
     },
     "oreGold": {
       "slagColor": "fcee4b",
       "langKey": [
-        "abyssalcraft:tile.abygolore",
+        "minecraft:tile.oreGold",
         "erebus:tile.erebus.ore_gold",
-        "minecraft:tile.oreGold"
+        "abyssalcraft:tile.abygolore"
       ],
       "output": [
         "minecraft:gold_nugget:0"
@@ -91,139 +73,107 @@
     "oreIridium": {
       "slagColor": "d5d4e7",
       "langKey": [
-        "libvulpes:material.Iridium",
-        "thermalfoundation:tile.thermalfoundation.ore.iridium"
+        "thermalfoundation:tile.thermalfoundation.ore.iridium",
+        "libvulpes:material.Iridium"
       ],
       "output": [
-        "libvulpes:productnugget:10",
-        "thermalfoundation:material:199"
+        "thermalfoundation:material:199",
+        "libvulpes:productnugget:10"
       ]
     },
     "oreIron": {
       "slagColor": "d8af93",
       "langKey": [
-        "abyssalcraft:tile.abyiroore",
+        "minecraft:tile.oreIron",
         "erebus:tile.erebus.ore_iron",
-        "minecraft:tile.oreIron"
+        "abyssalcraft:tile.abyiroore"
       ],
       "output": [
-        "immersiveengineering:metal:29",
         "minecraft:iron_nugget:0",
+        "immersiveengineering:metal:29",
         "thaumcraft:nugget:0"
       ]
     },
     "oreLead": {
       "slagColor": "95afee",
       "langKey": [
+        "thermalfoundation:tile.thermalfoundation.ore.lead",
         "better_diving:item.lead",
         "embers:tile.ore_lead",
         "immersiveengineering:tile.immersiveengineering.ore.lead",
-        "techguns:tile.techguns.basicore.2",
-        "thermalfoundation:tile.thermalfoundation.ore.lead"
+        "techguns:tile.techguns.basicore.2"
       ],
       "output": [
+        "thermalfoundation:material:195",
         "embers:nugget_lead:0",
         "immersiveengineering:metal:22",
         "techguns:itemshared:87",
-        "thaumcraft:nugget:4",
-        "thermalfoundation:material:195"
-      ]
-    },
-    "oreMithril": {
-      "slagColor": "9cf9ff",
-      "langKey": [
-        "metallurgy:tile.metallurgy.mithril_ore",
-        "thermalfoundation:tile.thermalfoundation.ore.mithril"
-      ],
-      "output": [
-        "metallurgy:mithril_nugget:0",
-        "thermalfoundation:material:200"
+        "thaumcraft:nugget:4"
       ]
     },
     "oreNickel": {
       "slagColor": "e4e5d8",
       "langKey": [
+        "thermalfoundation:tile.thermalfoundation.ore.nickel",
         "embers:tile.ore_nickel",
-        "immersiveengineering:tile.immersiveengineering.ore.nickel",
-        "thermalfoundation:tile.thermalfoundation.ore.nickel"
+        "immersiveengineering:tile.immersiveengineering.ore.nickel"
       ],
       "output": [
+        "thermalfoundation:material:197",
         "embers:nugget_nickel:0",
-        "immersiveengineering:metal:24",
-        "thermalfoundation:material:197"
-      ]
-    },
-    "oreOsmium": {
-      "slagColor": "9babc4",
-      "langKey": [
-        "mekanism:tile.OreBlock.OsmiumOre",
-        "metallurgy:tile.metallurgy.osmium_ore"
-      ],
-      "output": [
-        "mekanism:nugget:1",
-        "metallurgy:osmium_nugget:0"
+        "immersiveengineering:metal:24"
       ]
     },
     "orePlatinum": {
       "slagColor": "55f3ff",
       "langKey": [
-        "metallurgy:tile.metallurgy.platinum_ore",
-        "thermalfoundation:tile.thermalfoundation.ore.platinum"
+        "thermalfoundation:tile.thermalfoundation.ore.platinum",
+        "metallurgy:tile.metallurgy.platinum_ore"
       ],
       "output": [
-        "metallurgy:platinum_nugget:0",
-        "thermalfoundation:material:198"
+        "thermalfoundation:material:198",
+        "metallurgy:platinum_nugget:0"
       ]
     },
     "oreSilver": {
       "slagColor": "e8f6fd",
       "langKey": [
+        "thermalfoundation:tile.thermalfoundation.ore.silver",
         "better_diving:item.silver_ore",
         "bewitchment:tile.bewitchment.silver_ore",
         "embers:tile.ore_silver",
         "iceandfire:tile.iceandfire.silverOre",
         "immersiveengineering:tile.immersiveengineering.ore.silver",
-        "metallurgy:tile.metallurgy.silver_ore",
-        "thermalfoundation:tile.thermalfoundation.ore.silver"
+        "metallurgy:tile.metallurgy.silver_ore"
       ],
       "output": [
+        "thermalfoundation:material:194",
         "bewitchment:silver_nugget:0",
         "embers:nugget_silver:0",
         "iceandfire:silver_nugget:0",
         "immersiveengineering:metal:23",
         "metallurgy:silver_nugget:0",
-        "thaumcraft:nugget:3",
-        "thermalfoundation:material:194"
+        "thaumcraft:nugget:3"
       ]
     },
     "oreTin": {
       "slagColor": "c3e9ff",
       "langKey": [
-        "abyssalcraft:tile.abytinore",
+        "thermalfoundation:tile.thermalfoundation.ore.tin",
         "embers:tile.ore_tin",
         "libvulpes:material.Tin",
         "mekanism:tile.OreBlock.TinOre",
         "metallurgy:tile.metallurgy.tin_ore",
         "techguns:tile.techguns.basicore.1",
-        "thermalfoundation:tile.thermalfoundation.ore.tin"
+        "abyssalcraft:tile.abytinore"
       ],
       "output": [
+        "thermalfoundation:material:193",
         "embers:nugget_tin:0",
         "libvulpes:productnugget:5",
         "mekanism:nugget:6",
         "metallurgy:tin_nugget:0",
-        "thaumcraft:nugget:2",
-        "thermalfoundation:material:193"
-      ]
-    },
-    "oreUranium": {
-      "slagColor": "5c734b",
-      "langKey": [
-        "immersiveengineering:tile.immersiveengineering.ore.uranium",
-        "techguns:tile.techguns.basicore.4"
-      ],
-      "output": [
-        "immersiveengineering:metal:25"
+        "thaumcraft:nugget:2"
       ]
     }
   }
