@@ -431,3 +431,13 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:cold_iron_plate"); // Удаление плиты из холодного железа
+
+recipes.removeByRecipeName("bewitchment:cypress_planks");
+recipes.removeByRecipeName("bewitchment:elder_planks");
+recipes.removeByRecipeName("bewitchment:juniper_planks");
+recipes.removeByRecipeName("bewitchment:dragons_blood_planks");
+
+recipes.removeByRecipeName("bewitchment:cypress_wood_slab");
+recipes.removeByRecipeName("bewitchment:elder_wood_slab");
+recipes.removeByRecipeName("bewitchment:juniper_wood_slab");
+recipes.removeByRecipeName("bewitchment:dragons_blood_slab");

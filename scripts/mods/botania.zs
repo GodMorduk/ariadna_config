@@ -1959,3 +1959,6 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("extrabotany:recipe_manasteelshield");
   recipes.removeByRecipeName("extrabotany:recipe_relicshield");
   recipes.removeByRecipeName("extrabotany:recipe_terrasteelshield");
+
+recipes.removeByRecipeName("botania:livingwood_1");
+recipes.removeByRecipeName("botania:dreamwood_1");

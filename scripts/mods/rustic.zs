@@ -39,3 +39,9 @@ recipes.addShaped(<rustic:candle>, [[<minecraft:string>, null, null],[<harvestcr
 
 //Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}), null, [<harvestcraft:chilipepperitem>, <minecraft:blaze_powder>, <minecraft:netherrack>]);
 //Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}), <rustic:horsetail>, [<harvestcraft:chilipepperitem>, <minecraft:blaze_powder>, <minecraft:netherrack>]);
+
+recipes.removeByRecipeName("rustic:olive_planks");
+recipes.removeByRecipeName("rustic:ironwood_planks");
+
+recipes.removeByRecipeName("rustic:olive_slab");
+recipes.removeByRecipeName("rustic:ironwood_slab");

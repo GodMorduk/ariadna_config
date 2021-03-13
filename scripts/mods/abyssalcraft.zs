@@ -1,5 +1,5 @@
- import mods.artisanworktables.builder.RecipeBuilder; 
- recipes.removeByRecipeName("abyssalcraft:necronomicon");//Удаление первого некрономикона
+import mods.artisanworktables.builder.RecipeBuilder; 
+recipes.removeByRecipeName("abyssalcraft:necronomicon");//Удаление первого некрономикона
 RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:iron_ingot>],
@@ -738,3 +738,7 @@ RecipeBuilder.get("mage")
   
   recipes.removeByRecipeName("abyssalcraft:oblivion_deathbomb_0");//Удаление бомбы смерти
   recipes.removeByRecipeName("abyssalcraft:oblivion_deathbomb_1");//Удаление бомбы смерти
+
+// Удаление крафта досок
+recipes.removeByRecipeName("abyssalcraft:dltplank");
+recipes.removeByRecipeName("abyssalcraft:dreadplanks");

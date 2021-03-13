@@ -84,3 +84,6 @@ recipes.removeByRecipeName("aether_legacy:golden_pendant"); // Удаление 
 recipes.removeByRecipeName("aether_legacy:zanite_pendant"); // Удаление кулона из занита
 
 recipes.removeByRecipeName("aether_legacy:ice_pendant"); // Удаление кулона валькирии
+
+recipes.removeByRecipeName("aether_legacy:skyroot_planks");
+recipes.removeByRecipeName("aether_legacy:skyroot_slab");

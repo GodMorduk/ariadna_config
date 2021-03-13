@@ -324,3 +324,14 @@ RecipeBuilder.get("mage")
   .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
   .addOutput(<thaumicbases:thauminitehelmet>)
   .create();
+
+recipes.removeByRecipeName("thaumcraft:plankgreatwood");
+recipes.removeByRecipeName("thaumcraft:planksilverwood");
+
+recipes.removeByRecipeName("thaumcraft:slabgreatwood");
+recipes.removeByRecipeName("thaumcraft:slabsilverwood");
+
+recipes.removeByRecipeName("thaumicbases:netherplanks");
+recipes.removeByRecipeName("thaumicbases:enderplanks");
+recipes.removeByRecipeName("thaumicbases:goldenplanks");
+recipes.removeByRecipeName("hammercore:thaumadditions_recipestar.14");

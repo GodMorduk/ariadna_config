@@ -1,4 +1,3 @@
-//убираем палки
 recipes.removeByRecipeName("biomesoplenty:willow_planks");
 recipes.removeByRecipeName("biomesoplenty:ebony_planks");
 recipes.removeByRecipeName("biomesoplenty:redwood_planks");
@@ -15,3 +14,20 @@ recipes.removeByRecipeName("biomesoplenty:jacaranda_planks");
 recipes.removeByRecipeName("biomesoplenty:umbran_planks");
 recipes.removeByRecipeName("biomesoplenty:ethereal_planks");
 recipes.removeByRecipeName("biomesoplenty:cherry_planks");
+
+recipes.removeByRecipeName("biomesoplenty:willow_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:ebony_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:redwood_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:magic_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:mangrove_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:palm_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:pine_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:eucalyptus_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:mahogany_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:fir_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:hellbark_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:sacred_oak_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:jacaranda_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:umbran_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:ethereal_wooden_slab");
+recipes.removeByRecipeName("biomesoplenty:cherry_wooden_slab");
