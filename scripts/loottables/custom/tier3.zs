@@ -68,4 +68,15 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<bewitchment:salt>, 15);
 	pool.addItemEntry(<bewitchment:amethyst>, 15);
 	pool.addItemEntry(<bewitchment:garnet>, 15);
+	pool.addItemEntry(<flansmod:dwshockskymare>, 15);
+	pool.addItemEntry(<flansmod:dwfraglupine>, 15);
+	pool.addItemEntry(<flansmod:dwfragambircon>, 15);
+	pool.addItemEntry(<flansmod:dwskyswattertrackammo>, 15);
+	pool.addItemEntry(<flansmod:dwfragskymare>, 15);
+	pool.addItemEntry(<flansmod:dwsmokeambircon>, 15);
+	pool.addItemEntry(<flansmod:dwflashambircon>, 15);
+	pool.addItemEntry(<flansmod:dwlupinec4>, 15);
+	pool.addItemEntry(<flansmod:dwrocketlupine>, 15);
+	pool.addItemEntry(<flansmod:dwflamelupine>, 15);
+	pool.addItemEntry(<flansmod:dwflamelupine>, 15);
 }

@@ -1,3 +1,4 @@
+import crafttweaker.item.IItemStack;
 import mods.rustic.CrushingTub;
 import mods.rustic.Condenser;
 

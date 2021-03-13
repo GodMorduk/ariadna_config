@@ -77,7 +77,7 @@ recipes.addShaped(<flansmod:dwgs5shockammo>,[
     [<thermalfoundation:material:128>, <immersiveengineering:toolupgrade:6>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <minecraft:gunpowder>, <thermalfoundation:material:128>]]);
 	
-recipes.addShaped(<flansmod:dwwinnowbpHPammo>,[
+recipes.addShaped(<flansmod:dwwinnowbphpammo>,[
     [<thermalfoundation:material:128>, <thermalfoundation:material:131>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <minecraft:gunpowder>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <thermalfoundation:material:192>, <thermalfoundation:material:128>]]);

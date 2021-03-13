@@ -3,7 +3,7 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
 
-# очищаем нативный лут
+// очищаем нативный лут
 val factory_building = LootTweaker.getTable("techguns:chests/factory_building");
 factory_building.clear();
 
@@ -16,31 +16,19 @@ small_trainstation.clear();
 val survivor_hideout = LootTweaker.getTable("techguns:chests/survivor_hideout");
 survivor_hideout.clear();
 
-val military_crate_generic = LootTweaker.getTable("techguns:chests/military_crate_generic");
+val military_crate_generic = LootTweaker.getTable("techguns:blocks/military_crate_generic");
 military_crate_generic.removePool("resources");
 
-val ammo_crate = LootTweaker.getTable("techguns:chests/ammo_crate");
+val ammo_crate = LootTweaker.getTable("techguns:blocks/military_crate_ammo");
 ammo_crate.removePool("ammo");
 
-val military_crate_armor = LootTweaker.getTable("techguns:chests/military_crate_armor");
+val military_crate_armor = LootTweaker.getTable("techguns:blocks/military_crate_armor");
 military_crate_armor.removePool("armor");
 
-val military_crate_gun = LootTweaker.getTable("techguns:chests/military_crate_gun");
+val military_crate_gun = LootTweaker.getTable("techguns:blocks/military_crate_gun");
 military_crate_gun.removePool("gun");
 
 
 
-<flansmod:dwshockskymare>
-<flansmod:dwfraglupine>
-<flansmod:dwfragambircon>
-<flansmod:dwskyswattertrackammo>
-<flansmod:dwfragskymare>
-<flansmod:dwsmokeambircon>
-<flansmod:dwflashambircon>
-<flansmod:dwlupinec4>
-<flansmod:dwrocketlupine>
-<flansmod:dwflamelupine>
 
-<firstaid:bandage>
-<firstaid:plaster>
-<firstaid:morphine>
+

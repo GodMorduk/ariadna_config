@@ -53,12 +53,6 @@ add_rare_loot_stuff("thebetweenlands:loot/common_chest_loot");
 add_rare_loot_stuff("thebetweenlands:loot/sludge_worm_dungeon_barrishee_chest");
 add_rare_loot_stuff("thebetweenlands:loot/underground_ruins_pot");
 add_rare_loot_stuff("thebetweenlands:loot/wight_fortress_pot");
-add_rare_loot_stuff("techguns:chests/factory_building");
-add_rare_loot_stuff("techguns:chests/gasstration");
-add_rare_loot_stuff("techguns:chests/small_trainstation");
-add_rare_loot_stuff("techguns:chests/survivor_hideout");
-add_rare_loot_stuff("techguns:chests/military_crate_generic");
-
 add_super_rare_loot_stuff("minecraft:chests/end_city_treasure");
 add_super_rare_loot_stuff("aether_legacy:chests/silver_dungeon_chest");
 add_super_rare_loot_stuff("atum:chests/pharaoh");
@@ -67,6 +61,9 @@ add_super_rare_loot_stuff("thebetweenlands:loot/cragrock_tower_chest");
 add_super_rare_loot_stuff("thebetweenlands:loot/sludge_worm_dungeon_chest");
 add_super_rare_loot_stuff("thebetweenlands:loot/wight_fortress_chest");
 
+
+
+//твайлайт
 add_common_loot_stuff("twilightforest:structures/stronghold_cache/stronghold_cache");
 add_common_loot_stuff("twilightforest:structures/labyrinth_dead_end/labyrinth_dead_end");
 add_common_loot_stuff("twilightforest:structures/darktower_cache/darktower_cache");
@@ -94,16 +91,16 @@ add_super_rare_loot_stuff("twilightforest:structures/darktower_boss/darktower_bo
 
 
 
-
-
-
-
-
-
-
-
-
-
+//течганс
+add_common_loot_stuff("techguns:chests/factory_building");
+add_rare_loot_stuff("techguns:chests/policestation");
+add_common_loot_stuff("techguns:chests/small_trainstation");
+add_rare_loot_stuff("techguns:chests/survivor_hideout");
+add_common_loot_stuff("techguns:blocks/military_crate_generic");
+add_common_loot_stuff("techguns:blocks/military_crate_ammo");
+add_rare_loot_stuff("techguns:blocks/military_crate_armor");
+add_common_loot_stuff("techguns:blocks/military_crate_gun");
+add_rare_loot_stuff("techguns:chests/gasstation");
 
 
 

@@ -18,7 +18,6 @@ function add_1_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<thermalfoundation:material:131>, 50);
 	pool.addItemEntry(<thermalfoundation:material:130>, 50);
 	pool.addItemEntry(<thermalfoundation:material:133>, 50);
-	pool.addItemEntry(<extendedcrafting:material>, 50);
 	pool.addItemEntry(<bigreactors:ingotgraphite>, 50);
 	pool.addItemEntry(<geolosys:ingot:7>, 50);
 	pool.addItemEntry(<betterrecords:record>, 25);

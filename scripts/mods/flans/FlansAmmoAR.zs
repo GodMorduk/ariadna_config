@@ -128,7 +128,7 @@ recipes.addShaped(<flansmod:dwduskdusterwingammo>,[
     [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
     [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
 	
-recipes.addShaped(<flansmod:dwambirconsteamrifleHPAmmo>,[
+recipes.addShaped(<flansmod:dwambirconsteamriflehpammo>,[
     [<thermalfoundation:material:128>, <thermalfoundation:material:131>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <minecraft:gunpowder>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <minecraft:gunpowder>, <thermalfoundation:material:128>]]);

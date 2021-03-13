@@ -1,9 +1,14 @@
+#priority 15
+
 import crafttweaker.item.IItemStack;
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
 
 function add_ammo_and_weapon (loot_table as string, min_value as int, max_value as int) {
 	val table_as_table = LootTweaker.getTable(loot_table);
-	val pool = table_as_table.addPool("gunsfromflans", min_value, max_value, 0, 0);
-	pool.addItemEntry(<flansmod:dwambirconsteamrifleammo>, 50);,
+	val pool = table_as_table.addPool("custom_guns", min_value, max_value, 0, 0);
+	pool.addItemEntry(<flansmod:dwambirconsteamrifleammo>, 50);
 	pool.addItemEntry(<flansmod:dwsf94auammo>, 50);
 	pool.addItemEntry(<flansmod:rusty_queen_ammo_clip>, 50);
 	pool.addItemEntry(<flansmod:dwpwrammo>, 50);
@@ -61,6 +66,10 @@ function add_ammo_and_weapon (loot_table as string, min_value as int, max_value 
 	pool.addItemEntry(<flansmod:dwpup227>, 5);
 	pool.addItemEntry(<flansmod:dwmodcannonlauncher>, 5);
 	pool.addItemEntry(<flansmod:dwkgl40>, 5);
+	pool.addItemEntry(<techguns:thompson>, 10);
+	pool.addItemEntry(<techguns:revolver>, 10);
+	pool.addItemEntry(<techguns:sawedoff>, 10);
+	pool.addItemEntry(<techguns:handcannon>, 10);
 	pool.addItemEntry(<flansmod:dwstumbreonsv>, 1);
 	pool.addItemEntry(<flansmod:dwsf94>, 1);
 	pool.addItemEntry(<flansmod:atol_rifle>, 1);
@@ -86,12 +95,20 @@ function add_ammo_and_weapon (loot_table as string, min_value as int, max_value 
 	pool.addItemEntry(<flansmod:dwpagl>, 1);
 	pool.addItemEntry(<flansmod:dwmatriarchscatter>, 1);
 	pool.addItemEntry(<flansmod:dwmatriarchsnubshort>, 1);
+	pool.addItemEntry(<techguns:ak47>, 1);
+	pool.addItemEntry(<techguns:goldenrevolver>, 1);
+	pool.addItemEntry(<techguns:m4>, 1);
+	pool.addItemEntry(<techguns:mac10>, 1);
+	pool.addItemEntry(<techguns:combatshotgun>, 1);
+	pool.addItemEntry(<techguns:pistol>, 1);
+	pool.addItemEntry(<techguns:m4_infiltrator>, 1);
+	pool.addItemEntry(<techguns:boltaction>, 1);
 }
 
 function ammo_only (loot_table as string, min_value as int, max_value as int) {
 	val table_as_table = LootTweaker.getTable(loot_table);
-	val pool = table_as_table.addPool("gunsfromflans", min_value, max_value, 0, 0);
-	pool.addItemEntry(<flansmod:dwambirconsteamrifleammo>, 50);,
+	val pool = table_as_table.addPool("custom_ammo", min_value, max_value, 0, 0);
+	pool.addItemEntry(<flansmod:dwambirconsteamrifleammo>, 50);
 	pool.addItemEntry(<flansmod:dwsf94auammo>, 50);
 	pool.addItemEntry(<flansmod:rusty_queen_ammo_clip>, 50);
 	pool.addItemEntry(<flansmod:dwpwrammo>, 50);
@@ -128,12 +145,25 @@ function ammo_only (loot_table as string, min_value as int, max_value as int) {
 	pool.addItemEntry(<flansmod:dwmapmpammo>, 25);
 	pool.addItemEntry(<flansmod:dwmfp5compactammo>, 25);
 	pool.addItemEntry(<flansmod:goplon_repeater_clip>, 25);
-	pool.addItemEntry(<flansmod:dw40mmfrag>, 25);
-	pool.addItemEntry(<flansmod:dw40mmsmoke>, 25);
-	pool.addItemEntry(<flansmod:dw40mmgas>, 25);
 	pool.addItemEntry(<flansmod:dwmatriarchscatterammo>, 25);
 	pool.addItemEntry(<flansmod:dwmatriarchsnubshortammo>, 25);
 	pool.addItemEntry(<flansmod:dwambirconsteamrifle>, 25);
+}
+
+function explosives_only (loot_table as string, min_value as int, max_value as int) {
+	val table_as_table = LootTweaker.getTable(loot_table);
+	val pool = table_as_table.addPool("custom_explosives", min_value, max_value, 0, 0);
+	pool.addItemEntry(<flansmod:dwshockskymare>, 15);
+	pool.addItemEntry(<flansmod:dwfraglupine>, 15);
+	pool.addItemEntry(<flansmod:dwfragambircon>, 15);
+	pool.addItemEntry(<flansmod:dwskyswattertrackammo>, 15);
+	pool.addItemEntry(<flansmod:dwfragskymare>, 15);
+	pool.addItemEntry(<flansmod:dwsmokeambircon>, 15);
+	pool.addItemEntry(<flansmod:dwflashambircon>, 15);
+	pool.addItemEntry(<flansmod:dwlupinec4>, 15);
+	pool.addItemEntry(<flansmod:dwrocketlupine>, 15);
+	pool.addItemEntry(<flansmod:dwflamelupine>, 15);
+	pool.addItemEntry(<flansmod:dwflamelupine>, 15);
 }
 
 add_ammo_and_weapon("minecraft:chests/abandoned_mineshaft", 1, 2);
@@ -142,8 +172,16 @@ add_ammo_and_weapon("minecraft:chests/jungle_temple", 1, 2);
 add_ammo_and_weapon("minecraft:chests/simple_dungeon", 1, 2);
 add_ammo_and_weapon("minecraft:chests/stronghold_corridor", 1, 2);
 add_ammo_and_weapon("minecraft:chests/stronghold_crossing", 1, 2);
+add_ammo_and_weapon("techguns:blocks/military_crate_gun", 2, 4);
+add_ammo_and_weapon("techguns:blocks/military_crate_generic", 1, 2);
+add_ammo_and_weapon("techguns:chests/survivor_hideout", 1, 2);
 
-add_ammo_and_weapon("techguns:chests/military_crate_gun", 1, 2);
-add_ammo_and_weapon("minecraft:chests/stronghold_crossing", 1, 2);
-add_ammo_and_weapon("minecraft:chests/stronghold_crossing", 1, 2);
+ammo_only("minecraft:chests/abandoned_mineshaft", 3, 4);
+ammo_only("minecraft:chests/desert_pyramid", 3, 4);
+ammo_only("minecraft:chests/jungle_temple", 3, 4);
+ammo_only("minecraft:chests/simple_dungeon", 3, 4);
+ammo_only("minecraft:chests/stronghold_corridor", 3, 4);
+ammo_only("minecraft:chests/stronghold_crossing", 3, 4);
+ammo_only("techguns:blocks/military_crate_ammo", 5, 6);
 
+explosives_only("techguns:blocks/military_crate_explosives", 3, 6);

@@ -53,7 +53,7 @@ recipes.addShaped(<flansmod:dwscspinnakerammo>,[
     [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
     [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
 	
-recipes.addShaped(<flansmod:flansmod:dwstumbreonsteamergasammo>,[
+recipes.addShaped(<flansmod:dwstumbreonsteamergasammo>,[
     [<tconstruct:ingots:5>, <thermalfoundation:storage_alloy>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <minecraft:potion>.withTag({Potion: "minecraft:poison", Rot: {start: 151200000 as long, time: 12096000 as long}}), <tconstruct:ingots:5>],
     [<tconstruct:metal:5>, <tconstruct:ingots:5>, <tconstruct:metal:5>]]);
