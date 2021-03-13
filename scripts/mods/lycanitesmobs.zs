@@ -1,3 +1,4 @@
+import mods.artisanworktables.builder.RecipeBuilder;
 
 // Treats
 
