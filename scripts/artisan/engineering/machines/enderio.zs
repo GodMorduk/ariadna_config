@@ -2,6 +2,21 @@ import crafttweaker.item.IIngredient;
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 
+//убираем обычные крафты шаров
+recipes.removeByRecipeName("enderio:dark_steel_ball_crafting");
+recipes.removeByRecipeName("enderio:construction_alloy_ball_crafting");
+recipes.removeByRecipeName("enderio:vibrant_alloy_ball_crafting");
+recipes.removeByRecipeName("enderio:enderium_ball_crafting");
+recipes.removeByRecipeName("enderio:lumium_ball_crafting");
+recipes.removeByRecipeName("enderio:signalum_ball_crafting");
+recipes.removeByRecipeName("enderio:energetic_alloy_ball_crafting");
+recipes.removeByRecipeName("enderio:soularium_ball_crafting");
+recipes.removeByRecipeName("enderio:end_steel_ball_crafting");
+recipes.removeByRecipeName("enderio:conductive_iron_ball_crafting");
+recipes.removeByRecipeName("enderio:pulsating_iron_ball_crafting");
+recipes.removeByRecipeName("enderio:electrical_steel_ball_crafting");
+recipes.removeByRecipeName("enderio:redstone_alloy_ball_crafting");
+
 ##1tier
 recipes.removeByRecipeName("enderio:yeta_wrench");
 RecipeBuilder.get("engineer")
