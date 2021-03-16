@@ -378,14 +378,12 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("enderio:dark_steel_anvil");
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
-    [<ore:blockDarkSteel>, <ore:blockDarkSteel>, <ore:blockDarkSteel>, <ore:blockDarkSteel>, <ore:blockDarkSteel>],
-    [null, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, null],
-    [<ore:ingotDarkSteel>, <ore:blockDarkSteel>, <ore:ingotDarkSteel>, <ore:blockDarkSteel>, <ore:ingotDarkSteel>],
-    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
-  .addTool(<ore:artisansHammer>, 250)
-  .addTool(<ore:artisansPliers>, 250)
-  .addTool(<ore:artisansGroover>, 250)
+    [<ore:blockDarkSteel>, <ore:blockDarkSteel>, <ore:blockDarkSteel>],
+    [null, <ore:blockDarkSteel>, null],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .setSecondaryIngredients([<ore:ingotDarkSteel> * 16, <ore:blockDarkSteel> * 6])
+  .addTool(<ore:artisansFramingHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
   .addOutput(<enderio:block_dark_steel_anvil>)
   .create();
 
