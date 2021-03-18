@@ -58,9 +58,9 @@ recipes.removeByRecipeName("lycanitesmobs:soulcubedemonic");
 RecipeBuilder.get("mason")
   .setShaped([
     [null, null, <lycanitesmobs:demoncrystal>, null, null],
-    [null, <lycanitesmobs:soulstone_demon>, <bewitchment:contract>, <lycanitesmobs:soulstone_demon>, null],
+    [null, <lycanitesmobs:magmacharge>, <bewitchment:contract>, <lycanitesmobs:magmacharge>, null],
     [<lycanitesmobs:demoncrystal>, <lycanitesmobs:demontreat>, <lycanitesmobs:soulstone_demon>, <lycanitesmobs:demontreat>, <lycanitesmobs:demoncrystal>],
-    [null, <lycanitesmobs:soulstone_demon>, <lycanitesmobs:summoningpedestal>, <lycanitesmobs:soulstone_demon>, null],
+    [null, <lycanitesmobs:magmacharge>, <lycanitesmobs:summoningpedestal>, <lycanitesmobs:magmacharge>, null],
     [null, <lycanitesmobs:demoncrystal>, null, <lycanitesmobs:demoncrystal>, null]])
   .setFluid(<liquid:blood> * 16000)
   .setSecondaryIngredients([<bewitchment:hellish_bauble>])
