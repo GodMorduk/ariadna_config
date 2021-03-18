@@ -1,5 +1,378 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+// Staffs
+
+// 1 Tier
+
+// Summoning Staff
+recipes.removeByRecipeName("lycanitesmobs:summoningstaff");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:soulgazer>],
+    [<spartanweaponry:staff_gold>],
+    [<minecraft:skull:1>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 75)
+  .addOutput(<lycanitesmobs:summoningstaff>)
+  .create();
+
+// 2 Tier
+
+// Sturdy Summoning Staff
+recipes.removeByRecipeName("lycanitesmobs:sturdysummoningstaff");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<tconstruct:large_plate>.withTag({Material: "iron"})],
+    [<lycanitesmobs:summoningstaff>],
+    [<ore:blockDeepIron>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<minecraft:obsidian> * 16])
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansAthame>, 200)
+  .addOutput(<lycanitesmobs:sturdysummoningstaff>)
+  .create();
+
+// Stable Summoning Staff
+recipes.removeByRecipeName("lycanitesmobs:stablesummoningstaff");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:storage:3>],
+    [<lycanitesmobs:summoningstaff>],
+    [<minecraft:golden_apple:1>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansAthame>, 200)
+  .addOutput(<lycanitesmobs:stablesummoningstaff>)
+  .create();
+
+// 3 Tier
+
+// Blood Summoning Staff
+recipes.removeByRecipeName("lycanitesmobs:bloodsummoningstaff");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>],
+    [<quark:biotite>, <tconstruct:edible:33>, <erebus:materials:39>, <tconstruct:edible:33>, <quark:biotite>],
+    [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
+    [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
+    [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansQuill>, 500)
+  .addOutput(<lycanitesmobs:bloodsummoningstaff>)
+  .create();
+
+// Savage Summoning Staff
+recipes.removeByRecipeName("lycanitesmobs:savagesummoningstaff");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<metallurgy:etherium_ingot>, <botania:manaresource:7>, <twilightforest:charm_of_life_2>, <botania:manaresource:7>, <metallurgy:etherium_ingot>],
+    [<metallurgy:hepatizon_ingot>, <erebus:glow_gem_active>, <biomesoplenty:terrestrial_artifact>, <erebus:glow_gem_active>, <metallurgy:hepatizon_ingot>],
+    [<industrialforegoing:pink_slime_ingot>, <twilightforest:charm_of_life_1>, <lycanitesmobs:sturdysummoningstaff>, <twilightforest:charm_of_life_1>, <industrialforegoing:pink_slime_ingot>],
+    [<metallurgy:hepatizon_ingot>, <erebus:glow_gem_active>, <twilightforest:charm_of_life_1>, <erebus:glow_gem_active>, <metallurgy:hepatizon_ingot>],
+    [<metallurgy:etherium_ingot>, <botania:manaresource:7>, <botania:manaresource:7>, <botania:manaresource:7>, <metallurgy:etherium_ingot>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<minecraft:ghast_tear> * 16])
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansQuill>, 500)
+  .addOutput(<lycanitesmobs:savagesummoningstaff>)
+  .create();
+
+// Scepters
+
+// 1 Tier
+
+// Icefire Scepter
+recipes.removeByRecipeName("lycanitesmobs:icefirescepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:icefireballcharge>, <lycanitesmobs:icefireballcharge>, <lycanitesmobs:icefireballcharge>],
+    [<lycanitesmobs:icefireballcharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:icefireballcharge>],
+    [<lycanitesmobs:icefireballcharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:icefireballcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:icefirescepter>)
+  .create();
+
+// Boulder Blast Scepter
+recipes.removeByRecipeName("lycanitesmobs:boulderblastscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:geonachfist>, <lycanitesmobs:boulderblastcharge>, <lycanitesmobs:geonachspear>],
+    [<lycanitesmobs:boulderblastcharge>, <ebwizardry:apprentice_earth_wand>, <lycanitesmobs:boulderblastcharge>],
+    [<lycanitesmobs:boulderblastcharge>, <spartanweaponry:staff_nickel>, <lycanitesmobs:boulderblastcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:boulderblastscepter>)
+  .create();
+
+// Frostweb Scepter
+recipes.removeByRecipeName("lycanitesmobs:frostwebscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:frostwebcharge>, <lycanitesmobs:frostwebcharge>, <lycanitesmobs:frostwebcharge>],
+    [<lycanitesmobs:frostwebcharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:frostwebcharge>],
+    [<lycanitesmobs:frostwebcharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:frostwebcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:frostwebscepter>)
+  .create();
+
+// Poop Scepter
+recipes.removeByRecipeName("lycanitesmobs:poopscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:poopcharge>, <lycanitesmobs:poopcharge>, <lycanitesmobs:poopcharge>],
+    [<lycanitesmobs:poopcharge>, <ebwizardry:apprentice_sorcery_wand>, <lycanitesmobs:poopcharge>],
+    [<lycanitesmobs:poopcharge>, <spartanweaponry:staff_lead>, <lycanitesmobs:poopcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:poopscepter>)
+  .create();
+
+// Mudshot Scepter
+recipes.removeByRecipeName("lycanitesmobs:mudshotscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:mudshotcharge>, <lycanitesmobs:mudshotcharge>, <lycanitesmobs:mudshotcharge>],
+    [<lycanitesmobs:mudshotcharge>, <ebwizardry:apprentice_earth_wand>, <lycanitesmobs:mudshotcharge>],
+    [<lycanitesmobs:mudshotcharge>, <spartanweaponry:staff_nickel>, <lycanitesmobs:mudshotcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:mudshotscepter>)
+  .create();
+
+// Scorchfire Scepter
+recipes.removeByRecipeName("lycanitesmobs:scorchfirescepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:scorchfireballcharge>, <lycanitesmobs:scorchfireballcharge>, <lycanitesmobs:scorchfireballcharge>],
+    [<lycanitesmobs:scorchfireballcharge>, <ebwizardry:apprentice_fire_wand>, <lycanitesmobs:scorchfireballcharge>],
+    [<lycanitesmobs:scorchfireballcharge>, <spartanweaponry:staff_steel>, <lycanitesmobs:scorchfireballcharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:scorchfirescepter>)
+  .create();
+
+// Aqua Pulse Scepter
+recipes.removeByRecipeName("lycanitesmobs:aquapulsescepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:aquapulsecharge>, <lycanitesmobs:aquapulsecharge>, <lycanitesmobs:aquapulsecharge>],
+    [<lycanitesmobs:aquapulsecharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:aquapulsecharge>],
+    [<lycanitesmobs:aquapulsecharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:aquapulsecharge>]])
+  .setFluid(<liquid:xpjuice> * 4000)
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addOutput(<lycanitesmobs:aquapulsescepter>)
+  .create();
+
+// 2 Tier
+
+// Spectral Bolt Scepter
+recipes.removeByRecipeName("lycanitesmobs:spectralboltscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:bansheeeye>, <lycanitesmobs:spectralboltcharge>, <lycanitesmobs:bansheeeye>],
+    [<lycanitesmobs:spectralboltcharge>, <ebwizardry:advanced_necromancy_wand>, <lycanitesmobs:spectralboltcharge>],
+    [<lycanitesmobs:spectralboltcharge>, <spartanweaponry:staff_tin>, <lycanitesmobs:spectralboltcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:spectralboltscepter>)
+  .create();
+
+// Quill Scepter
+recipes.removeByRecipeName("lycanitesmobs:quillscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:quillcharge>, <lycanitesmobs:quillcharge>, <lycanitesmobs:quillcharge>],
+    [<lycanitesmobs:quillcharge>, <ebwizardry:advanced_wand>, <lycanitesmobs:quillcharge>],
+    [<lycanitesmobs:quillcharge>, <lycanitesmobs:boulderblastscepter>, <lycanitesmobs:quillcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:quillscepter>)
+  .create();
+
+// Blizzard Scepter
+recipes.removeByRecipeName("lycanitesmobs:blizzardscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:blizzardcharge>, <lycanitesmobs:blizzardcharge>, <lycanitesmobs:blizzardcharge>],
+    [<lycanitesmobs:blizzardcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:blizzardcharge>],
+    [<lycanitesmobs:blizzardcharge>, <lycanitesmobs:frostwebscepter>, <lycanitesmobs:blizzardcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:blizzardscepter>)
+  .create();
+
+// Water Jet Scepter
+recipes.removeByRecipeName("lycanitesmobs:waterjetscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:waterjetcharge>, <lycanitesmobs:waterjetcharge>, <lycanitesmobs:waterjetcharge>],
+    [<lycanitesmobs:waterjetcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:waterjetcharge>],
+    [<lycanitesmobs:waterjetcharge>, <lycanitesmobs:aquapulsescepter>, <lycanitesmobs:waterjetcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:waterjetscepter>)
+  .create();
+
+// Tundra Scepter
+recipes.removeByRecipeName("lycanitesmobs:tundrascepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:tundracharge>, <lycanitesmobs:wendigoantler>, <lycanitesmobs:tundracharge>],
+    [<lycanitesmobs:tundracharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:tundracharge>],
+    [<lycanitesmobs:tundracharge>, <lycanitesmobs:icefirescepter>, <lycanitesmobs:tundracharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<lycanitesmobs:frostyfur> * 16, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:tundrascepter>)
+  .create();
+
+// Doomfire Scepter
+recipes.removeByRecipeName("lycanitesmobs:doomfirescepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:doomfireballcharge>, <lycanitesmobs:doomfireballcharge>, <lycanitesmobs:doomfireballcharge>],
+    [<lycanitesmobs:doomfireballcharge>, <ebwizardry:advanced_fire_wand>, <lycanitesmobs:doomfireballcharge>],
+    [<lycanitesmobs:doomfireballcharge>, <lycanitesmobs:scorchfirescepter>, <lycanitesmobs:doomfireballcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:doomfirescepter>)
+  .create();
+
+// Poison Ray Scepter
+recipes.removeByRecipeName("lycanitesmobs:poisonrayscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:poisongland>, <lycanitesmobs:poisongland>, <lycanitesmobs:poisongland>],
+    [<lycanitesmobs:poisongland>, <ebwizardry:advanced_sorcery_wand>, <lycanitesmobs:poisongland>],
+    [<lycanitesmobs:poisongland>, <lycanitesmobs:mudshotscepter>, <lycanitesmobs:poisongland>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<minecraft:fermented_spider_eye> * 16])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:poisonrayscepter>)
+  .create();
+
+// 3 Tier
+
+// Magma Scepter
+recipes.removeByRecipeName("lycanitesmobs:magmascepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:magmacharge>, <lycanitesmobs:mudshotscepter>, <lycanitesmobs:magmacharge>],
+    [<lycanitesmobs:magmacharge>, <tconstruct:materials:11>, <lycanitesmobs:magmacharge>],
+    [<lycanitesmobs:magmacharge>, <lycanitesmobs:doomfirescepter>, <lycanitesmobs:magmacharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<minecraft:magma> * 16, <minecraft:magma_cream> * 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:magmascepter>)
+  .create();
+
+// Hellfire Scepter
+recipes.removeByRecipeName("lycanitesmobs:hellfirescepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:hellfireballcharge>, <lycanitesmobs:scorchfirescepter>, <lycanitesmobs:hellfireballcharge>],
+    [<lycanitesmobs:hellfireballcharge>, <lycanitesmobs:wraithskull>, <lycanitesmobs:hellfireballcharge>],
+    [<lycanitesmobs:hellfireballcharge>, <lycanitesmobs:doomfirescepter>, <lycanitesmobs:hellfireballcharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32, <minecraft:fire_charge> * 32, <lycanitesmobs:embercharge> * 8])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:hellfirescepter>)
+  .create();
+
+// Arcane Laser Storm Scepter
+recipes.removeByRecipeName("lycanitesmobs:arcanelaserstormscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:arcanelaserstormcharge>, <lycanitesmobs:spectralboltscepter>, <lycanitesmobs:arcanelaserstormcharge>],
+    [<lycanitesmobs:arcanelaserstormcharge>, <lycanitesmobs:sutiramustinger>, <lycanitesmobs:arcanelaserstormcharge>],
+    [<lycanitesmobs:arcanelaserstormcharge>, <lycanitesmobs:boulderblastscepter>, <lycanitesmobs:arcanelaserstormcharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <ebwizardry:master_wand>])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:arcanelaserstormscepter>)
+  .create();
+
+// Demonic Lightning Scepter
+recipes.removeByRecipeName("lycanitesmobs:demoniclightningscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:demonicblastcharge>, <lycanitesmobs:doomfirescepter>, <lycanitesmobs:demonicblastcharge>],
+    [<lycanitesmobs:demonicblastcharge>, <lycanitesmobs:zephyrblade>, <lycanitesmobs:demonicblastcharge>],
+    [<lycanitesmobs:demonicblastcharge>, <lycanitesmobs:poisonrayscepter>, <lycanitesmobs:demonicblastcharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <bewitchment:demon_heart>])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:demoniclightningscepter>)
+  .create();
+
+// Life Drain Scepter
+recipes.removeByRecipeName("lycanitesmobs:lifedrainscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:entarm>, <lycanitesmobs:poisonrayscepter>, <lycanitesmobs:sprigganroot>],
+    [<lycanitesmobs:lifedraincharge>, <lycanitesmobs:sprigganheart>, <lycanitesmobs:lifedraincharge>],
+    [<lycanitesmobs:lifedraincharge>, <lycanitesmobs:aquapulsescepter>, <lycanitesmobs:lifedraincharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 32, <botania:terraformrod>])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:lifedrainscepter>)
+  .create();
+
+// Bloodlech Scepter
+recipes.removeByRecipeName("lycanitesmobs:bloodleechscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+    [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+    [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:wargskull>, <lycanitesmobs:bloodleechcharge>],
+    [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+    [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addTool(<ore:artisansQuill>, 300)
+  .addOutput(<lycanitesmobs:bloodleechscepter>)
+  .create();
+
 // Summoning Tools
 
 // Soulgazer
