@@ -1,5 +1,166 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+// Summoning Tools
+
+// Soulgazer
+recipes.removeByRecipeName("lycanitesmobs:soulgazer");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:ingotAbyssalnite>, <ore:boneWithered>, <ore:ingotAbyssalnite>],
+    [<ore:boneWithered>, <ore:blockDiamond>, <ore:boneWithered>],
+    [<ore:ingotAbyssalnite>, <ore:boneWithered>, <ore:ingotAbyssalnite>]])
+  .addTool(<ore:artisansGemCutter>, 50)
+  .addOutput(<lycanitesmobs:soulgazer>)
+  .create();
+
+// Soulstone
+recipes.removeByRecipeName("lycanitesmobs:soulstone");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:ingotSoularium>, <ore:pearlEnderEye>, <ore:ingotSoularium>],
+    [<ore:pearlEnderEye>, <lycanitesmobs:soulgazer>, <ore:pearlEnderEye>],
+    [<ore:ingotSoularium>, <ore:pearlEnderEye>, <ore:ingotSoularium>]])
+  .setSecondaryIngredients([<ore:dustDiamond> * 8, <ore:dustSoularium> * 16, <quark:soul_powder> * 8])
+  .addTool(<ore:artisansGemCutter>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<lycanitesmobs:soulstone>)
+  .create();
+
+// Summoning Pedestal
+recipes.removeByRecipeName("lycanitesmobs:summoningpedestal");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:blockSoularium>, <lycanitesmobs:soulgazer>, <ore:blockSoularium>],
+    [<ore:gemRuby>, <lycanitesmobs:soulstone>, <ore:gemRuby>],
+    [<ore:blockSoularium>, <lycanitesmobs:demonicblastcharge>, <ore:blockSoularium>]])
+  .setSecondaryIngredients([<fancylamps:obelisk:1> * 4, <fancylamps:obelisk:2> * 4, <fancylamps:obelisk:3> * 4, <fancylamps:obelisk:4> * 4])
+  .addTool(<ore:artisansToolIron>, 100)
+  .addTool(<ore:artisansGemCutter>, 100)
+  .addOutput(<lycanitesmobs:summoningpedestal>)
+  .create();
+
+// Soulkey
+recipes.removeByRecipeName("lycanitesmobs:soulkey");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<endreborn:dragon_scales>, <minecraft:nether_star>, <ancientspellcraft:devoritium_ingot>],
+    [<endreborn:dragon_scales>, <lycanitesmobs:soulgazer>, <ancientspellcraft:devoritium_ingot>],
+    [null, <ore:crystalDreadium>, <ancientspellcraft:devoritium_ingot>]])
+  .setFluid(<liquid:blood> * 4000)
+  .setSecondaryIngredients([<quark:biotite> * 16, <quark:soul_powder> * 16])
+  .addTool(<ore:artisansGemCutter>, 200)
+  .addTool(<ore:artisansAthame>, 200)
+  .addOutput(<lycanitesmobs:soulkey>)
+  .create();
+
+// Demonic Soulcube
+recipes.removeByRecipeName("lycanitesmobs:soulcubedemonic");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [null, null, <lycanitesmobs:demoncrystal>, null, null],
+    [null, <lycanitesmobs:soulstone_demon>, <bewitchment:contract>, <lycanitesmobs:soulstone_demon>, null],
+    [<lycanitesmobs:demoncrystal>, <lycanitesmobs:demontreat>, <lycanitesmobs:soulstone_demon>, <lycanitesmobs:demontreat>, <lycanitesmobs:demoncrystal>],
+    [null, <lycanitesmobs:soulstone_demon>, <lycanitesmobs:summoningpedestal>, <lycanitesmobs:soulstone_demon>, null],
+    [null, <lycanitesmobs:demoncrystal>, null, <lycanitesmobs:demoncrystal>, null]])
+  .setFluid(<liquid:blood> * 16000)
+  .setSecondaryIngredients([<bewitchment:hellish_bauble>])
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansChisel>, 500)
+  .addTool(<ore:artisansHammer>, 500)
+  .addOutput(<lycanitesmobs:soulcubedemonic>)
+  .create();
+
+// Undead Soulcube
+recipes.removeByRecipeName("lycanitesmobs:soulcubeundead");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [null, null, <lycanitesmobs:shadowcrystal>, null, null],
+    [<lycanitesmobs:shadowcrystal>, <lycanitesmobs:spectralboltcharge>, <twilightforest:zombie_scepter>, <lycanitesmobs:spectralboltcharge>, <lycanitesmobs:shadowcrystal>],
+    [null, <lycanitesmobs:undeadtreat>, <lycanitesmobs:soulstone_undead>, <lycanitesmobs:undeadtreat>, null],
+    [<lycanitesmobs:shadowcrystal>, <lycanitesmobs:spectralboltcharge>, <lycanitesmobs:summoningpedestal>, <lycanitesmobs:spectralboltcharge>, <lycanitesmobs:shadowcrystal>],
+    [null, null, <lycanitesmobs:shadowcrystal>, null, null]])
+  .setFluid(<liquid:liquidcoralium> * 16000)
+  .setSecondaryIngredients([<bewitchment:nethersteel_skull> * 8, <minecraft:skull> * 32, <biomesoplenty:flower_0:2> * 32, <minecraft:skull:1> * 8])
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansHammer>, 500)
+  .addTool(<ore:artisansToolIron>, 500)
+  .addOutput(<lycanitesmobs:soulcubeundead>)
+  .create();
+
+// Aberrant Soulcube
+recipes.removeByRecipeName("lycanitesmobs:soulcubeaberrant");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<lycanitesmobs:aberrantcrystal>, null, <lycanitesmobs:aberrantcrystal>, null, <lycanitesmobs:aberrantcrystal>],
+    [null, <lycanitesmobs:lobdarklingscharge>, <abyssalcraft:essence:2>, <lycanitesmobs:lobdarklingscharge>, null],
+    [<lycanitesmobs:aberrantcrystal>, <lycanitesmobs:aberrationtreat>, <lycanitesmobs:soulstone_aberration>, <lycanitesmobs:aberrationtreat>, <lycanitesmobs:aberrantcrystal>],
+    [null, <lycanitesmobs:lobdarklingscharge>, <lycanitesmobs:summoningpedestal>, <lycanitesmobs:lobdarklingscharge>, null],
+    [<lycanitesmobs:aberrantcrystal>, null, <lycanitesmobs:aberrantcrystal>, null, <lycanitesmobs:aberrantcrystal>]])
+  .setFluid(<liquid:liquid_death> * 16000)
+  .setSecondaryIngredients([<abyssalcraft:odbcore> * 4, <ore:crystalAbyssalnite> * 32, <abyssalcraft:essence> * 8, <abyssalcraft:essence:1> * 4])
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansHammer>, 500)
+  .addTool(<ore:artisansChisel>, 500)
+  .addOutput(<lycanitesmobs:soulcubeaberrant>)
+  .create();
+
+// Diamond Soulkey
+recipes.removeByRecipeName("lycanitesmobs:soulkeydiamond");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<minecraft:diamond_block>, <minecraft:diamond_block>, <minecraft:diamond_block>],
+    [<minecraft:diamond_block>, <lycanitesmobs:soulkey>, <minecraft:diamond_block>],
+    [<minecraft:diamond_block>, <atum:loot_diamond_ring>, <minecraft:diamond_block>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .addTool(<ore:artisansGemCutter>, 500)
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addTool(<ore:artisansAthame>, 500)
+  .addOutput(<lycanitesmobs:soulkeydiamond>)
+  .create();
+
+// Emerald Soulkey
+recipes.removeByRecipeName("lycanitesmobs:soulkeyemerald");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:blockEmerald>, <ore:blockEmerald>, <ore:blockEmerald>],
+    [<ore:blockEmerald>, <lycanitesmobs:soulkey>, <ore:blockEmerald>],
+    [<ore:blockEmerald>, <atum:loot_emerald_ring>, <ore:blockEmerald>]])
+  .setFluid(<liquid:xpjuice> * 16000)
+  .addTool(<ore:artisansGemCutter>, 500)
+  .addTool(<ore:artisansAthame>, 500)
+  .addTool(<ore:artisansGrimoire>, 500)
+  .addOutput(<lycanitesmobs:soulkeyemerald>)
+  .create();
+
+// Consumables
+
+// Cleansing Crystal
+recipes.removeByRecipeName("lycanitesmobs:cleansingcrystal");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), <bewitchment:cleansing_balm>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})],
+    [<ore:dustNetherQuartz>, <ore:gemDiamond>, <ore:dustNetherQuartz>],
+    [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), <bewitchment:cleansing_balm>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})]])
+  .setSecondaryIngredients([<minecraft:quartz> * 16, <minecraft:slime_ball> * 16])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<lycanitesmobs:cleansingcrystal>)
+  .create();
+
+// Immunizer
+recipes.removeByRecipeName("lycanitesmobs:immunizer");
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustNetherQuartz>, <minecraft:golden_apple>, <ore:dustNetherQuartz>],
+    [<ore:powderBlaze>, <minecraft:potion>.withTag({Potion: "minecraft:poison"}), <ore:powderBlaze>],
+    [<ore:dustNetherQuartz>, <ore:powderBlaze>, <ore:dustNetherQuartz>]])
+  .setFluid(<liquid:milk> * 1000)
+  .setSecondaryIngredients([<minecraft:quartz> * 16])
+  .addTool(<ore:artisansBeaker>, 25)
+  .addTool(<ore:artisansBurner>, 25)
+  .addOutput(<lycanitesmobs:immunizer>)
+  .create();
+
 // Tool Parts
 
 // Wooden Paxel
@@ -103,7 +264,6 @@ RecipeBuilder.get("jeweler")
   .addTool(<ore:artisansGemCutter>, 50)
   .addOutput(<lycanitesmobs:goldscepterhead>)
   .create();
-
 
 // Equipment Workshops
 
