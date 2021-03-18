@@ -1,5 +1,58 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+// Equipment Workshops
+
+// Lesser Equipment Forge (lvl 1)
+recipes.removeByRecipeName("lycanitesmobs:equipmentforge_lesser");
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<artisanworktables:artisans_athame_iron>, <artisanworktables:artisans_knife_iron>, <artisanworktables:artisans_hatchet_iron>],
+    [<artisanworktables:worktable:3>, <artisanworktables:worktable:5>, <artisanworktables:worktable:11>],
+    [<tconstruct:sharpening_kit>.withTag({Material: "iron"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:iron_block"}}), <tconstruct:sharpening_kit>.withTag({Material: "iron"})]])
+  .addTool(<ore:artisansFramingHammer>, 50)
+  .addOutput(<lycanitesmobs:equipmentforge_lesser>)
+  .create();
+
+// Greater Equipment Forge (lvl 2)
+recipes.removeByRecipeName("lycanitesmobs:equipmentforge_greater");
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<artisanworktables:artisans_athame_steel>, <artisanworktables:workstation:4>, <artisanworktables:artisans_hatchet_steel>],
+    [<artisanworktables:workstation:3>, <lycanitesmobs:equipmentforge_lesser>, <artisanworktables:workstation:11>],
+    [<tconstruct:sharpening_kit>.withTag({Material: "steel"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy"}}), <tconstruct:sharpening_kit>.withTag({Material: "steel"})]])
+  .setSecondaryIngredients([<artisanworktables:artisans_knife_steel>, <artisanworktables:artisans_gemcutter_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_file_steel>])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansHammer>, 1)
+  .addOutput(<lycanitesmobs:equipmentforge_greater>)
+  .create();
+
+// Master Equipment Forge (lvl 3)
+recipes.removeByRecipeName("lycanitesmobs:equipmentforge_master");
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<tconstruct:sharpening_kit>.withTag({Material: "osgloglas"}), <artisanworktables:workshop:4>, <tconstruct:sharpening_kit>.withTag({Material: "mirion"})],
+    [<artisanworktables:workshop:3>, <lycanitesmobs:equipmentforge_greater>, <artisanworktables:workshop:11>],
+    [<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal"}}), <artisanworktables:workshop:7>, <tconstruct:toolforge>.withTag({textureBlock: {id: "twilightforest:block_storage"}})]])
+  .setSecondaryIngredients([<artisanworktables:artisans_handsaw_diamond>, <artisanworktables:artisans_gemcutter_diamond>, <artisanworktables:artisans_hatchet_diamond>, <artisanworktables:artisans_knife_diamond>, <artisanworktables:artisans_razor_diamond>, <artisanworktables:artisans_athame_diamond>, <artisanworktables:artisans_grimoire_diamond>])
+  .addTool(<ore:artisansHammer>, 500)
+  .addTool(<ore:artisansFramingHammer>, 500)
+  .addTool(<ore:artisansHandsaw>, 500)
+  .addOutput(<lycanitesmobs:equipmentforge_master>)
+  .create();
+
+// Equipment Infuser
+recipes.removeByRecipeName("lycanitesmobs:equipmentforge_infuser");
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<apotheosis:hellshelf>, <apotheosis:hellshelf>, <apotheosis:hellshelf>],
+    [<mekanism:machineblock:8>, <lycanitesmobs:equipmentforge_greater>, <thermalexpansion:machine:9>.withTag({Level: 2 as byte})],
+    [<thaumicrestoration:block_infuser>, <thebetweenlands:infuser>, <thaumcraft:infusion_matrix>]])
+  .setSecondaryIngredients([<lycanitesmobs:demoncrystal> * 32, <lycanitesmobs:shadowcrystal> * 32, <lycanitesmobs:lushcrystal> * 32, <lycanitesmobs:desertcrystal> * 32, <lycanitesmobs:aberrantcrystal> * 32])
+  .addTool(<ore:artisansFramingHammer>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addOutput(<lycanitesmobs:equipment_infuser>)
+  .create();
+
 // Treats
 
 // 2 Tier
