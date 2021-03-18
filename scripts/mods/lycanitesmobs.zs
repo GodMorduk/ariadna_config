@@ -161,6 +161,140 @@ RecipeBuilder.get("chemist")
   .addOutput(<lycanitesmobs:immunizer>)
   .create();
 
+// Food
+
+// 1 Tier
+
+// Seashell Maki
+recipes.removeByRecipeName("lycanitesmobs:seashellmaki");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:californiarollitem>, <lycanitesmobs:cooked_ika_meat>])
+  .addTool(<ore:artisansCuttingBoard>, 15)
+  .addOutput(<lycanitesmobs:seashell_maki>)
+  .create();
+
+// Lapis Fish and Chips
+recipes.removeByRecipeName("lycanitesmobs:lapisfishandchips");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:friesitem>, <lycanitesmobs:cooked_silex_meat>])
+  .addTool(<ore:artisansCuttingBoard>, 15)
+  .addOutput(<lycanitesmobs:lapis_fish_and_chips>)
+  .create();
+
+// Tropical Curry
+recipes.removeByRecipeName("lycanitesmobs:tropicalcurry");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:curryitem>, <lycanitesmobs:cooked_concapede_meat>])
+  .addTool(<ore:artisansPan>, 15)
+  .addOutput(<lycanitesmobs:tropical_curry>)
+  .create();
+
+// Amber Cake
+recipes.removeByRecipeName("lycanitesmobs:ambercake");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:cheesecakeitem>, <lycanitesmobs:cooked_joust_meat>, <lycanitesmobs:cooked_joust_meat>, <lycanitesmobs:cooked_joust_meat>])
+  .addTool(<ore:artisansCuttingBoard>, 15)
+  .addOutput(<lycanitesmobs:amber_cake> * 4)
+  .create();
+
+// Caecilian Ramen
+recipes.removeByRecipeName("lycanitesmobs:caecilian_ramen");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:ramenitem>, <lycanitesmobs:cooked_krake_meat>])
+  .addTool(<ore:artisansCuttingBoard>, 15)
+  .addOutput(<lycanitesmobs:caecilian_ramen>)
+  .create();
+
+// 2 Tier
+
+// Moss Pie
+recipes.removeByRecipeName("lycanitesmobs:mosspie");
+recipes.removeByRecipeName("lycanitesmobs:mosspie_alt");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:meatpieitem>, <lycanitesmobs:cooked_aspid_meat>, <lycanitesmobs:cooked_aspid_meat>, <lycanitesmobs:cooked_aspid_meat>])
+  .setSecondaryIngredients([<tconstruct:materials:18>])
+  .addTool(<ore:artisansKnife>, 35)
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addOutput(<lycanitesmobs:moss_pie>)
+  .create();
+
+// Paleo Salad
+recipes.removeByRecipeName("lycanitesmobs:paleosalad");
+RecipeBuilder.get("chef")
+  .setShapeless([<lycanitesmobs:cooked_arisaur_meat>, <harvestcraft:sunflowerbroccolisaladitem>, <harvestcraft:springsaladitem>])
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addTool(<ore:artisansPan>, 35)
+  .addOutput(<lycanitesmobs:paleo_salad>)
+  .create();
+
+// Pale Soup
+recipes.removeByRecipeName("lycanitesmobs:palesoup");
+RecipeBuilder.get("chef")
+  .setShapeless([<lycanitesmobs:cooked_yeti_meat>, <ore:listAllmilk>, <harvestcraft:creamedbroccolisoupitem>])
+  .addTool(<ore:artisansPan>, 35)
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addOutput(<lycanitesmobs:pale_soup>)
+  .create();
+
+// Searing Taco
+recipes.removeByRecipeName("lycanitesmobs:searingtaco");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:tacoitem>, <lycanitesmobs:cooked_cephignis_meat>, <ore:powderBlaze>])
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addTool(<ore:artisansPan>, 35)
+  .addOutput(<lycanitesmobs:searing_taco>)
+  .create();
+
+// Bulwark Burger
+recipes.removeByRecipeName("lycanitesmobs:bulwarkburger");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:deluxecheeseburgeritem>, <lycanitesmobs:cooked_maka_meat>])
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addTool(<ore:artisansKnife>, 35)
+  .addOutput(<lycanitesmobs:bulwark_burger>)
+  .create();
+
+// Devil Lasagna
+recipes.removeByRecipeName("lycanitesmobs:devillasagna");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:lasagnaitem>, <lycanitesmobs:cooked_pinky_meat>])
+  .addTool(<ore:artisansPan>, 35)
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addOutput(<lycanitesmobs:devil_lasagna>)
+  .create();
+
+// Peaks Kebab
+recipes.removeByRecipeName("lycanitesmobs:peakskebab");
+RecipeBuilder.get("chef")
+  .setShapeless([<harvestcraft:lambkebabitem>, <lycanitesmobs:cooked_yale_meat>])
+  .addTool(<ore:artisansKnife>, 35)
+  .addTool(<ore:artisansCuttingBoard>, 35)
+  .addOutput(<lycanitesmobs:peaks_kebab>)
+  .create();
+
+// 3 Tier
+
+// Battle Burrito
+recipes.removeByRecipeName("lycanitesmobs:battleburrito");
+RecipeBuilder.get("chef")
+  .setShapeless([<lycanitesmobs:cooked_pinky_meat>, <lycanitesmobs:cooked_arisaur_meat>, <lycanitesmobs:cooked_maka_meat>, <lycanitesmobs:cooked_aspid_meat>, <lycanitesmobs:cooked_yeti_meat>, <harvestcraft:refriedbeansitem>, <harvestcraft:hotsauceitem>, <harvestcraft:beanburritoitem>, <harvestcraft:tortillaitem>, <harvestcraft:tortillaitem>])
+  .addTool(<ore:artisansCuttingBoard>, 55)
+  .addTool(<ore:artisansPan>, 55)
+  .addTool(<ore:artisansKnife>, 55)
+  .addOutput(<lycanitesmobs:battle_burrito>)
+  .create();
+
+// Blood Chili
+recipes.removeByRecipeName("lycanitesmobs:bloodchili");
+RecipeBuilder.get("chef")
+  .setShapeless([<lycanitesmobs:cooked_chupacabra_meat>, <harvestcraft:extremechiliitem>])
+  .setFluid(<liquid:blood> * 1000)
+  .addTool(<ore:artisansCuttingBoard>, 55)
+  .addTool(<ore:artisansPan>, 55)
+  .addTool(<ore:artisansKnife>, 55)
+  .addOutput(<lycanitesmobs:blood_chili>)
+  .create();
+
 // Tool Parts
 
 // Wooden Paxel
