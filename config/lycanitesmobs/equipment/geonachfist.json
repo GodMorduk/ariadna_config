@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "axe",
   "dropMobId": "lycanitesmobs:geonach",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [
@@ -19,7 +19,7 @@
       "harvestRange": [
         1,
         1,
-        2
+        1
       ],
       "harvestRangeLevelMultiplier": 1
     },
@@ -32,8 +32,8 @@
       "harvestShape": "block",
       "harvestRange": [
         1,
-        2,
-        2
+        1,
+        1
       ],
       "harvestRangeLevelMultiplier": 1
     },
@@ -44,9 +44,9 @@
       "harvestSpeed": 8,
       "harvestShape": "block",
       "harvestRange": [
+        1,
         2,
-        4,
-        4
+        2
       ],
       "harvestRangeLevelMultiplier": 1
     },

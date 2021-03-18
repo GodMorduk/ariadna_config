@@ -3,32 +3,32 @@
   "loadDefault": true,
   "slotType": "blade",
   "dropMobId": "",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 1,
   "features": [
     {
       "featureType": "harvest",
       "harvestType": "pickaxe",
-      "harvestSpeed": 3,
+      "harvestSpeed": 2,
       "harvestLevel": 1
     },
     {
       "featureType": "harvest",
       "harvestType": "axe",
-      "harvestSpeed": 3,
+      "harvestSpeed": 2,
       "harvestLevel": 1
     },
     {
       "featureType": "harvest",
       "harvestType": "shovel",
-      "harvestSpeed": 3,
+      "harvestSpeed": 2,
       "harvestLevel": 1
     },
     {
       "featureType": "harvest",
       "harvestType": "hoe",
-      "harvestSpeed": 3,
+      "harvestSpeed": 2,
       "harvestLevel": 1
     },
     {

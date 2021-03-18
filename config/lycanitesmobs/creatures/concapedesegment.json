@@ -89,7 +89,7 @@
       "burningItem": "lycanitesmobs:cooked_concapede_meat",
       "minAmount": 1,
       "maxAmount": 1,
-      "chance": 1
+      "chance": 0.75
     }
   ],
   "sizeScale": 1,

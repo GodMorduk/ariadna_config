@@ -107,9 +107,9 @@
     },
     {
       "item": "lycanitesmobs:blizzardcharge",
-      "minAmount": 3,
-      "maxAmount": 6,
-      "chance": 1
+      "minAmount": 1,
+      "maxAmount": 3,
+      "chance": 0.25
     }
   ],
   "sizeScale": 1,

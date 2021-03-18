@@ -90,14 +90,14 @@
     },
     {
       "item": "lycanitesmobs:propolis",
-      "minAmount": 1,
-      "maxAmount": 4,
-      "chance": 0.5
+      "minAmount": 4,
+      "maxAmount": 16,
+      "chance": 1
     },
     {
       "item": "lycanitesmobs:veswax",
       "minAmount": 1,
-      "maxAmount": 4,
+      "maxAmount": 2,
       "chance": 0.5
     }
   ],

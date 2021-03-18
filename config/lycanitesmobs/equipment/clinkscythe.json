@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "axe",
   "dropMobId": "lycanitesmobs:clink",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [
@@ -42,7 +42,7 @@
       "harvestSpeed": 6,
       "harvestShape": "block",
       "harvestRange": [
-        4,
+        2,
         1,
         1
       ],
@@ -56,9 +56,9 @@
       "harvestSpeed": 7,
       "harvestShape": "block",
       "harvestRange": [
-        8,
+        4,
         1,
-        4
+        2
       ],
       "harvestRangeLevelMultiplier": 1
     },
@@ -69,9 +69,9 @@
       "harvestSpeed": 8,
       "harvestShape": "block",
       "harvestRange": [
-        16,
+        8,
         1,
-        8
+        4
       ],
       "harvestRangeLevelMultiplier": 1
     },

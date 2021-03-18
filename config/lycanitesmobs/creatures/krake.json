@@ -96,7 +96,7 @@
       "item": "lycanitesmobs:raw_krake_meat",
       "burningItem": "lycanitesmobs:cooked_krake_meat",
       "minAmount": 1,
-      "maxAmount": 2,
+      "maxAmount": 1,
       "chance": 1
     },
     {

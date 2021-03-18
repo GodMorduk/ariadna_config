@@ -93,8 +93,8 @@
     },
     {
       "item": "lycanitesmobs:propolis",
-      "minAmount": 4,
-      "maxAmount": 8,
+      "minAmount": 16,
+      "maxAmount": 32,
       "chance": 1
     },
     {

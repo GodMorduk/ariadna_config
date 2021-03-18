@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "pike",
   "dropMobId": "lycanitesmobs:geonach",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [
@@ -19,7 +19,7 @@
       "harvestRange": [
         1,
         1,
-        4
+        2
       ],
       "harvestRangeLevelMultiplier": 1
     },
@@ -33,7 +33,7 @@
       "harvestRange": [
         1,
         1,
-        8
+        4
       ],
       "harvestRangeLevelMultiplier": 1
     },
@@ -46,7 +46,7 @@
       "harvestRange": [
         1,
         1,
-        16
+        8
       ],
       "harvestRangeLevelMultiplier": 1
     },

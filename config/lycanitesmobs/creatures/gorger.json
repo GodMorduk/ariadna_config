@@ -100,9 +100,9 @@
     },
     {
       "item": "lycanitesmobs:magmacharge",
-      "minAmount": 5,
-      "maxAmount": 7,
-      "chance": 1
+      "minAmount": 1,
+      "maxAmount": 4,
+      "chance": 0.25
     },
     {
       "item": "minecraft:iron_ore",

@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "pommel",
   "dropMobId": "lycanitesmobs:vespid",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [

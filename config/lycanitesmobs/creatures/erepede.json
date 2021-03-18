@@ -104,9 +104,9 @@
     },
     {
       "item": "lycanitesmobs:mudshotcharge",
-      "minAmount": 3,
-      "maxAmount": 5,
-      "chance": 1
+      "minAmount": 1,
+      "maxAmount": 3,
+      "chance": 0.25
     }
   ],
   "sizeScale": 1,

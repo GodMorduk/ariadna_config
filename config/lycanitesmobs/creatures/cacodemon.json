@@ -107,15 +107,15 @@
     },
     {
       "item": "lycanitesmobs:demonicblastcharge",
-      "minAmount": 3,
-      "maxAmount": 6,
-      "chance": 1
+      "minAmount": 1,
+      "maxAmount": 3,
+      "chance": 0.25
     },
     {
       "item": "lycanitesmobs:soulstone_demon",
       "minAmount": 1,
       "maxAmount": 1,
-      "chance": 1,
+      "chance": 0.25,
       "variant": 3
     }
   ],

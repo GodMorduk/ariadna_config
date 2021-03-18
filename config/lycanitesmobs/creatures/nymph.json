@@ -161,8 +161,8 @@
     {
       "item": "lycanitesmobs:faeboltcharge",
       "minAmount": 1,
-      "maxAmount": 3,
-      "chance": 1
+      "maxAmount": 2,
+      "chance": 0.25
     },
     {
       "item": "lycanitesmobs:immunizer",

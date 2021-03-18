@@ -85,7 +85,7 @@
       "item": "lycanitesmobs:raw_yale_meat",
       "burningItem": "lycanitesmobs:cooked_yale_meat",
       "minAmount": 1,
-      "maxAmount": 3,
+      "maxAmount": 2,
       "chance": 1
     },
     {

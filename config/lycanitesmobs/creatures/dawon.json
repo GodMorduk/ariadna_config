@@ -102,13 +102,6 @@
       "maxAmount": 2,
       "chance": 0.01,
       "subspecies": 1
-    },
-    {
-      "item": "minecraft:diamond",
-      "minAmount": 1,
-      "maxAmount": 2,
-      "chance": 0.01,
-      "subspecies": 2
     }
   ],
   "sizeScale": 1,

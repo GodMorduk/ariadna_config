@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "axe",
   "dropMobId": "lycanitesmobs:remobra",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [
@@ -28,9 +28,9 @@
       "harvestType": "axe",
       "harvestShape": "block",
       "harvestRange": [
+        1,
         2,
-        3,
-        2
+        1
       ]
     },
     {
@@ -39,9 +39,9 @@
       "harvestType": "axe",
       "harvestShape": "block",
       "harvestRange": [
-        3,
-        10,
-        3
+        2,
+        5,
+        2
       ]
     },
     {

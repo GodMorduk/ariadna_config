@@ -103,8 +103,8 @@
     {
       "item": "lycanitesmobs:trickersterflarecharge",
       "minAmount": 1,
-      "maxAmount": 3,
-      "chance": 1
+      "maxAmount": 2,
+      "chance": 0.25
     }
   ],
   "sizeScale": 1,

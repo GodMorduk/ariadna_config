@@ -113,17 +113,10 @@
       "variant": 3
     },
     {
-      "item": "lycanitesmobs:cleansingcrystal",
-      "minAmount": 1,
-      "maxAmount": 3,
-      "chance": 1,
-      "variant": 3
-    },
-    {
       "item": "lycanitesmobs:soulstone_worm",
       "minAmount": 1,
       "maxAmount": 1,
-      "chance": 1,
+      "chance": 0.25,
       "variant": 3
     }
   ],

@@ -3,7 +3,7 @@
   "loadDefault": true,
   "slotType": "blade",
   "dropMobId": "lycanitesmobs:cinder",
-  "dropChance": 0.1,
+  "dropChance": 0.05,
   "levelMin": 1,
   "levelMax": 3,
   "elements": [
@@ -27,9 +27,9 @@
       "harvestType": "sword",
       "harvestShape": "block",
       "harvestRange": [
-        3,
-        3,
-        3
+        2,
+        2,
+        2
       ]
     },
     {

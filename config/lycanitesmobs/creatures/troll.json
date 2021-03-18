@@ -111,9 +111,9 @@
     },
     {
       "item": "lycanitesmobs:boulderblastcharge",
-      "minAmount": 2,
-      "maxAmount": 3,
-      "chance": 1
+      "minAmount": 1,
+      "maxAmount": 2,
+      "chance": 0.25
     }
   ],
   "sizeScale": 1,
