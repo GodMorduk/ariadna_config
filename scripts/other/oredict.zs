@@ -25,5 +25,8 @@ oreNecromancyCrystal.add(<ancientspellcraft:crystal_ore_necromancy>);
 var oreSorceryCrystal = <ore:oreSorceryCrystal>;
 oreSorceryCrystal.add(<ancientspellcraft:crystal_ore_sorcery>);
 
+var oreDevoritium = <ore:oreDevoritium>;
+oreDevoritium.add(<ancientspellcraft:devoritium_ore>);
+
 var oreValkyrium = <ore:oreValkyrium>;
 oreValkyrium.add(<vs_world:valkyrium_ore>);

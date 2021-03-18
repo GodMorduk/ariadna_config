@@ -8425,6 +8425,112 @@
 		},
 		{
 			"blocks": [
+				"ancientspellcraft:devoritium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdevoritium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 40,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"SPOOKY", "MAGICAL"
+			],
+			"isWhitelist": true
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:devoritium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdevoritium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 80,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"ancientspellcraft:devoritium_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdevoritium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 176,
+			"yMax": 256,
+			"chance": 15,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
 				"vs_world:valkyrium_ore",
 				100
 			],
