@@ -1,5 +1,110 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+// Tool Parts
+
+// Wooden Paxel
+recipes.removeByRecipeName("lycanitesmobs:woodenpaxel");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}}), <tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}})],
+    [<tconstruct:hatchet>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}}), <tconstruct:binding>.withTag({Material: "treatedwood"})]])
+  .addTool(<ore:artisansHandsaw>, 100)
+  .addOutput(<lycanitesmobs:woodenpaxel>)
+  .create();
+
+// Wooden Rod
+recipes.removeByRecipeName("lycanitesmobs:woodenrod");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<harvestcraft:hardenedleatheritem>, <tconstruct:binding>.withTag({Material: "treatedwood"}), <harvestcraft:hardenedleatheritem>],
+    [<harvestcraft:hardenedleatheritem>, <tconstruct:tough_tool_rod>.withTag({Material: "treatedwood"}), <harvestcraft:hardenedleatheritem>],
+    [<harvestcraft:hardenedleatheritem>, <spartanweaponry:material>, <harvestcraft:hardenedleatheritem>]])
+  .addTool(<ore:artisansFile>, 50)
+  .addOutput(<lycanitesmobs:woodenrod>)
+  .create();
+
+// Wooden Guard
+recipes.removeByRecipeName("lycanitesmobs:woodenhilt");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <tconstruct:tough_binding>.withTag({Material: "treatedwood"}), null],
+    [<tconstruct:binding>.withTag({Material: "treatedwood"}), <tconstruct:wide_guard>.withTag({Material: "treatedwood"}), <tconstruct:binding>.withTag({Material: "treatedwood"})],
+    [null, <tconstruct:tough_binding>.withTag({Material: "treatedwood"}), null]])
+  .addTool(<ore:artisansHatchet>, 50)
+  .addOutput(<lycanitesmobs:woodenhilt>)
+  .create();
+
+// Iron Axe Head
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironaxehead");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null],
+    [<tconstruct:tough_binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:tough_binding>.withTag({Material: "iron"})],
+    [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null]])
+  .setFluid(<liquid:lava> * 1000)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<lycanitesmobs:ironaxehead>)
+  .create();
+
+// Iron Guard
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironhilt");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+    [<tconstruct:wide_guard>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:wide_guard>.withTag({Material: "iron"})]])
+  .setFluid(<liquid:lava> * 1000)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<lycanitesmobs:ironhilt>)
+  .create();
+
+// Iron Rod
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironrod");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+    [<tconstruct:large_plate>.withTag({Material: "iron"}), <lycanitesmobs:woodenrod>, <tconstruct:large_plate>.withTag({Material: "iron"})],
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
+  .setFluid(<liquid:lava> * 1000)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<lycanitesmobs:ironrod>)
+  .create();
+
+// Iron Pike Joint
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironpikejoint");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+    [<tconstruct:binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:binding>.withTag({Material: "iron"})],
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
+  .setFluid(<liquid:lava> * 1000)
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<lycanitesmobs:ironpikejoint>)
+  .create();
+
+// Iron Paxel
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironpaxel");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:hatchet>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}})],
+    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:tough_binding>.withTag({Material: "iron"})],
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"})]])
+  .setFluid(<liquid:lava> * 1000)
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<lycanitesmobs:ironpaxel>)
+  .create();
+
+// Gold Scepter Head
+recipes.removeByRecipeName("lycanitesmobs:equipmentpart_goldscepterhead");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <ore:blockGold>, null],
+    [<ore:blockGold>, <lycanitesmobs:ironhilt>, <ore:blockGold>],
+    [null, <ore:blockGold>, null]])
+  .addTool(<ore:artisansGemCutter>, 50)
+  .addOutput(<lycanitesmobs:goldscepterhead>)
+  .create();
+
+
 // Equipment Workshops
 
 // Lesser Equipment Forge (lvl 1)
