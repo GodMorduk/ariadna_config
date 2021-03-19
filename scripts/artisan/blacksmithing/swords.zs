@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByRecipeName("minecraft:wooden_sword");
+recipes.removeByRecipeName("minecraft:stone_sword");
 recipes.removeByRecipeName("minecraft:iron_sword");
 recipes.removeByRecipeName("minecraft:diamond_sword");
 recipes.removeByRecipeName("minecraft:golden_sword");
@@ -39,7 +41,7 @@ recipes.removeByRecipeName("twilightforest:equipment/fiery_sword");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_sword");
 recipes.removeByRecipeName("twilightforest:equipment/knightmetal_sword");
 recipes.removeByRecipeName("endreborn:tools/tool_sword_wolframium");
-recipes.removeByRecipeName("endreborn:tool_sword_endorium");
+recipes.removeByRecipeName("endreborn:tools/tool_sword_endorium");
 
 
 //recipes.addShaped("gravitite_sword", <aether_legacy:gravitite_sword>, [[null, <ore:blockEnchantedGravitite>, null],[<ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>],[null, <ore:stickWood>, null]]);
@@ -87,15 +89,32 @@ recipes.removeByRecipeName("endreborn:tool_sword_endorium");
 //recipes.addShaped("sword_etherium", <metallurgy:etherium_sword>, [[null, <ore:blockEtherium>, null], [<ore:blockEtherium>, <ore:blockEtherium>, <ore:blockEtherium>], [null, <ore:stickWood>, null]]);
 //recipes.addShaped("sword_carmot", <metallurgy:carmot_sword>, [[null, <ore:blockcarmot>, null], [<ore:blockcarmot>, <ore:blockcarmot>, <ore:blockcarmot>], [null, <ore:stickWood>, null]]);
 
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <ore:logWood>, null],
+    [<ore:logWood>, <ore:logWood>, <ore:logWood>],
+    [null, <spartanweaponry:material>, null]])
+  .addTool(<ore:artisansHandsaw>, 75)
+  .addOutput(<minecraft:wooden_sword>)
+  .create();
 
+RecipeBuilder.get("mason")
+  .setShaped([
+    [null, <pyrotech:material:16>, null],
+    [<pyrotech:material:16>, <pyrotech:material:16>, <pyrotech:material:16>],
+    [null, <spartanweaponry:material>, null]])
+  .addTool(<ore:artisansChisel>, 75)
+  .addOutput(<minecraft:stone_sword>)
+  .create();
 
 RecipeBuilder.get("jeweler") // Алмазный меч
   .setShaped([
     [null, <ore:blockDiamond>, null],
     [<ore:blockDiamond>, <ore:blockDiamond>, <ore:blockDiamond>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addTool(<ore:artisansLens>, 100)
+  .setMinimumTier(1)
   .addOutput(<minecraft:diamond_sword>)
   .create();
 
@@ -103,7 +122,7 @@ RecipeBuilder.get("blacksmith") // Золотой меч
   .setShaped([
     [null, <ore:blockGold>, null],
     [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
   .addOutput(<minecraft:golden_sword>)
   .create();
@@ -130,7 +149,7 @@ RecipeBuilder.get("blacksmith") // Меч из хладного железа
   .setShaped([
     [null, <ore:blockColdIron>, null],
     [<ore:blockColdIron>, <ore:blockColdIron>, <ore:blockColdIron>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
   .addOutput(<bewitchment:cold_iron_sword>)
   .create();
@@ -139,8 +158,9 @@ RecipeBuilder.get("blacksmith") // Золотитовый меч
   .setShaped([
     [null, <ore:blockDawnstone>, null],
     [<ore:blockDawnstone>, <ore:blockDawnstone>, <ore:blockDawnstone>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
+  .setMinimumTier(1)
   .addOutput(<embers:sword_dawnstone>)
   .create();
 
@@ -148,8 +168,9 @@ RecipeBuilder.get("blacksmith") // Эндориумовый меч
   .setShaped([
     [null, <endreborn:block_endorium>, null],
     [<endreborn:block_endorium>, <endreborn:block_endorium>, <endreborn:block_endorium>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
+  .setMinimumTier(1)
   .addOutput(<endreborn:tool_sword_endorium>)
   .create();
 
@@ -168,28 +189,19 @@ RecipeBuilder.get("blacksmith") // Вольфрамовый меч
   .setShaped([
     [null, <endreborn:block_wolframium>, null],
     [<endreborn:block_wolframium>, <endreborn:block_wolframium>, <endreborn:block_wolframium>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
   .addOutput(<endreborn:tool_sword_wolframium>)
-  .create();
-
-RecipeBuilder.get("blacksmith") // Меч Валькирии
-  .setShaped([
-    [null, <ore:blockValkyrie>, null],
-    [<ore:blockValkyrie>, <ore:blockValkyrie>, <ore:blockValkyrie>],
-    [null, <ore:stickWood>, null]])
-  .addTool(<ore:artisansPliers>, 200)
-  .addTool(<ore:artisansHammer>, 250)
-  .addOutput(<aether_legacy:valkyrie_lance>)
   .create();
 
 RecipeBuilder.get("jeweler")
   .setShaped([
     [null, <ore:blockValonite>, null],
     [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansGemCutter>, 250)
   .addTool(<ore:artisansLens>, 100)
+  .setMinimumTier(1)
   .addOutput(<thebetweenlands:valonite_sword>)
   .create();
 
@@ -197,8 +209,9 @@ RecipeBuilder.get("basic")
   .setShaped([
     [null, <ore:blockBone>, null],
     [<ore:blockBone>, <ore:blockBone>, <ore:blockBone>],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansSolderer>, 200)
+  .setMinimumTier(1)
   .addOutput(<thebetweenlands:bone_sword>)
   .create();
 
@@ -217,7 +230,7 @@ for sword in swords_reverse_1_tier {
 	  .setShaped([
 		[null, block, null],
 		[block, block, block],
-		[null, <ore:stickWood>, null]])
+		[null, <spartanweaponry:material>, null]])
 	  .addTool(<ore:artisansHammer>, 50)
 	  .addOutput(sword)
 	  .create();
@@ -235,9 +248,10 @@ for sword in swords_reverse_2_tier {
 	  .setShaped([
 		[null, block, null],
 		[block, block, block],
-		[null, <ore:stickWood>, null]])
+		[null, <spartanweaponry:material>, null]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPile>, 100)
+    .setMinimumTier(1)
 	  .addOutput(sword)
 	  .create();
 }
@@ -255,7 +269,7 @@ for sword in swords_1_tier {
 	  .setShaped([
 		[null, block, null],
 		[block, block, block],
-		[null, <ore:stickWood>, null]])
+		[null, <spartanweaponry:material>, null]])
 	  .addTool(<ore:artisansHammer>, 50)
 	  .addOutput(sword)
 	  .create();
@@ -274,7 +288,7 @@ for sword in swords_2_tier {
 	  .setShaped([
 		[null, block, null],
 		[block, block, block],
-		[null, <ore:stickWood>, null]])
+		[null, <spartanweaponry:material>, null]])
 	  .addTool(<ore:artisansHammer>, 100)
 	  .addTool(<ore:artisansBurner>, 100)
 	  .addOutput(sword)

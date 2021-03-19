@@ -284,15 +284,16 @@ for weapon in weapons {
 		val builder = RecipeBuilder.get("jeweler");
 		builder.addTool(<ore:artisansGemCutter>, 250);
 		create_recipe(builder, weapon_type, block, material);
+		builder.setMinimumTier(1);
 		builder.addOutput(itemUtils.getItem(weapon)).create();
 	} else if material == "Wood" {
-		val builder = RecipeBuilder.get("basic");
+		val builder = RecipeBuilder.get("carpenter");
 		builder.addTool(<ore:artisansHandsaw>, 50);
 		builder.addTool(<ore:artisansFramingHammer>, 50);
 		create_recipe(builder, weapon_type, block, material);
 		builder.addOutput(itemUtils.getItem(weapon)).create();
 	} else if material == "Stone" {
-		val builder = RecipeBuilder.get("basic");
+		val builder = RecipeBuilder.get("mason");
 		builder.addTool(<ore:artisansChisel>, 50);
 		builder.addTool(<ore:artisansFramingHammer>, 50);
 		create_recipe(builder, weapon_type, block, material);
@@ -300,7 +301,8 @@ for weapon in weapons {
 	} else {
 		val builder = RecipeBuilder.get("blacksmith");
 		builder.addTool(<ore:artisansHammer>, 100);
-		builder.addTool(<ore:artisansBurner>, 100);
+		builder.addTool(<ore:artisansFile>, 100);
+		builder.setMinimumTier(1);
 		create_recipe(builder, weapon_type, block, material);
 		builder.addOutput(itemUtils.getItem(weapon)).create();
 	}	
@@ -340,141 +342,117 @@ RecipeBuilder.get("mage") // Наконечник арбалета  из дер�
 // Рукояти обычные (Короткие)
 
 RecipeBuilder.get("carpenter") // Короткая рукоять
-  .setShaped([
-    [<ore:stickWood>, <ore:string>]])
+  .setShapeless([<ore:stickWood>, <ore:string>])
+	.addTool(<ore:artisansKnife>, 5)
   .addOutput(<spartanweaponry:material>)
   .create();
 
 RecipeBuilder.get("carpenter") // Короткие рукояти с использованием кожи
-  .setShaped([
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <minecraft:leather>, null]])
+  .setShapeless([<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponry:material> * 4)
   .create();
 
 RecipeBuilder.get("carpenter") // Короткие рукояти с использованием шерсти
-  .setShaped([
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <ore:wool>, null]])
+  .setShapeless([<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponry:material> * 4)
   .create();
 
 // Рукояти магические (Короткие)
 
 RecipeBuilder.get("mage") // Короткая рукоять из дерева мечтаний
-  .setShaped([
-    [<botania:manaresource:13>, <ore:string>]])
+  .setShapeless([<botania:manaresource:13>, <ore:string>])
+	.addTool(<ore:artisansKnife>, 5)
   .addOutput(<spartanweaponryarcana:material:2>)
   .create();
 
 RecipeBuilder.get("mage") // Короткие рукояти из дерева мечтаний с использованием кожи
-  .setShaped([
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <minecraft:leather>, null]])
+  .setShapeless([<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponryarcana:material:2> * 4)
   .create();
 
 RecipeBuilder.get("mage") // Короткие рукояти из дерева мечтаний с использованием шерсти
-  .setShaped([
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <ore:wool>, null]])
+  .setShapeless([<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponryarcana:material:2> * 4)
   .create();
 
 RecipeBuilder.get("mage") // Короткая рукоять из жизнедерева
-  .setShaped([
-    [<botania:manaresource:3>, <ore:string>]])
+  .setShapeless([<botania:manaresource:3>, <ore:string>])
+	.addTool(<ore:artisansKnife>, 5)
   .addOutput(<spartanweaponryarcana:material>)
   .create();
 
 RecipeBuilder.get("mage") // Короткие рукояти из жизнедерева с использованием кожи
-  .setShaped([
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <minecraft:leather>, null]])
+  .setShapeless([<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponryarcana:material> * 4)
   .create();
 
 RecipeBuilder.get("mage") // Короткие рукояти из жизнедерева с использованием шерсти
-  .setShaped([
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <ore:wool>, null]])
+  .setShapeless([<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
   .addOutput(<spartanweaponryarcana:material> * 4)
   .create();
 
 // Рукояти обычные (Длинные)
 
 RecipeBuilder.get("carpenter") // Длинная рукоять с использованием нити
-  .setShaped([
-    [<ore:stickWood>, null],
-    [<ore:stickWood>, <ore:string>],
-    [<ore:stickWood>, null]])
+  .setShapeless([<ore:stickWood>, <ore:stickWood>, <ore:string>, <ore:stickWood>])
+	.addTool(<ore:artisansKnife>, 10)
   .addOutput(<spartanweaponry:material:1>)
   .create();
 
 RecipeBuilder.get("carpenter") // Длинные рукояти с использованием кожи
-  .setShaped([
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <ore:stickWood>, <minecraft:leather>]])
-  .addOutput(<spartanweaponry:material:1> * 4)
+  .setShapeless([<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponry:material:1> * 2)
   .create();
 
 RecipeBuilder.get("carpenter") // Длинные рукояти с использованием шерсти
-  .setShaped([
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-    [<ore:stickWood>, <ore:stickWood>, <ore:wool>]])
-  .addOutput(<spartanweaponry:material:1> * 4)
+  .setShapeless([<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponry:material:1> * 2)
   .create();
 
 // Рукояти магические (Длинные)
 
 RecipeBuilder.get("mage") // Длинная рукоять из дерева мечтаний
-  .setShaped([
-    [<botania:manaresource:13>, null],
-    [<botania:manaresource:13>, <ore:string>],
-    [<botania:manaresource:13>, null]])
+  .setShapeless([<botania:manaresource:13>, <botania:manaresource:13>, <ore:string>, <botania:manaresource:13>])
+	.addTool(<ore:artisansKnife>, 10)
   .addOutput(<spartanweaponryarcana:material:3>)
   .create();
 
 RecipeBuilder.get("mage") // Длинные рукояти из дерева мечтаний с использованием кожи
-  .setShaped([
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <botania:manaresource:13>, <minecraft:leather>]])
-  .addOutput(<spartanweaponryarcana:material:3> * 4)
+  .setShapeless([<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponryarcana:material:3> * 2)
   .create();
 
 RecipeBuilder.get("mage") // Длинные рукояти из дерева мечтаний с использованием шерсти
-  .setShaped([
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>],
-    [<botania:manaresource:13>, <botania:manaresource:13>, <ore:wool>]])
-  .addOutput(<spartanweaponryarcana:material:3> * 4)
+  .setShapeless([<botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <botania:manaresource:13>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponryarcana:material:3> * 2)
   .create();
 
 RecipeBuilder.get("mage") // Длинная рукоять из жизнедерева
-  .setShaped([
-    [<botania:manaresource:3>, null],
-    [<botania:manaresource:3>, <ore:string>],
-    [<botania:manaresource:3>, null]])
+  .setShapeless([<botania:manaresource:3>, <botania:manaresource:3>, <ore:string>, <botania:manaresource:3>])
+	.addTool(<ore:artisansKnife>, 10)
   .addOutput(<spartanweaponryarcana:material:1>)
   .create();
 
 RecipeBuilder.get("mage") // Длинные рукояти из жизнедерева с использованием кожи
-  .setShaped([
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <botania:manaresource:3>, <minecraft:leather>]])
-  .addOutput(<spartanweaponryarcana:material:1> * 4)
+  .setShapeless([<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <minecraft:leather>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponryarcana:material:1> * 2)
   .create();
 
 RecipeBuilder.get("mage") // Длинные рукояти из жизнедерева с использованием шерсти
-  .setShaped([
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>],
-    [<botania:manaresource:3>, <botania:manaresource:3>, <ore:wool>]])
-  .addOutput(<spartanweaponryarcana:material:1> * 4)
+  .setShapeless([<botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <botania:manaresource:3>, <ore:wool>])
+	.addTool(<ore:artisansKnife>, 20)
+  .addOutput(<spartanweaponryarcana:material:1> * 2)
   .create();
 
 // Оружие обычное (Ближнее)
@@ -483,6 +461,7 @@ RecipeBuilder.get("carpenter") // Деревянный шест
   .setShaped([
     [<spartanweaponry:material:1>],
     [<ore:plankWood>]])
+  .addTool(<ore:artisansKnife>, 50)
   .addOutput(<spartanweaponry:staff>)
   .create();
 
@@ -502,14 +481,14 @@ RecipeBuilder.get("blacksmith") // Шипованный цест
     [null, <ore:blockIron>, null]])
   .addTool(<ore:artisansHammer>, 300)
   .addOutput(<spartanweaponry:caestus_studded>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("carpenter") // Деревянная дубина
   .setShaped([
     [null, <ore:plankWood>],
     [<ore:plankWood>, null]])
-  .addTool(<ore:artisansKnife>, 200)
+  .addTool(<ore:artisansKnife>, 50)
   .addOutput(<spartanweaponry:club_wood>)
   .create();
 
@@ -517,9 +496,9 @@ RecipeBuilder.get("blacksmith") // Шипованная дубина
   .setShaped([
     [<ore:blockIron>],
     [<spartanweaponry:club_wood>]])
-  .addTool(<ore:artisansHammer>, 300)
+  .addTool(<ore:artisansHammer>, 75)
   .addOutput(<spartanweaponry:club_studded>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 // Оружие магическое (Ближнее)
@@ -545,7 +524,7 @@ RecipeBuilder.get("blacksmith") // Железные стрелы
     [<ore:stickWood>],
     [<ore:feather>]])
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<spartanweaponry:arrow_iron> * 4)
+  .addOutput(<spartanweaponry:arrow_iron> * 16)
   .create();
 
 RecipeBuilder.get("jeweler") // Алмазные стрелы
@@ -555,15 +534,15 @@ RecipeBuilder.get("jeweler") // Алмазные стрелы
     [<ore:feather>]])
   .addTool(<ore:artisansLens>, 20)
   .addTool(<ore:artisansGemCutter>, 20)
-  .addOutput(<spartanweaponry:arrow_diamond> * 4)
-  .setMinimumTier(2)
+  .addOutput(<spartanweaponry:arrow_diamond> * 16)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("basic") // Взрывные стрелы
   .setShaped([
     [<minecraft:arrow>, <spartanweaponry:material:2>]])
   .addOutput(<spartanweaponry:arrow_explosive>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("blacksmith") // Железные болты
@@ -572,7 +551,7 @@ RecipeBuilder.get("blacksmith") // Железные болты
     [null, <ore:nuggetIron>, null],
     [<ore:feather>, null, null]])
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<spartanweaponry:bolt> * 4)
+  .addOutput(<spartanweaponry:bolt> * 16)
   .create();
 
 RecipeBuilder.get("jeweler") // Алмазные болты
@@ -582,8 +561,8 @@ RecipeBuilder.get("jeweler") // Алмазные болты
     [<ore:feather>, null, null]])
   .addTool(<ore:artisansLens>, 20)
   .addTool(<ore:artisansGemCutter>, 20)
-  .addOutput(<spartanweaponry:bolt> * 4)
-  .setMinimumTier(2)
+  .addOutput(<spartanweaponry:bolt> * 16)
+  .setMinimumTier(1)
   .create();
 
 // Колчаны для стрел
@@ -614,7 +593,7 @@ RecipeBuilder.get("tanner") // Колчан для стрел (большой)
   .addTool(<ore:artisansCutters>, 200)
   .addTool(<ore:artisansGemCutter>, 300)
   .addOutput(<spartanweaponry:quiver_arrow_heavy>.withTag({}))
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 // Колчаны для болтов
@@ -645,5 +624,5 @@ RecipeBuilder.get("tanner") // Колчан для болтов (большой)
   .addTool(<ore:artisansCutters>, 200)
   .addTool(<ore:artisansGemCutter>, 300)
   .addOutput(<spartanweaponry:quiver_bolt_heavy>.withTag({}))
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();

@@ -210,7 +210,7 @@ RecipeBuilder.get("blacksmith")
     [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
     [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
     [null, <minecraft:iron_ingot>, null]])
-  .addTool(<ore:artisansCutters>, 5)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<bewitchment:goblet>)
   .create();
 
