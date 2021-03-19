@@ -40,7 +40,7 @@ RecipeBuilder.get("engineer")
     [null, <better_diving:creepvine>, null],
     [<better_diving:creepvine>, <better_diving:creepvine>, <better_diving:creepvine>]])
   .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<better_diving:fiber_mesh> * 4)
+  .addOutput(<better_diving:fiber_mesh> * 2)
   .setExtraOutputOne(<better_diving:lubricant> * 3, 0.1)
   .setExtraOutputTwo(<better_diving:lubricant>, 0.5)
   .create();
@@ -50,7 +50,7 @@ RecipeBuilder.get("engineer")
     [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>],
     [<better_diving:lubricant>, <better_diving:lubricant>, <better_diving:lubricant>],
     [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>]])
-  .addOutput(<better_diving:silicone_rubber> * 6)
+  .addOutput(<better_diving:silicone_rubber> * 3)
   .create();
   
 RecipeBuilder.get("engineer")

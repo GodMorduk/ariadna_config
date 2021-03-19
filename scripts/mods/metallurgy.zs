@@ -2,12 +2,13 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 recipes.removeByMod("metallurgy");
 
-RecipeBuilder.get("basic")
+RecipeBuilder.get("chemist")
   .setShaped([
     [<metallurgy:potash>, <metallurgy:potash>, <metallurgy:potash>],
     [<thermalfoundation:material:771>, <thermalfoundation:material>, <thermalfoundation:material:771>],
     [<thermalfoundation:material:771>, <thermalfoundation:material>, <thermalfoundation:material:771>]])
   .addOutput(<metallurgy:thermite_dust>)
+  .addTool(<ore:artisansMortar>, 5);
   .setExtraOutputOne(<metallurgy:potash>, 0.05)
   .setExtraOutputTwo(<thermalfoundation:material>, 0.05)
   .setExtraOutputThree(<thermalfoundation:material:771>, 0.05)
@@ -18,6 +19,7 @@ RecipeBuilder.get("basic")
     [<metallurgy:bitumen>, <metallurgy:bitumen>, <metallurgy:bitumen>],
     [<metallurgy:bitumen>, <metallurgy:bitumen>, <metallurgy:bitumen>],
     [<metallurgy:bitumen>, <metallurgy:bitumen>, <metallurgy:bitumen>]])
+  .addTool(<ore:artisansSifter>, 5)
   .addOutput(<metallurgy:road_block> * 16)
   .create();
   
@@ -26,6 +28,7 @@ RecipeBuilder.get("basic")
     [<ore:dustBitumen>, <ore:dyeWhite>, <ore:dustBitumen>],
     [<ore:dustBitumen>, <ore:dyeWhite>, <ore:dustBitumen>],
     [<ore:dustBitumen>, <ore:dyeWhite>, <ore:dustBitumen>]])
+  .addTool(<ore:artisansSifter>, 5)
   .addOutput(<metallurgy:striped_road_block> * 16)
   .create();
   
@@ -33,6 +36,7 @@ RecipeBuilder.get("basic")
   .setShaped([
     [<ore:dustBitumen>, <ore:dustBitumen>],
     [<ore:dustBitumen>, <ore:dustBitumen>]])
+  .addTool(<ore:artisansSifter>, 5)
   .addOutput(<metallurgy:bitumen_block>)
   .create();
   
@@ -86,23 +90,25 @@ RecipeBuilder.get("basic")
   .setExtraOutputTwo(<metallurgy:phosphorus>, 0.1)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [<metallurgy:vulcanite_ingot>, <metallurgy:vulcanite_ingot>],
     [null, <minecraft:flint>],
     [<minecraft:flint>, null]])
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<metallurgy:flint_and_vulcanite>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [<metallurgy:ignatius_ingot>, <metallurgy:ignatius_ingot>],
     [null, <minecraft:flint>],
     [<minecraft:flint>, null]])
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<metallurgy:flint_and_ignatius>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotBronze>, <ore:ingotAngmallen>, null],
     [<ore:ingotAngmallen>, <ore:ingotBronze>, <ore:ingotAngmallen>],

@@ -311,20 +311,21 @@ for weapon in weapons {
 
 // Материалы и стафф
 
-RecipeBuilder.get("basic") // Взрывные заряды
+RecipeBuilder.get("chemist") // Взрывные заряды
   .setShaped([
     [<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>],
     [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
     [<ore:gunpowder>, <ore:gunpowder>, <ore:gunpowder>]])
-  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
   .addOutput(<spartanweaponry:material:2> * 4)
   .create();
 
-RecipeBuilder.get("basic") // Динамит
+RecipeBuilder.get("chemist") // Динамит
   .setShaped([
     [null, null, <ore:string>],
     [null, <spartanweaponry:material:2>, null],
     [<spartanweaponry:material:2>, null, null]])
+  .addTool(<ore:artisansBeaker>, 5)
   .addOutput(<spartanweaponry:dynamite>)
   .setExtraOutputOne(<minecraft:gunpowder> * 2, 0.1)
   .setExtraOutputTwo(<minecraft:gunpowder>, 0.2)
@@ -509,7 +510,7 @@ RecipeBuilder.get("blacksmith") // Шипованная дубина
 
 // Стрелы и болты
 
-RecipeBuilder.get("basic") // Деревянные стрелы
+RecipeBuilder.get("carpenter") // Деревянные стрелы
   .setShaped([
     [<ore:plankWood>],
     [<ore:stickWood>],
