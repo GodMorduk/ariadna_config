@@ -1,6 +1,4 @@
 //фиксы свойств материалов
-val stone = <ticmat:stone>;
-stone.bowDrawSpeed = 1.5;
 
 val osgloglas = <ticmat:osgloglas>;
 osgloglas.attackHead = 7.5;
@@ -13,15 +11,6 @@ infuscolium.miningSpeedHead = 14.5;
 
 val quicksilver = <ticmat:quicksilver>;
 quicksilver.miningSpeedHead = 8.5;
-
-val pink_slime = <ticmat:integrationforegoing.pink_slime>;
-pink_slime.bowDrawSpeed = 1.4;
-
-val reinforced_pink_slime = <ticmat:integrationforegoing.reinforced_pink_slime>;
-reinforced_pink_slime.bowDrawSpeed = 1.3;
-
-val plastic = <ticmat:integrationforegoing.plastic>;
-plastic.bowDrawSpeed = 1.4;
 
 val air_thaumium = <ticmat:aer_thaumium>;
 air_thaumium.miningSpeedHead = 9;

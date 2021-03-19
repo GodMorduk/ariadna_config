@@ -94,9 +94,9 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
 
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");//Алтарь 2-го тира	
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <astralsorcery:blockaltar:1>, 200, 200, [
-<avaritia:resource>, 
+<minecraft:diamond_block>, 
 <astralsorcery:itemrockcrystalsimple>, 
-<avaritia:resource>,
+<minecraft:diamond_block>,
 <astralsorcery:blockworldilluminator>, 
 <astralsorcery:itemskyresonator>.withTag({astralsorcery: {}}),
 <astralsorcery:blockworldilluminator>,
@@ -125,9 +125,9 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/al
 	<astralsorcery:itemcraftingcomponent>, 
 	<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 	<astralsorcery:itemcraftingcomponent>,
-	<avaritia:resource>, 
+	<minecraft:diamond_block>, 
 	<astralsorcery:itemcelestialcrystal>, 
-	<avaritia:resource>,
+	<minecraft:diamond_block>,
 	<astralsorcery:blockmarble:2>, 
 	<astralsorcery:itemcraftingcomponent:1>, 
 	<astralsorcery:blockmarble:2>,
@@ -151,8 +151,8 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/al
 	<astralsorcery:itemrockcrystalsimple>,
 	<astralsorcery:itemcraftingcomponent:2>, 
 	<astralsorcery:itemcraftingcomponent:2>, 
-	<avaritia:resource>, 
-	<avaritia:resource>
+	<minecraft:diamond_block>, 
+	<minecraft:diamond_block>
 ]);
 
 
@@ -165,7 +165,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 	<astralsorcery:itemperkseal>, 
 	<astralsorcery:blockstarlightinfuser>,
 	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}), 
-	<avaritia:double_compressed_crafting_table>, 
+	<minecraft:crafting_table>, 
 	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}),
 	<metallurgy:astral_silver_block>, 
 	<metallurgy:astral_silver_block>, 

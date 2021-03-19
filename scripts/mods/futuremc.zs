@@ -26,7 +26,7 @@ mods.futuremc.SmithingTable.removeRecipe(<minecraft:diamond_pickaxe>, <futuremc:
 
 mods.futuremc.SmithingTable.addRecipe(<tconstruct:pickaxe>.withTag({TinkerData: {Materials:["iron", "iron", "iron"]}}), <futuremc:netherite_ingot>, <futuremc:netherite_pickaxe>);
 
-mods.futuremc.SmithingTable.addRecipe(<tconstruct:kama>.withTag({TinkerData: {Materials:["iron", "iron", "iron"]}}), <futuremc:netherite_ingot>, <futuremc:netherite_hoe>);
+mods.futuremc.SmithingTable.addRecipe(<minecraft:diamond_hoe>.withTag({TinkerData: {Materials:["iron", "iron", "iron"]}}), <futuremc:netherite_ingot>, <futuremc:netherite_hoe>);
 
 mods.futuremc.SmithingTable.addRecipe(<tconstruct:shovel>.withTag({TinkerData: {Materials:["iron", "iron", "iron"]}}), <futuremc:netherite_ingot>, <futuremc:netherite_shovel>);
 

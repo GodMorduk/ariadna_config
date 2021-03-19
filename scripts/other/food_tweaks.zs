@@ -91,8 +91,6 @@ Tweaker.changeFoodStats(<atum:camel_raw>, FoodInfo(3, 0.4, true, false));
 Tweaker.changeFoodStats(<atum:crunchy_golden_scarab>, FoodInfo(3, 0.4, true, false));
 Tweaker.changeFoodStats(<atum:crunchy_scarab>, FoodInfo(2, 0.2, true, false));
 Tweaker.changeFoodStats(<atum:emmer_bread>, FoodInfo(4, 0.6, true, false));
-Tweaker.changeFoodStats(<avaritia:cosmic_meatballs>, FoodInfo(18, 2.4, true, false));
-Tweaker.changeFoodStats(<avaritia:ultimate_stew>, FoodInfo(18, 2.4, true, false));
 Tweaker.changeFoodStats(<bewitchment:garlic_bread>, FoodInfo(5, 0.7, true, false));
 Tweaker.changeFoodStats(<bewitchment:garlic>, FoodInfo(1, 0.2, true, false));
 Tweaker.changeFoodStats(<bewitchment:garlic_grilled>, FoodInfo(2, 0.3, true, false));
