@@ -8,7 +8,7 @@ RecipeBuilder.get("chemist")
     [<thermalfoundation:material:771>, <thermalfoundation:material>, <thermalfoundation:material:771>],
     [<thermalfoundation:material:771>, <thermalfoundation:material>, <thermalfoundation:material:771>]])
   .addOutput(<metallurgy:thermite_dust>)
-  .addTool(<ore:artisansMortar>, 5);
+  .addTool(<ore:artisansMortar>, 5)
   .setExtraOutputOne(<metallurgy:potash>, 0.05)
   .setExtraOutputTwo(<thermalfoundation:material>, 0.05)
   .setExtraOutputThree(<thermalfoundation:material:771>, 0.05)

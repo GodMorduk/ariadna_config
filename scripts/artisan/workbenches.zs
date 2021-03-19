@@ -65,7 +65,7 @@ RecipeBuilder.get("chef")
     [<cookingforblockheads:counter>, <cookingforblockheads:oven>, <cookingforblockheads:sink>],
     [<cookingforblockheads:fridge>, <artisanworktables:workstation:11>, <cookingforblockheads:toaster>],
     [<cookingforblockheads:fridge>, <cookingforblockheads:recipe_book:2>, <cuisine:drinkro>]])
-  .setSecondaryIngredients([<artisanworktables:artisans_cutting_board_steel>, <artisanworktables:artisans_beaker_silver>, <artisanworktables:artisans_burner_constantan>, <artisanworktables:artisans_sifter_bronze>, <artisanworktables:artisans_shears_invzr>])
+  .setSecondaryIngredients([<artisanworktables:artisans_cutting_board_steel>, <artisanworktables:artisans_beaker_silver>, <artisanworktables:artisans_burner_constantan>, <artisanworktables:artisans_sifter_bronze>, <artisanworktables:artisans_shears_invar>])
   .addTool(<ore:artisansFramingHammer>, 600)
   .addTool(<ore:artisansDriver>, 600)
   .addOutput(<artisanworktables:workshop:11>)
