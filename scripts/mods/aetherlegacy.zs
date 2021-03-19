@@ -62,13 +62,6 @@ recipes.addShaped("zaniteglovescraft", <aether_legacy:zanite_gloves>, [
 	[null, null, null]
 ]);
 
-recipes.removeByRecipeName("aether_legacy:valkyrie_gloves"); // Удаление перчаток валькирии
-recipes.addShaped("valkyrieglovescraft", <aether_legacy:valkyrie_gloves>, [
-	[null, null, null], 
-	[<ore:blockValkyrie>, null, <ore:blockValkyrie>], 
-	[null, null, null]
-]);
-
 recipes.removeByRecipeName("aether_legacy:iron_ring"); // Удаление железного кольца
 
 recipes.removeByRecipeName("aether_legacy:golden_ring"); // Удаление золотого кольца
