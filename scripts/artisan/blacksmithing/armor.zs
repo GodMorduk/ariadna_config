@@ -171,7 +171,7 @@ for boot in tier2_boots {
 		[ingot, null, ingot],
 		[block, null, block]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(boot)
 	  .create();
 }
@@ -190,7 +190,7 @@ for boot in tier3_boots {
 		[ingot, null, ingot],
 		[block, null, block]])
 	  .addTool(<ore:artisansHammer>, 250)
-	  .addTool(<ore:artisansBurner>, 250)
+	  .addTool(<ore:artisansPunch>, 250)
 	  .addTool(<ore:artisansPliers>, 250)
 	  .addOutput(boot)
 	  .create();
@@ -230,7 +230,7 @@ for chestplate in tier2_chestplate {
 		[block, ingot, block],
 		[block, block, block]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(chestplate)
 	  .create();
 }
@@ -250,7 +250,7 @@ for chestplate in tier3_chestplate {
 		[block, ingot, block],
 		[block, block, block]])
 	  .addTool(<ore:artisansHammer>, 250)
-	  .addTool(<ore:artisansBurner>, 250)
+	  .addTool(<ore:artisansPunch>, 250)
 	  .addTool(<ore:artisansPliers>, 250)
 	  .addOutput(chestplate)
 	  .create();
@@ -288,7 +288,7 @@ val tier2_helmet = ["metallurgy:ceruclase_helmet", "metallurgy:electrum_helmet",
 			[block, ingot, block],
 			[ingot, null, ingot]])
 		  .addTool(<ore:artisansHammer>, 100)
-		  .addTool(<ore:artisansBurner>, 100)
+		  .addTool(<ore:artisansPunch>, 100)
 		  .addOutput(helmet)
 		  .create();
 }
@@ -307,7 +307,7 @@ val tier3_helmet = ["metallurgy:adamantine_helmet", "metallurgy:amordrine_helmet
 			[block, ingot, block],
 			[ingot, null, ingot]])
 		  .addTool(<ore:artisansHammer>, 250)
-		  .addTool(<ore:artisansBurner>, 250)
+		  .addTool(<ore:artisansPunch>, 250)
 		  .addTool(<ore:artisansPliers>, 250)
 		  .addOutput(helmet)
 		  .create();
@@ -347,7 +347,7 @@ for legging in tier2_leggings {
 		[ingot, null, ingot],
 		[ingot, null, ingot]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(legging)
 	  .create();
 }
@@ -367,7 +367,7 @@ for legging in tier3_leggings {
 		[ingot, null, ingot],
 		[ingot, null, ingot]])
 	  .addTool(<ore:artisansHammer>, 250)
-	  .addTool(<ore:artisansBurner>, 250)
+	  .addTool(<ore:artisansPunch>, 250)
 	  .addTool(<ore:artisansPliers>, 250)
 	  .addOutput(legging)
 	  .create();
@@ -423,7 +423,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotColdIron>, null, <ore:ingotColdIron>],
     [<ore:blockColdIron>, null, <ore:blockColdIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_boots>)
   .create();
   
@@ -443,7 +443,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockColdIron>, <ore:ingotColdIron>, <ore:blockColdIron>],
     [<ore:blockColdIron>, <ore:blockColdIron>, <ore:blockColdIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_chestplate>)
   .create();
 
@@ -452,7 +452,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockColdIron>, <ore:ingotColdIron>, <ore:blockColdIron>],
     [<ore:ingotColdIron>, null, <ore:ingotColdIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_helmet>)
   .create();
 
@@ -464,7 +464,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotAstralSilver>, null, <ore:ingotAstralSilver>],
     [<ore:blockAstralSilver>, null, <ore:blockAstralSilver>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:astral_silver_boots>)
   .create();
   
@@ -474,7 +474,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotAstralSilver>, null, <ore:ingotAstralSilver>],
     [<ore:ingotAstralSilver>, null, <ore:ingotAstralSilver>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:astral_silver_leggings>)
   .create();
  
@@ -484,7 +484,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockAstralSilver>, <ore:ingotAstralSilver>, <ore:blockAstralSilver>],
     [<ore:blockAstralSilver>, <ore:blockAstralSilver>, <ore:blockAstralSilver>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:astral_silver_chestplate>)
   .create();
 
@@ -493,7 +493,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockAstralSilver>, <ore:ingotAstralSilver>, <ore:blockAstralSilver>],
     [<ore:ingotAstralSilver>, null, <ore:ingotAstralSilver>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:astral_silver_helmet>)
   .create();
   
@@ -504,7 +504,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotShadowIron>, null, <ore:ingotShadowIron>],
     [<ore:blockShadowIron>, null, <ore:blockShadowIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:shadow_iron_boots>)
   .create();
   
@@ -514,7 +514,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotShadowIron>, null, <ore:ingotShadowIron>],
     [<ore:ingotShadowIron>, null, <ore:ingotShadowIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:shadow_iron_leggings>)
   .create();
  
@@ -524,7 +524,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockShadowIron>, <ore:ingotShadowIron>, <ore:blockShadowIron>],
     [<ore:blockShadowIron>, <ore:blockShadowIron>, <ore:blockShadowIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:shadow_iron_chestplate>)
   .create();
 
@@ -533,7 +533,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockShadowIron>, <ore:ingotShadowIron>, <ore:blockShadowIron>],
     [<ore:ingotShadowIron>, null, <ore:ingotShadowIron>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<metallurgy:shadow_iron_helmet>)
   .create();
   
@@ -653,7 +653,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockDiamond>, null, <ore:blockDiamond>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<minecraft:diamond_boots>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
   
 RecipeBuilder.get("jeweler")
@@ -663,7 +663,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemDiamond>, null, <ore:gemDiamond>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<minecraft:diamond_leggings>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
  
 RecipeBuilder.get("jeweler")
@@ -673,7 +673,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockDiamond>, <ore:blockDiamond>, <ore:blockDiamond>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<minecraft:diamond_chestplate>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("jeweler")
@@ -682,7 +682,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemDiamond>, null, <ore:gemDiamond>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<minecraft:diamond_helmet>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
  
 // Gravitite Gem Set
@@ -693,7 +693,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockGravitite>, null, <ore:blockGravitite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<aether_legacy:gravitite_boots>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
   
 RecipeBuilder.get("jeweler")
@@ -703,7 +703,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemGravitite>, null, <ore:gemGravitite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<aether_legacy:gravitite_leggings>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
  
 RecipeBuilder.get("jeweler")
@@ -713,7 +713,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockGravitite>, <ore:blockGravitite>, <ore:blockGravitite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<aether_legacy:gravitite_chestplate>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("jeweler")
@@ -722,7 +722,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemGravitite>, null, <ore:gemGravitite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<aether_legacy:gravitite_helmet>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 // Valonite Gem Set
@@ -733,7 +733,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockValonite>, null, <ore:blockValonite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<thebetweenlands:valonite_boots>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
   
 RecipeBuilder.get("jeweler")
@@ -743,7 +743,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemValonite>, null, <ore:gemValonite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<thebetweenlands:valonite_leggings>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
  
 RecipeBuilder.get("jeweler")
@@ -753,7 +753,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<thebetweenlands:valonite_chestplate>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("jeweler")
@@ -762,7 +762,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemValonite>, null, <ore:gemValonite>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<thebetweenlands:valonite_helmet>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 // Jade Gem Set
@@ -773,7 +773,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockJade>, null, <ore:blockJade>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<erebus:jade_boots>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
   
 RecipeBuilder.get("jeweler")
@@ -783,7 +783,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemJade>, null, <ore:gemJade>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<erebus:jade_leggings>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
  
 RecipeBuilder.get("jeweler")
@@ -793,7 +793,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockJade>, <ore:blockJade>, <ore:blockJade>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<erebus:jade_chestplate>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 RecipeBuilder.get("jeweler")
@@ -802,7 +802,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemJade>, null, <ore:gemJade>]])
   .addTool(<ore:artisansGemCutter>, 500)
   .addOutput(<erebus:jade_helmet>)
-  .setMinimumTier(2)
+  .setMinimumTier(1)
   .create();
 
 // Ironwood set
@@ -812,7 +812,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotIronwood>, null, <ore:ingotIronwood>],
     [<ore:blockIronwood>, null, <ore:blockIronwood>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_boots>.withTag({ench: [{lvl: 1 as short, id: 2}]}))
   .create();
   
@@ -822,7 +822,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotIronwood>, null, <ore:ingotIronwood>],
     [<ore:ingotIronwood>, null, <ore:ingotIronwood>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_leggings>.withTag({ench: [{lvl: 1 as short, id: 0}]}))
   .create();
  
@@ -832,7 +832,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockIronwood>, <ore:ingotIronwood>, <ore:blockIronwood>],
     [<ore:blockIronwood>, <ore:blockIronwood>, <ore:blockIronwood>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_chestplate>.withTag({ench: [{lvl: 1 as short, id: 0}]}))
   .create();
 
@@ -841,7 +841,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockIronwood>, <ore:ingotIronwood>, <ore:blockIronwood>],
     [<ore:ingotIronwood>, null, <ore:ingotIronwood>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_helmet>.withTag({ench: [{lvl: 1 as short, id: 6}]}))
   .create();
   
@@ -849,82 +849,81 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:ingotSteel>, null, <ore:ingotSteel>],
-    [<ore:blockSteel>, null, <ore:blockSteel>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
-  .addOutput(<immersiveengineering:steel_armor_head>)
-  .create();
-  
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
-    [<ore:ingotSteel>, null, <ore:ingotSteel>],
+    [<ore:blockSteel>, <ore:ingotSteel>, <ore:blockSteel>],
     [<ore:ingotSteel>, null, <ore:ingotSteel>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
-  .addOutput(<immersiveengineering:steel_armor_chest>)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<immersiveengineering:steel_armor_head>)
   .create();
- 
+
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotSteel>, null, <ore:ingotSteel>],
     [<ore:blockSteel>, <ore:ingotSteel>, <ore:blockSteel>],
     [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<immersiveengineering:steel_armor_chest>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
+    [<ore:ingotSteel>, null, <ore:ingotSteel>],
+    [<ore:ingotSteel>, null, <ore:ingotSteel>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<immersiveengineering:steel_armor_legs>)
   .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:blockSteel>, <ore:ingotSteel>, <ore:blockSteel>],
-    [<ore:ingotSteel>, null, <ore:ingotSteel>]])
+    [<ore:ingotSteel>, null, <ore:ingotSteel>],
+    [<ore:blockSteel>, null, <ore:blockSteel>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<immersiveengineering:steel_armor_feet>)
   .create();
-  
-  
+
+
 // Faraday set
 
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:ingotAluminum>, null, <ore:ingotAluminum>],
-    [<ore:blockAluminum>, null, <ore:blockAluminum>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
-  .addOutput(<immersiveengineering:faraday_suit_head>)
-  .create();
-  
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockAluminum>, <ore:blockAluminum>, <ore:blockAluminum>],
-    [<ore:ingotAluminum>, null, <ore:ingotAluminum>],
+    [<ore:blockAluminum>, <ore:ingotAluminum>, <ore:blockAluminum>],
     [<ore:ingotAluminum>, null, <ore:ingotAluminum>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
-  .addOutput(<immersiveengineering:faraday_suit_chest>)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<immersiveengineering:faraday_suit_head>)
   .create();
- 
+
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotAluminum>, null, <ore:ingotAluminum>],
     [<ore:blockAluminum>, <ore:ingotAluminum>, <ore:blockAluminum>],
     [<ore:blockAluminum>, <ore:blockAluminum>, <ore:blockAluminum>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
-  .addOutput(<immersiveengineering:faraday_suit_legs>)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<immersiveengineering:faraday_suit_chest>)
   .create();
-
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:blockAluminum>, <ore:ingotAluminum>, <ore:blockAluminum>],
+    [<ore:blockAluminum>, <ore:blockAluminum>, <ore:blockAluminum>],
+    [<ore:ingotAluminum>, null, <ore:ingotAluminum>],
     [<ore:ingotAluminum>, null, <ore:ingotAluminum>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<immersiveengineering:faraday_suit_legs>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotAluminum>, null, <ore:ingotAluminum>],
+    [<ore:blockAluminum>, null, <ore:blockAluminum>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<immersiveengineering:faraday_suit_feet>)
   .create();
 
@@ -1196,8 +1195,8 @@ RecipeBuilder.get("tanner")
   .setShaped([
     [<twilightforest:arctic_fur>, null, <twilightforest:arctic_fur>],
     [<twilightforest:block_storage:3>, null, <twilightforest:block_storage:3>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansGroover>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansGroover>, 100)
   .addOutput(<twilightforest:arctic_boots>)
   .create();
 
@@ -1206,8 +1205,8 @@ RecipeBuilder.get("tanner")
     [<twilightforest:block_storage:3>, <twilightforest:block_storage:3>, <twilightforest:block_storage:3>],
     [<twilightforest:arctic_fur>, null, <twilightforest:arctic_fur>],
     [<twilightforest:arctic_fur>, null, <twilightforest:arctic_fur>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansGroover>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansGroover>, 100)
   .addOutput(<twilightforest:arctic_leggings>)
   .create();
   
@@ -1215,8 +1214,8 @@ RecipeBuilder.get("tanner")
   .setShaped([
     [<twilightforest:block_storage:3>, <twilightforest:arctic_fur>, <twilightforest:block_storage:3>],
     [<twilightforest:arctic_fur>, null, <twilightforest:arctic_fur>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansGroover>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansGroover>, 100)
   .addOutput(<twilightforest:arctic_helmet>)
   .create();
   
@@ -1225,8 +1224,8 @@ RecipeBuilder.get("tanner")
     [<twilightforest:arctic_fur>, null, <twilightforest:arctic_fur>],
     [<twilightforest:block_storage:3>, <twilightforest:arctic_fur>, <twilightforest:block_storage:3>],
     [<twilightforest:block_storage:3>, <twilightforest:block_storage:3>, <twilightforest:block_storage:3>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansGroover>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansGroover>, 100)
   .addOutput(<twilightforest:arctic_chestplate>)
   .create();
 
@@ -1236,8 +1235,8 @@ RecipeBuilder.get("tanner")
   .setShaped([
     [<ore:ingotIron>, null, <ore:ingotIron>],
     [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansNeedle>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansNeedle>, 100)
   .addOutput(<harvestcraft:hardenedleatherbootsitem>)
   .create();
   
@@ -1246,8 +1245,8 @@ RecipeBuilder.get("tanner")
     [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>],
     [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>],
     [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansNeedle>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansNeedle>, 100)
   .addOutput(<harvestcraft:hardenedleatherleggingsitem>)
   .create();
   
@@ -1255,8 +1254,8 @@ RecipeBuilder.get("tanner")
   .setShaped([
     [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>],
     [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansNeedle>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansNeedle>, 100)
   .addOutput(<harvestcraft:hardenedleatherhelmitem>)
   .create();
   
@@ -1265,7 +1264,7 @@ RecipeBuilder.get("tanner")
     [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>],
     [<harvestcraft:hardenedleatheritem>, <ore:ingotIron>, <harvestcraft:hardenedleatheritem>],
     [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>]])
-  .addTool(<ore:artisansPunch>, 1)
-  .addTool(<ore:artisansNeedle>, 1)
+  .addTool(<ore:artisansPunch>, 100)
+  .addTool(<ore:artisansNeedle>, 100)
   .addOutput(<harvestcraft:hardenedleatherchestitem>)
   .create();

@@ -290,7 +290,7 @@ for sword in swords_2_tier {
 		[block, block, block],
 		[null, <spartanweaponry:material>, null]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(sword)
 	  .create();
 }

@@ -63,7 +63,7 @@ RecipeBuilder.get("blacksmith") // Цинцианитовая кирка
     [null, <betternether:nether_reed>, null],
     [null, <betternether:nether_reed>, null]])
   .addTool(<ore:artisansHammer>, 150)
-  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansPunch>, 150)
   .addOutput(<betternether:cincinnasite_pickaxe>)
   .create();
 
@@ -82,7 +82,7 @@ RecipeBuilder.get("blacksmith") // Цинцианитовый топор
     [<betternether:cincinnasite_block>, <betternether:nether_reed>],
     [null, <betternether:nether_reed>]])
   .addTool(<ore:artisansHammer>, 150)
-  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansPunch>, 150)
   .addOutput(<betternether:cincinnasite_axe>)
   .create();
 
@@ -99,30 +99,30 @@ RecipeBuilder.get("jeweler") // Цинцианитовый алмазный то
 RecipeBuilder.get("blacksmith") // Топор из холодного железа
   .setShaped([
     [<ore:blockColdIron>, <ore:blockColdIron>],
-    [<ore:blockColdIron>, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [<ore:blockColdIron>, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_axe>)
   .create();
 
 RecipeBuilder.get("blacksmith") // Мотыга из холодного железа
   .setShaped([
     [<ore:blockColdIron>, <ore:blockColdIron>],
-    [null, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [null, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_hoe>)
   .create();
 
 RecipeBuilder.get("blacksmith") // Кирка из холодного железа
   .setShaped([
     [<ore:blockColdIron>, <ore:blockColdIron>, <ore:blockColdIron>],
-    [null, <ore:stickWood>, null],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null],
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_pickaxe>)
   .create();
 
@@ -130,9 +130,9 @@ RecipeBuilder.get("blacksmith") // Лопата из холодного желе
   .setShaped([
     [<ore:blockColdIron>],
     [<ore:blockColdIron>],
-    [<ore:stickWood>]])
+    [<spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<bewitchment:cold_iron_shovel>)
   .create();
 
@@ -142,7 +142,7 @@ RecipeBuilder.get("blacksmith") // Октиновый топор
     [<thebetweenlands:octine_block>, <thebetweenlands:items_misc:20>],
     [null, <thebetweenlands:items_misc:20>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<thebetweenlands:octine_axe>)
   .create();
 
@@ -152,7 +152,7 @@ RecipeBuilder.get("blacksmith") // Октиновая кирка
     [null, <thebetweenlands:items_misc:20>, null],
     [null, <thebetweenlands:items_misc:20>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<thebetweenlands:octine_pickaxe>)
   .create();
 
@@ -162,37 +162,37 @@ RecipeBuilder.get("blacksmith") // Октиновая лопата
     [<ore:blockOctine>],
     [<thebetweenlands:items_misc:20>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<thebetweenlands:octine_pickaxe>)
   .create();
 
 RecipeBuilder.get("blacksmith") // Золотитовая мотыга
   .setShaped([
     [<embers:block_dawnstone>, <embers:block_dawnstone>],
-    [null, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [null, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<embers:hoe_dawnstone>)
   .create();
 
 RecipeBuilder.get("blacksmith") // Золотитовая кирка
   .setShaped([
     [<embers:block_dawnstone>, <embers:block_dawnstone>, <embers:block_dawnstone>],
-    [null, <ore:stickWood>, null],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null],
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<embers:pickaxe_dawnstone>)
   .create();
 
 RecipeBuilder.get("blacksmith") // Золотитовый топор
   .setShaped([
     [<embers:block_dawnstone>, <embers:block_dawnstone>],
-    [<embers:block_dawnstone>, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [<embers:block_dawnstone>, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<embers:axe_dawnstone>)
   .create();
 
@@ -200,9 +200,9 @@ RecipeBuilder.get("blacksmith") // Золотитовая лопата
   .setShaped([
     [<embers:block_dawnstone>],
     [<embers:block_dawnstone>],
-    [<ore:stickWood>]])
+    [<spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<embers:shovel_dawnstone>)
   .create();
 
@@ -251,38 +251,38 @@ RecipeBuilder.get("blacksmith") // Железнодревесная лопата
   .setShaped([
     [<twilightforest:block_storage>],
     [<twilightforest:block_storage>],
-    [<ore:stickWood>]])
+    [<spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_shovel>.withTag({ench: [{lvl: 1 as short, id: 34}]}))
   .create();
 
 RecipeBuilder.get("blacksmith") // Железнодревесная кирка
   .setShaped([
     [<twilightforest:block_storage>, <twilightforest:block_storage>, <twilightforest:block_storage>],
-    [null, <ore:stickWood>, null],
-    [null, <ore:stickWood>, null]])
+    [null, <spartanweaponry:material>, null],
+    [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32}]}))
   .create();
 
 RecipeBuilder.get("blacksmith") // Железнодревесный топор
   .setShaped([
     [<twilightforest:block_storage>, <twilightforest:block_storage>],
-    [<twilightforest:block_storage>, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [<twilightforest:block_storage>, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_axe>.withTag({ench: [{lvl: 1 as short, id: 35}]}))
   .create();
 
 RecipeBuilder.get("blacksmith") // Железнодревесная мотыга
   .setShaped([
     [<twilightforest:block_storage>, <twilightforest:block_storage>],
-    [null, <ore:stickWood>],
-    [null, <ore:stickWood>]])
+    [null, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<twilightforest:ironwood_hoe>)
   .create();

@@ -80,7 +80,7 @@ recipes.removeByRecipeName("twilightforest:equipment/knightmetal_shield");
 recipes.removeByRecipeName("thebetweenlands:living_weedwood_shield");
 recipes.removeByRecipeName("aether_legacy:shield_from_skyroot");
 
-RecipeBuilder.get("basic")
+RecipeBuilder.get("carpenter")
   .setShaped([
 	[<ore:logWood>, null, <ore:logWood>], 
 	[<ore:logWood>, <ore:stickWood>, <ore:logWood>], 
@@ -90,7 +90,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_basic_wood>)
   .create();
 
-RecipeBuilder.get("basic")
+RecipeBuilder.get("carpenter")
   .setShaped([
 	[null, <ore:obsidian>, null], 
 	[<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], 
@@ -100,7 +100,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_tower_wood>)
   .create();
 
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mason")
   .setShaped([
 	[null, <ore:obsidian>, null], 
 	[<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], 
@@ -110,7 +110,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_tower_obsidian>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mason")
   .setShaped([
 	[null, <ore:cobblestone>, null], 
 	[<ore:cobblestone>, <spartanshields:shield_tower_wood>, <ore:cobblestone>], 
@@ -120,7 +120,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_tower_stone>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mason")
   .setShaped([
 	[null, <ore:cobblestone>, null], 
 	[<ore:cobblestone>, <spartanshields:shield_basic_wood>, <ore:cobblestone>], 
@@ -130,7 +130,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_basic_stone>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mason")
   .setShaped([
 	[null, <ore:obsidian>, null], 
 	[<ore:obsidian>, <spartanshields:shield_basic_wood>, <ore:obsidian>], 
@@ -140,7 +140,7 @@ RecipeBuilder.get("basic")
   .addOutput(<spartanshields:shield_basic_obsidian>)
   .create();
   
-RecipeBuilder.get("basic")
+RecipeBuilder.get("mason")
   .setShaped([
 	[null, <abyssalcraft:cobblestone>, null], 
 	[<abyssalcraft:cobblestone>, <spartanshields:shield_basic_wood>, <abyssalcraft:cobblestone>], 
@@ -158,7 +158,7 @@ RecipeBuilder.get("blacksmith")
 	[<botania:storage>, <botania:manaresource:3>, <botania:storage>], 
 	[null, <botania:rune:8>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<spartanshields:shield_botania_manasteel>)
   .create();
   
@@ -168,7 +168,7 @@ RecipeBuilder.get("blacksmith")
 	[<botania:storage:2>, <botania:manaresource:13>, <botania:storage:2>], 
 	[null, <botania:rune:8>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<spartanshields:shield_botania_elementium>)
   .create();
   
@@ -178,7 +178,7 @@ RecipeBuilder.get("blacksmith")
 	[<botania:storage:1>, <botania:manaresource:3>, <botania:storage:1>], 
 	[null, <botania:rune:8>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<spartanshields:shield_botania_terrasteel>)
   .create();
 
@@ -197,7 +197,7 @@ for shield in shields_tower {
 		[block, <spartanshields:shield_tower_wood>, block],
 		[null, block, null]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(shield)
 	  .create();
 }
@@ -216,7 +216,7 @@ for shield in shields {
 		[block, <spartanshields:shield_basic_wood>, block],
 		[null, block, null]])
 	  .addTool(<ore:artisansHammer>, 100)
-	  .addTool(<ore:artisansBurner>, 100)
+	  .addTool(<ore:artisansPunch>, 100)
 	  .addOutput(shield)
 	  .create();
 }
@@ -227,6 +227,6 @@ RecipeBuilder.get("blacksmith")
 	[<ore:blockLiquifiedCoralium>, <spartanshields:shield_basic_wood>, <ore:blockLiquifiedCoralium>], 
 	[null, <ore:blockLiquifiedCoralium>, null]])
   .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansBurner>, 100)
+  .addTool(<ore:artisansPunch>, 100)
   .addOutput(<spartanshields:shield_abyssalcraft_coralium>)
   .create();

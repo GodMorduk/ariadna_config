@@ -235,21 +235,23 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:silver_arrow"); // Удаление серебрянной стрелы
-RecipeBuilder.get("mage")
+RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<bewitchment:block_of_silver>, <minecraft:stick>],
-    [<bewitchment:ravens_feather>, null]])
+    [<bewitchment:block_of_silver>],
+    [<ore:stickWood>],
+    [<bewitchment:ravens_feather>]])
   .addTool(<ore:artisansHammer>, 5)
-  .addOutput(<bewitchment:silver_arrow> * 4)
+  .addOutput(<bewitchment:silver_arrow> * 16)
   .create();
 
 recipes.removeByRecipeName("bewitchment:cold_iron_arrow"); // Удаление стрелы из холодного железа
-RecipeBuilder.get("mage")
+RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<bewitchment:block_of_cold_iron>, <minecraft:stick>],
+    [<bewitchment:block_of_cold_iron>],
+    [<ore:stickWood>],
     [<bewitchment:ravens_feather>, null]])
   .addTool(<ore:artisansHammer>, 5)
-  .addOutput(<bewitchment:cold_iron_arrow> * 4)
+  .addOutput(<bewitchment:cold_iron_arrow> * 16)
   .create();
 
 WitchesCauldron.removeRecipe(<bewitchment:phasing_chalk>); // Удаление фиолетового мелка
@@ -363,7 +365,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:embittered_brick_witches_altar"); // Удаление озлобленного алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<bewitchment:embittered_bricks>, <bewitchment:elder_wood>, <bewitchment:embittered_bricks>],
@@ -373,7 +375,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:stone_witches_altar"); // Удаление каменного алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<minecraft:stone>, <bewitchment:elder_wood>, <minecraft:stone>],
@@ -383,7 +385,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:coquina_witches_altar"); // Удаление ракушечного алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<bewitchment:coquina>, <bewitchment:elder_wood>, <bewitchment:coquina>],
@@ -393,7 +395,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:nether_brick_witches_altar"); // Удаление незеритового алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<minecraft:nether_brick>, <bewitchment:elder_wood>, <minecraft:nether_brick>],
@@ -403,7 +405,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:obsidian_witches_altar"); // Удаление обсидианового алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<minecraft:obsidian>, <bewitchment:elder_wood>, <minecraft:obsidian>],
@@ -413,7 +415,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:scorned_brick_witches_altar"); // Удаление презренного алтаря
-RecipeBuilder.get("mage")
+RecipeBuilder.get("mason")
   .setShaped([
     [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
     [<bewitchment:scorned_bricks>, <bewitchment:elder_wood>, <bewitchment:scorned_bricks>],
@@ -423,14 +425,7 @@ RecipeBuilder.get("mage")
   .create();
 
 recipes.removeByRecipeName("bewitchment:silver_plate"); // Удаление серебрянной плиты
-RecipeBuilder.get("mage")
-  .setShaped([
-    [<bewitchment:silver_ingot>, <bewitchment:silver_ingot>, <bewitchment:silver_ingot>]])
-  .addTool(<ore:artisansHammer>, 5)
-  .addOutput(<bewitchment:silver_plate> * 3)
-  .create();
-
-recipes.removeByRecipeName("bewitchment:cold_iron_plate"); // Удаление плиты из холодного железа
+recipes.removeByRecipeName("bewitchment:compat/cold_iron_plate");// Удаление плиты из холодного железа
 
 recipes.removeByRecipeName("bewitchment:cypress_planks");
 recipes.removeByRecipeName("bewitchment:elder_planks");

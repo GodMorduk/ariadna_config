@@ -442,7 +442,7 @@ RecipeBuilder.get("mage")
   .create();
   
   recipes.removeByRecipeName("abyssalcraft:dreadblade");//Удаление лезвия катаны  
-RecipeBuilder.get("mage")
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [<abyssalcraft:crystalcluster:14>, <abyssalcraft:crystalcluster:14>],
     [<abyssalcraft:crystalcluster:14>, <abyssalcraft:crystalcluster:14>],
@@ -640,7 +640,7 @@ RecipeBuilder.get("mage")
   .create();
   
   recipes.removeByRecipeName("abyssalcraft:cloth");//Удаление ткани
-RecipeBuilder.get("mage")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<minecraft:web>, <minecraft:web>, <minecraft:web>],
     [<minecraft:web>, <minecraft:wool>, <minecraft:web>],
@@ -650,22 +650,14 @@ RecipeBuilder.get("mage")
   .addOutput(<abyssalcraft:cloth>)
   .create();
 
-  recipes.removeByRecipeName("abyssalcraft:ironp");//Удаление железной пластины
-  recipes.removeByRecipeName("abyssalcraft:ironp_alt");//Удаление железной пластины
-RecipeBuilder.get("mage")
+  recipes.removeByRecipeName("abyssalcraft:ironp");//Удаление железной тарелки
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, <minecraft:iron_ingot>, null],
     [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
     [null, <minecraft:iron_ingot>, null]])
   .addTool(<ore:artisansHammer>, 25)
-  .addTool(<ore:artisansPliers>, 25)
   .addOutput(<abyssalcraft:ironp> * 2)
-  .create();
-  
-RecipeBuilder.get("mage")
-  .setShaped([
-    [<abyssalcraft:dirtyplate>, <abyssalcraft:cloth>]])
-  .addOutput(<abyssalcraft:ironp>)
   .create();
 
   recipes.removeByRecipeName("abyssalcraft:statetransformer");//Удаление трансформатора состояния
@@ -726,7 +718,7 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("abyssalcraft:coin");//Удаление монеты
   recipes.removeByRecipeName("abyssalcraft:coin_alt");//Удаление монеты
   recipes.removeByRecipeName("abyssalcraft:coin_alt_alt");//Удаление монеты
-RecipeBuilder.get("mage")
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, <minecraft:iron_ingot>, null],
     [<minecraft:iron_ingot>, <minecraft:flint>, <minecraft:iron_ingot>],
