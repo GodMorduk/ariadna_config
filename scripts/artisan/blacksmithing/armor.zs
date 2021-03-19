@@ -117,10 +117,6 @@ recipes.removeByRecipeName("thebetweenlands:valonite_boots");
 recipes.removeByRecipeName("thebetweenlands:valonite_leggings");
 recipes.removeByRecipeName("thebetweenlands:valonite_chestplate");
 
-recipes.removeByRecipeName("tcomplement:armor/knightslime_leggings");
-recipes.removeByRecipeName("tcomplement:armor/knightslime_chestplate");
-recipes.removeByRecipeName("tcomplement:armor/knightslime_helmet");
-recipes.removeByRecipeName("tcomplement:armor/knightslime_boots");
 
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_leggings");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_helmet");
@@ -136,11 +132,6 @@ recipes.removeByRecipeName("twilightforest:equipment/arctic_helmet");
 recipes.removeByRecipeName("twilightforest:equipment/arctic_leggings");
 recipes.removeByRecipeName("twilightforest:equipment/arctic_boots");
 recipes.removeByRecipeName("twilightforest:equipment/arctic_chestplate");
-
-recipes.removeByRecipeName("tcomplement:armor/manyullyn_leggings");
-recipes.removeByRecipeName("tcomplement:armor/manyullyn_helmet");
-recipes.removeByRecipeName("tcomplement:armor/manyullyn_boots");
-recipes.removeByRecipeName("tcomplement:armor/manyullyn_chestplate");
 
 recipes.removeByRecipeName("bewitchment:equipment/armor/silver_helmet");
 recipes.removeByRecipeName("bewitchment:equipment/armor/silver_boots");
@@ -185,7 +176,7 @@ for boot in tier2_boots {
 	  .create();
 }
 
-val tier3_boots = ["metallurgy:adamantine_boots", "metallurgy:amordrine_boots", "metallurgy:atlarus_boots", "metallurgy:celenegil_boots", "metallurgy:desichalkos_boots", "metallurgy:kalendrite_boots", "metallurgy:mithril_boots", "metallurgy:orichalcum_boots", "metallurgy:tartarite_boots", "metallurgy:vulcanite_boots", "tcomplement:manyullyn_boots", "aether_legacy:valkyrie_boots"] as string[];
+val tier3_boots = ["metallurgy:adamantine_boots", "metallurgy:amordrine_boots", "metallurgy:atlarus_boots", "metallurgy:celenegil_boots", "metallurgy:desichalkos_boots", "metallurgy:kalendrite_boots", "metallurgy:mithril_boots", "metallurgy:orichalcum_boots", "metallurgy:tartarite_boots", "metallurgy:vulcanite_boots", "aether_legacy:valkyrie_boots"] as string[];
 for boot in tier3_boots {
 	val material_lowercase = boot.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -244,7 +235,7 @@ for chestplate in tier2_chestplate {
 	  .create();
 }
 
-val tier3_chestplate = ["metallurgy:adamantine_chestplate", "metallurgy:amordrine_chestplate", "metallurgy:atlarus_chestplate", "metallurgy:celenegil_chestplate", "metallurgy:desichalkos_chestplate", "metallurgy:kalendrite_chestplate", "metallurgy:mithril_chestplate", "metallurgy:orichalcum_chestplate", "metallurgy:tartarite_chestplate", "metallurgy:vulcanite_chestplate", "tcomplement:manyullyn_chestplate", "aether_legacy:valkyrie_chestplate"] as string[];
+val tier3_chestplate = ["metallurgy:adamantine_chestplate", "metallurgy:amordrine_chestplate", "metallurgy:atlarus_chestplate", "metallurgy:celenegil_chestplate", "metallurgy:desichalkos_chestplate", "metallurgy:kalendrite_chestplate", "metallurgy:mithril_chestplate", "metallurgy:orichalcum_chestplate", "metallurgy:tartarite_chestplate", "metallurgy:vulcanite_chestplate", "aether_legacy:valkyrie_chestplate"] as string[];
 for chestplate in tier3_chestplate {
 	val material_lowercase = chestplate.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -302,7 +293,7 @@ val tier2_helmet = ["metallurgy:ceruclase_helmet", "metallurgy:electrum_helmet",
 		  .create();
 }
 
-val tier3_helmet = ["metallurgy:adamantine_helmet", "metallurgy:amordrine_helmet", "metallurgy:atlarus_helmet", "metallurgy:celenegil_helmet", "metallurgy:desichalkos_helmet", "metallurgy:kalendrite_helmet", "metallurgy:mithril_helmet", "metallurgy:orichalcum_helmet", "metallurgy:tartarite_helmet", "metallurgy:vulcanite_helmet", "tcomplement:manyullyn_helmet", "aether_legacy:valkyrie_helmet"] as string[];
+val tier3_helmet = ["metallurgy:adamantine_helmet", "metallurgy:amordrine_helmet", "metallurgy:atlarus_helmet", "metallurgy:celenegil_helmet", "metallurgy:desichalkos_helmet", "metallurgy:kalendrite_helmet", "metallurgy:mithril_helmet", "metallurgy:orichalcum_helmet", "metallurgy:tartarite_helmet", "metallurgy:vulcanite_helmet", "aether_legacy:valkyrie_helmet"] as string[];
 	for helmet in tier3_helmet {
 		val material_lowercase = helmet.split(":")[1].split("_")[0];
 		val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -361,7 +352,7 @@ for legging in tier2_leggings {
 	  .create();
 }
 
-val tier3_leggings = ["metallurgy:adamantine_leggings", "metallurgy:amordrine_leggings", "metallurgy:atlarus_leggings", "metallurgy:celenegil_leggings", "metallurgy:desichalkos_leggings", "metallurgy:kalendrite_leggings", "metallurgy:mithril_leggings", "metallurgy:orichalcum_leggings", "metallurgy:tartarite_leggings", "metallurgy:vulcanite_leggings", "tcomplement:manyullyn_leggings", "aether_legacy:valkyrie_leggings"] as string[];
+val tier3_leggings = ["metallurgy:adamantine_leggings", "metallurgy:amordrine_leggings", "metallurgy:atlarus_leggings", "metallurgy:celenegil_leggings", "metallurgy:desichalkos_leggings", "metallurgy:kalendrite_leggings", "metallurgy:mithril_leggings", "metallurgy:orichalcum_leggings", "metallurgy:tartarite_leggings", "metallurgy:vulcanite_leggings", "aether_legacy:valkyrie_leggings"] as string[];
 for legging in tier3_leggings {
 	val material_lowercase = legging.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -935,47 +926,6 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 100)
   .addTool(<ore:artisansBurner>, 100)
   .addOutput(<immersiveengineering:faraday_suit_feet>)
-  .create();
-
-// Knightslime set
-
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>],
-    [<ore:blockKnightslime>, null, <ore:blockKnightslime>]])
-  .addTool(<ore:artisansKnife>, 100)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<tcomplement:knightslime_boots>)
-  .create();
-  
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>],
-    [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>],
-    [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>]])
-  .addTool(<ore:artisansKnife>, 100)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<tcomplement:knightslime_leggings>)
-  .create();
- 
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>],
-    [<ore:blockKnightslime>, <ore:ingotKnightslime>, <ore:blockKnightslime>],
-    [<ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>]])
-  .addTool(<ore:artisansKnife>, 100)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<tcomplement:knightslime_chestplate>)
-  .create();
-
-
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockKnightslime>, <ore:ingotKnightslime>, <ore:blockKnightslime>],
-    [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>]])
-  .addTool(<ore:artisansKnife>, 100)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<tcomplement:knightslime_helmet>)
   .create();
 
 
