@@ -46,7 +46,6 @@
 	    {"data": {"name": "thaumcraft:module", "level": 3}, "weight": 10},
 		{"data": {"name": "thaumcraft:module", "meta": 1, "level": 3}, "weight": 10},
 		{"data": {"name": "thaumcraft:plate", "meta": 2, "level": 3}, "weight": 10},
-		{"data": {"name": "thaumcraft:loot_bag", "meta": 1, "level": 3}, "weight": 100,
 	    {"data": {"name": "thaumcraft:mind", "level": 3}, "weight": 10},
 	    {"data": {"name": "thaumcraft:module", "level": 3}, "weight": 10},
 		{"data": {"name": "thaumcraft:module", "meta": 1, "level": 3}, "weight": 10},
