@@ -12,7 +12,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 10,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -118,7 +118,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 5,
+			"chance": 10,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -356,44 +356,6 @@
 				17
 			],
 			"density": 0.02
-		},
-		{
-			"blocks": [
-				"aetherworks:aether_ore",
-				100
-			],
-			"samples": [
-				"simpleoresamples:sampleblockaether",
-				25,
-				"minecraft:air",
-				75
-			],
-			"yMin": 1,
-			"yMax": 20,
-			"chance": 10,
-			"size": 20,
-			"dimBlacklist": [
-				1,
-				50,
-				51,
-				52,
-				53,
-				-1,
-				37,
-				66,
-				28885,
-				111,
-				14676,
-				10,
-				4,
-				7,
-				17
-			],
-			"density": 0.1,
-			"biomes": [
-				"MOUNTAIN", "HILLS"
-			],
-			"isWhitelist": true
 		},
 		{
 			"blocks": [
@@ -1010,7 +972,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 20,
+			"chance": 7,
 			"size": 150,
 			"dimBlacklist": [
 				1,
@@ -2558,7 +2520,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 30,
+			"chance": 15,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -3072,7 +3034,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 10,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -3144,7 +3106,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 7,
+			"chance": 12,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -3250,7 +3212,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 10,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -3466,7 +3428,7 @@
 			],
 			"yMin": 20,
 			"yMax": 128,
-			"chance": 25,
+			"chance": 10,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -3538,7 +3500,7 @@
 			],
 			"yMin": 1,
 			"yMax": 128,
-			"chance": 10,
+			"chance": 7,
 			"size": 20,
 			"dimBlacklist": [
 				1,
@@ -3716,7 +3678,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 15,
+			"chance": 10,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -4598,7 +4560,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 4,
+			"chance": 24,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -4670,7 +4632,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 17,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -5338,7 +5300,7 @@
 			],
 			"yMin": 1,
 			"yMax": 128,
-			"chance": 20,
+			"chance": 10,
 			"size": 150,
 			"dimBlacklist": [
 				1,
@@ -5376,7 +5338,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 25,
+			"chance": 20,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -5720,7 +5682,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 25,
+			"chance": 20,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -6170,7 +6132,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 15,
+			"chance": 10,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -6450,7 +6412,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 15,
+			"chance": 40,
 			"size": 300,
 			"dimBlacklist": [
 				1,
@@ -6586,7 +6548,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 30,
+			"chance": 50,
 			"size": 250,
 			"dimBlacklist": [
 				1,
@@ -6722,7 +6684,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 15,
+			"chance": 20,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -7070,7 +7032,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 15,
+			"chance": 7,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -7091,7 +7053,7 @@
 			],
 			"density": 0.05,
 			"biomes": [
-				"SANDY", "HOT", "JUNGLE", "OCEAN", "OASIS", "WATER"
+				"SANDY", "HOT", "JUNGLE", "OCEAN"
 			],
 			"isWhitelist": true
 		},
@@ -8224,7 +8186,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 15,
+			"chance": 10,
 			"size": 50,
 			"dimBlacklist": [
 				1,
