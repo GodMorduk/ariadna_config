@@ -1311,9 +1311,9 @@ RecipeBuilder.get("engineer")
     [<ore:alloyUltimate>, <mekanismgenerators:reactorglass>, <ore:alloyUltimate>],
     [<mekanismgenerators:reactorglass>, <techguns:itemshared:71>, <mekanismgenerators:reactorglass>],
     [<ore:alloyUltimate>, <mekanismgenerators:reactorglass>, <ore:alloyUltimate>]])
-  .addTool(<artisanworktables:artisans_driver_iron>, 100)
-  .addTool(<artisanworktables:artisans_spanner_iron>, 100)
-  .addTool(<artisanworktables:artisans_solderer_iron>, 100)
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<mekanismgenerators:reactorglass:1>)
   .create();
 
@@ -1363,9 +1363,9 @@ RecipeBuilder.get("engineer")
     [<ore:plateSteel>, <ore:circuitUltimate>, <mekanism:teleportationcore>, <ore:circuitUltimate>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:alloyUltimate>, <ore:itemEnderCrystal>, <ore:alloyUltimate>, <ore:plateSteel>],
     [null, <ore:plateSteel>, <ore:itemInfinityRod>, <ore:plateSteel>, null]])
-  .addTool(<artisanworktables:artisans_driver_iron>, 250)
-  .addTool(<artisanworktables:artisans_solderer_iron>, 250)
-  .addTool(<artisanworktables:artisans_file_iron>, 250)
+  .addTool(<ore:artisansDriver>, 250)
+  .addTool(<ore:artisansSolderer>, 250)
+  .addTool(<ore:artisansFile>, 250)
   .addOutput(<mekanism:portableteleporter>)
   .create();
 

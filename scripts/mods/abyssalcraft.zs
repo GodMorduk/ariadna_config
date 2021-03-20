@@ -567,7 +567,10 @@ RecipeBuilder.get("mage")
   
   recipes.removeByRecipeName("abyssalcraft:engraver");//Удаление пресовщика
 RecipeBuilder.get("blacksmith")
-  .setShapeless([<abyssalcraft:engraving_blank>, <minecraft:stone>, <abyssalcraft:engraving_blank>, <minecraft:stone>, <minecraft:lever>, <minecraft:anvil>, <minecraft:stone>])
+  .setShaped([
+    [<abyssalcraft:engraving_blank>, <minecraft:lever>, <abyssalcraft:engraving_blank>], 
+    [<minecraft:stone>, <minecraft:anvil>, <minecraft:stone>],
+    [null, <minecraft:stone>, null]])
   .addTool(<ore:artisansHammer>, 50)
   .addTool(<ore:artisansPliers>, 50)
   .addOutput(<abyssalcraft:engraver>)

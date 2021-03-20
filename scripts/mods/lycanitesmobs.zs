@@ -794,7 +794,7 @@ RecipeBuilder.get("basic")
     [<tconstruct:sharpening_kit>.withTag({Material: "steel"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy"}}), <tconstruct:sharpening_kit>.withTag({Material: "steel"})]])
   .setSecondaryIngredients([<artisanworktables:artisans_knife_steel>, <artisanworktables:artisans_gemcutter_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_file_steel>])
   .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansHammer>, 1)
+  .addTool(<ore:artisansHammer>, 100)
   .addOutput(<lycanitesmobs:equipmentforge_greater>)
   .create();
 

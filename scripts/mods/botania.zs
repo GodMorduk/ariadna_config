@@ -685,8 +685,8 @@ RecipeBuilder.get("mage")
     [<botania:manaresource:1>],
     [<botania:storage>],
     [<botania:manaresource:3>]])
-  .addTool(<ore:artisansHammer>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<botania:enderdagger>)
   .create();
   

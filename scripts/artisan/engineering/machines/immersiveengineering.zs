@@ -101,7 +101,7 @@ RecipeBuilder.get("engineer")
     [<immersiveengineering:material:4>, <immersiveengineering:material:4>, <immersiveengineering:material:4>],
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
   .setFluid(<liquid:water> * 1000)
-  .addTool(<artisanworktables:artisans_trowel_iron>, 5)
+  .addTool(<ore:artisansTrowel>, 5)
   .addOutput(<immersiveengineering:stone_decoration:4>*8)
   .create();
 
@@ -183,7 +183,7 @@ RecipeBuilder.get("engineer")
     [null, <ore:plateIron>, null],
     [<ore:paneGlass>, <ore:blockCandle>, <ore:paneGlass>],
     [null, <ore:plateIron>, null]])
-  .addTool(<artisanworktables:artisans_driver_iron>, 10)
+  .addTool(<ore:artisansDriver>, 10)
   .addOutput(<immersiveengineering:metal_decoration2:4>*3)
   .create();
 
@@ -424,7 +424,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:wireAluminum>, null],
     [<ore:stickWood>, <ore:plateCopper>, <ore:stickWood>]])
-  .addTool(<artisanworktables:artisans_driver_iron>, 15)
+  .addTool(<ore:artisansDriver>, 15)
   .addOutput(<immersiveengineering:tool:2>)
   .create();
 
@@ -1317,4 +1317,3 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<immersiveengineering:metal_device1:3>)
   .create();
-

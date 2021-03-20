@@ -157,8 +157,8 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<techguns:itemshared:133> * 6])
-  .addTool(<artisanworktables:artisans_burner_iron>, 150)
-  .addTool(<artisanworktables:artisans_razor_iron>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansRazor>, 150)
   .addOutput(<techguns:hazmat_boots>)
   .create();
   
@@ -168,8 +168,8 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<techguns:itemshared:133> * 8])
-  .addTool(<artisanworktables:artisans_burner_iron>, 150)
-  .addTool(<artisanworktables:artisans_razor_iron>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansRazor>, 150)
   .addOutput(<techguns:hazmat_leggings>)
   .create();
   
@@ -179,8 +179,8 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:133>, <techguns:itemshared:133>, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, <techguns:itemshared:133>, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<techguns:itemshared:133> * 10])
-  .addTool(<artisanworktables:artisans_burner_iron>, 150)
-  .addTool(<artisanworktables:artisans_razor_iron>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansRazor>, 150)
   .addOutput(<techguns:hazmat_chestplate>)
   .create();
   
@@ -189,8 +189,8 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:133>, <techguns:itemshared:133>, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<techguns:itemshared:133> * 4])
-  .addTool(<artisanworktables:artisans_burner_iron>, 150)
-  .addTool(<artisanworktables:artisans_razor_iron>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .addTool(<ore:artisansRazor>, 150)
   .addOutput(<techguns:hazmat_helmet>)
   .create();
   

@@ -851,9 +851,9 @@ RecipeBuilder.get("engineer")
     [null, null, <ore:ingotDarkSteel>, null, null]])
   .setFluid(<liquid:lubricant> * 4000)
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
-  .addTool(<ore:artisansSolderer>, 1)
-  .addTool(<ore:artisansSpanner>, 1)
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansSolderer>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addTool(<ore:artisansDriver>, 100)
   .addOutput(<industrialforegoing:plant_interactor>)
   .create();
 

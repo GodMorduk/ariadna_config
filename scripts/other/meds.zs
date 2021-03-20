@@ -5,38 +5,45 @@ recipes.removeByRecipeName("firstaid:plaster");
 recipes.removeByRecipeName("firstaid:morphine");
 
 recipes.addShaped(<stewitems:laudanum>,[
-    [<minecraft:red_flower>, <minecraft:dye:15>, <minecraft:red_flower>],
+    [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
     [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
-    [<minecraft:red_flower>, <minecraft:dye:15>, <minecraft:red_flower>]]);
+    [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]]);
   
 recipes.addShaped(<stewitems:rubbing_alcohol>,[
-    [null, <minecraft:wheat>, null],
-    [<minecraft:potato>, <harvestcraft:freshwateritem>, <minecraft:potato>],
-    [null, <minecraft:wheat>, null]]);
+    [null, <ore:listAllgrain>, null],
+    [<minecraft:potato>, <ore:listAllwater>, <minecraft:potato>],
+    [null, <ore:listAllgrain>, null]]);
   
-recipes.addShaped(<firstaid:bandage>,[
+recipes.addShaped(<firstaid:bandage>*2,[
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, null],
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, null],
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]]);
   
+recipes.addShaped(<firstaid:plaster>*2,[
+    [null, <ore:string>, null],
+    [<harvestcraft:wovencottonitem>, <ore:wool>, <harvestcraft:wovencottonitem>],
+    [null, <ore:string>, null]]);
+
 recipes.addShaped(<firstaid:plaster>,[
-    [null, <minecraft:string>, null],
-    [<harvestcraft:wovencottonitem>, <minecraft:wool>, <harvestcraft:wovencottonitem>],
-    [null, <minecraft:string>, null]]);
+    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>],
+    [<pyrotech:thatch>, <rustic:horsetail>, <pyrotech:thatch>],
+    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>]]);
   
 RecipeBuilder.get("chemist")
   .setShaped([
     [null, <thermalfoundation:material:771>, null],
     [<stewitems:laudanum>, <stewitems:rubbing_alcohol>, <stewitems:laudanum>],
     [null, <thermalfoundation:material:771>, null]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<firstaid:morphine>)
   .create();
   
 RecipeBuilder.get("chemist")
-  .setShaped([
-    [<alchemistry:element:6>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <alchemistry:element:6>],
-    [<alchemistry:element:9>, <alchemistry:element:9>, <alchemistry:element:9>],
-    [<alchemistry:element:6>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <alchemistry:element:6>]])
+  .setShapeless([<techguns:itemshared:146>])
+  .setFluid(<liquid:blood> * 2000)
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_blood>)
   .create();
   
@@ -44,7 +51,9 @@ RecipeBuilder.get("chemist")
   .setShaped([
     [<industrialforegoing:plastic>, <alchemistry:compound:57>, <industrialforegoing:plastic>],
     [<industrialforegoing:plastic>, <alchemistry:compound:57>, <industrialforegoing:plastic>],
-    [null, <minecraft:iron_ingot>, null]])
+    [null, <techguns:itemshared:72>, null]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_inhaler>)
   .create();
   
@@ -55,9 +64,12 @@ recipes.addShaped(<stewitems:medicine_bandage>,[
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<minecraft:redstone_block>, <opencomputers:tool:5>, <minecraft:redstone_block>],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]])
+    [<ore:ingotIron>, <ore:ingotAluminum>, <ore:ingotIron>],
+    [<ore:blockRedstoneAlloy>, <opencomputers:tool:5>, <ore:blockRedstoneAlloy>],
+    [<ore:ingotIron>, <ore:ingotAluminum>, <ore:ingotIron>]])
+  .addTool(<ore:artisansBeaker>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_nanits>)
   .create();
   
@@ -66,14 +78,18 @@ RecipeBuilder.get("chemist")
     [null, <alchemistry:compound:59>, null],
     [<alchemistry:compound:56>, <vampirism:injection>, <alchemistry:compound:56>],
     [null, <alchemistry:compound:59>, null]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_valkyrine>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [null, <alchemistry:compound:21>, null],
+    [<ore:foodMushroompowder>, <alchemistry:compound:21>, <ore:foodMushroompowder>],
     [<alchemistry:compound:55>, <vampirism:injection>, <alchemistry:compound:55>],
-    [null, <alchemistry:compound:21>, null]])
+    [<ore:foodMushroompowder>, <alchemistry:compound:21>, <ore:foodMushroompowder>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_nictogenic>)
   .create();
   
@@ -82,38 +98,44 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:52>, <alchemistry:compound:58>, <alchemistry:compound:52>],
     [<alchemistry:compound:58>, null, <alchemistry:compound:58>],
     [<alchemistry:compound:52>, <alchemistry:compound:58>, <alchemistry:compound:52>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_antidote>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:dye:15>, <stewitems:medicine_freezing_powder>, <minecraft:dye:15>],
-    [<minecraft:slime_ball>, <thermalfoundation:material:1025>, <minecraft:slime_ball>],
-    [<minecraft:dye:15>, <stewitems:medicine_freezing_powder>, <minecraft:dye:15>]])
+    [<pyrotech:material>, <stewitems:medicine_freezing_powder>, <minecraft:dye:15>],
+    [<ore:slimeball>, <thermalfoundation:material:1025>, <ore:slimeball>],
+    [<minecraft:dye:15>, <stewitems:medicine_freezing_powder>, <pyrotech:material>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_phenophasine>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
     [<alchemistry:compound:52>, <alchemistry:compound:58>, <alchemistry:compound:52>],
-    [<alchemistry:element:12>, <harvestcraft:freshwateritem>, <alchemistry:element:12>],
+    [<alchemistry:element:12>, <ore:listAllwater>, <alchemistry:element:12>],
     [<alchemistry:compound:52>, <alchemistry:compound:58>, <alchemistry:compound:52>]])
+  .addTool(<ore:artisansBeaker>, 15)
   .addOutput(<stewitems:medicine_corpideks>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:dye:15>, <biomesoplenty:plant_1:7>, <minecraft:dye:15>],
-    [<biomesoplenty:plant_1:7>, <forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}), <biomesoplenty:plant_1:7>],
-    [<minecraft:dye:15>, <biomesoplenty:plant_1:7>, <minecraft:dye:15>]])
-  .addOutput(<stewitems:medicine_nicotine_gum>)
+    [null, <ore:itemRawRubber>, null],
+    [<ore:itemRawRubber>, <thaumicbases:tobacco_pile>, <ore:itemRawRubber>],
+    [null, <ore:itemRawRubber>, null]])
+  .addTool(<ore:artisansBeaker>, 15)
+  .setFluid(<liquid:resin> * 1000)
+  .addOutput(<stewitems:medicine_nicotine_gum>*2)
   .create();
-  
+
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:slime_ball>, <harvestcraft:seaweeditem>, <minecraft:slime_ball>],
+    [<ore:slimeball>, <harvestcraft:seaweeditem>, <ore:slimeball>],
     [<alchemistry:element:8>, <alchemistry:element:8>, <alchemistry:element:8>],
-    [<minecraft:slime_ball>, <harvestcraft:seaweeditem>, <minecraft:slime_ball>]])
+    [<ore:slimeball>, <harvestcraft:seaweeditem>, <ore:slimeball>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_yoln_tear>)
   .create();
   
@@ -122,6 +144,8 @@ RecipeBuilder.get("chemist")
     [<alchemistry:element:12>, <alchemistry:compound:58>, <alchemistry:element:12>],
     [<stewitems:laudanum>, <vampirism:injection>, <stewitems:laudanum>],
     [<alchemistry:element:12>, <alchemistry:compound:58>, <alchemistry:element:12>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_tranquilizer>)
   .create();
   
@@ -130,6 +154,8 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:52>, <alchemistry:compound:57>, <alchemistry:compound:52>],
     [<stewitems:laudanum>, null, <stewitems:laudanum>],
     [<alchemistry:compound:52>, <alchemistry:compound:57>, <alchemistry:compound:52>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_painkillers>)
   .create();
   
@@ -138,6 +164,8 @@ RecipeBuilder.get("chemist")
     [<stewitems:laudanum>, <alchemistry:compound:56>, <stewitems:laudanum>],
     [<alchemistry:compound:32>, <vampirism:injection>, <alchemistry:compound:32>],
     [<stewitems:laudanum>, <alchemistry:compound:56>, <stewitems:laudanum>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_medx>)
   .create();
   
@@ -146,6 +174,9 @@ RecipeBuilder.get("chemist")
     [null, <stewitems:medicine_nanits>, null],
     [<alchemistry:compound:52>, <vampirism:injection>, <alchemistry:compound:52>],
     [null, <stewitems:medicine_nanits>, null]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .addTool(<ore:artisansBurner>, 25)
+  .setMinimumTier(2)
   .addOutput(<stewitems:medicine_nanite_injection>)
   .create();
   
@@ -154,6 +185,7 @@ RecipeBuilder.get("chemist")
     [<atum:flax_seeds>, <harvestcraft:lentilitem>, <atum:flax_seeds>],
     [<alchemistry:compound:52>, <stewitems:laudanum>, <alchemistry:compound:52>],
     [<atum:flax_seeds>, <harvestcraft:lentilitem>, <atum:flax_seeds>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_antidepressants>)
   .create();
   
@@ -161,7 +193,9 @@ RecipeBuilder.get("chemist")
   .setShaped([
     [<industrialforegoing:plastic>, <alchemistry:compound:59>, <industrialforegoing:plastic>],
     [<industrialforegoing:plastic>, <alchemistry:compound:55>, <industrialforegoing:plastic>],
-    [null, <minecraft:iron_ingot>, null]])
+    [null, <techguns:itemshared:72>, null]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setMinimumTier(1)
   .addOutput(<stewitems:medicine_stamina_inhaler>)
   .create();
   
@@ -170,14 +204,18 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:9>, <alchemistry:compound:57>, <alchemistry:compound:52>],
     [<alchemistry:compound:58>, <vampirism:injection>, <alchemistry:compound:58>],
     [<alchemistry:compound:52>, <alchemistry:compound:57>, <alchemistry:compound:9>]])
+  .addTool(<ore:artisansBeaker>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .setMinimumTier(2)
   .addOutput(<stewitems:medicine_stimpack>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
     [<alchemistry:element:12>, <thaumcraft:leaves_silverwood>, <alchemistry:element:12>],
-    [<thaumcraft:shimmerleaf>, <harvestcraft:freshwateritem>, <thaumcraft:shimmerleaf>],
+    [<thaumcraft:shimmerleaf>, <ore:listAllwater>, <thaumcraft:shimmerleaf>],
     [<alchemistry:element:12>, <thaumcraft:leaves_silverwood>, <alchemistry:element:12>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_elixir>)
   .create();
   
@@ -186,22 +224,33 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:57>, <alchemistry:compound:52>, <alchemistry:compound:58>],
     [<alchemistry:compound:9>, <vampirism:injection>, <alchemistry:compound:9>],
     [<alchemistry:compound:58>, <alchemistry:compound:52>, <alchemistry:compound:57>]])
+  .addTool(<ore:artisansBeaker>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .setMinimumTier(2)
   .addOutput(<stewitems:medicine_neuropozine>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
     [<alchemistry:compound:52>, <alchemistry:compound:9>, <alchemistry:compound:52>],
-    [<alchemistry:compound:55>, null, <alchemistry:compound:55>],
+    [<alchemistry:compound:55>, <ore:itemRawRubber>, <alchemistry:compound:55>],
     [<alchemistry:compound:52>, <alchemistry:compound:9>, <alchemistry:compound:52>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_protein_pill>)
   .create();
   
+var glowPlants = <ore:glowPlants>;
+glowPlants.add(<biomesoplenty:coral:3>);
+glowPlants.add(<biomesoplenty:flower_0:3>);
+glowPlants.add(<quark:glowshroom>);
+
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:glowstone_dust>, <minecraft:dye:15>, <minecraft:glowstone_dust>],
+    [<minecraft:glowstone_dust>, <ore:glowPlants>, <minecraft:glowstone_dust>],
     [<alchemistry:compound:9>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <alchemistry:compound:9>],
-    [<minecraft:glowstone_dust>, <minecraft:dye:15>, <minecraft:glowstone_dust>]])
+    [<minecraft:glowstone_dust>, <ore:glowPlants>, <minecraft:glowstone_dust>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setFluid(<liquid:glowstone> * 1000)
   .addOutput(<stewitems:medicine_inner_light>)
   .create();
   
@@ -210,29 +259,34 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:52>, <alchemistry:compound:9>, <alchemistry:compound:52>],
     [<alchemistry:compound:4>, <alchemistry:fertilizer>, <alchemistry:compound:4>],
     [<alchemistry:compound:52>, <alchemistry:compound:9>, <alchemistry:compound:52>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_ironskin_pills>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:slime_ball>, <minecraft:dye:15>, <minecraft:slime_ball>],
+    [<armorunder:heating_goo>, <toughasnails:magma_shard>, <armorunder:heating_goo>],
     [<minecraft:redstone>, <minecraft:blaze_powder>, <minecraft:redstone>],
-    [<minecraft:slime_ball>, <minecraft:dye:15>, <minecraft:slime_ball>]])
+    [<armorunder:heating_goo>, <toughasnails:magma_shard>, <armorunder:heating_goo>]])
+  .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_heating_paste>)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<minecraft:dye:15>, <thermalfoundation:material:2049>, <minecraft:dye:15>],
-    [<thermalfoundation:material>, <thermalfoundation:material:2049>, <thermalfoundation:material>],
-    [<minecraft:dye:15>, <thermalfoundation:material:2049>, <minecraft:dye:15>]])
-  .addOutput(<stewitems:medicine_freezing_powder>)
+    [<armorunder:cooling_goo>, <thermalfoundation:material:1025>, <armorunder:cooling_goo>],
+    [<thermalfoundation:material>, <thermalfoundation:material:1025>, <thermalfoundation:material>],
+    [<armorunder:cooling_goo>, <thermalfoundation:material:1025>, <armorunder:cooling_goo>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .addOutput(<stewitems:medicine_freezing_powder>*3)
   .create();
   
 RecipeBuilder.get("chemist")
   .setShaped([
     [<minecraft:redstone>, <alchemistry:compound:26>, <minecraft:redstone>],
-    [<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "oliveoil", Amount: 1000}}), <minecraft:potion>.withTag({Potion: "minecraft:water"}), <rustic:fluid_bottle>.withTag({Fluid: {FluidName: "oliveoil", Amount: 1000}})],
+    [<armorunder:cooling_goo>, <ore:listAllwater>, <armorunder:cooling_goo>],
     [<minecraft:redstone>, <alchemistry:compound:26>, <minecraft:redstone>]])
+  .addTool(<ore:artisansBeaker>, 25)
+  .setFluid(<liquid:oliveoil> * 2000)
   .addOutput(<stewitems:medicine_sunscreen_spray>)
   .create();

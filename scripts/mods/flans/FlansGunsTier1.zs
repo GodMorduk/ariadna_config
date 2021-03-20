@@ -23,7 +23,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <techguns:itemshared:57>],
     [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
-  .addTool(<artisanworktables:artisans_spanner_iron>, 1)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:atol_rifle>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
   
@@ -32,7 +32,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <thermalfoundation:material:32>],
     [null, <techguns:itemshared:57>, <techguns:itemshared:33>]])
-  .addTool(<artisanworktables:artisans_spanner_iron>, 1)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:supressor>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
   
@@ -185,7 +185,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
     [<thermalfoundation:material:32>, <techguns:itemshared:38>, <minecraft:iron_block>],
     [null, <techguns:itemshared:33>, <minecraft:iron_block>]])
-  .addTool(<artisanworktables:artisans_spanner_lead>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:goplon_repeater>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
   
@@ -223,4 +223,3 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwmatriarchsnubshort>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
-  

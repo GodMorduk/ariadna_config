@@ -6,8 +6,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
     [<thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:fabric>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 28, <thaumcraft:baubles:4>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 10)
-  .addTool(<ore:artisansGrimoire>, 10)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<thaumcraft:cloth_chest>)
   .create();
   
@@ -17,8 +17,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 20, <thaumcraft:baubles:2>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 10)
-  .addTool(<ore:artisansGrimoire>, 10)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<thaumcraft:cloth_legs>)
   .create();
   
@@ -27,8 +27,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 16, <thaumcraft:baubles:2>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<thaumcraft:cloth_boots>)
   .create();
   
@@ -37,7 +37,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
     [<thaumcraft:fabric>, <thaumcraft:ingot:2>, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
     [<thaumcraft:thaumometer>, <thaumcraft:ingot:2>, <thaumcraft:thaumometer>]])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<thaumcraft:goggles>)
   .create();
   
@@ -59,12 +60,12 @@ recipes.removeByRecipeName("thaumcraft:voidsword");
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [<ore:ingotThaumium>, <ore:ingotThaumium>, <ore:ingotThaumium>],
-    [<ore:ingotThaumium>, <minecraft:iron_sword>, <ore:ingotThaumium>],
+    [<ore:ingotThaumium>, <ore:blockThaumium>, <ore:ingotThaumium>],
+    [<ore:blockThaumium>, <minecraft:iron_sword>, <ore:blockThaumium>],
     [<ore:ingotThaumium>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}), <ore:ingotThaumium>]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator>, <thaumcraft:fabric> * 3])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
   .addOutput(<thaumcraft:thaumium_sword>)
   .create();
   
@@ -74,8 +75,8 @@ RecipeBuilder.get("mage")
     [null, <thaumicbases:thauminite_ingot>, null],
     [null, <thaumicbases:thauminite_ingot>, null]])
   .setSecondaryIngredients([<thaumicbases:blockthauminite> * 5, <thaumcraft:fabric> * 12])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
   .addOutput(<thaumicbases:thauminitepickaxe>)
   .create();
   
@@ -85,8 +86,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:blockthauminite>, <thaumicbases:thauminite_ingot>],
     [null, <thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumicbases:blockthauminite> * 5, <thaumcraft:fabric> * 12])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
   .addOutput(<thaumicbases:thauminiteaxe>)
   .create();
   
@@ -96,8 +97,8 @@ RecipeBuilder.get("mage")
     [null, <thaumicbases:thauminite_ingot>],
     [null, <thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumicbases:blockthauminite> * 3, <thaumcraft:fabric> * 8])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
   .addOutput(<thaumicbases:thauminitehoe>)
   .create();
   
@@ -107,8 +108,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:thauminite_ingot>],
     [<thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumicbases:blockthauminite> * 3, <thaumcraft:fabric> * 16])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
   .addOutput(<thaumicbases:thauminiteshovel>)
   .create();
   
@@ -117,8 +118,8 @@ RecipeBuilder.get("mage")
     [null, <thaumicbases:blockthauminite>, null],
     [<thaumicbases:blockthauminite>, <thaumcraft:thaumium_sword>, <thaumicbases:blockthauminite>]])
   .setSecondaryIngredients([<thaumicbases:blockthauminite> * 9, <thaumcraft:fabric> * 32])
-  .addTool(<artisanworktables:artisans_hammer_thaumium>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_thaumium>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
   .addOutput(<thaumicbases:thauminitesword>)
   .create();
   
@@ -127,8 +128,8 @@ RecipeBuilder.get("mage")
     [<ore:blockVoid>, <ore:blockVoid>, <ore:blockVoid>],
     [<ore:blockVoid>, <thaumcraft:thaumium_sword>, <ore:blockVoid>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 16, <ore:blockVoid> * 3])
-  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
   .addOutput(<thaumcraft:void_sword>)
   .create();
   
@@ -138,8 +139,8 @@ RecipeBuilder.get("mage")
     [<ore:blockVoid>, <thaumcraft:ingot:1>],
     [null, <thaumcraft:ingot:1>]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator> * 3, <thaumcraft:metal_void> * 2])
-  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
   .addOutput(<thaumcraft:void_axe>)
   .create();
   
@@ -149,8 +150,8 @@ RecipeBuilder.get("mage")
     [null, <thaumcraft:ingot:1>, null],
     [null, <thaumcraft:ingot:1>, null]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator> * 3, <thaumcraft:metal_void> * 2])
-  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
   .addOutput(<thaumcraft:void_pick>)
   .create();
   
@@ -160,8 +161,8 @@ RecipeBuilder.get("mage")
     [null, <thaumcraft:ingot:1>],
     [null, <thaumcraft:ingot:1>]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator> * 3, <thaumcraft:metal_void> * 2])
-  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
   .addOutput(<thaumcraft:void_hoe>)
   .create();
   
@@ -171,8 +172,8 @@ RecipeBuilder.get("mage")
     [<thaumcraft:ingot:1>],
     [<thaumcraft:ingot:1>]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator> * 3, <thaumcraft:metal_void> * 2])
-  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 1)
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<artisanworktables:artisans_hammer_voidmetal>, 250)
+  .addTool(<ore:artisansGrimoire>, 250)
   .addOutput(<thaumcraft:void_shovel>)
   .create();
   
@@ -204,8 +205,8 @@ RecipeBuilder.get("mage")
     [<thaumcraft:metal_thaumium>, <thaumcraft:cloth_boots>, <thaumcraft:metal_thaumium>],
     [<thaumcraft:ingot>, null, <thaumcraft:ingot>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 16, <ore:nitor>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 200)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 200)
   .addOutput(<thaumcraft:thaumium_boots>)
   .create();
   
@@ -215,8 +216,8 @@ RecipeBuilder.get("mage")
     [<thaumcraft:metal_thaumium>, <thaumcraft:cloth_legs>, <thaumcraft:metal_thaumium>],
     [<thaumcraft:ingot>, null, <thaumcraft:ingot>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 20, <ore:nitor>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 200)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 200)
   .addOutput(<thaumcraft:thaumium_legs>)
   .create();
   
@@ -226,8 +227,8 @@ RecipeBuilder.get("mage")
     [<ore:blockThaumium>, <thaumcraft:cloth_chest>, <ore:blockThaumium>],
     [<ore:blockThaumium>, <ore:blockThaumium>, <ore:blockThaumium>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 24, <ore:nitor>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 200)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 200)
   .addOutput(<thaumcraft:thaumium_chest>)
   .create();
   
@@ -236,8 +237,8 @@ RecipeBuilder.get("mage")
     [<thaumcraft:metal_thaumium>, <thaumcraft:metal_thaumium>, <thaumcraft:metal_thaumium>],
     [<thaumcraft:ingot>, null, <thaumcraft:ingot>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 18, <ore:nitor>])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 200)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 200)
   .addOutput(<thaumcraft:thaumium_helm>)
   .create();
   
@@ -246,8 +247,8 @@ RecipeBuilder.get("mage")
     [<ore:blockVoid>, <thaumcraft:thaumium_boots>, <ore:blockVoid>],
     [<ore:ingotVoid>, null, <ore:ingotVoid>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 16, <thaumcraft:morphic_resonator> * 3])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 600)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 600)
   .addOutput(<thaumcraft:void_boots>)
   .create();
   
@@ -257,8 +258,8 @@ RecipeBuilder.get("mage")
     [<ore:blockVoid>, <thaumcraft:thaumium_legs>, <ore:blockVoid>],
     [<ore:ingotVoid>, null, <ore:ingotVoid>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 20, <thaumcraft:morphic_resonator> * 5])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 600)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 600)
   .addOutput(<thaumcraft:void_legs>)
   .create();
   
@@ -268,8 +269,8 @@ RecipeBuilder.get("mage")
     [<ore:blockVoid>, <thaumcraft:thaumium_chest>, <thaumcraft:metal_void>],
     [<ore:ingotVoid>, <thaumcraft:metal_void>, <ore:ingotVoid>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 24, <thaumcraft:morphic_resonator> * 5])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 600)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 600)
   .addOutput(<thaumcraft:void_chest>)
   .create();
   
@@ -278,8 +279,8 @@ RecipeBuilder.get("mage")
     [<thaumcraft:metal_void>, <thaumcraft:metal_void>, <thaumcraft:metal_void>],
     [<thaumcraft:ingot:1>, <thaumcraft:thaumium_helm>, <thaumcraft:ingot:1>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 18, <thaumcraft:morphic_resonator> * 3])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 600)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 600)
   .addOutput(<thaumcraft:void_helm>)
   .create();
   
@@ -288,8 +289,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:blockthauminite>, null, <thaumicbases:blockthauminite>],
     [<thaumicbases:thauminite_ingot>, null, <thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumcraft:morphic_resonator> * 3])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 400)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 400)
   .addOutput(<thaumicbases:thauminiteboots>)
   .create();
   
@@ -299,8 +300,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:blockthauminite>, null, <thaumicbases:blockthauminite>],
     [<thaumicbases:thauminite_ingot>, null, <thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 20, <thaumcraft:morphic_resonator> * 4])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 400)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 400)
   .addOutput(<thaumicbases:thauminitelegs>)
   .create();
   
@@ -310,8 +311,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:thauminite_ingot>, <thaumicbases:blockthauminite>, <thaumicbases:thauminite_ingot>],
     [<thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 24, <thaumcraft:morphic_resonator> * 5])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 400)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 400)
   .addOutput(<thaumicbases:thauminitechest>)
   .create();
   
@@ -320,8 +321,8 @@ RecipeBuilder.get("mage")
     [<thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>, <thaumicbases:blockthauminite>],
     [<thaumicbases:thauminite_ingot>, null, <thaumicbases:thauminite_ingot>]])
   .setSecondaryIngredients([<thaumcraft:fabric> * 18, <thaumcraft:morphic_resonator> * 3])
-  .addTool(<artisanworktables:artisans_needle_thaumium>, 1)
-  .addTool(<artisanworktables:artisans_punch_thaumium>, 1)
+  .addTool(<artisanworktables:artisans_needle_thaumium>, 400)
+  .addTool(<artisanworktables:artisans_punch_thaumium>, 400)
   .addOutput(<thaumicbases:thauminitehelmet>)
   .create();
 
