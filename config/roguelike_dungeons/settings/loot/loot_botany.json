@@ -1,6 +1,6 @@
 {
   "name": "loot:botany",
-  "loot_rules": [
+  "lootRules": [
     {
       "level": [0, 1, 2, 3, 4],
       "loot": [

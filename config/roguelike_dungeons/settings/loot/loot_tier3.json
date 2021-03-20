@@ -1,6 +1,6 @@
 {
   "name": "loot:tier3",
-  "loot_rules": [
+  "lootRules": [
     {
       "level": 2,
       "type": "TOOLS",
@@ -49,7 +49,7 @@
 		{"data": {"name": "thaumcraft:plate", "level": 2}, "weight": 20}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "level": 3,
@@ -96,10 +96,39 @@
 		{"data": {"name": "thermalfoundation:material", "meta": 134, "level": 3}, "weight": 30},
 		{"data": {"name": "techguns:itemshared", "meta": 84, "level": 3}, "weight": 30},
 		{"data": {"name": "thaumcraft:loot_bag", "level": 3}, "weight": 30},
-		{"data": {"name": "thaumcraft:plate", "level": 3}, "weight": 30}
+		{"data": {"name": "stewitems:medicine_blood", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_inhaler", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nanits", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_valkyrine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nictogenic", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_antidote", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_phenophasine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_corpideks", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nicotine_gum", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_yoln_tear", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_tranquilizer", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_painkillers", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_medx", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nanite_injection", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_antidepressants", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_stimpack", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_elixir", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_neuropozine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_protein_pill", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_inner_light", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_ironskin_pills", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_heating_paste", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_freezing_powder", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_sunscreen_spray", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_grox", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_twyrine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_karusto_perfume", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_strong_pheromones", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:laudanum", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:rubbing_alcohol", "level": 3}, "weight": 30}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "level": 4,
@@ -146,10 +175,40 @@
 		{"data": {"name": "thermalfoundation:material", "meta": 134, "level": 4}, "weight": 35},
 		{"data": {"name": "techguns:itemshared", "meta": 84, "level": 4}, "weight": 35},
 		{"data": {"name": "thaumcraft:loot_bag", "level": 4}, "weight": 35},
-		{"data": {"name": "thaumcraft:plate", "level": 4}, "weight": 35}
+		{"data": {"name": "thaumcraft:plate", "level": 4}, "weight": 35},
+		{"data": {"name": "stewitems:medicine_blood", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_inhaler", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nanits", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_valkyrine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nictogenic", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_antidote", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_phenophasine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_corpideks", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nicotine_gum", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_yoln_tear", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_tranquilizer", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_painkillers", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_medx", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_nanite_injection", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_antidepressants", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_stimpack", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_elixir", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_neuropozine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_protein_pill", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_inner_light", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_ironskin_pills", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_heating_paste", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_freezing_powder", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_sunscreen_spray", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_grox", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_twyrine", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_karusto_perfume", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:medicine_strong_pheromones", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:laudanum", "level": 3}, "weight": 30},
+		{"data": {"name": "stewitems:rubbing_alcohol", "level": 3}, "weight": 30}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     }
   ]
 }

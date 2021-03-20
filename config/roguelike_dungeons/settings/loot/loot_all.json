@@ -1,6 +1,6 @@
 {
   "name": "loot:all",
-  "loot_rules": [
+  "lootRules": [
     {
       "level": 0,
       "loot": [
@@ -46,7 +46,7 @@
         {"data": {"name": "minecraft:waterlily", "level": 0}, "weight": 50}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
 	    {
       "level": 1,
@@ -140,7 +140,7 @@
         {"data": {"name": "minecraft:waterlily", "level": 2}, "weight": 20}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
 	    {
       "level": 3,
@@ -187,7 +187,7 @@
         {"data": {"name": "minecraft:waterlily", "level": 3}, "weight": 10}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
 	    {
       "level": 4,
@@ -234,7 +234,7 @@
         {"data": {"name": "minecraft:waterlily", "level": 4}, "weight": 5}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
 	{
       "level": [0, 1, 2, 3, 4],

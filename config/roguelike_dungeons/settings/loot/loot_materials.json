@@ -1,6 +1,6 @@
 {
   "name": "loot:materials",
-  "loot_rules": [
+  "lootRules": [
     {
       "level": [0, 1, 2, 3, 4],
       "loot": [

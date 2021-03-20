@@ -1,7 +1,7 @@
   {
-  "name": "loot_tables:rewards",
+  "name": "lootTables:rewards",
 
-  "loot_tables": [
+  "lootTables": [
 	{"level": 0, "type": "REWARD", "table": "minecraft:chests/igloo_chest"},
 	{"level": 0, "type": "REWARD", "table": "minecraft:chests/nether_bridge"},
 	{"level": 1, "type": "REWARD", "table": "minecraft:chests/igloo_chest"},

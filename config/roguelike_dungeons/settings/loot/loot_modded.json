@@ -9,6 +9,6 @@
     "loot:tier5",
     "loot:botany",
     "loot:materials",
-	"loot_tables:rewards"
+	"lootTables:rewards"
   ]
 }

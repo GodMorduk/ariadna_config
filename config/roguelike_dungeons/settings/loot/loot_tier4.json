@@ -1,6 +1,6 @@
 {
   "name": "loot:tier4",
-  "loot_rules": [
+  "lootRules": [
     {
       "level": 3,
       "type": "TOOLS",
@@ -52,7 +52,7 @@
 		{"data": {"name": "thaumcraft:plate", "meta": 2, "level": 3}, "weight": 10}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "level": 4,
@@ -106,7 +106,7 @@
 		{"data": {"name": "thaumcraft:plate", "meta": 2, "level": 4}, "weight": 20}
       ],
       "each": true,
-      "quantity": 1
+      "quantity": 2
     }
   ]
 }
