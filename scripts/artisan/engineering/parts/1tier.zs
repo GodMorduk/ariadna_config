@@ -357,3 +357,11 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 25)
   .addOutput(<immersiveengineering:metal_decoration0:3>)
   .create();
+
+recipes.removeByRecipeName("refinedstorage:quartz_enriched_iron");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:gemQuartz>])
+  .addTool(<ore:artisansFile>, 5)
+  .addOutput(<refinedstorage:quartz_enriched_iron> * 3)
+  .setExtraOutputOne(<refinedstorage:quartz_enriched_iron>, 0.5)
+  .create();
