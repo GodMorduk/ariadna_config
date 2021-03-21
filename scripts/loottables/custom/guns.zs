@@ -172,16 +172,9 @@ add_ammo_and_weapon("minecraft:chests/jungle_temple", 1, 2);
 add_ammo_and_weapon("minecraft:chests/simple_dungeon", 1, 2);
 add_ammo_and_weapon("minecraft:chests/stronghold_corridor", 1, 2);
 add_ammo_and_weapon("minecraft:chests/stronghold_crossing", 1, 2);
-add_ammo_and_weapon("techguns:blocks/military_crate_gun", 2, 4);
+add_ammo_and_weapon("techguns:blocks/military_crate_gun", 3, 6);
 add_ammo_and_weapon("techguns:blocks/military_crate_generic", 1, 2);
 add_ammo_and_weapon("techguns:chests/survivor_hideout", 1, 2);
 
-ammo_only("minecraft:chests/abandoned_mineshaft", 3, 4);
-ammo_only("minecraft:chests/desert_pyramid", 3, 4);
-ammo_only("minecraft:chests/jungle_temple", 3, 4);
-ammo_only("minecraft:chests/simple_dungeon", 3, 4);
-ammo_only("minecraft:chests/stronghold_corridor", 3, 4);
-ammo_only("minecraft:chests/stronghold_crossing", 3, 4);
-ammo_only("techguns:blocks/military_crate_ammo", 5, 6);
-
+ammo_only("techguns:blocks/military_crate_ammo", 6, 5);
 explosives_only("techguns:blocks/military_crate_explosives", 3, 6);

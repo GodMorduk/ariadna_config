@@ -97,9 +97,7 @@ add_rare_loot_stuff("techguns:chests/policestation");
 add_common_loot_stuff("techguns:chests/small_trainstation");
 add_rare_loot_stuff("techguns:chests/survivor_hideout");
 add_common_loot_stuff("techguns:blocks/military_crate_generic");
-add_common_loot_stuff("techguns:blocks/military_crate_ammo");
 add_rare_loot_stuff("techguns:blocks/military_crate_armor");
-add_common_loot_stuff("techguns:blocks/military_crate_gun");
 add_rare_loot_stuff("techguns:chests/gasstation");
 
 

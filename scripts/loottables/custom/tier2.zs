@@ -165,4 +165,15 @@ function add_2_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<firstaid:bandage>, 35);
 	pool.addItemEntry(<firstaid:plaster>, 35);
 	pool.addItemEntry(<firstaid:morphine>, 35);
+	pool.addItemEntry(<stewitems:food_canned_berries>, 35);
+	pool.addItemEntry(<stewitems:food_canned_bugs>, 35);
+	pool.addItemEntry(<stewitems:food_canned_cuicari>, 35);
+	pool.addItemEntry(<stewitems:food_canned_fish>, 35);
+	pool.addItemEntry(<stewitems:food_canned_food>, 35);
+	pool.addItemEntry(<stewitems:food_canned_meat>, 35);
+	pool.addItemEntry(<stewitems:food_canned_milk>, 35);
+	pool.addItemEntry(<stewitems:food_snack_drink>, 35);
+	pool.addItemEntry(<stewitems:food_snack_meat>, 35);
+	pool.addItemEntry(<stewitems:food_snack_psy>, 35);
+	pool.addItemEntry(<stewitems:food_snack_serup>, 35);
 }
