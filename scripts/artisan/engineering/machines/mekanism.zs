@@ -1288,7 +1288,7 @@ RecipeBuilder.get("engineer")
     [<mekanism:basicblock:8>, <ore:alloyUltimate>, <mekanism:basicblock:8>],
     [<ore:plateTitanium>, <mekanism:basicblock:8>, <ore:plateTitanium>]])
   .addTool(<ore:artisansDriver>, 25)
-  .addTool(<ore:artisansToolIron>, 25)
+  .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansFile>, 25)
   .addOutput(<mekanismgenerators:reactor:1> * 2)
   .create();

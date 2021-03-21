@@ -407,7 +407,7 @@ RecipeBuilder.get("jeweler")
     [<ore:gemRuby>, <lycanitesmobs:soulstone>, <ore:gemRuby>],
     [<ore:blockSoularium>, <lycanitesmobs:demonicblastcharge>, <ore:blockSoularium>]])
   .setSecondaryIngredients([<fancylamps:obelisk:1> * 4, <fancylamps:obelisk:2> * 4, <fancylamps:obelisk:3> * 4, <fancylamps:obelisk:4> * 4])
-  .addTool(<ore:artisansToolIron>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
   .addTool(<ore:artisansGemCutter>, 100)
   .addOutput(<lycanitesmobs:summoningpedestal>)
   .create();
@@ -456,7 +456,7 @@ RecipeBuilder.get("mason")
   .setSecondaryIngredients([<bewitchment:nethersteel_skull> * 8, <minecraft:skull> * 32, <biomesoplenty:flower_0:2> * 32, <minecraft:skull:1> * 8])
   .addTool(<ore:artisansAthame>, 500)
   .addTool(<ore:artisansHammer>, 500)
-  .addTool(<ore:artisansToolIron>, 500)
+  .addTool(<ore:artisansChisel>, 500)
   .addOutput(<lycanitesmobs:soulcubeundead>)
   .create();
 
