@@ -77,9 +77,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:ingotConstantan>, <ore:ingotBrick>, <ore:ingotConstantan>],
-    [<ore:ingotBrick>, <ore:bricksStone>, <ore:ingotBrick>],
-    [<ore:ingotConstantan>, <ore:ingotBrick>, <ore:ingotConstantan>]])
+    [<ore:ingotSoularium>, <minecraft:nether_brick>, <ore:ingotSoularium>],
+    [<minecraft:nether_brick>, <minecraft:magma_cream>, <minecraft:nether_brick>],
+    [<ore:ingotSoularium>, <minecraft:nether_brick>, <ore:ingotSoularium>]])
   .setFluid(<liquid:lava> * 2000)
   .addTool(<ore:artisansTrowel>, 15)
   .addOutput(<immersiveengineering:stone_decoration:1>*3)
