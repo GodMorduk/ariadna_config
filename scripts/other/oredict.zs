@@ -30,3 +30,12 @@ oreDevoritium.add(<ancientspellcraft:devoritium_ore>);
 
 var oreValkyrium = <ore:oreValkyrium>;
 oreValkyrium.add(<vs_world:valkyrium_ore>);
+
+var itemSalt = <ore:itemSalt>;
+itemSalt.add(<alchemistry:mineral_salt>);
+
+var dustSalt = <ore:dustSalt>;
+dustSalt.add(<alchemistry:mineral_salt>);
+
+var foodSalt = <ore:foodSalt>;
+foodSalt.add(<alchemistry:mineral_salt>);
