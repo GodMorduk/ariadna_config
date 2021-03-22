@@ -7,5 +7,3 @@ recipes.removeByRecipeName("harvestcraft:shippingbin");
 recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_3_x4_pamcinnamon");
 recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_1_x4_pammaple");
 recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_3_x4_pampaperbark");
-
-recipes.removeByRecipeName("unidict:dustsalt_x1_size.2_2");
