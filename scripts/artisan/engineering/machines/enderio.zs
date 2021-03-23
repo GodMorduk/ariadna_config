@@ -1,6 +1,38 @@
 import crafttweaker.item.IIngredient;
-import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
+import mods.artisanworktables.builder.RecipeBuilder;
+import mods.tconstruct.Casting;
+
+// Removing casting balls recipes
+for i in 0 to 10 {
+  var ball = <enderio:item_alloy_ball>.definition.makeStack(i);
+  Casting.removeTableRecipe(ball);
+
+  var block = <enderio:block_alloy>.definition.makeStack(i);
+
+  RecipeBuilder.get("engineer")
+    .setShapeless([block])
+    .addTool(<ore:artisansFile>, 50)
+    .addOutput(ball)
+    .create();
+}
+
+var blocks = {
+  <enderio:item_alloy_ball:57> : <ore:blockSignalium>,
+  <enderio:item_alloy_ball:58> : <ore:blockEnderium>,
+  <enderio:item_alloy_ball:59> : <ore:blockLumium>
+} as IIngredient[IItemStack];
+
+for i in 57 to 60 {
+  var ball = <enderio:item_material>.definition.makeStack(i);
+  Casting.removeTableRecipe(ball);
+
+  RecipeBuilder.get("engineer")
+    .setShapeless([blocks[ball]])
+    .addTool(<ore:artisansFile>, 50)
+    .addOutput(ball)
+    .create();
+}
 
 //убираем обычные крафты шаров
 recipes.removeByRecipeName("enderio:dark_steel_ball_crafting");
@@ -87,6 +119,80 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 20)
   .addOutput(<enderio:block_solar_panel>)
   .create();
+
+recipes.removeByRecipeName("enderio:exit_rail");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotIron>, <ore:craftingPiston>, <ore:ingotIron>],
+    [<ore:ingotIron>, <minecraft:stone_pressure_plate>, <ore:ingotIron>],
+    [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<enderio:block_exit_rail> * 6)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_facade");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:itemConduitBinder>, null, <ore:itemConduitBinder>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_conduit_facade> * 4)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_facade_hardened");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:dustObsidian>, null],
+    [<ore:dustObsidian>, <enderio:item_conduit_facade>, <ore:dustObsidian>],
+    [null, <ore:dustObsidian>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<enderio:item_conduit_facade:1>)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_facade_transparent");
+
+
+recipes.removeByRecipeName("enderio:conduit_facade_transparent_hardened");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:dustObsidian>, null],
+    [<ore:dustObsidian>, <enderio:item_conduit_facade:1>, <ore:dustObsidian>],
+    [null, <ore:dustObsidian>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<enderio:item_conduit_facade:3>)
+  .create();
+
+recipes.removeByRecipeName("enderio:glider_wing");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:ingotDarkSteel>],
+    [null, <ore:ingotDarkSteel>, <techguns:itemshared:60>],
+    [<ore:ingotDarkSteel>, <techguns:itemshared:60>, <techguns:itemshared:60>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addOutput(<enderio:item_material:6>)
+  .create();
+
+recipes.removeByRecipeName("enderio:glider_wings");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:ingotDarkSteel>, null],
+    [<ore:itemGliderWing>, <ore:ingotDarkSteel>, <ore:itemGliderWing>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<enderio:item_material:7>)
+  .create();
+
+recipes.removeByRecipeName("enderio:binder_composite");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gravel>, <ore:clay>, <ore:gravel>],
+    [<ore:sand>, <ore:gravel>, <ore:sand>],
+    [<ore:gravel>, <ore:clay>, <ore:gravel>]])
+  .addTool(<artisanworktables:artisans_sifter_iron>, 1)
+  .addOutput(<enderio:item_material:22> * 8)
+  .create();
+
+##2 tier
 
 recipes.removeByRecipeName("enderio:conduit_probe");
 RecipeBuilder.get("engineer")
@@ -348,6 +454,8 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSolderer>, 25)
   .addOutput(<enderio:block_advanced_power_monitor>)
   .create();
+
+##3 tier
 
 recipes.removeByRecipeName("enderio:wireless_energy_transmitter_dish_assembly");
 RecipeBuilder.get("engineer")

@@ -196,3 +196,13 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:52> * 2)
   .create();
 
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:itemPulsatingCrystal>, null],
+    [<ore:itemVibrantCrystal>, <ore:itemEnderCrystal>, <ore:itemVibrantCrystal>],
+    [null, <ore:itemPulsatingCrystal>, null]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addTool(<ore:artisansCarver>, 25)
+  .addTool(<ore:artisansBurner>, 25)
+  .addOutput(<enderio:item_material:18>)
+  .create();

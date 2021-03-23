@@ -215,7 +215,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<enderio:item_material:2> * 16)
+  .addOutput(<enderio:item_material:2> * 4)
   .create();
 
 recipes.removeByRecipeName("enderio:machine_dye");
@@ -332,7 +332,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<enderio:item_material:68> * 16)
+  .addOutput(<enderio:item_material:68> * 4)
   .create();
 
 mods.mekanism.infuser.addRecipe("DIAMOND", 60, <mekanism:enrichedalloy>, <mekanism:reinforcedalloy>);

@@ -365,3 +365,30 @@ RecipeBuilder.get("engineer")
   .addOutput(<refinedstorage:quartz_enriched_iron> * 3)
   .setExtraOutputOne(<refinedstorage:quartz_enriched_iron>, 0.5)
   .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <ore:stickWood>, null],
+    [<ore:stickWood>, null, <ore:stickWood>],
+    [null, <ore:stickWood>, null]])
+  .addTool(<ore:artisansKnife>, 5)
+  .addOutput(<enderio:item_material:9>)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:stickWood>, <pyrotech:material:16>, <ore:stickWood>],
+    [<pyrotech:material:16>, null, <pyrotech:material:16>],
+    [<ore:stickWood>, <pyrotech:material:16>, <ore:stickWood>]])
+  .addTool(<ore:artisansChisel>, 5)
+  .addOutput(<enderio:item_material:10>)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [null, <pyrotech:material:16>, null],
+    [<pyrotech:material:16>, <ore:gearWood>, <pyrotech:material:16>],
+    [null, <pyrotech:material:16>, null]])
+  .addTool(<ore:artisansChisel>, 5)
+  .addOutput(<enderio:item_material:10>)
+  .create();
