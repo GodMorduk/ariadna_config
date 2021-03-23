@@ -18,9 +18,9 @@ for i in 0 to 10 {
 }
 
 var blocks = {
-  <enderio:item_alloy_ball:57> : <ore:blockSignalium>,
-  <enderio:item_alloy_ball:58> : <ore:blockEnderium>,
-  <enderio:item_alloy_ball:59> : <ore:blockLumium>
+  <enderio:item_material:57> : <ore:blockSignalum>,
+  <enderio:item_material:58> : <ore:blockEnderium>,
+  <enderio:item_material:59> : <ore:blockLumium>
 } as IIngredient[IItemStack];
 
 for i in 57 to 60 {
