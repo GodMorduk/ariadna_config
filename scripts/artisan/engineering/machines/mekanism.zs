@@ -1,4 +1,5 @@
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 ##1tier
@@ -32,7 +33,145 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:machineblock2:11>.withTag({tier: 0, mekData: {}}))
   .create();
 
-##2 tier
+recipes.removeByRecipeName("mekanism:walkietalkie");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <ore:stickAluminum>],
+    [<industrialforegoing:plastic>, <ore:circuitBasic>, <ore:oc:wlanCard1>],
+    [<industrialforegoing:plastic>, <opencomputers:material:14>, <industrialforegoing:plastic>]])
+  .addTool(<ore:artisansSolderer>, 15)
+  .addOutput(<mekanism:walkietalkie>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:dictionary");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>],
+    [<industrialforegoing:plastic>, <ore:circuitBasic>, <industrialforegoing:plastic>],
+    [<industrialforegoing:plastic>, <ore:oc:analyzer>, <industrialforegoing:plastic>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<mekanism:dictionary>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:configurationcard");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:itemEnrichedAlloy>, null],
+    [<ore:itemEnrichedAlloy>, <ore:circuitBasic>, <ore:itemEnrichedAlloy>],
+    [null, <ore:itemEnrichedAlloy>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<mekanism:configurationcard>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:craftingformula");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:oc:eeprom>, <ore:circuitBasic>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<mekanism:craftingformula>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:polyethene_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:polyethene>, <mekanism:polyethene>],
+    [<mekanism:polyethene>, <mekanism:polyethene>]])
+  .addTool(<ore:artisansBurner>, 5)
+  .addOutput(<mekanism:polyethene:1>)
+  .create();
+  
+recipes.removeByRecipeName("mekanism:polyethene_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>],
+    [<mekanism:polyethene>, null, <mekanism:polyethene>],
+    [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>]])
+  .addTool(<ore:artisansBurner>, 5)
+  .addOutput(<mekanism:polyethene:2>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:polyethene_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:polyethene:1>],
+    [<mekanism:polyethene:1>]])
+  .addTool(<ore:artisansBurner>, 5)
+  .addOutput(<mekanism:polyethene:3>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:dustRedstone>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<mekanism:transmitter>.withTag({tier: 0}) * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:itemEmptyBucket>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<mekanism:transmitter:1>.withTag({tier: 0}) * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<mekanism:transmitter:2>.withTag({tier: 0}) * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<mekanism:transmitter:3>.withTag({tier: 0}) * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:dustConstantan>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<mekanism:transmitter:6>.withTag({tier: 0}) * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<mekanism:transmitter:4>.withTag({tier: 0}) * 2)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
+    [<ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>],
+    [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]])
+  .addTool(<ore:artisansFramingHammer>, 1)
+  .addOutput(<mekanism:transmitter:5>.withTag({tier: 0}) * 2)
+  .create();
+
+recipes.removeByRecipeName("mekanism:obsidiantnt");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],
+    [<minecraft:tnt>, <minecraft:tnt>, <minecraft:tnt>],
+    [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]])
+  .addTool(<ore:artisansTSquare>, 25)
+  .addOutput(<mekanism:obsidiantnt>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:cardboardbox");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustWood>, <ore:paper>, <ore:dustWood>],
+    [<ore:paper>, <ore:slimeball>, <ore:paper>],
+    [<ore:dustWood>, <ore:paper>, <ore:dustWood>]])
+  .addTool(<ore:artisansShears>, 5)
+  .addOutput(<mekanism:cardboardbox>)
+  .create();
+
+
+
+##2 tier  
 
 recipes.removeByRecipeName("mekanism:gaugedropper");
 RecipeBuilder.get("engineer")
@@ -720,7 +859,51 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:seismicreader>)
   .create();
 
-##3 tiet
+recipes.removeByRecipeName("mekanism:basicblock_14");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:circuitAdvanced>, <ore:oc:screen2>, <ore:circuitAdvanced>],
+    [<mekanism:basicblock2>, <ore:oc:tankControllerUpgrade>, <mekanism:basicblock2>],
+    [<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSolderer>, 50)
+  .addOutput(<mekanism:basicblock:14>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:basicblock_15");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <mekanism:basicblock2>, null],
+    [<mekanism:basicblock2>, <immersivetech:valve>, <mekanism:basicblock2>],
+    [null, <mekanism:basicblock2>, null]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<mekanism:basicblock:15>)
+  .create();
+
+recipes.removeByRecipeName("mekanism:basicblock2_0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:plateConstantan>, <ore:plateSteel>],
+    [<ore:plateConstantan>, null, <ore:plateConstantan>],
+    [<ore:plateSteel>, <ore:plateConstantan>, <ore:plateSteel>]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansFramingHammer>, 15)
+  .addOutput(<mekanism:basicblock2> * 2)
+  .create();
+
+recipes.removeByRecipeName("mekanism:machineblock2_11_alt");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:alloyAdvanced>, <techguns:itemshared:58>, <ore:alloyAdvanced>],
+    [<ore:plateInvar>, <mekanism:machineblock2:11>.withTag({tier: 0}), <ore:plateInvar>],
+    [<ore:alloyAdvanced>, <ore:plateInvar>, <ore:alloyAdvanced>]])
+  .addTool(<ore:artisansSolderer>, 25)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<mekanism:machineblock2:11>.withTag({tier: 1}))
+  .create();
+
+##3 tier
 
 recipes.removeByRecipeName("mekanismgenerators:generator_6");
 RecipeBuilder.get("engineer")
@@ -769,18 +952,6 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 50)
   .addTool(<ore:artisansSolderer>, 50)
   .addOutput(<mekanism:gastank>.withTag({tier: 3}))
-  .create();
-
-recipes.removeByRecipeName("mekanism:machineblock2_11_alt");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:alloyAdvanced>, <techguns:itemshared:58>, <ore:alloyAdvanced>],
-    [<ore:plateInvar>, <mekanism:machineblock2:11>.withTag({tier: 0}), <ore:plateInvar>],
-    [<ore:alloyAdvanced>, <ore:plateInvar>, <ore:alloyAdvanced>]])
-  .addTool(<ore:artisansSolderer>, 25)
-  .addTool(<ore:artisansFramingHammer>, 25)
-  .addTool(<ore:artisansSpanner>, 25)
-  .addOutput(<mekanism:machineblock2:11>.withTag({tier: 1}))
   .create();
 
 recipes.removeByRecipeName("mekanism:machineblock2_11_alt_alt");
@@ -975,7 +1146,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:basicblock2:4>.withTag({tier: 2}))
   .create();
 
-recipes.removeByRecipeName("mekanism:machineblock2_4_alt_alt_alt");
+recipes.removeByRecipeName("mekanism:basicblock2_4_alt_alt_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:circuitUltimate>, <mekanism:basicblock2:4>.withTag({tier: 2}), <ore:circuitUltimate>],
@@ -1355,7 +1526,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanismgenerators:reactor>)
   .create();
 
-recipes.removeByRecipeName("mekanism:portableteleport");
+recipes.removeByRecipeName("mekanism:portableteleporter");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, null],
@@ -1380,3 +1551,65 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansFramingHammer>, 100)
   .addOutput(<mekanism:basicblock:6>.withTag({tier: 3}))
   .create();
+
+recipes.removeByRecipeName("mekanism:basicblock2_9");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:oc:screen2>, <ore:plateSteel>],
+    [<ore:circuitElite>, <mekanism:basicblock:8>, <ore:circuitElite>],
+    [<ore:plateSteel>, <mekanism:teleportationcore>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSolderer>, 50)
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<mekanism:basicblock2:9>)
+  .create();
+
+// Removing machines upgrade recipes
+for i in 5 to 8 {
+  var recipeName = "mekanism:machineblock_" + i;
+
+  for k in 0 to 9 {
+    recipes.removeByRecipeName(recipeName);
+
+    recipeName = recipeName + "_alt";
+  }
+}
+
+// Removing pipes recipes
+for i in 0 to 7 {
+  var recipeName = "mekanism:transmitter_" + i;
+
+  for k in 0 to 4 {
+    recipes.removeByRecipeName(recipeName);
+
+    recipeName = recipeName + "_alt";
+  }
+}
+
+// Replacing Pipes Recipes
+
+var pipes = [
+  <mekanism:transmitter>,
+  <mekanism:transmitter:1>,
+  <mekanism:transmitter:2>,
+  <mekanism:transmitter:3>,
+  <mekanism:transmitter:6>
+] as IItemStack[];
+
+var alloys = [
+  <ore:alloyAdvanced>,
+  <ore:alloyElite>,
+  <ore:alloyUltimate>
+] as IIngredient[];
+
+for i in 0 to 3 {
+  for pipe in pipes {
+    var recipe = RecipeBuilder.get("engineer")
+      .setShaped([
+        [pipe.withTag({tier: i}), pipe.withTag({tier: i}), pipe.withTag({tier: i})],
+        [pipe.withTag({tier: i}), alloys[i], pipe.withTag({tier: i})],
+        [pipe.withTag({tier: i}), pipe.withTag({tier: i}), pipe.withTag({tier: i})]])
+      .addOutput(pipe.withTag({tier: i + 1}) * 8)
+      .create();
+  }
+}

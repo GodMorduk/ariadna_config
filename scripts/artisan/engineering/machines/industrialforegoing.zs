@@ -60,7 +60,7 @@ RecipeBuilder.get("engineer")
 safeRemoveRecipe("industrialforegoing:oredictionary_converter");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:nuggetAluminum>, <ore:ingotNickel>, <ore:blockSilver>],
+    [<ore:nuggetAluminum>, <mekanism:dictionary>, <ore:blockSilver>],
     [<industrialforegoing:plastic>, <thermalexpansion:frame>, <industrialforegoing:plastic>],
     [<industrialforegoing:plastic>, <ore:circuitBasic>, <industrialforegoing:plastic>]])
   .addTool(<ore:artisansSolderer>, 20)
@@ -104,7 +104,7 @@ RecipeBuilder.get("engineer")
 safeRemoveRecipe("industrialforegoing:fluiddictionary_converter");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:261>, <industrialforegoing:plastic>, <thermalfoundation:material:261>],
+    [<thermalfoundation:material:261>, <mekanism:dictionary>, <thermalfoundation:material:261>],
     [<ore:blockGlass>, <thermalexpansion:frame>, <ore:blockGlass>],
     [<thermalexpansion:tank>, <thermalfoundation:material:512>, <thermalexpansion:tank>]])
   .addTool(<ore:artisansSpanner>, 25)
