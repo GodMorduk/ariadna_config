@@ -188,7 +188,7 @@ RecipeBuilder.get("engineer")
     [<ore:gravel>, <ore:clay>, <ore:gravel>],
     [<ore:sand>, <ore:gravel>, <ore:sand>],
     [<ore:gravel>, <ore:clay>, <ore:gravel>]])
-  .addTool(<artisanworktables:artisans_sifter_iron>, 5)
+  .addTool(<ore:artisansSifter>, 5)
   .addOutput(<enderio:item_material:22> * 8)
   .create();
 
@@ -519,7 +519,7 @@ recipes.removeByRecipeName("enderio:filter_redstone_scanner");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<minecraft:comparator>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>]])
-  .addTool(<ore:artisansSolderer>, 1)
+  .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<enderio:item_redstone_sensor_filter>)
   .create();
 

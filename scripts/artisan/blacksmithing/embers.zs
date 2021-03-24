@@ -18,7 +18,7 @@ RecipeBuilder.get("blacksmith")
     [null, <ore:ingotIron>, null],
     [<ore:plateCopper>, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), <ore:plateCopper>],
     [<ore:plateCopper>, <ore:blockRedstone>, <ore:plateCopper>]])
-  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 15)
+  .addTool(<ore:artisansFramingHammer>, 15)
   .addOutput(<embers:ember_detector>)
   .create();
 
@@ -235,7 +235,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotCopper>, <embers:crystal_ember>, <ore:ingotCopper>],
     [<embers:crystal_ember>, <ore:blockCopper>, <embers:crystal_ember>],
     [<ore:plateIron>, <minecraft:furnace>, <ore:plateIron>]])
-  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 50)
+  .addTool(<ore:artisansFramingHammer>, 50)
   .addOutput(<embers:ember_activator>)
   .create();
 
@@ -314,7 +314,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateDawnstone>],
     [<embers:ember_emitter>],
     [<ore:ingotIron>]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 25)
   .addOutput(<embers:ember_pulser>)
   .create();
 
@@ -424,7 +424,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockDawnstone>, <ore:blockDawnstone>, <ore:blockDawnstone>],
     [<ore:plateInvar>, <embers:mech_core>, <ore:plateInvar>],
     [<ore:blockInvar>, <embers:block_caminite_brick>, <ore:blockInvar>]])
-  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 100)
+  .addTool(<ore:artisansFramingHammer>, 100)
   .addOutput(<embers:dawnstone_anvil>)
   .create();
 
@@ -688,4 +688,3 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansDriver>, 50)
   .addOutput(<embers:ember_injector>)
   .create();
-
