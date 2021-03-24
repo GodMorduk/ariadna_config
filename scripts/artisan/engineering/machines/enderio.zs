@@ -15,6 +15,12 @@ for i in 0 to 10 {
     .addTool(<ore:artisansFile>, 50)
     .addOutput(ball)
     .create();
+
+  RecipeBuilder.get("blacksmith")
+    .setShapeless([block])
+    .addTool(<ore:artisansHammer>, 25)
+    .addOutput(ball)
+    .create();
 }
 
 var blocks = {
@@ -30,6 +36,12 @@ for i in 57 to 60 {
   RecipeBuilder.get("engineer")
     .setShapeless([blocks[ball]])
     .addTool(<ore:artisansFile>, 50)
+    .addOutput(ball)
+    .create();
+  
+  RecipeBuilder.get("blacksmith")
+    .setShapeless([blocks[ball]])
+    .addTool(<ore:artisansHammer>, 25)
     .addOutput(ball)
     .create();
 }
@@ -48,6 +60,9 @@ recipes.removeByRecipeName("enderio:conductive_iron_ball_crafting");
 recipes.removeByRecipeName("enderio:pulsating_iron_ball_crafting");
 recipes.removeByRecipeName("enderio:electrical_steel_ball_crafting");
 recipes.removeByRecipeName("enderio:redstone_alloy_ball_crafting");
+
+recipes.removeByRecipeName("enderio:end_axe");
+recipes.removeByRecipeName("enderio:end_steel_boots");
 
 ##1tier
 recipes.removeByRecipeName("enderio:yeta_wrench");
@@ -173,6 +188,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:6>)
   .create();
 
+RecipeBuilder.get("tanner")
+  .setShaped([
+    [null, null, <ore:ingotDarkSteel>],
+    [null, <ore:ingotDarkSteel>, <harvestcraft:hardenedleatheritem>],
+    [<ore:ingotDarkSteel>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addOutput(<enderio:item_material:6>)
+  .create();
+
 recipes.removeByRecipeName("enderio:gilder_wings");
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -188,8 +212,17 @@ RecipeBuilder.get("engineer")
     [<ore:gravel>, <ore:clay>, <ore:gravel>],
     [<ore:sand>, <ore:gravel>, <ore:sand>],
     [<ore:gravel>, <ore:clay>, <ore:gravel>]])
-  .addTool(<ore:artisansSifter>, 5)
+  .addTool(<ore:artisansSifter>, 10)
   .addOutput(<enderio:item_material:22> * 8)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:gravel>, <ore:clay>, <ore:gravel>],
+    [<ore:sand>, <ore:gravel>, <ore:sand>],
+    [<ore:gravel>, <ore:clay>, <ore:gravel>]])
+  .addTool(<ore:artisansSifter>, 5)
+  .addOutput(<enderio:item_material:22> * 16)
   .create();
 
 recipes.removeByRecipeName("enderio:filter_redstone_base");

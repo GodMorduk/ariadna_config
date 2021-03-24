@@ -34,12 +34,22 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("enderio:vibrant_crystal");
 RecipeBuilder.get("engineer")
   .setShaped([
+    [<ore:nuggetVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:nuggetVibrantAlloy>],
+    [<ore:ingotVibrantAlloy>, <ore:gemEmerald>, <ore:ingotVibrantAlloy>],
+    [<ore:nuggetVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:nuggetVibrantAlloy>]])
+  .addTool(<ore:artisansCarver>, 50)
+  .addTool(<ore:artisansGemCutter>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .addOutput(<enderio:item_material:15>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
     [<ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>],
     [<ore:nuggetVibrantAlloy>, <ore:gemEmerald>, <ore:nuggetVibrantAlloy>],
     [<ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>]])
-  .addTool(<ore:artisansCarver>, 10)
-  .addTool(<ore:artisansGemCutter>, 10)
-  .addTool(<ore:artisansBurner>, 10)
+  .addTool(<ore:artisansCarver>, 25)
+  .addTool(<ore:artisansGemCutter>, 25)
   .addOutput(<enderio:item_material:15>)
   .create();
 
@@ -190,9 +200,20 @@ RecipeBuilder.get("engineer")
     [<enderio:block_holy_fog>, <enderio:item_material:49>, <enderio:item_material:50>, <enderio:item_material:49>, <enderio:block_holy_fog>],
     [null, <ore:dustSoularium>, <enderio:item_material:49>, <ore:dustSoularium>, null],
     [<ore:dustNetherQuartz>, null, <enderio:block_holy_fog>, null, <ore:dustNetherQuartz>]])
+  .addTool(<ore:artisansMortar>, 30)
+  .addTool(<ore:artisansBurner>, 30)
+  .addTool(<ore:artisansSifter>, 30)
+  .addOutput(<enderio:item_material:52>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustSoularium>, <enderio:item_material:49>, <ore:dustSoularium>],
+    [<enderio:item_material:49>, <enderio:item_material:50>, <enderio:item_material:49>],
+    [<ore:dustSoularium>, <enderio:item_material:49>, <ore:dustSoularium>]])
+  .setSecondaryIngredients([<ore:dustNetherQuartz> * 2, <enderio:block_holy_fog> * 2])
   .addTool(<ore:artisansMortar>, 15)
   .addTool(<ore:artisansBurner>, 15)
-  .addTool(<ore:artisansSifter>, 15)
   .addOutput(<enderio:item_material:52> * 2)
   .create();
 
@@ -201,8 +222,18 @@ RecipeBuilder.get("engineer")
     [null, <ore:itemPulsatingCrystal>, null],
     [<ore:itemVibrantCrystal>, <ore:itemEnderCrystal>, <ore:itemVibrantCrystal>],
     [null, <ore:itemPulsatingCrystal>, null]])
+  .addTool(<ore:artisansGemCutter>, 50)
+  .addTool(<ore:artisansCarver>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .addOutput(<enderio:item_material:18>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <ore:gemDiamond>, null],
+    [<ore:gemEmerald>, <ore:itemEnderCrystal>, <ore:gemEmerald>],
+    [null, <ore:gemDiamond>, null]])
   .addTool(<ore:artisansGemCutter>, 25)
   .addTool(<ore:artisansCarver>, 25)
-  .addTool(<ore:artisansBurner>, 25)
   .addOutput(<enderio:item_material:18>)
   .create();

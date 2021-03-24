@@ -75,6 +75,14 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<mekanism:polyethene>, <mekanism:polyethene>],
     [<mekanism:polyethene>, <mekanism:polyethene>]])
+  .addTool(<ore:artisansBurner>, 10)
+  .addOutput(<mekanism:polyethene:1>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<mekanism:polyethene>, <mekanism:polyethene>],
+    [<mekanism:polyethene>, <mekanism:polyethene>]])
   .addTool(<ore:artisansBurner>, 5)
   .addOutput(<mekanism:polyethene:1>)
   .create();
@@ -85,12 +93,29 @@ RecipeBuilder.get("engineer")
     [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>],
     [<mekanism:polyethene>, null, <mekanism:polyethene>],
     [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>]])
+  .addTool(<ore:artisansBurner>, 10)
+  .addOutput(<mekanism:polyethene:2>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>],
+    [<mekanism:polyethene>, null, <mekanism:polyethene>],
+    [<mekanism:polyethene>, <mekanism:polyethene>, <mekanism:polyethene>]])
   .addTool(<ore:artisansBurner>, 5)
   .addOutput(<mekanism:polyethene:2>)
   .create();
 
 recipes.removeByRecipeName("mekanism:polyethene_3");
 RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:polyethene:1>],
+    [<mekanism:polyethene:1>]])
+  .addTool(<ore:artisansBurner>, 10)
+  .addOutput(<mekanism:polyethene:3>)
+  .create();
+
+RecipeBuilder.get("chemist")
   .setShaped([
     [<mekanism:polyethene:1>],
     [<mekanism:polyethene:1>]])
@@ -169,7 +194,14 @@ RecipeBuilder.get("engineer")
   .addOutput(<mekanism:cardboardbox>)
   .create();
 
-
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:dustWood>, <ore:paper>, <ore:dustWood>],
+    [<ore:paper>, <ore:slimeball>, <ore:paper>],
+    [<ore:dustWood>, <ore:paper>, <ore:dustWood>]])
+  .addTool(<ore:artisansShears>, 5)
+  .addOutput(<mekanism:cardboardbox>)
+  .create();
 
 ##2 tier  
 

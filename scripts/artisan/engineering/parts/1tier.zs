@@ -338,6 +338,12 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:38>)
   .create();
 
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dustLapis>, <ore:dustCoal>, <ore:itemSilicon>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<enderio:item_material:38> * 2)
+  .create();
+
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/light_engineering");
 RecipeBuilder.get("engineer")
   .setShaped([

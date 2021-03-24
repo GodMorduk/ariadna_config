@@ -224,9 +224,19 @@ RecipeBuilder.get("engineer")
     [<ore:dustLapis>, <ore:dustNetherQuartz>, <enderio:item_material:48>],
     [<ore:dustNetherQuartz>, <enderio:item_material:50>, <ore:dustNetherQuartz>],
     [<enderio:item_material:48>, <ore:dustNetherQuartz>, <ore:dustLapis>]])
-  .addTool(<ore:artisansMortar>, 15)
-  .addTool(<ore:artisansBurner>, 15)
+  .addTool(<ore:artisansMortar>, 30)
+  .addTool(<ore:artisansBurner>, 30)
   .addOutput(<enderio:item_material:51>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustLapis>, <ore:dustNetherQuartz>, <enderio:item_material:48>],
+    [<ore:dustNetherQuartz>, <enderio:item_material:50>, <ore:dustNetherQuartz>],
+    [<enderio:item_material:48>, <ore:dustNetherQuartz>, <ore:dustLapis>]])
+  .addTool(<ore:artisansMortar>, 10)
+  .addTool(<ore:artisansBurner>, 10)
+  .addOutput(<enderio:item_material:51> * 2)
   .create();
 
 recipes.removeByRecipeName("mekanism:basicblock_8");
@@ -249,6 +259,16 @@ RecipeBuilder.get("engineer")
     [<ore:nuggetPulsatingIron>, <ore:ingotPulsatingIron>, <ore:nuggetPulsatingIron>]])
   .addTool(<ore:artisansCarver>, 30)
   .addTool(<ore:artisansBurner>, 30)
+  .addOutput(<enderio:item_material:14>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>],
+    [<ore:nuggetPulsatingIron>, <ore:gemDiamond>, <ore:nuggetPulsatingIron>],
+    [<ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>]])
+  .addTool(<ore:artisansCarver>, 15)
+  .addTool(<ore:artisansBurner>, 15)
   .addOutput(<enderio:item_material:14>)
   .create();
 
