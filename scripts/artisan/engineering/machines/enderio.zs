@@ -1028,7 +1028,7 @@ RecipeBuilder.get("engineer")
     [null, null, <ore:itemPrecientCrystal>],
     [null, <ore:itemInfinityRod>, null],
     [<ore:itemInfinityRod>, null, null]])
-  .setSecondaryIngredients([<thermalexpansion:reservoir:2>)
+  .setSecondaryIngredients([<thermalexpansion:reservoir:2>])
   .addTool(<ore:artisansFramingHammer>, 50)
   .addTool(<ore:artisansDriver>, 50)
   .addOutput(<enderio:item_staff_of_levity>)
