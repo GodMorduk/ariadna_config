@@ -335,4 +335,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:68> * 4)
   .create();
 
+recipes.removeByRecipeName("enderio:gear_dark");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:ingotDarkSteel>, null],
+    [<ore:ingotDarkSteel>, <ore:gearIronInfinity>, <ore:ingotDarkSteel>],
+    [null, <ore:ingotDarkSteel>, null]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addTool(<ore:artisansFile>, 10)
+  .addOutput(<enderio:item_material:73>)
+  .create();
+
 mods.mekanism.infuser.addRecipe("DIAMOND", 60, <mekanism:enrichedalloy>, <mekanism:reinforcedalloy>);

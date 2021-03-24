@@ -173,7 +173,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:6>)
   .create();
 
-recipes.removeByRecipeName("enderio:glider_wings");
+recipes.removeByRecipeName("enderio:gilder_wings");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:ingotDarkSteel>, null],
@@ -188,8 +188,446 @@ RecipeBuilder.get("engineer")
     [<ore:gravel>, <ore:clay>, <ore:gravel>],
     [<ore:sand>, <ore:gravel>, <ore:sand>],
     [<ore:gravel>, <ore:clay>, <ore:gravel>]])
-  .addTool(<artisanworktables:artisans_sifter_iron>, 1)
+  .addTool(<artisanworktables:artisans_sifter_iron>, 5)
   .addOutput(<enderio:item_material:22> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_base");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotRedstoneAlloy>, <ore:paperBlack>, <ore:ingotRedstoneAlloy>],
+    [<ore:paperBlack>, <ore:ingotIron>, <ore:paperBlack>],
+    [<ore:ingotRedstoneAlloy>, <ore:paperBlack>, <ore:ingotRedstoneAlloy>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_material:60>)
+  .create();
+
+recipes.removeByRecipeName("enderio:dark_paper_anvil");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:paperBlack>, <ore:paperBlack>, <ore:paperBlack>],
+    [null, <ore:paperBlack>, null],
+    [<ore:paperBlack>, <ore:paperBlack>, <ore:paperBlack>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:block_dark_paper_anvil>)
+  .create();
+
+recipes.removeByRecipeName("enderio:black_paper");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:paper>, <ore:dyeBlack>])
+  .addOutput(<enderio:item_material:77>)
+  .create();
+
+recipes.removeByRecipeName("enderio:dark_steel_ladder");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<enderio:block_dark_iron_bars>],
+    [<enderio:block_dark_iron_bars>],
+    [<enderio:block_dark_iron_bars>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_dark_steel_ladder> * 10)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<enderio:block_dark_iron_bars>],
+    [<enderio:block_dark_iron_bars>],
+    [<enderio:block_dark_iron_bars>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<enderio:block_dark_steel_ladder> * 10)
+  .create();
+
+recipes.removeByRecipeName("enderio:dark_iron_bars");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_dark_iron_bars> * 16)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<enderio:block_dark_iron_bars> * 16)
+  .create();
+
+recipes.removeByRecipeName("enderio:dark_steel_trap_door");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_dark_steel_trapdoor>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<enderio:block_dark_steel_trapdoor>)
+  .create();
+
+recipes.removeByRecipeName("enderio:dark_steel_door");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_dark_steel_door> * 3)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<enderio:block_dark_steel_door> * 3)
+  .create();
+
+recipes.removeByRecipeName("enderio:end_iron_bars");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
+    [<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_end_iron_bars> * 16)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
+    [<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<enderio:block_end_iron_bars> * 16)
+  .create();
+
+recipes.removeByRecipeName("enderio:cold_fire_igniter");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:itemFlint>]])
+  .addTool(<ore:artisansFile>, 5)
+  .addOutput(<enderio:item_cold_fire_igniter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_basic");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:paperBlack>, null],
+    [<ore:paperBlack>, <ore:hopper>, <ore:paperBlack>],
+    [null, <ore:paperBlack>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_basic_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_advanced");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustRedstone>, <ore:paperBlack>, <ore:dustRedstone>],
+    [<ore:paperBlack>, <ore:skullZombieController>, <ore:paperBlack>],
+    [<ore:dustRedstone>, <ore:paperBlack>, <ore:dustRedstone>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_advanced_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_counting");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<minecraft:comparator>, <enderio:item_advanced_item_filter>, <minecraft:comparator>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_limited_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_big");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustObsidian>, <ore:paperBlack>, <ore:dustObsidian>],
+    [<ore:paperBlack>, <ore:skullSkeletalContractor>, <ore:paperBlack>],
+    [<ore:dustObsidian>, <ore:paperBlack>, <ore:dustObsidian>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_big_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_big_advanced");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:shulkerShell>],
+    [<enderio:item_big_item_filter>],
+    [<ore:shulkerShell>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_big_advanced_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_existing");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:dustRedstone>, null],
+    [<ore:dustRedstone>, <enderio:item_advanced_item_filter>, <ore:dustRedstone>],
+    [null, <minecraft:comparator>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_existing_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_mod");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:paperBlack>, null],
+    [<ore:paperBlack>, <enderio:item_yeta_wrench>, <ore:paperBlack>],
+    [null, <ore:paperBlack>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_mod_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_power");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:paperBlack>, null],
+    [<ore:paperBlack>, <enderio:item_conduit_probe>, <ore:paperBlack>],
+    [null, <ore:paperBlack>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_power_item_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_enchantment");
+RecipeBuilder.get("engineer")
+  .setShapeless([<enderio:item_basic_item_filter>, <minecraft:enchanted_book>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_enchantment_filter_normal>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_enchantment_big");
+RecipeBuilder.get("engineer")
+  .setShapeless([<enderio:item_big_item_filter>, <minecraft:enchanted_book>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_enchantment_filter_big>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_fluid");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:paperBlack>, null],
+    [<ore:paperBlack>, <ore:itemEmptyBucket>, <ore:paperBlack>],
+    [null, <ore:paperBlack>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_fluid_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_n_o_t");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:torchRedstoneActive>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_not_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_o_r");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotRedstoneAlloy>],
+    [<ore:itemRedstoneFilterBase>],
+    [<ore:ingotRedstoneAlloy>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_or_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_n_o_r_uncraft");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_nor_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_or_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_a_n_d");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:torchRedstoneActive>],
+    [<ore:itemRedstoneFilterBase>],
+    [<ore:torchRedstoneActive>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_and_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_n_a_n_d_uncraft");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_nand_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_and_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_n_o_r");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_or_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_nor_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_n_a_n_d");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_and_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_nand_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_x_o_r");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:torchRedstoneActive>, null],
+    [<ore:ingotRedstoneAlloy>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>],
+    [null, <ore:torchRedstoneActive>, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_xor_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_x_n_o_r_uncraft");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_xnor_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_xor_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_x_n_o_r");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:torchRedstoneActive>, <enderio:item_redstone_xor_filter>])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_xnor_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_toggle_latch");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<minecraft:lever>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_toggle_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_counting");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotRedstoneAlloy>, null, null],
+    [<ore:ingotRedstoneAlloy>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>],
+    [<ore:ingotRedstoneAlloy>, null, null]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_counting_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_scanner");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<minecraft:comparator>, <ore:itemRedstoneFilterBase>, <ore:ingotRedstoneAlloy>]])
+  .addTool(<ore:artisansSolderer>, 1)
+  .addOutput(<enderio:item_redstone_sensor_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:filter_redstone_timer");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotRedstoneAlloy>, <ore:itemRedstoneFilterBase>, <minecraft:clock>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_redstone_timer_filter>)
+  .create();
+
+recipes.removeByRecipeName("enderio:inventory_charger_simple");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotConductiveIron>, <ore:ingotDarkSteel>],
+    [<ore:ingotConductiveIron>, <enderio:item_basic_capacitor>, <ore:ingotConductiveIron>],
+    [<ore:ingotDarkSteel>, <ore:ingotConductiveIron>, <ore:ingotDarkSteel>]])
+  .addTool(<ore:artisansSolderer>, 25)
+  .addOutput(<enderio:item_inventory_charger_simple>)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_item");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_item_conduit> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_liquid_basic");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_liquid_conduit> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_endergy_tier_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotConductiveIron>, <ore:ingotConductiveIron>, <ore:ingotConductiveIron>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_power_conduit> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_redstone_insulated");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_redstone_conduit> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_open_computers");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_opencomputers_conduit> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:upgrade_slowness");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
+    [<ore:plateTin>, <ore:slimeball>, <ore:plateTin>],
+    [<ore:plateTin>, <ore:stickWood>, <ore:plateTin>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<enderio:item_extract_speed_downgrade>)
+  .create();
+
+recipes.removeByRecipeName("enderio:light_electric");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:fusedQuartz>, <ore:fusedQuartz>, <ore:fusedQuartz>],
+    [<ore:itemSilicon>, <ore:itemClayedGlowstone>, <ore:itemSilicon>],
+    [<ore:itemSilicon>, <enderio:item_basic_capacitor>, <ore:itemSilicon>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_electric_light> * 4)
+  .create();
+
+recipes.removeByRecipeName("enderio:light_basic");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
+    [<ore:plateCopper>, <ore:glowstone>, <ore:plateCopper>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<enderio:block_electric_light:2> * 2)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_gas_basic");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:plateSteel>, <ore:itemEnrichedAlloy>, <ore:plateSteel>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<enderio:item_gas_conduit> * 8)
   .create();
 
 ##2 tier
@@ -240,6 +678,25 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:block_detector_block>)
   .create();
 
+recipes.removeByRecipeName("enderio:detector_block_silent");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemChassiParts>, <enderio:block_painted_pressure_plate:9>, <ore:itemChassiParts>],
+    [<ore:itemChassiParts>, <ore:craftingPiston>, <ore:itemChassiParts>],
+    [<ore:itemChassiParts>, <ore:blockRedstone>, <ore:itemChassiParts>]])
+  .setSecondaryIngredients([<ore:plateInvar> * 5])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<enderio:block_detector_block_silent>)
+  .create();
+
+recipes.removeByRecipeName("enderio:detector_block_silent_upgrade");
+RecipeBuilder.get("engineer")
+  .setShapeless([<enderio:block_detector_block>, <ore:blockWool>])
+  .addOutput(<enderio:block_detector_block_silent>)
+  .setMinimumTier(1)
+  .create();
+
 recipes.removeByRecipeName("enderio:alloy_smelter_upgrade");
 recipes.removeByRecipeName("enderio:alloy_smelter");
 RecipeBuilder.get("engineer")
@@ -276,6 +733,14 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 15)
   .addOutput(<enderio:block_buffer:1>)
   .create();
+
+recipes.removeByRecipeName("enderio:omni_buffer");
+RecipeBuilder.get("engineer")
+  .setShapeless([<enderio:block_buffer:1>, <enderio:block_buffer>])
+  .setMinimumTier(1)
+  .addOutput(<enderio:block_buffer:2>)
+  .create();
+
 
 recipes.removeByRecipeName("enderio:tank");
 RecipeBuilder.get("engineer")
@@ -412,11 +877,10 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("enderio:painter");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:gemQuartz>, <ore:gemDiamond>, <ore:gemQuartz>],
+    [<ore:gemQuartz>, <industrialforegoing:dye_mixer>, <ore:gemQuartz>],
     [<ore:gearIronInfinity>, <ore:itemMachineChassi>, <ore:gearIronInfinity>],
     [<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]])
-  .addTool(<ore:artisansDriver>, 50)
-  .addTool(<ore:artisansSpanner>, 50)
+  .addTool(<ore:artisansDriver>, 25)
   .addOutput(<enderio:block_painter>)
   .create();
 
@@ -453,6 +917,121 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
   .addOutput(<enderio:block_advanced_power_monitor>)
+  .create();
+
+recipes.removeByRecipeName("enderio:inventory_charger_basic");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:ingotElectricalSteel>, <ore:ingotDarkSteel>],
+    [<ore:itemWirelessDish>, <ore:skullEnderResonator>, <ore:itemWirelessDish>],
+    [<ore:ingotDarkSteel>, <enderio:block_cap_bank:1>, <ore:ingotDarkSteel>]])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_simple>])
+  .addTool(<ore:artisansSolderer>, 50)
+  .addTool(<ore:artisansDriver>, 50)
+  .addOutput(<enderio:item_inventory_charger_basic>)
+  .create();
+
+recipes.removeByRecipeName("enderio:inventory_charger");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotDarkSteel>, <ore:blockElectricalSteel>, <ore:ingotDarkSteel>],
+    [<ore:itemWirelessDish>, <ore:skullEnderResonator>, <ore:itemWirelessDish>],
+    [<ore:ingotDarkSteel>, <enderio:block_cap_bank:2>, <ore:ingotDarkSteel>]])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>])
+  .addTool(<ore:artisansSpanner>, 75)
+  .addTool(<ore:artisansToolIron>, 75)
+  .addOutput(<enderio:item_inventory_charger>)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_liquid_advanced");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:fusedQuartz>, <ore:fusedQuartz>, <ore:fusedQuartz>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(1)
+  .addOutput(<enderio:item_liquid_conduit:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_liquid_advanced_upgrade");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:fusedQuartz>, <enderio:item_liquid_conduit>, <ore:fusedQuartz>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(1)
+  .addOutput(<enderio:item_liquid_conduit:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_endergy_tier_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotEnergeticAlloy>, <ore:ingotEnergeticAlloy>, <ore:ingotEnergeticAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(1)
+  .addOutput(<enderio:item_power_conduit:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_endergy_tier_2_upgrade");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotEnergeticAlloy>, <enderio:item_power_conduit>, <ore:ingotEnergeticAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(1)
+  .addOutput(<enderio:item_power_conduit:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:upgrade_speed");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>],
+    [<ore:plateGold>, <ore:craftingPiston>, <ore:plateGold>],
+    [<ore:plateGold>, <ore:torchRedstoneActive>, <ore:plateGold>]])
+  .addTool(<ore:artisansSolderer>, 25)
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<enderio:item_extract_speed_upgrade>)
+  .create();
+
+recipes.removeByRecipeName("enderio:capbank_basic2normal");
+recipes.removeByRecipeName("enderio:capacitor_bank_activated");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotEnergeticAlloy>, <enderio:item_basic_capacitor:1>, <ore:ingotEnergeticAlloy>],
+    [<enderio:item_basic_capacitor:1>, <enderio:block_cap_bank:1>, <enderio:item_basic_capacitor:1>],
+    [<ore:ingotEnergeticAlloy>, <enderio:item_basic_capacitor:1>, <ore:ingotEnergeticAlloy>]])
+  .setSecondaryIngredients([<ore:ingotElectricalSteel> * 16, <ore:ingotEnergeticAlloy> * 4])
+  .addTool(<ore:artisansDriver>, 75)
+  .addTool(<ore:artisansSolderer>, 75)
+  .addOutput(<enderio:block_cap_bank:2>)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_gas_advanced");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<enderio:item_gas_conduit>, <enderio:item_gas_conduit>, <enderio:item_gas_conduit>],
+    [<enderio:item_gas_conduit>, <ore:alloyElite>, <enderio:item_gas_conduit>],
+    [<enderio:item_gas_conduit>, <enderio:item_gas_conduit>, <enderio:item_gas_conduit>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(1)
+  .addOutput(<enderio:item_gas_conduit:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:staff_of_levity");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:itemPrecientCrystal>],
+    [null, <ore:itemInfinityRod>, null],
+    [<ore:itemInfinityRod>, null, null]])
+  .setSecondaryIngredients([<thermalexpansion:reservoir:2>)
+  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansDriver>, 50)
+  .addOutput(<enderio:item_staff_of_levity>)
   .create();
 
 ##3 tier
@@ -501,9 +1080,8 @@ RecipeBuilder.get("engineer")
     [<ore:dustBedrock>, <enderio:block_dark_iron_bars>, <ore:dustBedrock>],
     [<enderio:block_dark_iron_bars>, <ore:obsidian>, <enderio:block_dark_iron_bars>],
     [<ore:dustBedrock>, <enderio:block_dark_iron_bars>, <ore:dustBedrock>]])
-  .addTool(<ore:artisansDriver>, 10)
-  .addTool(<ore:artisansSpanner>, 10)
-  .addTool(<ore:artisansFile>, 10)
+  .addTool(<ore:artisansDriver>, 15)
+  .addTool(<ore:artisansFramingHammer>, 15)
   .addOutput(<enderio:block_reinforced_obsidian>)
   .create();
 
@@ -591,7 +1169,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:block_farm_station>)
   .create();
 
-recipes.removeByRecipeName("enderio:slice_n_splice_dark_bar");
+recipes.removeByRecipeName("enderio:slice_n_splice_dark_bars");
 recipes.removeByRecipeName("enderio:slice_n_splice");
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -718,7 +1296,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:block_weather_obelisk>)
   .create();
 
-recipes.removeByRecipeName("enderio:elocator_obelisk");
+recipes.removeByRecipeName("enderio:relocator_obelisk");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:blockPrismarine>, <ore:blockPrismarine>, <ore:blockPrismarine>, null],
@@ -867,21 +1445,6 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 500)
   .addTool(<ore:artisansSolderer>, 500)
   .addOutput(<enderio:block_powered_spawner>)
-  .create();
-
-recipes.removeByRecipeName("enderio:capbank_basic2normal");
-recipes.removeByRecipeName("enderio:capacitor_bank_activated");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:ingotEnergeticAlloy>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotEnergeticAlloy>],
-    [<ore:ingotElectricalSteel>, <ore:ingotEnergeticAlloy>, <enderio:item_basic_capacitor:1>, <ore:ingotEnergeticAlloy>, <ore:ingotElectricalSteel>],
-    [<ore:ingotElectricalSteel>, <enderio:item_basic_capacitor:1>, <enderio:block_cap_bank:1>, <enderio:item_basic_capacitor:1>, <ore:ingotElectricalSteel>],
-    [<ore:ingotElectricalSteel>, <ore:ingotEnergeticAlloy>, <enderio:item_basic_capacitor:1>, <ore:ingotEnergeticAlloy>, <ore:ingotElectricalSteel>],
-    [<ore:ingotEnergeticAlloy>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotEnergeticAlloy>]])
-  .addTool(<ore:artisansDriver>, 100)
-  .addTool(<ore:artisansSpanner>, 100)
-  .addTool(<ore:artisansSolderer>, 100)
-  .addOutput(<enderio:block_cap_bank:2>)
   .create();
 
 recipes.removeByRecipeName("enderio:capbank_normal2vibrant");
@@ -1115,6 +1678,74 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 150)
   .addTool(<ore:artisansSolderer>, 150)
   .addOutput(<enderio:block_enhanced_sag_mill>)
+  .create();
+
+recipes.removeByRecipeName("enderio:inventory_charger_vibrant");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockDarkSteel>, <ore:blockElectricalSteel>, <ore:blockDarkSteel>],
+    [<ore:itemWirelessDish>, <ore:skullSentientEnder>, <ore:itemWirelessDish>],
+    [<ore:blockDarkSteel>, <enderio:block_cap_bank:3>, <ore:blockDarkSteel>],
+    [null, <enderio:item_inventory_charger>, null]])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSolderer>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<enderio:item_inventory_charger_vibrant>)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_liquid_ender");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotVibrantAlloy>, <ore:fusedQuartz>, <ore:ingotVibrantAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(2)
+  .addOutput(<enderio:item_liquid_conduit:2> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_liquid_ender_upgrade");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotVibrantAlloy>, <enderio:item_liquid_conduit:1>, <ore:ingotVibrantAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(2)
+  .addOutput(<enderio:item_liquid_conduit:2> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_endergy_tier_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(2)
+  .addOutput(<enderio:item_power_conduit:2> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_endergy_tier_3_upgrade");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
+    [<ore:ingotVibrantAlloy>, <enderio:item_power_conduit:1>, <ore:ingotVibrantAlloy>],
+    [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(2)
+  .addOutput(<enderio:item_power_conduit:2> * 8)
+  .create();
+
+recipes.removeByRecipeName("enderio:conduit_gas_ender");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<enderio:item_gas_conduit:1>, <enderio:item_gas_conduit:1>, <enderio:item_gas_conduit:1>],
+    [<enderio:item_gas_conduit:1>, <ore:alloyUltimate>, <enderio:item_gas_conduit:1>],
+    [<enderio:item_gas_conduit:1>, <enderio:item_gas_conduit:1>, <enderio:item_gas_conduit:1>]])
+  .addTool(<ore:artisansRazor>, 5)
+  .setMinimumTier(2)
+  .addOutput(<enderio:item_gas_conduit:2> * 8)
   .create();
 
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:17>);
