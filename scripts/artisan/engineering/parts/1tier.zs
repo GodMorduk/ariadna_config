@@ -58,12 +58,24 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotIron>, <ore:ingotIron>])
-  .addTool(<ore:artisansHammer>, 5)
+  .addTool(<ore:artisansHammer>, 10)
   .addOutput(<immersiveengineering:material:1>)
   .setExtraOutputOne(<immersiveengineering:material:1>, 0.15)
   .create();
 
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:ingotIron>, <ore:ingotIron>])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:material:1> * 2)
+  .create();
+
 RecipeBuilder.get("engineer")
+  .setShapeless([<ore:plankTreatedWood>, <ore:plankTreatedWood>])
+  .addTool(<ore:artisansHandsaw>, 10)
+  .addOutput(<immersiveengineering:material> * 4)
+  .create();
+
+RecipeBuilder.get("carpenter")
   .setShapeless([<ore:plankTreatedWood>, <ore:plankTreatedWood>])
   .addTool(<ore:artisansHandsaw>, 5)
   .addOutput(<immersiveengineering:material> * 8)
@@ -71,16 +83,28 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotAluminum>, <ore:ingotAluminum>])
-  .addTool(<ore:artisansHammer>, 5)
+  .addTool(<ore:artisansHammer>, 10)
   .addOutput(<immersiveengineering:material:3>)
   .setExtraOutputOne(<immersiveengineering:material:3>, 0.15)
   .create();
 
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:ingotAluminum>, <ore:ingotAluminum>])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:material:3> * 2)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotSteel>, <ore:ingotSteel>])
-  .addTool(<ore:artisansHammer>, 5)
+  .addTool(<ore:artisansHammer>, 10)
   .addOutput(<immersiveengineering:material:2>)
   .setExtraOutputOne(<immersiveengineering:material:2>, 0.15)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:ingotSteel>, <ore:ingotSteel>])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:material:2> * 2)
   .create();
 
 RecipeBuilder.get("engineer")
@@ -327,7 +351,25 @@ RecipeBuilder.get("engineer")
     [null, <ore:blockGlass>, null],
     [<ore:dustIron>, <ore:dyeGreen>, <ore:dustIron>],
     [null, <ore:blockGlass>, null]])
-  .addTool(<ore:artisansSolderer>, 10)
+  .addTool(<ore:artisansSolderer>, 20)
+  .addOutput(<immersiveengineering:stone_decoration:8>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:blockGlass>, null],
+    [<ore:dustIron>, <ore:dyeGreen>, <ore:dustIron>],
+    [null, <ore:blockGlass>, null]])
+  .addTool(<ore:artisansBurner>, 10)
+  .addOutput(<immersiveengineering:stone_decoration:8>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [null, <ore:blockGlass>, null],
+    [<ore:dustIron>, <ore:dyeGreen>, <ore:dustIron>],
+    [null, <ore:blockGlass>, null]])
+  .addTool(<ore:artisansBurner>, 5)
   .addOutput(<immersiveengineering:stone_decoration:8> * 2)
   .create();
 
