@@ -264,7 +264,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 10,
+			"chance": 14,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -1972,7 +1972,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 18,
+			"chance": 20,
 			"size": 75,
 			"dimBlacklist": [
 				1,
@@ -2414,7 +2414,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 15,
+			"chance": 12,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -3284,7 +3284,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 9,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -3428,7 +3428,7 @@
 			],
 			"yMin": 20,
 			"yMax": 128,
-			"chance": 10,
+			"chance": 14,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -3678,7 +3678,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 10,
+			"chance": 8,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -3699,7 +3699,7 @@
 			],
 			"density": 0.1,
 			"biomes": [
-				"SAVANNA", "PLAINS", "BEACH", "WASTELAND"
+				"SAVANNA", "BEACH", "WASTELAND"
 			],
 			"isWhitelist": true
 		},
@@ -4632,7 +4632,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 27,
+			"chance": 47,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -4734,7 +4734,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 10,
+			"chance": 8,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -5682,7 +5682,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 14,
+			"chance": 16,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -6132,7 +6132,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 7,
+			"chance": 6,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -6238,7 +6238,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 15,
+			"chance": 22,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -6548,7 +6548,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 47,
+			"chance": 45,
 			"size": 250,
 			"dimBlacklist": [
 				1,
@@ -6684,7 +6684,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 17,
+			"chance": 16,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -7032,7 +7032,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 7,
+			"chance": 10,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -7448,7 +7448,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 10,
+			"chance": 14,
 			"size": 50,
 			"dimBlacklist": [
 				1,
