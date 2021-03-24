@@ -259,11 +259,29 @@ RecipeBuilder.get("engineer")
     [<ore:dustRedstone>, <minecraft:snowball>]])
   .addTool(<ore:artisansMortar>, 10)
   .addTool(<ore:artisansSifter>, 10)
+  .addOutput(<thermalfoundation:material:1025>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustBlizz>, <ore:dustBlizz>],
+    [<ore:dustRedstone>, <minecraft:snowball>]])
+  .addTool(<ore:artisansMortar>, 10)
+  .addTool(<ore:artisansSifter>, 10)
   .addOutput(<thermalfoundation:material:1025> * 2)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:dust_pyrotheum");
 RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustBlaze>, <ore:dustBlaze>],
+    [<ore:dustRedstone>, <ore:dustSulfur>]])
+  .addTool(<ore:artisansMortar>, 10)
+  .addTool(<ore:artisansSifter>, 10)
+  .addOutput(<thermalfoundation:material:1024>)
+  .create();
+
+RecipeBuilder.get("chemist")
   .setShaped([
     [<ore:dustBlaze>, <ore:dustBlaze>],
     [<ore:dustRedstone>, <ore:dustSulfur>]])
@@ -279,11 +297,29 @@ RecipeBuilder.get("engineer")
     [<ore:dustRedstone>, <ore:dustSaltpeter>]])
   .addTool(<ore:artisansMortar>, 10)
   .addTool(<ore:artisansSifter>, 10)
+  .addOutput(<thermalfoundation:material:1026>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustBlitz>, <ore:dustBlitz>],
+    [<ore:dustRedstone>, <ore:dustSaltpeter>]])
+  .addTool(<ore:artisansMortar>, 10)
+  .addTool(<ore:artisansSifter>, 10)
   .addOutput(<thermalfoundation:material:1026> * 2)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:dust_petrotheum");
 RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustBasalz>, <ore:dustBasalz>],
+    [<ore:dustRedstone>, <ore:dustObsidian>]])
+  .addTool(<ore:artisansMortar>, 10)
+  .addTool(<ore:artisansSifter>, 10)
+  .addOutput(<thermalfoundation:material:1027>)
+  .create();
+
+RecipeBuilder.get("chemist")
   .setShaped([
     [<ore:dustBasalz>, <ore:dustBasalz>],
     [<ore:dustRedstone>, <ore:dustObsidian>]])

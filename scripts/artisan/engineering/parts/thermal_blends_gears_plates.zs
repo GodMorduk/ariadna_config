@@ -18,8 +18,6 @@ recipes.removeByRecipeName("unidict:gearsilver_x1_shape. a a a a ");
 recipes.removeByRecipeName("unidict:plateiron_x3_shape.aaa      ");
 recipes.removeByRecipeName("unidict:platesilver_x3_shape.aaa      ");
 recipes.removeByRecipeName("unidict:platebrass_x3_shape.aaa      ");
-recipes.removeByRecipeName("thermalexpansion:dynamo_5");
-recipes.removeByRecipeName("thermalexpansion:augment_13");
 recipes.removeByRecipeName("thermalfoundation:material");
 recipes.removeByRecipeName("thermalfoundation:material_1");
 recipes.removeByRecipeName("thermalfoundation:material_2");
@@ -57,5 +55,3 @@ MetalPress.addRecipe("ingotConstantan", "ingotConstantan", <thermalfoundation:ma
 MetalPress.addRecipe("ingotSignalum", "ingotSignalum", <thermalfoundation:material:357> * 2, false);
 MetalPress.addRecipe("ingotLumium", "ingotLumium", <thermalfoundation:material:358> * 2, false);
 MetalPress.addRecipe("ingotEnderium", "ingotEnderium", <thermalfoundation:material:359> * 2, false);
-
-

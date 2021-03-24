@@ -1,5 +1,32 @@
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDict;
 import mods.artisanworktables.builder.RecipeBuilder;
+
+// Removing itemducts recipes
+recipes.removeByRecipeName("thermaldynamics:duct_32");
+
+for i in 1 to 34 {
+  recipes.removeByRecipeName("thermaldynamics:duct_32_" + i);
+}
+
+// Removing upgrading recipes
+for i in 2 to 15 {
+  if (i != 3 && i != 6 && i != 10) {
+    recipes.removeByRecipeName("thermaldynamics:servo_" + i);
+    recipes.removeByRecipeName("thermaldynamics:filter_" + i);
+    recipes.removeByRecipeName("thermaldynamics:retriever_" + i);
+  }
+}
+
+recipes.removeByRecipeName("thermalexpansion:machine_12");
+recipes.removeByRecipeName("thermalexpansion:machine_13");
+
+recipes.removeByRecipeName("thermalexpansion:augment_13");
+recipes.removeByRecipeName("thermalexpansion:augment_17");
+recipes.removeByRecipeName("thermalexpansion:augment_24");
+
+recipes.removeByRecipeName("thermalfoundation:security");
 
 ##1tier
 recipes.removeByRecipeName("thermalexpansion:dynamo");
@@ -166,7 +193,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateCopper>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <ore:plateCopper>],
     [null, <ore:plateTin>, null]])
   .addTool(<ore:artisansDriver>, 25)
-  .addOutput(<thermalexpansion:reservoir>.withTag({}))
+  .addOutput(<thermalexpansion:reservoir>)
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:machine_9");
@@ -307,6 +334,332 @@ RecipeBuilder.get("engineer")
     [null, <ore:dustRedstone>, null]])
   .addTool(<ore:artisansSolderer>, 25)
   .addOutput(<thermalinnovation:magnet>.withTag({Energy: 0}))
+  .create();
+
+recipes.removeByRecipeName("thermalcultivation:watering_can");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermaldynamics:duct_16>, <ore:plateCopper>, <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateCopper>],
+    [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addOutput(<thermalcultivation:watering_can>)
+  .create();
+
+recipes.removeByRecipeName("thermalcultivation:watering_can_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermaldynamics:duct_16:2>, <ore:plateInvar>, <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalcultivation:watering_can>, <ore:plateInvar>],
+    [<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>]])
+  .addTool(<ore:artisansFramingHammer>, 50)
+  .addOutput(<thermalcultivation:watering_can:1>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
+    [<ore:plateLead>, <ore:blockGlass>, <ore:plateLead>],
+    [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_1");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0>, <ore:dustRedstone>, <ore:nuggetInvar>, <ore:nuggetInvar>, <ore:nuggetInvar>])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:1>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_2");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0>, <thermaldynamics:duct_0>, <thermaldynamics:duct_0>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateInvar>])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:1> * 3)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateCopper>, <ore:blockGlass>, <ore:plateCopper>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_16> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_16");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <ore:blockGlass>])
+  .addOutput(<thermaldynamics:duct_16> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateCopper>, <ore:plateLead>, <ore:plateCopper>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_16:1> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_17");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <thermaldynamics:duct_16>, <ore:plateLead>])
+  .addOutput(<thermaldynamics:duct_16:1> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateInvar>, <ore:blockGlassHardened>, <ore:plateInvar>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_16:2> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_10");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <ore:blockGlassHardened>])
+  .addOutput(<thermaldynamics:duct_16:2> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateInvar>, <ore:plateLead>, <ore:plateInvar>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_16:3> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_11");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <ore:plateLead>])
+  .addOutput(<thermaldynamics:duct_16:3> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateTin>, <ore:blockGlassHardened>, <ore:plateTin>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:0> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <ore:blockGlassHardened>])
+  .addOutput(<thermaldynamics:duct_32:0> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:0>, 0);
+registerDense(<thermaldynamics:duct_32:0>, 0);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateTin>, <ore:plateLead>, <ore:plateTin>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:1> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32>, <thermaldynamics:duct_32>, <thermaldynamics:duct_32>, <thermaldynamics:duct_32>, <thermaldynamics:duct_32>, <thermaldynamics:duct_32>, <ore:plateLead>])
+  .addOutput(<thermaldynamics:duct_32:1> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:1>, 0);
+registerDense(<thermaldynamics:duct_32:1>, 0);
+
+recipes.removeByRecipeName("thermaldynamics:duct_48");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:nuggetIron>, <ore:plateLead>, <ore:nuggetIron>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_48> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermalexpansion:device_7");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <thermalfoundation:tome_lexicon>, null],
+    [<ore:plateLead>, <thermalexpansion:frame:64>, <ore:plateLead>],
+    [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<thermalexpansion:device:7>)
+  .create();
+
+recipes.removeByRecipeName("thermalexpansion:device_9");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <minecraft:dispenser>, null],
+    [<ore:plateSilver>, <thermalexpansion:frame:64>, <ore:plateSilver>],
+    [<ore:gearAluminum>, <thermalfoundation:material:512>, <ore:gearAluminum>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<thermalexpansion:device:9>)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:diagram_redprint");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:paper>, <ore:paper>, <ore:dustRedstone>])
+  .addTool(<artisanworktables:artisans_pencil_iron>, 5)
+  .addOutput(<thermalfoundation:diagram_redprint>)
+  .create();
+
+RecipeBuilder.get("scribe")
+  .setShapeless([<ore:paper>, <ore:paper>, <ore:dustRedstone>])
+  .addTool(<artisanworktables:artisans_pencil_iron>, 5)
+  .addOutput(<thermalfoundation:diagram_redprint> * 2)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:tome_lexicon");
+RecipeBuilder.get("scribe")
+  .setShaped([
+    [null, <ore:gemLapis>, null],
+    [<ore:ingotGold>, <minecraft:book>, <ore:ingotIron>],
+    [null, <ore:dustRedstone>, null]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<thermalfoundation:tome_lexicon>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:gemLapis>, null],
+    [<ore:ingotGold>, <minecraft:book>, <ore:ingotIron>],
+    [null, <ore:dustRedstone>, null]])
+  .addTool(<ore:artisansPencil>, 15)
+  .addOutput(<thermalfoundation:tome_lexicon>)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:tome_experience");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gemEmerald>, <ore:gemLapis>, <ore:gemEmerald>],
+    [<ore:gemEmerald>, <minecraft:book>, <ore:gemEmerald>],
+    [<ore:gemEmerald>, <ore:gemLapis>, <ore:gemEmerald>]])
+  .addTool(<ore:artisansPencil>, 25)
+  .addOutput(<thermalfoundation:tome_experience>)
+  .create();
+
+RecipeBuilder.get("scribe")
+  .setShaped([
+    [null, <ore:gemLapis>, null],
+    [<ore:gemEmerald>, <minecraft:book>, <ore:gemEmerald>],
+    [null, <ore:gemLapis>, null]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<thermalfoundation:tome_experience>)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:fertilizer");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 1)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 2)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 4)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:fertilizer_1");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 4)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 8)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:fertilizer> * 16)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:bait");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustWood>, <ore:slimeball>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 1)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustWood>, <ore:slimeball>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 2)
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([<ore:dustWood>, <ore:slimeball>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 4)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:bait_1");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustWood>, <thermalfoundation:material:832>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 2)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustWood>, <thermalfoundation:material:832>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 4)
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([<ore:dustWood>, <thermalfoundation:material:832>, <ore:foodBread>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:bait> * 6)
+  .create();
+
+registerShears("copper", "Copper");
+registerShears("tin", "Tin");
+registerShears("silver", "Silver");
+registerShears("lead", "Lead");
+registerShears("aluminum", "Aluminum");
+registerShears("platinum", "Platinum");
+registerShears("steel", "Steel");
+registerShears("electrum", "Electrum");
+registerShears("invar", "Invar");
+registerShears("bronze", "Bronze");
+registerShears("constantan", "Constantan");
+
+function registerShears(nameLower as string, nameUpper as string) {
+  recipes.removeByRecipeName("thermalfoundation:tool.shears_" + nameLower);
+  RecipeBuilder.get("engineer")
+    .setShaped([
+      [null, oreDict.get("plate" + nameUpper)],
+      [oreDict.get("plate" + nameUpper), null]])
+    .addTool(<ore:artisansCutters>, 10)
+    .addOutput(itemUtils.getItem("thermalfoundation:tool.shears_" + nameLower))
+    .create();
+
+  RecipeBuilder.get("blacksmith")
+    .setShaped([
+      [null, oreDict.get("ingot" + nameUpper)],
+      [oreDict.get("ingot" + nameUpper), null]])
+    .addTool(<ore:artisansHammer>, 5)
+    .addOutput(itemUtils.getItem("thermalfoundation:tool.shears_" + nameLower))
+    .create();
+}
+
+recipes.removeByRecipeName("thermalinnovation:injector");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateSilver>, <ore:gearSilver>],
+    [<thermaldynamics:servo>, <thermalexpansion:reservoir>, <ore:plateSilver>],
+    [<ore:stickAluminum>, <techguns:itemshared:57>, null]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<thermalinnovation:injector>)
   .create();
 
 ##2 tier
@@ -633,22 +986,22 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateInvar>, <ore:blockGlass>, <ore:plateInvar>],
-    [<ore:plateInvar>, <thermalexpansion:reservoir>.withTag({}), <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalexpansion:reservoir>, <ore:plateInvar>],
     [<ore:plateInvar>, <thermalfoundation:material:512>, <ore:plateInvar>]])
   .addTool(<ore:artisansDriver>, 30)
   .addTool(<ore:artisansSpanner>, 30)
-  .addOutput(<thermalexpansion:reservoir:1>.withTag({}))
+  .addOutput(<thermalexpansion:reservoir:1>)
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:reservoir_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateElectrum>, <ore:blockGlassHardened>, <ore:plateElectrum>],
-    [<ore:plateElectrum>, <thermalexpansion:reservoir:1>.withTag({}), <ore:plateElectrum>],
+    [<ore:plateElectrum>, <thermalexpansion:reservoir:1>, <ore:plateElectrum>],
     [<ore:plateElectrum>, <thermalfoundation:material:512>, <ore:plateElectrum>]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<thermalexpansion:reservoir:2>.withTag({}))
+  .addOutput(<thermalexpansion:reservoir:2>)
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:capacitor_1");
@@ -1073,6 +1426,356 @@ RecipeBuilder.get("engineer")
   .addOutput(<thermalexpansion:augment:288>)
   .create();
 
+recipes.removeByRecipeName("thermalcultivation:watering_can_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermaldynamics:duct_16:4>, <ore:plateElectrum>, <ore:plateElectrum>],
+    [<ore:plateElectrum>, <thermalcultivation:watering_can:1>, <ore:plateElectrum>],
+    [<ore:plateElectrum>, <ore:plateElectrum>, <ore:plateElectrum>]])
+  .setSecondaryIngredients([<thermalfoundation:fertilizer> * 16, <thermalfoundation:glass_alloy:3> * 4])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<thermalcultivation:watering_can:2>)
+  .create();
+
+recipes.removeByRecipeName("thermalcultivation:watering_can_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermaldynamics:duct_16:4>, <ore:plateSignalum>, <ore:plateSignalum>],
+    [<ore:plateSignalum>, <thermalcultivation:watering_can:2>, <ore:plateSignalum>],
+    [<ore:plateSignalum>, <ore:plateSignalum>, <ore:plateSignalum>]])
+  .setSecondaryIngredients([<thermaldynamics:duct_16:4> * 8, <thermalfoundation:fertilizer:1> * 16, <ore:dustCryotheum> * 4])
+  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<thermalcultivation:watering_can:3>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_7");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermalfoundation:material:353>, <ore:blockGlassHardened>, <thermalfoundation:material:353>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:6> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_8");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:6>, <ore:dustRedstone>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:7>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_10");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:6>, <thermaldynamics:duct_0:6>, <thermaldynamics:duct_0:6>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateSignalum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:7>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_3");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:2>, <ore:dustRedstone>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:3>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_5");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateSignalum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_0:3>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_4");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:2>, <ore:nuggetElectrum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_16:4>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_6");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <ore:plateSignalum>, <ore:plateElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_16:4> * 3)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_12");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <ore:blockGlassHardened>])
+  .setMinimumTier(2)
+  .addOutput(<thermaldynamics:duct_16:4> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_5");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:3>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_16:5>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_7");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <ore:plateSignalum>, <ore:plateElectrum>])
+  .setMinimumTier(2)
+  .addOutput(<thermaldynamics:duct_16:5> * 3)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_13");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <ore:plateLead>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<thermaldynamics:duct_16:5> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <ore:blockGlassHardened>])
+  .addOutput(<thermaldynamics:duct_32:2> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:2>, 1);
+registerDense(<thermaldynamics:duct_32:2>, 1);
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <ore:plateLead>])
+  .addOutput(<thermaldynamics:duct_32:3> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:3>, 1);
+registerDense(<thermaldynamics:duct_32:3>, 1);
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:2>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:6>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <ore:ingotSignalum>, <ore:ingotElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:6> * 3)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <ore:blockGlassHardened>])
+  .addOutput(<thermaldynamics:duct_32:6> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:6>, 1);
+registerDense(<thermaldynamics:duct_32:6>, 1);
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:3>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetSignalum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>, <ore:nuggetElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:7>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <ore:ingotSignalum>, <ore:ingotElectrum>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<thermaldynamics:duct_32:7> * 3)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <ore:plateLead>])
+  .addOutput(<thermaldynamics:duct_32:7> * 6)
+  .create();
+
+registerVacuum(<thermaldynamics:duct_32:7>, 1);
+registerDense(<thermaldynamics:duct_32:7>, 1);
+
+recipes.removeByRecipeName("thermaldynamics:duct_64_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <ore:blockGlassHardened>, <ore:plateSteel>],
+    [<ore:blockGlassHardened>, null, <ore:blockGlassHardened>],
+    [<ore:plateSteel>, <ore:blockGlassHardened>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<thermaldynamics:duct_64:1> * 8)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_64");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>],
+    [<ore:blockGlassHardened>, null, <ore:blockGlassHardened>],
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<thermaldynamics:duct_64:3> * 4)
+  .create();
+
+recipes.removeByRecipeName("thermalexpansion:dynamo_5");
+#RecipeBuilder.get("engineer")
+#  .setShaped([
+#    [null, <thermalfoundation:material:513>, null],
+#    [<ore:plateSilver>, <ore:gearEmerald>, <ore:plateSilver>],
+#    [<ore:plateGold>, <ore:dustRedstone>, <ore:plateGold>]])
+#  .addTool(<ore:artisansDriver>, 100)
+#  .addTool(<ore:artisansSpanner>, 100)
+#  .addOutput(<thermalexpansion:dynamo:5>)
+#  .create();
+
+recipes.removeByRecipeName("thermalexpansion:augment_38");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:gearSignalum>, null],
+    [<ore:plateGold>, <thermalfoundation:material:515>, <ore:plateGold>],
+    [null, <ore:dustLapis>, null]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSolderer>, 50)
+  .addOutput(<thermalexpansion:augment:704>)
+  .create();
+
+recipes.removeByRecipeName("thermalexpansion:augment_39");
+#RecipeBuilder.get("engineer")
+#  .setShaped([
+#    [null, <ore:gearEmerald>, null],
+#    [<ore:platePlatinum>, <thermalfoundation:material:513>, <ore:platePlatinum>],
+#    [null, <ore:gearDiamond>, null]])
+#  .addTool(<ore:artisansDriver>, 50)
+#  .addTool(<ore:artisansSolderer>, 50)
+#  .addOutput(<thermalexpansion:augment:720>)
+#  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade>, <thermalfoundation:upgrade:1>])
+  .setMinimumTier(1)
+  .addOutput(<thermalfoundation:upgrade:33>)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:fertilizer_2");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 1)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 2)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 4)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:fertilizer_3");
+RecipeBuilder.get("engineer")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 4)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 8)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:fertilizer:1> * 16)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:bait_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustWood>, <ore:slimeball>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 1)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dustWood>, <ore:slimeball>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 2)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dustWood>, <ore:slimeball>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 4)
+  .create();
+
+recipes.removeByRecipeName("thermalfoundation:bait_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:dustWood>, <thermalfoundation:material:832>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 2)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dustWood>, <thermalfoundation:material:832>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 4)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dustWood>, <thermalfoundation:material:832>],
+    [<ore:foodBread>, <ore:cropNetherWart>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<thermalfoundation:bait:1> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermalinnovation:injector_1");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateInvar>, <ore:gearInvar>],
+    [<thermaldynamics:servo:1>, <thermalinnovation:injector>, <ore:plateInvar>],
+    [<ore:stickIron>, <techguns:itemshared:57>, null]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansRazor>, 50)
+  .addOutput(<thermalinnovation:injector:1>)
+  .create();
+
+recipes.removeByRecipeName("thermalinnovation:injector_2");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateElectrum>, <ore:gearElectrum>],
+    [<thermaldynamics:servo:2>, <thermalinnovation:injector:1>, <ore:plateElectrum>],
+    [<ore:stickSteel>, <techguns:itemshared:58>, null]])
+  .addTool(<ore:artisansDriver>, 75)
+  .addTool(<ore:artisansRazor>, 75)
+  .addOutput(<thermalinnovation:injector:2>)
+  .create();
+
 ##3 tier
 
 recipes.removeByRecipeName("thermalexpansion:device_2");
@@ -1092,7 +1795,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_8");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <thermalfoundation:tome_experience>.withTag({}), null, null],
+    [null, null, <thermalfoundation:tome_experience>, null, null],
     [<ore:gearGold>, <ore:plateElectrum>, <refinedstorage:processor:3>, <ore:plateElectrum>, <ore:gearGold>],
     [<ore:plateElectrum>, <ore:gearGold>, <thermalexpansion:frame:64>, <ore:gearGold>, <ore:plateElectrum>],
     [<ore:gearIron>, <techguns:itemshared:72>, <thermalfoundation:material:512>, <techguns:itemshared:72>, <ore:gearIron>]])
@@ -1290,13 +1993,13 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null],
     [<ore:plateSignalum>, <ore:dustCryotheum>, <ore:alloyAdvanced>, <ore:dustCryotheum>, <ore:plateSignalum>],
-    [<immersiveengineering:material:8>, <ore:gearGold>, <thermalexpansion:reservoir:2>.withTag({}), <ore:gearGold>, <immersiveengineering:material:8>],
+    [<immersiveengineering:material:8>, <ore:gearGold>, <thermalexpansion:reservoir:2>, <ore:gearGold>, <immersiveengineering:material:8>],
     [<ore:plateSignalum>, <ore:alloyAdvanced>, <ore:dustCryotheum>, <ore:alloyAdvanced>, <ore:plateSignalum>],
     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSpanner>, 50)
   .addTool(<ore:artisansFile>, 50)
-  .addOutput(<thermalexpansion:reservoir:3>.withTag({}))
+  .addOutput(<thermalexpansion:reservoir:3>)
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:reservoir_4");
@@ -1304,13 +2007,13 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null],
     [<ore:plateEnderium>, <ore:dustPyrotheum>, <ore:alloyElite>, <ore:dustPyrotheum>, <ore:plateEnderium>],
-    [<immersiveengineering:material:9>, <ore:gearLumium>, <thermalexpansion:reservoir:3>.withTag({}), <ore:gearLumium>, <immersiveengineering:material:9>],
+    [<immersiveengineering:material:9>, <ore:gearLumium>, <thermalexpansion:reservoir:3>, <ore:gearLumium>, <immersiveengineering:material:9>],
     [<ore:plateEnderium>, <ore:alloyElite>, <ore:dustPyrotheum>, <ore:alloyElite>, <ore:plateEnderium>],
     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null]])
   .addTool(<ore:artisansDriver>, 75)
   .addTool(<ore:artisansSpanner>, 75)
   .addTool(<ore:artisansFile>, 75)
-  .addOutput(<thermalexpansion:reservoir:4>.withTag({}))
+  .addOutput(<thermalexpansion:reservoir:4>)
   .create();
 
 recipes.removeByRecipeName("thermalinnovation:magnet_3");
@@ -1431,3 +2134,172 @@ RecipeBuilder.get("engineer")
   .addOutput(<thermalfoundation:upgrade:3>)
   .create();
 
+recipes.removeByRecipeName("thermalcultivation:watering_can_4");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermaldynamics:duct_16:6>, <ore:plateEnderium>, <ore:plateEnderium>],
+    [<ore:plateEnderium>, <thermalcultivation:watering_can:3>, <ore:plateEnderium>],
+    [<ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>]])
+  .setFluid(<liquid:water> * 16000)
+  .setSecondaryIngredients([<thermalfoundation:fertilizer:2> * 16, <ore:dustPyrotheum> * 4])
+  .addTool(<ore:artisansFramingHammer>, 200)
+  .addTool(<ore:artisansSpanner>, 200)
+  .addTool(<ore:artisansDriver>, 200)
+  .addOutput(<thermalcultivation:watering_can:4>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_9");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:7>, <ore:dustRedstone>, <ore:nuggetEnderium>, <ore:nuggetEnderium>, <ore:nuggetEnderium>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<thermaldynamics:duct_0:8>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_11");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:7>, <thermaldynamics:duct_0:7>, <thermaldynamics:duct_0:7>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateEnderium>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<thermaldynamics:duct_0:8>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_4");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:3>, <ore:dustRedstone>, <ore:nuggetEnderium>, <ore:nuggetEnderium>, <ore:nuggetEnderium>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<thermaldynamics:duct_0:4>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_6");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_0:3>, <thermaldynamics:duct_0:3>, <thermaldynamics:duct_0:3>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateEnderium>])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<thermaldynamics:duct_0:4>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_0_12");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateConstantan>, <ore:blockGlassHardened>, <ore:plateConstantan>],
+    [<ore:blockGlassHardened>, <thermaldynamics:duct_0:4>, <ore:blockGlassHardened>],
+    [<ore:plateConstantan>, <ore:blockGlassHardened>, <ore:plateConstantan>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSolderer>, 5)
+  .addOutput(<thermaldynamics:duct_0:9>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_8");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>],
+    [<ore:blockGlassHardened>, <thermaldynamics:duct_16:4>, <ore:blockGlassHardened>],
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<thermaldynamics:duct_16:6>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_14");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <ore:blockGlassHardened>])
+  .setMinimumTier(2)
+  .addOutput(<thermaldynamics:duct_16:6> * 6)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_9");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>],
+    [<ore:blockGlassHardened>, <thermaldynamics:duct_16:5>, <ore:blockGlassHardened>],
+    [<ore:plateBronze>, <ore:blockGlassHardened>, <ore:plateBronze>]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansRazor>, 5)
+  .addOutput(<thermaldynamics:duct_16:7>)
+  .create();
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_15");
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <ore:plateLead>])
+  .setMinimumTier(2)
+  .addOutput(<thermaldynamics:duct_16:7> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade>, <thermalfoundation:upgrade:1>, <thermalfoundation:upgrade:2>])
+  .setMinimumTier(2)
+  .addOutput(<thermalfoundation:upgrade:34>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade:33>, <thermalfoundation:upgrade:2>])
+  .setMinimumTier(2)
+  .addOutput(<thermalfoundation:upgrade:34>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade>, <thermalfoundation:upgrade:1>, <thermalfoundation:upgrade:2>, <thermalfoundation:upgrade:3>])
+  .setMinimumTier(2)
+  .addOutput(<thermalfoundation:upgrade:35>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade:33>, <thermalfoundation:upgrade:2>, <thermalfoundation:upgrade:3>])
+  .setMinimumTier(2)
+  .addOutput(<thermalfoundation:upgrade:35>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShapeless([<thermalfoundation:upgrade:34>, <thermalfoundation:upgrade:3>])
+  .setMinimumTier(2)
+  .addOutput(<thermalfoundation:upgrade:35>)
+  .create();
+
+recipes.removeByRecipeName("thermalinnovation:injector_3");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateSignalum>, <ore:gearSignalum>],
+    [<thermaldynamics:servo:3>, <thermalinnovation:injector:2>, <ore:plateSignalum>],
+    [<ore:itemInfinityRod>, <techguns:itemshared:59>, null]])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansRazor>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<thermalinnovation:injector:3>)
+  .create();
+
+recipes.removeByRecipeName("thermalinnovation:injector_4");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateEnderium>, <ore:gearEnderium>],
+    [<thermaldynamics:servo:4>, <thermalinnovation:injector:3>, <ore:plateEnderium>],
+    [<enderio:item_xp_transfer>, <techguns:itemshared:59>, <ore:alloyUltimate>]])
+  .addTool(<ore:artisansDriver>, 200)
+  .addTool(<ore:artisansRazor>, 200)
+  .addTool(<ore:artisansSpanner>, 200)
+  .addOutput(<thermalinnovation:injector:4>)
+  .create();
+
+function registerVacuum(duct as IItemStack, tier as int) {
+  RecipeBuilder.get("engineer")
+  .setShapeless([duct, <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>])
+  .setMinimumTier(tier)
+  .addOutput(duct.withTag({DenseType: 1 as byte}))
+  .create();
+}
+
+function registerDense(duct as IItemStack, tier as int) {
+  RecipeBuilder.get("engineer")
+  .setShapeless([duct, <ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>])
+  .setMinimumTier(tier)
+  .addOutput(duct.withTag({DenseType: 2 as byte}))
+  .create();
+}
