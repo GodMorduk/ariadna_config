@@ -383,8 +383,8 @@ RecipeBuilder.get("engineer")
     [null, <industrialforegoing:plastic>, null],
     [<industrialforegoing:plastic>, <vehicle:wheel>, <industrialforegoing:plastic>],
     [null, <industrialforegoing:plastic>, null]])
-  .addTool(<ore:artisansSpanner>, 1)
-  .addTool(<ore:artisansPunch>, 1)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addTool(<ore:artisansPunch>, 25)
   .addOutput(<vehicle:wheel:6>)
   .create();
 

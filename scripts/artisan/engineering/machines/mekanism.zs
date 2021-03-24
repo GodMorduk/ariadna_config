@@ -145,7 +145,7 @@ RecipeBuilder.get("engineer")
     [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
     [<ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>],
     [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]])
-  .addTool(<ore:artisansFramingHammer>, 1)
+  .addTool(<ore:artisansFramingHammer>, 5)
   .addOutput(<mekanism:transmitter:5>.withTag({tier: 0}) * 2)
   .create();
 
