@@ -12,7 +12,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 10,
+			"chance": 15,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -1900,7 +1900,7 @@
 			],
 			"yMin": 20,
 			"yMax": 128,
-			"chance": 25,
+			"chance": 30,
 			"size": 100,
 			"dimBlacklist": [
 				1,
@@ -3106,7 +3106,7 @@
 			],
 			"yMin": 1,
 			"yMax": 40,
-			"chance": 12,
+			"chance": 17,
 			"size": 200,
 			"dimBlacklist": [
 				1,
@@ -3678,7 +3678,7 @@
 			],
 			"yMin": 1,
 			"yMax": 20,
-			"chance": 8,
+			"chance": 4,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -5338,7 +5338,7 @@
 			],
 			"yMin": 20,
 			"yMax": 40,
-			"chance": 20,
+			"chance": 17,
 			"size": 100,
 			"dimBlacklist": [
 				1,
