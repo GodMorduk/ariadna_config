@@ -4808,44 +4808,6 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 20,
-			"yMax": 128,
-			"chance": 10,
-			"size": 50,
-			"dimBlacklist": [
-				1,
-				50,
-				51,
-				52,
-				53,
-				-1,
-				37,
-				66,
-				28885,
-				111,
-				14676,
-				10,
-				4,
-				7,
-				17
-			],
-			"density": 0.05,
-			"biomes": [
-				"HOT", "SANDY", "MESA", "SAVANNA"
-			],
-			"isWhitelist": true
-		},
-		{
-			"blocks": [
-				"thaumcraft:ore_cinnabar",
-				100
-			],
-			"samples": [
-				"simpleoresamples:sampleblockcinnabar",
-				25,
-				"minecraft:air",
-				75
-			],
 			"yMin": 10,
 			"yMax": 246,
 			"chance": 10,
