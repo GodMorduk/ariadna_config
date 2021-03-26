@@ -28,6 +28,16 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansMortar>, 25)
   .addTool(<ore:artisansSifter>, 25)
   .addTool(<ore:artisansBurner>, 25)
+  .addOutput(<enderio:item_material:67>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:itemPulsatingPowder>, <ore:dustNetherQuartz>, <ore:itemPulsatingPowder>],
+    [<ore:dustNetherQuartz>, <enderio:item_material:50>, <ore:dustNetherQuartz>],
+    [<ore:itemPulsatingPowder>, <ore:dustNetherQuartz>, <ore:itemPulsatingPowder>]])
+  .addTool(<ore:artisansMortar>, 15)
+  .addTool(<ore:artisansBurner>, 15)
   .addOutput(<enderio:item_material:67> * 2)
   .create();
 
@@ -124,6 +134,7 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 20)
   .addOutput(<enderio:item_basic_capacitor:1>)
   .create();
+
 recipes.removeByRecipeName("techguns:itemshared_129_shieldedtitaniumbarrel");
 RecipeBuilder.get("engineer")
   .setShaped([

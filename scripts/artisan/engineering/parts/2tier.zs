@@ -364,17 +364,25 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:60>, <ore:itemRubber>],
     [<ore:plateLead>, <techguns:itemshared:60>]])
-  .addTool(<ore:artisansNeedle>, 10)
+  .addTool(<ore:artisansNeedle>, 15)
   .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<techguns:itemshared:133>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<techguns:itemshared:60>, <ore:itemRubber>],
+    [<ore:plateLead>, <techguns:itemshared:60>]])
+  .addTool(<ore:artisansNeedle>, 5)
   .addOutput(<techguns:itemshared:133>)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:material_85");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:dustRedstone>, <ore:wireCopper>, null],
-    [<ore:wireCopper>, <ore:ingotElectrum>, <ore:wireCopper>],
-    [null, <ore:wireCopper>, <ore:dustRedstone>]])
+    [<ore:dustRedstone>, <immersiveengineering:wirecoil>, null],
+    [<immersiveengineering:wirecoil>, <ore:ingotElectrum>, <immersiveengineering:wirecoil>],
+    [null, <immersiveengineering:wirecoil>, <ore:dustRedstone>]])
   .addTool(<ore:artisansCutters>, 20)
   .addTool(<ore:artisansSolderer>, 20)
   .addOutput(<thermalfoundation:material:515>)

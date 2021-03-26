@@ -200,6 +200,24 @@ RecipeBuilder.get("engineer")
   .addOutput(<enderio:item_material:20>)
   .create();
 
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustCoal>, <ore:gemLapis>, <ore:dustCoal>],
+    [<ore:dustRedstone>, null, <ore:dustRedstone>],
+    [<ore:dustCoal>, <ore:gemLapis>, <ore:dustCoal>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<enderio:item_material:20> * 3)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:coal>, null],
+    [<ore:coal>, null, <ore:coal>],
+    [null, <ore:coal>, null]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:material:768>)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:coal>, null],
@@ -211,6 +229,24 @@ RecipeBuilder.get("engineer")
   .setExtraOutputTwo(<thermalfoundation:material:768>, 0.5)
   .create();
 
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [null, <ore:coal>, null],
+    [<ore:coal>, null, <ore:coal>],
+    [null, <ore:coal>, null]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:material:768> * 4)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:charcoal>, null],
+    [<ore:charcoal>, null, <ore:charcoal>],
+    [null, <ore:charcoal>, null]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:material:769>)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:charcoal>, null],
@@ -220,6 +256,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<thermalfoundation:material:769>)
   .setExtraOutputOne(<thermalfoundation:material:769> * 2, 0.2)
   .setExtraOutputTwo(<thermalfoundation:material:769>, 0.5)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [null, <ore:charcoal>, null],
+    [<ore:charcoal>, null, <ore:charcoal>],
+    [null, <ore:charcoal>, null]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<thermalfoundation:material:769> * 4)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:material_82");
@@ -301,6 +346,13 @@ recipes.removeByRecipeName("refinedstorage:processor_binding");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:string>, <techguns:itemshared:61>, <ore:string>]])
+  .addTool(<ore:artisansBeaker>, 10)
+  .addOutput(<refinedstorage:processor_binding> * 2)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:string>, <techguns:itemshared:61>, <ore:string>]])
   .addTool(<ore:artisansBeaker>, 5)
   .addOutput(<refinedstorage:processor_binding> * 4)
   .create();
@@ -311,9 +363,19 @@ RecipeBuilder.get("engineer")
     [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>],
     [<enderio:item_material:48>, <ore:blockSlime>, <enderio:item_material:48>],
     [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:molten_tar> * 250)
   .addTool(<ore:artisansBeaker>, 5)
   .addOutput(<techguns:itemshared:61>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>],
+    [<enderio:item_material:48>, <ore:blockSlime>, <enderio:item_material:48>],
+    [<ore:dustWood>, <enderio:item_material:48>, <ore:dustWood>]])
+  .setFluid(<liquid:water> * 250)
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<techguns:itemshared:61> * 4)
   .create();
 
 recipes.removeByRecipeName("refinedstorage:raw_basic_processor");
@@ -410,8 +472,15 @@ recipes.removeByRecipeName("refinedstorage:quartz_enriched_iron");
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:gemQuartz>])
   .addTool(<ore:artisansFile>, 5)
-  .addOutput(<refinedstorage:quartz_enriched_iron> * 3)
+  .addOutput(<refinedstorage:quartz_enriched_iron> * 2)
   .setExtraOutputOne(<refinedstorage:quartz_enriched_iron>, 0.5)
+  .setExtraOutputTwo(<refinedstorage:quartz_enriched_iron>, 0.25)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:gemQuartz>])
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<refinedstorage:quartz_enriched_iron> * 4)
   .create();
 
 RecipeBuilder.get("carpenter")
