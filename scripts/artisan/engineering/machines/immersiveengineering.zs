@@ -1285,7 +1285,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateElectrum>, <ore:plateElectrum>, <ore:plateElectrum>],
     [<ore:plateElectrum>, <immersiveengineering:metal_decoration0:2>, <ore:plateElectrum>],
     [null, <ore:blockSheetmetalElectrum>, null]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 25)
   .addOutput(<immersivetech:metal_trash:2>)
   .create();
 

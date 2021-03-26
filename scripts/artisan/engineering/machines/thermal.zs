@@ -497,13 +497,13 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalfoundation:diagram_redprint");
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:paper>, <ore:paper>, <ore:dustRedstone>])
-  .addTool(<artisanworktables:artisans_pencil_iron>, 5)
+  .addTool(<ore:artisansPencil>, 5)
   .addOutput(<thermalfoundation:diagram_redprint>)
   .create();
 
 RecipeBuilder.get("scribe")
   .setShapeless([<ore:paper>, <ore:paper>, <ore:dustRedstone>])
-  .addTool(<artisanworktables:artisans_pencil_iron>, 5)
+  .addTool(<ore:artisansPencil>, 5)
   .addOutput(<thermalfoundation:diagram_redprint> * 2)
   .create();
 
