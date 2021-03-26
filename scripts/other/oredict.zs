@@ -42,3 +42,9 @@ foodSalt.add(<alchemistry:mineral_salt>);
 
 var orePhosphorite = <ore:orePhosphorite>;
 orePhosphorite.add(<metallurgy:phosphorite_ore>);
+
+var wax = <ore:wax>;
+wax.add(<harvestcraft:beeswaxitem>);
+
+var materialPressedWax = <ore:materialPressedWax>;
+materialPressedWax.add(<rustic:beeswax>);

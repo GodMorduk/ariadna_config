@@ -276,6 +276,8 @@ for weapon in weapons {
 		block = <ore:blockVoid>;
 	} else if material == "Stone" {
 		block = <ore:cobblestone>;
+	} else if material == "Leather" {
+		block = <harvestcraft:hardenedleatheritem>;
 	} else {
 		block = oreDict["block" ~ material];
 	}
@@ -286,7 +288,7 @@ for weapon in weapons {
 		create_recipe(builder, weapon_type, block, material);
 		builder.setMinimumTier(1);
 		builder.addOutput(itemUtils.getItem(weapon)).create();
-	} else if material == "Wood" {
+	} else if material == "Wood" || material == "Leather" {
 		val builder = RecipeBuilder.get("carpenter");
 		builder.addTool(<ore:artisansHandsaw>, 50);
 		builder.addTool(<ore:artisansFramingHammer>, 50);
