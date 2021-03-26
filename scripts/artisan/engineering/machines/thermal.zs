@@ -1918,7 +1918,7 @@ RecipeBuilder.get("engineer")
   .addOutput(<thermaldynamics:retriever:4> * 2)
   .create();
 
-recipes.removeByRecipeName("thermalexpansion:satchel_6");
+recipes.removeByRecipeName("thermalexpansion:satchel_7");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:string>, <ore:leather>, <ore:string>],
