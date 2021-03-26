@@ -68,11 +68,11 @@ recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_redstone");
 recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_redstone2");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <ore:wireAluminum>, null],
-    [<ore:dustRedstone>, <ore:stickWood>, <ore:dustRedstone>],
-    [null, <ore:wireAluminum>, null]])
+    [null, <ore:ingotRedstoneAlloy>, null],
+    [<ore:ingotRedstoneAlloy>, <ore:stickWood>, <ore:ingotRedstoneAlloy>],
+    [null, <ore:ingotRedstoneAlloy>, null]])
   .addTool(<ore:artisansCutters>, 5)
-  .addOutput(<immersiveengineering:wirecoil:5>*2)
+  .addOutput(<immersiveengineering:wirecoil:5>*8)
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/coil_electrum");

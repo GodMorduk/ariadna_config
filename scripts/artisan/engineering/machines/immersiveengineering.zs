@@ -1,4 +1,6 @@
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDict;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 //убираем кучу пластин
@@ -12,6 +14,41 @@ recipes.removeByRecipeName("immersiveengineering:material/plate_nickel");
 recipes.removeByRecipeName("immersiveengineering:material/plate_gold");
 recipes.removeByRecipeName("immersiveengineering:material/plate_copper");
 recipes.removeByRecipeName("immersiveengineering:material/plate_iron");
+
+replaceSheetmetalRecipe("Copper", "copper", <immersiveengineering:sheetmetal>);
+replaceSheetmetalRecipe("Aluminum", "aluminum", <immersiveengineering:sheetmetal:1>);
+replaceSheetmetalRecipe("Lead", "lead", <immersiveengineering:sheetmetal:2>);
+replaceSheetmetalRecipe("Silver", "silver", <immersiveengineering:sheetmetal:3>);
+replaceSheetmetalRecipe("Nickel", "nickel", <immersiveengineering:sheetmetal:4>);
+replaceSheetmetalRecipe("Uranium", "uranium", <immersiveengineering:sheetmetal:5>);
+replaceSheetmetalRecipe("Constantan", "constantan", <immersiveengineering:sheetmetal:6>);
+replaceSheetmetalRecipe("Electrum", "electrum", <immersiveengineering:sheetmetal:7>);
+replaceSheetmetalRecipe("Steel", "steel", <immersiveengineering:sheetmetal:8>);
+replaceSheetmetalRecipe("Iron", "iron", <immersiveengineering:sheetmetal:9>);
+replaceSheetmetalRecipe("Gold", "gold", <immersiveengineering:sheetmetal:10>);
+
+function replaceSheetmetalRecipe(upperName as string, lowerName as string, output as IItemStack) {
+  recipes.removeByRecipeName("immersiveengineering:sheetmetal/" + lowerName + "_sheetmetal");
+
+  var plate = oreDict.get("plate" + upperName);
+  RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, plate, null],
+    [plate, null, plate],
+    [null, plate, null]])
+  .addTool(<ore:artisansFramingHammer>, 15)
+  .addOutput(output * 2)
+  .create();
+
+  RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, plate, null],
+    [plate, null, plate],
+    [null, plate, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(output * 4)
+  .create();
+}
 
 ##1 tier
 recipes.removeByRecipeName("immersiveengineering:wooden_devices/workbench");
@@ -296,13 +333,22 @@ RecipeBuilder.get("carpenter")
   .addOutput(<immersiveengineering:wooden_device1:1>)
   .create();
 
-recipes.removeByRecipeName("immersiveengineering:wooden_devices/windmill_blade");
+recipes.removeByRecipeName("immersiveengineering:material/windmill_blade");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, null],
     [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:plankTreatedWood>],
     [<ore:stickTreatedWood>, <ore:stickTreatedWood>, null]])
-  .addTool(<ore:artisansFramingHammer>, 5)
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:material:11>)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:stickTreatedWood>],
+    [null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansHandsaw>, 5)
   .addOutput(<immersiveengineering:material:11>)
   .create();
 
@@ -351,6 +397,15 @@ RecipeBuilder.get("engineer")
     [<ore:paneGlass>, <ore:blockCandle>, <ore:paneGlass>],
     [null, <ore:plateIron>, null]])
   .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<immersiveengineering:metal_decoration2:4>*3)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:plateIron>, null],
+    [<ore:paneGlass>, <ore:blockCandle>, <ore:paneGlass>],
+    [null, <ore:plateIron>, null]])
+  .addTool(<ore:artisansHammer>, 10)
   .addOutput(<immersiveengineering:metal_decoration2:4>*3)
   .create();
 
@@ -422,7 +477,7 @@ RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateSteel>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:stickSteel>]])
-  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:metal_decoration2:1>*4)
   .create();
 
@@ -441,7 +496,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
     [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
     [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
-  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:metal_decoration1:1>*6)
   .create();
 
@@ -460,7 +515,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>],
     [<ore:stickAluminum>, <ore:stickAluminum>, <ore:stickAluminum>],
     [<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>]])
-  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:metal_decoration1:5>*6)
   .create();
 
@@ -474,6 +529,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersiveengineering:metal_decoration2:7>*4)
   .create();
 
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, null],
+    [<ore:scaffoldingSteel>, null, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration2:7>*4)
+  .create();
+
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/structural_arm_alu");
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -482,6 +546,139 @@ RecipeBuilder.get("engineer")
     [<ore:scaffoldingAluminum>, null, null]])
   .addTool(<ore:artisansFramingHammer>, 10)
   .addOutput(<immersiveengineering:metal_decoration2:8>*4)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>],
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, null],
+    [<ore:scaffoldingAluminum>, null, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration2:8>*4)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/steel_scaffolding_slab0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:1>*6)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:1>*6)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/aluminum_scaffolding_slab0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:5>*6)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:5>*6)
+  .create();
+
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/steel_scaffolding_stairs0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>, null, null],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, null],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs0>*8)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingSteel>, null, null],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, null],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs0>*8)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/aluminum_scaffolding_stairs0");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingAluminum>, null, null],
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, null],
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:aluminum_scaffolding_stairs0>*8)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingAluminum>, null, null],
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, null],
+    [<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:aluminum_scaffolding_stairs0>*8)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/ladder");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickAluminum>, null, <ore:stickAluminum>],
+    [<ore:stickAluminum>, <ore:stickAluminum>, <ore:stickAluminum>],
+    [<ore:stickAluminum>, null, <ore:stickAluminum>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_ladder>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickAluminum>, null, <ore:stickAluminum>],
+    [<ore:stickAluminum>, <ore:stickAluminum>, <ore:stickAluminum>],
+    [<ore:stickAluminum>, null, <ore:stickAluminum>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_ladder>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickIron>, null, <ore:stickIron>],
+    [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+    [<ore:stickIron>, null, <ore:stickIron>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_ladder> * 2)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickIron>, null, <ore:stickIron>],
+    [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+    [<ore:stickIron>, null, <ore:stickIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_ladder> * 2)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickSteel>, null, <ore:stickSteel>],
+    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:stickSteel>, null, <ore:stickSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_ladder> * 3)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickSteel>, null, <ore:stickSteel>],
+    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:stickSteel>, null, <ore:stickSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_ladder> * 3)
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:wooden_devices/gunpowder_barrel");
@@ -579,6 +776,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersiveengineering:metal_device0:4>)
   .create();
 
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:slabSheetmetalIron>, <ore:slabSheetmetalIron>, <ore:slabSheetmetalIron>],
+    [<ore:blockSheetmetalIron>, null, <ore:blockSheetmetalIron>],
+    [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_device0:4>)
+  .create();
+
 recipes.removeByRecipeName("immersiveengineering:metal_devices/fluid_outlet");
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -625,6 +831,15 @@ RecipeBuilder.get("engineer")
     [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
     [null, <ore:fabricHemp>, null]])
   .addTool(<ore:artisansRazor>, 20)
+  .addOutput(<immersiveengineering:material:12>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [null, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [null, <ore:fabricHemp>, null]])
+  .addTool(<ore:artisansNeedle>, 5)
   .addOutput(<immersiveengineering:material:12>)
   .create();
 
@@ -698,9 +913,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_lv_ins");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:fabricHemp>, <immersiveengineering:wirecoil>, <ore:fabricHemp>],
+    [<ore:itemRawRubber>, <immersiveengineering:wirecoil>, <ore:itemRawRubber>],
     [<immersiveengineering:wirecoil>, <ore:fabricHemp>, <immersiveengineering:wirecoil>],
-    [<ore:fabricHemp>, <immersiveengineering:wirecoil>, <ore:fabricHemp>]])
+    [<ore:itemRawRubber>, <immersiveengineering:wirecoil>, <ore:itemRawRubber>]])
   .addTool(<ore:artisansCutters>, 10)
   .addOutput(<immersiveengineering:wirecoil:6>*4)
   .create();
@@ -708,9 +923,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:wirecoils/wirecoil_mv_ins");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:fabricHemp>, <immersiveengineering:wirecoil:1>, <ore:fabricHemp>],
+    [<ore:itemRawRubber>, <immersiveengineering:wirecoil:1>, <ore:itemRawRubber>],
     [<immersiveengineering:wirecoil:1>, <ore:fabricHemp>, <immersiveengineering:wirecoil:1>],
-    [<ore:fabricHemp>, <immersiveengineering:wirecoil:1>, <ore:fabricHemp>]])
+    [<ore:itemRawRubber>, <immersiveengineering:wirecoil:1>, <ore:itemRawRubber>]])
   .setFluid(<liquid:creosote> * 1000)
   .addTool(<ore:artisansCutters>, 10)
   .addOutput(<immersiveengineering:wirecoil:7>*4)
@@ -733,6 +948,413 @@ RecipeBuilder.get("engineer")
     [<ore:plankTreatedWood>, <ore:dustRedstone>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansFramingHammer>, 25)
   .addOutput(<immersiveengineering:metal_device0>)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/steel_fence");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotSteel>, <ore:stickSteel>, <ore:ingotSteel>],
+    [<ore:ingotSteel>, <ore:stickSteel>, <ore:ingotSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_decoration1> * 2)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotSteel>, <ore:stickSteel>, <ore:ingotSteel>],
+    [<ore:ingotSteel>, <ore:stickSteel>, <ore:ingotSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration1> * 3)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/aluminum_fence");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotAluminum>, <ore:stickAluminum>, <ore:ingotAluminum>],
+    [<ore:ingotAluminum>, <ore:stickAluminum>, <ore:ingotAluminum>]])
+  .addTool(<ore:artisansFramingHammer>, 10)
+  .addOutput(<immersiveengineering:metal_decoration1:4> * 2)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotAluminum>, <ore:stickAluminum>, <ore:ingotAluminum>],
+    [<ore:ingotAluminum>, <ore:stickAluminum>, <ore:ingotAluminum>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersiveengineering:metal_decoration1:4> * 3)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/conveyor_dropper");
+RecipeBuilder.get("engineer")
+  .setShapeless([<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <minecraft:iron_trapdoor>])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/conveyor_vertical");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <ore:plateIron>],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), null],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"}) * 3)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/conveyor_splitter");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <ore:plateIron>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})],
+    [null, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), null]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:splitter"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/conveyor_extract");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <immersiveengineering:cloth_device:2>],
+    [<immersiveengineering:material:8>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/chute_iron");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, null, <ore:blockSheetmetalIron>],
+    [<ore:blockSheetmetalIron>, null, <ore:blockSheetmetalIron>],
+    [<ore:blockSheetmetalIron>, null, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_iron"}) * 12)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/chute_steel");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalSteel>, null, <ore:blockSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, null, <ore:blockSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, null, <ore:blockSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_steel"}) * 12)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/chute_aluminum");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalAluminum>, null, <ore:blockSheetmetalAluminum>],
+    [<ore:blockSheetmetalAluminum>, null, <ore:blockSheetmetalAluminum>],
+    [<ore:blockSheetmetalAluminum>, null, <ore:blockSheetmetalAluminum>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_aluminum"}) * 12)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:conveyors/chute_copper");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalCopper>, null, <ore:blockSheetmetalCopper>],
+    [<ore:blockSheetmetalCopper>, null, <ore:blockSheetmetalCopper>],
+    [<ore:blockSheetmetalCopper>, null, <ore:blockSheetmetalCopper>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_copper"}) * 12)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:material/hemp_fabric");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>],
+    [<ore:fiberHemp>, <ore:stickWood>, <ore:fiberHemp>],
+    [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:material:5>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>],
+    [<ore:fiberHemp>, <ore:stickWood>, <ore:fiberHemp>],
+    [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]])
+  .addTool(<ore:artisansNeedle>, 5)
+  .addOutput(<immersiveengineering:material:5>)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:cloth_devices/jump_cushion");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, null, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:cloth_device> * 2)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, null, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 5)
+  .addOutput(<immersiveengineering:cloth_device> * 3)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:cloth_devices/balloon");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:fabricHemp>, null],
+    [<ore:fabricHemp>, <ore:torch>, <ore:fabricHemp>],
+    [null, <ore:slabTreatedWood>, null]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:cloth_device:1>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [null, <ore:fabricHemp>, null],
+    [<ore:fabricHemp>, <ore:torch>, <ore:fabricHemp>],
+    [null, <ore:slabTreatedWood>, null]])
+  .addTool(<ore:artisansNeedle>, 5)
+  .addOutput(<immersiveengineering:cloth_device:1> * 2)
+  .create();
+
+
+recipes.removeByRecipeName("immersiveengineering:cloth_devices/strip_curtain");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickAluminum>, <ore:stickAluminum>, <ore:stickAluminum>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:cloth_device:2>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:cloth_device:2> * 2)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 10)
+  .addOutput(<immersiveengineering:cloth_device:2> * 3)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
+    [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>]])
+  .addTool(<ore:artisansNeedle>, 5)
+  .addOutput(<immersiveengineering:cloth_device:2> * 2)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:blueprints/molds");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:plateSteel>, null],
+    [<ore:gemLapis>, <ore:gemLapis>, <ore:gemLapis>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 15)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}))
+  .create();
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [null, <ore:plateIron>, null],
+    [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "molds"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:blueprints/components");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gearCopper>, <ore:gearAluminum>, <ore:gearIron>],
+    [<ore:gemLapis>, <ore:gemLapis>, <ore:gemLapis>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 15)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "components"}))
+  .create();
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [<ore:ingotCopper>, <ore:ingotAluminum>, <ore:ingotIron>],
+    [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "components"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:blueprints/common_cartridges");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<techguns:itemshared:1>, <techguns:itemshared:3>, <techguns:itemshared:1>],
+    [<ore:gemLapis>, <ore:gemLapis>, <ore:gemLapis>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}))
+  .create();
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [<ore:gunpowder>, <ore:ingotCopper>, <ore:gunpowder>],
+    [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
+    [<ore:paper>, <ore:paper>, <ore:paper>]])
+  .addTool(<ore:artisansPencil>, 5)
+  .addOutput(<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}))
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:armor/earmuffs");
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:stickIron>, null],
+    [<ore:stickIron>, null, <ore:stickIron>],
+    [<ore:blockWool>, null, <ore:blockWool>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:earmuffs>)
+  .create();
+
+recipes.removeByRecipeName("immersiveengineering:tool/fluorescent_tube");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockGlass>, <ore:ingotHOPGraphite>, <ore:blockGlass>],
+    [<ore:blockGlass>, <ore:dustGlowstone>, <ore:blockGlass>],
+    [<ore:blockGlass>, <ore:dustGlowstone>, <ore:blockGlass>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersiveengineering:fluorescent_tube>.withTag({rgb: {r: 1.0 as float, b: 1.0 as float, g: 1.0 as float}}))
+  .create();
+
+recipes.removeByRecipeName("immersivetech:connectors/connectors_timer");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:paneGlass>, <immersiveengineering:connector:12>, <ore:paneGlass>],
+    [<immersiveengineering:material:27>, <immersiveengineering:material:27>, <immersiveengineering:material:27>],
+    [<ore:paneGlass>, <ore:gemQuartz>, <ore:paneGlass>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<immersivetech:connectors>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:metal_trash/trash_item");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+    [<ore:plateCopper>, <ore:chest>, <ore:plateCopper>],
+    [null, <ore:blockSheetmetalCopper>, null]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addOutput(<immersivetech:metal_trash>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+    [<ore:plateCopper>, <ore:chest>, <ore:plateCopper>],
+    [null, <ore:blockSheetmetalCopper>, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersivetech:metal_trash>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:metal_trash/trash_fluid");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateLead>, <ore:plateLead>, <ore:plateLead>],
+    [<ore:plateLead>, <immersiveengineering:metal_device0:4>, <ore:plateLead>],
+    [null, <ore:blockSheetmetalLead>, null]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addOutput(<immersivetech:metal_trash:1>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateLead>, <ore:plateLead>, <ore:plateLead>],
+    [<ore:plateLead>, <immersiveengineering:metal_device0:4>, <ore:plateLead>],
+    [null, <ore:blockSheetmetalLead>, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersivetech:metal_trash:1>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:metal_trash/trash_energy");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateElectrum>, <ore:plateElectrum>, <ore:plateElectrum>],
+    [<ore:plateElectrum>, <immersiveengineering:metal_decoration0:2>, <ore:plateElectrum>],
+    [null, <ore:blockSheetmetalElectrum>, null]])
+  .addTool(<ore:artisansDriver>, 1)
+  .addOutput(<immersivetech:metal_trash:2>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:metal_barrel/open_barrel");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabSheetmetalNickel>, null, <ore:slabSheetmetalNickel>],
+    [<ore:blockSheetmetalNickel>, null, <ore:blockSheetmetalNickel>],
+    [<ore:blockSheetmetalNickel>, <ore:blockSheetmetalNickel>, <ore:blockSheetmetalNickel>]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addOutput(<immersivetech:metal_barrel:1>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:slabSheetmetalNickel>, null, <ore:slabSheetmetalNickel>],
+    [<ore:blockSheetmetalNickel>, null, <ore:blockSheetmetalNickel>],
+    [<ore:blockSheetmetalNickel>, <ore:blockSheetmetalNickel>, <ore:blockSheetmetalNickel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersivetech:metal_barrel:1>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:metal_barrel/steel_barrel");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, null, <ore:blockSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addOutput(<immersivetech:metal_barrel:2>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, null, <ore:blockSheetmetalSteel>],
+    [<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<immersivetech:metal_barrel:2>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:valves/fluid_valve");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateTin>, <immersiveengineering:connector:12>, <ore:plateTin>],
+    [<immersiveengineering:metal_device1:6>, <immersiveengineering:material:8>, <immersiveengineering:metal_device1:6>],
+    [<ore:plateTin>, <immersiveengineering:material:27>, <ore:plateTin>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<immersivetech:valve> * 2)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:valves/load_controller");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateElectrum>, <immersiveengineering:connector:12>, <ore:plateElectrum>],
+    [<immersiveengineering:connector:4>, <immersiveengineering:material:8>, <immersiveengineering:connector:4>],
+    [<ore:plateElectrum>, <immersiveengineering:material:27>, <ore:plateElectrum>]])
+  .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<immersivetech:valve:1>)
+  .create();
+
+recipes.removeByRecipeName("immersivetech:valves/stack_limiter");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateAluminum>, <immersiveengineering:connector:12>, <ore:plateAluminum>],
+    [<immersiveengineering:conveyor>, <immersiveengineering:material:8>, <immersiveengineering:conveyor>],
+    [<ore:plateAluminum>, <immersiveengineering:material:27>, <ore:plateAluminum>]])
+  .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<immersivetech:valve:2>)
   .create();
 
 ##2 tier
@@ -1145,7 +1767,7 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:toolupgrades/drill_lube");
-recipes.removeByRecipeName("immersiveengineering:toolupgrades/drill_lube_alt");
+recipes.removeByRecipeName("immersiveengineering:misc/drill_lube_alt");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:60>, <ore:plateIron>, null],
@@ -1377,6 +1999,16 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivepetroleum:stone_decoration> * 12)
   .create();
 
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:itemSlag>, <immersivepetroleum:material>, <ore:itemSlag>],
+    [<ore:gravel>, <ore:itemSlag>, <ore:gravel>],
+    [<ore:itemSlag>, <immersivepetroleum:material>, <ore:itemSlag>]])
+  .setFluid(<liquid:water> * 500)
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<immersivepetroleum:stone_decoration> * 16)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:sand>, <immersivepetroleum:material>, <ore:sand>],
@@ -1385,6 +2017,16 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:water> * 1000)
   .addTool(<ore:artisansTrowel>, 10)
   .addOutput(<immersivepetroleum:stone_decoration> * 8)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:sand>, <immersivepetroleum:material>, <ore:sand>],
+    [<ore:gravel>, <ore:sand>, <ore:gravel>],
+    [<ore:sand>, <immersivepetroleum:material>, <ore:sand>]])
+  .setFluid(<liquid:water> * 500)
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<immersivepetroleum:stone_decoration> * 12)
   .create();
 
 recipes.removeByRecipeName("immersivepetroleum:tool/projector");
@@ -1512,6 +2154,19 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 15)
   .addOutput(<immersiveengineering:wooden_device0:7>)
   .create();
+
+recipes.removeByRecipeName("immersivetech:metal_device/coke_oven_preheater");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalConstantan>, <ore:blockSheetmetalSteel>, <ore:blockSheetmetalConstantan>],
+    [<immersiveengineering:metal_device1:1>, <mekanismgenerators:turbineblade>, <immersiveengineering:metal_device1:1>],
+    [<ore:blockSheetmetalConstantan>, <ore:blockSheetmetalSteel>, <ore:blockSheetmetalConstantan>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<immersivetech:metal_device>)
+  .create();
+
+## 3 Tier
 
 recipes.removeByRecipeName("immersiveengineering:tool/railgun");
 RecipeBuilder.get("engineer")
