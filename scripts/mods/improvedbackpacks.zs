@@ -93,7 +93,7 @@ RecipeBuilder.get("tanner")
   .setShaped([
     [<endreborn:dragon_scales>, <ore:ingotTungsten>, <endreborn:item_advanced_ender_pearl>, <ore:ingotTungsten>, <endreborn:dragon_scales>],
     [<endreborn:death_essence>, <endreborn:item_ender_string>, <techguns:itemshared:60>, <endreborn:item_ender_string>, <endreborn:death_essence>],
-    [<endreborn:item_lormyte_crystal>, <techguns:itemshared:60>, <improvedbackpacks:backpack>.withTag({Tier: 5), <techguns:itemshared:60>, <endreborn:item_lormyte_crystal>],
+    [<endreborn:item_lormyte_crystal>, <techguns:itemshared:60>, <improvedbackpacks:backpack>.withTag({Tier: 5}), <techguns:itemshared:60>, <endreborn:item_lormyte_crystal>],
     [<endreborn:death_essence>, <endreborn:item_ender_string>, <ore:chestEnder>, <endreborn:item_ender_string>, <endreborn:death_essence>],
     [<endreborn:dragon_scales>, <ore:ingotTungsten>, <endreborn:item_advanced_ender_pearl>, <ore:ingotTungsten>, <endreborn:dragon_scales>]])
   .setSecondaryIngredients([<harvestcraft:hardenedleatheritem> * 16])
