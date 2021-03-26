@@ -1,6 +1,65 @@
 import crafttweaker.item.IIngredient;
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
+import mods.embers.Stamper;
+
+##stamper recieps
+mods.embers.Stamper.remove(<embers:aspectus_iron>);
+mods.embers.Stamper.remove(<embers:aspectus_silver>);
+mods.embers.Stamper.remove(<embers:aspectus_lead>);
+mods.embers.Stamper.remove(<embers:aspectus_copper>);
+mods.embers.Stamper.remove(<embers:aspectus_dawnstone>);
+
+mods.embers.Stamper.add(<embers:aspectus_copper>, <liquid:copper>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+mods.embers.Stamper.add(<embers:aspectus_silver>, <liquid:silver>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+mods.embers.Stamper.add(<embers:aspectus_lead>, <liquid:lead>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+mods.embers.Stamper.add(<embers:aspectus_iron>, <liquid:iron>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+mods.embers.Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+
+
+##alchemy recieps
+mods.embers.Alchemy.remove(<embers:focal_lens>);
+mods.embers.Alchemy.add(<embers:focal_lens>, [<embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateSilver>, <embers:block_dawnstone>, <ore:plateSilver>], {"copper":(32 to 50),"silver":(48 to 96)});
+
+mods.embers.Alchemy.remove(<embers:wildfire_core>);
+mods.embers.Alchemy.add(<embers:wildfire_core>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateCopper>], {"iron":(16 to 40),"silver":(24 to 32)});
+
+mods.embers.Alchemy.remove(<embers:ember_cluster>);
+mods.embers.Alchemy.add(<embers:ember_cluster>, [<minecraft:quartz_block>, <embers:crystal_ember>, <embers:shard_ember>, <embers:crystal_ember>, <embers:shard_ember>], {"copper":(10 to 20),"dawnstone":(16 to 32)});
+
+mods.embers.Alchemy.remove(<embers:glimmer_shard>);
+mods.embers.Alchemy.add(<embers:glimmer_shard>, [<minecraft:glowstone>, <minecraft:gunpowder>, <minecraft:quartz>, <embers:crystal_ember>, <embers:crystal_ember>], {"dawnstone":(48 to 128)});
+
+mods.embers.Alchemy.remove(<embers:flame_barrier>);
+mods.embers.Alchemy.add(<embers:flame_barrier>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:beam_cannon>, <embers:block_dawnstone>, <ore:plateSilver>], {"silver":(64 to 128),"dawnstone":(48 to 96)});
+
+mods.embers.Alchemy.remove(<embers:blasting_core>);
+mods.embers.Alchemy.add(<embers:blasting_core>, [<minecraft:tnt>, <embers:seed_lead>, <ore:blockLead>, <embers:seed_lead>, <embers:ember_cluster>], {"lead":(96 to 128)});
+
+mods.embers.Alchemy.remove(<embers:shifting_scales>);
+mods.embers.Alchemy.add(<embers:shifting_scales>, [<embers:ashen_cloth>, <ore:blockLead>, <embers:wildfire_core>, <ore:blockLead>, <embers:seed_lead>], {"lead":(96 to 128),"iron":(48 to 96)});
+
+mods.embers.Alchemy.remove(<embers:winding_gears>);
+mods.embers.Alchemy.add(<embers:winding_gears>, [<embers:inflictor_gem>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper":(96 to 128),"dawnstone":(48 to 96)});
+
+mods.embers.Alchemy.remove(<embers:eldritch_insignia>);
+mods.embers.Alchemy.add(<embers:eldritch_insignia>, [<embers:archaic_circuit>, <embers:ancient_motive_core>, <embers:resonating_bell>, <embers:ancient_motive_core>, <ore:blockCoal>], {"lead":(64 to 128),"dawnstone":(80 to 96)});
+
+mods.embers.Alchemy.remove(<embers:tyrfing>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, null, null, <ore:blockLead>, <embers:seed_iron>],
+    [null, null, <ore:blockLead>, <embers:ember_cluster>, <ore:blockLead>],
+    [<ore:plateDawnstone>, <ore:blockLead>, <embers:ember_cluster>, <ore:blockLead>, null],
+    [<embers:seed_gold>, <embers:inflictor_gem>.withTag({}), <ore:blockLead>, null, null],
+    [<tconstruct:tough_tool_rod>.withTag({Material: "dark_steel"}), <embers:seed_gold>, <ore:plateDawnstone>, null, null]])
+  .setFluid(<liquid:oil_dwarf> * 8000)
+  .addTool(<ore:artisansHammer>, 300)
+  .addTool(<ore:artisansPliers>, 300)
+  .addTool(<ore:artisansGroover>, 300)
+  .addOutput(<embers:tyrfing>)
+  .create();
+
 
 ##1 tier
 
@@ -18,7 +77,7 @@ RecipeBuilder.get("blacksmith")
     [null, <ore:ingotIron>, null],
     [<ore:plateCopper>, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), <ore:plateCopper>],
     [<ore:plateCopper>, <ore:blockRedstone>, <ore:plateCopper>]])
-  .addTool(<ore:artisansFramingHammer>, 15)
+  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 15)
   .addOutput(<embers:ember_detector>)
   .create();
 
@@ -235,7 +294,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:ingotCopper>, <embers:crystal_ember>, <ore:ingotCopper>],
     [<embers:crystal_ember>, <ore:blockCopper>, <embers:crystal_ember>],
     [<ore:plateIron>, <minecraft:furnace>, <ore:plateIron>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 50)
   .addOutput(<embers:ember_activator>)
   .create();
 
@@ -314,7 +373,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateDawnstone>],
     [<embers:ember_emitter>],
     [<ore:ingotIron>]])
-  .addTool(<ore:artisansDriver>, 25)
+  .addTool(<ore:artisansDriver>, 1)
   .addOutput(<embers:ember_pulser>)
   .create();
 
@@ -424,7 +483,7 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockDawnstone>, <ore:blockDawnstone>, <ore:blockDawnstone>],
     [<ore:plateInvar>, <embers:mech_core>, <ore:plateInvar>],
     [<ore:blockInvar>, <embers:block_caminite_brick>, <ore:blockInvar>]])
-  .addTool(<ore:artisansFramingHammer>, 100)
+  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 100)
   .addOutput(<embers:dawnstone_anvil>)
   .create();
 
@@ -534,7 +593,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<embers:superheater>)
   .create();
 
-recipes.removeByRecipeName("embers:difraction_barrel");
+recipes.removeByRecipeName("embers:diffraction_barrel");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotIron>, <ore:ingotIron>, null],
@@ -687,4 +746,15 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansFramingHammer>, 50)
   .addTool(<ore:artisansDriver>, 50)
   .addOutput(<embers:ember_injector>)
+  .create();
+
+recipes.removeByRecipeName("embers:glimmer_lamp");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:plateIron>, null],
+    [<minecraft:iron_trapdoor>, <embers:glimmer_shard>.withTag({light: 800}), <ore:barsIron>],
+    [null, <ore:plateIron>, null]])
+  .addTool(<artisanworktables:artisans_spanner_iron>, 100)
+  .addTool(<artisanworktables:artisans_driver_iron>, 100)
+  .addOutput(<embers:glimmer_lamp>.withTag({light: 1200}))
   .create();
