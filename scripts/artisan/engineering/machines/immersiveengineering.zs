@@ -2327,7 +2327,17 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersiveengineering:material:26>)
   .create();
 
-## 3 Tier
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
+    [<thermalfoundation:material:640>, <minecraft:observer>, <thermalfoundation:material:640>],
+    [<thermalfoundation:material:656>, <ore:gearSilver>, <thermalfoundation:material:656>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<engineersdecor:small_block_breaker>)
+  .create();
+
+##3 Tier
 
 recipes.removeByRecipeName("immersiveengineering:tool/railgun");
 RecipeBuilder.get("engineer")
