@@ -38,7 +38,7 @@ Workstation.changeRecipe("VEHICLE_TRAILER", [<techguns:itemshared:57> * 8, <mine
 // 1 Tier
 
 recipes.removeByRecipeName("vehicle:traffic_cone");
-RecipeBuilder.get("engineer")
+RecipeBuilder.get("basic")
   .setShaped([
     [null, <industrialforegoing:plastic>, null],
     [<ore:dyeOrange>, <industrialforegoing:plastic>, <ore:dyeWhite>],

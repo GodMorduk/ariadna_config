@@ -39,20 +39,40 @@ RecipeBuilder.get("engineer")
     [<better_diving:creepvine>, <better_diving:creepvine>, <better_diving:creepvine>],
     [null, <better_diving:creepvine>, null],
     [<better_diving:creepvine>, <better_diving:creepvine>, <better_diving:creepvine>]])
-  .addTool(<ore:artisansMortar>, 5)
+  .addTool(<ore:artisansMortar>, 10)
   .addOutput(<better_diving:fiber_mesh> * 2)
-  .setExtraOutputOne(<better_diving:lubricant> * 3, 0.1)
-  .setExtraOutputTwo(<better_diving:lubricant>, 0.5)
+  .setExtraOutputOne(<better_diving:lubricant> * 3, 0.2)
+  .setExtraOutputTwo(<better_diving:lubricant>, 0.25)
   .create();
   
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<better_diving:creepvine>, <better_diving:creepvine>, <better_diving:creepvine>],
+    [null, <better_diving:creepvine>, null],
+    [<better_diving:creepvine>, <better_diving:creepvine>, <better_diving:creepvine>]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<better_diving:fiber_mesh> * 4)
+  .setExtraOutputOne(<better_diving:lubricant> * 3, 1)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>],
     [<better_diving:lubricant>, <better_diving:lubricant>, <better_diving:lubricant>],
     [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>]])
-  .addOutput(<better_diving:silicone_rubber> * 3)
+  .addTool(<ore:artisansBeaker>, 10)
+  .addOutput(<better_diving:silicone_rubber> * 2)
   .create();
   
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>],
+    [<better_diving:lubricant>, <better_diving:lubricant>, <better_diving:lubricant>],
+    [<better_diving:fiber_mesh>, <better_diving:fiber_mesh>, <better_diving:fiber_mesh>]])
+  .addTool(<ore:artisansBeaker>, 5)
+  .addOutput(<better_diving:silicone_rubber> * 4)
+  .create();
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateAluminum>, <ore:stickIron>, <ore:plateAluminum>],

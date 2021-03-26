@@ -1,5 +1,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByRecipeName("bigreactors:ingot_cyanite_yellorium");
+
 // Turbine Rotor Blade
 recipes.removeByRecipeName("bigreactors:turbinerotorblade");
 RecipeBuilder.get("engineer")
