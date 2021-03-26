@@ -1357,6 +1357,115 @@ RecipeBuilder.get("engineer")
   .addOutput(<immersivetech:valve:2>)
   .create();
 
+recipes.removeByRecipeName("engineersdecor:dependent/small_block_breaker_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/factory_placer_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/small_tree_cutter_recipe");
+
+recipes.removeByRecipeName("engineersdecor:dependent/labeled_crate_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],
+    [<immersiveengineering:wooden_device0>, <minecraft:item_frame>, <immersiveengineering:wooden_device0>],
+    [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<engineersdecor:labeled_crate>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/factory_hopper_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:blockHopper>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plateIron>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<engineersdecor:factory_hopper>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/straight_pipe_valve_redstone_recipe");
+RecipeBuilder.get("engineer")
+  .setShapeless([<engineersdecor:straight_pipe_valve>, <immersiveengineering:connector:12>])
+  .addTool(<ore:artisansDriver>, 10)
+  .addOutput(<engineersdecor:straight_pipe_valve_redstone>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/straight_pipe_valve_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:metal_device1:6>, <immersiveengineering:material:9>, <immersiveengineering:metal_device1:6>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<engineersdecor:straight_pipe_valve> * 2)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_lab_furnace_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<engineersdecor:factory_hopper>, <ore:plateIron>, <ore:plateIron>],
+    [<techguns:itemshared:68>, <minecraft:furnace>, <techguns:itemshared:68>],
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<engineersdecor:small_lab_furnace>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_solar_panel_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockQuartz>, <ore:blockQuartz>, <ore:blockQuartz>],
+    [null, <ore:gearSteel>, null],
+    [<ore:blockLead>, <ore:blockRedstone>, <ore:blockLead>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<engineersdecor:small_solar_panel>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/passive_fluid_accumulator_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <immersiveengineering:metal_device1:6>, <ore:blockSheetmetalIron>],
+    [<immersiveengineering:metal_device1:6>, <immersiveengineering:material:8>, <immersiveengineering:metal_device1:6>],
+    [<ore:blockSheetmetalIron>, <immersiveengineering:metal_device1:6>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<engineersdecor:passive_fluid_accumulator>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_fluid_funnel_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:metal_device0:6>, <immersiveengineering:metal_device0:6>, <immersiveengineering:metal_device0:6>],
+    [<ore:plateIron>, <immersiveengineering:metal_device0:4>, <ore:plateIron>],
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<engineersdecor:small_fluid_funnel>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_waste_incinerator_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<engineersdecor:factory_hopper>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:gearLead>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:gearLead>, <ore:plateSteel>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<engineersdecor:small_waste_incinerator>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_milking_machine_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
+    [<ore:plateIron>, <techguns:itemshared:57>, <minecraft:observer>],
+    [<immersiveengineering:material:9>, <immersiveengineering:metal_device0:4>, <immersiveengineering:material:9>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<engineersdecor:small_milking_machine>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/factory_dropper_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <minecraft:dropper>, <ore:plateIron>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<engineersdecor:factory_dropper>)
+  .create();
+
 ##2 tier
 
 recipes.removeByRecipeName("immersiveengineering:connectors/relay_hv");
@@ -2164,6 +2273,58 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSpanner>, 25)
   .addOutput(<immersivetech:metal_device>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_mineral_smelter_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSteel>, <techguns:itemshared:68>, <ore:blockSteel>],
+    [<ore:blockGlass>, <ore:scaffoldingSteel>, <engineersdecor:factory_hopper>],
+    [<immersiveengineering:metal_device1:1>, <immersiveengineering:metal_device0:4>, <immersiveengineering:metal_device1:1>]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<engineersdecor:small_mineral_smelter>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/small_electrical_furnace_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalSteel>, <immersiveengineering:connector:2>, <ore:blockSheetmetalSteel>],
+    [<immersiveengineering:metal_ladder:1>, <engineersdecor:small_lab_furnace>, <immersiveengineering:metal_ladder:1>],
+    [<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<engineersdecor:small_electrical_furnace>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotHOPGraphite>, <ore:ingotHOPGraphite>],
+    [<ore:ingotHOPGraphite>, <ore:ingotHOPGraphite>],
+    [<ore:ingotHOPGraphite>, <ore:ingotHOPGraphite>]])
+  .addTool(<ore:artisansFramingHammer>, 25)
+  .addTool(<ore:artisansBurner>, 25)
+  .addOutput(<immersiveengineering:graphite_electrode>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:stone_decoration:8>, <ore:plateCopper>, <ore:plateCopper>],
+    [<immersiveengineering:stone_decoration:8>, <techguns:itemshared:68>, <ore:electronTube>],
+    [<ore:electronTube>, <ore:electronTube>, null]])
+  .addTool(<ore:artisansLens>, 30)
+  .addTool(<ore:artisansSolderer>, 30)
+  .addOutput(<immersiveengineering:material:27>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:blockGlass>, null],
+    [<ore:blockGlass>, <ore:plateNickel>, <ore:blockGlass>],
+    [<ore:dustRedstone>, <techguns:itemshared:68>, <ore:dustRedstone>]])
+  .addTool(<ore:artisansLens>, 20)
+  .addTool(<ore:artisansSolderer>, 20)
+  .addOutput(<immersiveengineering:material:26>)
   .create();
 
 ## 3 Tier
