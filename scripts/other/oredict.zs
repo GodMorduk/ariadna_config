@@ -39,3 +39,6 @@ dustSalt.add(<alchemistry:mineral_salt>);
 
 var foodSalt = <ore:foodSalt>;
 foodSalt.add(<alchemistry:mineral_salt>);
+
+var orePhosphorite = <ore:orePhosphorite>;
+orePhosphorite.add(<metallurgy:phosphorite_ore>);
