@@ -6,9 +6,7 @@
   "buffs": [
     "minecraft:night_vision"
   ],
-  "debuffs": [
-    "minecraft:glowing"
-  ],
+  "debuffs": [],
   "components": [
     "fire",
     "order"
