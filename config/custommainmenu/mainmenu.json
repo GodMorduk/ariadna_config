@@ -1,0 +1,112 @@
+{
+    "images":
+    {
+        "main":
+        {
+            "image" : "menu:textures/background_logo.png",
+            "posX" : -60,
+            "posY" : 10,
+            "width" : 107,
+            "height" : 100,
+			"imageWidth": 362,
+			"imageHeight": 354,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "multiplayer":
+        {
+            "text" : "\u0020",
+			"hoverText" : "\u0020",
+            "posX" : -100,
+            "posY" : 100,
+            "width" : 200,
+            "height" : 30,
+			"imageWidth": 390,
+			"imageHeight": 60,
+			"texture" : "menu:buttons/enter.png",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "ariadna.su"
+            }
+        },
+  
+        "options":
+        {
+            "text" : "\u0020",
+            "posX" : -100,
+            "posY" : 133,
+            "width" : 200,
+            "height" : 30,
+			"imageWidth": 390,
+			"imageHeight": 60,
+			"texture" : "menu:buttons/options.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "\u0020",
+            "posX" : -100,
+            "posY" : 166,
+            "width" : 200,
+            "height" : 30,
+			"imageWidth": 390,
+			"imageHeight": 60,
+			"texture" : "menu:buttons/exit.png",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -320,
+            "posY" : -94,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        },
+		
+		"logo_text":
+        {
+            "text" : "\u0020",
+            "posX" : -100,
+            "posY" : 40,
+			"width" : 200,
+            "height" : 50,
+            "imageWidth" : 702,
+            "imageHeight" : 175,
+			"texture" : "menu:buttons/title.png",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        }
+    },
+    
+    
+    "other":
+    {
+        
+        "background":
+        {
+            "image" : "menu:textures/background.png",
+			"mode" : "fill"
+        }
+    }
+}
