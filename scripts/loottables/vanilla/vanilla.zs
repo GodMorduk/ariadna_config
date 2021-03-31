@@ -14,7 +14,10 @@ desert_pyramid.removePool("pool1");
 desert_pyramid.removePool("FlansModBasicLoot");
 desert_pyramid.removePool("FlansMod");
 
-LootTweaker.getTable("minecraft:chests/end_city_treasure").removePool("main");
+val end_city_treasure = LootTweaker.getTable("minecraft:chests/end_city_treasure");
+end_city_treasure.removePool("main");
+end_city_treasure.removePool("FlansModBasicLoot");
+end_city_treasure.removePool("FlansMod");
 
 val igloo_chest = LootTweaker.getTable("minecraft:chests/igloo_chest");
 igloo_chest.removePool("main");

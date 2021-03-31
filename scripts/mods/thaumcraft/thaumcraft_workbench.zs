@@ -336,3 +336,10 @@ recipes.removeByRecipeName("thaumicbases:netherplanks");
 recipes.removeByRecipeName("thaumicbases:enderplanks");
 recipes.removeByRecipeName("thaumicbases:goldenplanks");
 recipes.removeByRecipeName("hammercore:thaumadditions_recipestar.14");
+
+recipes.remove(<thaumcraft:salis_mundus>);
+recipes.addShaped("salismundus", <thaumcraft:salis_mundus>, 
+[[<thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>],
+ [<thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>], 
+ [<thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>]]);
+recipes.addShapeless("salismundusblock", <thaumcraft:salis_mundus>*9, [<thaumicbases:dustblock>]);

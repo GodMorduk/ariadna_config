@@ -39,6 +39,8 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:visgenerator");
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:visgenerator", "VISGENERATOR", 250, [<aspect:aer>*20, <aspect:aqua>*20, <aspect:ignis>*20], <thaumcraft:vis_generator>, [[<ore:logWood>, <ore:blockRedstone>, <ore:logWood>], [<ore:blockIron>, <ore:blockQuartz>, <ore:blockIron>], [<ore:blockBrass>, <thaumcraft:vis_resonator>, <ore:blockBrass>]]);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:patterncrafter");
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:patterncrafter", "", 80, [<aspect:ordo>*30, <aspect:aqua>*30, <aspect:terra>*30], <thaumcraft:pattern_crafter>, [[<thaumcraft:mechanism_simple>, <ore:workbench>, <thaumcraft:mechanism_simple>], [<thaumcraft:mechanism_simple>, <minecraft:hopper>, <thaumcraft:mechanism_simple>], [<thaumcraft:mechanism_simple>, <thaumcraft:vis_resonator>, <thaumcraft:mechanism_simple>]]);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:infusionmatrix");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:infusionmatrix", "INFUSION", 200, [<aspect:aer>*33, <aspect:aqua>*33, <aspect:terra>*33, <aspect:ignis>*33, <aspect:ordo>*33, <aspect:perditio>*33,], <thaumcraft:infusion_matrix>, [[<thaumcraft:stone_arcane>, <ore:blockThaumium>, <thaumcraft:stone_arcane>], [<ore:blockThaumium>, <minecraft:ender_pearl>, <ore:blockThaumium>], [<thaumcraft:stone_arcane>, <ore:blockThaumium>, <thaumcraft:stone_arcane>]]);
 
 //выпил баганых турелек
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:automatedcrossbow");
