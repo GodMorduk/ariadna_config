@@ -12,6 +12,11 @@ vampirism_abandoned_mineshaft_loottable.removePool("holy_water");
 val vampirism_jungle_temple_loottable = LootTweaker.getTable("vampirism:inject/jungle_temple");
 vampirism_jungle_temple_loottable.removePool("swiftness_armor");
 vampirism_jungle_temple_loottable.removePool("hunter_coat");
+vampirism_jungle_temple_loottable.removePool("main");
+
+val vampirism_desert_pyramid_loottable = LootTweaker.getTable("vampirism:inject/desert_pyramid");
+vampirism_desert_pyramid_loottable.removePool("main");
+vampirism_desert_pyramid_loottable.removePool("obsidian_armor");
 
 val vampirism_stronghold_corridor_loottable = LootTweaker.getTable("vampirism:inject/stronghold_corridor");
 vampirism_stronghold_corridor_loottable.removePool("main");
