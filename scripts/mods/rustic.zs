@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.rustic.CrushingTub;
 import mods.rustic.Condenser;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 //добавялем для растика штуки из харвесткрафта
 CrushingTub.addRecipe(<liquid:oliveoil>*250, null, <harvestcraft:oliveitem>);
@@ -45,3 +46,76 @@ recipes.removeByRecipeName("rustic:ironwood_planks");
 
 recipes.removeByRecipeName("rustic:olive_slab");
 recipes.removeByRecipeName("rustic:ironwood_slab");
+
+recipes.removeByRecipeName("rustic:oak_chair");
+recipes.removeByRecipeName("rustic:spruce_chair");
+recipes.removeByRecipeName("rustic:birch_chair");
+recipes.removeByRecipeName("rustic:jungle_chair");
+recipes.removeByRecipeName("rustic:acacia_chair");
+recipes.removeByRecipeName("rustic:big_oak_chair");
+recipes.removeByRecipeName("rustic:olive_chair");
+recipes.removeByRecipeName("rustic:ironwood_chair");
+recipes.removeByRecipeName("rustic:oak_table");
+recipes.removeByRecipeName("rustic:spruce_table");
+recipes.removeByRecipeName("rustic:birch_table");
+recipes.removeByRecipeName("rustic:jungle_table");
+recipes.removeByRecipeName("rustic:acacia_table");
+recipes.removeByRecipeName("rustic:big_oak_table");
+recipes.removeByRecipeName("rustic:olive_table");
+recipes.removeByRecipeName("rustic:ironwood_table");
+
+var planks = [
+	<minecraft:planks>,
+	<minecraft:planks:1>,
+	<minecraft:planks:2>,
+	<minecraft:planks:3>,
+	<minecraft:planks:4>,
+	<minecraft:planks:5>,
+	<rustic:planks>,
+	<rustic:planks:1>
+] as IItemStack[];
+
+var chairs = [
+  <rustic:chair_oak>,
+  <rustic:chair_spruce>,
+  <rustic:chair_birch>,
+  <rustic:chair_jungle>,
+  <rustic:chair_acacia>,
+  <rustic:chair_big_oak>,
+  <rustic:chair_olive>,
+  <rustic:chair_ironwood>
+] as IItemStack[];
+
+var tables = [
+  <rustic:table_oak>,
+  <rustic:table_spruce>,
+  <rustic:table_birch>,
+  <rustic:table_jungle>,
+  <rustic:table_acacia>,
+  <rustic:table_big_oak>,
+  <rustic:table_olive>,
+  <rustic:table_ironwood>
+] as IItemStack[];
+
+for i in 0 to 8 {
+	var plank = planks[i];
+	var chair = chairs[i];
+	var table = tables[i];
+
+	RecipeBuilder.get("carpenter")
+		.setShaped([
+			[plank, null, null],
+			[plank, plank, plank],
+			[<ore:stickWood>, null, <ore:stickWood>]])
+		.addTool(<ore:artisansHandsaw>, 5)
+		.addOutput(chair)
+		.create();
+
+	RecipeBuilder.get("carpenter")
+		.setShaped([
+			[plank, plank, plank],
+			[<ore:stickWood>, null, <ore:stickWood>]])
+		.addTool(<ore:artisansHandsaw>, 5)
+		.addOutput(table)
+		.create();
+}
