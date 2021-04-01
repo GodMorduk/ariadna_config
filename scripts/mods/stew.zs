@@ -760,7 +760,7 @@ var flintAndSteel = <ore:flintAndSteel>;
 flintAndSteel.add(<minecraft:flint_and_steel>);
 flintAndSteel.add(<metallurgy:flint_and_ignatius>);
 flintAndSteel.add(<metallurgy:flint_and_vulcanite>);
-flintAndSteel.add(<pyrotech:flint_and_tinder>);
+//flintAndSteel.add(<pyrotech:flint_and_tinder>);
 flintAndSteel.add(<thaumicbases:voidfas>);
 
 var blockCandle = <ore:blockCandle>;
@@ -1508,7 +1508,7 @@ function packRecipe(worktable as string, itemInput as IIngredient, itemOutput as
     .addOutput(itemPack * 1)
     .create();
 
-  recipes.addShapeless(itemOutput * 8, [itemPack.giveBack(itemPackage)]);
+  recipes.addShapeless(itemOutput * 8, [itemPack.giveBack(itemPackage) * 1]);
 }
 
 RecipeBuilder.get("engineer")
