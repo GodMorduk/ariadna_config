@@ -12,7 +12,7 @@ recipes.removeByRecipeName("techguns:boltaction");
 recipes.removeByRecipeName("techguns:pistol");
 recipes.removeByRecipeName("techguns:pistol_alt");
 
-recipes.addShaped(<techguns:handcannon>,[
+recipes.addShaped(<techguns:handcannon>.withTag({ammo: 0 as short}),[
     [<minecraft:iron_block>, <minecraft:iron_ingot>, null],
     [<minecraft:iron_ingot>, <minecraft:iron_block>, <minecraft:flint_and_steel>],
     [null, <minecraft:tripwire_hook>, <techguns:itemshared:42>]]);
@@ -23,58 +23,58 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:38>, <minecraft:iron_block>, <minecraft:iron_ingot>],
     [null, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:sawedoff>)
+  .addOutput(<techguns:sawedoff>.withTag({ammo: 0 as short}))
   .create();
 
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<immersiveengineering:material:1>, <techguns:itemshared:33>, <immersiveengineering:treated_wood>],
+    [<immersiveengineering:material:1>, <techguns:itemshared:33>, <immersiveengineering:material:13>],
     [null, null, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:revolver>)
+  .addOutput(<techguns:revolver>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <techguns:itemshared:57>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
-    [null, null, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
+    [null, <techguns:itemshared:10>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:mac10>)
+  .addOutput(<techguns:mac10>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
-    [<immersiveengineering:treated_wood_slab>, <minecraft:iron_block>, <techguns:itemshared:57>],
-    [null, <techguns:itemshared:33>, <techguns:itemshared:42>]])
+    [<immersiveengineering:material:13>, <minecraft:iron_block>, <techguns:itemshared:57>],
+    [<techguns:itemshared:14>, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:ak47>)
+  .addOutput(<techguns:ak47>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
-    [<immersiveengineering:treated_wood>, <minecraft:iron_block>, <immersiveengineering:toolupgrade:8>],
+    [<techguns:itemshared:38>, <ore:plateIron>, null],
+    [<immersiveengineering:material:13>, <minecraft:iron_block>, <immersiveengineering:toolupgrade:8>],
     [null, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:boltaction>)
+  .addOutput(<techguns:boltaction>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
-    [null, null, <minecraft:iron_nugget>]])
+    [<ore:plateIron>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
+    [null, <techguns:itemshared:12>, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<techguns:pistol>)
+  .addOutput(<techguns:pistol>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:32>, <minecraft:tnt>],
-    [null, <immersiveengineering:material>, <thermalfoundation:material:32>],
+    [null, <ore:plateIron>, <minecraft:tnt>],
+    [null, <immersiveengineering:material>, <ore:plateIron>],
     [<minecraft:iron_ingot>, null, null]])
   .addTool(<ore:artisansDriver>, 10)
   .addOutput(<techguns:stielgranate> * 2)

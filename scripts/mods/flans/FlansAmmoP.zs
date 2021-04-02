@@ -39,38 +39,38 @@ recipes.addShaped(<flansmod:dwwinnowbpammo>,[
     [<thermalfoundation:material:128>, <thermalfoundation:material:192>, <thermalfoundation:material:128>]]);
   
 recipes.addShaped(<flansmod:laser_pistol_battery>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:29>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:29>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:pocket_defender_battery>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:69>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:29>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:69>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:29>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwgsxammo>,[
-    [<techguns:itemshared:51>, <enderio:item_alloy_ingot:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:item_alloy_ingot:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwarcanepawgunammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwrurhicvtsy87ammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwumx45ammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
 	
 recipes.addShaped(<flansmod:dwumx45shockammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <immersiveengineering:toolupgrade:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <immersiveengineering:toolupgrade:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
 	
 recipes.addShaped(<flansmod:dwgs5shockammo>,[
     [<thermalfoundation:material:128>, <thermalfoundation:material:131>, <thermalfoundation:material:128>],

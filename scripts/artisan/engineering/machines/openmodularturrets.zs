@@ -108,18 +108,18 @@ recipes.addShaped(<openmodularturrets:lever_block>,[
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <openmodularturrets:intermediate_tiered:1>, <thermalfoundation:material:352>],
-    [<mekanism:controlcircuit>, <enderio:item_material>, <mekanism:controlcircuit>],
-    [<thermalfoundation:material:352>, <openmodularturrets:turret_base>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <openmodularturrets:intermediate_tiered:1>, <ore:plateSteel>],
+    [<ore:circuitBasic>, <enderio:item_material>, <ore:circuitBasic>],
+    [<ore:plateSteel>, <openmodularturrets:turret_base>, <ore:plateSteel>]])
   .addTool(<ore:artisansSpanner>, 100)
   .addOutput(<openmodularturrets:turret_base:1>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:51>, <openmodularturrets:intermediate_tiered:2>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <openmodularturrets:intermediate_tiered:2>, <ore:plateObsidianSteel>],
     [<mekanism:controlcircuit:1>, <enderio:item_material:1>, <mekanism:controlcircuit:1>],
-    [<techguns:itemshared:51>, <openmodularturrets:turret_base:1>, <techguns:itemshared:51>]])
+    [<ore:plateObsidianSteel>, <openmodularturrets:turret_base:1>, <ore:plateObsidianSteel>]])
   .setSecondaryIngredients([<opencomputers:component>, <opencomputers:component:6> * 2, <opencomputers:component:3>, <opencomputers:storage:2>, <opencomputers:material:7> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 150)
   .addTool(<ore:artisansDriver>, 150)
@@ -128,11 +128,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <mekanism:controlcircuit:2>, <enderio:item_material:66>, <mekanism:controlcircuit:2>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <mekanism:controlcircuit:2>, <enderio:item_material:66>, <mekanism:controlcircuit:2>, <ore:plateCarbon>],
     [<thermalfoundation:material:293>, <openmodularturrets:intermediate_tiered:3>, <openmodularturrets:turret_base:2>, <openmodularturrets:intermediate_tiered:3>, <thermalfoundation:material:293>],
-    [<techguns:itemshared:53>, <mekanism:controlcircuit:2>, <enderio:item_material:66>, <mekanism:controlcircuit:2>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <mekanism:controlcircuit:2>, <enderio:item_material:66>, <mekanism:controlcircuit:2>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>, <ore:plateCarbon>]])
   .setSecondaryIngredients([<opencomputers:component:1>, <opencomputers:component:8> * 2, <opencomputers:component:4>, <opencomputers:storage:3>, <opencomputers:material:8> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -142,11 +142,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:3>, <enderio:item_material:55>, <mekanism:controlcircuit:3>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:3>, <enderio:item_material:55>, <mekanism:controlcircuit:3>, <ore:plateTitanium>],
     [<thermalfoundation:material:295>, <openmodularturrets:intermediate_tiered:4>, <openmodularturrets:turret_base:3>, <openmodularturrets:intermediate_tiered:4>, <thermalfoundation:material:295>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:3>, <enderio:item_material:55>, <mekanism:controlcircuit:3>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <mekanism:controlcircuit:3>, <enderio:item_material:55>, <mekanism:controlcircuit:3>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>, <ore:plateTitanium>]])
   .setSecondaryIngredients([<opencomputers:component:2>, <opencomputers:component:10> * 2, <opencomputers:component:5>, <opencomputers:storage:4>, <opencomputers:material:9> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -197,18 +197,18 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <thermalfoundation:material:352>],
-    [null, <thermalfoundation:material:323>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:288>]])
+    [null, null, <ore:plateSteel>],
+    [null, <thermalfoundation:material:323>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:plateSteel>, <thermalfoundation:material:288>]])
   .addTool(<ore:artisansDriver>, 10)
   .addOutput(<openmodularturrets:intermediate_tiered:6>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <techguns:itemshared:51>],
-    [null, <mekanism:enrichedalloy>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <thermalfoundation:material:290>]])
+    [null, null, <ore:plateObsidianSteel>],
+    [null, <mekanism:enrichedalloy>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <thermalfoundation:material:290>]])
   .addTool(<ore:artisansDriver>, 15)
   .addTool(<ore:artisansSpanner>, 15)
   .addOutput(<openmodularturrets:intermediate_tiered:7>)
@@ -216,10 +216,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <techguns:itemshared:53>, null],
-    [null, null, <mekanism:reinforcedalloy>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <techguns:itemshared:53>],
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <thermalfoundation:material:293>]])
+    [null, null, <ore:plateCarbon>, null],
+    [null, null, <mekanism:reinforcedalloy>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <ore:plateCarbon>],
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <thermalfoundation:material:293>]])
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansSolderer>, 25)
@@ -228,10 +228,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, <techguns:itemshared:54>, null],
-    [null, null, <mekanism:atomicalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <techguns:itemshared:54>],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:54>, <thermalfoundation:material:295>]])
+    [null, null, <ore:plateTitanium>, null],
+    [null, null, <mekanism:atomicalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <ore:plateTitanium>],
+    [null, <ore:plateTitanium>, <ore:plateTitanium>, <thermalfoundation:material:295>]])
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansSolderer>, 25)
@@ -240,18 +240,18 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
     [<thermalfoundation:material:288>, null, <thermalfoundation:material:288>],
-    [<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<openmodularturrets:intermediate_tiered:11>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:51>, <mekanism:enrichedalloy>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <mekanism:enrichedalloy>, <ore:plateObsidianSteel>],
     [<thermalfoundation:material:290>, null, <thermalfoundation:material:290>],
-    [<techguns:itemshared:51>, <mekanism:enrichedalloy>, <techguns:itemshared:51>]])
+    [<ore:plateObsidianSteel>, <mekanism:enrichedalloy>, <ore:plateObsidianSteel>]])
   .addTool(<ore:artisansSpanner>, 15)
   .addTool(<ore:artisansSolderer>, 15)
   .addOutput(<openmodularturrets:intermediate_tiered:12>)
@@ -259,9 +259,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <mekanism:reinforcedalloy>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <mekanism:reinforcedalloy>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<thermalfoundation:material:293>, null, null, null, <thermalfoundation:material:293>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <mekanism:reinforcedalloy>, <techguns:itemshared:53>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <mekanism:reinforcedalloy>, <ore:plateCarbon>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
@@ -270,9 +270,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <mekanism:atomicalloy>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <mekanism:atomicalloy>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<thermalfoundation:material:295>, null, null, null, <thermalfoundation:material:295>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <mekanism:atomicalloy>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <mekanism:atomicalloy>, <ore:plateTitanium>, <ore:plateTitanium>]])
   .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
@@ -282,8 +282,8 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:11>, null],
-    [<thermalfoundation:material:352>, <openmodularturrets:intermediate_tiered:6>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <enderio:item_material>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <openmodularturrets:intermediate_tiered:6>, <ore:plateSteel>],
+    [<ore:plateSteel>, <enderio:item_material>, <ore:plateSteel>]])
   .addTool(<ore:artisansSpanner>, 1)
   .addOutput(<openmodularturrets:machine_gun_turret>)
   .create();
@@ -292,7 +292,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<openmodularturrets:intermediate_tiered:11>, null, <openmodularturrets:intermediate_tiered:11>],
     [<openmodularturrets:intermediate_tiered:6>, <thermalfoundation:material:160>, <openmodularturrets:intermediate_tiered:6>],
-    [<thermalfoundation:material:352>, <enderio:item_material>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <enderio:item_material>, <ore:plateSteel>]])
   .addTool(<ore:artisansSpanner>, 100)
   .addOutput(<openmodularturrets:incendiary_turret>)
   .create();
@@ -300,8 +300,8 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:12>, null],
-    [<techguns:itemshared:51>, <openmodularturrets:intermediate_tiered:7>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <enderio:item_material:1>, <techguns:itemshared:51>]])
+    [<ore:plateObsidianSteel>, <openmodularturrets:intermediate_tiered:7>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <enderio:item_material:1>, <ore:plateObsidianSteel>]])
   .setSecondaryIngredients([<opencomputers:component> * 2, <opencomputers:component:7> * 2, <opencomputers:component:3>, <opencomputers:material:7> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 150)
   .addTool(<ore:artisansDriver>, 150)
@@ -312,7 +312,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <enderio:item_material:15>, null],
     [<enderio:item_material:15>, <openmodularturrets:intermediate_tiered:2>, <enderio:item_material:15>],
-    [<techguns:itemshared:51>, <enderio:item_material:1>, <techguns:itemshared:51>]])
+    [<ore:plateObsidianSteel>, <enderio:item_material:1>, <ore:plateObsidianSteel>]])
   .setSecondaryIngredients([<opencomputers:component> * 2, <opencomputers:component:7> * 2, <opencomputers:component:3>, <opencomputers:material:7> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 150)
   .addTool(<ore:artisansDriver>, 150)
@@ -323,9 +323,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <openmodularturrets:intermediate_tiered:13>, null, null],
     [null, null, <openmodularturrets:intermediate_tiered:13>, null, null],
-    [<techguns:itemshared:53>, <openmodularturrets:intermediate_tiered:8>, <openmodularturrets:intermediate_tiered:13>, <openmodularturrets:intermediate_tiered:8>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <enderio:item_material:66>, null, <enderio:item_material:66>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <openmodularturrets:intermediate_tiered:8>, <openmodularturrets:intermediate_tiered:13>, <openmodularturrets:intermediate_tiered:8>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <enderio:item_material:66>, null, <enderio:item_material:66>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>]])
   .setSecondaryIngredients([<opencomputers:component:1> * 2, <opencomputers:component:9> * 2, <opencomputers:component:4>, <opencomputers:material:8> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -337,8 +337,8 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <mekanism:teleportationcore>, null, null],
     [null, <enderio:item_material:16>, <enderio:block_alloy:2>, <enderio:item_material:16>, null],
-    [<techguns:itemshared:53>, <enderio:item_material:66>, <mekanism:teleportationcore>, <enderio:item_material:66>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>, <thermalfoundation:material:293>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <enderio:item_material:66>, <mekanism:teleportationcore>, <enderio:item_material:66>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>, <thermalfoundation:material:293>, <ore:plateCarbon>]])
   .setSecondaryIngredients([<opencomputers:component:1> * 2, <opencomputers:component:9> * 2, <opencomputers:component:4>, <opencomputers:material:8> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -350,9 +350,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <openmodularturrets:intermediate_tiered:14>, null, null],
     [null, null, <openmodularturrets:intermediate_tiered:14>, null, null],
-    [<techguns:itemshared:54>, <openmodularturrets:intermediate_tiered:9>, <openmodularturrets:intermediate_tiered:14>, <openmodularturrets:intermediate_tiered:9>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <enderio:item_material:55>, null, <enderio:item_material:55>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <openmodularturrets:intermediate_tiered:9>, <openmodularturrets:intermediate_tiered:14>, <openmodularturrets:intermediate_tiered:9>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <enderio:item_material:55>, null, <enderio:item_material:55>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>]])
   .setSecondaryIngredients([<opencomputers:component:2> * 2, <opencomputers:component:11> * 2, <opencomputers:component:5>, <opencomputers:material:9> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -364,9 +364,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <openmodularturrets:intermediate_tiered:14>, null, null],
     [null, null, <openmodularturrets:intermediate_tiered:14>, null, null],
-    [<techguns:itemshared:54>, <openmodularturrets:intermediate_tiered:9>, <openmodularturrets:intermediate_tiered:14>, <openmodularturrets:intermediate_tiered:9>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <enderio:item_material:55>, null, <enderio:item_material:55>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>, <thermalfoundation:material:295>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <openmodularturrets:intermediate_tiered:9>, <openmodularturrets:intermediate_tiered:14>, <openmodularturrets:intermediate_tiered:9>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <enderio:item_material:55>, null, <enderio:item_material:55>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>, <thermalfoundation:material:295>, <ore:plateTitanium>]])
   .setSecondaryIngredients([<opencomputers:component:2> * 2, <opencomputers:component:11> * 2, <opencomputers:component:5>, <opencomputers:material:9> * 4, <opencomputers:storage>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -544,9 +544,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <minecraft:chest>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <minecraft:chest>, <ore:plateSteel>],
     [<openmodularturrets:expander>, <thermalfoundation:material:288>, <openmodularturrets:expander>],
-    [<thermalfoundation:material:352>, <minecraft:chest>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <minecraft:chest>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<openmodularturrets:expander:1>)
   .create();
@@ -563,9 +563,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <minecraft:chest>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <minecraft:chest>, <ore:plateCarbon>],
     [<openmodularturrets:expander:2>, <thermalfoundation:material:293>, <openmodularturrets:expander:2>],
-    [<techguns:itemshared:53>, <minecraft:chest>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <minecraft:chest>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -574,9 +574,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <minecraft:chest>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <minecraft:chest>, <ore:plateTitanium>],
     [<openmodularturrets:expander:3>, <thermalfoundation:material:295>, <openmodularturrets:expander:3>],
-    [<techguns:itemshared:54>, <minecraft:chest>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <minecraft:chest>, <ore:plateTitanium>]])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -585,9 +585,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <immersiveengineering:metal_decoration0>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <immersiveengineering:metal_decoration0>, <ore:plateSteel>],
     [<openmodularturrets:expander:5>, <minecraft:redstone_block>, <openmodularturrets:expander:5>],
-    [<thermalfoundation:material:352>, <thermalfoundation:material:323>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <thermalfoundation:material:323>, <ore:plateSteel>]])
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<openmodularturrets:expander:6>)
   .create();
@@ -606,8 +606,8 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<industrialforegoing:plastic>, <immersiveengineering:metal_decoration0>, <openmodularturrets:expander:7>, <immersiveengineering:metal_decoration0>, <industrialforegoing:plastic>],
     [<industrialforegoing:plastic>, <openmodularturrets:expander:7>, <minecraft:redstone_block>, <openmodularturrets:expander:7>, <industrialforegoing:plastic>],
-    [<techguns:itemshared:53>, <minecraft:redstone_block>, <openmodularturrets:expander:7>, <minecraft:redstone_block>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <minecraft:redstone_block>, <openmodularturrets:expander:7>, <minecraft:redstone_block>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -618,8 +618,8 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<industrialforegoing:plastic>, <immersiveengineering:metal_decoration0>, <openmodularturrets:expander:8>, <immersiveengineering:metal_decoration0>, <industrialforegoing:plastic>],
     [<industrialforegoing:plastic>, <openmodularturrets:expander:8>, <minecraft:redstone_block>, <openmodularturrets:expander:8>, <industrialforegoing:plastic>],
-    [<techguns:itemshared:54>, <minecraft:redstone_block>, <openmodularturrets:expander:8>, <minecraft:redstone_block>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <minecraft:redstone_block>, <openmodularturrets:expander:8>, <minecraft:redstone_block>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -628,9 +628,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<enderio:item_alloy_ingot:3>, <thermalfoundation:material:33>, null],
-    [<thermalfoundation:material:33>, <immersiveengineering:material:1>, <thermalfoundation:material:33>],
-    [null, <thermalfoundation:material:33>, <enderio:item_alloy_ingot:3>]])
+    [<enderio:item_alloy_ingot:3>, <ore:plateGold>, null],
+    [<ore:plateGold>, <immersiveengineering:material:1>, <ore:plateGold>],
+    [null, <ore:plateGold>, <enderio:item_alloy_ingot:3>]])
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<openmodularturrets:intermediate_regular>)
   .create();

@@ -2,10 +2,10 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -14,10 +14,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -26,10 +26,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -39,10 +39,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <techguns:multiblockmachine:1>, null, null, null],
-    [<techguns:itemshared:53>, <techguns:multiblockmachine:1>, <techguns:itemshared:59>, <techguns:itemshared:53>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <techguns:multiblockmachine:1>, <techguns:itemshared:59>, <ore:plateCarbon>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -51,10 +51,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -63,10 +63,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <industrialforegoing:plastic>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <industrialforegoing:plastic>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -75,12 +75,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:40>, <techguns:itemshared:53>, null, null, null],
-    [<techguns:itemshared:53>, <techguns:itemshared:40>, <techguns:itemshared:53>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
-    [null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [null, null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, null, <techguns:itemshared:36>, <techguns:itemshared:53>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 8, <techguns:itemshared:59> * 4])
+    [<techguns:itemshared:40>, <ore:plateCarbon>, null, null, null],
+    [<ore:plateCarbon>, <techguns:itemshared:40>, <ore:plateCarbon>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
+    [null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [null, null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, null, <techguns:itemshared:36>, <ore:plateCarbon>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 8, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -90,11 +90,11 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:40>, null, null, null, null],
-    [null, <techguns:itemshared:40>, <techguns:itemshared:53>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
-    [null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [null, null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, null, <techguns:itemshared:36>, <techguns:itemshared:53>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 8, <techguns:itemshared:59> * 4])
+    [null, <techguns:itemshared:40>, <ore:plateCarbon>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
+    [null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [null, null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, null, <techguns:itemshared:36>, <ore:plateCarbon>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 8, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -103,12 +103,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:40>, <techguns:itemshared:53>, null, null, null],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <techguns:itemshared:53>, null, null],
-    [<techguns:itemshared:53>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:2>, <techguns:itemshared:53>, null],
-    [null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, null, <techguns:itemshared:36>, <techguns:itemshared:53>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <mekanism:electrolyticcore> * 2, <techguns:itemshared:69> * 2, <mekanism:controlcircuit:2>, <enderio:item_basic_capacitor:1>])
+    [<techguns:itemshared:40>, <ore:plateCarbon>, null, null, null],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <ore:plateCarbon>, null, null],
+    [<ore:plateCarbon>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:2>, <ore:plateCarbon>, null],
+    [null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, null, <techguns:itemshared:36>, <ore:plateCarbon>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <mekanism:electrolyticcore> * 2, <techguns:itemshared:69> * 2, <mekanism:controlcircuit:2>, <enderio:item_basic_capacitor:1>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -117,11 +117,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:41>, <techguns:itemshared:53>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
-    [<techguns:itemshared:53>, <immersiveengineering:metal_decoration0:2>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [<techguns:itemshared:84>, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, <techguns:itemshared:36>, <techguns:itemshared:53>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 10, <techguns:itemshared:59> * 4, <mekanism:electrolyticcore> * 2, <mekanism:controlcircuit:2>, <techguns:itemshared:69> * 2, <enderio:item_basic_capacitor:1>])
+    [<techguns:itemshared:41>, <ore:plateCarbon>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
+    [<ore:plateCarbon>, <immersiveengineering:metal_decoration0:2>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [<techguns:itemshared:84>, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, <techguns:itemshared:36>, <ore:plateCarbon>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 10, <techguns:itemshared:59> * 4, <mekanism:electrolyticcore> * 2, <mekanism:controlcircuit:2>, <techguns:itemshared:69> * 2, <enderio:item_basic_capacitor:1>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -130,11 +130,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:40>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:40>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>],
     [null, <techguns:itemshared:84>, null, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 10, <techguns:itemshared:84> * 2])
+  .setSecondaryIngredients([<ore:plateCarbon> * 10, <techguns:itemshared:84> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -143,10 +143,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:84>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 10, <techguns:itemshared:84> * 2, <techguns:itemshared:59> * 2])
+    [<ore:plateCarbon>, <techguns:itemshared:84>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 10, <techguns:itemshared:84> * 2, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -155,10 +155,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 10, <techguns:itemshared:59> * 4])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 10, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -167,10 +167,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:59> * 6])
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:59> * 6])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -179,12 +179,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:40>, <techguns:itemshared:53>, null, null, null],
-    [<techguns:itemshared:53>, <techguns:itemshared:40>, <techguns:itemshared:53>, <techguns:itemshared:59>, null],
-    [null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [null, null, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, null, <techguns:itemshared:36>, <techguns:itemshared:53>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 10, <techguns:itemshared:59> * 2])
+    [<techguns:itemshared:40>, <ore:plateCarbon>, null, null, null],
+    [<ore:plateCarbon>, <techguns:itemshared:40>, <ore:plateCarbon>, <techguns:itemshared:59>, null],
+    [null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [null, null, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, null, <techguns:itemshared:36>, <ore:plateCarbon>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 10, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -193,9 +193,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -204,9 +204,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>]])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -215,9 +215,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:36>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -226,10 +226,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [null, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [null, <ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -238,10 +238,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 6, <techguns:itemshared:59> * 2])
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -250,11 +250,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>],
     [null, <techguns:itemshared:84>, null, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:84>])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:84>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -264,10 +264,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <techguns:itemshared:84>, null, null, null],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>],
     [<techguns:itemshared:41>, <techguns:itemshared:41>, <immersiveengineering:metal_decoration0:2>, <enderio:item_material:54>, <immersiveengineering:metal_decoration0:5>],
-    [<techguns:itemshared:69>, <techguns:itemshared:69>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:59> * 6, <mekanism:electrolyticcore> * 2, <mekanism:controlcircuit:2>])
+    [<techguns:itemshared:69>, <techguns:itemshared:69>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:59> * 6, <mekanism:electrolyticcore> * 2, <mekanism:controlcircuit:2>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -276,10 +276,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:59> * 6])
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:59> * 6])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -288,10 +288,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<techguns:itemshared:40>, <techguns:itemshared:66>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:69>, <techguns:itemshared:69>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:69> * 2])
+    [<techguns:itemshared:69>, <techguns:itemshared:69>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:69> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -300,12 +300,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:40>, <techguns:itemshared:53>, null, null, null],
-    [<techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>, null, null],
-    [<techguns:itemshared:84>, <techguns:itemshared:53>, <techguns:itemshared:66>, <techguns:itemshared:53>, null],
-    [null, <techguns:itemshared:36>, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, null, null, <techguns:itemshared:53>, <techguns:itemshared:40>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12])
+    [<techguns:itemshared:40>, <ore:plateCarbon>, null, null, null],
+    [<ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>, null, null],
+    [<techguns:itemshared:84>, <ore:plateCarbon>, <techguns:itemshared:66>, <ore:plateCarbon>, null],
+    [null, <techguns:itemshared:36>, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, null, null, <ore:plateCarbon>, <techguns:itemshared:40>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -314,9 +314,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -325,9 +325,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:59>],
-    [<techguns:itemshared:40>, <techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
-    [null, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:36>, <techguns:itemshared:53>]])
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:59>],
+    [<techguns:itemshared:40>, <techguns:itemshared:40>, <techguns:itemshared:40>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
+    [null, <ore:plateCarbon>, <ore:plateCarbon>, <techguns:itemshared:36>, <ore:plateCarbon>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -336,12 +336,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, null, null, <techguns:itemshared:53>, null],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <mekanism:controlcircuit:2>, <techguns:itemshared:53>],
+    [null, null, null, <ore:plateCarbon>, null],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <mekanism:controlcircuit:2>, <ore:plateCarbon>],
     [null, null, null, <thermalfoundation:material:515>, <techguns:itemshared:36>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <immersiveengineering:metal_decoration0:5>, <ore:plateCarbon>],
     [null, <techguns:itemshared:72>, <techguns:itemshared:69>, <techguns:itemshared:69>, null]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 16, <immersiveengineering:metal_decoration0:5> * 3, <techguns:itemshared:69> * 4, <thermalfoundation:material:515> * 2])
+  .setSecondaryIngredients([<ore:plateCarbon> * 16, <immersiveengineering:metal_decoration0:5> * 3, <techguns:itemshared:69> * 4, <thermalfoundation:material:515> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -350,11 +350,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:69>, <techguns:itemshared:69>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>],
+    [<techguns:itemshared:69>, <techguns:itemshared:69>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
     [<enderio:item_material:15>, <techguns:itemshared:41>, <immersiveengineering:metal_decoration0:2>, <mekanism:controlcircuit:2>, <enderio:item_material:54>],
     [<techguns:itemshared:69>, <techguns:itemshared:69>, <mekanism:electrolyticcore>, <mekanism:electrolyticcore>, <techguns:itemshared:36>],
     [null, <techguns:itemshared:84>, null, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 16, <mekanism:electrolyticcore> * 2, <thermalfoundation:material:515> * 3, <techguns:itemshared:69> * 4, <mekanism:controlcircuit:2>])
+  .setSecondaryIngredients([<ore:plateCarbon> * 16, <mekanism:electrolyticcore> * 2, <thermalfoundation:material:515> * 3, <techguns:itemshared:69> * 4, <mekanism:controlcircuit:2>])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -364,10 +364,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <techguns:itemshared:59>, <techguns:itemshared:59>, null, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:130>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <techguns:itemshared:130>, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -377,10 +377,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <techguns:itemshared:59>, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -389,10 +389,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2])
+    [<techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -402,10 +402,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, null, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 4])
+    [<techguns:itemshared:59>, <techguns:itemshared:59>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -414,12 +414,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:129>, <techguns:itemshared:54>, null, null, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:129>, <techguns:itemshared:54>, null, null],
-    [null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>, <techguns:itemshared:59>],
-    [null, null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [null, null, <techguns:itemshared:130>, <techguns:itemshared:54>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 8, <techguns:itemshared:59> * 4])
+    [<techguns:itemshared:129>, <ore:plateTitanium>, null, null, null],
+    [<ore:plateTitanium>, <techguns:itemshared:129>, <ore:plateTitanium>, null, null],
+    [null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>, <techguns:itemshared:59>],
+    [null, null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [null, null, <techguns:itemshared:130>, <ore:plateTitanium>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 8, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -428,12 +428,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:128>, <techguns:itemshared:54>, null, null, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:128>, <techguns:itemshared:54>, null, null],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:104>, <techguns:itemshared:54>, null],
-    [null, null, <techguns:itemshared:54>, <enderio:item_material:54>, <techguns:itemshared:54>],
-    [null, null, <techguns:itemshared:130>, <techguns:itemshared:54>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:69> * 4])
+    [<techguns:itemshared:128>, <ore:plateTitanium>, null, null, null],
+    [<ore:plateTitanium>, <techguns:itemshared:128>, <ore:plateTitanium>, null, null],
+    [null, <ore:plateTitanium>, <techguns:itemshared:104>, <ore:plateTitanium>, null],
+    [null, null, <ore:plateTitanium>, <enderio:item_material:54>, <ore:plateTitanium>],
+    [null, null, <techguns:itemshared:130>, <ore:plateTitanium>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 12, <techguns:itemshared:59> * 6, <techguns:itemshared:69> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -442,12 +442,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:129>, <techguns:itemshared:54>, null, null, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:129>, <techguns:itemshared:54>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
-    [null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>, <techguns:itemshared:59>],
-    [null, null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [null, null, <techguns:itemshared:130>, <techguns:itemshared:54>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 10, <techguns:itemshared:59> * 4])
+    [<techguns:itemshared:129>, <ore:plateTitanium>, null, null, null],
+    [<ore:plateTitanium>, <techguns:itemshared:129>, <ore:plateTitanium>, <techguns:itemshared:59>, <immersiveengineering:toolupgrade:8>],
+    [null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>, <techguns:itemshared:59>],
+    [null, null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [null, null, <techguns:itemshared:130>, <ore:plateTitanium>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 10, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -457,11 +457,11 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, null, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:129>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <techguns:itemshared:129>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>],
     [null, <techguns:itemshared:59>, null, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 8, <techguns:itemshared:59> * 4])
+  .setSecondaryIngredients([<ore:plateTitanium> * 8, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -471,10 +471,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, null, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:53>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateCarbon>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:130>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 8, <techguns:itemshared:59> * 4])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:130>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 8, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -483,12 +483,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:129>, <techguns:itemshared:54>, null, null, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:129>, <techguns:itemshared:54>, null, null],
+    [<techguns:itemshared:129>, <ore:plateTitanium>, null, null, null],
+    [<ore:plateTitanium>, <techguns:itemshared:129>, <ore:plateTitanium>, null, null],
     [null, <techguns:itemshared:59>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:59>, null],
-    [null, <techguns:itemshared:130>, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [null, null, null, <techguns:itemshared:54>, <techguns:itemshared:44>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 4])
+    [null, <techguns:itemshared:130>, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [null, null, null, <ore:plateTitanium>, <techguns:itemshared:44>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -497,10 +497,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>],
-    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 4])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>],
+    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -509,10 +509,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 4])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -521,10 +521,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 4])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -534,10 +534,10 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, null, <techguns:itemshared:59>, null],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [null, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2])
+    [null, <ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -547,11 +547,11 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <techguns:itemshared:84>, <techguns:itemshared:84>, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:130>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <techguns:itemshared:59>, <techguns:itemshared:130>, <ore:plateTitanium>],
     [null, <techguns:itemshared:84>, <techguns:itemshared:84>, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 12, <techguns:itemshared:59> * 8, <techguns:itemshared:84> * 4])
+  .setSecondaryIngredients([<ore:plateTitanium> * 12, <techguns:itemshared:59> * 8, <techguns:itemshared:84> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -561,11 +561,11 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:84>, <techguns:itemshared:84>, null, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [<techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:44>],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>],
     [<techguns:itemshared:84>, <techguns:itemshared:84>, null, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:129> * 6, <techguns:itemshared:54> * 4, <techguns:itemshared:84> * 4, <techguns:itemshared:59> * 2])
+  .setSecondaryIngredients([<techguns:itemshared:129> * 6, <ore:plateTitanium> * 4, <techguns:itemshared:84> * 4, <techguns:itemshared:59> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -574,12 +574,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:54>, <techguns:itemshared:84>, <techguns:itemshared:59>, null],
-    [<techguns:itemshared:54>, <techguns:itemshared:69>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
+    [null, <ore:plateTitanium>, <techguns:itemshared:84>, <techguns:itemshared:59>, null],
+    [<ore:plateTitanium>, <techguns:itemshared:69>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
     [null, null, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:66>, <techguns:itemshared:30>],
-    [<techguns:itemshared:54>, <techguns:itemshared:69>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:84>, null, null]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 12, <techguns:itemshared:69> * 4, <techguns:itemshared:84> * 4, <techguns:itemshared:66> * 2, <techguns:itemshared:59> * 2, <mekanism:electrolyticcore> * 2])
+    [<ore:plateTitanium>, <techguns:itemshared:69>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [null, <ore:plateTitanium>, <techguns:itemshared:84>, null, null]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 12, <techguns:itemshared:69> * 4, <techguns:itemshared:84> * 4, <techguns:itemshared:66> * 2, <techguns:itemshared:59> * 2, <mekanism:electrolyticcore> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -588,11 +588,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:129>, <techguns:itemshared:54>, <techguns:itemshared:59>, null, null],
-    [<techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>, null, null],
-    [<techguns:itemshared:84>, <techguns:itemshared:69>, <techguns:itemshared:66>, <techguns:itemshared:54>, null],
-    [null, <techguns:itemshared:130>, <techguns:itemshared:69>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [null, null, <techguns:itemshared:84>, <techguns:itemshared:54>, <techguns:itemshared:129>]])
+    [<techguns:itemshared:129>, <ore:plateTitanium>, <techguns:itemshared:59>, null, null],
+    [<ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>, null, null],
+    [<techguns:itemshared:84>, <techguns:itemshared:69>, <techguns:itemshared:66>, <ore:plateTitanium>, null],
+    [null, <techguns:itemshared:130>, <techguns:itemshared:69>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [null, null, <techguns:itemshared:84>, <ore:plateTitanium>, <techguns:itemshared:129>]])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -601,10 +601,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:69>],
-    [<techguns:itemshared:129>, <techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [null, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:130>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 4])
+    [null, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:69>],
+    [<techguns:itemshared:129>, <techguns:itemshared:129>, <techguns:itemshared:129>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [null, <ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:130>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 4])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -613,12 +613,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<mekanism:electrolyticcore>, <techguns:itemshared:69>, <techguns:itemshared:104>, <techguns:itemshared:54>, null],
-    [null, null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
+    [<mekanism:electrolyticcore>, <techguns:itemshared:69>, <techguns:itemshared:104>, <ore:plateTitanium>, null],
+    [null, null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
     [<enderio:item_material:19>, <techguns:itemshared:41>, <techguns:itemshared:41>, <mekanism:controlcircuit:3>, <techguns:itemshared:30>],
-    [null, null, <techguns:itemshared:54>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:54>],
-    [<mekanism:electrolyticcore>, <techguns:itemshared:69>, <techguns:itemshared:104>, <techguns:itemshared:54>, null]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 16, <mekanism:electrolyticcore> * 8, <techguns:itemshared:69> * 4, <enderio:item_basic_capacitor:2> * 2])
+    [null, null, <ore:plateTitanium>, <immersiveengineering:metal_decoration0:5>, <ore:plateTitanium>],
+    [<mekanism:electrolyticcore>, <techguns:itemshared:69>, <techguns:itemshared:104>, <ore:plateTitanium>, null]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 16, <mekanism:electrolyticcore> * 8, <techguns:itemshared:69> * 4, <enderio:item_basic_capacitor:2> * 2])
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSolderer>, 250)

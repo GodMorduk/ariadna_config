@@ -4,7 +4,7 @@ recipes.addShaped(<flansmod:dw40mmfrag> * 2,[
     [<tconstruct:ingots:5>, <flansmod:gunpowderblock>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:dw40mmap> * 2,[
-    [<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
+    [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
     [<tconstruct:ingots:5>, <flansmod:gunpowderblock>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <tconstruct:ingots:5>, <tconstruct:ingots:5>]]);
   
@@ -39,26 +39,26 @@ recipes.addShaped(<flansmod:dw40mmshock> * 2,[
     [<tconstruct:ingots:5>, <minecraft:gunpowder>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:dwlk103ammo> * 2,[
-    [<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
+    [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
     [<tconstruct:ingots:5>, <flansmod:gunpowderblock>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <tconstruct:ingots:5>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:boom_ammo_clip>,[
-    [<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
+    [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
     [<tconstruct:ingots:5>, <flansmod:gunpowderblock>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <tconstruct:ingots:5>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:dwskyswatterammo> * 2,[
-    [<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
+    [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
     [<tconstruct:ingots:5>, <flansmod:gunpowderblock>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <tconstruct:ingots:5>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:dwskyswattertrackammo> * 2,[
     [<enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwdronedeployerammo>,[
     [<enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:6>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);

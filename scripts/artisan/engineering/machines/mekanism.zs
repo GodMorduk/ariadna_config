@@ -663,7 +663,7 @@ recipes.removeByRecipeName("mekanism:electrolyticcore");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:alloyAdvanced>, <ore:dustOsmium>, <ore:alloyAdvanced>],
-    [<thermalfoundation:material:32>, <ore:circuitBasic>, <ore:plateGold>],
+    [<ore:plateIron>, <ore:circuitBasic>, <ore:plateGold>],
     [<ore:alloyAdvanced>, <ore:dustOsmium>, <ore:alloyAdvanced>]])
   .addTool(<ore:artisansSolderer>, 15)
   .addTool(<ore:artisansDriver>, 15)
@@ -1499,9 +1499,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("mekanismgenerators:reactorglass_0");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <mekanismgenerators:reactor:1>, <techguns:itemshared:54>],
+    [<ore:plateTitanium>, <mekanismgenerators:reactor:1>, <ore:plateTitanium>],
     [<mekanismgenerators:reactor:1>, <ore:blockGlassHardened>, <mekanismgenerators:reactor:1>],
-    [<techguns:itemshared:54>, <mekanismgenerators:reactor:1>, <techguns:itemshared:54>]])
+    [<ore:plateTitanium>, <mekanismgenerators:reactor:1>, <ore:plateTitanium>]])
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSpanner>, 25)
   .addTool(<ore:artisansFile>, 25)

@@ -64,47 +64,47 @@ recipes.addShaped(<flansmod:dwairdropperammo>,[
     [<tconstruct:ingots:5>, <minecraft:gunpowder>, <tconstruct:ingots:5>]]);
   
 recipes.addShaped(<flansmod:dwdzky103ammo>,[
-    [<techguns:itemshared:51>, <enderio:item_alloy_ingot:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:item_alloy_ingot:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwmk47ammo>,[
-    [<techguns:itemshared:51>, <enderio:item_alloy_ingot:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:item_alloy_ingot:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:thermal_spitter_heating_core>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:76>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:76>, <ore:plateObsidianSteel>],
     [<techguns:itemshared:76>, <minecraft:redstone_block>, <techguns:itemshared:76>],
-    [<techguns:itemshared:51>, <techguns:itemshared:76>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:76>, <ore:plateObsidianSteel>]]);
   
   recipes.addShaped(<flansmod:thermal_spitter_heating_core>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:76>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:76>, <ore:plateObsidianSteel>],
     [<techguns:itemshared:76>, <minecraft:redstone_block>, <techguns:itemshared:76>],
-    [<techguns:itemshared:51>, <techguns:itemshared:76>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:76>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:gauss_gun_rod>,[
-    [<techguns:itemshared:54>, <techguns:itemshared:69>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:29>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>]]);
+    [<ore:plateTitanium>, <techguns:itemshared:69>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:29>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]]);
   
 recipes.addShaped(<flansmod:dwclockwingammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwcloudpuncherammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
 	
 recipes.addShaped(<flansmod:dwclockwingheammo>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:85>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <flansmod:gunpowderblock>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:75>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:85>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <flansmod:gunpowderblock>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:75>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwcinderfireapammo>,[
-    [<tconstruct:ingots:5>, <thermalfoundation:material:160>, <tconstruct:ingots:5>],
+    [<tconstruct:ingots:5>, <ore:ingotSteel>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <minecraft:gunpowder>, <tconstruct:ingots:5>],
     [<tconstruct:ingots:5>, <minecraft:gunpowder>, <tconstruct:ingots:5>]]);
 	

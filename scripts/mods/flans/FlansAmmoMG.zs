@@ -24,34 +24,34 @@ recipes.addShaped(<flansmod:dwairmareammo>,[
     [<tconstruct:metal:5>, <tconstruct:ingots:5>, <tconstruct:metal:5>]]);
   
 recipes.addShaped(<flansmod:dwsf370bammo>,[
-    [<techguns:itemshared:51>, <enderio:block_alloy:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:block_alloy:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwhparammo>,[
-    [<techguns:itemshared:51>, <enderio:block_alloy:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:block_alloy:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwironhoofm40ammo>,[
-    [<techguns:itemshared:51>, <enderio:block_alloy:6>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <enderio:block_alloy:6>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:lasergun_battery_clip>,[
-    [<techguns:itemshared:51>, <techguns:itemshared:69>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:29>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:29>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:itemshared:69>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:29>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:29>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwheavydupletmgammo>,[
     [<techguns:itemshared:85>, <techguns:itemshared:85>, <techguns:itemshared:85>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
   
 recipes.addShaped(<flansmod:dwscspinnakerammo>,[
     [<techguns:itemshared:85>, <techguns:itemshared:85>, <techguns:itemshared:85>],
-    [<techguns:itemshared:51>, <techguns:explosive_charge:1>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>]]);
+    [<ore:plateObsidianSteel>, <techguns:explosive_charge:1>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]]);
 	
 recipes.addShaped(<flansmod:dwstumbreonsteamergasammo>,[
     [<tconstruct:ingots:5>, <thermalfoundation:storage_alloy>, <tconstruct:ingots:5>],

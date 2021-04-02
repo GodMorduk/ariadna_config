@@ -25,12 +25,23 @@ recipes.removeByRecipeName("techguns:combatknife");
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
-    [<industrialforegoing:plastic>, <thermalfoundation:material:160>, null],
-    [<thermalfoundation:material:160>, <industrialforegoing:plastic>, null]])
-  .setSecondaryIngredients([<thermalfoundation:material:160> * 4])
+    [null, <ore:ingotSteel>, <ore:ingotSteel>],
+    [<industrialforegoing:plastic>, <ore:blockSteel>, null],
+    [<ore:ingotSteel>, <industrialforegoing:plastic>, null]])
+  .setSecondaryIngredients([<ore:ingotSteel> * 4])
   .addTool(<ore:artisansHammer>, 100)
   .addTool(<ore:artisansFile>, 100)
+  .addOutput(<techguns:crowbar>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:ingotSteel>, <ore:ingotSteel>],
+    [<industrialforegoing:plastic>, <ore:blockSteel>, null],
+    [<ore:ingotSteel>, <industrialforegoing:plastic>, null]])
+  .setSecondaryIngredients([<ore:ingotSteel> * 8])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansFile>, 150)
   .addOutput(<techguns:crowbar>)
   .create();
 
@@ -45,98 +56,162 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("engineer")
   .setShaped([
+    [<industrialforegoing:plastic>, <thermalfoundation:storage_alloy>],
+    [<immersiveengineering:material:2>, <industrialforegoing:plastic>]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansFile>, 150)
+  .addOutput(<techguns:combatknife>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
     [<techguns:itemshared:39>, <techguns:itemshared:58>, null],
-    [<thermalfoundation:material:352>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:352>],
-    [null, <techguns:itemshared:34>, <techguns:itemshared:43>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 6, <techguns:itemshared:58> * 2])
+    [<ore:plateSteel>, <immersiveengineering:metal_decoration0:4>, <ore:plateSteel>],
+    [<techguns:itemshared:14>, <techguns:itemshared:34>, <techguns:itemshared:43>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 6, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:m4>)
+  .addOutput(<techguns:m4>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:39>, <thermalfoundation:material:352>, null],
-    [<immersiveengineering:treated_wood_slab>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:352>],
-    [null, <techguns:itemshared:34>, <techguns:itemshared:42>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 4, <techguns:itemshared:58> * 2])
+    [<techguns:itemshared:39>, <ore:plateSteel>, null],
+    [<immersiveengineering:material:13>, <immersiveengineering:metal_decoration0:4>, <ore:plateSteel>],
+    [<techguns:itemshared:10>, <techguns:itemshared:34>, <techguns:itemshared:42>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 4, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:thompson>)
+  .addOutput(<techguns:thompson>.withTag({ammo: 0 as short}))
   .create();
-  
+
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:39>, <techguns:itemshared:51>, null],
+    [<techguns:itemshared:39>, <ore:plateObsidianSteel>, null],
     [<techguns:itemshared:39>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:58>],
-    [null, <techguns:itemshared:35>, <techguns:itemshared:51>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 4, <techguns:itemshared:58> * 2])
+    [null, <techguns:itemshared:35>, <ore:plateObsidianSteel>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 4, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:combatshotgun>)
+  .addOutput(<techguns:combatshotgun>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:39>, <techguns:itemshared:51>, null],
-    [<techguns:itemshared:72>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:51>],
-    [null, <techguns:itemshared:34>, <techguns:itemshared:51>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 8])
+    [<techguns:itemshared:39>, <ore:plateObsidianSteel>, null],
+    [<techguns:itemshared:72>, <immersiveengineering:metal_decoration0:5>, <ore:plateObsidianSteel>],
+    [<techguns:itemshared:28>, <techguns:itemshared:34>, <ore:plateObsidianSteel>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:flamethrower>)
+  .addOutput(<techguns:flamethrower>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:39>, <thermalfoundation:material:33>, <techguns:itemshared:58>],
-    [<thermalfoundation:material:33>, <techguns:itemshared:35>, <thermalfoundation:material:352>],
-    [null, <minecraft:gold_nugget>, <minecraft:gold_nugget>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 4, <techguns:itemshared:58>])
+    [<techguns:itemshared:39>, <ore:plateGold>, <techguns:itemshared:58>],
+    [<ore:plateGold>, <techguns:itemshared:35>, <ore:plateSteel>],
+    [null, <ore:nuggetGold>, <ore:nuggetGold>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 4, <techguns:itemshared:58>])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:goldenrevolver>)
+  .addOutput(<techguns:goldenrevolver>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:39>, <techguns:itemshared:51>, null],
-    [<techguns:itemshared:58>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:51>],
+    [<techguns:itemshared:39>, <ore:plateObsidianSteel>, null],
+    [<techguns:itemshared:58>, <immersiveengineering:metal_decoration0:5>, <ore:plateObsidianSteel>],
     [null, <techguns:itemshared:34>, <techguns:itemshared:43>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 6, <techguns:itemshared:58> * 4])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 6, <techguns:itemshared:58> * 4])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:grenadelauncher>)
+  .addOutput(<techguns:grenadelauncher>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:39>, <immersiveengineering:toolupgrade:8>, null],
-    [<thermalfoundation:material:352>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:352>],
-    [null, <techguns:itemshared:34>, <immersiveengineering:metal_decoration0:4>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 6, <techguns:itemshared:58> * 2])
+    [<ore:plateSteel>, <immersiveengineering:metal_decoration0:4>, <ore:plateSteel>],
+    [<techguns:itemshared:14>, <techguns:itemshared:34>, <immersiveengineering:metal_decoration0:4>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 6, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:aug>)
+  .addOutput(<techguns:aug>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:39>, <techguns:itemshared:58>, <immersiveengineering:toolupgrade:8>],
-    [<techguns:itemshared:51>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:51>],
-    [null, <techguns:itemshared:35>, <immersiveengineering:metal_decoration0:5>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 8, <techguns:itemshared:58> * 4])
+    [<ore:plateObsidianSteel>, <immersiveengineering:metal_decoration0:5>, <ore:plateObsidianSteel>],
+    [<techguns:itemshared:20>, <techguns:itemshared:35>, <immersiveengineering:metal_decoration0:5>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8, <techguns:itemshared:58> * 4])
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
-  .addOutput(<techguns:as50>)
+  .addOutput(<techguns:as50>.withTag({ammo: 0 as short}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:352>, <minecraft:flint_and_steel>],
-    [<thermalfoundation:material:352>, <mekanism:obsidiantnt>, <thermalfoundation:material:352>],
-    [null, <thermalfoundation:material:352>, null]])
+    [null, <ore:plateSteel>, <minecraft:flint_and_steel>],
+    [<ore:plateSteel>, <mekanism:obsidiantnt>, <ore:plateSteel>],
+    [null, <ore:plateSteel>, null]])
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
-  .addOutput(<techguns:fraggrenade> * 4)
+  .addOutput(<techguns:fraggrenade> * 3)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<techguns:itemshared:72>, <immersiveengineering:toolupgrade:6>, <ore:plateObsidianSteel>],
+    [<ore:blockLead>, <immersiveengineering:metal_decoration0:5>, <techguns:itemshared:42>],
+    [<techguns:itemshared:72>, <techguns:itemshared:34>, <techguns:itemshared:24>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 6, <techguns:itemshared:58> * 4])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<techguns:powerhammer>.withTag({ammo: 0 as short}))
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<techguns:itemshared:58>, <techguns:itemshared:58>, <techguns:itemshared:28>],
+    [<ore:plateObsidianSteel>, <thermalinnovation:saw:2>, <industrialforegoing:plastic>],
+    [<techguns:itemshared:58>, <techguns:itemshared:58>, <industrialforegoing:plastic>]])
+  .setSecondaryIngredients([<techguns:itemshared:58> * 4, <ore:plateObsidianSteel> * 8])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<techguns:chainsaw>.withTag({ammo: 0 as short}))
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <immersiveengineering:material:13>, <ore:plateObsidianSteel>],
+    [<techguns:itemshared:119>, <thermalinnovation:drill:2>, <immersiveengineering:metal_decoration0:5>],
+    [null, <ore:plateObsidianSteel>, <immersiveengineering:material:13>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8, <techguns:itemshared:58> * 4, <techguns:itemshared:24>])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<techguns:miningdrill>.withTag({ammo: 0 as short}))
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermalfoundation:glass_alloy>, <thermalfoundation:glass_alloy>, null],
+    [<ore:plateObsidianSteel>, <thermalfoundation:glass_alloy>, <techguns:itemshared:58>],
+    [<thermalfoundation:glass_alloy>, <thermalfoundation:glass_alloy>, null]])
+  .setSecondaryIngredients([<ore:sheetPlastic> * 8, <ore:plateObsidianSteel> * 8])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<techguns:riot_shield>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateObsidianSteel>, <thermalfoundation:glass:7>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:58>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8, <ore:plateSteel> * 16])
+  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansSpanner>, 100)
+  .addOutput(<techguns:ballistic_shield>)
   .create();

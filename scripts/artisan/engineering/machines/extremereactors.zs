@@ -252,9 +252,9 @@ recipes.removeByRecipeName("bigreactors:reactorcasingcores");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <thermalfoundation:material:323>, <thermalfoundation:material:323>, <thermalfoundation:material:323>, null],
-    [<thermalfoundation:material:323>, <techguns:itemshared:54>, <bigreactors:ingotgraphite>, <techguns:itemshared:54>, <thermalfoundation:material:323>],
+    [<thermalfoundation:material:323>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <thermalfoundation:material:323>],
     [<thermalfoundation:material:323>, <bigreactors:ingotgraphite>, <mekanism:atomicalloy>, <bigreactors:ingotgraphite>, <thermalfoundation:material:323>],
-    [<thermalfoundation:material:323>, <techguns:itemshared:54>, <bigreactors:ingotgraphite>, <techguns:itemshared:54>, <thermalfoundation:material:323>],
+    [<thermalfoundation:material:323>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <thermalfoundation:material:323>],
     [null, <thermalfoundation:material:323>, <thermalfoundation:material:323>, <thermalfoundation:material:323>, null]])
   .addTool(<ore:artisansHammer>, 25)
   .addTool(<ore:artisansDriver>, 25)

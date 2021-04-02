@@ -24,9 +24,9 @@ recipes.removeByRecipeName("techguns:steam_helmet");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:60>, null, <techguns:itemshared:60>],
-    [<thermalfoundation:material:352>, <techguns:itemshared:57>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <techguns:t1_combat_boots>, <thermalfoundation:material:352>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 10, <techguns:itemshared:60> * 5, <techguns:itemshared:57> * 2])
+    [<ore:plateSteel>, <techguns:itemshared:57>, <ore:plateSteel>],
+    [<ore:plateSteel>, <techguns:t1_combat_boots>, <ore:plateSteel>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 10, <techguns:itemshared:60> * 5, <techguns:itemshared:57> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_combat_boots>)
@@ -34,10 +34,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:60>, <thermalfoundation:material:352>, <techguns:itemshared:60>],
-    [<thermalfoundation:material:352>, <techguns:t1_combat_leggings>, <thermalfoundation:material:352>],
+    [<techguns:itemshared:60>, <ore:plateSteel>, <techguns:itemshared:60>],
+    [<ore:plateSteel>, <techguns:t1_combat_leggings>, <ore:plateSteel>],
     [<techguns:itemshared:60>, <techguns:itemshared:57>, <techguns:itemshared:60>]])
-  .setSecondaryIngredients([<techguns:itemshared:60> * 8, <thermalfoundation:material:352> * 10, <techguns:itemshared:57> * 3])
+  .setSecondaryIngredients([<techguns:itemshared:60> * 8, <ore:plateSteel> * 10, <techguns:itemshared:57> * 3])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_combat_leggings>)
@@ -46,9 +46,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:60>, <techguns:itemshared:58>, <techguns:itemshared:60>],
-    [<thermalfoundation:material:352>, <techguns:t1_combat_chestplate>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <techguns:itemshared:58>, <thermalfoundation:material:352>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 16, <techguns:itemshared:60> * 8, <techguns:itemshared:57> * 4])
+    [<ore:plateSteel>, <techguns:t1_combat_chestplate>, <ore:plateSteel>],
+    [<ore:plateSteel>, <techguns:itemshared:58>, <ore:plateSteel>]])
+  .setSecondaryIngredients([<ore:plateSteel> * 16, <techguns:itemshared:60> * 8, <techguns:itemshared:57> * 4])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_combat_chestplate>)
@@ -56,10 +56,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <techguns:t1_combat_helmet>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <techguns:t1_combat_helmet>, <ore:plateSteel>],
     [<techguns:itemshared:60>, <techguns:itemshared:57>, <techguns:itemshared:60>]])
-  .setSecondaryIngredients([<thermalfoundation:material:352> * 10, <techguns:itemshared:60> * 4, <techguns:itemshared:57> * 2])
+  .setSecondaryIngredients([<ore:plateSteel> * 10, <techguns:itemshared:60> * 4, <techguns:itemshared:57> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_combat_helmet>)
@@ -68,9 +68,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:133>, null, <techguns:itemshared:133>],
-    [<techguns:itemshared:53>, <techguns:itemshared:57>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:t1_combat_boots>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:133> * 6, <techguns:itemshared:57> * 2])
+    [<ore:plateCarbon>, <techguns:itemshared:57>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <techguns:t1_combat_boots>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:133> * 6, <techguns:itemshared:57> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_commando_boots>)
@@ -78,10 +78,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:133>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:t1_combat_leggings>, <techguns:itemshared:53>],
+    [<ore:plateCarbon>, <techguns:itemshared:133>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <techguns:t1_combat_leggings>, <ore:plateCarbon>],
     [<techguns:itemshared:133>, <techguns:itemshared:58>, <techguns:itemshared:133>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 12, <techguns:itemshared:133> * 8, <techguns:itemshared:57> * 3])
+  .setSecondaryIngredients([<ore:plateCarbon> * 12, <techguns:itemshared:133> * 8, <techguns:itemshared:57> * 3])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_commando_leggings>)
@@ -90,9 +90,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:133>, <techguns:itemshared:57>, <techguns:itemshared:133>],
-    [<techguns:itemshared:53>, <techguns:t1_combat_chestplate>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:133>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 15, <techguns:itemshared:133> * 12, <techguns:itemshared:57> * 4])
+    [<ore:plateCarbon>, <techguns:t1_combat_chestplate>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <techguns:itemshared:133>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateCarbon> * 15, <techguns:itemshared:133> * 12, <techguns:itemshared:57> * 4])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_commando_chestplate>)
@@ -100,10 +100,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:51>, <techguns:itemshared:53>, <techguns:itemshared:51>],
-    [<techguns:itemshared:53>, <techguns:t1_combat_helmet>, <techguns:itemshared:53>],
+    [<ore:plateObsidianSteel>, <ore:plateCarbon>, <ore:plateObsidianSteel>],
+    [<ore:plateCarbon>, <techguns:t1_combat_helmet>, <ore:plateCarbon>],
     [<techguns:itemshared:133>, <techguns:itemshared:93>, <techguns:itemshared:133>]])
-  .setSecondaryIngredients([<techguns:itemshared:53> * 8, <techguns:itemshared:51> * 6, <techguns:itemshared:133> * 4, <techguns:itemshared:57> * 2])
+  .setSecondaryIngredients([<ore:plateCarbon> * 8, <ore:plateObsidianSteel> * 6, <techguns:itemshared:133> * 4, <techguns:itemshared:57> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_commando_helmet>)
@@ -111,9 +111,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:51>, <techguns:itemshared:58>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:58>, <ore:plateObsidianSteel>],
     [<techguns:itemshared:77>, <techguns:t2_combat_boots>, <techguns:itemshared:77>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 8, <techguns:itemshared:77> * 8, <techguns:itemshared:58> * 2])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8, <techguns:itemshared:77> * 8, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_riot_boots>)
@@ -122,9 +122,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:77>, <techguns:itemshared:77>, <techguns:itemshared:77>],
-    [<techguns:itemshared:51>, <techguns:t2_combat_leggings>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <techguns:t2_combat_leggings>, <ore:plateObsidianSteel>],
     [<techguns:itemshared:77>, <techguns:itemshared:58>, <techguns:itemshared:77>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 10, <techguns:itemshared:77> * 8, <techguns:itemshared:58> * 4])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 10, <techguns:itemshared:77> * 8, <techguns:itemshared:58> * 4])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_riot_leggings>)
@@ -133,9 +133,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:77>, <techguns:itemshared:58>, <techguns:itemshared:77>],
-    [<techguns:itemshared:51>, <techguns:t2_combat_chestplate>, <techguns:itemshared:51>],
-    [<techguns:itemshared:51>, <techguns:itemshared:77>, <techguns:itemshared:51>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 15, <techguns:itemshared:77> * 10, <techguns:itemshared:58> * 6])
+    [<ore:plateObsidianSteel>, <techguns:t2_combat_chestplate>, <ore:plateObsidianSteel>],
+    [<ore:plateObsidianSteel>, <techguns:itemshared:77>, <ore:plateObsidianSteel>]])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 15, <techguns:itemshared:77> * 10, <techguns:itemshared:58> * 6])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_riot_chestplate>)
@@ -143,10 +143,10 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:51>, <techguns:itemshared:51>, <techguns:itemshared:51>],
+    [<ore:plateObsidianSteel>, <ore:plateObsidianSteel>, <ore:plateObsidianSteel>],
     [<techguns:itemshared:77>, <techguns:t2_combat_helmet>, <techguns:itemshared:77>],
     [<techguns:itemshared:58>, null, <techguns:itemshared:58>]])
-  .setSecondaryIngredients([<techguns:itemshared:51> * 8, <techguns:itemshared:77> * 6, <techguns:itemshared:58> * 2])
+  .setSecondaryIngredients([<ore:plateObsidianSteel> * 8, <techguns:itemshared:77> * 6, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansNeedle>, 150)
   .addOutput(<techguns:t2_riot_helmet>)

@@ -27,11 +27,11 @@ recipes.removeByRecipeName("techguns:t4_praetor_helmet");
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:53>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:itemshared:59>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:t2_riot_boots>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:53> * 4, <techguns:itemshared:59> * 2, <techguns:itemshared:64> * 4])
+    [<ore:plateTitanium>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:itemshared:59>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:t2_riot_boots>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <ore:plateCarbon> * 4, <techguns:itemshared:59> * 2, <techguns:itemshared:64> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansNeedle>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -40,12 +40,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:t2_riot_leggings>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, null, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:53>, <techguns:itemshared:53>, null, <techguns:itemshared:53>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 10, <techguns:itemshared:53> * 5, <techguns:itemshared:59> * 2, <techguns:itemshared:64> * 10])
+    [<ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:t2_riot_leggings>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, null, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateCarbon>, <ore:plateCarbon>, null, <ore:plateCarbon>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 10, <ore:plateCarbon> * 5, <techguns:itemshared:59> * 2, <techguns:itemshared:64> * 10])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansNeedle>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -54,12 +54,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <techguns:itemshared:53>],
-    [<techguns:itemshared:54>, <techguns:itemshared:53>, <techguns:itemshared:59>, <techguns:itemshared:53>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:t2_riot_chestplate>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:53>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 15, <techguns:itemshared:53> * 8, <techguns:itemshared:59> * 3, <techguns:itemshared:64> * 10])
+    [<ore:plateCarbon>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <ore:plateCarbon>],
+    [<ore:plateTitanium>, <ore:plateCarbon>, <techguns:itemshared:59>, <ore:plateCarbon>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:t2_riot_chestplate>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateCarbon>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 15, <ore:plateCarbon> * 8, <techguns:itemshared:59> * 3, <techguns:itemshared:64> * 10])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansNeedle>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -68,12 +68,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:64>, <techguns:t2_riot_helmet>, <techguns:itemshared:64>, <techguns:itemshared:54>],
-    [<techguns:itemshared:53>, <engineersdecor:panzerglass_block>, <techguns:itemshared:59>, <engineersdecor:panzerglass_block>, <techguns:itemshared:53>],
-    [<techguns:itemshared:53>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <techguns:itemshared:53>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 5, <techguns:itemshared:53> * 3, <techguns:itemshared:59> * 3, <techguns:itemshared:64> * 10])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:itemshared:64>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:64>, <techguns:t2_riot_helmet>, <techguns:itemshared:64>, <ore:plateTitanium>],
+    [<ore:plateCarbon>, <engineersdecor:panzerglass_block>, <techguns:itemshared:59>, <engineersdecor:panzerglass_block>, <ore:plateCarbon>],
+    [<ore:plateCarbon>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <ore:plateCarbon>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 5, <ore:plateCarbon> * 3, <techguns:itemshared:59> * 3, <techguns:itemshared:64> * 10])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansNeedle>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -82,11 +82,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <techguns:itemshared:59>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <techguns:t3_combat_boots>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <techguns:itemshared:59>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <techguns:t3_combat_boots>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -95,12 +95,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:70>, <techguns:t3_combat_leggings>, <techguns:itemshared:70>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, null, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, null, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 10, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 6, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 8])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:70>, <techguns:t3_combat_leggings>, <techguns:itemshared:70>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, null, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, null, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 10, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 6, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 8])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -109,12 +109,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:70>, <techguns:t3_combat_chestplate>, <techguns:itemshared:70>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <mekanism:energycube>.withTag({tier: 1}), <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 15, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 8, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 10])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:70>, <techguns:t3_combat_chestplate>, <techguns:itemshared:70>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <mekanism:energycube>.withTag({tier: 1}), <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 15, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 8, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 10])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -123,12 +123,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <techguns:t3_combat_helmet>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 5, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <techguns:t3_combat_helmet>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 5, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -140,7 +140,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <mekanism:energycube>.withTag({tier: 2}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:steam_boots>.withTag({power: 0}), <enderio:item_material:66>, <techguns:itemshared:67>],
-    [<techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:67>]])
+    [<techguns:itemshared:67>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <techguns:itemshared:67>]])
   .setSecondaryIngredients([<techguns:itemshared:67> * 6, <mekanism:atomicalloy> * 6, <mekanism:controlcircuit:3> * 4, <thermaldynamics:duct_0:5> * 4, <thermalexpansion:augment:128> * 2, <thermalexpansion:augment:402> * 2, <thermalexpansion:augment:400> * 2])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -150,7 +150,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>],
+    [<techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <enderio:item_material:66>, <mekanism:energycube>.withTag({tier: 2}), <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:steam_leggings>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <techguns:itemshared:67>],
@@ -164,7 +164,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, null, <techguns:itemshared:54>, <techguns:itemshared:67>],
+    [<techguns:itemshared:67>, <ore:plateTitanium>, null, <ore:plateTitanium>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:itemshared:67>, <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:steam_chestplate>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:atomicalloy>, <mekanism:energycube>.withTag({tier: 2}), <mekanism:atomicalloy>, <techguns:itemshared:67>],
@@ -182,7 +182,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:67>, <enderio:item_material:66>, <mekanism:energycube>.withTag({tier: 3}), <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:steam_helmet>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <techguns:multiblockmachine:1>, <techguns:tacticalmask>, <techguns:multiblockmachine:1>, <techguns:itemshared:67>],
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>]])
+    [<techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>]])
   .setSecondaryIngredients([<techguns:itemshared:67> * 5, <mekanism:atomicalloy> * 5, <mekanism:controlcircuit:3> * 4, <thermaldynamics:duct_0:5> * 4, <thermalexpansion:augment:128> * 2, <thermalexpansion:augment:402> * 2, <thermalexpansion:augment:400> * 2])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -247,11 +247,11 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <mekanism:compressedobsidian>, <techguns:itemshared:54>, <mekanism:compressedobsidian>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <techguns:itemshared:59>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <techguns:t3_combat_boots>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:59>, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 6, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
+    [<ore:plateTitanium>, <mekanism:compressedobsidian>, <ore:plateTitanium>, <mekanism:compressedobsidian>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <techguns:itemshared:59>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <techguns:t3_combat_boots>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, <techguns:itemshared:59>, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 6, <techguns:itemshared:59> * 2, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -260,12 +260,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:70>, <techguns:t3_combat_leggings>, <techguns:itemshared:70>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, null, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, null, <techguns:itemshared:54>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 10, <mekanism:reinforcedalloy> * 6, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 8])
+    [<ore:plateTitanium>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:70>, <techguns:t3_combat_leggings>, <techguns:itemshared:70>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, null, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateTitanium>, null, <ore:plateTitanium>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 10, <mekanism:reinforcedalloy> * 6, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 8])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -274,12 +274,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:itemshared:70>, <techguns:t3_combat_chestplate>, <techguns:itemshared:70>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <mekanism:energycube>.withTag({tier: 1}), <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 15, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 8, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 10])
+    [<ore:plateTitanium>, <techguns:itemshared:59>, null, <techguns:itemshared:59>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <techguns:itemshared:59>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:itemshared:70>, <techguns:t3_combat_chestplate>, <techguns:itemshared:70>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <mekanism:energycube>.withTag({tier: 1}), <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <mekanism:compressedobsidian>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 15, <techguns:itemshared:59> * 3, <mekanism:reinforcedalloy> * 8, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 10])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -288,12 +288,12 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:controlcircuit:2>, <techguns:t3_combat_helmet>, <mekanism:controlcircuit:2>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <techguns:multiblockmachine:1>, <techguns:tacticalmask>, <techguns:multiblockmachine:1>, <techguns:itemshared:54>],
-    [<techguns:itemshared:54>, <mekanism:compressedobsidian>, <techguns:itemshared:54>, <mekanism:compressedobsidian>, <techguns:itemshared:54>]])
-  .setSecondaryIngredients([<techguns:itemshared:54> * 5, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
+    [<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:controlcircuit:2>, <techguns:t3_combat_helmet>, <mekanism:controlcircuit:2>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <techguns:multiblockmachine:1>, <techguns:tacticalmask>, <techguns:multiblockmachine:1>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <mekanism:compressedobsidian>, <ore:plateTitanium>, <mekanism:compressedobsidian>, <ore:plateTitanium>]])
+  .setSecondaryIngredients([<ore:plateTitanium> * 5, <mekanism:reinforcedalloy> * 5, <mekanism:controlcircuit:2> * 2, <thermaldynamics:duct_0:4> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansDriver>, 250)
@@ -305,7 +305,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:itemshared:31>, <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:t3_miner_boots>.withTag({power: 0}), <enderio:item_material:66>, <techguns:itemshared:67>],
-    [<techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:67>]])
+    [<techguns:itemshared:67>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <techguns:itemshared:67>]])
   .setSecondaryIngredients([<techguns:itemshared:67> * 6, <mekanism:atomicalloy> * 6, <mekanism:controlcircuit:3> * 4, <thermaldynamics:duct_0:5> * 4, <thermalexpansion:augment:128> * 2, <thermalexpansion:augment:402> * 2, <thermalexpansion:augment:400> * 2])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
@@ -315,7 +315,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>],
+    [<techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:itemshared:31>, <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:t3_miner_leggings>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:atomicalloy>, null, <mekanism:atomicalloy>, <techguns:itemshared:67>],
@@ -329,8 +329,8 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, null, <techguns:itemshared:54>, <techguns:itemshared:67>],
-    [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:itemshared:54>, <enderio:item_material:66>, <techguns:itemshared:67>],
+    [<techguns:itemshared:67>, <ore:plateTitanium>, null, <ore:plateTitanium>, <techguns:itemshared:67>],
+    [<techguns:itemshared:67>, <enderio:item_material:66>, <ore:plateTitanium>, <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:t3_miner_chestplate>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:atomicalloy>, <techguns:itemshared:31>, <mekanism:atomicalloy>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>, <techguns:itemshared:67>]])
@@ -347,7 +347,7 @@ RecipeBuilder.get("engineer")
     [<techguns:itemshared:67>, <enderio:item_material:66>, <techguns:itemshared:31>, <enderio:item_material:66>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <mekanism:controlcircuit:3>, <techguns:t3_miner_helmet>.withTag({power: 0}), <mekanism:controlcircuit:3>, <techguns:itemshared:67>],
     [<techguns:itemshared:67>, <techguns:multiblockmachine:1>, <techguns:multiblockmachine:1>, <techguns:multiblockmachine:1>, <techguns:itemshared:67>],
-    [<techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>, <techguns:itemshared:54>, <techguns:itemshared:67>]])
+    [<techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>, <ore:plateTitanium>, <techguns:itemshared:67>]])
   .setSecondaryIngredients([<techguns:itemshared:67> * 5, <mekanism:atomicalloy> * 5, <mekanism:controlcircuit:3> * 4, <thermaldynamics:duct_0:5> * 4, <thermalexpansion:augment:128> * 2, <thermalexpansion:augment:402> * 2, <thermalexpansion:augment:400> * 2])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)

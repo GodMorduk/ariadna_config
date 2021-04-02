@@ -13,7 +13,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <minecraft:iron_ingot>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwsf94>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -22,15 +22,15 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <techguns:itemshared:57>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:atol_rifle>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
-    [<techguns:itemshared:57>, <minecraft:iron_block>, <thermalfoundation:material:32>],
+    [<techguns:itemshared:38>, <ore:plateIron>, null],
+    [<techguns:itemshared:57>, <minecraft:iron_block>, <ore:plateIron>],
     [null, <techguns:itemshared:57>, <techguns:itemshared:33>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:supressor>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
@@ -38,7 +38,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
+    [<techguns:itemshared:38>, <ore:plateIron>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <techguns:itemshared:57>],
     [null, <techguns:itemshared:33>, <minecraft:iron_ingot>]])
   .addTool(<ore:artisansSpanner>, 50)
@@ -49,7 +49,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_nugget>, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <techguns:itemshared:57>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwsc7stnd>.withTag({attachments: {barrel: {}, grip: {}, generic_1: {}, generic_0: {}, generic_3: {}, generic_2: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -58,7 +58,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <immersiveengineering:toolupgrade:8>, null],
     [<thermalfoundation:material:128>, <minecraft:iron_block>, <techguns:itemshared:57>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwhvfpeforator>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -85,7 +85,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
     [<minecraft:iron_ingot>, <minecraft:iron_block>, <minecraft:iron_nugget>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwfeathershock>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -121,7 +121,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, null, null],
     [<techguns:itemshared:57>, <minecraft:iron_block>, <techguns:itemshared:57>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwsc7>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -138,7 +138,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
+    [<ore:plateIron>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
     [null, null, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:handgun>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
@@ -147,7 +147,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:33>, <thermalfoundation:material:320>],
+    [<ore:plateIron>, <techguns:itemshared:33>, <thermalfoundation:material:320>],
     [null, null, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwsilversec>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
@@ -166,7 +166,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
     [<immersiveengineering:material:1>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
-    [null, null, <thermalfoundation:material:32>]])
+    [null, null, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwmapmp>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
@@ -175,15 +175,15 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <techguns:itemshared:57>, <minecraft:iron_nugget>],
     [<techguns:itemshared:38>, <minecraft:iron_block>, <minecraft:iron_ingot>],
-    [null, <techguns:itemshared:33>, <thermalfoundation:material:32>]])
+    [null, <techguns:itemshared:33>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:dwmfp5compact>.withTag({attachments: {barrel: {}, grip: {}, generic_1: {}, generic_0: {}, generic_2: {}, scope: {}, stock: {}}, ammo: [{}]}))
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <thermalfoundation:material:32>, null],
-    [<thermalfoundation:material:32>, <techguns:itemshared:38>, <minecraft:iron_block>],
+    [<techguns:itemshared:38>, <ore:plateIron>, null],
+    [<ore:plateIron>, <techguns:itemshared:38>, <minecraft:iron_block>],
     [null, <techguns:itemshared:33>, <minecraft:iron_block>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<flansmod:goplon_repeater>.withTag({attachments: {barrel: {}, grip: {}, scope: {}, stock: {}}, ammo: [{}]}))

@@ -403,9 +403,9 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("botania:monocle");// Удаление монокля
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:managlass>, <minecraft:gold_nugget>],
-    [<botania:manaresource>, <minecraft:gold_nugget>],
-    [null, <minecraft:gold_nugget>]])
+    [<botania:managlass>, <ore:nuggetGold>],
+    [<botania:manaresource>, <ore:nuggetGold>],
+    [null, <ore:nuggetGold>]])
   .addTool(<ore:artisansPliers>, 10)
   .addOutput(<botania:monocle>)
   .create();
