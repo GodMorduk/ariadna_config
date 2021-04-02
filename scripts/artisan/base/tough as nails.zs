@@ -58,7 +58,7 @@ RecipeBuilder.get("basic")
   .create();
 
 recipes.removeByRecipeName("toughasnails:wool_hood");
-RecipeBuilder.get("basic")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<ore:wool>, <erebus:silk>, <ore:wool>],
     [<ore:wool>, null, <ore:wool>]])
@@ -67,7 +67,7 @@ RecipeBuilder.get("basic")
   .create();
 
 recipes.removeByRecipeName("toughasnails:wool_jacket");
-RecipeBuilder.get("basic")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<ore:wool>, null, <ore:wool>],
     [<ore:wool>, <erebus:silk>, <ore:wool>],
@@ -77,7 +77,7 @@ RecipeBuilder.get("basic")
   .create();
 
 recipes.removeByRecipeName("toughasnails:wool_pants");
-RecipeBuilder.get("basic")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<ore:wool>, <erebus:silk>, <ore:wool>],
     [<ore:wool>, null, <ore:wool>],
@@ -87,7 +87,7 @@ RecipeBuilder.get("basic")
   .create();
 
 recipes.removeByRecipeName("toughasnails:wool_boots");
-RecipeBuilder.get("basic")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<erebus:silk>, null, <erebus:silk>],
     [<ore:wool>, null, <ore:wool>]])
@@ -133,4 +133,3 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansNeedle>, 20)
   .addOutput(<toughasnails:jelled_slime_boots>)
   .create();
-
