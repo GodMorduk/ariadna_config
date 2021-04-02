@@ -24,6 +24,7 @@ recipes.removeByRecipeName("openmodularturrets:addon_meta_0_enderio");
 recipes.removeByRecipeName("openmodularturrets:addon_meta_1_enderio");
 recipes.removeByRecipeName("openmodularturrets:addon_meta_3_enderio");
 recipes.removeByRecipeName("openmodularturrets:addon_meta_5_enderio");
+recipes.removeByRecipeName("openmodularturrets:addon_meta_5_vanilla");
 recipes.removeByRecipeName("openmodularturrets:addon_meta_6_enderio");
 recipes.removeByRecipeName("openmodularturrets:addon_meta_7_enderio");
 recipes.removeByRecipeName("openmodularturrets:upgrade_meta_0_enderio");
@@ -378,7 +379,7 @@ RecipeBuilder.get("engineer")
     [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>],
     [<minecraft:redstone>, <minecraft:blaze_powder>, <minecraft:redstone>],
     [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>]])
-  .addOutput(<openmodularturrets:ammo_meta>)
+  .addOutput(<openmodularturrets:ammo_meta> * 16)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -386,7 +387,7 @@ RecipeBuilder.get("engineer")
     [null, <thermalfoundation:material:131>, null],
     [<thermalfoundation:material:128>, <flansmod:gunpowderblock>, <thermalfoundation:material:128>],
     [<thermalfoundation:material:128>, <tconstruct:ingots:5>, <thermalfoundation:material:128>]])
-  .addOutput(<openmodularturrets:ammo_meta:1>)
+  .addOutput(<openmodularturrets:ammo_meta:1> * 16)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -394,7 +395,7 @@ RecipeBuilder.get("engineer")
     [null, <enderio:item_alloy_ingot:4>, null],
     [<enderio:item_alloy_ingot:4>, <enderio:item_alloy_ingot:6>, <enderio:item_alloy_ingot:4>],
     [null, <enderio:item_alloy_ingot:4>, null]])
-  .addOutput(<openmodularturrets:ammo_meta:2>)
+  .addOutput(<openmodularturrets:ammo_meta:2> * 16)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -402,7 +403,7 @@ RecipeBuilder.get("engineer")
     [null, <enderio:item_alloy_ingot:4>, <minecraft:flint>],
     [<enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>],
     [null, <enderio:item_alloy_ingot:4>, null]])
-  .addOutput(<openmodularturrets:ammo_meta:3>)
+  .addOutput(<openmodularturrets:ammo_meta:3> * 8)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -411,7 +412,7 @@ RecipeBuilder.get("engineer")
     [<thermalfoundation:material:131>, <enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>],
     [<enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>, null],
     [null, <enderio:item_alloy_ingot:4>, <thermalfoundation:material:131>, null]])
-  .addOutput(<openmodularturrets:ammo_meta:4>)
+  .addOutput(<openmodularturrets:ammo_meta:4> * 4)
   .create();
   
 RecipeBuilder.get("engineer")
