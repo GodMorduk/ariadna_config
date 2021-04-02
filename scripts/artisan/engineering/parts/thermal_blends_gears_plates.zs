@@ -35,9 +35,8 @@ MetalPress.removeRecipe(<techguns:itemshared:50>);
 MetalPress.removeRecipe(<techguns:itemshared:52>); 
 MetalPress.removeRecipe(<techguns:itemshared:54>); 
 
-
-MetalPress.addRecipe("ingotIron", "ingotIron", <thermalfoundation:material:32>, false);
-MetalPress.addRecipe("ingotGold", "ingotGold", <thermalfoundation:material:32>, false);
+MetalPress.addRecipe("ingotIron", "ingotIron", <thermalfoundation:material:32> * 2, false);
+MetalPress.addRecipe("ingotGold", "ingotGold", <thermalfoundation:material:33> * 2, false);
 MetalPress.addRecipe("ingotCopper", "ingotCopper", <thermalfoundation:material:320> * 2, false);
 MetalPress.addRecipe("ingotTin", "ingotTin", <thermalfoundation:material:321> * 2, false);
 MetalPress.addRecipe("ingotSilver", "ingotSilver", <thermalfoundation:material:322> * 2, false);
