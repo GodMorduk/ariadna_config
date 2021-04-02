@@ -145,12 +145,20 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>],
+    [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>],
     [<ore:plateLead>, <techguns:itemshared:61>, <ore:plateLead>],
-    [<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]])
-  .addTool(<ore:artisansNeedle>, 10)
-  .addOutput(<techguns:itemshared:60>*2)
-  .setExtraOutputOne(<minecraft:leather> * 2, 0.25)
+    [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addOutput(<techguns:itemshared:60>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>],
+    [<ore:plateLead>, <techguns:itemshared:61>, <ore:plateLead>],
+    [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]])
+  .addTool(<ore:artisansNeedle>, 5)
+  .addOutput(<techguns:itemshared:60>)
   .create();
 
 recipes.removeByRecipeName("enderio:simple_chassis_parts");
