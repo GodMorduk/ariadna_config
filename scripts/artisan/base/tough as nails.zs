@@ -1,12 +1,16 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.industrialforegoing.FluidDictionary;
+
+FluidDictionary.add("distwater", "purified_water", 1);
+FluidDictionary.add("hot_spring_water", "purified_water", 1);
 
 recipes.removeByRecipeName("toughasnails:campfire");
 
 recipes.removeByRecipeName("pyrotech:furnace");
 recipes.addShaped(<minecraft:furnace>, [
-  [<ore:cobblestone>, <toughasnails:temperature_coil:1>, <ore:cobblestone>],
-  [<toughasnails:temperature_coil:1>, null, <toughasnails:temperature_coil:1>],
-  [<ore:cobblestone>, <toughasnails:temperature_coil:1>, <ore:cobblestone>]
+  [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>],
+  [<pyrotech:refractory_brick_block>, <toughasnails:temperature_coil:1>, <pyrotech:refractory_brick_block>],
+  [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>]
 ]);
 
 RecipeBuilder.get("basic")
@@ -57,6 +61,16 @@ RecipeBuilder.get("basic")
   .addOutput(<toughasnails:rain_collector>)
   .create();
 
+recipes.removeByRecipeName("toughasnails:jelled_slime");
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<toughasnails:ice_cube>, <toughasnails:ice_cube>, <toughasnails:ice_cube>],
+    [<toughasnails:ice_cube>, <ore:blockSlime>, <toughasnails:ice_cube>],
+    [<toughasnails:ice_cube>, <toughasnails:ice_cube>, <toughasnails:ice_cube>]])
+  .addTool(<ore:artisansBeaker>, 15)
+  .addOutput(<toughasnails:jelled_slime>)
+  .create();
+
 recipes.removeByRecipeName("toughasnails:wool_hood");
 RecipeBuilder.get("tailor")
   .setShaped([
@@ -97,7 +111,7 @@ RecipeBuilder.get("tailor")
 
 recipes.removeByRecipeName("toughasnails:jelled_slime_helmet");
 recipes.removeByRecipeName("toughasnails:jelled_slime_chestplate");
-recipes.removeByRecipeName("toughasnails:jelled_slime_leggins");
+recipes.removeByRecipeName("toughasnails:jelled_slime_leggings");
 recipes.removeByRecipeName("toughasnails:jelled_slime_boots");
 
 RecipeBuilder.get("basic")
