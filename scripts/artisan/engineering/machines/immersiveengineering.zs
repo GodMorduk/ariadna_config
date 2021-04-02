@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.chisel.Carving;
 
 //убираем кучу пластин
 recipes.removeByRecipeName("immersiveengineering:material/plate_constantan");
@@ -627,6 +628,7 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/ladder");
+recipes.removeByRecipeName("engineersdecor:dependent/metal_rung_ladder_recipe");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:stickAluminum>, null, <ore:stickAluminum>],
@@ -680,6 +682,9 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:metal_ladder> * 3)
   .create();
+
+Carving.addVariation("techguns:metalladder", <immersiveengineering:metal_ladder>);
+Carving.addVariation("techguns:metalladder", <engineersdecor:metal_rung_ladder>);
 
 recipes.removeByRecipeName("immersiveengineering:wooden_devices/gunpowder_barrel");
 RecipeBuilder.get("basic")

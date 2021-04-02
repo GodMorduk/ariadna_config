@@ -1,3 +1,4 @@
+import mods.chisel.Carving;
 
 //меняем рецепты под пиротеч
 recipes.removeByRecipeName("quark:chest");
@@ -39,3 +40,6 @@ recipes.addShaped("custom_chest_4", <quark:custom_chest:4>,
   
 // убираем ненужный рецепт каменного меча
 recipes.removeByRecipeName("quark:stone_sword");
+
+recipes.removeByRecipeName("quark:iron_ladder");
+Carving.addVariation("techguns:metalladder", <quark:iron_ladder>);

@@ -1,3 +1,5 @@
+import mods.chisel.Carving;
+
 recipes.removeByRecipeName("twilightforest:wood/twilight_oak_planks");
 recipes.removeByRecipeName("twilightforest:wood/canopy_planks");
 recipes.removeByRecipeName("twilightforest:wood/mangrove_planks");
@@ -15,3 +17,6 @@ recipes.removeByRecipeName("twilightforest:wood/time_slab");
 recipes.removeByRecipeName("twilightforest:wood/trans_slab");
 recipes.removeByRecipeName("twilightforest:wood/mine_slab");
 recipes.removeByRecipeName("twilightforest:wood/sort_slab");
+
+recipes.removeByRecipeName("twilightforest:iron_ladder");
+Carving.addVariation("techguns:metalladder", <twilightforest:iron_ladder>);
