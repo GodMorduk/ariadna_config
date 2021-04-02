@@ -203,4 +203,25 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:oredrill:4>)
   .create();
-  
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateInvar>, <immersiveengineering:metal_device1>, <ore:plateInvar>],
+    [<ore:gearDark>, <futuremc:blast_furnace>, <ore:gearDark>],
+    [<ore:plateInvar>, <thermalexpansion:machine:3>.withTag({Level: 2 as byte}), <ore:plateInvar>]])
+  .setSecondaryIngredients([<ore:circuitAdvanced> * 4])
+  .addTool(<ore:artisansDriver>, 150)
+  .addTool(<ore:artisansSpanner>, 150)
+  .addOutput(<techguns:simplemachine:11>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<enderio:item_basic_capacitor:1>, <enderio:block_sag_mill>, <enderio:item_basic_capacitor:1>],
+    [<immersiveengineering:metal_decoration0:5>, <ore:gearEnergized>, <immersiveengineering:metal_decoration0:5>],
+    [<ore:gearIridium>, <thermalexpansion:machine:1>.withTag({Level: 2 as byte}), <ore:gearIridium>]])
+  .setSecondaryIngredients([<pyrotech:sawmill_blade_diamond>, <pyrotech:sawmill_blade_diamond>])
+  .addTool(<ore:artisansDriver>, 200)
+  .addTool(<ore:artisansSpanner>, 200)
+  .addOutput(<techguns:simplemachine2:8>)
+  .create();
