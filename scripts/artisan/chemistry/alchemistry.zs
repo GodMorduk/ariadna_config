@@ -324,7 +324,7 @@ RecipeBuilder.get("engineer")
     [<ore:ingotBeryllium>, <alchemistry:fission_casing>, <alchemistry:fission_casing>, <alchemistry:fission_casing>, <ore:ingotBeryllium>]])
   .addTool(<ore:artisansDriver>, 600)
   .addTool(<ore:artisansSpanner>, 600)
-  .addTool(<ore:artisansToolIron>, 600)
+  .addTool(<ore:artisansFramingHammer>, 600)
   .addOutput(<alchemistry:fission_controller>)
   .create();
 
@@ -337,6 +337,6 @@ RecipeBuilder.get("chemist")
     [<ore:ingotBeryllium>, <alchemistry:fission_casing>, <alchemistry:fission_casing>, <alchemistry:fission_casing>, <ore:ingotBeryllium>]])
   .addTool(<ore:artisansDriver>, 900)
   .addTool(<ore:artisansSpanner>, 900)
-  .addTool(<ore:artisansToolIron>, 900)
+  .addTool(<ore:artisansFramingHammer>, 900)
   .addOutput(<alchemistry:fission_controller>)
   .create();

@@ -222,7 +222,7 @@ RecipeBuilder.get("mage")
     [<abyssalcraft:dreadfragment>, <minecraft:string>, <abyssalcraft:dreadfragment>],
     [<minecraft:string>, <minecraft:leather>, <minecraft:string>],
     [<abyssalcraft:dreadfragment>, <minecraft:string>, <abyssalcraft:dreadfragment>]])
-  .addTool(<ore:artisansToolGold>, 50)
+  .addTool(<ore:artisansHammer>, 50)
   .addTool(<ore:artisansAthame>, 50)
   .addOutput(<abyssalcraft:dreadcloth>)
   .create();

@@ -972,7 +972,7 @@ RecipeBuilder.get("engineer")
     [<ore:ingotDarkSteel>, <enderio:block_cap_bank:2>, <ore:ingotDarkSteel>]])
   .setSecondaryIngredients([<enderio:item_inventory_charger_basic>])
   .addTool(<ore:artisansSpanner>, 75)
-  .addTool(<ore:artisansToolIron>, 75)
+  .addTool(<ore:artisansDriver>, 75)
   .addOutput(<enderio:item_inventory_charger>)
   .create();
 
