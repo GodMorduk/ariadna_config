@@ -20,6 +20,28 @@ recipes.removeByRecipeName("techguns:aug");
 recipes.removeByRecipeName("techguns:aug_alt");
 recipes.removeByRecipeName("techguns:as50");
 recipes.removeByRecipeName("techguns:as50_alt");
+recipes.removeByRecipeName("techguns:crowbar");
+recipes.removeByRecipeName("techguns:combatknife");
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <thermalfoundation:material:160>, <thermalfoundation:material:160>],
+    [<industrialforegoing:plastic>, <thermalfoundation:material:160>, null],
+    [<thermalfoundation:material:160>, <industrialforegoing:plastic>, null]])
+  .setSecondaryIngredients([<thermalfoundation:material:160> * 4])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansFile>, 100)
+  .addOutput(<techguns:crowbar>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<industrialforegoing:plastic>, <thermalfoundation:storage_alloy>],
+    [<immersiveengineering:material:2>, <industrialforegoing:plastic>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansFile>, 100)
+  .addOutput(<techguns:combatknife>)
+  .create();
 
 RecipeBuilder.get("engineer")
   .setShaped([
