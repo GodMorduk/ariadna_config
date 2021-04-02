@@ -26,74 +26,82 @@ recipes.removeByRecipeName("techguns:oredrill_4_controller");
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:32>, <minecraft:iron_block>, <thermalfoundation:material:32>],
-    [<mekanism:controlcircuit>, <thermalexpansion:frame>, <mekanism:controlcircuit>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:70>, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <minecraft:iron_block>, <ore:plateIron>],
+    [<ore:circuitBasic>, <thermalexpansion:frame>, <ore:circuitBasic>],
+    [<ore:plateIron>, <techguns:itemshared:70>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:basicmachine>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:32>, <thermalfoundation:storage_alloy>, <thermalfoundation:material:32>],
+    [<ore:plateIron>, <thermalfoundation:storage_alloy>, <ore:plateIron>],
     [<techguns:itemshared:70>, <thermalexpansion:frame>, <techguns:itemshared:70>],
-    [<thermalfoundation:material:32>, <mekanism:controlcircuit>, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:basicmachine:1>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:32>, <mekanism:controlcircuit>, <thermalfoundation:material:32>],
-    [<industrialforegoing:fluid_crafter>, <thermalexpansion:frame>, <industrialforegoing:fluiddictionary_converter>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:70>, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>],
+    [<alchemistry:chemical_dissolver>, <thermalexpansion:frame>, <alchemistry:chemical_combiner>],
+    [<ore:plateIron>, <techguns:itemshared:70>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:basicmachine:2>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:32>, <techguns:itemshared:70>, <thermalfoundation:material:32>],
-    [<mekanism:controlcircuit>, <thermalexpansion:frame>, <mekanism:controlcircuit>],
-    [<thermalfoundation:material:32>, <openmodularturrets:intermediate_tiered:1>, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <techguns:itemshared:70>, <ore:plateIron>],
+    [<ore:circuitBasic>, <thermalexpansion:frame>, <ore:circuitBasic>],
+    [<ore:plateIron>, <openmodularturrets:intermediate_tiered:1>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:basicmachine:3>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
     [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>],
-    [<mekanism:controlcircuit>, <thermalexpansion:frame>, <mekanism:controlcircuit>],
-    [<thermalfoundation:material:32>, <techguns:itemshared:72>, <thermalfoundation:material:32>]])
+    [<ore:circuitBasic>, <industrialforegoing:dye_mixer>, <ore:circuitBasic>],
+    [<ore:plateIron>, <techguns:itemshared:72>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:simplemachine:8>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:artisansDriver>, <ore:artisansSolderer>, <artisanworktables:artisans_hammer_iron>],
-    [<thermalfoundation:material:32>, <thermalexpansion:frame>, <thermalfoundation:material:32>],
-    [<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>]])
+    [<artisanworktables:artisans_driver_steel>, <artisanworktables:artisans_solderer_constantan>, <artisanworktables:artisans_hammer_bronze>],
+    [<ore:plateIron>, <thermalexpansion:machine:9>.withTag({Level: 2 as byte}), <ore:plateIron>],
+    [<ore:plateIron>, <thermalexpansion:augment:401>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:simplemachine:9>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:32>, <mekanism:controlcircuit>, <thermalfoundation:material:32>],
+    [<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>],
     [<techguns:itemshared:68>, <thermalexpansion:frame>, <techguns:itemshared:68>],
-    [<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>]])
+    [<ore:plateIron>, <immersiveengineering:metal_device1:5>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:simplemachine:10>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <techguns:itemshared:59>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <techguns:itemshared:59>, <ore:plateSteel>],
     [<techguns:itemshared:69>, <techguns:itemshared:70>, <techguns:itemshared:69>],
-    [<thermalfoundation:material:352>, <mekanism:controlcircuit:2>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <mekanism:controlcircuit:2>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:multiblockmachine> * 2)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:multiblockmachine>)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -102,25 +110,28 @@ RecipeBuilder.get("engineer")
     [<thermalfoundation:glass_alloy:5>, null, <thermalfoundation:glass_alloy:5>],
     [<techguns:multiblockmachine>, <thermalfoundation:glass_alloy:5>, <techguns:multiblockmachine>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:multiblockmachine:1> * 2)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:multiblockmachine:1>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <thermalfoundation:glass_alloy:5>, <ore:plateSteel>],
     [<mekanism:controlcircuit:2>, <techguns:multiblockmachine>, <mekanism:controlcircuit:2>],
-    [<thermalfoundation:material:352>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <thermalfoundation:glass_alloy:5>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:multiblockmachine:2>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <techguns:itemshared:59>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <techguns:itemshared:59>, <ore:plateSteel>],
     [<techguns:itemshared:69>, <techguns:basicmachine:2>, <techguns:itemshared:69>],
-    [<thermalfoundation:material:352>, <mekanism:controlcircuit:2>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <mekanism:controlcircuit:2>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:multiblockmachine:3> * 4)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:multiblockmachine:3>)
   .create();
   
 RecipeBuilder.get("engineer")
@@ -129,60 +140,67 @@ RecipeBuilder.get("engineer")
     [<techguns:multiblockmachine:3>, <thermalfoundation:glass_alloy:5>, <techguns:multiblockmachine:3>],
     [<techguns:multiblockmachine:3>, <thermalfoundation:glass_alloy:5>, <techguns:multiblockmachine:3>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:multiblockmachine:4> * 3)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:multiblockmachine:4>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <thermalfoundation:glass_alloy:5>, <ore:plateSteel>],
     [<mekanism:controlcircuit:2>, <techguns:multiblockmachine:3>, <mekanism:controlcircuit:2>],
-    [<thermalfoundation:material:352>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <thermalfoundation:glass_alloy:5>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:multiblockmachine:5>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <minecraft:iron_bars>, <thermalfoundation:material:352>],
-    [<minecraft:iron_bars>, <thermalfoundation:material:352>, <minecraft:iron_bars>],
-    [<thermalfoundation:material:352>, <minecraft:iron_bars>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <enderio:block_dark_iron_bars>, <ore:plateSteel>],
+    [<enderio:block_dark_iron_bars>, <ore:plateSteel>, <enderio:block_dark_iron_bars>],
+    [<ore:plateSteel>, <enderio:block_dark_iron_bars>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:oredrill> * 4)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:oredrill>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
-    [<minecraft:iron_bars>, <thermalfoundation:material:352>, <minecraft:iron_bars>],
-    [<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>]])
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>],
+    [<ore:scaffoldingSteel>, <ore:plateSteel>, <ore:scaffoldingSteel>],
+    [<ore:scaffoldingSteel>, <ore:scaffoldingSteel>, <ore:scaffoldingSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:oredrill:1> * 4)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:oredrill:1>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <thermalfoundation:material:160>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <thermalfoundation:material:160>, <thermalfoundation:material:352>],
-    [<thermalfoundation:material:352>, <thermalfoundation:material:160>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <ore:ingotDarkSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:ingotDarkSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:ingotDarkSteel>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:oredrill:2> * 2)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:oredrill:2>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:352>],
+    [<ore:plateSteel>, <immersiveengineering:metal_decoration0:5>, <ore:plateSteel>],
     [<techguns:itemshared:70>, <thermalexpansion:frame>, <techguns:itemshared:70>],
-    [<thermalfoundation:material:352>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <immersiveengineering:metal_decoration0:5>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
-  .addOutput(<techguns:oredrill:3> * 2)
+  .addTool(<ore:artisansSpanner>, 50)
+  .addOutput(<techguns:oredrill:3>)
   .create();
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:352>, <mekanism:controlcircuit>, <thermalfoundation:material:352>],
-    [<immersiveengineering:metal_decoration0:4>, <thermalexpansion:frame>, <immersiveengineering:metal_decoration0:4>],
-    [<thermalfoundation:material:352>, <mekanism:controlcircuit>, <thermalfoundation:material:352>]])
+    [<ore:plateSteel>, <ore:circuitElite>, <ore:plateSteel>],
+    [<immersiveengineering:metal_decoration0:5>, <thermalexpansion:frame>, <immersiveengineering:metal_decoration0:5>],
+    [<ore:plateSteel>, <ore:circuitElite>, <ore:plateSteel>]])
   .addTool(<ore:artisansDriver>, 50)
+  .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:oredrill:4>)
   .create();
   
