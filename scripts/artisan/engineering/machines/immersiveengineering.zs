@@ -629,6 +629,7 @@ RecipeBuilder.get("blacksmith")
 
 recipes.removeByRecipeName("immersiveengineering:metal_decoration/ladder");
 recipes.removeByRecipeName("engineersdecor:dependent/metal_rung_ladder_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/metal_rung_steps_recipe");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:stickAluminum>, null, <ore:stickAluminum>],
@@ -682,9 +683,12 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 5)
   .addOutput(<immersiveengineering:metal_ladder> * 3)
   .create();
+
+
 
 Carving.addVariation("techguns:metalladder", <immersiveengineering:metal_ladder>);
 Carving.addVariation("techguns:metalladder", <engineersdecor:metal_rung_ladder>);
+Carving.addVariation("techguns:metalladder", <engineersdecor:metal_rung_steps>);
 
 recipes.removeByRecipeName("immersiveengineering:wooden_devices/gunpowder_barrel");
 RecipeBuilder.get("basic")
@@ -1363,7 +1367,6 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("engineersdecor:dependent/small_block_breaker_recipe");
-recipes.removeByRecipeName("engineersdecor:dependent/factory_placer_recipe");
 recipes.removeByRecipeName("engineersdecor:dependent/small_tree_cutter_recipe");
 
 recipes.removeByRecipeName("engineersdecor:dependent/labeled_crate_recipe");
@@ -1469,6 +1472,431 @@ RecipeBuilder.get("engineer")
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansDriver>, 25)
   .addOutput(<engineersdecor:factory_dropper>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/factory_placer_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:gearLead>, <minecraft:dispenser>, <ore:gearLead>],
+    [<ore:plankTreatedWood>, <thermalexpansion:frame:64>, <ore:plankTreatedWood>],
+    [<ore:gearCopper>, <immersiveengineering:material:8>, <ore:gearCopper>]])
+  .addTool(<ore:artisansDriver>, 1)
+  .addOutput(<engineersdecor:factory_placer>)
+  .create();
+
+
+recipes.removeByRecipeName("engineersdecor:dependent/clinker_brick_block_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/clinker_brick_stained_block_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/slag_brick_block_recipe");
+
+Carving.addVariation("red_brick", <engineersdecor:clinker_brick_block>);
+Carving.addVariation("red_brick", <engineersdecor:clinker_brick_stained_block>);
+Carving.addVariation("red_brick", <engineersdecor:slag_brick_block>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/rebar_concrete_block_recipe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:concrete>, <ore:stickIron>, <ore:concrete>],
+    [<ore:stickIron>, <ore:concrete>, <ore:stickIron>],
+    [<ore:concrete>, <ore:stickIron>, <ore:concrete>]])
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<engineersdecor:rebar_concrete> * 20)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:concrete>, <ore:stickSteel>, <ore:concrete>],
+    [<ore:stickSteel>, <ore:concrete>, <ore:stickSteel>],
+    [<ore:concrete>, <ore:stickSteel>, <ore:concrete>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:rebar_concrete> * 16)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:concrete>, <ore:stickSteel>, <ore:concrete>],
+    [<ore:stickSteel>, <ore:concrete>, <ore:stickSteel>],
+    [<ore:concrete>, <ore:stickSteel>, <ore:concrete>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:rebar_concrete> * 12)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/panzerglass_block_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickSteel>, <ore:blockGlass>, <ore:stickSteel>],
+    [<ore:blockGlass>, <ore:dustDiamond>, <ore:blockGlass>],
+    [<ore:stickSteel>, <ore:blockGlass>, <ore:stickSteel>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:panzerglass_block> * 16)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_ladder_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_ladder> * 3)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_ladder> * 2)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_ladder>)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_pole_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:slabTreatedWood>],
+    [<ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>]])
+  .addTool(<ore:artisansHandsaw>, 5)
+  .addOutput(<engineersdecor:treated_wood_pole> * 6)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabTreatedWood>],
+    [<ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:treated_wood_pole> * 4)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:slabTreatedWood>],
+    [<ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:treated_wood_pole> * 2)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_table_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_side_table_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_table>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [<engineersdecor:treated_wood_pole>, null, <engineersdecor:treated_wood_pole>],
+    [<engineersdecor:treated_wood_pole>, null, <engineersdecor:treated_wood_pole>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_table>)
+  .create();
+
+Carving.addVariation("table_treated", <engineersdecor:treated_wood_table>);
+Carving.addVariation("table_treated", <engineersdecor:treated_wood_side_table>);
+
+recipes.removeByRecipeName("engineersdecor:independent/steel_table_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<engineersdecor:steel_floor_grating>, <engineersdecor:steel_floor_grating>, <engineersdecor:steel_floor_grating>],
+    [<engineersdecor:thin_steel_pole>, null, <engineersdecor:thin_steel_pole>],
+    [<engineersdecor:thin_steel_pole>, null, <engineersdecor:thin_steel_pole>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:steel_table> * 4)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<engineersdecor:steel_floor_grating>, <engineersdecor:steel_floor_grating>, <engineersdecor:steel_floor_grating>],
+    [<engineersdecor:thin_steel_pole>, null, <engineersdecor:thin_steel_pole>],
+    [<engineersdecor:thin_steel_pole>, null, <engineersdecor:thin_steel_pole>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<engineersdecor:steel_table> * 4)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_stool_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [null, <ore:stickTreatedWood>, null]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_stool>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [null, <engineersdecor:treated_wood_pole>, null]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_stool>)
+  .create();
+
+Carving.addVariation("pole_treated", <engineersdecor:treated_wood_pole>);
+Carving.addVariation("pole_treated", <engineersdecor:treated_wood_pole_support>);
+Carving.addVariation("pole_treated", <engineersdecor:treated_wood_pole_head>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_window_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:paneGlass>, <ore:slabTreatedWood>],
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+    [<ore:slabTreatedWood>, <ore:paneGlass>, <ore:slabTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_window> * 9)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:paneGlass>, <ore:slabTreatedWood>],
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+    [<ore:slabTreatedWood>, <ore:paneGlass>, <ore:slabTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_window> * 5)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/steel_framed_window_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:paneGlass>, <ore:slabSheetmetalSteel>],
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+    [<ore:slabSheetmetalSteel>, <ore:paneGlass>, <ore:slabSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:steel_framed_window> * 9)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:paneGlass>, <ore:slabSheetmetalSteel>],
+    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+    [<ore:slabSheetmetalSteel>, <ore:paneGlass>, <ore:slabSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:steel_framed_window> * 5)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_windowsill_recipe");
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_broad_windowsill_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_windowsill>)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
+    [<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_windowsill> * 2)
+  .create();
+
+Carving.addVariation("windowsill_treated", <engineersdecor:treated_wood_windowsill>);
+Carving.addVariation("windowsill_treated", <engineersdecor:treated_wood_broad_windowsill>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/iron_inset_light_recipe");
+
+Carving.addVariation("light_modern", <engineersdecor:iron_inset_light>);
+Carving.addVariation("light_modern", <engineersdecor:iron_floor_edge_light>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/thin_steel_pole_recipe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, null, <ore:plateSteel>],
+    [null, <ore:plateSteel>, null],
+    [<ore:plateSteel>, null, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:thin_steel_pole> * 12)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, <ore:plateSteel>],
+    [null, <ore:plateSteel>, null],
+    [<ore:plateSteel>, null, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdecor:thin_steel_pole> * 8)
+  .create();
+
+recipes.removeByRecipeName("engineersdecor:independent/thick_steel_pole_recipe");
+recipes.removeByRecipeName("engineersdecor:independent/steel_double_t_support_recipe");
+recipes.removeByRecipeName("engineersdecor:independent/steel_floor_grating_recipe");
+recipes.removeByRecipeName("engineersdecor:independent/steel_mesh_fence_recipe");
+recipes.removeByRecipeName("engineersdecor:independent/steel_mesh_fence_gate_recipe");
+
+Carving.addVariation("pole_steel", <engineersdecor:thin_steel_pole>);
+Carving.addVariation("pole_steel", <engineersdecor:steel_double_t_support>);
+Carving.addVariation("pole_steel", <engineersdecor:steel_floor_grating>);
+Carving.addVariation("pole_steel", <engineersdecor:steel_mesh_fence>);
+Carving.addVariation("pole_steel", <engineersdecor:steel_mesh_fence_gate>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/sign_hotwire_recipe");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:paper>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:sign_hotwire> * 4)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:paper>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:sign_hotwire> * 4)
+  .create();
+
+Carving.addVariation("sign_engineer", <engineersdecor:sign_danger>);
+Carving.addVariation("sign_engineer", <engineersdecor:sign_defense>);
+Carving.addVariation("sign_engineer", <engineersdecor:sign_factoryarea>);
+Carving.addVariation("sign_engineer", <engineersdecor:sign_exit>);
+
+recipes.removeByRecipeName("engineersdoors:door_concrete");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:door_concrete> * 3)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:door_concrete> * 3)
+  .create();
+
+Carving.addVariation("door_concrete", <engineersdoors:door_concrete>);
+Carving.addVariation("door_concrete", <engineersdoors:door_concrete_ornate>);
+Carving.addVariation("door_concrete", <engineersdoors:door_concrete_reinforced>);
+
+recipes.removeByRecipeName("engineersdoors:door_steel");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:door_steel>)
+  .create();
+
+Carving.addVariation("door_steel", <engineersdoors:door_steel>);
+Carving.addVariation("door_steel", <engineersdoors:door_steel_ornate>);
+Carving.addVariation("door_steel", <engineersdoors:door_steel_reinforced>);
+
+recipes.removeByRecipeName("engineersdoors:door_treated");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:door_treated> * 3)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:door_treated> * 3)
+  .create();
+
+Carving.addVariation("door_treated", <engineersdoors:door_treated>);
+Carving.addVariation("door_treated", <engineersdoors:door_treated_ornate>);
+Carving.addVariation("door_treated", <engineersdoors:door_treated_reinforced>);
+
+recipes.removeByRecipeName("engineersdoors:trapdoor_concrete");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:concrete>, <ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>, <ore:concrete>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdoors:trapdoor_concrete> * 3)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:concrete>, <ore:concrete>, <ore:concrete>],
+    [<ore:concrete>, <ore:concrete>, <ore:concrete>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<engineersdoors:trapdoor_concrete> * 3)
+  .create();
+
+recipes.removeByRecipeName("engineersdoors:trapdoor_steel");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:trapdoor_steel> * 3)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>],
+    [<ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>, <ore:slabSheetmetalSteel>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:trapdoor_steel> * 3)
+  .create();
+
+recipes.removeByRecipeName("engineersdoors:trapdoor_treated");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:trapdoor_treated> * 3)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdoors:trapdoor_treated> * 3)
+  .create();
+
+Carving.addVariation("treated_wood", <engineersdecor:treated_wood_floor>);
+
+recipes.removeByRecipeName("engineersdecor:dependent/treated_wood_crafting_table_recipe");
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:workbench>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_crafting_table>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:workbench>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<engineersdecor:treated_wood_crafting_table>)
   .create();
 
 ##2 tier
