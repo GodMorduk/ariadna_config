@@ -1,51 +1,66 @@
 import crafttweaker.item.IIngredient;
-import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
+import mods.artisanworktables.builder.RecipeBuilder;
+import mods.embers.Alchemy;
 import mods.embers.Stamper;
+import mods.chisel.Carving;
 
 ##stamper recieps
-mods.embers.Stamper.remove(<embers:aspectus_iron>);
-mods.embers.Stamper.remove(<embers:aspectus_silver>);
-mods.embers.Stamper.remove(<embers:aspectus_lead>);
-mods.embers.Stamper.remove(<embers:aspectus_copper>);
-mods.embers.Stamper.remove(<embers:aspectus_dawnstone>);
-
-mods.embers.Stamper.add(<embers:aspectus_copper>, <liquid:copper>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-mods.embers.Stamper.add(<embers:aspectus_silver>, <liquid:silver>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-mods.embers.Stamper.add(<embers:aspectus_lead>, <liquid:lead>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-mods.embers.Stamper.add(<embers:aspectus_iron>, <liquid:iron>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-mods.embers.Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.remove(<embers:aspectus_iron>);
+Stamper.remove(<embers:aspectus_silver>);
+Stamper.remove(<embers:aspectus_lead>);
+Stamper.remove(<embers:aspectus_copper>);
+Stamper.remove(<embers:aspectus_dawnstone>);
+Stamper.add(<embers:aspectus_copper>, <liquid:copper>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_silver>, <liquid:silver>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_lead>, <liquid:lead>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_iron>, <liquid:iron>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*432, <embers:stamp_plate>, <embers:crystal_ember>);
 
 
 ##alchemy recieps
-mods.embers.Alchemy.remove(<embers:focal_lens>);
-mods.embers.Alchemy.add(<embers:focal_lens>, [<embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateSilver>, <embers:block_dawnstone>, <ore:plateSilver>], {"copper":(32 to 50),"silver":(48 to 96)});
+Alchemy.remove(<embers:archaic_brick>);
+Alchemy.add(<embers:archaic_brick> * 3, [<ore:soulSand>, <ore:soulSand>, <embers:archaic_brick>, <ore:clay>, <ore:clay>], {"dawnstone":(8 to 16)});
 
-mods.embers.Alchemy.remove(<embers:wildfire_core>);
-mods.embers.Alchemy.add(<embers:wildfire_core>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateCopper>], {"iron":(16 to 40),"silver":(24 to 32)});
+Alchemy.remove(<embers:ashen_cloth>);
+Alchemy.add(<embers:ashen_cloth>, [<ore:dustAsh>, <ore:dustAsh>, <ore:blockWool>, <ore:string>, <ore:string>], {"iron":(24 to 36),"lead":(24 to 36)});
 
-mods.embers.Alchemy.remove(<embers:ember_cluster>);
-mods.embers.Alchemy.add(<embers:ember_cluster>, [<minecraft:quartz_block>, <embers:crystal_ember>, <embers:shard_ember>, <embers:crystal_ember>, <embers:shard_ember>], {"copper":(10 to 20),"dawnstone":(16 to 32)});
+Alchemy.remove(<embers:adhesive>);
+Alchemy.add(<embers:adhesive>, [<ore:clay>, <ore:bonemeal>, <ore:bonemeal>, <ore:bonemeal>, <ore:bonemeal>], {"iron":(12 to 18)});
 
-mods.embers.Alchemy.remove(<embers:glimmer_shard>);
-mods.embers.Alchemy.add(<embers:glimmer_shard>, [<minecraft:glowstone>, <minecraft:gunpowder>, <minecraft:quartz>, <embers:crystal_ember>, <embers:crystal_ember>], {"dawnstone":(48 to 128)});
+Alchemy.remove(<embers:adhesive>);
+Alchemy.add(<embers:adhesive>, [<ore:clay>, <ore:bonemeal>, <ore:bonemeal>, <ore:bonemeal>, <ore:bonemeal>], {"iron":(12 to 18)});
 
-mods.embers.Alchemy.remove(<embers:flame_barrier>);
-mods.embers.Alchemy.add(<embers:flame_barrier>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:beam_cannon>, <embers:block_dawnstone>, <ore:plateSilver>], {"silver":(64 to 128),"dawnstone":(48 to 96)});
+Alchemy.add(<embers:seed_dawnstone>, [<ore:ingotDawnstone>, <ore:ingotDawnstone>, <minecraft:quartz>, <embers:shard_ember>, <embers:shard_ember>], {"iron":(48 to 64), "dawnstone":(48 to 64)});
 
-mods.embers.Alchemy.remove(<embers:blasting_core>);
-mods.embers.Alchemy.add(<embers:blasting_core>, [<minecraft:tnt>, <embers:seed_lead>, <ore:blockLead>, <embers:seed_lead>, <embers:ember_cluster>], {"lead":(96 to 128)});
+Alchemy.remove(<embers:focal_lens>);
+Alchemy.add(<embers:focal_lens>, [<embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateSilver>, <embers:block_dawnstone>, <ore:plateSilver>], {"copper":(32 to 50),"silver":(48 to 96)});
 
-mods.embers.Alchemy.remove(<embers:shifting_scales>);
-mods.embers.Alchemy.add(<embers:shifting_scales>, [<embers:ashen_cloth>, <ore:blockLead>, <embers:wildfire_core>, <ore:blockLead>, <embers:seed_lead>], {"lead":(96 to 128),"iron":(48 to 96)});
+Alchemy.remove(<embers:wildfire_core>);
+Alchemy.add(<embers:wildfire_core>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateCopper>], {"iron":(16 to 40),"silver":(24 to 32)});
 
-mods.embers.Alchemy.remove(<embers:winding_gears>);
-mods.embers.Alchemy.add(<embers:winding_gears>, [<embers:inflictor_gem>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper":(96 to 128),"dawnstone":(48 to 96)});
+Alchemy.remove(<embers:ember_cluster>);
+Alchemy.add(<embers:ember_cluster>, [<minecraft:quartz_block>, <embers:crystal_ember>, <embers:shard_ember>, <embers:crystal_ember>, <embers:shard_ember>], {"copper":(10 to 20),"dawnstone":(16 to 32)});
 
-mods.embers.Alchemy.remove(<embers:eldritch_insignia>);
-mods.embers.Alchemy.add(<embers:eldritch_insignia>, [<embers:archaic_circuit>, <embers:ancient_motive_core>, <embers:resonating_bell>, <embers:ancient_motive_core>, <ore:blockCoal>], {"lead":(64 to 128),"dawnstone":(80 to 96)});
+Alchemy.remove(<embers:glimmer_shard>);
+Alchemy.add(<embers:glimmer_shard>, [<minecraft:glowstone>, <minecraft:gunpowder>, <minecraft:quartz>, <embers:crystal_ember>, <embers:crystal_ember>], {"dawnstone":(48 to 128)});
 
-mods.embers.Alchemy.remove(<embers:tyrfing>);
+Alchemy.remove(<embers:flame_barrier>);
+Alchemy.add(<embers:flame_barrier>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:beam_cannon>, <embers:block_dawnstone>, <ore:plateSilver>], {"silver":(64 to 128),"dawnstone":(48 to 96)});
+
+Alchemy.remove(<embers:blasting_core>);
+Alchemy.add(<embers:blasting_core>, [<minecraft:tnt>, <embers:seed_lead>, <ore:blockLead>, <embers:seed_lead>, <embers:ember_cluster>], {"lead":(96 to 128)});
+
+Alchemy.remove(<embers:shifting_scales>);
+Alchemy.add(<embers:shifting_scales>, [<embers:ashen_cloth>, <ore:blockLead>, <embers:wildfire_core>, <ore:blockLead>, <embers:seed_lead>], {"lead":(96 to 128),"iron":(48 to 96)});
+
+Alchemy.remove(<embers:winding_gears>);
+Alchemy.add(<embers:winding_gears>, [<embers:inflictor_gem>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper":(96 to 128),"dawnstone":(48 to 96)});
+
+Alchemy.remove(<embers:eldritch_insignia>);
+Alchemy.add(<embers:eldritch_insignia>, [<embers:archaic_circuit>, <embers:ancient_motive_core>, <embers:resonating_bell>, <embers:ancient_motive_core>, <ore:blockCoal>], {"lead":(64 to 128),"dawnstone":(80 to 96)});
+
+Alchemy.remove(<embers:tyrfing>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, null, null, <ore:blockLead>, <embers:seed_iron>],
@@ -59,7 +74,6 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansGroover>, 300)
   .addOutput(<embers:tyrfing>)
   .create();
-
 
 ##1 tier
 
@@ -82,6 +96,14 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:blend_caminite");
+RecipeBuilder.get("potter")
+  .setShaped([
+    [<ore:clay>, <ore:clay>, <ore:clay>],
+    [<ore:clay>, <ore:sand>, null]])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<embers:blend_caminite>)
+  .create();
+
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:clay>, <ore:clay>, <ore:clay>],
@@ -229,7 +251,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<embers:stamper>)
   .create();
 
-recipes.removeByRecipeName("embers:block_furnance");
+recipes.removeByRecipeName("embers:block_furnace");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:gearConstantan>, <embers:plate_caminite>, <ore:gearConstantan>],
@@ -486,6 +508,126 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansFramingHammer>, 100)
   .addOutput(<embers:dawnstone_anvil>)
   .create();
+
+recipes.removeByRecipeName("embers:cinder_plinth");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:plateLead>, null],
+    [<ore:plateSilver>, <minecraft:furnace>, <ore:plateSilver>],
+    [<ore:plateLead>, <embers:block_caminite_brick>, <ore:plateLead>]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<embers:cinder_plinth>)
+  .create();
+
+recipes.removeByRecipeName("embers:ember_amulet");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <simplyjetpacks:metaitem:4>, null],
+    [<ore:nuggetDawnstone>, <embers:ember_cluster>, <ore:nuggetDawnstone>]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<embers:ember_amulet>)
+  .create();
+
+recipes.removeByRecipeName("embers:ember_ring");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<embers:ember_cluster>, <ore:ingotDawnstone>, null],
+    [<ore:ingotDawnstone>, null, <embers:nugget_dawnstone>],
+    [null, <embers:nugget_dawnstone>, null]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<embers:ember_ring>)
+  .create();
+
+recipes.removeByRecipeName("embers:ember_belt");
+RecipeBuilder.get("tanner")
+  .setShaped([
+    [null, <ore:ingotDawnstone>, null],
+    [null, <simplyjetpacks:metaitem:4>, null],
+    [<ore:plateDawnstone>, <embers:ember_cluster>, <ore:plateDawnstone>]])
+  .addTool(<ore:artisansNeedle>, 25)
+  .addOutput(<embers:ember_belt>)
+  .create();
+
+recipes.removeByRecipeName("embers:ember_bulb");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:plateDawnstone>, <ore:plateLead>],
+    [<ore:blockGlass>, <embers:ember_cluster>, <ore:blockGlass>],
+    [null, <ore:blockGlass>, null]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addOutput(<embers:ember_bulb>.withTag({emberCapacity: 1000.0, ember: 0.0}))
+  .create();
+
+recipes.removeByRecipeName("embers:pump");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:dustRedstone>, null],
+    [<embers:pipe>, <embers:plate_caminite>, <embers:pipe>],
+    [null, <ore:dustRedstone>, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<embers:pump>)
+  .create();
+
+recipes.removeByRecipeName("embers:pipe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<embers:pipe> * 8)
+  .create();
+
+recipes.removeByRecipeName("embers:copper_cell");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<embers:block_caminite_brick>, <ore:plateIron>, <embers:block_caminite_brick>],
+    [<ore:plateIron>, <ore:blockCopper>, <ore:plateIron>],
+    [<embers:block_caminite_brick>, <ore:plateIron>, <embers:block_caminite_brick>]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addOutput(<embers:copper_cell>.withTag({emberCapacity: 24000.0, ember: 0.0}))
+  .create();
+
+recipes.removeByRecipeName("embers:item_pipe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotLead>, <ore:plateLead>, <ore:ingotLead>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<embers:item_pipe>)
+  .create();
+
+recipes.removeByRecipeName("embers:item_pump");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:dustRedstone>, null],
+    [<embers:item_pipe>, <embers:plate_caminite>, <embers:item_pipe>],
+    [null, <ore:dustRedstone>, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<embers:item_pump>)
+  .create();
+
+recipes.removeByRecipeName("embers:item_dropper");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <embers:item_pipe>, null],
+    [<ore:plateIron>, null, <ore:plateIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<embers:item_dropper>)
+  .create();
+
+recipes.removeByRecipeName("embers:ashen_amulet");
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <simplyjetpacks:metaitem:4>, null],
+    [<embers:archaic_brick>, <ore:dustAsh>, <embers:archaic_brick>],
+    [null, <embers:archaic_brick>, null]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<embers:ashen_amulet>)
+  .create();
+
+recipes.removeByRecipeName("embers:sealed_planks");
+recipes.removeByRecipeName("embers:wrapped_sealed_planks");
+
+Carving.addVariation("treated_wood", <embers:sealed_planks>);
+Carving.addVariation("treated_wood", <embers:wrapped_sealed_planks>);
 
 ##2 tier
 recipes.removeByRecipeName("embers:ember_cartridge");
@@ -757,4 +899,26 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<embers:glimmer_lamp>.withTag({light: 1200}))
+  .create();
+
+recipes.removeByRecipeName("embers:dawnstone_mail");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateDawnstone>, null, <ore:plateDawnstone>],
+    [<ore:plateDawnstone>, <ore:blockDawnstone>, <ore:plateDawnstone>],
+    [<ore:plateDawnstone>, <ore:blockDawnstone>, <ore:plateDawnstone>]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<embers:dawnstone_mail>)
+  .create();
+
+recipes.removeByRecipeName("embers:reactor");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:gearCopper>, <ore:plateCopper>, <ore:gearCopper>],
+    [<ore:plateCopper>, <embers:wildfire_core>, <ore:plateCopper>],
+    [<ore:plateSilver>, <embers:block_caminite_brick>, <ore:plateSilver>]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansPunch>, 150)
+  .addOutput(<embers:reactor>)
   .create();
