@@ -1,0 +1,843 @@
+{
+	"overrides": {
+		"techguns:handcannon": {
+			"atk": 6,
+			"use": 3,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:ak47": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:boltaction": {
+			"atk": 7,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:sawedoff": {
+			"atk": 8,
+			"use": 3,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:pistol": {
+			"atk": 4,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:mac10": {
+			"atk": 2,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:revolver": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:m4": {
+			"atk": 3,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:aug": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:as50": {
+			"atk": 10,
+			"use": 8,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:combatshotgun": {
+			"atk": 6,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:thompson": {
+			"atk": 3,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:grenadelauncher": {
+			"atk": 6,
+			"use": 10,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:goldenrevolver": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:flamethrower": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:m4_infiltrator": {
+			"atk": 3,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:scar": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:netherblaster": {
+			"atk": 6,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:teslagun": {
+			"atk": 7,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:sonicshotgun": {
+			"atk": 6,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:laserpistol": {
+			"atk": 4,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:vector": {
+			"atk": 3,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:lmg": {
+			"atk": 2,
+			"use": 10,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:rocketlauncher": {
+			"atk": 7,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:grimreaper": {
+			"atk": 8,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:uidedmissilelauncher": {
+			"atk": 7,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:nucleardeathray": {
+			"atk": 6,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:tfg": {
+			"atk": 8,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:lasergun": {
+			"atk": 3,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:blasterrifle": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:pulserifle": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:biogun": {
+			"atk": 7,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:gaussrifle": {
+			"atk": 9,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:scatterbeamrifle": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:mibgun": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:alienblaster": {
+			"atk": 4,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:pdw": {
+			"atk": 2,
+			"use": 4,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:minigun": {
+			"atk": 2,
+			"use": 10,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"techguns:powerhammer": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["melee"]
+		},
+		"techguns:chainsaw": {
+			"atk": 6,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["melee"]
+		},
+		"techguns:miningdrill": {
+			"atk": 8,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["melee"]
+		},
+		"flansmod:dwambirconsteamrifle": {
+			"atk": 4,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf94au": {
+			"atk": 5,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwpwr57": {
+			"atk": 2,
+			"use": 5,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwskylighteraec": {
+			"atk": 8,
+			"use": 9,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwcinderfire": {
+			"atk": 6,
+			"use": 9,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwmbtcrossbow": {
+			"atk": 7,
+			"use": 8,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwpepperbox": {
+			"atk": 6,
+			"use": 7,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwbreacher870": {
+			"atk": 7,
+			"use": 5,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwwinnow": {
+			"atk": 4,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwmfp15": {
+			"atk": 2,
+			"use": 6,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwgs5": {
+			"atk": 4,
+			"use": 6,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwwolfstedt": {
+			"atk": 3,
+			"use": 6,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwpup227": {
+			"atk": 2,
+			"use": 6,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwmodcannonlauncher": {
+			"atk": 12,
+			"use": 7,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwkgl40": {
+			"atk": 5,
+			"use": 10,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwstumbreonsv": {
+			"atk": 4,
+			"use": 8,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf94": {
+			"atk": 4,
+			"use": 7,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwdusterwing": {
+			"atk": 2,
+			"use": 7,
+			"chance": -0.02,
+			"traits": ["range"]
+		},
+		"flansmod:dwsc7stnd": {
+			"atk": 5,
+			"use": 7,
+			"chance": 0.8,
+			"traits": ["range"]
+		},
+		"flansmod:dwhvfpeforator": {
+			"atk": 8,
+			"use": 9,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwsforel": {
+			"atk": 7,
+			"use": 7,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwfeathershock": {
+			"atk": 7,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwsteelbluss": {
+			"atk": 8,
+			"use": 8,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwkp12": {
+			"atk": 8,
+			"use": 10,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwflakwater": {
+			"atk": 8,
+			"use": 3,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwsc7": {
+			"atk": 5,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwmfp33": {
+			"atk": 5,
+			"use": 5,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwsilversec": {
+			"atk": 5,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwat51sp": {
+			"atk": 2,
+			"use": 6,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwmfp5compact": {
+			"atk": 2,
+			"use": 7,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwkgl3": {
+			"atk": 10,
+			"use": 10,
+			"chance": -0.02,
+			"traits": ["range"]
+		},
+		"flansmod:dwpagl": {
+			"atk": 10,
+			"use": 7,
+			"chance": -0.02,
+			"traits": ["range"]
+		},
+		"flansmod:dwmatriarchscatter": {
+			"atk": 8,
+			"use": 8,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwmatriarchsnubshort": {
+			"atk": 5,
+			"use": 7,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwwolfstedtrep": {
+			"atk": 4,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf112": {
+			"atk": 3,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwinkstriker45": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.6,
+			"traits": ["range"]
+		},
+		"flansmod:dwmpar": {
+			"atk": 3,
+			"use": 6,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwskycomm": {
+			"atk": 5,
+			"use": 6,
+			"chance": -0.1,
+			"traits": ["range"]
+		},
+		"flansmod:dwskylighter": {
+			"atk": 3,
+			"use": 7,
+			"chance": -0.06,
+			"traits": ["range"]
+		},
+		"flansmod:dwneurotoxinrifle": {
+			"atk": 6,
+			"use": 12,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwmbtautocrossbow": {
+			"atk": 8,
+			"use": 7,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwpup762": {
+			"atk": 10,
+			"use": 9,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwfeatherduster": {
+			"atk": 7,
+			"use": 7,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwairdropper": {
+			"atk": 9,
+			"use": 9,
+			"chance": 0.1,
+			"traits": ["range"]
+		},
+		"flansmod:dwroselup": {
+			"atk": 9,
+			"use": 12,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwcrossfire": {
+			"atk": 8,
+			"use": 12,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwluabella": {
+			"atk": 5,
+			"use": 8,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwwinnowbp": {
+			"atk": 5,
+			"use": 5,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwgsskylite": {
+			"atk": 4,
+			"use": 6,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwwinnowmp": {
+			"atk": 2,
+			"use": 5,
+			"chance": -0.06,
+			"traits": ["range"]
+		},
+		"flansmod:dwskychaser": {
+			"atk": 7,
+			"use": 5,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwautorifle2097": {
+			"atk": 2,
+			"use": 10,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwstumbreonsteamer": {
+			"atk": 2,
+			"use": 8,
+			"chance": -0.18,
+			"traits": ["range"]
+		},
+		"flansmod:dwpar60": {
+			"atk": 3,
+			"use": 9,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwairmare": {
+			"atk": 2,
+			"use": 12,
+			"chance": -0.16,
+			"traits": ["range"]
+		},
+		"flansmod:dwlk103": {
+			"atk": 10,
+			"use": 11,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwskyswatter": {
+			"atk": 5,
+			"use": 10,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwoverwatch": {
+			"atk": 8,
+			"use": 8,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwmatriarchskymare": {
+			"atk": 8,
+			"use": 8,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwxm240": {
+			"atk": 2,
+			"use": 8,
+			"chance": -0.28,
+			"traits": ["range"]
+		},
+		"flansmod:dwambirconsteamrifle2": {
+			"atk": 4,
+			"use": 6,
+			"chance": 0.6,
+			"traits": ["range"]
+		},
+		"flansmod:dwpar38": {
+			"atk": 3,
+			"use": 7,
+			"chance": 0.6,
+			"traits": ["range"]
+		},
+		"flansmod:dwcrm15": {
+			"atk": 3,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwmpara2": {
+			"atk": 4,
+			"use": 6,
+			"chance": -0.02,
+			"traits": ["range"]
+		},
+		"flansmod:dwaegisdisrupter": {
+			"atk": 4,
+			"use": 4,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwmk47": {
+			"atk": 6,
+			"use": 8,
+			"chance": 0.8,
+			"traits": ["range"]
+		},
+		"flansmod:dwdzky103": {
+			"atk": 7,
+			"use": 9,
+			"chance": 0.8,
+			"traits": ["range"]
+		},
+		"flansmod:dwroseluphca": {
+			"atk": 7,
+			"use": 18,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwkpss12": {
+			"atk": 8,
+			"use": 12,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf2012p": {
+			"atk": 8,
+			"use": 7,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwpakat": {
+			"atk": 3,
+			"use": 6,
+			"chance": 0.6,
+			"traits": ["range"]
+		},
+		"flansmod:dwgsx": {
+			"atk": 3,
+			"use": 6,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwrivetrailgun": {
+			"atk": 6,
+			"use": 6,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwmfpk9": {
+			"atk": 2,
+			"use": 5,
+			"chance": -0.1,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf370b": {
+			"atk": 3,
+			"use": 11,
+			"chance": -0.12,
+			"traits": ["range"]
+		},
+		"flansmod:dwironhoofm40": {
+			"atk": 3,
+			"use": 10,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwhpar": {
+			"atk": 3,
+			"use": 10,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwdronedeployer": {
+			"atk": 14,
+			"use": 9,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwflightchaser": {
+			"atk": 10,
+			"use": 9,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwtimemarker": {
+			"atk": 7,
+			"use": 8,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwmatriarchr015": {
+			"atk": 5,
+			"use": 8,
+			"chance": 0.2,
+			"traits": ["range"]
+		},
+		"flansmod:dwsf116bp": {
+			"atk": 2,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwduskdusterwing": {
+			"atk": 4,
+			"use": 7,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwclockwing": {
+			"atk": 6,
+			"use": 12,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwcloudpuncher": {
+			"atk": 8,
+			"use": 9,
+			"chance": 0.6,
+			"traits": ["range"]
+		},
+		"flansmod:dwagmpredator": {
+			"atk": 4,
+			"use": 11,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwironhoof": {
+			"atk": 5,
+			"use": 9,
+			"chance": -0.05,
+			"traits": ["range"]
+		},
+		"flansmod:dwkat3": {
+			"atk": 5,
+			"use": 9,
+			"chance": 0.8,
+			"traits": ["range"]
+		},
+		"flansmod:dwarcanepawgun": {
+			"atk": 4,
+			"use": 6,
+			"chance": 0.4,
+			"traits": ["range"]
+		},
+		"flansmod:dwrurhicvtsy87": {
+			"atk": 5,
+			"use": 6,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwumx45": {
+			"atk": 6,
+			"use": 6,
+			"chance": 0.0,
+			"traits": ["range"]
+		},
+		"flansmod:dwwolfstedtm2088": {
+			"atk": 2,
+			"use": 5,
+			"chance": -0.02,
+			"traits": ["range"]
+		},
+		"flansmod:dwheavydupletmg": {
+			"atk": 3,
+			"use": 12,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwscspinnaker": {
+			"atk": 1,
+			"use": 10,
+			"chance": -0.08,
+			"traits": ["range"]
+		},
+		"flansmod:dwskyswatterss": {
+			"atk": 5,
+			"use": 8,
+			"chance": -0.04,
+			"traits": ["range"]
+		},
+		"flansmod:dwkrystaloverwatch": {
+			"atk": 9,
+			"use": 8,
+			"chance": 0.0,
+			"traits": ["range"]
+		}
+	},
+	"generation": {
+		"wizardryApPerSpellCost": 0.3,
+		"wizardrySpellTierFactor": 0.5,
+		"wizardryContinuousSpellApFactor": -0.9,
+		"wizardryContinuousSpellOverheadFactor": 0.0,
+		"thaumcraftPowerCost": 0.3,
+		"thaumcraftComplexityFactor": 0.5,
+		"tinkerBowApPerDrawTime": 0.05,
+		"tinkerCrossbowApPerShot": 1.0,
+		"tinkerCrossbowApPerDrawTime": 0.05
+	}
+}
