@@ -10,6 +10,13 @@ function safeRemoveRecipe(id as string) {
   }
 }
 
+safeRemoveRecipe("industrialforegoing:enchantment_refiner");
+safeRemoveRecipe("industrialforegoing:enchantment_extractor");
+safeRemoveRecipe("industrialforegoing:enchantment_aplicator");
+safeRemoveRecipe("industrialforegoing:potion_enervator>");
+safeRemoveRecipe("industrialforegoing:enchantment_invoker");
+safeRemoveRecipe("industrialforegoing:villager_trade_exchanger");
+
 // 1 Tier
 
 // Block Breaker
