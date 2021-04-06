@@ -1,5 +1,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByMod("ZettaiMagic");
+
 RecipeBuilder.get("mage")
   .setShaped([
     [<ebwizardry:magic_crystal:1>, <ebwizardry:magic_crystal:2>, <ebwizardry:magic_crystal:3>],
@@ -80,7 +82,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:medium_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_hat>)
   .create();
 
@@ -91,7 +93,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:large_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_robe>)
   .create();
 
@@ -102,7 +104,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:medium_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_leggings>)
   .create();
 
@@ -112,8 +114,8 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_silk>, <ebwizardry:wizard_boots>, <ebwizardry:magic_silk>],
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:small_mana_flask>])
-  .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<artisanworktables:artisans_needle_wood>, 125)
+  .addTool(<artisanworktables:artisans_grimoire_wood>, 125)
   .addOutput(<ebwizardry:sage_boots>)
   .create();
 
@@ -124,8 +126,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansAthame>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_helmet>)
   .create();
 
@@ -136,8 +138,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansAthame>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_chestplate>)
   .create();
 
@@ -148,8 +150,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansAthame>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_leggings>)
   .create();
 
@@ -160,8 +162,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansAthame>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_boots>)
   .create();
 
@@ -174,8 +176,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansAthame>, 250)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_hood>)
   .create();
 
@@ -188,8 +190,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansAthame>, 250)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_robe>)
   .create();
 
@@ -202,8 +204,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansAthame>, 250)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_leggings>)
   .create();
 
@@ -216,7 +218,84 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansAthame>, 250)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_boots>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_lightning_sword"); // Удаление Меча мастера молнии
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:3>, <ebwizardry:master_lightning_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:3>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_lightning_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_sorcery_sword"); // Удаление Меча мастера колдуна
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:5>, <ebwizardry:master_sorcery_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:5>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_sorcery_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_nature_sword"); // Удаление Меча мастера земли
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:6>, <ebwizardry:master_earth_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:6>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_nature_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_fire_sword"); // Удаление Меча мастера огня
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:1>, <ebwizardry:master_fire_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:1>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_fire_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_ice_sword"); // Удаление Меча мастера льда
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:2>, <ebwizardry:master_ice_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:2>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_ice_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_healing_sword"); // Удаление Меча мастера целителя
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:7>, <ebwizardry:master_healing_wand>.withTag({}), <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:7>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_healing_sword>)
+  .create();
+
+recipes.removeByRecipeName("arcane_essentials:master_necromancy_sword"); // Удаление Меча мастера некромантии
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:quartz>, <minecraft:diamond_sword>],
+    [<ebwizardry:spectral_dust:4>, <ebwizardry:master_necromancy_wand>, <minecraft:quartz>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:spectral_dust:4>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansGrimoire>, 350)
+  .addTool(<ore:artisansGemCutter>, 300)
+  .addOutput(<arcane_essentials:master_necromancy_sword>)
   .create();
