@@ -389,3 +389,20 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<artisanworktables:workshop:5>)
   .create();
+
+##Верстаки магов
+
+recipes.addShaped(<artisanworktables:worktable:7>, 
+  [[<ore:nitor>, <thaumcraft:mechanism_simple>, <thaumcraft:filter>],
+  [<thaumcraft:thaumometer>, <minecraft:crafting_table>, <thaumcraft:vis_resonator>],
+  [<astralsorcery:itemwand>, <ore:materialCoraliumPearl>, <botania:fertilizer>]]);
+
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<bewitchment:pentacle>, <botania:manatablet>, <botania:tinyplanet>],
+    [<thaumcraft:infusion_matrix>, <artisanworktables:worktable:7>, <thaumcraft:everfull_urn>],
+    [<thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>]])
+  .addTool(<artisanworktables:artisans_grimoire_thaumium>, 300)
+  .addOutput(<artisanworktables:workstation:7>)
+  .create();
