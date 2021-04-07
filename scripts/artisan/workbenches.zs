@@ -171,7 +171,7 @@ RecipeBuilder.get("carpenter")
 ##Верстаки каменщиков
 recipes.addShaped(<artisanworktables:worktable:2>, [
   [<embers:stamp_flat>, <pyrotech:worktable>, <tconstruct:book>],
-  [<pyrotech:stone_bricks>, <pyrotech:anvil_granite>, <pyrotech:stone_bricks>],
+  [<minecraft:furnace>, <pyrotech:anvil_granite>, <pyrotech:stone_bricks>],
   [<pyrotech:flint_hammer>, <ore:workbench>, <pyrotech:tongs_flint>]
 ]);
 
