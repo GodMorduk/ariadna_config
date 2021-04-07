@@ -27,8 +27,8 @@ for item in berries {
 }
 
 //добавляем возможность крафтить с воском из харвеста
-recipes.addShaped(<rustic:candle_gold>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<minecraft:gold_ingot>, null, null]]);
-recipes.addShaped(<rustic:candle>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<minecraft:iron_ingot>, null, null]]);
+recipes.addShaped(<rustic:candle_gold>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<ore:ingotGold>, null, null]]);
+recipes.addShaped(<rustic:candle>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<ore:ingotIron>, null, null]]);
 
 //примеры на будущее
 //Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}), <harvestcraft:whitemushroomitem>, <minecraft:spider_eye>);

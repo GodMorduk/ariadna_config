@@ -23,12 +23,12 @@ recipes.removeByRecipeName("techguns:itemshared_37_stonebarrel");
 recipes.removeByRecipeName("techguns:itemshared_33_ironreceiver");
 recipes.removeByRecipeName("techguns:itemshared_60_heavycloth");
  
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:32>, <minecraft:iron_ingot>, <immersiveengineering:mold>, 8000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:320>, <thermalfoundation:material:128>, <immersiveengineering:mold>, 8000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:322>, <thermalfoundation:material:130>, <immersiveengineering:mold>, 8000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>, <thermalfoundation:material:132>, <immersiveengineering:mold>, 8000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <thermalfoundation:material:131>, <immersiveengineering:mold>, 8000);
-mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <thermalfoundation:material:133>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:32>, <ore:ingotIron>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:320>, <ore:ingotCopper>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:322>, <ore:ingotSilver>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>, <ore:ingotAluminum>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <ore:ingotLead>, <immersiveengineering:mold>, 8000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <ore:ingotNickel>, <immersiveengineering:mold>, 8000);
 
 recipes.addShaped(0, <minecraft:fireworks>, [
 	[null, <ore:itemRubber>, null], 

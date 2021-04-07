@@ -2169,9 +2169,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:tool/drillhead_steel");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:354>, <thermalfoundation:material:354>, null],
+    [<ore:plateInvar>, <ore:plateInvar>, null],
     [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
-    [<thermalfoundation:material:354>, <thermalfoundation:material:354>, null]])
+    [<ore:plateInvar>, <ore:plateInvar>, null]])
   .setSecondaryIngredients([<ore:plateSteel> * 32])
   .addTool(<ore:artisansFramingHammer>, 100)
   .addTool(<ore:artisansFile>, 100)

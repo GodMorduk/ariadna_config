@@ -1397,9 +1397,9 @@ RecipeBuilder.get("mage")
   
 RecipeBuilder.get("mage")
   .setShaped([
-    [null, <minecraft:gold_ingot>, null],
-    [<minecraft:gold_ingot>, <botania:lens>.withTag({}), <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
+    [null, <ore:ingotGold>, null],
+    [<ore:ingotGold>, <botania:lens>.withTag({}), <ore:ingotIron>],
+    [null, <ore:ingotIron>, null]])
   .addTool(<ore:artisansPliers>, 25)
   .addTool(<ore:artisansGrimoire>, 25)
   .addOutput(<botania:lens:10>.withTag({}))
@@ -1586,7 +1586,7 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
-    [<minecraft:gold_ingot>, <botania:petal>, null],
+    [<ore:ingotGold>, <botania:petal>, null],
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]])
   .addTool(<ore:artisansHandsaw>, 25)
   .addTool(<ore:artisansGrimoire>, 30)
@@ -1688,9 +1688,9 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("botania:hourglass");//Удаление песочных часов
 RecipeBuilder.get("mage")
   .setShaped([
-    [<minecraft:gold_ingot>, <botania:managlass>, <minecraft:gold_ingot>],
+    [<ore:ingotGold>, <botania:managlass>, <ore:ingotGold>],
     [<minecraft:redstone>, <botania:manaresource>, <minecraft:redstone>],
-    [<minecraft:gold_ingot>, <botania:managlass>, <minecraft:gold_ingot>]])
+    [<ore:ingotGold>, <botania:managlass>, <ore:ingotGold>]])
   .addTool(<ore:artisansLens>, 25)
   .addTool(<ore:artisansRazor>, 30)
   .addOutput(<botania:hourglass>)

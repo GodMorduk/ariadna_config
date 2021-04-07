@@ -496,7 +496,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("techguns:itemshared_104_rcheatray");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:357>, <thermalfoundation:material:357>, <immersiveengineering:metal_decoration0:1>, <thermalfoundation:material:357>, <thermalfoundation:material:357>],
+    [<ore:plateSignalum>, <ore:plateSignalum>, <immersiveengineering:metal_decoration0:1>, <ore:plateSignalum>, <ore:plateSignalum>],
     [<ore:plateSteel>, <ore:circuitElite>, <immersiveengineering:metal_decoration0:2>, <ore:circuitElite>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:plateCarbon>, <thermalfoundation:glass_alloy:6>, <ore:plateCarbon>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:plateCarbon>, <thermalfoundation:glass_alloy:6>, <ore:plateCarbon>, <ore:plateSteel>],

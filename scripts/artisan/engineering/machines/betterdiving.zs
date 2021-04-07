@@ -26,9 +26,9 @@ recipes.removeByRecipeName("better_diving:seamoth");
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:324>, <thermalfoundation:material:324>, <thermalfoundation:material:325>],
+    [<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateNickel>],
     [<better_diving:acid_mushroom>, <better_diving:acid_mushroom>, <minecraft:redstone>],
-    [<thermalfoundation:material:324>, <thermalfoundation:material:324>, <thermalfoundation:material:325>]])
+    [<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateNickel>]])
   .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<better_diving:battery>.withTag({"better_diving:energy_storage": 0}))
   .setExtraOutputOne(<better_diving:acid_mushroom>, 0.2)

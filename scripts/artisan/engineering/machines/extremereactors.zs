@@ -251,11 +251,11 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("bigreactors:reactorcasingcores");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:323>, <thermalfoundation:material:323>, <thermalfoundation:material:323>, null],
-    [<thermalfoundation:material:323>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <thermalfoundation:material:323>],
-    [<thermalfoundation:material:323>, <bigreactors:ingotgraphite>, <mekanism:atomicalloy>, <bigreactors:ingotgraphite>, <thermalfoundation:material:323>],
-    [<thermalfoundation:material:323>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <thermalfoundation:material:323>],
-    [null, <thermalfoundation:material:323>, <thermalfoundation:material:323>, <thermalfoundation:material:323>, null]])
+    [null, <ore:plateLead>, <ore:plateLead>, <ore:plateLead>, null],
+    [<ore:plateLead>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <ore:plateLead>],
+    [<ore:plateLead>, <bigreactors:ingotgraphite>, <mekanism:atomicalloy>, <bigreactors:ingotgraphite>, <ore:plateLead>],
+    [<ore:plateLead>, <ore:plateTitanium>, <bigreactors:ingotgraphite>, <ore:plateTitanium>, <ore:plateLead>],
+    [null, <ore:plateLead>, <ore:plateLead>, <ore:plateLead>, null]])
   .addTool(<ore:artisansHammer>, 25)
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansPunch>, 25)

@@ -62,49 +62,49 @@ recipes.removeByRecipeName("openmodularturrets:intermediate_regular_0_vanilla");
 recipes.removeByRecipeName("openmodularturrets:lever_block_vanilla");
 
 recipes.addShaped(<openmodularturrets:turret_base>,[
-    [<minecraft:iron_ingot>, <immersiveengineering:treated_wood>, <minecraft:iron_ingot>],
+    [<ore:ingotIron>, <immersiveengineering:treated_wood>, <ore:ingotIron>],
     [<immersiveengineering:treated_wood>, <openmodularturrets:intermediate_tiered>, <immersiveengineering:treated_wood>],
-    [<minecraft:iron_ingot>, <immersiveengineering:treated_wood>, <minecraft:iron_ingot>]]);
+    [<ore:ingotIron>, <immersiveengineering:treated_wood>, <ore:ingotIron>]]);
   
 recipes.addShaped(<openmodularturrets:intermediate_tiered>,[
-    [<opencomputers:material:4>, <minecraft:gold_ingot>, <opencomputers:material:4>],
+    [<opencomputers:material:4>, <ore:ingotGold>, <opencomputers:material:4>],
     [<opencomputers:material:7>, <opencomputers:material:6>, <opencomputers:material:7>],
-    [<opencomputers:material:4>, <minecraft:gold_ingot>, <opencomputers:material:4>]]);
+    [<opencomputers:material:4>, <ore:ingotGold>, <opencomputers:material:4>]]);
   
 recipes.addShaped(<openmodularturrets:intermediate_tiered:5>,[
-    [null, null, <minecraft:iron_ingot>],
-    [null, <immersiveengineering:treated_wood>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <enderio:item_material:10>]]);
+    [null, null, <ore:ingotIron>],
+    [null, <immersiveengineering:treated_wood>, <ore:ingotIron>],
+    [<ore:ingotIron>, <ore:ingotIron>, <enderio:item_material:10>]]);
   
 recipes.addShaped(<openmodularturrets:intermediate_tiered:10>,[
-    [<minecraft:iron_ingot>, <immersiveengineering:treated_wood>, <minecraft:iron_ingot>],
+    [<ore:ingotIron>, <immersiveengineering:treated_wood>, <ore:ingotIron>],
     [<enderio:item_material:10>, null, <enderio:item_material:10>],
-    [<minecraft:iron_ingot>, <immersiveengineering:treated_wood>, <minecraft:iron_ingot>]]);
+    [<ore:ingotIron>, <immersiveengineering:treated_wood>, <ore:ingotIron>]]);
   
 recipes.addShaped(<openmodularturrets:disposable_item_turret>,[
     [null, <openmodularturrets:intermediate_tiered:10>, null],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_tiered:10>, <minecraft:iron_ingot>],
+    [<ore:ingotIron>, <openmodularturrets:intermediate_tiered:10>, <ore:ingotIron>],
     [<immersiveengineering:treated_wood>, <openmodularturrets:intermediate_tiered:5>, <immersiveengineering:treated_wood>]]);
   
 recipes.addShaped(<openmodularturrets:potato_cannon_turret>,[
     [null, <openmodularturrets:intermediate_tiered:10>, null],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_tiered:10>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_tiered:5>, <minecraft:iron_ingot>]]);
+    [<ore:ingotIron>, <openmodularturrets:intermediate_tiered:10>, <ore:ingotIron>],
+    [<ore:ingotIron>, <openmodularturrets:intermediate_tiered:5>, <ore:ingotIron>]]);
   
 recipes.addShaped(<openmodularturrets:expander>,[
-    [<thermalfoundation:material:324>, <thermalfoundation:material:24>, <thermalfoundation:material:324>],
+    [<ore:plateAluminum>, <thermalfoundation:material:24>, <ore:plateAluminum>],
     [<minecraft:chest>, null, <minecraft:chest>],
-    [<thermalfoundation:material:324>, <thermalfoundation:material:24>, <thermalfoundation:material:324>]]);
+    [<ore:plateAluminum>, <thermalfoundation:material:24>, <ore:plateAluminum>]]);
   
 recipes.addShaped(<openmodularturrets:expander:5>,[
-    [<thermalfoundation:material:324>, <thermalfoundation:material:128>, <thermalfoundation:material:324>],
-    [<thermalfoundation:material:323>, <minecraft:redstone_block>, <thermalfoundation:material:323>],
-    [<thermalfoundation:material:324>, <thermalfoundation:material:323>, <thermalfoundation:material:324>]]);
+    [<ore:plateAluminum>, <ore:ingotCopper>, <ore:plateAluminum>],
+    [<ore:plateLead>, <minecraft:redstone_block>, <ore:plateLead>],
+    [<ore:plateAluminum>, <ore:plateLead>, <ore:plateAluminum>]]);
   
 recipes.addShaped(<openmodularturrets:lever_block>,[
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, null, null],
-    [<minecraft:iron_ingot>, null, null]]);
+    [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+    [<ore:ingotIron>, null, null],
+    [<ore:ingotIron>, null, null]]);
   
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -198,7 +198,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateSteel>],
-    [null, <thermalfoundation:material:323>, <ore:plateSteel>],
+    [null, <ore:plateLead>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:plateSteel>, <thermalfoundation:material:288>]])
   .addTool(<ore:artisansDriver>, 10)
   .addOutput(<openmodularturrets:intermediate_tiered:6>)
@@ -384,9 +384,9 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:131>, null],
-    [<thermalfoundation:material:128>, <flansmod:gunpowderblock>, <thermalfoundation:material:128>],
-    [<thermalfoundation:material:128>, <tconstruct:ingots:5>, <thermalfoundation:material:128>]])
+    [null, <ore:ingotLead>, null],
+    [<ore:ingotCopper>, <flansmod:gunpowderblock>, <ore:ingotCopper>],
+    [<ore:ingotCopper>, <tconstruct:ingots:5>, <ore:ingotCopper>]])
   .addOutput(<openmodularturrets:ammo_meta:1> * 16)
   .create();
   
@@ -409,9 +409,9 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <enderio:item_alloy_ingot:4>, <enderio:item_alloy_ingot:6>],
-    [<thermalfoundation:material:131>, <enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>],
+    [<ore:ingotLead>, <enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>],
     [<enderio:item_alloy_ingot:4>, <flansmod:gunpowderblock>, <enderio:item_alloy_ingot:4>, null],
-    [null, <enderio:item_alloy_ingot:4>, <thermalfoundation:material:131>, null]])
+    [null, <enderio:item_alloy_ingot:4>, <ore:ingotLead>, null]])
   .addOutput(<openmodularturrets:ammo_meta:4> * 4)
   .create();
   
@@ -587,7 +587,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSteel>, <immersiveengineering:metal_decoration0>, <ore:plateSteel>],
     [<openmodularturrets:expander:5>, <minecraft:redstone_block>, <openmodularturrets:expander:5>],
-    [<ore:plateSteel>, <thermalfoundation:material:323>, <ore:plateSteel>]])
+    [<ore:plateSteel>, <ore:plateLead>, <ore:plateSteel>]])
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<openmodularturrets:expander:6>)
   .create();
@@ -596,7 +596,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<mekanism:reinforcedalloy>, <immersiveengineering:metal_decoration0>, <mekanism:reinforcedalloy>],
     [<openmodularturrets:expander:6>, <minecraft:redstone_block>, <openmodularturrets:expander:6>],
-    [<mekanism:reinforcedalloy>, <thermalfoundation:material:323>, <mekanism:reinforcedalloy>]])
+    [<mekanism:reinforcedalloy>, <ore:plateLead>, <mekanism:reinforcedalloy>]])
   .addTool(<ore:artisansSolderer>, 150)
   .addTool(<ore:artisansDriver>, 150)
   .addOutput(<openmodularturrets:expander:7>)

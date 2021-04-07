@@ -40,8 +40,8 @@ MetalPress.addRecipe("ingotGold", "ingotGold", <thermalfoundation:material:33> *
 MetalPress.addRecipe("ingotCopper", "ingotCopper", <thermalfoundation:material:320> * 2, false);
 MetalPress.addRecipe("ingotTin", "ingotTin", <thermalfoundation:material:321> * 2, false);
 MetalPress.addRecipe("ingotSilver", "ingotSilver", <thermalfoundation:material:322> * 2, false);
-MetalPress.addRecipe("ingotTin", "ingotTin", <thermalfoundation:material:323>* 2, false);
-MetalPress.addRecipe("ingotAluminium", "ingotAluminium", <thermalfoundation:material:324> * 2, false);
+MetalPress.addRecipe("ingotLead", "ingotLead", <thermalfoundation:material:323>* 2, false);
+MetalPress.addRecipe("ingotAluminum", "ingotAluminum", <thermalfoundation:material:324> * 2, false);
 MetalPress.addRecipe("ingotNickel", "ingotNickel", <thermalfoundation:material:325> * 2, false);
 MetalPress.addRecipe("ingotPlatinum", "ingotPlatinum", <thermalfoundation:material:326> * 2, false);
 MetalPress.addRecipe("ingotIridium", "ingotIridium", <thermalfoundation:material:327> * 2, false);

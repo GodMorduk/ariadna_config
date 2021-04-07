@@ -30,7 +30,7 @@ RecipeBuilder.get("mage")
 recipes.removeByRecipeName("ebwizardry:arcane_workbench"); // Удаление мистического верстака
 RecipeBuilder.get("mage")
   .setShaped([
-    [<minecraft:gold_ingot>, <minecraft:carpet:10>, <minecraft:gold_ingot>],
+    [<ore:ingotGold>, <minecraft:carpet:10>, <ore:ingotGold>],
     [<ebwizardry:magic_crystal>, <minecraft:lapis_block>, <ebwizardry:magic_crystal>],
     [<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>]])
   .addTool(<ore:artisansGrimoire>, 50)

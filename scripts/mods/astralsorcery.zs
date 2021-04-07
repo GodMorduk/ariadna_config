@@ -115,7 +115,7 @@ null,
 <forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}),
 <astralsorcery:blockmarble>,
 <minecraft:diamond>, 
-<minecraft:gold_ingot>, 
+<ore:ingotGold>, 
 <minecraft:diamond>
 ]);
 
@@ -320,13 +320,13 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/s
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/shiftingstar/enhanced/armara");
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.armara"}}), 4500, 100, [
 	null, 
-	<minecraft:iron_ingot>, 
+	<ore:ingotIron>, 
 	null, 
 	<astralsorcery:itemcraftingcomponent:1>, 
 	<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 	<astralsorcery:itemcraftingcomponent:1>, 
 	null, 
-	<minecraft:iron_ingot>, 
+	<ore:ingotIron>, 
 	null,
 	<astralsorcery:itemperkseal>, 
 	<astralsorcery:itemperkseal>, 
@@ -346,10 +346,10 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/s
 	<astralsorcery:itemcraftingcomponent:2>,
 	//Предметы которые будут снаружи крафта.
 	<astralsorcery:itemusabledust>, 
-	<minecraft:iron_ingot>,
+	<ore:ingotIron>,
 	<astralsorcery:itemcraftingcomponent:2>,			
 	<astralsorcery:itemusabledust>, 
-	<minecraft:iron_ingot>,
+	<ore:ingotIron>,
 	<astralsorcery:itemcraftingcomponent:2>
 	],"astralsorcery.constellation.armara"
 );
@@ -611,12 +611,12 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/s
 	<minecraft:leather>, 
 	<minecraft:netherbrick>,
 	//Предметы которые будут снаружи крафта.
-	<minecraft:iron_ingot>, 
-	<minecraft:iron_ingot>,
-	<minecraft:iron_ingot>,			
-	<minecraft:iron_ingot>, 
-	<minecraft:iron_ingot>,
-	<minecraft:iron_ingot>
+	<ore:ingotIron>, 
+	<ore:ingotIron>,
+	<ore:ingotIron>,			
+	<ore:ingotIron>, 
+	<ore:ingotIron>,
+	<ore:ingotIron>
 	],"astralsorcery.constellation.armara"
 	);
 

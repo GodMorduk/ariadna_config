@@ -1221,11 +1221,11 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("mekanism:tierinstaller_3");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:358>, <thermalfoundation:material:358>, null, <thermalfoundation:material:358>, <thermalfoundation:material:358>],
-    [<thermalfoundation:material:358>, <ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>, <thermalfoundation:material:358>],
+    [<ore:plateLumium>, <ore:plateLumium>, null, <ore:plateLumium>, <ore:plateLumium>],
+    [<ore:plateLumium>, <ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>, <ore:plateLumium>],
     [null, <ore:dustDiamond>, <mekanism:tierinstaller:2>, <ore:dustDiamond>, null],
-    [<thermalfoundation:material:358>, <ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>, <thermalfoundation:material:358>],
-    [<thermalfoundation:material:358>, <thermalfoundation:material:358>, null, <thermalfoundation:material:358>, <thermalfoundation:material:358>]])
+    [<ore:plateLumium>, <ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>, <ore:plateLumium>],
+    [<ore:plateLumium>, <ore:plateLumium>, null, <ore:plateLumium>, <ore:plateLumium>]])
   .addTool(<ore:artisansSolderer>, 50)
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansFile>, 50)

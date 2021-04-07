@@ -545,7 +545,7 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:352>, null],
+    [null, <ore:plateSteel>, null],
     [<ore:plateSteel>, <techguns:itemshared:75>, <ore:plateSteel>],
     [null, <immersiveengineering:material:9>, null]])
   .setSecondaryIngredients([<ore:nuggetBrass> * 6, <immersiveengineering:bullet> * 6])
@@ -934,7 +934,7 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalfoundation:material:355>, null],
+    [null, <ore:plateBronze>, null],
     [<thaumcraft:plate>, <thermalfoundation:material:768>, <thaumcraft:plate>],
     [<thaumcraft:plate>, <minecraft:tnt>, <thaumcraft:plate>]])
   .setSecondaryIngredients([<thermalfoundation:material:768> * 8])

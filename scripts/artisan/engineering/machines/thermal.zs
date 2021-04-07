@@ -1453,7 +1453,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermaldynamics:duct_0_7");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:353>, <ore:blockGlassHardened>, <thermalfoundation:material:353>]])
+    [<ore:plateElectrum>, <ore:blockGlassHardened>, <ore:plateElectrum>]])
   .addTool(<ore:artisansSpanner>, 5)
   .addTool(<ore:artisansDriver>, 5)
   .addOutput(<thermaldynamics:duct_0:6> * 6)

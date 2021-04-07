@@ -644,9 +644,9 @@ RecipeBuilder.get("engineer")
 safeRemoveRecipe("industrialforegoing:range_addon_4");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalfoundation:material:320>, <thermalfoundation:material:256>, <thermalfoundation:material:320>],
-    [<thermalfoundation:material:320>, <artisanworktables:artisans_lens_copper>, <thermalfoundation:material:320>],
-    [<thermalfoundation:material:320>, <thermalfoundation:material:256>, <thermalfoundation:material:320>]])
+    [<ore:plateCopper>, <thermalfoundation:material:256>, <ore:plateCopper>],
+    [<ore:plateCopper>, <artisanworktables:artisans_lens_copper>, <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalfoundation:material:256>, <ore:plateCopper>]])
   .setSecondaryIngredients([<immersiveengineering:material:27>])
   .addTool(<ore:artisansGroover>, 30)
   .addTool(<ore:artisansSolderer>, 30)
@@ -1014,10 +1014,10 @@ safeRemoveRecipe("industrialforegoing:black_hole_unit");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<enderio:item_alloy_ingot:8>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <thermalfoundation:glass_alloy:7>, <enderio:item_alloy_ingot:8>],
-    [<thermalfoundation:material:359>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <thermalfoundation:material:359>],
+    [<ore:plateEnderium>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <ore:plateEnderium>],
     [<minecraft:ender_eye>, <mekanism:basicblock:6>.withTag({tier: 3}), <ore:itemEnhancedMachineChassi>, <mekanism:basicblock:6>.withTag({tier: 3}), <minecraft:ender_eye>],
-    [<thermalfoundation:material:359>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <thermalfoundation:material:359>],
-    [<enderio:item_alloy_ingot:8>, <thermalfoundation:material:359>, <minecraft:ender_eye>, <thermalfoundation:material:359>, <enderio:item_alloy_ingot:8>]])
+    [<ore:plateEnderium>, <enderio:item_material:16>, <mekanism:basicblock:6>.withTag({tier: 3}), <enderio:item_material:16>, <ore:plateEnderium>],
+    [<enderio:item_alloy_ingot:8>, <ore:plateEnderium>, <minecraft:ender_eye>, <ore:plateEnderium>, <enderio:item_alloy_ingot:8>]])
   .setFluid(<liquid:ender> * 16000)
   .setSecondaryIngredients([<mekanism:controlcircuit:3>, <enderio:item_basic_capacitor:2> * 4])
   .addTool(<ore:artisansSolderer>, 175)

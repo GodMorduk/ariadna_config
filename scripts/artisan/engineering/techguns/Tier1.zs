@@ -13,14 +13,14 @@ recipes.removeByRecipeName("techguns:pistol");
 recipes.removeByRecipeName("techguns:pistol_alt");
 
 recipes.addShaped(<techguns:handcannon>.withTag({ammo: 0 as short}),[
-    [<minecraft:iron_block>, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:iron_block>, <minecraft:flint_and_steel>],
+    [<minecraft:iron_block>, <ore:ingotIron>, null],
+    [<ore:ingotIron>, <minecraft:iron_block>, <minecraft:flint_and_steel>],
     [null, <minecraft:tripwire_hook>, <techguns:itemshared:42>]]);
 	
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
-    [<techguns:itemshared:38>, <minecraft:iron_block>, <minecraft:iron_ingot>],
+    [<techguns:itemshared:38>, <ore:ingotIron>, null],
+    [<techguns:itemshared:38>, <minecraft:iron_block>, <ore:ingotIron>],
     [null, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:sawedoff>.withTag({ammo: 0 as short}))
@@ -28,7 +28,7 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [<techguns:itemshared:38>, <ore:ingotIron>, <ore:ingotIron>],
     [<immersiveengineering:material:1>, <techguns:itemshared:33>, <immersiveengineering:material:13>],
     [null, null, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
@@ -37,8 +37,8 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <minecraft:iron_ingot>, <techguns:itemshared:57>],
-    [<ore:plateIron>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
+    [<techguns:itemshared:38>, <ore:ingotIron>, <techguns:itemshared:57>],
+    [<ore:plateIron>, <techguns:itemshared:33>, <ore:ingotIron>],
     [null, <techguns:itemshared:10>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:mac10>.withTag({ammo: 0 as short}))
@@ -46,7 +46,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <minecraft:iron_ingot>, null],
+    [<techguns:itemshared:38>, <ore:ingotIron>, null],
     [<immersiveengineering:material:13>, <minecraft:iron_block>, <techguns:itemshared:57>],
     [<techguns:itemshared:14>, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
@@ -64,8 +64,8 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<ore:plateIron>, <techguns:itemshared:33>, <minecraft:iron_ingot>],
+    [<techguns:itemshared:38>, <ore:ingotIron>, <ore:ingotIron>],
+    [<ore:plateIron>, <techguns:itemshared:33>, <ore:ingotIron>],
     [null, <techguns:itemshared:12>, <minecraft:iron_nugget>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:pistol>.withTag({ammo: 0 as short}))
@@ -75,7 +75,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateIron>, <minecraft:tnt>],
     [null, <immersiveengineering:material>, <ore:plateIron>],
-    [<minecraft:iron_ingot>, null, null]])
+    [<ore:ingotIron>, null, null]])
   .addTool(<ore:artisansDriver>, 10)
   .addOutput(<techguns:stielgranate> * 2)
   .create();

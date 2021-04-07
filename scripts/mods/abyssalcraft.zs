@@ -2,9 +2,9 @@ import mods.artisanworktables.builder.RecipeBuilder;
 recipes.removeByRecipeName("abyssalcraft:necronomicon");//Удаление первого некрономикона
 RecipeBuilder.get("mage")
   .setShaped([
-    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:iron_ingot>],
+    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <ore:ingotIron>],
     [<minecraft:rotten_flesh>, <minecraft:book>, <minecraft:rotten_flesh>],
-    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:iron_ingot>]])
+    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <ore:ingotIron>]])
   .setFluid(<liquid:molten_tar> * 1000)
   .setSecondaryIngredients([<minecraft:chicken> * 5])
   .addTool(<ore:artisansAthame>, 25)
@@ -656,9 +656,9 @@ RecipeBuilder.get("tailor")
   recipes.removeByRecipeName("abyssalcraft:ironp");//Удаление железной тарелки
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
+    [null, <ore:ingotIron>, null],
+    [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+    [null, <ore:ingotIron>, null]])
   .addTool(<ore:artisansHammer>, 25)
   .addOutput(<abyssalcraft:ironp> * 2)
   .create();
@@ -723,9 +723,9 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("abyssalcraft:coin_alt_alt");//Удаление монеты
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:flint>, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
+    [null, <ore:ingotIron>, null],
+    [<ore:ingotIron>, <minecraft:flint>, <ore:ingotIron>],
+    [null, <ore:ingotIron>, null]])
   .addTool(<ore:artisansHammer>, 10)
   .addTool(<ore:artisansPliers>, 10)
   .addOutput(<abyssalcraft:coin>)

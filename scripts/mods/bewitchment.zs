@@ -15,7 +15,7 @@ RecipeBuilder.get("mage")
     [<bewitchment:liquid_witchcraft>, <ore:netherStar>, <minecraft:shulker_shell>, <ore:netherStar>, <bewitchment:liquid_witchcraft>],
     [null, <bewitchment:liquid_witchcraft>, <minecraft:ender_eye>, <bewitchment:liquid_witchcraft>, null]])
   .setFluid(<liquid:lava> * 5000)
-  .setSecondaryIngredients([<bewitchment:white_candle> * 5, <minecraft:emerald>, <minecraft:diamond> * 2, <minecraft:gold_ingot> * 4, <minecraft:dye:1>])
+  .setSecondaryIngredients([<bewitchment:white_candle> * 5, <minecraft:emerald>, <minecraft:diamond> * 2, <ore:ingotGold> * 4, <minecraft:dye:1>])
   .addTool(<ore:artisansMortar>, 500)
   .addTool(<ore:artisansGrimoire>, 500)
   .addTool(<ore:artisansSifter>, 500)
@@ -207,9 +207,9 @@ RecipeBuilder.get("mage")
 recipes.removeByRecipeName("bewitchment:goblet"); // Удаление кубка
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
+    [<ore:ingotIron>, null, <ore:ingotIron>],
+    [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+    [null, <ore:ingotIron>, null]])
   .addTool(<ore:artisansHammer>, 5)
   .addOutput(<bewitchment:goblet>)
   .create();
