@@ -4,12 +4,6 @@ recipes.removeByRecipeName("alchemistry:milk");
 
 // 1 Tier
 
-recipes.removeByRecipeName("alchemistry:patchouli_book");
-RecipeBuilder.get("chemist")
-  .setShapeless([<minecraft:book>, <minecraft:stone_pressure_plate>])
-  .addOutput(<patchouli:guide_book>.withTag({"patchouli:book": "alchemistry:alchemistry_book"}))
-  .create();
-
 recipes.removeByRecipeName("alchemistry:periodic_diagram");
 RecipeBuilder.get("chemist")
   .setShaped([

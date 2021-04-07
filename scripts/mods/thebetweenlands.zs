@@ -4,7 +4,7 @@ recipes.addShaped("weedwood_chest", <thebetweenlands:weedwood_chest>,
  [[<thebetweenlands:weedwood_planks>,<thebetweenlands:weedwood_planks>,<thebetweenlands:weedwood_planks>],
   [<thebetweenlands:weedwood_planks>,<ore:ingotIron>,<thebetweenlands:weedwood_planks>],
   [<thebetweenlands:weedwood_planks>,<thebetweenlands:weedwood_planks>,<thebetweenlands:weedwood_planks>]]);
-
+recipes.removeByRecipeName("thebetweenlands:weedwood_workbench");
 
 // Меняем рецепт, чтобы выдача была 1 штука
 recipes.removeByRecipeName("thebetweenlands:sulfur_torch"); 
