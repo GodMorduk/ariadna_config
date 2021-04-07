@@ -289,7 +289,7 @@ RecipeBuilder.get("chemist")
 ##Верстаки фермеров
 recipes.addShaped(<artisanworktables:worktable:10>,[
     [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>],
-    [<pyrotech:crude_hoe>, <thebetweenlands:manual_hl>, <pyrotech:crude_shovel>],
+    [<pyrotech:crude_hoe>, <animania:animania_manual>, <pyrotech:crude_shovel>],
     [<minecraft:wheat_seeds>, <minecraft:crafting_table>, <minecraft:dye:15>]]);
   
 RecipeBuilder.get("farmer")

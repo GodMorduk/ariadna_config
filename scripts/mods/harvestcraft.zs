@@ -17,3 +17,7 @@ RecipeBuilder.get("tanner")
   .addTool(<ore:artisansNeedle>, 5)
   .addOutput(<harvestcraft:hardenedleatheritem>)
   .create();
+
+recipes.removeByRecipeName("harvestcraft:cheesteitem_itemsalt");
+recipes.removeByRecipeName("harvestcraft:cheesteitem_foodsalt");
+recipes.removeByRecipeName("harvestcraft:cheesteitem_dustsalt");
