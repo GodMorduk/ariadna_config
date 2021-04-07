@@ -7,7 +7,6 @@ recipes.removeByRecipeName("minecraft:stone_sword");
 recipes.removeByRecipeName("minecraft:iron_sword");
 recipes.removeByRecipeName("minecraft:diamond_sword");
 recipes.removeByRecipeName("minecraft:golden_sword");
-recipes.removeByRecipeName("atum:limestone_sword");
 recipes.removeByRecipeName("atum:stoneguard_sword");
 recipes.removeByRecipeName("atum:stoneguard_greatsword");
 recipes.removeByRecipeName("bewitchment:equipment/tool/silver_sword");
@@ -42,6 +41,9 @@ recipes.removeByRecipeName("twilightforest:equipment/ironwood_sword");
 recipes.removeByRecipeName("twilightforest:equipment/knightmetal_sword");
 recipes.removeByRecipeName("endreborn:tools/tool_sword_wolframium");
 recipes.removeByRecipeName("endreborn:tools/tool_sword_endorium");
+recipes.removeByRecipeName("pyrotech:stone_sword");
+recipes.removeByRecipeName("abyssalcraft:asword");
+recipes.removeByRecipeName("abyssalcraft:ethaxiumsword");
 
 
 //recipes.addShaped("gravitite_sword", <aether_legacy:gravitite_sword>, [[null, <ore:blockEnchantedGravitite>, null],[<ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>],[null, <ore:stickWood>, null]]);
@@ -125,6 +127,15 @@ RecipeBuilder.get("blacksmith") // Золотой меч
     [null, <spartanweaponry:material>, null]])
   .addTool(<ore:artisansHammer>, 200)
   .addOutput(<minecraft:golden_sword>)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [null, <atum:limestone>, null],
+    [<atum:limestone>, <atum:limestone>, <atum:limestone>],
+    [null, <spartanweaponry:material>, null]])
+  .addTool(<ore:artisansChisel>, 75)
+  .addOutput(<atum:limestone_sword>)
   .create();
 
 RecipeBuilder.get("mason") // Меч каменного стража
