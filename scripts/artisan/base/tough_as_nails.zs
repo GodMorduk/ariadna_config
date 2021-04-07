@@ -8,10 +8,19 @@ recipes.removeByRecipeName("toughasnails:campfire");
 
 recipes.removeByRecipeName("pyrotech:furnace");
 recipes.addShaped(<minecraft:furnace>, [
-  [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>],
-  [<pyrotech:refractory_brick_block>, <toughasnails:temperature_coil:1>, <pyrotech:refractory_brick_block>],
+  [<pyrotech:stone_bricks>, <pyrotech:brick_kiln>, <pyrotech:stone_bricks>],
+  [<pyrotech:brick_oven>, <toughasnails:temperature_coil:1>, <pyrotech:brick_crucible>],
   [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>]
 ]);
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>],
+    [<pyrotech:refractory_brick_block>, <toughasnails:temperature_coil:1>, <pyrotech:refractory_brick_block>],
+    [<pyrotech:stone_bricks>, <pyrotech:refractory_brick_block>, <pyrotech:stone_bricks>]])
+  .addTool(<ore:artisansChisel>, 25)
+  .addOutput(<minecraft:furnace>)
+  .create();
 
 RecipeBuilder.get("basic")
   .setShaped([
