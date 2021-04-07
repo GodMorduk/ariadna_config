@@ -585,7 +585,7 @@ recipes.removeByRecipeName("lycanitesmobs:mosspie");
 recipes.removeByRecipeName("lycanitesmobs:mosspie_alt");
 RecipeBuilder.get("chef")
   .setShapeless([<harvestcraft:meatpieitem>, <lycanitesmobs:cooked_aspid_meat>, <lycanitesmobs:cooked_aspid_meat>, <lycanitesmobs:cooked_aspid_meat>])
-  .setSecondaryIngredients([<tconstruct:materials:18>])
+  .setSecondaryIngredients([<erebus:materials:33>])
   .addTool(<ore:artisansKnife>, 35)
   .addTool(<ore:artisansCuttingBoard>, 35)
   .addOutput(<lycanitesmobs:moss_pie>)

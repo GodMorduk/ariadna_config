@@ -1,5 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.tconstruct.Drying;
+import crafttweaker.oredict.IOreDict;
 
 ## Banned stuff
 recipes.removeByRecipeName("conarm:invisible_ink");
@@ -9,6 +10,29 @@ recipes.removeByRecipeName("conarm:invisible_ink");
 #  .addTool(<ore:artisansBeaker>, 50)
 #  .addTool(<ore:artisansBurner>, 50)
 #  .addOutput(<conarm:invisible_ink>)
+#  .create();
+recipes.removeByRecipeName("conarm:travel_sneak");
+#RecipeBuilder.get("blacksmith")
+#  .setShaped([
+#    [<endreborn:item_end_rune>, <conarm:invisible_ink>, <endreborn:item_end_rune>],
+#    [<conarm:invisible_ink>, <conarm:travel_cloak>, <conarm:invisible_ink>],
+#    [<endreborn:item_end_rune>, <conarm:invisible_ink>, <endreborn:item_end_rune>]])
+#  .setSecondaryIngredients([<metallurgy:eximite_dust>])
+#  .addTool(<ore:artisansNeedle>, 300)
+#  .addTool(<ore:artisansShears>, 300)
+#  .addTool(<ore:artisansPunch>, 300)
+#  .addOutput(<conarm:travel_sneak>)
+#  .create();
+#RecipeBuilder.get("tailor")
+#  .setShaped([
+#    [<endreborn:item_end_rune>, <conarm:invisible_ink>, <endreborn:item_end_rune>],
+#    [<conarm:invisible_ink>, <conarm:travel_cloak>, <conarm:invisible_ink>],
+#    [<endreborn:item_end_rune>, <conarm:invisible_ink>, <endreborn:item_end_rune>]])
+#  .setSecondaryIngredients([<metallurgy:eximite_dust>])
+#  .addTool(<ore:artisansNeedle>, 250)
+#  .addTool(<ore:artisansShears>, 250)
+#  .addTool(<ore:artisansPunch>, 250)
+#  .addOutput(<conarm:travel_sneak>)
 #  .create();
 
 ## 1 Tier
@@ -347,3 +371,306 @@ RecipeBuilder.get("tanner")
   .addTool(<ore:artisansShears>, 75)
   .addOutput(<conarm:travel_potion>)
   .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/expander_w");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:gearIridium>, null],
+    [<ore:blockLapis>, <tconstruct:slime:2>, <ore:blockLapis>],
+    [null, <ore:gearIridium>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<tconstruct:materials:12>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/expander_h");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:blockLapis>, null],
+    [<ore:gearIridium>, <tconstruct:slime:2>, <ore:gearIridium>],
+    [null, <ore:blockLapis>, null]])
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansPunch>, 100)
+  .addOutput(<tconstruct:materials:12>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/reinforcement");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <tconstruct:large_plate>.withTag({Material: "dark_steel"}), <tconstruct:large_plate>.withTag({Material: "obsidian"})],
+    [<tconstruct:large_plate>.withTag({Material: "dark_steel"}), <ore:cast>, <tconstruct:large_plate>.withTag({Material: "dark_steel"})],
+    [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <tconstruct:large_plate>.withTag({Material: "dark_steel"}), <tconstruct:large_plate>.withTag({Material: "obsidian"})]])
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansPunch>, 150)
+  .addOutput(<tconstruct:materials:14>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/silky_cloth");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>],
+    [<erebus:silk>, <ore:blockGold>, <erebus:silk>],
+    [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>]])
+  .addTool(<artisanworktables:artisans_needle_iron>, 150)
+  .addTool(<artisanworktables:artisans_shears_iron>, 150)
+  .addOutput(<tconstruct:materials:15>)
+  .create();
+
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>],
+    [<erebus:silk>, <ore:blockGold>, <erebus:silk>],
+    [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>]])
+  .addTool(<artisanworktables:artisans_needle_iron>, 125)
+  .addTool(<artisanworktables:artisans_shears_iron>, 125)
+  .addOutput(<tconstruct:materials:15>)
+  .create();
+
+Drying.removeRecipe(<tconstruct:edible:34>);
+RecipeBuilder.get("chemist")
+  .setShapeless([<tconstruct:materials:11>, <ore:listAllwater>])
+  .addTool(<ore:artisansMortar>, 25)
+  .addTool(<ore:artisansBurner>, 25)
+  .addOutput(<tconstruct:edible:34>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:gadgets/piggybackpack");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "steel"}), null],
+    [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>],
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "steel"}), null]])
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansPunch>, 50)
+  .addOutput(<tconstruct:piggybackpack>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:gadgets/throwball/efln");
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<ore:plateCopper>, <minecraft:tnt>, <ore:plateCopper>],
+    [<minecraft:tnt>, <ore:dustSulfur>, <minecraft:tnt>],
+    [<ore:plateCopper>, <minecraft:tnt>, <ore:plateCopper>]])
+  .setSecondaryIngredients([<ore:dustSulfur> * 7])
+  .addTool(<ore:artisansMortar>, 25)
+  .addTool(<ore:artisansBeaker>, 25)
+  .addOutput(<tconstruct:throwball:1>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateCopper>, <minecraft:tnt>, <ore:plateCopper>],
+    [<minecraft:tnt>, <ore:dustSulfur>, <minecraft:tnt>],
+    [<ore:plateCopper>, <minecraft:tnt>, <ore:plateCopper>]])
+  .setSecondaryIngredients([<ore:dustSulfur> * 7])
+  .addTool(<ore:artisansMortar>, 40)
+  .addTool(<ore:artisansBeaker>, 40)
+  .addOutput(<tconstruct:throwball:1>)
+  .create();
+
+recipes.removeByRecipeName("conarm:resist_mat");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<tconstruct:large_plate>.withTag({Material: "refinedobsidian"}), <tconstruct:large_plate>.withTag({Material: "dark_steel"}), <tconstruct:large_plate>.withTag({Material: "refinedobsidian"})],
+    [<tconstruct:large_plate>.withTag({Material: "dark_steel"}), <tconstruct:materials:14>, <tconstruct:large_plate>.withTag({Material: "dark_steel"})],
+    [<tconstruct:large_plate>.withTag({Material: "refinedobsidian"}), <tconstruct:large_plate>.withTag({Material: "dark_steel"}), <tconstruct:large_plate>.withTag({Material: "refinedobsidian"})]])
+  .setSecondaryIngredients([<ore:dustBlackSteel>])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPunch>, 200)
+  .addTool(<ore:artisansGemCutter>, 200)
+  .addOutput(<conarm:resist_mat>)
+  .create();
+
+recipes.removeByRecipeName("conarm:resist_mat_proj");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<tconstruct:large_plate>.withTag({Material: "invar"}), <ore:ingotSteeleaf>, <tconstruct:large_plate>.withTag({Material: "iron"})],
+    [<ore:gemAquaMiddleGem>, <tconstruct:materials:14>, <ore:gemAquaMiddleGem>],
+    [<tconstruct:large_plate>.withTag({Material: "silver"}), <ore:ingotSteeleaf>, <tconstruct:large_plate>.withTag({Material: "steel"})]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPunch>, 200)
+  .addTool(<ore:artisansGemCutter>, 200)
+  .addOutput(<conarm:resist_mat_proj>)
+  .create();
+
+recipes.removeByRecipeName("conarm:gauntlet_mat_attack");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <techguns:itemshared:103>, <techguns:itemshared:103>, <techguns:itemshared:103>, null],
+    [null, <refinedstorage:quartz_enriched_iron_block>, <erebus:materials:64>, <refinedstorage:quartz_enriched_iron_block>, <techguns:itemshared:103>],
+    [<techguns:itemshared:103>, <ore:blockValonite>, <conarm:gauntlet_mat>, <ore:blockValonite>, null],
+    [null, <refinedstorage:quartz_enriched_iron_block>, <erebus:materials:64>, <refinedstorage:quartz_enriched_iron_block>, null]])
+  .addTool(<ore:artisansHammer>, 250)
+  .addTool(<ore:artisansGemCutter>, 250)
+  .addTool(<ore:artisansPunch>, 250)
+  .addOutput(<conarm:gauntlet_mat_attack>)
+  .create();
+
+recipes.removeByRecipeName("conarm:gauntlet_mat_speed");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <tconstruct:tough_tool_rod>.withTag({Material: "redstone_alloy"}), <tconstruct:tough_tool_rod>.withTag({Material: "redstone_alloy"}), <tconstruct:tough_tool_rod>.withTag({Material: "redstone_alloy"}), null],
+    [null, <tconstruct:large_plate>.withTag({Material: "redstone_alloy"}), <thebetweenlands:items_crushed:28>, <tconstruct:large_plate>.withTag({Material: "redstone_alloy"}), <tconstruct:tough_tool_rod>.withTag({Material: "redstone_alloy"})],
+    [<tconstruct:tough_tool_rod>.withTag({Material: "redstone_alloy"}), <thebetweenlands:items_crushed:28>, <conarm:gauntlet_mat>, <thebetweenlands:items_crushed:28>, null],
+    [null, <tconstruct:large_plate>.withTag({Material: "redstone_alloy"}), <thebetweenlands:items_crushed:28>, <tconstruct:large_plate>.withTag({Material: "redstone_alloy"}), null]])
+  .setFluid(<liquid:redstone> * 16000)
+  .setSecondaryIngredients([<erebus:red_gem> * 16, <thebetweenlands:items_crushed:25> * 16, <thebetweenlands:items_crushed:21> * 8])
+  .addTool(<ore:artisansHammer>, 250)
+  .addTool(<ore:artisansPunch>, 250)
+  .addTool(<ore:artisansGemCutter>, 250)
+  .addOutput(<conarm:gauntlet_mat_speed>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/silky_jewel");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <ore:blockEmerald>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>]])
+  .addTool(<ore:artisansGemCutter>, 200)
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPunch>, 200)
+  .addOutput(<tconstruct:materials:16>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <ore:blockEmerald>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>]])
+  .addTool(<ore:artisansGemCutter>, 150)
+  .addTool(<ore:artisansHammer>, 150)
+  .addTool(<ore:artisansPunch>, 150)
+  .addOutput(<tconstruct:materials:16>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <ore:gemTopaz>, <tconstruct:materials:15>],
+    [<tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>]])
+  .addTool(<ore:artisansGemCutter>, 125)
+  .addTool(<ore:artisansHammer>, 125)
+  .addTool(<ore:artisansPunch>, 125)
+  .addOutput(<tconstruct:materials:16>)
+  .create();
+
+recipes.removeByRecipeName("tconstruct:tools/materials/ball_of_moss");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:compost>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<erebus:compost>, <erebus:wall_plants_cultivated:1>, <erebus:materials:33>, <erebus:wall_plants_cultivated:1>, <erebus:compost>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:compost>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>]])
+  .setFluid(<liquid:experience> * 16000)
+  .addTool(<ore:artisansBeaker>, 150)
+  .addTool(<ore:artisansMortar>, 150)
+  .addTool(<ore:artisansBurner>, 150)
+  .setSecondaryIngredients([<erebus:compost> * 8])
+  .addOutput(<tconstruct:materials:18>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:compost>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<erebus:compost>, <erebus:wall_plants_cultivated:1>, <erebus:materials:33>, <erebus:wall_plants_cultivated:1>, <erebus:compost>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:compost>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>]])
+  .setFluid(<liquid:experience> * 16000)
+  .addTool(<ore:artisansBeaker>, 120)
+  .addTool(<ore:artisansMortar>, 120)
+  .addTool(<ore:artisansBurner>, 120)
+  .setSecondaryIngredients([<erebus:compost> * 8])
+  .addOutput(<tconstruct:materials:18>)
+  .create();
+
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:compost>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<thebetweenlands:items_crushed:55>, <thebetweenlands:items_crushed:55>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:27>, <thebetweenlands:items_crushed:27>],
+    [<erebus:compost>, <erebus:wall_plants_cultivated:1>, <erebus:materials:33>, <erebus:wall_plants_cultivated:1>, <erebus:compost>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:wall_plants_cultivated:1>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>],
+    [<twilightforest:twilight_plant>, <twilightforest:twilight_plant>, <erebus:compost>, <thebetweenlands:items_crushed:38>, <thebetweenlands:items_crushed:38>]])
+  .setFluid(<liquid:experience> * 16000)
+  .addTool(<ore:artisansBeaker>, 100)
+  .addTool(<ore:artisansMortar>, 100)
+  .addTool(<ore:artisansBurner>, 100)
+  .setSecondaryIngredients([<erebus:compost> * 8])
+  .addOutput(<tconstruct:materials:18>)
+  .create();
+
+Drying.removeRecipe(<tconstruct:edible:32>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<tconstruct:slime:2>, <tconstruct:slime:2>, <tconstruct:slime:2>],
+    [<tconstruct:slime:2>, <minecraft:experience_bottle>, <tconstruct:slime:2>],
+    [<tconstruct:slime:2>, <tconstruct:slime:2>, <tconstruct:slime:2>]])
+  .addTool(<ore:artisansMortar>, 50)
+  .addTool(<ore:artisansBeaker>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .addOutput(<tconstruct:edible:32>)
+  .create();
+
+Drying.removeRecipe(<tconstruct:edible:33>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<tconstruct:slime:3>, <tconstruct:slime:3>, <tconstruct:slime:3>],
+    [<tconstruct:slime:3>, <minecraft:experience_bottle>, <tconstruct:slime:3>],
+    [<tconstruct:slime:3>, <tconstruct:slime:3>, <tconstruct:slime:3>]])
+  .addTool(<ore:artisansMortar>, 50)
+  .addTool(<ore:artisansBeaker>, 50)
+  .addTool(<ore:artisansBurner>, 50)
+  .addOutput(<tconstruct:edible:33>)
+  .create();
+
+var slimeballs = [
+  "Green",
+  "Blue",
+  "Purple",
+  "Blood",
+  "Magma"
+] as string[];
+
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/green");
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/blue");
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/purple");
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/blood");
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/magma");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/green");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/blue");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/purple");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/blood");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/magma");
+
+for i in 0 to 5 {
+  var slimeball = oreDict.get("slimeball" + slimeballs[i]);
+  RecipeBuilder.get("blacksmith")
+    .setShaped([
+      [null, null, <industrialforegoing:pink_slime_ingot>, null, null],
+      [null, <tconstruct:bow_string>.withTag({Material: "slimevine_blue"}), <tconstruct:large_plate>.withTag({Material: "knightslime"}), <tconstruct:bow_string>.withTag({Material: "slimevine_blue"}), null],
+      [<industrialforegoing:pink_slime_ingot>, <tconstruct:large_plate>.withTag({Material: "knightslime"}), <thebetweenlands:simple_slingshot>, <tconstruct:large_plate>.withTag({Material: "knightslime"}), <industrialforegoing:pink_slime_ingot>],
+      [null, slimeball, <tconstruct:large_plate>.withTag({Material: "knightslime"}), slimeball, null],
+      [null, null, slimeball, null, null]])
+    .setSecondaryIngredients([<ore:slimecrystalGreen> * 32, <ore:slimecrystalBlue> * 32, <ore:slimecrystalMagma> * 32, <toughasnails:jelled_slime> * 16, <tconstruct:slime_congealed>.definition.makeStack(i) * 32])
+    .addTool(<ore:artisansMortar>, 500)
+    .addTool(<ore:artisansGemCutter>, 500)
+    .addTool(<ore:artisansBurner>, 500)
+    .addOutput(<tconstruct:slimesling>.definition.makeStack(i))
+    .create();
+
+  RecipeBuilder.get("blacksmith")
+    .setShaped([
+      [null, null, slimeball, null, null],
+      [null, slimeball, <industrialforegoing:pink_slime_ingot>, slimeball, null],
+      [slimeball, <industrialforegoing:pink_slime_ingot>, <conarm:boots>.withTag({TinkerData: {Materials: ["knightslime", "knightslime", "knightslime"]}}), <industrialforegoing:pink_slime_ingot>, slimeball],
+      [null, slimeball, <industrialforegoing:pink_slime_ingot>, slimeball, null],
+      [null, null, slimeball, null, null]])
+    .setSecondaryIngredients([<ore:slimecrystalGreen> * 32, <ore:slimecrystalBlue> * 32, <ore:slimecrystalMagma> * 32, <tconstruct:slime_congealed>.definition.makeStack(i) * 32, <toughasnails:jelled_slime> * 16])
+    .addTool(<ore:artisansMortar>, 500)
+    .addTool(<ore:artisansGemCutter>, 500)
+    .addTool(<ore:artisansBurner>, 500)
+    .addOutput(<tconstruct:slime_boots>.definition.makeStack(i))
+    .create();
+}
