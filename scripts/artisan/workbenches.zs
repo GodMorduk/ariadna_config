@@ -372,7 +372,7 @@ recipes.addShaped(<artisanworktables:worktable:5>,[
   
 RecipeBuilder.get("basic")
   .setShaped([
-    [<artisanworktables:artisans_cutter_invar>, <immersiveengineering:blueprint>.withTag({blueprint: "components"}), <artisanworktables:artisans_hammer_lead>],
+    [<artisanworktables:artisans_cutters_invar>, <immersiveengineering:blueprint>.withTag({blueprint: "components"}), <artisanworktables:artisans_hammer_lead>],
     [<artisanworktables:artisans_pencil_gold>, <artisanworktables:worktable:5>, <artisanworktables:artisans_handsaw_iron>],
     [<artisanworktables:mechanical_toolbox>, <immersiveengineering:wooden_device0:2>, <pyrotech:crate>]])
   .addTool(<ore:artisansFramingHammer>, 50)
