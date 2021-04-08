@@ -56,7 +56,7 @@ RecipeBuilder.get("basic")
     [<toughasnails:ice_cube>, <ore:blockIce>, <toughasnails:ice_cube>],
     [<toughasnails:ice_cube>, <ore:blockIce>, <toughasnails:ice_cube>],
     [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 25)
   .addOutput(<toughasnails:temperature_coil>)
   .create();
 

@@ -623,8 +623,8 @@ RecipeBuilder.get("engineer")
     [<ore:plateInvar>, <ore:gunpowder>, <ore:plateInvar>],
     [<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>]])
   .setSecondaryIngredients([<immersiveengineering:bullet> * 12, <ore:nuggetBrass> * 32, <ore:nuggetBrass> * 16])
-  .addTool(<artisanworktables:artisans_punch_iron>, 15)
-  .addTool(<artisanworktables:artisans_driver_iron>, 15)
+  .addTool(<ore:artisansPunch>, 15)
+  .addTool(<ore:artisansDriver>, 15)
   .addOutput(<flansmod:dwroselupammo>)
   .create();
 

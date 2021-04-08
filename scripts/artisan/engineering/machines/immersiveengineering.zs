@@ -1480,7 +1480,7 @@ RecipeBuilder.get("engineer")
     [<ore:gearLead>, <minecraft:dispenser>, <ore:gearLead>],
     [<ore:plankTreatedWood>, <thermalexpansion:frame:64>, <ore:plankTreatedWood>],
     [<ore:gearCopper>, <immersiveengineering:material:8>, <ore:gearCopper>]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 25)
   .addOutput(<engineersdecor:factory_placer>)
   .create();
 

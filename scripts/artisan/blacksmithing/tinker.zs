@@ -411,8 +411,8 @@ RecipeBuilder.get("blacksmith")
     [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>],
     [<erebus:silk>, <ore:blockGold>, <erebus:silk>],
     [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>]])
-  .addTool(<artisanworktables:artisans_needle_iron>, 150)
-  .addTool(<artisanworktables:artisans_shears_iron>, 150)
+  .addTool(<ore:artisansNeedle>, 150)
+  .addTool(<ore:artisansShears>, 150)
   .addOutput(<tconstruct:materials:15>)
   .create();
 
@@ -421,8 +421,8 @@ RecipeBuilder.get("tailor")
     [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>],
     [<erebus:silk>, <ore:blockGold>, <erebus:silk>],
     [<thebetweenlands:items_crushed:31>, <erebus:silk>, <thebetweenlands:items_crushed:31>]])
-  .addTool(<artisanworktables:artisans_needle_iron>, 125)
-  .addTool(<artisanworktables:artisans_shears_iron>, 125)
+  .addTool(<ore:artisansNeedle>, 125)
+  .addTool(<ore:artisansShears>, 125)
   .addOutput(<tconstruct:materials:15>)
   .create();
 

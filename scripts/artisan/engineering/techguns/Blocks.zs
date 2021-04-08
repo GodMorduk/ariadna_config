@@ -180,7 +180,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateTin>, <ore:itemRawRubber>, <ore:plateTin>],
     [<ore:plateTin>, null, <ore:plateTin>],
     [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]])
-  .addTool(<artisanworktables:artisans_driver_iron>, 15)
+  .addTool(<ore:artisansDriver>, 15)
   .addOutput(<techguns:itemshared:24>)
   .create();
 
@@ -190,7 +190,7 @@ RecipeBuilder.get("engineer")
     [<ore:itemRubber>, <ore:blockGlassHardened>, <ore:itemRubber>],
     [<ore:blockGlassHardened>, null, <ore:blockGlassHardened>],
     [<ore:itemRubber>, <ore:blockGlassHardened>, <ore:itemRubber>]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 15)
   .addOutput(<techguns:itemshared:28>)
   .create();
 

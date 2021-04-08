@@ -185,7 +185,7 @@ RecipeBuilder.get("basic")
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [null, <minecraft:clay_ball>, null]])
-  .addTool(<artisanworktables:artisans_burner_iron>, 10)
+  .addTool(<ore:artisansBurner>, 10)
   .addOutput(<stewprops:random_jug>.withTag({display: {Name: "Кувшин"}}))
   .create();
 

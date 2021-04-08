@@ -17,6 +17,6 @@ RecipeBuilder.get("carpenter")
     [<blockcraftery:editable_block>, <blockcraftery:editable_block>, <blockcraftery:editable_block>],
     [<blockcraftery:editable_block>, <ore:ingotIron>, <blockcraftery:editable_block>],
     [<blockcraftery:editable_block>, <blockcraftery:editable_block>, <blockcraftery:editable_block>]])
-  .addTool(<artisanworktables:artisans_framing_hammer_iron>, 1)
+  .addTool(<ore:artisansFramingHammer>, 5)
   .addOutput(<blockcraftery:editable_block_reinforced> * 8)
   .create();

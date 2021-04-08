@@ -199,11 +199,11 @@ for i in 0 to 16 {
   recipeName = recipeName + "_alt";
   recipes.removeByRecipeName(recipeName);
   RecipeBuilder.get("basic")
-  .setShaped([
-    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
-    [<ore:paneGlass>, dyes[i], <ore:paneGlass>],
-    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]])
-  .addTool(<ore:artisansBurner>, 5)
-  .addOutput(<animania:hamster_ball_colored>.definition.makeStack(i))
-  .create();
+    .setShaped([
+      [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
+      [<ore:paneGlass>, dyes[i], <ore:paneGlass>],
+      [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]])
+    .addTool(<ore:artisansBurner>, 5)
+    .addOutput(<animania:hamster_ball_colored>.definition.makeStack(i))
+    .create();
 }

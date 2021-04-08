@@ -284,7 +284,7 @@ RecipeBuilder.get("engineer")
     [null, <openmodularturrets:intermediate_tiered:11>, null],
     [<ore:plateSteel>, <openmodularturrets:intermediate_tiered:6>, <ore:plateSteel>],
     [<ore:plateSteel>, <enderio:item_material>, <ore:plateSteel>]])
-  .addTool(<ore:artisansSpanner>, 1)
+  .addTool(<ore:artisansSpanner>, 100)
   .addOutput(<openmodularturrets:machine_gun_turret>)
   .create();
   
