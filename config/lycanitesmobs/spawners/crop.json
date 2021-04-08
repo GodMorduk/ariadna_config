@@ -13,24 +13,28 @@
   "conditions": [],
   "triggers": [
     {
-      "type": "crop",
-      "chance": 0.005
+      "type": "world",
+      "chance": 0.25,
+      "tickRate": 600
     }
   ],
   "locations": [
     {
-      "type": "base",
+      "type": "random",
       "rangeMin": [
+        32,
         0,
-        0,
-        0
+        32
       ],
       "rangeMax": [
-        0,
-        0,
-        0
+        42,
+        48,
+        42
       ],
-      "sorting": "random"
+      "sorting": "random",
+      "limit": 32,
+      "solidGround": true,
+      "underground": false
     }
   ],
   "mobSpawns": [
