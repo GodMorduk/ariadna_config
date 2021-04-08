@@ -1,22 +1,6 @@
 import crafttweaker.item.IIngredient;
 import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.removeByRecipeName("pyrotech:crafting_table");
-recipes.addShaped(<minecraft:crafting_table>, [
-  [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>],
-  [<pyrotech:planks_tarred>, <ore:blockIron>, <pyrotech:planks_tarred>],
-  [<pyrotech:planks_tarred>, <pyrotech:worktable_stone>, <pyrotech:planks_tarred>]
-]);
-
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-    [<ore:plankWood>, <ore:blockIron>, <ore:plankWood>],
-    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
-  .addTool(<ore:artisansHandsaw>, 25)
-  .addOutput(<minecraft:crafting_table>)
-  .create();
-
 ##Ящики для инструментов
 recipes.addShaped(<artisanworktables:toolbox>, [
 	[<ore:gearWood>, <ore:logWood>, <ore:gearWood>], 
@@ -54,7 +38,7 @@ RecipeBuilder.get("engineer")
     [<thermalfoundation:upgrade:1>, <mekanism:basicblock:8>, <thermalfoundation:upgrade:1>],
     [<thermalexpansion:frame>, <artisanworktables:workstation:6>, <thermalexpansion:frame:64>],
     [<thermalfoundation:upgrade:1>, <enderio:item_material:1>, <thermalfoundation:upgrade:1>]])
-  .setSecondaryIngredients([<immersiveengineering:metal_decoration0:5> * 64, <enderio:item_material:12> * 64, <techguns:itemshared:66> * 64, <techguns:itemshared:59> * 32, <mekanism:atomicalloy> * 32, <enderio:item_power_conduit:1> * 64, <enderio:block_simple_crafter> * 10, <techguns:itemshared:69> * 20, <enderio:item_material:14> * 16])
+  .setSecondaryIngredients([<immersiveengineering:metal_decoration0:5> * 64, <enderio:item_material:12> * 64, <techguns:itemshared:66> * 64, <techguns:itemshared:59> * 32, <mekanism:atomicalloy> * 32, <enderio:item_power_conduit:1> * 64, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 4 as byte, Creative: 0 as byte, Energy: 0, Level: 1 as byte, Augments: [], SideCache: [1, 1, 2, 2, 0, 2] as byte[] as byte[]}) * 10, <techguns:itemshared:69> * 20, <enderio:item_material:14> * 16])
   .addTool(<ore:artisansDriver>, 1500)
   .addTool(<ore:artisansSpanner>, 1500)
   .addOutput(<artisanworktables:workshop:6>)
@@ -106,7 +90,7 @@ RecipeBuilder.get("scribe")
 RecipeBuilder.get("scribe")
   .setShaped([
     [<ore:bookshelf>, <rustic:chandelier>, <thaumcraft:thaumonomicon>],
-    [<ore:bookshelf>, <artisanworktables:workstation:8>, <artisanworktables:artisans_quill_gold>],
+    [<ore:bookshelf>, <artisanworktables:workstation:8>, <ore:artisansQuill>],
     [<thaumcraft:seal>, <minecraft:daylight_detector>, <astralsorcery:itemjournal>]])
   .setSecondaryIngredients([<artisanworktables:artisans_quill_gold>, <artisanworktables:artisans_compass_electrum>, <artisanworktables:artisans_pencil_silver>, <artisanworktables:artisans_lens_aluminum>, <artisanworktables:artisans_shears_bronze>, <artisanworktables:artisans_needle_nickel>])
   .addTool(<ore:artisansFramingHammer>, 600)
@@ -123,8 +107,8 @@ recipes.addShaped(<artisanworktables:worktable>, [
 
 RecipeBuilder.get("tailor")
   .setShaped([
-    [<atum:linen_cloth>, <atum:spinning_wheel> | <bewitchment:spinning_wheel> | <tg:spinning_wheel>, <quark:rope>],
-    [<harvestcraft:hardenedleatheritem>, <artisanworktables:worktable>, <artisanworktables:artisans_needle_iron>],
+    [<ore:string>, <ore:string>, <quark:rope>],
+    [<ore:leather>, <artisanworktables:worktable>, <artisanworktables:artisans_needle_iron>],
     [<ore:fabricHemp>, <atum:cloth_scrap>, <ore:fabricHemp>]])
   .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation>)
@@ -152,7 +136,7 @@ RecipeBuilder.get("carpenter")
   .setShaped([
     [<pyrotech:obsidian_hammer>, <pyrotech:material:20>, <pyrotech:obsidian_axe>],
     [<pyrotech:sawmill_blade_iron>, <artisanworktables:worktable:1>, <pyrotech:sawmill_blade_iron>],
-    [<pyrotech:log_pile>, <pyrotech:worktable_stone>, <pyrotech:stone_sawmill>]])
+    [<pyrotech:log_pile>, <pyrotech:worktable_stone>, <pyrotech:anvil_iron_plated>]])
   .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:1>)
   .create();
@@ -171,7 +155,7 @@ RecipeBuilder.get("carpenter")
 ##Верстаки каменщиков
 recipes.addShaped(<artisanworktables:worktable:2>, [
   [<embers:stamp_flat>, <pyrotech:worktable>, <tconstruct:book>],
-  [<minecraft:furnace>, <pyrotech:anvil_granite>, <pyrotech:stone_bricks>],
+  [<pyrotech:stone_bricks>, <pyrotech:anvil_granite>, <pyrotech:stone_bricks>],
   [<pyrotech:flint_hammer>, <ore:workbench>, <pyrotech:tongs_flint>]
 ]);
 
@@ -197,7 +181,7 @@ RecipeBuilder.get("mason")
 
 ##Верстаки кузнецов
 recipes.addShaped(<artisanworktables:worktable:3>, [
-  [<pyrotech:bloomery>, <minecraft:anvil>, <tconstruct:book>],
+  [<embers:stamp_flat>, <minecraft:anvil>, <tconstruct:book>],
   [<pyrotech:iron_hammer>, <pyrotech:anvil_iron_plated>, <pyrotech:tongs_iron>],
   [<pyrotech:worktable_stone>, <minecraft:crafting_table>, <pyrotech:worktable_stone>]
 ]);
@@ -205,8 +189,8 @@ recipes.addShaped(<artisanworktables:worktable:3>, [
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<embers:auto_hammer>, <embers:dawnstone_anvil>, <embers:breaker>],
-    [<tconstruct:hammer>.withTag({TinkerData: {Materials: ["deep_iron", "deep_iron", "deep_iron", "deep_iron"]}}), <artisanworktables:worktable:3>, <pyrotech:tongs_obsidian>],
-    [<embers:stamper>, <pyrotech:wither_forge>, <embers:stamper_base>]])
+    [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 4.5 as float, FreeModifiers: 3, Durability: 247, HarvestLevel: 3, Attack: 2.25 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 4.5 as float, FreeModifiers: 0, Durability: 247, HarvestLevel: 3, Attack: 2.25 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {Materials: ["deep_iron", "deep_iron", "deep_iron", "deep_iron"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "opistognathus_trait", color: -13813425, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["opistognathus_trait", "toolleveling"]}), <artisanworktables:worktable:3>, <pyrotech:tongs_obsidian>],
+    [<embers:stamper>, <pyrotech:crate_stone>, <embers:stamper_base>]])
   .addTool(<ore:artisansFramingHammer>, 600)
   .addOutput(<artisanworktables:workstation:3>)
   .create();
@@ -240,18 +224,12 @@ recipes.addShaped(<artisanworktables:worktable:4>, [
   [<pyrotech:worktable>, <minecraft:crafting_table>, <pyrotech:crate>]
 ]);
 
-recipes.addShaped(<artisanworktables:worktable:4>, [
-  [<pyrotech:tongs_iron>, <refinedstorage:cutting_tool>, <embers:tinker_hammer>.withTag({})],
-  [<pyrotech:shelf>, <embers:stamper>, <chisel:chisel_diamond>],
-  [<pyrotech:worktable>, <minecraft:crafting_table>, <pyrotech:crate>]
-]);
-
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<artisanworktables:artisans_quill_iron>, <astralsorcery:itemjournal>, <artisanworktables:artisans_gemcutter_iron>],
     [<artisanworktables:artisans_lens_iron>, <artisanworktables:worktable:4>, <astralsorcery:itemilluminationwand>.withTag({astralsorcery: {}})],
     [<pyrotech:shelf_stone>, <pyrotech:worktable_stone>, <artisanworktables:toolbox>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:4>)
   .create();
   
@@ -261,14 +239,14 @@ RecipeBuilder.get("jeweler")
     [<artisanworktables:artisans_lens_steel>, <artisanworktables:workstation:4>, <astralsorcery:itemgrapplewand>],
     [<immersiveengineering:toolbox>, <immersiveengineering:wooden_device0:2>, <storagedrawers:basicdrawers:2>.withTag({material: "oak"})]])
   .setSecondaryIngredients([<artisanworktables:artisans_compass_steel>, <artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_file_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_compass_steel>, <biomesoplenty:gem:4> * 16, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <astralsorcery:itemcraftingcomponent:4> * 8, <botania:manaresource:9> * 8])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansSolderer>, 100)
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansSolderer>, 600)
   .addOutput(<artisanworktables:workshop:4>)
   .create();
 
 ##Верстаки химиков
 recipes.addShaped(<artisanworktables:worktable:9>,[
-    [<artisanworktables:artisans_sifter_iron>, <patchouli:guide_book>.withTag({"patchouli:book": "alchemistry:alchemistry_book"}), <artisanworktables:artisans_mortar_iron>],
+    [<artisanworktables:artisans_sifter_steel>, <patchouli:guide_book>.withTag({"patchouli:book": "alchemistry:alchemistry_book"}), <ore:artisansMortar>],
     [<minecraft:glass_bottle>, <bewitchment:distillery>, <minecraft:glass_bottle>],
     [<bewitchment:witches_cauldron>, <minecraft:crafting_table>, <alchemistry:evaporator>]]);
   
@@ -277,7 +255,7 @@ RecipeBuilder.get("chemist")
     [<artisanworktables:artisans_beaker_iron>, <alchemistry:periodic_diagram>, <artisanworktables:artisans_lens_iron>],
     [<extraalchemy:vial_break>, <artisanworktables:worktable:9>, <extraalchemy:vial_break>],
     [<alchemistry:atomizer>, <artisanworktables:artisans_burner_iron>, <alchemistry:liquifier>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:9>)
   .create();
   
@@ -287,15 +265,15 @@ RecipeBuilder.get("chemist")
     [<alchemistry:fission_controller>, <artisanworktables:workstation:9>, <alchemistry:fusion_controller>],
     [<alchemistry:chemical_combiner>, <alchemistry:electrolyzer>, <alchemistry:chemical_dissolver>]])
   .setSecondaryIngredients([<artisanworktables:artisans_burner_steel>, <artisanworktables:artisans_sifter_steel>, <artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_lens_steel>, <artisanworktables:artisans_beaker_steel>, <artisanworktables:artisans_mortar_steel>])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansDriver>, 600)
   .addOutput(<artisanworktables:workshop:9>)
   .create();
 
 ##Верстаки фермеров
 recipes.addShaped(<artisanworktables:worktable:10>,[
     [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>],
-    [<pyrotech:crude_hoe>, <animania:animania_manual>, <pyrotech:crude_shovel>],
+    [<pyrotech:crude_hoe>, <thebetweenlands:manual_hl>, <pyrotech:crude_shovel>],
     [<minecraft:wheat_seeds>, <minecraft:crafting_table>, <minecraft:dye:15>]]);
   
 RecipeBuilder.get("farmer")
@@ -303,7 +281,7 @@ RecipeBuilder.get("farmer")
     [<minecraft:dirt:2>, <minecraft:dirt:2>, <minecraft:dirt:2>],
     [<pyrotech:flint_hoe>, <artisanworktables:worktable:10>, <pyrotech:flint_shovel>],
     [<harvestcraft:barleyseeditem>, <metallurgy:potash_fertilizer>, <harvestcraft:cauliflowerseeditem>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:10>)
   .create();
   
@@ -313,14 +291,14 @@ RecipeBuilder.get("farmer")
     [<pyrotech:obsidian_hoe>, <artisanworktables:workstation:10>, <pyrotech:obsidian_shovel>],
     [<bewitchment:mandrake_seeds>, <industrialforegoing:fertilizer>, <bewitchment:wormwood_seeds>]])
   .setSecondaryIngredients([<betternether:eye_seed> * 32, <embers:seed_dawnstone> * 16, <harvestcraft:sesameseedsitem>.withTag({Rot: {start: 483840 as long, time: 12096000 as long}}) * 16, <thaumicbases:plaxseed> * 32, <tg:shade_rose_bush_seed> * 32, <atum:emmer_seeds> * 32, <botania:grassseeds:2> * 32, <thaumicbases:sweedseed> * 32, <harvestcraft:juteseeditem> * 32])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansDriver>, 600)
   .addOutput(<artisanworktables:workshop:10>)
   .create();
 
 ##Верстаки гонаров
 recipes.addShaped(<artisanworktables:worktable:14>,[
-    [<artisanworktables:artisans_burner_copper>, <pyrotech:tongs_stone>, <artisanworktables:artisans_carver_bronze>],
+    [<ore:artisansBurner>, <pyrotech:tongs_stone>, <ore:artisansCarver>],
     [<pyrotech:bellows>, <pyrotech:shelf_stone>, <pyrotech:bellows>],
     [<pyrotech:stone_kiln>, <minecraft:crafting_table>, <pyrotech:drying_rack:1>]]);
   
@@ -329,7 +307,7 @@ RecipeBuilder.get("potter")
     [<artisanworktables:artisans_cutters_iron>, <pyrotech:tongs_iron>, <artisanworktables:artisans_razor_iron>],
     [<immersivetech:metal_device>, <artisanworktables:worktable:14>, <immersivetech:metal_device>],
     [<enderio:block_simple_furnace>, <immersiveengineering:wooden_device0:6>, <storagedrawers:basicdrawers:2>.withTag({material: "oak"})]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:14>)
   .create();
   
@@ -339,15 +317,15 @@ RecipeBuilder.get("potter")
     [<immersiveengineering:metal_device1>, <artisanworktables:workstation:14>, <immersiveengineering:metal_device1>],
     [<pyrotech:wither_forge>, <quark:charred_nether_bricks>, <mekanism:machineblock3:4>]])
   .setSecondaryIngredients([<artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_chisel_steel>, <artisanworktables:artisans_punch_steel>, <artisanworktables:artisans_hammer_steel>, <artisanworktables:artisans_compass_steel>])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansSpanner>, 100)
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansSpanner>, 600)
   .addOutput(<artisanworktables:workshop:14>)
   .create();
 
 ##Верстаки дубильщиков
 recipes.addShaped(<artisanworktables:worktable:13>,[
-    [<pyrotech:flint_shears>, <artisanworktables:artisans_punch_lead>, <pyrotech:tongs_stone>],
-    [<ore:leather>, <pyrotech:drying_rack>, <minecraft:leather>],
+    [<pyrotech:flint_shears>, <ore:artisansPunch>, <pyrotech:tongs_stone>],
+    [<improvedbackpacks:bound_leather>, <pyrotech:drying_rack>, <minecraft:leather>],
     [<futuremc:barrel>, <minecraft:crafting_table>, <pyrotech:drying_rack:1>]]);
   
 RecipeBuilder.get("tanner")
@@ -355,7 +333,7 @@ RecipeBuilder.get("tanner")
     [<artisanworktables:artisans_knife_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_needle_steel>],
     [<techguns:itemshared:77>, <artisanworktables:worktable:13>, <improvedbackpacks:tanned_leather>],
     [<rustic:liquid_barrel>, <tconstruct:rack:1>, <immersivetech:metal_device>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 300)
   .addOutput(<artisanworktables:workstation:13>)
   .create();
   
@@ -365,8 +343,8 @@ RecipeBuilder.get("tanner")
     [<abyssalcraft:skin>, <artisanworktables:workstation:13>, <harvestcraft:hardenedleatheritem>],
     [<immersivetech:metal_barrel:1>, <rustic:iron_lattice>, <immersiveengineering:metal_device1>]])
   .setSecondaryIngredients([<artisanworktables:artisans_needle_steel>, <artisanworktables:artisans_file_steel>, <artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_punch_steel>, <artisanworktables:artisans_knife_steel>, <improvedbackpacks:tanned_leather> * 32, <harvestcraft:hardenedleatheritem> * 32, <techguns:itemshared:77> * 32])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansDriver>, 600)
   .addOutput(<artisanworktables:workshop:13>)
   .create();
 
@@ -378,10 +356,10 @@ recipes.addShaped(<artisanworktables:worktable:5>,[
   
 RecipeBuilder.get("basic")
   .setShaped([
-    [<artisanworktables:artisans_cutters_invar>, <immersiveengineering:blueprint>.withTag({blueprint: "components"}), <artisanworktables:artisans_hammer_lead>],
-    [<artisanworktables:artisans_pencil_gold>, <artisanworktables:worktable:5>, <artisanworktables:artisans_handsaw_iron>],
+    [<ore:artisansCutters>, <immersiveengineering:blueprint>.withTag({blueprint: "components"}), <ore:artisansHammer>],
+    [<ore:artisansPencil>, <artisanworktables:worktable:5>, <ore:artisansHandsaw>],
     [<artisanworktables:mechanical_toolbox>, <immersiveengineering:wooden_device0:2>, <pyrotech:crate>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
+  .addTool(<ore:artisansFramingHammer>, 150)
   .addOutput(<artisanworktables:workstation:5>)
   .create();
 
@@ -391,24 +369,33 @@ RecipeBuilder.get("basic")
     [<thermalinnovation:saw:2>.withTag({Energy: 0, Mode: 2}), <artisanworktables:workstation:5>, <thermalinnovation:drill:2>.withTag({Energy: 0, Mode: 2})],
     [<techguns:basicmachine:1>, <immersiveengineering:toolbox>, <techguns:simplemachine:9>]])
   .setSecondaryIngredients([<artisanworktables:artisans_file_iron>, <artisanworktables:artisans_driver_iron>, <artisanworktables:artisans_spanner_iron>, <artisanworktables:artisans_burner_iron>, <artisanworktables:artisans_carver_iron>, <artisanworktables:artisans_solderer_iron>])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansDriver>, 100)
+  .addTool(<ore:artisansFramingHammer>, 300)
+  .addTool(<ore:artisansDriver>, 300)
   .addOutput(<artisanworktables:workshop:5>)
   .create();
 
-##Верстаки магов
+##Дизайнерские верстаки
+recipes.addShaped(<artisanworktables:worktable:12>,[
+    [<ore:paper>, <ore:paper>, <ore:feather>],
+    [<minecraft:book>, <ore:pattern>, <ore:dyeBlack>],
+    [<ore:toolShears>, <ore:workbench>, <ore:itemEmptyBottle>]]);
 
-recipes.addShaped(<artisanworktables:worktable:7>, 
-  [[<ore:nitor>, <thaumcraft:mechanism_simple>, <thaumcraft:filter>],
-  [<thaumcraft:thaumometer>, <minecraft:crafting_table>, <thaumcraft:vis_resonator>],
-  [<astralsorcery:itemwand>, <ore:materialCoraliumPearl>, <botania:fertilizer>]]);
-
-
-RecipeBuilder.get("mage")
+RecipeBuilder.get("designer")
   .setShaped([
-    [<bewitchment:pentacle>, <botania:manatablet>, <botania:tinyplanet>],
-    [<thaumcraft:infusion_matrix>, <artisanworktables:worktable:7>, <thaumcraft:everfull_urn>],
-    [<thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>]])
-  .addTool(<artisanworktables:artisans_grimoire_thaumium>, 300)
-  .addOutput(<artisanworktables:workstation:7>)
+    [<astralsorcery:itemcraftingcomponent:5>, <storagedrawers:framingtable>, <futuremc:lantern>],
+    [<ore:itemRubber>, <artisanworktables:worktable:12>, <minecraft:item_frame>],
+    [<thaumcraft:scribing_tools>, <rustic:chair_oak>, <minecraft:map>]])
+  .addTool(<ore:artisansFramingHammer>, 300)
+  .addOutput(<artisanworktables:workstation:12>)
+  .create();
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [<ore:bookshelf>, <rustic:iron_lantern>, <pyrotech:shelf_stone>],
+    [<immersiveengineering:blueprint>.withTag({blueprint: "components"}), <artisanworktables:workstation:12>, <thermalfoundation:diagram_redprint>],
+    [<cyberware:blueprint_archive>, <minecraft:daylight_detector>, <futuremc:cartography_table>]])
+  .setSecondaryIngredients([<artisanworktables:artisans_quill_silver>, <artisanworktables:artisans_compass_steel>, <artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_lens_gold>, <artisanworktables:artisans_tsquare_aluminum>, <artisanworktables:artisans_needle_steel>])
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansDriver>, 600)
+  .addOutput(<artisanworktables:workshop:12>)
   .create();
