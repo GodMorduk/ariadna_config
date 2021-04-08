@@ -30,7 +30,7 @@ RecipeBuilder.get("mage")
 recipes.removeByRecipeName("ebwizardry:arcane_workbench"); // Удаление мистического верстака
 RecipeBuilder.get("mage")
   .setShaped([
-    [<ore:ingotGold>, <minecraft:carpet:10>, <ore:ingotGold>],
+    [<minecraft:gold_ingot>, <minecraft:carpet:10>, <minecraft:gold_ingot>],
     [<ebwizardry:magic_crystal>, <minecraft:lapis_block>, <ebwizardry:magic_crystal>],
     [<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>]])
   .addTool(<ore:artisansGrimoire>, 50)
@@ -82,7 +82,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:medium_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_hat>)
   .create();
 
@@ -93,7 +93,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:large_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_robe>)
   .create();
 
@@ -104,7 +104,7 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:medium_mana_flask>])
   .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansToolWood>, 125)
   .addOutput(<ebwizardry:sage_leggings>)
   .create();
 
@@ -114,8 +114,8 @@ RecipeBuilder.get("mage")
     [<ebwizardry:magic_silk>, <ebwizardry:wizard_boots>, <ebwizardry:magic_silk>],
     [<ebwizardry:magic_crystal>, <ebwizardry:magic_silk>, <ebwizardry:magic_crystal>]])
   .setSecondaryIngredients([<ebwizardry:small_mana_flask>])
-  .addTool(<ore:artisansNeedle>, 125)
-  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<artisanworktables:artisans_needle_wood>, 125)
+  .addTool(<artisanworktables:artisans_grimoire_wood>, 125)
   .addOutput(<ebwizardry:sage_boots>)
   .create();
 
@@ -126,8 +126,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_helmet>)
   .create();
 
@@ -138,8 +138,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_chestplate>)
   .create();
 
@@ -150,8 +150,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_leggings>)
   .create();
 
@@ -162,8 +162,8 @@ RecipeBuilder.get("mage")
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
+  .addTool(<ore:artisansToolWood>, 350)
   .addOutput(<ebwizardry:battlemage_boots>)
   .create();
 
@@ -176,8 +176,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_hood>)
   .create();
 
@@ -190,8 +190,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_robe>)
   .create();
 
@@ -204,8 +204,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_leggings>)
   .create();
 
@@ -218,8 +218,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansToolWood>, 750)
+  .addTool(<ore:artisansToolWood>, 250)
   .addOutput(<ebwizardry:warlock_boots>)
   .create();
 
@@ -298,4 +298,38 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansGrimoire>, 350)
   .addTool(<ore:artisansGemCutter>, 300)
   .addOutput(<arcane_essentials:master_necromancy_sword>)
+  .create();
+
+recipes.removeByRecipeName("ancientspellcraft:sphere_cognizance"); // Удаление сферы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>],
+    [<minecraft:carpet:10>, <ebwizardry:crystal_block>, <minecraft:carpet:10>],
+    [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>]])
+  .addOutput(<ancientspellcraft:sphere_cognizance>)
+  .create();
+
+recipes.removeByRecipeName("ancientspellcraft:devoritium_arrow"); // Удаление девориумовой стрелы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:stick>, <ancientspellcraft:devoritium_ingot>],
+    [<bewitchment:ravens_feather>, null]])
+  .addOutput(<ancientspellcraft:devoritium_arrow> * 4)
+  .create();
+
+recipes.removeByRecipeName("ancientspellcraft:scribing_desk"); // Удаление девориумовой стрелы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:bookshelf>, <minecraft:writable_book>, <minecraft:glass_bottle>],
+    [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+    [<ore:logWood>, null, <ore:logWood>]])
+  .addOutput(<ancientspellcraft:scribing_desk>)
+  .create();
+
+recipes.removeByRecipeName("ancientspellcraft:devoritium_bomb"); // Удаление девориумовой стрелы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ancientspellcraft:devoritium_block>, null],
+    [<minecraft:string>, <minecraft:gunpowder>]])
+  .addOutput(<ancientspellcraft:devoritium_bomb> * 2)
   .create();
