@@ -311,7 +311,15 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:ember_activator");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ore:ingotCopper>, <embers:crystal_ember>, <ore:ingotCopper>],
+    [<embers:crystal_ember>, <ore:blockCopper>, <embers:crystal_ember>],
+    [<ore:plateIron>, <minecraft:furnace>, <ore:plateIron>]])
+  .addTool(<ore:artisansFramingHammer>, 50)
+  .addOutput(<embers:ember_activator>)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotCopper>, <embers:crystal_ember>, <ore:ingotCopper>],
     [<embers:crystal_ember>, <ore:blockCopper>, <embers:crystal_ember>],
@@ -321,7 +329,15 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:ember_emitter");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <embers:shard_ember>, null],
+    [null, <ore:ingotCopper>, null],
+    [<ore:ingotIron>, <embers:plate_caminite>, <ore:ingotIron>]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addOutput(<embers:ember_emitter> * 2)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [null, <embers:shard_ember>, null],
     [null, <ore:ingotCopper>, null],
@@ -331,7 +347,14 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:ember_receiver");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ore:ingotIron>, <embers:shard_ember>, <ore:ingotIron>],
+    [<ore:ingotCopper>, <embers:plate_caminite>, <ore:ingotCopper>]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addOutput(<embers:ember_receiver> * 2)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotIron>, <embers:shard_ember>, <ore:ingotIron>],
     [<ore:ingotCopper>, <embers:plate_caminite>, <ore:ingotCopper>]])
@@ -340,7 +363,15 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:ember_relay");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <ore:ingotCopper>, null],
+    [<ore:ingotCopper>, <embers:shard_ember>, <ore:ingotCopper>],
+    [null, <ore:plateLead>, null]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addOutput(<embers:ember_relay> * 2)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:ingotCopper>, null],
     [<ore:ingotCopper>, <embers:shard_ember>, <ore:ingotCopper>],
@@ -350,7 +381,15 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:beam_splitter");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <ore:ingotDawnstone>, null],
+    [<ore:ingotCopper>, <ore:plateSilver>, <ore:ingotCopper>],
+    [null, <ore:ingotIron>, null]])
+  .addTool(<ore:artisansDriver>, 15)
+  .addOutput(<embers:beam_splitter>)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:ingotDawnstone>, null],
     [<ore:ingotCopper>, <ore:plateSilver>, <ore:ingotCopper>],
@@ -400,7 +439,15 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:archaic_circuit");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <embers:archaic_brick>, null],
+    [<embers:archaic_brick>, <ore:ingotDawnstone>, <embers:archaic_brick>],
+    [null, <embers:archaic_brick>, null]])
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<embers:archaic_circuit>)
+  .create();
+RecipeBuilder.get("engineer")
   .setShaped([
     [null, <embers:archaic_brick>, null],
     [<embers:archaic_brick>, <ore:ingotDawnstone>, <embers:archaic_brick>],
@@ -747,12 +794,19 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:field_chart");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("engineer")
   .setShaped([
-    [<embers:archaic_brick>, <embers:archaic_brick>, <embers:archaic_brick>],
+    [<embers:archaic_bricks>, <embers:archaic_bricks>, <embers:archaic_bricks>],
     [<embers:ancient_motive_core>, <embers:ember_cluster>, <embers:ancient_motive_core>],
-    [<embers:archaic_brick>, <embers:archaic_brick>, <embers:archaic_brick>]])
-  .addTool(<ore:artisansFramingHammer>, 75)
+    [<embers:archaic_bricks>, <embers:archaic_bricks>, <embers:archaic_bricks>]])
+  .addTool(<ore:artisansDriver>, 75)
+  .addOutput(<embers:field_chart>)
+  .create();
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<embers:archaic_bricks>, <embers:archaic_bricks>, <embers:archaic_bricks>],
+    [<embers:ancient_motive_core>, <embers:ember_cluster>, <embers:ancient_motive_core>],
+    [<embers:archaic_bricks>, <embers:archaic_bricks>, <embers:archaic_bricks>]])
   .addTool(<ore:artisansDriver>, 75)
   .addOutput(<embers:field_chart>)
   .create();
@@ -780,15 +834,23 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:item_request");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
   .setShaped([
     [<embers:aspectus_silver>, <ore:plateSilver>, <embers:aspectus_silver>],
     [<ore:plateSilver>, <embers:item_pump>, <ore:plateSilver>],
     [<embers:aspectus_silver>, <embers:intelligent_apparatus>, <embers:aspectus_silver>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
   .addTool(<ore:artisansDriver>, 50)
   .addOutput(<embers:item_request>)
   .create();
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<embers:aspectus_silver>, <ore:plateSilver>, <embers:aspectus_silver>],
+    [<ore:plateSilver>, <embers:item_pump>, <ore:plateSilver>],
+    [<embers:aspectus_silver>, <embers:intelligent_apparatus>, <embers:aspectus_silver>]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addOutput(<embers:item_request>)
+  .create();
+
 
 recipes.removeByRecipeName("embers:charger");
 RecipeBuilder.get("blacksmith")
@@ -858,13 +920,20 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 recipes.removeByRecipeName("embers:alchemy_tablet");
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
   .setShaped([
     [<embers:crystal_ember>, <ore:plateDawnstone>, <embers:crystal_ember>],
     [<embers:stairs_caminite_brick>, <ore:plateCopper>, <embers:stairs_caminite_brick>],
     [<embers:block_caminite_brick>, <ore:blockDawnstone>, <embers:block_caminite_brick>]])
-  .addTool(<ore:artisansFramingHammer>, 75)
-  .addTool(<ore:artisansDriver>, 75)
+  .addTool(<ore:artisansDriver>, 150)
+  .addOutput(<embers:alchemy_tablet>)
+  .create();
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<embers:crystal_ember>, <ore:plateDawnstone>, <embers:crystal_ember>],
+    [<embers:stairs_caminite_brick>, <ore:plateCopper>, <embers:stairs_caminite_brick>],
+    [<embers:block_caminite_brick>, <ore:blockDawnstone>, <embers:block_caminite_brick>]])
+  .addTool(<ore:artisansDriver>, 150)
   .addOutput(<embers:alchemy_tablet>)
   .create();
 
