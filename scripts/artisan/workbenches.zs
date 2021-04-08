@@ -240,6 +240,12 @@ recipes.addShaped(<artisanworktables:worktable:4>, [
   [<pyrotech:worktable>, <minecraft:crafting_table>, <pyrotech:crate>]
 ]);
 
+recipes.addShaped(<artisanworktables:worktable:4>, [
+  [<pyrotech:tongs_iron>, <refinedstorage:cutting_tool>, <embers:tinker_hammer>.withTag({})],
+  [<pyrotech:shelf>, <embers:stamper>, <chisel:chisel_diamond>],
+  [<pyrotech:worktable>, <minecraft:crafting_table>, <pyrotech:crate>]
+]);
+
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<artisanworktables:artisans_quill_iron>, <astralsorcery:itemjournal>, <artisanworktables:artisans_gemcutter_iron>],
