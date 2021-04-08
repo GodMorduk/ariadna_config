@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.harvestcrafttweaker.HarvestCraftTweaker;
 
 //убираем баланс-брейкеры
 recipes.removeByRecipeName("harvestcraft:market");
@@ -21,3 +22,6 @@ RecipeBuilder.get("tanner")
 recipes.removeByRecipeName("harvestcraft:cheesteitem_itemsalt");
 recipes.removeByRecipeName("harvestcraft:cheesteitem_foodsalt");
 recipes.removeByRecipeName("harvestcraft:cheesteitem_dustsalt");
+
+HarvestCraftTweaker.addPressing(<ore:honeycombEmpty>, <harvestcraft:beeswaxitem>, <harvestcraft:beeswaxitem>);
+HarvestCraftTweaker.addPressing(<ore:foodFilledhoneycomb>, <harvestcraft:beeswaxitem>, <harvestcraft:honeyitem>);

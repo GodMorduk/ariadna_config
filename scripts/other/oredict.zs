@@ -48,3 +48,19 @@ wax.add(<harvestcraft:beeswaxitem>);
 
 var materialPressedWax = <ore:materialPressedWax>;
 materialPressedWax.add(<rustic:beeswax>);
+
+var honeycombEmpty = <ore:honeycombEmpty>;
+honeycombEmpty.add(<biomesoplenty:honeycomb>);
+
+var foodFilledhoneycomb = <ore:foodFilledhoneycomb>;
+foodFilledhoneycomb.add(<futuremc:honeycomb>);
+foodFilledhoneycomb.add(<biomesoplenty:filled_honeycomb>);
+foodFilledhoneycomb.add(<rustic:honeycomb>);
+foodFilledhoneycomb.add(<harvestcraft:honeycombitem>);
+
+var dropHoney = <ore:dropHoney>;
+dropHoney.add(<biomesoplenty:jar_filled>);
+dropHoney.add(<futuremc:honey_bottle>);
+
+<ore:listAllfruit>.add(<biomesoplenty:berries>);
+<ore:listAllberry>.add(<biomesoplenty:berries>);

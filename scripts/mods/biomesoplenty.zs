@@ -1,3 +1,5 @@
+import mods.artisanworktables.builder.RecipeBuilder;
+
 recipes.removeByRecipeName("biomesoplenty:willow_planks");
 recipes.removeByRecipeName("biomesoplenty:ebony_planks");
 recipes.removeByRecipeName("biomesoplenty:redwood_planks");
@@ -31,3 +33,13 @@ recipes.removeByRecipeName("biomesoplenty:jacaranda_wooden_slab");
 recipes.removeByRecipeName("biomesoplenty:umbran_wooden_slab");
 recipes.removeByRecipeName("biomesoplenty:ethereal_wooden_slab");
 recipes.removeByRecipeName("biomesoplenty:cherry_wooden_slab");
+
+recipes.removeByRecipeName("biomesoplenty:terrestrial_artifact");
+RecipeBuilder.get("jeweler")
+  .setShapeless([<ore:gemRuby>, <ore:gemPeridot>, <ore:gemTopaz>, <ore:gemTanzanite>, <ore:gemMalachite>, <ore:gemSapphire>, <ore:gemAmber>, <ore:gemEmerald>])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<biomesoplenty:terrestrial_artifact>)
+  .create();
+
+recipes.addShapeless(<harvestcraft:honeyitem>, [<forge:bucketfilled>.withTag({FluidName: "honey", Amount: 1000})]);
+recipes.addShapeless(<harvestcraft:honeyitem> * 4, [<biomesoplenty:honey_block>]);
