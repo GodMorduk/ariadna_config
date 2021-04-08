@@ -127,7 +127,7 @@ RecipeBuilder.get("mage")
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
   .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGemCutter>, 350)
   .addOutput(<ebwizardry:battlemage_helmet>)
   .create();
 
@@ -139,7 +139,7 @@ RecipeBuilder.get("mage")
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 150)
   .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGemCutter>, 350)
   .addOutput(<ebwizardry:battlemage_chestplate>)
   .create();
 
@@ -151,7 +151,7 @@ RecipeBuilder.get("mage")
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 150)
   .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGemCutter>, 350)
   .addOutput(<ebwizardry:battlemage_leggings>)
   .create();
 
@@ -163,7 +163,7 @@ RecipeBuilder.get("mage")
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 150)
   .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGemCutter>, 350)
   .addOutput(<ebwizardry:battlemage_boots>)
   .create();
 
@@ -176,8 +176,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGrimoire>, 750)
+  .addTool(<ore:artisansGemCutter>, 250)
   .addOutput(<ebwizardry:warlock_hood>)
   .create();
 
@@ -190,8 +190,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGrimoire>, 750)
+  .addTool(<ore:artisansGemCutter>, 250)
   .addOutput(<ebwizardry:warlock_robe>)
   .create();
 
@@ -204,8 +204,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGrimoire>, 750)
+  .addTool(<ore:artisansGemCutter>, 250)
   .addOutput(<ebwizardry:warlock_leggings>)
   .create();
 
@@ -218,8 +218,8 @@ RecipeBuilder.get("mage")
     [null, null, <ebwizardry:magic_crystal>, null, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
   .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansQuill>, 350)
+  .addTool(<ore:artisansGrimoire>, 750)
+  .addTool(<ore:artisansGemCutter>, 250)
   .addOutput(<ebwizardry:warlock_boots>)
   .create();
 
