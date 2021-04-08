@@ -59,7 +59,7 @@ recipes.removeByRecipeName("embers:ingottin_axe");
 
 RecipeBuilder.get("blacksmith") // Цинцианитовая кирка
   .setShaped([
-    [<betternether:cincinnasite_block>, <betternether:cincinnasite_block>, <betternether:cincinnasite_block>],
+    [<ore:blockCincinnasite>, <ore:blockCincinnasite>, <ore:blockCincinnasite>],
     [null, <betternether:nether_reed>, null],
     [null, <betternether:nether_reed>, null]])
   .addTool(<ore:artisansHammer>, 150)
@@ -78,8 +78,8 @@ RecipeBuilder.get("jeweler") // Цинцианитовая алмазная ки
 
 RecipeBuilder.get("blacksmith") // Цинцианитовый топор
   .setShaped([
-    [<betternether:cincinnasite_block>, <betternether:cincinnasite_block>],
-    [<betternether:cincinnasite_block>, <betternether:nether_reed>],
+    [<ore:blockCincinnasite>, <ore:blockCincinnasite>],
+    [<ore:blockCincinnasite>, <betternether:nether_reed>],
     [null, <betternether:nether_reed>]])
   .addTool(<ore:artisansHammer>, 150)
   .addTool(<ore:artisansPunch>, 150)
