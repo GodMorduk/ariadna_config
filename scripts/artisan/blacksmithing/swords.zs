@@ -9,6 +9,7 @@ recipes.removeByRecipeName("minecraft:diamond_sword");
 recipes.removeByRecipeName("minecraft:golden_sword");
 recipes.removeByRecipeName("atum:stoneguard_sword");
 recipes.removeByRecipeName("atum:stoneguard_greatsword");
+recipes.removeByRecipeName("atum:limestone_sword");
 recipes.removeByRecipeName("bewitchment:equipment/tool/silver_sword");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_sword");
 recipes.removeByRecipeName("embers:ingotdawnstone_sword");
