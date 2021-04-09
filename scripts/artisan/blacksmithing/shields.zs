@@ -93,7 +93,7 @@ RecipeBuilder.get("carpenter")
 RecipeBuilder.get("carpenter")
   .setShaped([
 	[null, <ore:obsidian>, null], 
-	[<ore:obsidian>, <spartanshields:shield_tower_wood>, <ore:obsidian>], 
+	[<ore:obsidian>, <spartanshields:shield_basic_wood>, <ore:obsidian>], 
 	[null, <ore:obsidian>, null]])
   .addTool(<ore:artisansFramingHammer>, 100)
   .addTool(<ore:artisansHandsaw>, 100)
