@@ -873,6 +873,7 @@ RecipeBuilder.get("scribe")
   .addOutput(<erebus:rolled_newspaper>.withTag({ench: [{lvl: 5 as short, id: 18}]}))
   .create();
 
+recipes.removeByRecipeName("erebus:jade_hoe");
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<ore:gemJade>, <ore:gemJade>],
@@ -880,5 +881,5 @@ RecipeBuilder.get("jeweler")
     [null, <spartanweaponry:material>]])
   .addTool(<ore:artisansGemCutter>, 5)
   .addTool(<ore:artisansFile>, 5)
-  .addOutput(null)
+  .addOutput(<erebus:jade_hoe>)
   .create();

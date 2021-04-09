@@ -220,3 +220,23 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansBurner>, 50)
   .addOutput(<endreborn:ingot_infused>)
   .create();
+
+recipes.removeByRecipeName("endreborn:tool/tool_hoe_endorium");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotEndorium>, <ore:ingotEndorium>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<endreborn:tool_hoe_endorium>)
+  .create();
+
+recipes.removeByRecipeName("endreborn:tool/tool_hoe_wolframium");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotTungsten>, <ore:ingotTungsten>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<endreborn:tool_hoe_wolframium>)
+  .create();
