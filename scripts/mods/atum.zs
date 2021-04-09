@@ -274,3 +274,43 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansAthame>, 25)
   .addOutput(<atum:disenchanting_scroll>)
   .create();
+
+recipes.removeByRecipeName("atum:limestone_axe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<atum:limestone_brick_carved>, <atum:limestone_brick_carved>, <atum:limestone_brick_carved>],
+    [null, <spartanweaponry:material>, null],
+    [null, <spartanweaponry:material>, null]])
+  .addTool(<ore:artisansChisel>, 25)
+  .addOutput(<atum:limestone_axe>)
+  .create();
+
+recipes.removeByRecipeName("atum:limestone_hoe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<atum:limestone_brick_carved>, <atum:limestone_brick_carved>],
+    [null, <spartanweaponry:material>],
+    [null, <spartanweaponry:material>]])
+  .addTool(<ore:artisansChisel>, 10)
+  .addOutput(<atum:limestone_hoe>)
+  .create();
+
+recipes.removeByRecipeName("atum:limestone_shovel");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<atum:limestone_brick_carved>],
+    [<spartanweaponry:material>],
+    [<spartanweaponry:material>]])
+  .addTool(<ore:artisansChisel>, 15)
+  .addOutput(<atum:limestone_shovel>)
+  .create();
+
+recipes.removeByRecipeName("atum:limestone_pickaxe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<atum:limestone_brick_carved>, <atum:limestone_brick_carved>, <atum:limestone_brick_carved>],
+    [null, <spartanweaponry:material>, null],
+    [null, <spartanweaponry:material>, null]])
+  .addTool(<ore:artisansChisel>, 25)
+  .addOutput(<atum:limestone_pickaxe>)
+  .create();

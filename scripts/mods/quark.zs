@@ -43,3 +43,4 @@ recipes.removeByRecipeName("quark:stone_sword");
 
 recipes.removeByRecipeName("quark:iron_ladder");
 Carving.addVariation("techguns:metalladder", <quark:iron_ladder>);
+recipes.removeByRecipeName("quark:stone_hoe");

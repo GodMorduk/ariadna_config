@@ -737,3 +737,53 @@ RecipeBuilder.get("blacksmith")
 // Удаление крафта досок
 recipes.removeByRecipeName("abyssalcraft:dltplank");
 recipes.removeByRecipeName("abyssalcraft:dreadplanks");
+
+recipes.removeByRecipeName("abyssalcraft:ahoe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotAbyssalnite>, <ore:ingotAbyssalnite>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<abyssalcraft:ahoe>)
+  .create();
+
+recipes.removeByRecipeName("abyssalcraft:corhoe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotLiquifiedCoralium>, <ore:ingotLiquifiedCoralium>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<abyssalcraft:corhoe>)
+  .create();
+
+recipes.removeByRecipeName("abyssalcraft:daxe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<abyssalcraft:darkstone_brick:1>, <abyssalcraft:darkstone_brick:1>],
+    [<abyssalcraft:darkstone_brick:1>, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansChisel>, 75)
+  .addOutput(<abyssalcraft:daxe>)
+  .create();
+
+recipes.removeByRecipeName("abyssalcraft:dhoe");
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<abyssalcraft:cobblestone>, <abyssalcraft:cobblestone>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansChisel>, 10)
+  .addOutput(<abyssalcraft:dhoe>)
+  .create();
+
+recipes.removeByRecipeName("abyssalcraft:dreadiumhoe");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotDreadium>, <ore:ingotDreadium>],
+    [null, <ore:stickWood>],
+    [null, <ore:stickWood>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<abyssalcraft:dreadiumhoe>)
+  .create();
