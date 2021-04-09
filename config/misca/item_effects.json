@@ -1,203 +1,203 @@
 {
   "brewcraft:hardlemonadeitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:savannazinfandelitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:bluebeeritem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:blackholewhiskeyitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:pinkmoscatoitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:beachrumitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:redbeeritem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:sakeitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 3
     }
   ],
   "brewcraft:swampmerlotitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "rustic:fluid_bottle": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:hardapplecideritem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:tiagapinotnoiritem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:totalvodkaitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "harvestcraft:rootbeersodaitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "harvestcraft:rootbeerfloatitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:spicedrumitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:goldschlageritem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:pointthreeryeitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:borgiaabsintheitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 3
     }
   ],
   "brewcraft:pmaxrieslingitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:coconutrumitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:rennalgolditem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:ghostpepperabsintheitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 3
     }
   ],
   "brewcraft:honeymeaditem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:riverchardonnayitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:malortitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 2
     }
   ],
   "brewcraft:cherryvodkaitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:uglyavocadoginitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
   ],
   "brewcraft:handmadevodkaitem": [
     {
-      "effect": "minecraft:restoresanity",
+      "effect": "misca:restoresanity",
       "duration": 1,
       "amplifier": 1
     }
