@@ -1,5 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByRecipeName("geolosys:pro_pick");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotIron>, <ore:blockIron>, <ore:blockIron>],
