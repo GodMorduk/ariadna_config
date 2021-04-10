@@ -1397,15 +1397,6 @@ recipes.addShapeless(<harvestcraft:sausageitem> * 6, [<stewblocks:object_flat_sa
 recipes.addShapeless(<animania:wheel>, [<stewblocks:object_flat_wheel_wooden_01>]);
 recipes.addShapeless(<stewblocks:object_flat_wheel_wooden_01>, [<animania:wheel>]);
 
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<ore:plankWood>, <ore:slabWood>, <ore:plankWood>],
-    [<ore:plankWood>, null, <ore:plankWood>],
-    [<ore:plankWood>, <ore:slabWood>, <ore:plankWood>]])
-  .addTool(<ore:artisansPunch>, 5)
-  .addOutput(<futuremc:barrel>)
-  .create();
-
 packRecipe("chef", <ore:cropApple>, <minecraft:apple>, <stewblocks:packed_apples>, <futuremc:barrel>);
 packRecipe("chef", <ore:cropBeet>, <minecraft:beetroot>, <stewblocks:packed_beets>, <futuremc:barrel>);
 packRecipe("chef", <ore:cropWildberry>, <rustic:wildberries>, <stewblocks:packed_berries>, <futuremc:barrel>);
