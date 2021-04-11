@@ -80,7 +80,7 @@ recipes.addShaped(<artisanworktables:worktable:8>, [
 
 RecipeBuilder.get("scribe")
   .setShaped([
-    [<minecraft:writable_book>, <thaumcraft:table_wood>, <aether_legacy:lore_book>],
+    [<minecraft:writable_book>, <thaumcraft:table_wood>, <minecraft:writable_book>],
     [<ebwizardry:oak_lectern>, <artisanworktables:worktable:8>, <bewitchment:white_candle>],
     [<thaumcraft:scribing_tools>, <rustic:chair_oak>, <minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte})]])
   .addTool(<ore:artisansFramingHammer>, 300)

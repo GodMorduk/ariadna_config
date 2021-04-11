@@ -81,22 +81,6 @@ recipes.removeByRecipeName("harvestcraft:hardenedleatherleggingsitem");
 recipes.removeByRecipeName("harvestcraft:hardenedleatherhelmitem");
 
 
-recipes.removeByRecipeName("aether_legacy:gravitite_chestplate");
-recipes.removeByRecipeName("aether_legacy:zanite_chestplate");
-recipes.removeByRecipeName("tinkersaether:valkyrie_chestplate");
-
-recipes.removeByRecipeName("tinkersaether:valkyrie_leggings");
-recipes.removeByRecipeName("aether_legacy:gravitite_leggings");
-recipes.removeByRecipeName("aether_legacy:zanite_leggings");
-
-recipes.removeByRecipeName("aether_legacy:gravitite_boots");
-recipes.removeByRecipeName("aether_legacy:zanite_boots");
-recipes.removeByRecipeName("tinkersaether:valkyrie_boots");
-
-recipes.removeByRecipeName("aether_legacy:gravitite_helmet");
-recipes.removeByRecipeName("aether_legacy:zanite_helmet");
-recipes.removeByRecipeName("tinkersaether:valkyrie_helmet");
-
 recipes.removeByRecipeName("thebetweenlands:lurker_skin_boots");
 recipes.removeByRecipeName("thebetweenlands:lurker_skin_leggings");
 recipes.removeByRecipeName("thebetweenlands:lurker_skin_chestplate");
@@ -176,7 +160,7 @@ for boot in tier2_boots {
 	  .create();
 }
 
-val tier3_boots = ["metallurgy:adamantine_boots", "metallurgy:amordrine_boots", "metallurgy:atlarus_boots", "metallurgy:celenegil_boots", "metallurgy:desichalkos_boots", "metallurgy:kalendrite_boots", "metallurgy:mithril_boots", "metallurgy:orichalcum_boots", "metallurgy:tartarite_boots", "metallurgy:vulcanite_boots", "aether_legacy:valkyrie_boots"] as string[];
+val tier3_boots = ["metallurgy:adamantine_boots", "metallurgy:amordrine_boots", "metallurgy:atlarus_boots", "metallurgy:celenegil_boots", "metallurgy:desichalkos_boots", "metallurgy:kalendrite_boots", "metallurgy:mithril_boots", "metallurgy:orichalcum_boots", "metallurgy:tartarite_boots", "metallurgy:vulcanite_boots"] as string[];
 for boot in tier3_boots {
 	val material_lowercase = boot.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -235,7 +219,7 @@ for chestplate in tier2_chestplate {
 	  .create();
 }
 
-val tier3_chestplate = ["metallurgy:adamantine_chestplate", "metallurgy:amordrine_chestplate", "metallurgy:atlarus_chestplate", "metallurgy:celenegil_chestplate", "metallurgy:desichalkos_chestplate", "metallurgy:kalendrite_chestplate", "metallurgy:mithril_chestplate", "metallurgy:orichalcum_chestplate", "metallurgy:tartarite_chestplate", "metallurgy:vulcanite_chestplate", "aether_legacy:valkyrie_chestplate"] as string[];
+val tier3_chestplate = ["metallurgy:adamantine_chestplate", "metallurgy:amordrine_chestplate", "metallurgy:atlarus_chestplate", "metallurgy:celenegil_chestplate", "metallurgy:desichalkos_chestplate", "metallurgy:kalendrite_chestplate", "metallurgy:mithril_chestplate", "metallurgy:orichalcum_chestplate", "metallurgy:tartarite_chestplate", "metallurgy:vulcanite_chestplate"] as string[];
 for chestplate in tier3_chestplate {
 	val material_lowercase = chestplate.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -293,7 +277,7 @@ val tier2_helmet = ["metallurgy:ceruclase_helmet", "metallurgy:electrum_helmet",
 		  .create();
 }
 
-val tier3_helmet = ["metallurgy:adamantine_helmet", "metallurgy:amordrine_helmet", "metallurgy:atlarus_helmet", "metallurgy:celenegil_helmet", "metallurgy:desichalkos_helmet", "metallurgy:kalendrite_helmet", "metallurgy:mithril_helmet", "metallurgy:orichalcum_helmet", "metallurgy:tartarite_helmet", "metallurgy:vulcanite_helmet", "aether_legacy:valkyrie_helmet"] as string[];
+val tier3_helmet = ["metallurgy:adamantine_helmet", "metallurgy:amordrine_helmet", "metallurgy:atlarus_helmet", "metallurgy:celenegil_helmet", "metallurgy:desichalkos_helmet", "metallurgy:kalendrite_helmet", "metallurgy:mithril_helmet", "metallurgy:orichalcum_helmet", "metallurgy:tartarite_helmet", "metallurgy:vulcanite_helmet"] as string[];
 	for helmet in tier3_helmet {
 		val material_lowercase = helmet.split(":")[1].split("_")[0];
 		val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -352,7 +336,7 @@ for legging in tier2_leggings {
 	  .create();
 }
 
-val tier3_leggings = ["metallurgy:adamantine_leggings", "metallurgy:amordrine_leggings", "metallurgy:atlarus_leggings", "metallurgy:celenegil_leggings", "metallurgy:desichalkos_leggings", "metallurgy:kalendrite_leggings", "metallurgy:mithril_leggings", "metallurgy:orichalcum_leggings", "metallurgy:tartarite_leggings", "metallurgy:vulcanite_leggings", "aether_legacy:valkyrie_leggings"] as string[];
+val tier3_leggings = ["metallurgy:adamantine_leggings", "metallurgy:amordrine_leggings", "metallurgy:atlarus_leggings", "metallurgy:celenegil_leggings", "metallurgy:desichalkos_leggings", "metallurgy:kalendrite_leggings", "metallurgy:mithril_leggings", "metallurgy:orichalcum_leggings", "metallurgy:tartarite_leggings", "metallurgy:vulcanite_leggings"] as string[];
 for legging in tier3_leggings {
 	val material_lowercase = legging.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
@@ -609,42 +593,6 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<thebetweenlands:syrmorite_helmet>)
   .create();
   
-// Zanite Gem Set
-
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemZanite>, null, <ore:gemZanite>],
-    [<ore:blockZanite>, null, <ore:blockZanite>]])
-  .addTool(<ore:artisansGemCutter>, 100)
-  .addOutput(<aether_legacy:zanite_boots>)
-  .create();
-  
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockZanite>, <ore:blockZanite>, <ore:blockZanite>],
-    [<ore:gemZanite>, null, <ore:gemZanite>],
-    [<ore:gemZanite>, null, <ore:gemZanite>]])
-  .addTool(<ore:artisansGemCutter>, 100)
-  .addOutput(<aether_legacy:zanite_leggings>)
-  .create();
- 
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemZanite>, null, <ore:gemZanite>],
-    [<ore:blockZanite>, <ore:gemZanite>, <ore:blockZanite>],
-    [<ore:blockZanite>, <ore:blockZanite>, <ore:blockZanite>]])
-  .addTool(<ore:artisansGemCutter>, 100)
-  .addOutput(<aether_legacy:zanite_chestplate>)
-  .create();
-
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockZanite>, <ore:gemZanite>, <ore:blockZanite>],
-    [<ore:gemZanite>, null, <ore:gemZanite>]])
-  .addTool(<ore:artisansGemCutter>, 100)
-  .addOutput(<aether_legacy:zanite_helmet>)
-  .create();
-  
 // Diamond Gem Set
 
 RecipeBuilder.get("jeweler")
@@ -685,45 +633,6 @@ RecipeBuilder.get("jeweler")
   .setMinimumTier(1)
   .create();
  
-// Gravitite Gem Set
-
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemGravitite>, null, <ore:gemGravitite>],
-    [<ore:blockGravitite>, null, <ore:blockGravitite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<aether_legacy:gravitite_boots>)
-  .setMinimumTier(1)
-  .create();
-  
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockGravitite>, <ore:blockGravitite>, <ore:blockGravitite>],
-    [<ore:gemGravitite>, null, <ore:gemGravitite>],
-    [<ore:gemGravitite>, null, <ore:gemGravitite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<aether_legacy:gravitite_leggings>)
-  .setMinimumTier(1)
-  .create();
- 
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemGravitite>, null, <ore:gemGravitite>],
-    [<ore:blockGravitite>, <ore:gemGravitite>, <ore:blockGravitite>],
-    [<ore:blockGravitite>, <ore:blockGravitite>, <ore:blockGravitite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<aether_legacy:gravitite_chestplate>)
-  .setMinimumTier(1)
-  .create();
-
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockGravitite>, <ore:gemGravitite>, <ore:blockGravitite>],
-    [<ore:gemGravitite>, null, <ore:gemGravitite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<aether_legacy:gravitite_helmet>)
-  .setMinimumTier(1)
-  .create();
 
 // Valonite Gem Set
 

@@ -1,17 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.removeByRecipeName("tinkersaether:valkyrie_pickaxe");
-recipes.removeByRecipeName("tinkersaether:valkyrie_axe");
-recipes.removeByRecipeName("tinkersaether:valkyrie_shovel");
-recipes.removeByRecipeName("aether_legacy:zanite_pickaxe");
-recipes.removeByRecipeName("aether_legacy:zanite_axe");
-recipes.removeByRecipeName("aether_legacy:zanite_shovel");
-recipes.removeByRecipeName("aether_legacy:gravitite_pickaxe");
-recipes.removeByRecipeName("aether_legacy:gravitite_axe");
-recipes.removeByRecipeName("aether_legacy:gravitite_shovel");
-recipes.removeByRecipeName("aether_legacy:holystone_pickaxe");
-recipes.removeByRecipeName("aether_legacy:holystone_axe");
-recipes.removeByRecipeName("aether_legacy:holystone_shovel");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_pickaxe");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_shovel");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_axe");

@@ -85,7 +85,6 @@ function add_1_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<dynamictreestc:silverwoodseed>, 50);
 	pool.addItemEntry(<dynamictreesatum:palmseed>, 50);
 	pool.addItemEntry(<dynamictreesatum:deadpalmseed>, 50);
-	pool.addItemEntry(<dynamictreestheaether:skyrootseed>, 50);
 	pool.addItemEntry(<dynamictreesttf:canopyseed>, 50);
 	pool.addItemEntry(<dynamictreesttf:darkwoodseed>, 50);
 	pool.addItemEntry(<immersiveengineering:seed>, 50);

@@ -15,10 +15,6 @@ recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_sword");
 recipes.removeByRecipeName("embers:ingotdawnstone_sword");
 recipes.removeByRecipeName("extrabotany:recipe_elementiumhammer");
 recipes.removeByRecipeName("endreborn:tools/ender_sword");
-recipes.removeByRecipeName("aether_legacy:skyroot_sword");
-recipes.removeByRecipeName("aether_legacy:holystone_sword");
-recipes.removeByRecipeName("aether_legacy:zanite_sword");
-recipes.removeByRecipeName("aether_legacy:gravitite_sword");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_sword");
 recipes.removeByRecipeName("thebetweenlands:valonite_sword");
 recipes.removeByRecipeName("thebetweenlands:octine_sword");
@@ -35,7 +31,6 @@ recipes.removeByRecipeName("thermalfoundation:tool.sword_electrum");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_platinum");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_nickel");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_steel");
-recipes.removeByRecipeName("tinkersaether:valkyrie_lance");
 recipes.removeByRecipeName("twilightforest:equipment/steeleaf_sword");
 recipes.removeByRecipeName("twilightforest:equipment/fiery_sword");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_sword");
@@ -46,11 +41,6 @@ recipes.removeByRecipeName("pyrotech:stone_sword");
 recipes.removeByRecipeName("abyssalcraft:asword");
 recipes.removeByRecipeName("abyssalcraft:ethaxiumsword");
 
-
-//recipes.addShaped("gravitite_sword", <aether_legacy:gravitite_sword>, [[null, <ore:blockEnchantedGravitite>, null],[<ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>, <ore:blockEnchantedGravitite>],[null, <ore:stickWood>, null]]);
-//recipes.addShaped("zanite_sword", <aether_legacy:zanite_sword>, [[null, <ore:blockZanite>, null], [<ore:blockZanite>, <ore:blockZanite>, <ore:blockZanite>], [null, <ore:stickWood>, null]]);
-//recipes.addShaped("holystone_sword", <aether_legacy:holystone_sword>, [ [null, <ore:holystone>, null], [<ore:holystone>, <ore:holystone>, <ore:holystone>], [null, <ore:stickWood>, null]]);
-//recipes.addShaped("skyroot_sword", <aether_legacy:skyroot_sword>, [[null, <ore:logSkyroot>, null],[<ore:logSkyroot>, <ore:logSkyroot>, <ore:logSkyroot>],[null, <ore:stickWood>, null] ]);
 
 //recipes.addShaped("sword_desichalkos", <metallurgy:desichalkos_sword>, [[null, <ore:blockDesichalkos>, null], [<ore:blockDesichalkos>, <ore:blockDesichalkos>, <ore:blockDesichalkos>], [null, <ore:stickWood>, null]]);
 //recipes.addShaped("sword_oureclase", <metallurgy:oureclase_sword>, [[null, <ore:blockOureclase>, null], [<ore:blockOureclase>, <ore:blockOureclase>, <ore:blockOureclase>], [null, <ore:stickWood>, null]]);
