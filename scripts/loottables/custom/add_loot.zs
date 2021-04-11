@@ -29,7 +29,6 @@ function add_super_rare_loot_stuff (loot_table as string) {
 
 add_common_loot_stuff("minecraft:chests/igloo_chest");
 add_common_loot_stuff("minecraft:chests/nether_bridge");
-add_common_loot_stuff("minecraft:chests/nether_bridge");
 add_common_loot_stuff("atum:chests/crate");
 add_common_loot_stuff("thebetweenlands:loot/chiromaw_nest_scattered_loot");
 add_common_loot_stuff("thebetweenlands:loot/cave_pot");
@@ -98,12 +97,3 @@ add_rare_loot_stuff("techguns:chests/survivor_hideout");
 add_common_loot_stuff("techguns:blocks/military_crate_generic");
 add_rare_loot_stuff("techguns:blocks/military_crate_armor");
 add_rare_loot_stuff("techguns:chests/gasstation");
-
-
-
-
-
-
-
-
-
