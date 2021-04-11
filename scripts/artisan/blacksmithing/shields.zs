@@ -78,7 +78,6 @@ recipes.removeByRecipeName("thebetweenlands:valonite_shield");
 recipes.removeByRecipeName("thebetweenlands:weedwood_shield");
 recipes.removeByRecipeName("twilightforest:equipment/knightmetal_shield");
 recipes.removeByRecipeName("thebetweenlands:living_weedwood_shield");
-recipes.removeByRecipeName("aether_legacy:shield_from_skyroot");
 
 RecipeBuilder.get("carpenter")
   .setShaped([

@@ -29,7 +29,7 @@ function add_super_rare_loot_stuff (loot_table as string) {
 
 add_common_loot_stuff("minecraft:chests/igloo_chest");
 add_common_loot_stuff("minecraft:chests/nether_bridge");
-add_common_loot_stuff("aether_legacy:chests/bronze_dungeon_chest");
+add_common_loot_stuff("minecraft:chests/nether_bridge");
 add_common_loot_stuff("atum:chests/crate");
 add_common_loot_stuff("thebetweenlands:loot/chiromaw_nest_scattered_loot");
 add_common_loot_stuff("thebetweenlands:loot/cave_pot");
@@ -54,7 +54,6 @@ add_rare_loot_stuff("thebetweenlands:loot/sludge_worm_dungeon_barrishee_chest");
 add_rare_loot_stuff("thebetweenlands:loot/underground_ruins_pot");
 add_rare_loot_stuff("thebetweenlands:loot/wight_fortress_pot");
 add_super_rare_loot_stuff("minecraft:chests/end_city_treasure");
-add_super_rare_loot_stuff("aether_legacy:chests/silver_dungeon_chest");
 add_super_rare_loot_stuff("atum:chests/pharaoh");
 add_super_rare_loot_stuff("atum:chests/sarcophagus_artifact");
 add_super_rare_loot_stuff("thebetweenlands:loot/cragrock_tower_chest");
