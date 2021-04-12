@@ -28,6 +28,11 @@ recipes.addShaped(<firstaid:plaster>,[
     [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>],
     [<pyrotech:thatch>, <rustic:horsetail>, <pyrotech:thatch>],
     [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>]]);
+
+recipes.addShaped(<firstaid:plaster>,[
+    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>],
+    [<pyrotech:thatch>, <rustic:aloe_vera>, <pyrotech:thatch>],
+    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>]]);
   
 RecipeBuilder.get("chemist")
   .setShaped([
