@@ -43,9 +43,9 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [<ore:runeWinterB>, <thaumadditions:crystal_block>.withTag({Aspect: "gelum"}), <ore:runeWinterB>],
+    [<ore:runeWinterB>, <futuremc:blue_ice>, <ore:runeWinterB>],
     [<ebwizardry:crystal_block:2>, <foodfunk:esky>, <ebwizardry:crystal_block:2>],
-    [<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "gelum"}]}), <ore:runeWinterB>, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "gelum"}]})]])
+    [<futuremc:blue_ice>, <ore:runeWinterB>, <futuremc:blue_ice>]])
   .addTool(<ore:artisansGrimoire>, 50)
   .addTool(<ore:artisansAthame>, 50)
   .addOutput(<foodfunk:freezer>)

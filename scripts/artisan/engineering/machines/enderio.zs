@@ -1783,3 +1783,13 @@ RecipeBuilder.get("engineer")
 
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:17>);
 mods.enderio.SoulBinder.addRecipe(<enderio:item_material:17>, <minecraft:emerald>, ["minecraft:villager_golem"], 100000, 4);
+
+recipes.removeByRecipeName("enderio:filter_gas");
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <ore:paper>, null],
+    [<ore:paper>, <mekanism:gastank>.withTag({tier: 0}), <ore:paper>],
+    [null, <ore:paper>, null]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<gasconduits:item_gas_filter> * 2)
+  .create();

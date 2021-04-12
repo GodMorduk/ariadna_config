@@ -14,21 +14,36 @@ recipes.addShaped(<stewitems:rubbing_alcohol>,[
     [<minecraft:potato>, <ore:listAllwater>, <minecraft:potato>],
     [null, <ore:listAllgrain>, null]]);
   
-recipes.addShaped(<firstaid:bandage>*2,[
+recipes.addShaped(<firstaid:bandage> * 2,[
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, null],
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, null],
     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]]);
-  
-recipes.addShaped(<firstaid:plaster>*2,[
-    [null, <ore:string>, null],
-    [<harvestcraft:wovencottonitem>, <ore:wool>, <harvestcraft:wovencottonitem>],
-    [null, <ore:string>, null]]);
 
-recipes.addShaped(<firstaid:plaster>,[
-    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>],
-    [<pyrotech:thatch>, <rustic:horsetail>, <pyrotech:thatch>],
-    [<pyrotech:thatch>, <pyrotech:strange_tuber>, <pyrotech:thatch>]]);
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:foodFilledhoneycomb> | <ore:dropHoney>, <pyrotech:strange_tuber>, <pyrotech:strange_tuber>]);
+
+RecipeBuilder.get("chemist")
+  .setShapeless([ <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:foodFilledhoneycomb> | <ore:dropHoney>, <pyrotech:strange_tuber>, <pyrotech:strange_tuber>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
+  .create();
+
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile> | <rustic:marsh_mallow>, <ore:foodFilledhoneycomb> | <ore:dropHoney>, <pyrotech:strange_tuber>, <pyrotech:strange_tuber>]);
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile> | <rustic:marsh_mallow>, <ore:foodFilledhoneycomb> | <ore:dropHoney>, <pyrotech:strange_tuber>, <pyrotech:strange_tuber>])
+  .addTool(<ore:artisansMortar>, 5)
+  .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
+  .create();
+
+recipes.addShaped(<firstaid:plaster> * 2, [
+    [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>],
+    [<pyrotech:thatch>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <pyrotech:thatch>],
+    [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>]]);
   
+recipes.addShaped(<firstaid:plaster> * 2, [
+    [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
+    [<minecraft:string>, <minecraft:wool>, <minecraft:string>]]);
+
 RecipeBuilder.get("chemist")
   .setShaped([
     [null, <thermalfoundation:material:771>, null],
