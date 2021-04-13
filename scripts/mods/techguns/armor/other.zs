@@ -22,8 +22,8 @@ RecipeBuilder.get("engineer")
     [<thermalfoundation:material:768>, <thermalfoundation:material:768>, <thermalfoundation:material:768>],
     [<industrialforegoing:plastic>, <thermalfoundation:material:768>, <industrialforegoing:plastic>]])
   .setSecondaryIngredients([<thermalfoundation:material:768> * 16])
-  .addTool(<artisanworktables:artisansDriver>, 10)
-  .addTool(<artisanworktables:artisansCutters>, 10)
+  .addTool(<ore:artisansDriver>, 10)
+  .addTool(<ore:artisansCutters>, 10)
   .addOutput(<techguns:itemshared:89>)
   .create();
 
