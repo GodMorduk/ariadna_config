@@ -7,7 +7,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntitySylph",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelSylph",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,

@@ -7,7 +7,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntitySerpix",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelSerpix",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,

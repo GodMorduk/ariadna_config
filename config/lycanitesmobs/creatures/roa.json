@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityRoa",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelRoa",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,

@@ -1,5 +1,5 @@
 {
   "name": "brute",
-  "loadDefault": true,
+  "loadDefault": false,
   "spawnEggName": "brutespawn"
 }

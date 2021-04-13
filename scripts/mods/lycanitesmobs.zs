@@ -948,11 +948,11 @@ RecipeBuilder.get("chef")
 recipes.removeByRecipeName("lycanitesmobs:undeadtreat");
 RecipeBuilder.get("chef")
   .setShaped([
-    [<foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>],
-    [<foodfunk:rotten_food>, <minecraft:rotten_flesh>, <lycanitesmobs:geistliver>, <lycanitesmobs:geistliver>, <minecraft:rotten_flesh>],
+    [<ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>],
+    [<ore:listAllRotten>, <minecraft:rotten_flesh>, <lycanitesmobs:geistliver>, <lycanitesmobs:geistliver>, <minecraft:rotten_flesh>],
     [<minecraft:bone>, <minecraft:bone>, <lycanitesmobs:beasttreat>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
-    [<foodfunk:rotten_food>, <minecraft:rotten_flesh>, <lycanitesmobs:geistliver>, <lycanitesmobs:geistliver>, <minecraft:rotten_flesh>],
-    [<foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>, <foodfunk:rotten_food>]])
+    [<ore:listAllRotten>, <minecraft:rotten_flesh>, <lycanitesmobs:geistliver>, <lycanitesmobs:geistliver>, <minecraft:rotten_flesh>],
+    [<ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>]])
   .setFluid(<liquid:sewage> * 1000)
   .setSecondaryIngredients([<lycanitesmobs:poopcharge> * 4])
   .addTool(<ore:artisansPan>, 100)

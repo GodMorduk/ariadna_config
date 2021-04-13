@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityTremor",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelTremor",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": false,
   "spawning": {
     "enabled": false,

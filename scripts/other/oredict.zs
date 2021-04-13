@@ -1,3 +1,5 @@
+#priority 20
+
 var oreCrystal = <ore:oreCrystal>;
 oreCrystal.add(<ebwizardry:crystal_ore>);
 
@@ -51,6 +53,7 @@ materialPressedWax.add(<rustic:beeswax>);
 
 var honeycombEmpty = <ore:honeycombEmpty>;
 honeycombEmpty.add(<biomesoplenty:honeycomb>);
+honeycombEmpty.add(<harvestcraft:waxcombitem>);
 
 var foodFilledhoneycomb = <ore:foodFilledhoneycomb>;
 foodFilledhoneycomb.add(<futuremc:honeycomb>);
@@ -64,3 +67,8 @@ dropHoney.add(<futuremc:honey_bottle>);
 
 <ore:listAllfruit>.add(<biomesoplenty:berries>);
 <ore:listAllberry>.add(<biomesoplenty:berries>);
+
+<ore:toolMortarandpestle>.add(<botania:pestleandmortar>);
+
+<ore:listAllhoney>.addAll(<ore:foodFilledhoneycomb>);
+<ore:listAllhoney>.addAll(<ore:dropHoney>);

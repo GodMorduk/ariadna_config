@@ -25,3 +25,9 @@ recipes.removeByRecipeName("harvestcraft:cheesteitem_dustsalt");
 
 HarvestCraftTweaker.addPressing(<ore:honeycombEmpty>, <harvestcraft:beeswaxitem>, <harvestcraft:beeswaxitem>);
 HarvestCraftTweaker.addPressing(<ore:foodFilledhoneycomb>, <harvestcraft:beeswaxitem>, <harvestcraft:honeyitem>);
+
+recipes.removeByRecipeName("harvestcraft:apiary");
+recipes.addShaped(<harvestcraft:apiary>, [
+    [<ore:plankWood>, <ore:leather>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:leather>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:leather>, <ore:plankWood>]]);

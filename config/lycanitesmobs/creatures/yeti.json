@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityYeti",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelYeti",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,
