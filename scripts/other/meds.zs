@@ -4,31 +4,28 @@ recipes.removeByRecipeName("firstaid:bandage");
 recipes.removeByRecipeName("firstaid:plaster");
 recipes.removeByRecipeName("firstaid:morphine");
 
-recipes.addShaped(<stewitems:laudanum>,[
-    [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
-    [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
-    [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]]);
-  
 recipes.addShaped(<stewitems:rubbing_alcohol>,[
     [null, <ore:listAllgrain>, null],
     [<minecraft:potato>, <ore:listAllwater>, <minecraft:potato>],
     [null, <ore:listAllgrain>, null]]);
-  
-recipes.setShapeless(<firstaid:bandage> * 2, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem> <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
+recipes.addShaped(<stewitems:laudanum>,[
+  [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
+  [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
+  [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]]);
+
+recipes.addShapeless(<firstaid:bandage> * 2, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
+
+<ore:healPlant>.add(<rustic:cohosh>);
+<ore:healPlant>.add(<rustic:horsetail>);
+<ore:healPlant>.add(<rustic:chamomile>);
+<ore:healPlant>.add(<rustic:marsh_mallow>);
+
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(15), <ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
-  .setShapeless([ <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>])
-  .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
-  .create();
-
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
-
-RecipeBuilder.get("chemist")
-  .setShapeless([<rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>])
-  .addTool(<ore:artisansMortar>, 5)
+  .setShapeless([<ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>])
+  .addTool(<ore:artisansMortar>, 15)
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
   .create();
 
@@ -40,10 +37,10 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 3)
   .create();
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
-  .setShapeless([<rustic:cohosh> | <rustic:horsetail> | <rustic:chamomile>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
+  .setShapeless([<ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
   .addTool(<ore:artisansMortar>, 5)
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 3)
   .create();
