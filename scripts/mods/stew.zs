@@ -685,12 +685,6 @@ var firefly = <ore:firefly>;
 firefly.add(<thebetweenlands:critter>.withTag({Entity: {id: "thebetweenlands:firefly"}}));
 firefly.add(<twilightforest:firefly>);
 
-var listAllRotten = <ore:listAllRotten>;
-
-for item in <ore:rotten>.items {
-  listAllRotten.add(item);
-}
-
 var flintAndSteel = <ore:flintAndSteel>;
 flintAndSteel.add(<minecraft:flint_and_steel>);
 flintAndSteel.add(<metallurgy:flint_and_ignatius>);
@@ -1379,12 +1373,12 @@ recipes.addShapeless(<thaumicbases:tobacco_leaves> * 6, [<stewblocks:object_flat
 
 RecipeBuilder.get("basic")
   .setShaped([
-    [<ore:rotten>, <ore:rotten>, <ore:rotten>],
-    [<ore:rotten>, <ore:rotten>, <ore:rotten>]])
+    [<ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>],
+    [<ore:listAllRotten>, <ore:listAllRotten>, <ore:listAllRotten>]])
   .addOutput(<stewblocks:object_flat_rats>)
   .create();
 
-recipes.addShapeless(<foodfunk:rotten_food> * 6, [<stewblocks:object_flat_rats>]);
+recipes.addShapeless(<minecraft:rotten_flesh> * 6, [<stewblocks:object_flat_rats>]);
 
 RecipeBuilder.get("chef")
   .setShaped([
