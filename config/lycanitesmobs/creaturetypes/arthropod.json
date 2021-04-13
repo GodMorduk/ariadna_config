@@ -1,5 +1,5 @@
 {
   "name": "arthropod",
-  "loadDefault": true,
+  "loadDefault": false,
   "spawnEggName": "arthropodspawn"
 }

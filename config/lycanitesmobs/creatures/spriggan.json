@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntitySpriggan",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelSpriggan",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": false,
   "spawning": {
     "enabled": false,
