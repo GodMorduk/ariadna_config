@@ -147,12 +147,25 @@ RecipeBuilder.get("tanner")
 
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
+recipes.addShaped(<tconstruct:soil>,[
+    [<ore:clayball>, <ore:gravel>, null],
+    [<minecraft:sand>, <pyrotech:material:4>, null],
+    [null, null, null]]);
+
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:clayball>, <ore:gravel>],
     [<minecraft:sand>, <pyrotech:material:4>]])
   .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<tconstruct:soil>)
+  .addOutput(<tconstruct:soil>*4)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:clayball>, <ore:gravel>],
+    [<minecraft:sand>, <pyrotech:material:4>]])
+  .addTool(<ore:artisansSifter>, 5)
+  .addOutput(<tconstruct:soil>*2)
   .create();
 
 recipes.removeByRecipeName("tconstruct:tools/mud/slimy_mud_green_block");
