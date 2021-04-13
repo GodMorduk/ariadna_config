@@ -25,8 +25,6 @@ recipes.removeByRecipeName("plustic:metals/mirion_ingot_nugget");
 recipes.removeByRecipeName("plustic:metals/mirion_ingot");
 recipes.removeByRecipeName("plustic:metals/mirion_block");
 recipes.removeByRecipeName("plustic:metals/mirion_nugget");
-recipes.removeByRecipeName("minecraft:iron_ingot_from_nuggets");
-recipes.removeByRecipeName("minecraft:iron_block");
 recipes.removeByRecipeName("minecraft:gold_ingot_from_nuggets");
 recipes.removeByRecipeName("minecraft:gold_block");
 recipes.removeByRecipeName("enderio:auto_electrical_steel_1_block_to_9_ingots");

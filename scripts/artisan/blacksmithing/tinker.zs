@@ -147,17 +147,6 @@ RecipeBuilder.get("tanner")
 
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
-
-recipes.addShaped(<minecraft:iron_block>,[
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<minecraft:iron_trapdoor>, <minecraft:iron_trapdoor>, <minecraft:iron_trapdoor>],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
-
-recipes.addShaped(<minecraft:iron_ingot>,[
-    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
-    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
-    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>]]);
-
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:clayball>, <ore:gravel>],
