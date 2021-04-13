@@ -147,25 +147,23 @@ RecipeBuilder.get("tanner")
 
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
-recipes.addShaped(<tconstruct:soil>,[
-    [<ore:clayball>, <ore:gravel>, null],
-    [<minecraft:sand>, <pyrotech:material:4>, null],
-    [null, null, null]]);
+
+recipes.addShaped(<minecraft:iron_block>,[
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [<minecraft:iron_trapdoor>, <minecraft:iron_trapdoor>, <minecraft:iron_trapdoor>],
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
+
+recipes.addShaped(<minecraft:iron_ingot>,[
+    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
+    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
+    [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>]]);
 
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:clayball>, <ore:gravel>],
     [<minecraft:sand>, <pyrotech:material:4>]])
   .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<tconstruct:soil>*4)
-  .create();
-
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:clayball>, <ore:gravel>],
-    [<minecraft:sand>, <pyrotech:material:4>]])
-  .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<tconstruct:soil>*2)
+  .addOutput(<tconstruct:soil>)
   .create();
 
 recipes.removeByRecipeName("tconstruct:tools/mud/slimy_mud_green_block");
