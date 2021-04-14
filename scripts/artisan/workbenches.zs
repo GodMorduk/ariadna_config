@@ -412,3 +412,29 @@ RecipeBuilder.get("mage")
   .addTool(<artisanworktables:artisans_grimoire_thaumium>, 300)
   .addOutput(<artisanworktables:workstation:7>)
   .create();
+
+##Дизайнерские верстаки
+recipes.addShaped(<artisanworktables:worktable:12>,[
+    [<ore:paper>, <ore:paper>, <ore:feather>],
+    [<minecraft:book>, <ore:pattern>, <ore:dyeBlack>],
+    [<ore:toolShears>, <ore:workbench>, <ore:itemEmptyBottle>]]);
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [<astralsorcery:itemcraftingcomponent:5>, <storagedrawers:framingtable>, <futuremc:lantern>],
+    [<ore:itemRubber>, <artisanworktables:worktable:12>, <minecraft:item_frame>],
+    [<thaumcraft:scribing_tools>, <rustic:chair_oak>, <minecraft:map>]])
+  .addTool(<ore:artisansFramingHammer>, 300)
+  .addOutput(<artisanworktables:workstation:12>)
+  .create();
+
+RecipeBuilder.get("designer")
+  .setShaped([
+    [<ore:bookshelf>, <rustic:iron_lantern>, <pyrotech:shelf_stone>],
+    [<immersiveengineering:blueprint>.withTag({blueprint: "components"}), <artisanworktables:workstation:12>, <thermalfoundation:diagram_redprint>],
+    [<cyberware:blueprint_archive>, <minecraft:daylight_detector>, <futuremc:cartography_table>]])
+  .setSecondaryIngredients([<artisanworktables:artisans_quill_silver>, <artisanworktables:artisans_compass_steel>, <artisanworktables:artisans_pencil_steel>, <artisanworktables:artisans_lens_gold>, <artisanworktables:artisans_tsquare_aluminum>, <artisanworktables:artisans_needle_steel>])
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addTool(<ore:artisansDriver>, 600)
+  .addOutput(<artisanworktables:workshop:12>)
+  .create();
