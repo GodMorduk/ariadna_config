@@ -306,6 +306,8 @@ RecipeBuilder.get("mage")
     [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>],
     [<minecraft:carpet:10>, <ebwizardry:crystal_block>, <minecraft:carpet:10>],
     [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>]])
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ancientspellcraft:sphere_cognizance>)
   .create();
 
@@ -323,6 +325,7 @@ RecipeBuilder.get("mage")
     [<minecraft:bookshelf>, <minecraft:writable_book>, <minecraft:glass_bottle>],
     [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
     [<ore:logWood>, null, <ore:logWood>]])
+  .addTool(<ore:artisansFramingHammer>, 75)
   .addOutput(<ancientspellcraft:scribing_desk>)
   .create();
 
@@ -331,5 +334,96 @@ RecipeBuilder.get("mage")
   .setShaped([
     [<ancientspellcraft:devoritium_block>, null],
     [<minecraft:string>, <minecraft:gunpowder>]])
+  .addTool(<ore:artisansGrimoire>, 25)
   .addOutput(<ancientspellcraft:devoritium_bomb> * 2)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:magic_wand"); // Удаление магического жезла
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:magic_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_fire_wand"); // Удаление магического жезла огня
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:1>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_fire_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_ice_wand"); // Удаление магического жезла мороза
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:2>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_ice_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_lightning_wand"); // Удаление магического жезла искр
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:3>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_lightning_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_necromancy_wand"); // Удаление магического жезла теней
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:4>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_necromancy_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_earth_wand"); // Удаление магического жезла земли
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:5>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_earth_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_sorcery_wand"); // Удаление магического жезла волшебства
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:6>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_sorcery_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:novice_healing_wand"); // Удаление магического жезла исцеления
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <ebwizardry:magic_crystal:7>],
+    [null, <ore:stickWood>, null],
+    [<minecraft:gold_ingot>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:novice_healing_wand>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:imbuement_altar"); // Удаление алтаря наполнения
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ancientspellcraft:astral_diamond_charged>, <ebwizardry:large_mana_flask>, <ancientspellcraft:astral_diamond_charged>],
+    [<ebwizardry:crystal_block>, <ebwizardry:crystal_block>, <ebwizardry:crystal_block>],
+    [<ebwizardry:crystal_block>, <ebwizardry:crystal_block>, <ebwizardry:crystal_block>]])
+  .addTool(<ore:artisansGrimoire>, 80)
+  .addOutput(<ebwizardry:imbuement_altar>)
   .create();
