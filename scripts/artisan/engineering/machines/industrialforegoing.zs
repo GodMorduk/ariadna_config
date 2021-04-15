@@ -917,7 +917,7 @@ RecipeBuilder.get("engineer")
 // Laser Lens
 val glassPaneDef = <minecraft:stained_glass_pane>.definition;
 var lensDef = <industrialforegoing:laser_lens>.definition;
-for i in 0 to 15 {
+for i in 0 to 16 {
   safeRemoveRecipe("industrialforegoing:laser_lens_" + i);
   RecipeBuilder.get("engineer")
     .setShaped([
@@ -936,7 +936,7 @@ for i in 0 to 15 {
 
 // Laser Lens (Inverted)
 var invLensDef = <industrialforegoing:laser_lens_inverted>.definition;
-for i in 0 to 15 {
+for i in 0 to 16 {
   safeRemoveRecipe("industrialforegoing:laser_lens_inverted_" + i);
   RecipeBuilder.get("engineer")
     .setShaped([
