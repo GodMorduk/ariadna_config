@@ -30,7 +30,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:324>,
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:323>, <ore:ingotLead>, <immersiveengineering:mold>, 8000);
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:325>, <ore:ingotNickel>, <immersiveengineering:mold>, 8000);
 
-recipes.addShaped(0, <minecraft:fireworks>, [
+recipes.addShaped("fireworks", <minecraft:fireworks>, [
 	[null, <ore:itemRubber>, null], 
 	[<ore:itemRubber>, <ore:gunpowder>, <ore:itemRubber>], 
 	[<ore:itemRubber>, <ore:gunpowder>, <ore:string>]

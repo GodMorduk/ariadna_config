@@ -11,7 +11,7 @@ recipes.removeByRecipeName("futuremc:wood/planks_from_stripped_spruce_log");
 
 //фиксим незерит
 recipes.removeByRecipeName("futuremc:netherite_ingot");
-recipes.addShaped(0, <futuremc:netherite_ingot>, [
+recipes.addShaped("netherite", <futuremc:netherite_ingot>, [
 	[<ore:ingotAncientDebris>, <ore:ingotAncientDebris>, <ore:ingotAncientDebris>], 
 	[<ore:ingotAncientDebris>, <minecraft:ender_eye>, <ore:blockIron>], 
 	[<ore:blockDiamond>, <ore:blockEmerald>, <ore:blockGold>]
