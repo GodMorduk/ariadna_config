@@ -43,3 +43,8 @@ RecipeBuilder.get("jeweler")
 
 recipes.addShapeless(<harvestcraft:honeyitem>, [<forge:bucketfilled>.withTag({FluidName: "honey", Amount: 1000})]);
 recipes.addShapeless(<harvestcraft:honeyitem> * 4, [<biomesoplenty:honey_block>]);
+
+recipes.addShaped(<minecraft:string> * 4, [
+  [<biomesoplenty:double_plant>, <biomesoplenty:double_plant>, <biomesoplenty:double_plant>],
+  [<biomesoplenty:double_plant>, <biomesoplenty:double_plant>, <biomesoplenty:double_plant>],
+  [<biomesoplenty:double_plant>, <biomesoplenty:double_plant>, <biomesoplenty:double_plant>]]);
