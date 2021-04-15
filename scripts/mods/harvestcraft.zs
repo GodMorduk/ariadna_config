@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.harvestcrafttweaker.HarvestCraftTweaker;
+import mods.pyrotech.SoakingPot;
 
 //убираем баланс-брейкеры
 recipes.removeByRecipeName("harvestcraft:market");
@@ -31,3 +32,7 @@ recipes.addShaped(<harvestcraft:apiary>, [
     [<ore:plankWood>, <ore:leather>, <ore:plankWood>],
     [<ore:plankWood>, <ore:leather>, <ore:plankWood>],
     [<ore:plankWood>, <ore:leather>, <ore:plankWood>]]);
+
+recipes.removeByRecipeName("harvestcraft:freshwateritem_minecraft_water_bucket");
+recipes.removeByRecipeName("harvestcraft:freshwateritem_listallwater");
+SoakingPot.addRecipe("fresh_water_from_water", <harvestcraft:freshwateritem> * 4, <liquid:water> * 1000, <ore:rock>, true, 1920);
