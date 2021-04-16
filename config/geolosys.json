@@ -8452,6 +8452,44 @@
 				7
 			],
 			"density": 0.5
+		},
+		{
+			"blocks": [
+				"astralsorcery:blockcustomore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockrockcrystal",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 1,
+			"yMax": 10,
+			"chance": 4,
+			"size": 50,
+			"dimBlacklist": [
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05,
+			"biomes": [
+				"HILLS", "MOUNTAIN", "RARE", "MAGIC"
+			],
+			"isWhitelist": true
 		}
 	],
 	"stones": [{
