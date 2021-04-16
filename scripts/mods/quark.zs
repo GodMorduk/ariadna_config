@@ -44,3 +44,6 @@ recipes.removeByRecipeName("quark:stone_sword");
 recipes.removeByRecipeName("quark:iron_ladder");
 Carving.addVariation("techguns:metalladder", <quark:iron_ladder>);
 recipes.removeByRecipeName("quark:stone_hoe");
+
+// забаненный пикаранг, позволяет добывать блоки без стамины
+recipes.removeByRecipeName("quark:pickarang");
