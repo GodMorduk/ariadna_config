@@ -9,12 +9,17 @@ recipes.addShaped(<stewitems:rubbing_alcohol>,[
     [<minecraft:potato>, <ore:listAllwater>, <minecraft:potato>],
     [null, <ore:listAllgrain>, null]]);
 
+recipes.addShaped(<stewitems:rubbing_alcohol>,[
+    [null, <ore:listAllgrain>, null],
+    [<harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <harvestcraft:sweetpotatoitem>],
+    [null, <ore:listAllgrain>, null]]);
+
 recipes.addShaped(<stewitems:laudanum>,[
   [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
   [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
   [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]]);
 
-recipes.addShapeless(<firstaid:bandage> * 2, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
+recipes.addShapeless(<firstaid:bandage> * 4, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
 
 <ore:healPlant>.add(<rustic:cohosh>);
 <ore:healPlant>.add(<rustic:horsetail>);
