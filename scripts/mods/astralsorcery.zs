@@ -1,3 +1,5 @@
+import mods.artisanworktables.builder.RecipeBuilder;
+
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/capebase");// Основная мантия
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <astralsorcery:itemcape>.withTag({astralsorcery: {}}), 4500, 100, [
 	<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.discidia"}}), 
@@ -773,6 +775,16 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/s
 ],"astralsorcery.constellation.lucerna"
 );
 
+
+//Рецепт кристальной руды
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>],
+    [<astralsorcery:itemcraftingcomponent>, <minecraft:iron_ore>, <astralsorcery:itemcraftingcomponent>],
+    [<astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>]])
+  .addTool(<ore:artisansHammer>, 40)
+  .addOutput(<astralsorcery:blockcustomore>)
+  .create();
 
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:cake>, false);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);

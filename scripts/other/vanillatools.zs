@@ -1,0 +1,12 @@
+recipes.removeByRecipeName("minecraft:iron_pickaxe");
+recipes.removeByRecipeName("minecraft:iron_shovel");
+recipes.removeByRecipeName("minecraft:iron_axe");
+recipes.removeByRecipeName("minecraft:iron_hoe");
+recipes.removeByRecipeName("minecraft:diamond_shovel");
+recipes.removeByRecipeName("minecraft:diamond_pickaxe");
+recipes.removeByRecipeName("minecraft:diamond_axe");
+recipes.removeByRecipeName("minecraft:diamond_hoe");
+recipes.removeByRecipeName("minecraft:golden_axe");
+recipes.removeByRecipeName("minecraft:golden_pickaxe");
+recipes.removeByRecipeName("minecraft:golden_shovel");
+recipes.removeByRecipeName("minecraft:golden_hoe");

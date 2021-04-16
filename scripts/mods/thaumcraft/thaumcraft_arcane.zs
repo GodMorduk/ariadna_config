@@ -59,3 +59,15 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:mindclockwork");
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mindclockwork", "", 150, [<aspect:ordo>*10, <aspect:ignis>*10], <thaumcraft:mind>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>], [<ore:plateBrass>, <ore:blockRedstone>, <ore:plateBrass>]]);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:sealblank");
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:sealblank", "CONTROLSEALS", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <thaumcraft:seal>, [[<thaumcraft:tallow>, <thaumcraft:tallow>, <thaumcraft:tallow>], [<thaumcraft:tallow>, <ore:nitor>, <thaumcraft:tallow>], [<thaumcraft:tallow>, <thaumcraft:tallow>, <thaumcraft:tallow>]]);
+
+//выпил базовых инструментов с таум-верстака
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:iron_pickaxe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:iron_shovel>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:iron_axe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:diamond_shovel>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:diamond_pickaxe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:diamond_axe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:golden_axe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:golden_pickaxe>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<minecraft:golden_shovel>);
+
