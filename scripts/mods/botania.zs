@@ -793,7 +793,7 @@ RecipeBuilder.get("mage")
   .addOutput(<botania:terraaxe>)
   .create();
 
-  recipes.removeByRecipeName("botania:blackholetalisman");// Удаление тилисмана черной дыры
+  recipes.removeByRecipeName("botania:blackholetalisman_0");// Удаление тилисмана черной дыры
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <botania:manaresource:5>, null],
