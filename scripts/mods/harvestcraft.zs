@@ -36,3 +36,12 @@ recipes.addShaped(<harvestcraft:apiary>, [
 recipes.removeByRecipeName("harvestcraft:freshwateritem_minecraft_water_bucket");
 recipes.removeByRecipeName("harvestcraft:freshwateritem_listallwater");
 SoakingPot.addRecipe("fresh_water_from_water", <harvestcraft:freshwateritem> * 4, <liquid:water> * 1000, <ore:rock>, true, 1920);
+
+RecipeBuilder.get("chef")
+  .setShaped([
+    [<ore:rodBlaze>, <ore:blockGold>, <ore:rodBlaze>],
+    [<minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), <ore:rodBlaze>, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte})],
+    [<ore:drawerBasic>, <ore:blockIron>, <ore:drawerBasic>]])
+  .addTool(<ore:artisansDriver>, 50)
+  .addOutput(<brewcraft:distiller>)
+  .create();
