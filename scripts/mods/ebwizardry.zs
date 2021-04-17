@@ -122,104 +122,88 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <ebwizardry:grand_crystal>, null],
-    [<minecraft:emerald>, <ebwizardry:sage_hat>, <minecraft:emerald>],
+    [<minecraft:emerald>, <ebwizardry:wizard_hat>, <minecraft:emerald>],
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
-  .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansGemCutter>, 350)
+  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ebwizardry:battlemage_helmet>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <ebwizardry:grand_crystal>, null],
-    [<minecraft:emerald>, <ebwizardry:sage_robe>, <minecraft:emerald>],
+    [<minecraft:emerald>, <ebwizardry:wizard_robe>, <minecraft:emerald>],
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
-  .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansGemCutter>, 350)
+  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ebwizardry:battlemage_chestplate>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <ebwizardry:grand_crystal>, null],
-    [<minecraft:emerald>, <ebwizardry:sage_leggings>, <minecraft:emerald>],
+    [<minecraft:emerald>, <ebwizardry:wizard_leggings>, <minecraft:emerald>],
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
-  .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansGemCutter>, 350)
+  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ebwizardry:battlemage_leggings>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <ebwizardry:grand_crystal>, null],
-    [<minecraft:emerald>, <ebwizardry:sage_boots>, <minecraft:emerald>],
+    [<minecraft:emerald>, <ebwizardry:wizard_boots>, <minecraft:emerald>],
     [null, <ebwizardry:grand_crystal>, null]])
   .setSecondaryIngredients([<minecraft:dye:4>])
-  .addTool(<ore:artisansNeedle>, 150)
-  .addTool(<ore:artisansGrimoire>, 350)
-  .addTool(<ore:artisansGemCutter>, 350)
+  .addTool(<ore:artisansGrimoire>, 125)
+  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ebwizardry:battlemage_boots>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [null, null, <ebwizardry:magic_crystal>, null, null],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [<ebwizardry:magic_silk>, <ebwizardry:grand_crystal>, <ebwizardry:battlemage_helmet>, <ebwizardry:grand_crystal>, <ebwizardry:magic_silk>],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [null, null, <ebwizardry:magic_crystal>, null, null]])
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:wizard_hat>, <ebwizardry:grand_crystal>],
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
-  .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansGemCutter>, 250)
+  .addTool(<ore:artisansNeedle>, 125)
+  .addTool(<ore:artisansGrimoire>, 125)
   .addOutput(<ebwizardry:warlock_hood>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [null, null, <ebwizardry:magic_crystal>, null, null],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [<ebwizardry:magic_silk>, <ebwizardry:grand_crystal>, <ebwizardry:battlemage_chestplate>, <ebwizardry:grand_crystal>, <ebwizardry:magic_silk>],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [null, null, <ebwizardry:magic_crystal>, null, null]])
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:wizard_robe>, <ebwizardry:grand_crystal>],
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>]])
   .setSecondaryIngredients([<minecraft:dye:4> * 3])
-  .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansGemCutter>, 250)
+  .addTool(<ore:artisansNeedle>, 125)
+  .addTool(<ore:artisansGrimoire>, 125)
   .addOutput(<ebwizardry:warlock_robe>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [null, null, <ebwizardry:magic_crystal>, null, null],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [<ebwizardry:magic_silk>, <ebwizardry:grand_crystal>, <ebwizardry:battlemage_leggings>, <ebwizardry:grand_crystal>, <ebwizardry:magic_silk>],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [null, null, <ebwizardry:magic_crystal>, null, null]])
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:wizard_leggings>, <ebwizardry:grand_crystal>],
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>]])
   .setSecondaryIngredients([<minecraft:dye:4> * 2])
-  .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansGemCutter>, 250)
+  .addTool(<ore:artisansNeedle>, 125)
+  .addTool(<ore:artisansGrimoire>, 125)
   .addOutput(<ebwizardry:warlock_leggings>)
   .create();
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [null, null, <ebwizardry:magic_crystal>, null, null],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [<ebwizardry:magic_silk>, <ebwizardry:grand_crystal>, <ebwizardry:battlemage_boots>, <ebwizardry:grand_crystal>, <ebwizardry:magic_silk>],
-    [null, <minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>, null],
-    [null, null, <ebwizardry:magic_crystal>, null, null]])
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>],
+    [<ebwizardry:grand_crystal>, <ebwizardry:wizard_boots>, <ebwizardry:grand_crystal>],
+    [<minecraft:glowstone_dust>, <ebwizardry:magic_silk>, <minecraft:glowstone_dust>]])
   .setSecondaryIngredients([<minecraft:dye:4>])
-  .addTool(<ore:artisansNeedle>, 750)
-  .addTool(<ore:artisansGrimoire>, 750)
-  .addTool(<ore:artisansGemCutter>, 250)
+  .addTool(<ore:artisansNeedle>, 125)
+  .addTool(<ore:artisansGrimoire>, 125)
   .addOutput(<ebwizardry:warlock_boots>)
   .create();
 
@@ -306,8 +290,6 @@ RecipeBuilder.get("mage")
     [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>],
     [<minecraft:carpet:10>, <ebwizardry:crystal_block>, <minecraft:carpet:10>],
     [<minecraft:gold_block>, <minecraft:carpet:10>, <minecraft:gold_block>]])
-  .addTool(<ore:artisansGrimoire>, 200)
-  .addTool(<ore:artisansGemCutter>, 150)
   .addOutput(<ancientspellcraft:sphere_cognizance>)
   .create();
 
@@ -319,22 +301,20 @@ RecipeBuilder.get("mage")
   .addOutput(<ancientspellcraft:devoritium_arrow> * 4)
   .create();
 
-recipes.removeByRecipeName("ancientspellcraft:scribing_desk"); // Удаление девориумовой стрелы
+recipes.removeByRecipeName("ancientspellcraft:scribing_desk"); // Удаление письменный стол
 RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:bookshelf>, <minecraft:writable_book>, <minecraft:glass_bottle>],
     [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
     [<ore:logWood>, null, <ore:logWood>]])
-  .addTool(<ore:artisansFramingHammer>, 75)
   .addOutput(<ancientspellcraft:scribing_desk>)
   .create();
 
-recipes.removeByRecipeName("ancientspellcraft:devoritium_bomb"); // Удаление девориумовой стрелы
+recipes.removeByRecipeName("ancientspellcraft:devoritium_bomb"); // Удаление девориумовой бомбы
 RecipeBuilder.get("mage")
   .setShaped([
     [<ancientspellcraft:devoritium_block>, null],
     [<minecraft:string>, <minecraft:gunpowder>]])
-  .addTool(<ore:artisansGrimoire>, 25)
   .addOutput(<ancientspellcraft:devoritium_bomb> * 2)
   .create();
 
@@ -348,7 +328,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:magic_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_fire_wand"); // Удаление магического жезла огня
+recipes.removeByRecipeName("ebwizardry:wand_fire"); // Удаление магического жезла огня
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:1>],
@@ -358,7 +338,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_fire_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_ice_wand"); // Удаление магического жезла мороза
+recipes.removeByRecipeName("ebwizardry:wand_ice"); // Удаление магического жезла мороза
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:2>],
@@ -368,7 +348,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_ice_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_lightning_wand"); // Удаление магического жезла искр
+recipes.removeByRecipeName("ebwizardry:wand_lightning"); // Удаление магического жезла искр
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:3>],
@@ -378,7 +358,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_lightning_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_necromancy_wand"); // Удаление магического жезла теней
+recipes.removeByRecipeName("ebwizardry:wand_necromancy"); // Удаление магического жезла теней
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:4>],
@@ -388,7 +368,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_necromancy_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_earth_wand"); // Удаление магического жезла земли
+recipes.removeByRecipeName("ebwizardry:wand_earth"); // Удаление магического жезла земли
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:5>],
@@ -398,7 +378,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_earth_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_sorcery_wand"); // Удаление магического жезла волшебства
+recipes.removeByRecipeName("ebwizardry:wand_sorcery"); // Удаление магического жезла волшебства
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:6>],
@@ -408,7 +388,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:novice_sorcery_wand>)
   .create();
 
-recipes.removeByRecipeName("ebwizardry:novice_healing_wand"); // Удаление магического жезла исцеления
+recipes.removeByRecipeName("ebwizardry:wand_healing"); // Удаление магического жезла исцеления
 RecipeBuilder.get("mage")
   .setShaped([
     [null, null, <ebwizardry:magic_crystal:7>],
