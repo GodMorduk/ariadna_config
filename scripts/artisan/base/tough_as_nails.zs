@@ -45,7 +45,18 @@ RecipeBuilder.get("basic")
   .setShaped([
     [<toughasnails:magma_shard>, <ore:itemBlazeRod>, <toughasnails:magma_shard>],
     [<toughasnails:magma_shard>, <ore:itemBlazeRod>, <toughasnails:magma_shard>],
-    [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]])
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]])
+  .setFluid(<liquid:lava> * 2000)
+  .addTool(<ore:artisansDriver>, 25)
+  .addOutput(<toughasnails:temperature_coil:1> * 2)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:dustSulfur>, <pyrotech:living_tar>, <ore:dustSulfur>],
+    [<ore:dustSulfur>, <pyrotech:living_tar>, <ore:dustSulfur>],
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]])
+  .setFluid(<liquid:lava> * 2000)
   .addTool(<ore:artisansDriver>, 25)
   .addOutput(<toughasnails:temperature_coil:1>)
   .create();
