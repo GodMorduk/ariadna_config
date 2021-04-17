@@ -73,4 +73,4 @@ dropHoney.add(<futuremc:honey_bottle>);
 <ore:listAllhoney>.addAll(<ore:foodFilledhoneycomb>);
 <ore:listAllhoney>.addAll(<ore:dropHoney>);
 
-<ore:oreRockCrystal>.addAll(<astralsorcery:blockcustomore>);
+<ore:oreRockCrystal>.add(<astralsorcery:blockcustomore>);
