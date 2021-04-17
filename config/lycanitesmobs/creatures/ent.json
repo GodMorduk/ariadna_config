@@ -7,9 +7,9 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityEnt",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelEnt",
   "loadDefault": false,
-  "enabled": true,
+  "enabled": false,
   "spawning": {
-    "enabled": true,
+    "enabled": false,
     "spawners": [
       "monster",
       "beast"
