@@ -10,7 +10,6 @@
   "ignoreLightLevel": true,
   "ignoreGroupLimit": true,
   "ignoreForgeCanSpawnEvent": true,
-  "blockBreakRadius": 1,
   "conditions": [],
   "triggers": [
     {
