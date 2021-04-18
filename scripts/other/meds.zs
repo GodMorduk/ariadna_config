@@ -57,7 +57,7 @@ recipes.addShaped(<firstaid:plaster> * 2, [
   
 recipes.addShaped(<firstaid:plaster> * 2, [
     [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
-    [<minecraft:string>, <minecraft:wool>, <minecraft:string>]]);
+    [<minecraft:string>, <ore:blockWool>, <minecraft:string>]]);
 
 RecipeBuilder.get("chemist")
   .setShaped([
