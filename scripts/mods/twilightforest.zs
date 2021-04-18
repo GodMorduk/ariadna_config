@@ -20,3 +20,5 @@ recipes.removeByRecipeName("twilightforest:wood/sort_slab");
 
 recipes.removeByRecipeName("twilightforest:iron_ladder");
 Carving.addVariation("techguns:metalladder", <twilightforest:iron_ladder>);
+
+recipes.removeByRecipeName("twilightforest:uncrafting_table");

@@ -343,3 +343,5 @@ recipes.addShaped("salismundus", <thaumcraft:salis_mundus>,
  [<thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>], 
  [<thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>, <thaumcraft:crystal_essence>]]);
 recipes.addShapeless("salismundusblock", <thaumcraft:salis_mundus>*9, [<thaumicbases:dustblock>]);
+
+recipes.addShapeless(<thaumcraft:arcane_workbench>, [<thaumcraft:arcane_workbench>]);
