@@ -35,6 +35,9 @@ recipes.removeByRecipeName("conarm:travel_sneak");
 #  .addOutput(<conarm:travel_sneak>)
 #  .create();
 
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
+
 ## 1 Tier
 
 recipes.removeByRecipeName("conarm:frosty_soles");
