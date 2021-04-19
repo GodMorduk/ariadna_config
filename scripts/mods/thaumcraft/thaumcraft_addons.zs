@@ -72,3 +72,6 @@ mods.thaumcraft.Crucible.registerRecipe("thaumicaugmentation:eldritch_stone", "V
 mods.thaumcraft.Crucible.removeRecipe("thaumicaugmentation:impetus_jewel");
 mods.thaumcraft.Crucible.registerRecipe("thaumicaugmentation:impetus_jewel", "IMPETUS", <thaumicaugmentation:material:5>, <thaumcraft:void_seed>, [<aspect:ordo>*1000, <aspect:potentia>*500]);
 
+//thaumic tinkerer
+recipes.removeByRecipeName("thaumictinkerer:share_book");
+
