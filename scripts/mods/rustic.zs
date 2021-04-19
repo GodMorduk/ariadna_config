@@ -1,6 +1,9 @@
 import crafttweaker.item.IItemStack;
 import mods.rustic.CrushingTub;
 import mods.rustic.Condenser;
+import mods.thermalexpansion.Centrifuge;
+import mods.atum.Kiln;
+import mods.pyrotech.CompactingBin;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 //добавялем для растика штуки из харвесткрафта
@@ -26,9 +29,15 @@ for item in berries {
 	CrushingTub.addRecipe(<liquid:wildberryjuice>*250, null, item);
 }
 
-//добавляем возможность крафтить с воском из харвеста
-recipes.addShaped(<rustic:candle_gold>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<ore:ingotGold>, null, null]]);
-recipes.addShaped(<rustic:candle>, [[<minecraft:string>, null, null],[<harvestcraft:beeswaxitem>, null, null], [<ore:ingotIron>, null, null]]);
+
+furnace.remove(<rustic:beeswax>);
+Kiln.removeRecipe("atum:honeycomb_beeswax");
+Kiln.blacklist("rustic:beeswax");
+Kiln.blacklist("rustic:honeycomb");
+Centrifuge.removeRecipe(<rustic:honeycomb>);
+CrushingTub.removeRecipe(<rustic:honeycomb>);
+
+CompactingBin.addRecipe("honeycomb_compacting", <harvestcraft:honeycombitem>, <rustic:honeycomb>, 24, true);
 
 //примеры на будущее
 //Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}), <harvestcraft:whitemushroomitem>, <minecraft:spider_eye>);
@@ -72,6 +81,8 @@ Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:feather", Duration: 9600, Amplifier: 0}]}));
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}));
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}));
+
+
 
 recipes.addShapeless(<harvestcraft:honeyitem>, [<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "honey", Amount: 1000}})]);
 

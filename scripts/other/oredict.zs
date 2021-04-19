@@ -58,7 +58,6 @@ honeycombEmpty.add(<harvestcraft:waxcombitem>);
 var foodFilledhoneycomb = <ore:foodFilledhoneycomb>;
 foodFilledhoneycomb.add(<futuremc:honeycomb>);
 foodFilledhoneycomb.add(<biomesoplenty:filled_honeycomb>);
-foodFilledhoneycomb.add(<rustic:honeycomb>);
 foodFilledhoneycomb.add(<harvestcraft:honeycombitem>);
 
 var dropHoney = <ore:dropHoney>;
