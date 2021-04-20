@@ -38,6 +38,18 @@ recipes.removeByRecipeName("conarm:travel_sneak");
 recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
 recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
 
+// раскрафт банок
+mods.tconstruct.Melting.addRecipe(<liquid:molten_aluminum> * 16, <stewprops:random_empty_can>);
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<stewprops:random_empty_can>, <stewprops:random_empty_can>, null],
+    [null, null, null],
+    [null, null, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<thermalfoundation:material:196>)
+  .create();
+
 ## 1 Tier
 
 recipes.removeByRecipeName("conarm:frosty_soles");
