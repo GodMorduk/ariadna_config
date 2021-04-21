@@ -77,3 +77,5 @@ dropHoney.add(<futuremc:honey_bottle>);
 for i in 0 to 16 {
   <ore:hardenedClay>.add(<minecraft:stained_hardened_clay>.definition.makeStack(i));
 }
+
+<ore:listAllspice>.add(<cuisine:crops:7>);

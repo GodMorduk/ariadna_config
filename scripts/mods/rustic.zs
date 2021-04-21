@@ -22,7 +22,8 @@ var berries = [
 <harvestcraft:huckleberryitem>,
 <harvestcraft:mulberryitem>,
 <harvestcraft:gooseberryitem>,
-<harvestcraft:juniperberryitem>
+<harvestcraft:juniperberryitem>,
+<biomesoplenty:berries>
 ] as IItemStack[];
 
 for item in berries {

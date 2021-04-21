@@ -593,7 +593,7 @@
 				7,
 				17
 			],
-			"density": 0.0025,
+			"density": 0.025,
 			"biomes": [
 				"MAGICAL", "SNOWY", "COLD"
 			],
@@ -631,7 +631,7 @@
 				7,
 				17
 			],
-			"density": 0.0025
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -665,7 +665,7 @@
 				7,
 				17
 			],
-			"density": 0.0025
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -813,7 +813,7 @@
 				7,
 				17
 			],
-			"density": 0.0025,
+			"density": 0.025,
 			"biomes": [
 				"MESA", "DEAD", "MOUNTAIN", "HILLS", "WASTELAND"
 			],
@@ -853,7 +853,7 @@
 				7,
 				17
 			],
-			"density": 0.0025
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -889,7 +889,7 @@
 				7,
 				17
 			],
-			"density": 0.0025
+			"density": 0.025
 		},
 		{
 			"blocks": [
