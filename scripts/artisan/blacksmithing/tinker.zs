@@ -1,6 +1,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.tconstruct.Drying;
 import crafttweaker.oredict.IOreDict;
+import mods.tconstruct.Melting;
 
 ## Banned stuff
 recipes.removeByRecipeName("conarm:invisible_ink");
@@ -39,7 +40,7 @@ recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
 recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
 
 // раскрафт банок
-mods.tconstruct.Melting.addRecipe(<liquid:molten_aluminum> * 16, <stewprops:random_empty_can>);
+Melting.addRecipe(<liquid:aluminum> * 16, <stewprops:random_empty_can>);
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
