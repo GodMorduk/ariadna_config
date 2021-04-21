@@ -206,16 +206,6 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<immersiveengineering:stone_decoration:1> * 2)
   .create();
 
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotSoularium>, <minecraft:nether_brick>, <ore:ingotSoularium>],
-    [<minecraft:nether_brick>, <minecraft:magma_cream>, <minecraft:nether_brick>],
-    [<ore:ingotSoularium>, <minecraft:nether_brick>, <ore:ingotSoularium>]])
-  .setFluid(<liquid:lava> * 2000)
-  .addTool(<ore:artisansTrowel>, 5)
-  .addOutput(<immersiveengineering:stone_decoration:1> * 3)
-  .create();
-
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/alloybrick");
 RecipeBuilder.get("engineer")
   .setShaped([
