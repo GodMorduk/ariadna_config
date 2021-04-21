@@ -19,6 +19,21 @@ recipes.addShaped(<stewitems:laudanum>,[
   [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
   [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]]);
 
+recipes.addShaped(<stewitems:medicine_sotocvet>,[
+    [<harvestcraft:honeycombitem>, <ore:slimeball>, <harvestcraft:honeycombitem>],
+    [<minecraft:dye:15>, <ore:wax>, <minecraft:dye:15>],
+    [<harvestcraft:honeycombitem>, <ore:slimeball>, <harvestcraft:honeycombitem>]])
+
+recipes.addShaped(<stewitems:medicine_kanai>,[
+    [<ore:treeLeaves>, <ore:sugar>, <ore:treeLeaves>],
+    [<thaumicbases:tobacco_pile>, <stewitems:rubbing_alcohol>, <thaumicbases:tobacco_pile>],
+    [<ore:treeLeaves>, <ore:sugar>, <ore:treeLeaves>]])
+
+recipes.addShaped(<stewitems:medicine_kazachban>,[
+    [<ore:wax>, <ore:healPlant>, <ore:healPlant>],
+    [<ore:bonemeal>, <ore:itemSalt>, <ore:bonemeal>],
+    [<pyrotech:strange_tuber>, <pyrotech:strange_tuber>, <ore:wax>]])
+
 recipes.addShapeless(<firstaid:bandage> * 4, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
 
 <ore:healPlant>.add(<rustic:cohosh>);
@@ -48,6 +63,24 @@ RecipeBuilder.get("chemist")
   .setShapeless([<ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
   .addTool(<ore:artisansMortar>, 5)
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 3)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<rustic:deathstalk_mushroom>, <alchemistry:compound:21>, <ore:listAllmushroom>],
+    [<alchemistry:fertilizer>, <stewitems:rubbing_alcohol>, <alchemistry:fertilizer>],
+    [<ore:listAllmushroom>, <alchemistry:compound:21>, <rustic:deathstalk_mushroom>]])
+  .addTool(<ore:artisansMortar>, 25)
+  .addOutput(<stewitems:medicine_scomen>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<alchemistry:compound:31>, <ore:treeLeaves>, <alchemistry:compound:19>],
+    [<ore:treeLeaves>, <thaumicbases:tobacco_knowledge>, <ore:treeLeaves>],
+    [<alchemistry:compound:19>, <ore:treeLeaves>, <alchemistry:compound:31>]])
+  .addTool(<ore:artisansMortar>, 15)
+  .addOutput(<stewitems:medicine_serebrolist>)
   .create();
 
 recipes.addShaped(<firstaid:plaster> * 2, [
