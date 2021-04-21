@@ -407,3 +407,47 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansGrimoire>, 80)
   .addOutput(<ebwizardry:imbuement_altar>)
   .create();
+
+recipes.addShaped("grandcrystal", <ebwizardry:grand_crystal>, [
+	[null, <ebwizardry:magic_crystal>, null], 
+	[<ebwizardry:magic_crystal>, <ebwizardry:magic_crystal>, <ebwizardry:magic_crystal>], 
+	[null, <ebwizardry:magic_crystal>, null]
+]);
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:medium_mana_flask>, <ebwizardry:grand_crystal>, <ebwizardry:medium_mana_flask>],
+    [<minecraft:lapis_block>, <minecraft:book>, <minecraft:gold_block>],
+    [<ebwizardry:medium_mana_flask>, <ebwizardry:grand_crystal>, <ebwizardry:medium_mana_flask>]])
+  .addTool(<ore:artisansQuill>, 50)
+  .addOutput(<ebwizardry:arcane_tome:1>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ebwizardry:large_mana_flask>, <minecraft:emerald_block>, <ebwizardry:large_mana_flask>],
+    [<ebwizardry:grand_crystal>, <minecraft:book>, <ebwizardry:grand_crystal>],
+    [<ebwizardry:large_mana_flask>, <minecraft:diamond_block>, <ebwizardry:large_mana_flask>]])
+  .addTool(<ore:artisansQuill>, 100)
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addOutput(<ebwizardry:arcane_tome:2>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <minecraft:lapis_block>, null, null],
+    [null, <ebwizardry:large_mana_flask>, <minecraft:nether_wart>, <ebwizardry:large_mana_flask>, null],
+    [<minecraft:lapis_block>, <minecraft:ghast_tear>, <minecraft:book>, <minecraft:ender_pearl>, <minecraft:lapis_block>],
+    [null, <ebwizardry:large_mana_flask>, <ebwizardry:grand_crystal>, <ebwizardry:large_mana_flask>, null],
+    [null, null, <minecraft:lapis_block>, null, null]])
+  .addTool(<ore:artisansQuill>, 150)
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansMortar>, 150)
+  .addOutput(<ebwizardry:arcane_tome:3>)
+  .create();
+
+recipes.addShaped("magicstic", <ancientspellcraft:wand_channeling>, [
+	[null, null, null], 
+	[null, <bewitchment:elder_planks>, null], 
+	[null, <bewitchment:elder_planks>, null]
+]);

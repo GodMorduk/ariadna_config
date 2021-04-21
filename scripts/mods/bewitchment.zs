@@ -103,7 +103,7 @@ recipes.removeByRecipeName("bewitchment:poppet_spiritbane"); // Удаление
 RecipeBuilder.get("mage")
   .setShaped([
     [<bewitchment:oil_of_vitriol>, <bewitchment:white_sage>, <bewitchment:oil_of_vitriol>],
-    [<bewitchment:salt>, <bewitchment:poppet>, <minecraft:glowstone_dust>],
+    [<ore:salt>, <bewitchment:poppet>, <minecraft:glowstone_dust>],
     [<bewitchment:oil_of_vitriol>, <bewitchment:golden_thread>, <bewitchment:oil_of_vitriol>]])
   .setSecondaryIngredients([<bewitchment:white_candle> * 5])
   .addTool(<ore:artisansMortar>, 100)
@@ -367,7 +367,7 @@ RecipeBuilder.get("mage")
 recipes.removeByRecipeName("bewitchment:embittered_brick_witches_altar"); // Удаление озлобленного алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<bewitchment:embittered_bricks>, <bewitchment:elder_wood>, <bewitchment:embittered_bricks>],
     [<bewitchment:embittered_bricks>, <bewitchment:elder_wood>, <bewitchment:embittered_bricks>]])
   .addTool(<ore:artisansChisel>, 100)
@@ -377,7 +377,7 @@ RecipeBuilder.get("mason")
 recipes.removeByRecipeName("bewitchment:stone_witches_altar"); // Удаление каменного алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<minecraft:stone>, <bewitchment:elder_wood>, <minecraft:stone>],
     [<minecraft:stone>, <bewitchment:elder_wood>, <minecraft:stone>]])
   .addTool(<ore:artisansChisel>, 100)
@@ -387,7 +387,7 @@ RecipeBuilder.get("mason")
 recipes.removeByRecipeName("bewitchment:coquina_witches_altar"); // Удаление ракушечного алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<bewitchment:coquina>, <bewitchment:elder_wood>, <bewitchment:coquina>],
     [<bewitchment:coquina>, <bewitchment:elder_wood>, <bewitchment:coquina>]])
   .addTool(<ore:artisansChisel>, 100)
@@ -397,7 +397,7 @@ RecipeBuilder.get("mason")
 recipes.removeByRecipeName("bewitchment:nether_brick_witches_altar"); // Удаление незеритового алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<minecraft:nether_brick>, <bewitchment:elder_wood>, <minecraft:nether_brick>],
     [<minecraft:nether_brick>, <bewitchment:elder_wood>, <minecraft:nether_brick>]])
   .addTool(<ore:artisansChisel>, 100)
@@ -407,7 +407,7 @@ RecipeBuilder.get("mason")
 recipes.removeByRecipeName("bewitchment:obsidian_witches_altar"); // Удаление обсидианового алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<minecraft:obsidian>, <bewitchment:elder_wood>, <minecraft:obsidian>],
     [<minecraft:obsidian>, <bewitchment:elder_wood>, <minecraft:obsidian>]])
   .addTool(<ore:artisansChisel>, 100)
@@ -417,14 +417,14 @@ RecipeBuilder.get("mason")
 recipes.removeByRecipeName("bewitchment:scorned_brick_witches_altar"); // Удаление презренного алтаря
 RecipeBuilder.get("mason")
   .setShaped([
-    [<bewitchment:empty_jar>, <bewitchment:salt>, <bewitchment:empty_jar>],
+    [<bewitchment:empty_jar>, <ore:salt>, <bewitchment:empty_jar>],
     [<bewitchment:scorned_bricks>, <bewitchment:elder_wood>, <bewitchment:scorned_bricks>],
     [<bewitchment:scorned_bricks>, <bewitchment:elder_wood>, <bewitchment:scorned_bricks>]])
   .addTool(<ore:artisansChisel>, 100)
   .addOutput(<bewitchment:scorned_brick_witches_altar> * 3)
   .create();
 
-recipes.removeByRecipeName("bewitchment:silver_plate"); // Удаление серебрянной плиты
+recipes.removeByRecipeName("bewitchment:compat/silver_plate"); // Удаление серебрянной плиты
 recipes.removeByRecipeName("bewitchment:compat/cold_iron_plate");// Удаление плиты из холодного железа
 
 recipes.removeByRecipeName("bewitchment:cypress_planks");
@@ -436,3 +436,42 @@ recipes.removeByRecipeName("bewitchment:cypress_wood_slab");
 recipes.removeByRecipeName("bewitchment:elder_wood_slab");
 recipes.removeByRecipeName("bewitchment:juniper_wood_slab");
 recipes.removeByRecipeName("bewitchment:dragons_blood_slab");
+
+WitchesOven.addRecipe(<minecraft:log>, <bewitchment:wood_ash>, <bewitchment:oak_spirit>, 0.7, true);
+
+WitchesOven.addRecipe(<minecraft:log2:1>, <bewitchment:wood_ash>, <bewitchment:oak_spirit>, 0.7, true);
+
+WitchesOven.addRecipe(<minecraft:log:1>, <bewitchment:wood_ash>, <bewitchment:spruce_heart>, 0.7, true);
+
+WitchesOven.addRecipe(<minecraft:log:2>, <bewitchment:wood_ash>, <bewitchment:birch_soul>, 0.7, true);
+
+WitchesOven.addRecipe(<minecraft:log:3>, <bewitchment:wood_ash>, <bewitchment:cloudy_oil>, 0.7, true);
+
+WitchesOven.addRecipe(<minecraft:log2>, <bewitchment:wood_ash>, <bewitchment:acacia_resin>, 0.7, true);
+
+WitchesOven.addRecipe(<bewitchment:cypress_wood>, <bewitchment:wood_ash>, <bewitchment:ebb_of_death>, 0.7, true);
+
+WitchesOven.addRecipe(<bewitchment:elder_wood>, <bewitchment:wood_ash>, <bewitchment:droplet_of_wisdom>, 0.7, true);
+
+WitchesOven.addRecipe(<bewitchment:juniper_wood>, <bewitchment:wood_ash>, <bewitchment:essence_of_vitality>, 0.7, true);
+
+recipes.removeByRecipeName("bewitchment:witches_oven"); // Удаление ведьминой печи
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <minecraft:iron_ingot>, null],
+    [<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
+    [<minecraft:iron_bars>, <minecraft:iron_ingot>, <minecraft:iron_bars>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<bewitchment:witches_oven>)
+  .create();
+
+recipes.removeByRecipeName("bewitchment:flying_ointment"); // Удаление мази полёта.
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ore:dustDiamond>, <bewitchment:mandrake_root>, <minecraft:golden_apple:1>],
+    [<minecraft:red_flower>, <minecraft:glass_bottle>, <bewitchment:aconitum>],
+    [<bewitchment:tallow>, <bewitchment:belladonna>, <minecraft:ender_eye>]])
+  .addTool(<ore:artisansMortar>, 150)
+  .addTool(<ore:artisansPan>, 150)
+  .addOutput(<bewitchment:flying_ointment>)
+  .create();
