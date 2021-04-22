@@ -10,15 +10,12 @@ import mods.artisanworktables.builder.RecipeBuilder;
 recipes.removeByRecipeName("extrabotany:recipe_tribloodstone");//Удаление кровавого камня
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:manaresource:2>, <botania:manaresource:1>, <botania:manaresource>],
-    [<botania:rune:2>, <botania:autocraftinghalo>, <botania:rune:1>],
-    [<botania:rune>, <botania:manatablet>.withTag({}), <botania:rune:3>]])
-  .addTool(<ore:artisansPliers>, 50)
+    [null, <botania:manaresource:2>, null],
+    [<botania:manaresource>, <botania:manatablet>.withTag({}), <botania:manaresource>],
+    [null, <botania:manaresource:1>, null]])
   .addTool(<ore:artisansLens>, 50)
+  .addTool(<ore:artisansPliers>, 50)
   .addOutput(<extrabotany:material:10>)
-  .setExtraOutputOne(<botania:rune>, 0.3)
-  .setExtraOutputTwo(<botania:rune:1>, 0.3)
-  .setExtraOutputThree(<botania:rune:3>, 0.3)
   .create();
 
   
@@ -32,7 +29,7 @@ mods.botania.RuneAltar.addRecipe(<botania:auraring>,[<ore:runeManaB>, <botania:s
 mods.botania.RuneAltar.addRecipe(<botania:travelbelt>,[<ore:runeAirB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>], 500000);
 
   recipes.removeByRecipeName("botania:knockbackbelt");// Удаление тектонического пояса
-mods.botania.RuneAltar.addRecipe(<botania:travelbelt>,[<ore:runeFireB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:knockbackbelt>,[<ore:runeFireB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>], 500000);
 
   recipes.removeByRecipeName("botania:speedupbelt");// Удаление пояса скитальца
 mods.botania.RuneAltar.addRecipe(<botania:speedupbelt>,[<extrabotany:candy:2>, <minecraft:filled_map>, <extrabotany:candy:2>, <botania:grassseeds>, <botania:travelbelt>, <botania:grassseeds>, <minecraft:sugar>, <minecraft:cake>, <minecraft:sugar>], 100000);
@@ -1586,9 +1583,8 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
-    [<ore:ingotGold>, <botania:petal>, null],
+    [<minecraft:gold_block>, <botania:petal>, null],
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]])
-  .addTool(<ore:artisansHandsaw>, 25)
   .addTool(<ore:artisansGrimoire>, 30)
   .addOutput(<botania:spreader>)
   .create();
@@ -1597,7 +1593,7 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>],
-    [<botania:manaresource:7>, <botania:petal:11>, null],
+    [<botania:storage:2>, <botania:petal:11>, null],
     [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>]])
   .addTool(<ore:artisansHandsaw>, 50)
   .addTool(<ore:artisansGrimoire>, 60)
