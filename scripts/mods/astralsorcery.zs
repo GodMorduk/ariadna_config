@@ -785,9 +785,13 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansHammer>, 40)
   .addOutput(<astralsorcery:blockcustomore>)
   .create();
+  
+//Рецепт аквамарина
+recipes.addShaped(<astralsorcery:itemcraftingcomponent>*2, 
+  [[null, null, null],
+  [<minecraft:flint>, <minecraft:sand>, <minecraft:flint>],
+  [null, null, null]]);
 
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:cake>, false);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:iron_ore>, <astralsorcery:blockcustomore:1>, 50);
-
-recipes.addShapeless(<astralsorcery:blockaltar>, [<astralsorcery:blockaltar>]);

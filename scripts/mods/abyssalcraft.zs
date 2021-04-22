@@ -1,13 +1,10 @@
-import mods.artisanworktables.builder.RecipeBuilder; 
-recipes.removeByRecipeName("abyssalcraft:necronomicon");//Удаление первого некрономикона
+ import mods.artisanworktables.builder.RecipeBuilder; 
+ recipes.removeByRecipeName("abyssalcraft:necronomicon");//Удаление первого некрономикона
 RecipeBuilder.get("mage")
   .setShaped([
-    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <ore:ingotIron>],
+    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:iron_block>],
     [<minecraft:rotten_flesh>, <minecraft:book>, <minecraft:rotten_flesh>],
-    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <ore:ingotIron>]])
-  .setFluid(<liquid:molten_tar> * 1000)
-  .setSecondaryIngredients([<minecraft:chicken> * 5])
-  .addTool(<ore:artisansAthame>, 25)
+    [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:iron_block>]])	
   .addTool(<ore:artisansNeedle>, 25)
   .addOutput(<abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as float}))
   .create();
@@ -334,6 +331,7 @@ RecipeBuilder.get("mage")
     [<abyssalcraft:skin>, <abyssalcraft:skin>, <abyssalcraft:skin>],
     [<abyssalcraft:skin>, <abyssalcraft:necronomicon>.withTag({}), <abyssalcraft:skin>],
     [<abyssalcraft:skin>, <abyssalcraft:skin>, <abyssalcraft:skin>]])
+  .setSecondaryIngredients([<minecraft:chicken> * 16])
   .setFluid(<liquid:molten_tar> * 2000)
   .addTool(<ore:artisansNeedle>, 50)
   .addTool(<ore:artisansAthame>, 50)
@@ -346,6 +344,7 @@ RecipeBuilder.get("mage")
     [<abyssalcraft:skin:1>, <abyssalcraft:skin:1>, <abyssalcraft:skin:1>],
     [<abyssalcraft:skin:1>, <abyssalcraft:necronomicon_cor>.withTag({}), <abyssalcraft:skin:1>],
     [<abyssalcraft:skin:1>, <abyssalcraft:skin:1>, <abyssalcraft:skin:1>]])
+  .setSecondaryIngredients([<minecraft:chicken> * 32])
   .setFluid(<liquid:molten_tar> * 4000)
   .addTool(<ore:artisansNeedle>, 50)
   .addTool(<ore:artisansAthame>, 50)
@@ -442,7 +441,7 @@ RecipeBuilder.get("mage")
   .create();
   
   recipes.removeByRecipeName("abyssalcraft:dreadblade");//Удаление лезвия катаны  
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
   .setShaped([
     [<abyssalcraft:crystalcluster:14>, <abyssalcraft:crystalcluster:14>],
     [<abyssalcraft:crystalcluster:14>, <abyssalcraft:crystalcluster:14>],
@@ -470,13 +469,15 @@ RecipeBuilder.get("mage")
     [<abyssalcraft:skin:2>, <abyssalcraft:skin:2>, <abyssalcraft:skin:2>],
     [<abyssalcraft:skin:2>, <abyssalcraft:necronomicon_dre>.withTag({}), <abyssalcraft:skin:2>],
     [<abyssalcraft:skin:2>, <abyssalcraft:skin:2>, <abyssalcraft:skin:2>]])
+  .setSecondaryIngredients([<minecraft:chicken> * 64])
   .setFluid(<liquid:molten_tar> * 8000)
   .addTool(<ore:artisansNeedle>, 100)
   .addTool(<ore:artisansAthame>, 100)
   .addOutput(<abyssalcraft:necronomicon_omt>.withTag({PotEnergy: 0.0 as float}))
   .create();
   
-  recipes.removeByRecipeName("abyssalcraft:necronomicon_omt");//Удаление абиссальмикона
+  
+  recipes.removeByRecipeName("abyssalcraft:abyssalnomicon");//Удаление абиссальмикона
 RecipeBuilder.get("mage")
   .setShaped([
     [<abyssalcraft:ingotblock:3>, null, null, null, <abyssalcraft:ingotblock:3>],
@@ -484,6 +485,7 @@ RecipeBuilder.get("mage")
     [null, <abyssalcraft:eldritchscale>, <abyssalcraft:necronomicon_omt>.withTag({}), <abyssalcraft:eldritchscale>, null],
     [null, null, <abyssalcraft:eldritchscale>, null, null],
     [<abyssalcraft:ingotblock:3>, null, null, null, <abyssalcraft:ingotblock:3>]])
+  .setSecondaryIngredients([<minecraft:chicken> * 64, <minecraft:chicken> * 64])
   .setFluid(<liquid:molten_tar> * 16000)
   .addTool(<ore:artisansHammer>, 200)
   .addTool(<ore:artisansAthame>, 200)
@@ -643,7 +645,7 @@ RecipeBuilder.get("mage")
   .create();
   
   recipes.removeByRecipeName("abyssalcraft:cloth");//Удаление ткани
-RecipeBuilder.get("tailor")
+RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:web>, <minecraft:web>, <minecraft:web>],
     [<minecraft:web>, <minecraft:wool>, <minecraft:web>],
@@ -653,14 +655,22 @@ RecipeBuilder.get("tailor")
   .addOutput(<abyssalcraft:cloth>)
   .create();
 
-  recipes.removeByRecipeName("abyssalcraft:ironp");//Удаление железной тарелки
-RecipeBuilder.get("blacksmith")
+  recipes.removeByRecipeName("abyssalcraft:ironp");//Удаление железной пластины
+  recipes.removeByRecipeName("abyssalcraft:ironp_alt");//Удаление железной пластины
+RecipeBuilder.get("mage")
   .setShaped([
-    [null, <ore:ingotIron>, null],
-    [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
-    [null, <ore:ingotIron>, null]])
+    [null, <minecraft:iron_ingot>, null],
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [null, <minecraft:iron_ingot>, null]])
   .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansPliers>, 25)
   .addOutput(<abyssalcraft:ironp> * 2)
+  .create();
+  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<abyssalcraft:dirtyplate>, <abyssalcraft:cloth>]])
+  .addOutput(<abyssalcraft:ironp>)
   .create();
 
   recipes.removeByRecipeName("abyssalcraft:statetransformer");//Удаление трансформатора состояния
@@ -721,11 +731,11 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("abyssalcraft:coin");//Удаление монеты
   recipes.removeByRecipeName("abyssalcraft:coin_alt");//Удаление монеты
   recipes.removeByRecipeName("abyssalcraft:coin_alt_alt");//Удаление монеты
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mage")
   .setShaped([
-    [null, <ore:ingotIron>, null],
-    [<ore:ingotIron>, <minecraft:flint>, <ore:ingotIron>],
-    [null, <ore:ingotIron>, null]])
+    [null, <minecraft:iron_ingot>, null],
+    [<minecraft:iron_ingot>, <minecraft:flint>, <minecraft:iron_ingot>],
+    [null, <minecraft:iron_ingot>, null]])
   .addTool(<ore:artisansHammer>, 10)
   .addTool(<ore:artisansPliers>, 10)
   .addOutput(<abyssalcraft:coin>)
@@ -733,12 +743,12 @@ RecipeBuilder.get("blacksmith")
   
   recipes.removeByRecipeName("abyssalcraft:oblivion_deathbomb_0");//Удаление бомбы смерти
   recipes.removeByRecipeName("abyssalcraft:oblivion_deathbomb_1");//Удаление бомбы смерти
+  
+// Удаление крафта досок  
+  recipes.removeByRecipeName("abyssalcraft:dltplank");
+  recipes.removeByRecipeName("abyssalcraft:dreadplanks");
 
-// Удаление крафта досок
-recipes.removeByRecipeName("abyssalcraft:dltplank");
-recipes.removeByRecipeName("abyssalcraft:dreadplanks");
-
-recipes.removeByRecipeName("abyssalcraft:ahoe");
+  recipes.removeByRecipeName("abyssalcraft:ahoe");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotAbyssalnite>, <ore:ingotAbyssalnite>],
@@ -748,7 +758,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<abyssalcraft:ahoe>)
   .create();
 
-recipes.removeByRecipeName("abyssalcraft:corhoe");
+  recipes.removeByRecipeName("abyssalcraft:corhoe");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotLiquifiedCoralium>, <ore:ingotLiquifiedCoralium>],
@@ -758,7 +768,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<abyssalcraft:corhoe>)
   .create();
 
-recipes.removeByRecipeName("abyssalcraft:daxe");
+  recipes.removeByRecipeName("abyssalcraft:daxe");
 RecipeBuilder.get("mason")
   .setShaped([
     [<abyssalcraft:darkstone_brick:1>, <abyssalcraft:darkstone_brick:1>],
@@ -768,7 +778,7 @@ RecipeBuilder.get("mason")
   .addOutput(<abyssalcraft:daxe>)
   .create();
 
-recipes.removeByRecipeName("abyssalcraft:dhoe");
+  recipes.removeByRecipeName("abyssalcraft:dhoe");
 RecipeBuilder.get("mason")
   .setShaped([
     [<abyssalcraft:cobblestone>, <abyssalcraft:cobblestone>],
@@ -778,7 +788,7 @@ RecipeBuilder.get("mason")
   .addOutput(<abyssalcraft:dhoe>)
   .create();
 
-recipes.removeByRecipeName("abyssalcraft:dreadiumhoe");
+  recipes.removeByRecipeName("abyssalcraft:dreadiumhoe");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotDreadium>, <ore:ingotDreadium>],
