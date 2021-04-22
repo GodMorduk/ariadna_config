@@ -22,17 +22,17 @@ recipes.addShaped(<stewitems:laudanum>,[
 recipes.addShaped(<stewitems:medicine_sotocvet>,[
     [<harvestcraft:honeycombitem>, <ore:slimeball>, <harvestcraft:honeycombitem>],
     [<minecraft:dye:15>, <ore:wax>, <minecraft:dye:15>],
-    [<harvestcraft:honeycombitem>, <ore:slimeball>, <harvestcraft:honeycombitem>]])
+    [<harvestcraft:honeycombitem>, <ore:slimeball>, <harvestcraft:honeycombitem>]]);
 
 recipes.addShaped(<stewitems:medicine_kanai>,[
     [<ore:treeLeaves>, <ore:sugar>, <ore:treeLeaves>],
     [<thaumicbases:tobacco_pile>, <stewitems:rubbing_alcohol>, <thaumicbases:tobacco_pile>],
-    [<ore:treeLeaves>, <ore:sugar>, <ore:treeLeaves>]])
+    [<ore:treeLeaves>, <ore:sugar>, <ore:treeLeaves>]]);
 
 recipes.addShaped(<stewitems:medicine_kazachban>,[
     [<ore:wax>, <ore:healPlant>, <ore:healPlant>],
     [<ore:bonemeal>, <ore:itemSalt>, <ore:bonemeal>],
-    [<pyrotech:strange_tuber>, <pyrotech:strange_tuber>, <ore:wax>]])
+    [<pyrotech:strange_tuber>, <pyrotech:strange_tuber>, <ore:wax>]]);
 
 recipes.addShapeless(<firstaid:bandage> * 4, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
 
