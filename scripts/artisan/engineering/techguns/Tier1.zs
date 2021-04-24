@@ -19,8 +19,8 @@ recipes.addShaped(<techguns:handcannon>.withTag({ammo: 0 as short}),[
 	
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:38>, <ore:ingotIron>, null],
-    [<techguns:itemshared:38>, <minecraft:iron_block>, <ore:ingotIron>],
+    [<techguns:itemshared:38>, <techguns:itemshared:38>, null],
+    [<ore:ingotIron>, <minecraft:iron_block>, <ore:ingotIron>],
     [null, <techguns:itemshared:33>, <techguns:itemshared:42>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<techguns:sawedoff>.withTag({ammo: 0 as short}))
