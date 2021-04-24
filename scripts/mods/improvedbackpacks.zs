@@ -24,9 +24,9 @@ RecipeBuilder.get("tanner")
 recipes.removeByRecipeName("improvedbackpacks:item.upgrade");
 RecipeBuilder.get("tanner")
   .setShaped([
-    [<biomesoplenty:log_2:4>, <improvedbackpacks:tanned_leather>, <biomesoplenty:log_2:4>],
-    [<biomesoplenty:log_2:4>, <improvedbackpacks:blank_upgrade>, <biomesoplenty:log_2:4>],
-    [<biomesoplenty:log_2:4>, <improvedbackpacks:tanned_leather>, <biomesoplenty:log_2:4>]])
+    [<ore:logWood>, <improvedbackpacks:tanned_leather>, <ore:logWood>],
+    [<ore:logWood>, <improvedbackpacks:blank_upgrade>, <ore:logWood>],
+    [<ore:logWood>, <improvedbackpacks:tanned_leather>, <ore:logWood>]])
   .addTool(<ore:artisansNeedle>, 25)
   .addOutput(<improvedbackpacks:upgrade>)
   .create();
