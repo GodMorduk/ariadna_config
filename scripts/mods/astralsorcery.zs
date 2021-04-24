@@ -795,3 +795,5 @@ recipes.addShaped(<astralsorcery:itemcraftingcomponent>*2,
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:cake>, false);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:iron_ore>, <astralsorcery:blockcustomore:1>, 50);
+
+recipes.addShapeless(<astralsorcery:blockaltar>, [<astralsorcery:blockaltar>]);
