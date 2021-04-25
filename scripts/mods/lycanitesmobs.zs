@@ -1,5 +1,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+recipes.removeByRecipeName("lycanitesmobs:frostboltscepter");
+
 // Staffs
 
 // 1 Tier
