@@ -43,8 +43,8 @@ recipes.removeByRecipeName("davincisvessels:tile.davincis.balloon.black43");
 
 for i in 0 to 16 {
   RecipeBuilder.get("tailor")
-    .setShapeless([<minecraft:wool>.definition.makeStack(i), <ore:fabricHemp>, <ore:string>])
-    .addTool(<ore:artisansNeedle>, 5)
+    .setShapeless([<minecraft:wool>.definition.makeStack(i), <ore:fabricHemp>, <ore:string>, <techguns:itemshared:60>])
+    .addTool(<ore:artisansNeedle>, 15)
     .addOutput(<davincisvessels:balloon>.definition.makeStack(i))
     .create();
 }
