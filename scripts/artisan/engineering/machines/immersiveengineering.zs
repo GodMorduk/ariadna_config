@@ -2096,8 +2096,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateCopper>, null, <ore:plateCopper>],
     [null, <ore:plateCopper>, null]])
   .addTool(<ore:artisansFramingHammer>, 5)
-  .addTool(<ore:artisansFile>, 5)
-  .addOutput(<immersiveengineering:bullet>*4)
+  .addOutput(<immersiveengineering:bullet>*2)
   .create();
 
 RecipeBuilder.get("engineer")
@@ -2105,8 +2104,7 @@ RecipeBuilder.get("engineer")
     [<ore:paper>, null, <ore:paper>],
     [<ore:paper>, null, <ore:paper>],
     [null, <ore:plateCopper>, null]])
-  .addTool(<ore:artisansFramingHammer>, 5)
-  .addTool(<ore:artisansFile>, 5)
+  .addTool(<ore:artisansFramingHammer>, 10)
   .addOutput(<immersiveengineering:bullet:1>*4)
   .create();
 
