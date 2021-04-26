@@ -1,7 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.removeByRecipeName("lycanitesmobs:frostboltscepter");
-
 // Staffs
 
 // 1 Tier
@@ -172,6 +170,21 @@ RecipeBuilder.get("mage")
   .create();
 
 // 2 Tier
+
+// Frostblot Scepter
+
+recipes.removeByRecipeName("lycanitesmobs:frostboltscepter");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostboltcharge>],
+    [<lycanitesmobs:frostboltcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:frostboltcharge>],
+    [<lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostwebscepter>, <lycanitesmobs:frostboltcharge>]])
+  .setFluid(<liquid:xpjuice> * 8000)
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
+  .addTool(<ore:artisansGrimoire>, 150)
+  .addTool(<ore:artisansAthame>, 150)
+  .addOutput(<lycanitesmobs:frostboltscepter>)
+  .create();
 
 // Spectral Bolt Scepter
 recipes.removeByRecipeName("lycanitesmobs:spectralboltscepter");
