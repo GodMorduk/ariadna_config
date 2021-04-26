@@ -1997,7 +1997,6 @@ RecipeBuilder.get("engineer")
     [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
     [<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:1>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansDriver>, 50)
   .addOutput(<immersiveengineering:metal_device1:5>)
   .create();
 
