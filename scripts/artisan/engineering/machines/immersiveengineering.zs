@@ -75,7 +75,7 @@ recipes.removeByRecipeName("immersiveengineering:wooden_devices/crate");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-    [<ore:plankTreatedWood>, null, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:ingotIron>, <ore:plankTreatedWood>],
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansFramingHammer>, 15)
   .addOutput(<immersiveengineering:wooden_device0>)
@@ -84,7 +84,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-    [<ore:plankTreatedWood>, null, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:ingotIron>, <ore:plankTreatedWood>],
     [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansHandsaw>, 5)
   .addOutput(<immersiveengineering:wooden_device0>)
