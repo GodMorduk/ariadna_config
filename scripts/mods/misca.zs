@@ -77,3 +77,9 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<misca:pick_magical>)
   .create();
+
+RecipeBuilder.get("basic")
+  .setShapeless([<ore:plateNickel> | <ore:plateIron> | <ore:plateGold> | <ore:plateCopper> | <ore:plateTin> | <ore:plateSilver> | <ore:plateLead> | <ore:plateAluminum>])
+  .addTool(<ore:artisansFile>, 5)
+  .addOutput(<misca:mechanical_key> * 2)
+  .create();

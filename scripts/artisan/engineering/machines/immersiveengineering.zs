@@ -1997,7 +1997,6 @@ RecipeBuilder.get("engineer")
     [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
     [<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:1>, <ore:plankTreatedWood>]])
   .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansDriver>, 50)
   .addOutput(<immersiveengineering:metal_device1:5>)
   .create();
 
@@ -2097,8 +2096,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateCopper>, null, <ore:plateCopper>],
     [null, <ore:plateCopper>, null]])
   .addTool(<ore:artisansFramingHammer>, 5)
-  .addTool(<ore:artisansFile>, 5)
-  .addOutput(<immersiveengineering:bullet>*4)
+  .addOutput(<immersiveengineering:bullet>*2)
   .create();
 
 RecipeBuilder.get("engineer")
@@ -2106,8 +2104,7 @@ RecipeBuilder.get("engineer")
     [<ore:paper>, null, <ore:paper>],
     [<ore:paper>, null, <ore:paper>],
     [null, <ore:plateCopper>, null]])
-  .addTool(<ore:artisansFramingHammer>, 5)
-  .addTool(<ore:artisansFile>, 5)
+  .addTool(<ore:artisansFramingHammer>, 10)
   .addOutput(<immersiveengineering:bullet:1>*4)
   .create();
 
