@@ -94,7 +94,7 @@ RecipeBuilder.get("carpenter")
   .addOutput(<futuremc:composter>)
   .create();
 
-recipes.addShaped(<futuremc:soul_fire_torch>, [
+recipes.addShaped(<futuremc:soul_fire_torch> * 2, [
   [<ore:coal> | <ore:charcoal>],
   [<ore:stickWood>],
   [<ore:soulSand>]
