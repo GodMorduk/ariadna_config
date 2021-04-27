@@ -47,6 +47,7 @@ Alloy.removeRecipe(<liquid:dark_steel>, [<liquid:steel>, <liquid:obsidian>]);
 
 Alloy.addRecipe(<liquid:signalum> * 72, [<liquid:copper> * 54, <liquid:silver> * 18, <liquid:redstone> * 125]);
 Alloy.addRecipe(<liquid:lumium> * 72, [<liquid:tin> * 54, <liquid:silver> * 18, <liquid:glowstone> * 125]);
+Alloy.addRecipe(<liquid:invar> * 3, [<liquid:iron> * 2, <liquid:nickel> * 1]);
 Alloy.addRecipe(<liquid:manyullyn> * 2, [<liquid:cobalt> * 1, <liquid:ardite> * 1]);
 Alloy.addRecipe(<liquid:bronze> * 4, [<liquid:copper> * 3, <liquid:tin> * 1]);
 Alloy.addRecipe(<liquid:electrum> * 2, [<liquid:silver> * 1, <liquid:gold> * 1]);
