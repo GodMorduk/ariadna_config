@@ -638,7 +638,7 @@ RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:ingotLead>, <ore:plateLead>, <ore:ingotLead>]])
   .addTool(<ore:artisansHammer>, 5)
-  .addOutput(<embers:item_pipe>)
+  .addOutput(<embers:item_pipe> * 8)
   .create();
 
 recipes.removeByRecipeName("embers:item_pump");
