@@ -20,20 +20,6 @@ mods.thaumcraft.Infusion.removeRecipe("crimsonrevelations:crimsonblade");
 
 
 
-//thaumic gadgets
-mods.thaumcraft.Crucible.removeRecipe("tg:shade_ore");
-mods.thaumcraft.Crucible.removeRecipe("tg:shade_metal");
-mods.thaumcraft.Crucible.registerRecipe("tg:shade_metal", "TG_SHADOW_METAL@1", <tg:ingot_shade>, <ore:ingotVoid>, [<aspect:tenebrae>*500, <aspect:vacuos>*400, <aspect:alienis>*300]);
-mods.thaumcraft.Crucible.removeRecipe("tg:light_ore");
-mods.thaumcraft.Crucible.removeRecipe("tg:light_metal");
-mods.thaumcraft.Crucible.registerRecipe("tg:light_metal", "TG_LIGHT_METAL@1", <tg:ingot_light>, <ore:ingotVoid>, [<aspect:lux>*500, <aspect:potentia>*400, <aspect:auram>*300]);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("tg:cutting_tools");
-mods.thaumcraft.Infusion.removeRecipe("tg:lense_blank");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("tg:teleporter_floor");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("name tg:teleporter_frame");
-
-
-
 //thaumic additions
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumadditions:knowledge_tome");
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumadditions:brass_jar");
