@@ -914,8 +914,7 @@ RecipeBuilder.get("blacksmith")
     [<embers:crystal_ember>, <embers:wall_caminite_brick>, <ore:blockIron>],
     [<ore:blockCopper>, <ore:plateIron>, <ore:blockIron>],
     [<embers:crystal_ember>, <embers:wall_caminite_brick>, <ore:blockIron>]])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansFramingHammer>, 150)
   .addOutput(<embers:auto_hammer>)
   .create();
 
