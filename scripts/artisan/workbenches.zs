@@ -224,6 +224,15 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
+    [<embers:auto_hammer>, <embers:dawnstone_anvil>, <embers:ember_activator>],
+    [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.3025 as float, FreeModifiers: 3, Durability: 2, HarvestLevel: 4, Attack: 3.15 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.3025 as float, FreeModifiers: 0, Durability: 2, HarvestLevel: 4, Attack: 3.15 as float}, Special: {Categories: ["harvest", "weapon", "tool", "aoe"]}, TinkerData: {Materials: ["obsidian", "obsidian", "obsidian", "obsidian"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "duritos", color: -10478396, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["duritos", "toolleveling"]}), <artisanworktables:worktable:3>, <embers:alchemy_tablet>],
+    [<tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}}), <pyrotech:wither_forge>, <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}})]])
+  .addTool(<ore:artisansFramingHammer>, 600)
+  .addOutput(<artisanworktables:workstation:3>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
     [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 3, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 0, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "unnatural", color: -9671572, level: 1}, {identifier: "enderference", color: -9671572, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["unnatural", "enderference", "toolleveling"]}), <thaumadditions:void_anvil>, <artisanworktables:artisans_pliers_diamond>],
     [<embers:catalyzer>, <artisanworktables:workstation:3>, <embers:alchemy_tablet>],
     [<embers:reactor>, <embers:inferno_forge>, <embers:reactor>]])
