@@ -93,3 +93,9 @@ RecipeBuilder.get("carpenter")
   .addTool(<ore:artisansFramingHammer>, 15)
   .addOutput(<futuremc:composter>)
   .create();
+
+recipes.addShaped(<futuremc:soul_fire_torch> * 2, [
+  [<ore:coal> | <ore:charcoal>],
+  [<ore:stickWood>],
+  [<ore:soulSand>]
+]);
