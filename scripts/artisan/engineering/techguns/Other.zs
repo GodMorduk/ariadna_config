@@ -55,6 +55,8 @@ RecipeBuilder.get("engineer")
   .addOutput(<techguns:itemshared:89>)
   .create();
 
+recipes.removeByRecipeName("techguns:glider");
+
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:57>, <harvestcraft:hardenedleatheritem>, <techguns:itemshared:57>],

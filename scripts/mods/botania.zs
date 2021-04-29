@@ -11,7 +11,7 @@ recipes.removeByRecipeName("extrabotany:recipe_tribloodstone");//Удалени�
 RecipeBuilder.get("mage")
   .setShaped([
     [null, <botania:manaresource:2>, null],
-    [<botania:manaresource>, <botania:manatablet>.withTag({}), <botania:manaresource>],
+    [<botania:manaresource>, <botania:manatablet>.withTag({mana: 500000}), <botania:manaresource>],
     [null, <botania:manaresource:1>, null]])
   .addTool(<ore:artisansLens>, 50)
   .addTool(<ore:artisansPliers>, 50)
@@ -20,187 +20,187 @@ RecipeBuilder.get("mage")
 
   
   recipes.removeByRecipeName("botania:manaring");//Удаление мана кольца
-mods.botania.RuneAltar.addRecipe(<botania:manaring>.withTag({}),[<botania:manatablet>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:manaring>.withTag({}),[<botania:manatablet>, <botania:manaresource>, <ore:runeManaB>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:auraring");//Удаление кольца ауры
-mods.botania.RuneAltar.addRecipe(<botania:auraring>,[<ore:runeManaB>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:auraring>,[<ore:runeManaB>, <botania:manaresource>, <ore:runeManaB>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:travelbelt");// Удаление пояса путешественника
-mods.botania.RuneAltar.addRecipe(<botania:travelbelt>,[<ore:runeAirB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:travelbelt>,[<ore:runeAirB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>, <botania:storage>], 250000);
 
   recipes.removeByRecipeName("botania:knockbackbelt");// Удаление тектонического пояса
-mods.botania.RuneAltar.addRecipe(<botania:knockbackbelt>,[<ore:runeFireB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:knockbackbelt>,[<ore:runeFireB>, <ore:leather>, <ore:runeManaB>, <botania:forestdrum>, <extrabotany:material:10>, <botania:forestdrum>, <botania:storage>, <ore:leather>, <ore:runeEarthB>, <botania:storage>], 250000);
 
   recipes.removeByRecipeName("botania:speedupbelt");// Удаление пояса скитальца
 mods.botania.RuneAltar.addRecipe(<botania:speedupbelt>,[<extrabotany:candy:2>, <minecraft:filled_map>, <extrabotany:candy:2>, <botania:grassseeds>, <botania:travelbelt>, <botania:grassseeds>, <minecraft:sugar>, <minecraft:cake>, <minecraft:sugar>], 100000);
 
   recipes.removeByRecipeName("botania:icependant");// Удаление кулона снежинки
-mods.botania.RuneAltar.addRecipe(<botania:icependant>.withTag({}),[<ore:runeWinterB>, <ore:clothManaweave>, <ore:runeManaB>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeWaterB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:icependant>.withTag({}),[<ore:runeWinterB>, <ore:clothManaweave>, <ore:runeManaB>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeWaterB>], 250000);
 
   recipes.removeByRecipeName("botania:lavapendant");// Удаление пирокластического кулона
-mods.botania.RuneAltar.addRecipe(<botania:lavapendant>.withTag({}),[<ore:runeSummerB>, <ore:clothManaweave>, <ore:runeManaB>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeFireB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:lavapendant>.withTag({}),[<ore:runeSummerB>, <ore:clothManaweave>, <ore:runeManaB>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeFireB>], 250000);
 
   recipes.removeByRecipeName("botania:magnetring");// Удаление кольца магнетизма
-mods.botania.RuneAltar.addRecipe(<botania:magnetring>.withTag({}),[<botania:lens:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <botania:lens:10>, <botania:storage>, <botania:lens:10>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:magnetring>.withTag({}),[<botania:lens:10>, <botania:manaresource>, <ore:runeManaB>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <botania:storage>, <botania:lens:10>], 250000);
 
   recipes.removeByRecipeName("botania:waterring");// Удаление кольца хордовых
-mods.botania.RuneAltar.addRecipe(<botania:waterring>.withTag({}),[<ore:runeWaterB>, <botania:storage>, <minecraft:fish:3>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <minecraft:fish:1>, <botania:storage>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:waterring>.withTag({}),[<ore:runeWaterB>, <botania:manaresource>, <minecraft:fish:3>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <minecraft:fish:1>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:miningring");// Удаление кольца шахтера
-mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:storage>, <minecraft:golden_pickaxe>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:manaresource>, <minecraft:golden_pickaxe>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:divacharm");// Удаление шарма дивы
-mods.botania.RuneAltar.addRecipe(<botania:divacharm>.withTag({}),[<botania:manaresource:14>, <botania:storage>, <botania:tinyplanet>, <botania:manaresource:14>, <ore:runePrideB>, <ore:blockGold>, <ore:runeManaB>, <botania:storage>, <botania:manaresource:14>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:divacharm>.withTag({}),[<botania:manaresource:14>, <botania:storage>, <botania:tinyplanet>, <botania:manaresource:14>, <ore:runePrideB>, <ore:blockGold>, <ore:runeManaB>, <botania:storage>, <botania:manaresource:14>], 250000);
 
   recipes.removeByRecipeName("botania:pixiering");// Удаление кольца фей
-mods.botania.RuneAltar.addRecipe(<botania:pixiering>.withTag({}),[<extrabotany:bottledpixie>, <botania:storage:2>, <extrabotany:bottledpixie>, <botania:storage:2>, <extrabotany:material:10>, <botania:storage:2>, <extrabotany:bottledpixie>, <botania:storage:2>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:pixiering>.withTag({}),[<extrabotany:bottledpixie>, <botania:manaresource:7>, <extrabotany:bottledpixie>, <botania:manaresource:7>, <extrabotany:material:10>, <botania:manaresource:7>, <extrabotany:bottledpixie>, <botania:storage:2>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:supertravelbelt");// Удаление пояса пилигрима 
-mods.botania.RuneAltar.addRecipe(<botania:supertravelbelt>.withTag({}),[<botania:storage:2>, <ore:runeManaB>, <ore:gaiaIngot>, <ore:runeManaB>, <botania:travelbelt>, <ore:runeManaB>, <ore:gaiaIngot>, <ore:runeManaB>, <botania:storage:2>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:supertravelbelt>.withTag({}),[<botania:storage:2>, <ore:runeManaB>, <ore:gaiaIngot>, <ore:runeManaB>, <botania:travelbelt>, <ore:runeManaB>, <ore:gaiaIngot>, <ore:runeManaB>, <botania:storage:2>], 250000);
 
   recipes.removeByRecipeName("botania:reachring");// Удаление кольца дальнего богатства
-mods.botania.RuneAltar.addRecipe(<botania:reachring>.withTag({}),[<ore:runePrideB>, <botania:storage:2>, <ore:runePrideB>, <botania:storage:2>, <extrabotany:material:10>, <botania:storage:2>, <ore:runePrideB>, <botania:storage:2>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:reachring>.withTag({}),[<ore:runePrideB>, <botania:manaresource:7>, <ore:runePrideB>, <botania:manaresource:7>, <extrabotany:material:10>, <botania:manaresource:7>, <ore:runePrideB>, <botania:storage:2>, <ore:runeManaB>], 250000);
   
   recipes.removeByRecipeName("botania:itemfinder");// Удаление инспектора
-mods.botania.RuneAltar.addRecipe(<botania:itemfinder>.withTag({}),[<minecraft:ender_eye>, <ore:blockIron>, <minecraft:ender_eye>, <ore:blockIron>, <extrabotany:material:10>, <ore:blockIron>, <botania:storage>, <ore:gemEmerald>, <botania:storage>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:itemfinder>.withTag({}),[<minecraft:ender_eye>, <minecraft:iron_ingot>, <minecraft:ender_eye>, <minecraft:iron_ingot>, <extrabotany:material:10>, <ore:blockIron>, <botania:storage>, <ore:gemEmerald>, <botania:storage>], 250000);
 
   recipes.removeByRecipeName("botania:superlavapendant");// Удаление багрового кулона
-mods.botania.RuneAltar.addRecipe(<botania:superlavapendant>.withTag({}),[<ore:blockBlaze>, <ore:blockBlaze>, <ore:blockBlaze>, <ore:blockBlaze>, <botania:lavapendant>, <ore:blockBlaze>, <minecraft:nether_brick>, <ore:gaiaIngot>, <minecraft:nether_brick>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:superlavapendant>.withTag({}),[<ore:blockBlaze>, <ore:blockBlaze>, <botania:lavapendant>, <ore:blockBlaze>, <minecraft:nether_brick>, <ore:gaiaIngot>, <minecraft:nether_brick>], 250000);
 
   recipes.removeByRecipeName("botania:bloodpendant");// Удаление кулона запятнанной крови
-mods.botania.RuneAltar.addRecipe(<botania:bloodpendant>.withTag({}),[<ore:runeManaB>, <ore:blockPrismarineBrick>, <ore:runeManaB>, <ore:blockPrismarineBrick>, <minecraft:end_crystal>, <ore:blockPrismarineBrick>, <botania:storage:3>, <ore:blockPrismarineBrick>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:bloodpendant>.withTag({}),[<ore:runeManaB>, <ore:blockPrismarineBrick>, <ore:runeManaB>, <ore:blockPrismarineBrick>, <minecraft:end_crystal>, <ore:blockPrismarineBrick>, <botania:storage:3>, <ore:blockPrismarineBrick>, <ore:runeManaB>, <botania:storage:3>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_mastermanaring");// Удаление кольца мастера маны
-mods.botania.RuneAltar.addRecipe(<extrabotany:mastermanaring>.withTag({}),[<botania:storage:1>, <extrabotany:material:3>, <botania:storage:1>, <botania:manatablet>, <botania:manaringgreater>, <botania:manatablet>, <botania:storage:1>, <botania:manatablet>, <botania:storage:1>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:mastermanaring>.withTag({}),[<extrabotany:material:3>, <botania:storage:1>, <botania:manatablet>, <botania:manaringgreater>, <botania:manatablet>, <botania:storage:1>, <botania:manatablet>, <botania:storage:1>], 250000);
 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:froststar>); //Удаление кольца заморозки
-mods.botania.RuneAltar.addRecipe(<extrabotany:froststar>.withTag({}),[<ore:runeManaB>, <extrabotany:blockorichalcos>, <ore:runeManaB>, <minecraft:packed_ice>, <extrabotany:material:10>, <minecraft:packed_ice>, <botania:storage>, <extrabotany:blockorichalcos>, <botania:storage>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:froststar>.withTag({}),[<ore:runeManaB>, <extrabotany:blockorichalcos>, <ore:runeManaB>, <minecraft:packed_ice>, <extrabotany:material:10>, <minecraft:packed_ice>, <botania:storage>, <extrabotany:blockorichalcos>, <botania:storage>], 250000);
 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:deathring>); //Удаление кольца иссушения
-mods.botania.RuneAltar.addRecipe(<extrabotany:deathring>.withTag({}),[<extrabotany:blockorichalcos>, <minecraft:skull:1>, <extrabotany:blockorichalcos>, <ore:netherStar>, <extrabotany:material:10>, <ore:netherStar>, <extrabotany:blockorichalcos>, <minecraft:skull:1>, <extrabotany:blockorichalcos>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:deathring>.withTag({}),[<extrabotany:blockorichalcos>, <minecraft:skull:1>, <extrabotany:blockorichalcos>, <ore:netherStar>, <extrabotany:material:10>, <ore:netherStar>, <extrabotany:blockorichalcos>, <minecraft:skull:1>, <extrabotany:blockorichalcos>], 250000);
 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:wallrunning>); //Удаление кольца бега по стенам
-mods.botania.RuneAltar.addRecipe(<extrabotany:wallrunning>.withTag({}),[<ore:runeEarthB>, <extrabotany:material:10>, <ore:runeManaB>, <botania:storage>, <botania:tornadorod>, <botania:storage>, <ore:runeManaB>, <botania:worldseed>, <ore:runeEarthB>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:wallrunning>.withTag({}),[<ore:runeEarthB>, <extrabotany:material:10>, <ore:runeManaB>, <botania:storage>, <botania:tornadorod>, <botania:storage>, <ore:runeManaB>, <botania:worldseed>, <ore:runeEarthB>], 250000);
 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:walljumping>); //Удаление кольца прыжка от стен
-mods.botania.RuneAltar.addRecipe(<extrabotany:walljumping>.withTag({}),[<ore:runeAirB>, <extrabotany:material:10>, <ore:runeManaB>, <botania:storage>, <botania:dirtrod>, <botania:storage>, <ore:runeManaB>, <botania:worldseed>, <ore:runeAirB>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:walljumping>.withTag({}),[<ore:runeAirB>, <extrabotany:material:10>, <ore:runeManaB>, <botania:storage>, <botania:dirtrod>, <botania:storage>, <ore:runeManaB>, <botania:worldseed>, <ore:runeAirB>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_parkour"); //Удаление кольца паркура
 mods.botania.RuneAltar.addRecipe(<extrabotany:parkour>.withTag({}),[<ore:blockSlime>, <extrabotany:wallrunning>, <ore:runeAirB>, <extrabotany:walljumping>, <ore:blockSlime>], 250000);
 
   mods.botania.RuneAltar.removeRecipe(<extrabotany:elvenking>); //Удаление кольца эльфийского короля
-mods.botania.RuneAltar.addRecipe(<extrabotany:elvenking>.withTag({}),[<ore:quartzElven>, <extrabotany:blockorichalcos>, <ore:runeSpringB>, <extrabotany:blockorichalcos>, <extrabotany:material:10>, <extrabotany:blockorichalcos>, <ore:runeSpringB>, <extrabotany:blockorichalcos>, <ore:quartzElven>], 5000000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:elvenking>.withTag({}),[<ore:quartzElven>, <ore:runeSpringB>, <extrabotany:material:10>, <extrabotany:blockorichalcos>, <ore:runeSpringB>, <extrabotany:blockorichalcos>, <ore:quartzElven>], 5000000);
 
   recipes.removeByRecipeName("extrabotany:recipe_manadriverring"); //Удаление кольца манадрайва
 mods.botania.RuneAltar.addRecipe(<extrabotany:manadriverring>.withTag({}),[<ore:runeEnvyB>, <extrabotany:material:3>, <ore:runeManaB>, <ore:elvenPixieDust>, <botania:manaring>, <ore:elvenPixieDust>, <ore:runeManaB>, <ore:elvenPixieDust>, <ore:runeEnvyB>], 250000);
 
   recipes.removeByRecipeName("botania:cloudpendant");// Удаление пернатого кулона
-mods.botania.RuneAltar.addRecipe(<botania:cloudpendant>, [<ore:runeAutumnB>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeAirB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:cloudpendant>, [<ore:runeAutumnB>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <extrabotany:material:10>, <ore:clothManaweave>, <botania:storage>, <ore:clothManaweave>, <ore:runeAirB>], 250000);
 
   recipes.removeByRecipeName("botania:supercloudpendant");// Удаление кулона нимба
-mods.botania.RuneAltar.addRecipe(<botania:supercloudpendant>,[<minecraft:ghast_tear>, <botania:storage:2>, <minecraft:ghast_tear>, <minecraft:ghast_tear>, <botania:cloudpendant>, <minecraft:ghast_tear>, <botania:tornadorod>, <ore:gaiaIngot>, <botania:tornadorod>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:supercloudpendant>,[<minecraft:ghast_tear>, <botania:storage:2>, <minecraft:ghast_tear>, <minecraft:ghast_tear>, <botania:cloudpendant>, <minecraft:ghast_tear>, <botania:tornadorod>, <ore:gaiaIngot>, <botania:tornadorod>], 250000);
 
   recipes.removeByRecipeName("botania:thirdeye");// Удаление третьего глаза
-mods.botania.RuneAltar.addRecipe(<botania:thirdeye>,[<minecraft:golden_carrot>, <extrabotany:material:3>, <minecraft:golden_carrot>, <minecraft:ender_eye>, <extrabotany:material:10>, <minecraft:ender_eye>, <botania:storage:3>, <minecraft:ender_eye>, <botania:storage:3>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:thirdeye>,[<minecraft:golden_carrot>, <extrabotany:material:3>, <minecraft:golden_carrot>, <minecraft:ender_eye>, <extrabotany:material:10>, <minecraft:ender_eye>, <botania:storage:3>, <minecraft:ender_eye>, <botania:storage:3>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_natureorb");// Удаление орба природы
-mods.botania.RuneAltar.addRecipe(<extrabotany:natureorb>.withTag({}),[<botania:storage:1>, <botania:storage:4>, <botania:storage:1>, <botania:storage:4>, <ore:manaPearl>, <botania:storage:4>, <botania:storage:1>, <botania:storage:4>, <botania:storage:1>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:natureorb>.withTag({}),[<ore:manaPearl>, <botania:storage:4>, <botania:storage:1>, <botania:storage:4>, <botania:storage:1>], 250000);
 
   recipes.removeByRecipeName("botania:dodgering");// Удаление кольца ловкого движения(уворота)
-mods.botania.RuneAltar.addRecipe(<botania:dodgering>,[<ore:blockEmerald>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeManaB>, <botania:storage>, <ore:runeAirB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:dodgering>,[<ore:blockEmerald>, <botania:manaresource>, <ore:runeManaB>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeAirB>], 250000);
   
   recipes.removeByRecipeName("botania:swapring");// Удаление кольца корекции
-mods.botania.RuneAltar.addRecipe(<botania:swapring>,[<minecraft:clay>, <botania:storage>, <ore:runeEarthB>, <botania:storage>, <extrabotany:material:10>, <botania:storage>, <ore:runeEarthB>, <botania:storage>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:swapring>,[<minecraft:clay>, <botania:manaresource>, <ore:runeEarthB>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeEarthB>, <botania:storage>, <ore:runeManaB>], 250000);
   
-  recipes.removeByRecipeName("botania:auraringgreater");// Удаление велького кольца ауры
-mods.botania.RuneAltar.addRecipe(<botania:auraringgreater>,[<botania:storage:1>,<botania:auraring>, <ore:runeEnvyB>], 500000);
+  recipes.removeByRecipeName("botania:auraringgreater");// Удаление великого кольца ауры
+mods.botania.RuneAltar.addRecipe(<botania:auraringgreater>,[<botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:auraring>, <ore:runeEnvyB>], 250000);
 
-  recipes.removeByRecipeName("botania:manaringgreater");// Удаление велького кольца маны
-mods.botania.RuneAltar.addRecipe(<botania:manaringgreater>.withTag({}),[<botania:storage:1>, <botania:manaring>, <ore:runePrideB>], 500000);
+  recipes.removeByRecipeName("botania:manaringgreater");// Удаление великого кольца маны
+mods.botania.RuneAltar.addRecipe(<botania:manaringgreater>.withTag({}),[<botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaring>, <ore:runePrideB>], 250000);
 
   recipes.removeByRecipeName("botania:magnetringgreater");// Удаление великого кольца магнетизма
-mods.botania.RuneAltar.addRecipe(<botania:magnetringgreater>.withTag({}),[<botania:storage:1>,<botania:magnetring>, <ore:runeGreedB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:magnetringgreater>.withTag({}),[<botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:magnetring>, <ore:runeGreedB>], 250000);
 
   recipes.removeByRecipeName("botania:unholycloak");// Удаление палаща греха
-mods.botania.RuneAltar.addRecipe(<botania:unholycloak>.withTag({}),[<ore:wool>, <ore:wool>, <ore:wool>, <extrabotany:material:1>, <ore:wool>, <extrabotany:material:1>, <ore:dustRedstone>, <ore:ingotGaiasteel>, <ore:dustRedstone>, <extrabotany:material:1>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:unholycloak>.withTag({}),[<ore:wool>, <ore:wool>, <ore:wool>, <extrabotany:material:1>, <ore:wool>, <extrabotany:material:1>, <ore:dustRedstone>, <ore:ingotGaiasteel>, <ore:dustRedstone>, <extrabotany:material:1>], 250000);
 
   recipes.removeByRecipeName("botania:holycloak");// Удаление палаща добродетеля
-mods.botania.RuneAltar.addRecipe(<botania:holycloak>.withTag({}),[<ore:wool>, <ore:wool>, <ore:wool>, <extrabotany:material:1>, <ore:wool>, <extrabotany:material:1>, <ore:dustGlowstone>, <ore:ingotGaiasteel>, <ore:dustGlowstone>, <extrabotany:material:1>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:holycloak>.withTag({}),[<ore:wool>, <ore:wool>, <ore:wool>, <extrabotany:material:1>, <ore:wool>, <extrabotany:material:1>, <ore:dustGlowstone>, <ore:ingotGaiasteel>, <ore:dustGlowstone>, <extrabotany:material:1>], 250000);
 
   recipes.removeByRecipeName("botania:balancecloak");// Удаление палаща баланса
-mods.botania.RuneAltar.addRecipe(<botania:balancecloak>,[<ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:gemEmerald>, <ore:ingotGaiasteel>, <ore:gemEmerald>, <extrabotany:material:1>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:balancecloak>,[<ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:gemEmerald>, <ore:ingotGaiasteel>, <ore:gemEmerald>, <extrabotany:material:1>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_walkingcane");// Удаление трости для ходьбы
-mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<ore:livingrock>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <ore:livingrock>, <ore:runeManaB>, <ore:dreamwoodTwig>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<ore:livingrock>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <ore:livingrock>, <ore:runeManaB>, <ore:dreamwoodTwig>], 250000);
  
   recipes.removeByRecipeName("botanicadds:ring_aura_gaia");// Удаление кольца ауры Гайи
-mods.botania.RuneAltar.addRecipe(<botanicadds:ring_aura_gaia>,[<ore:blockGaiasteel>, <ore:runeEnvyB>, <botania:auraringgreater>, <ore:runeEnvyB>, <ore:runeEnvyB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botanicadds:ring_aura_gaia>,[<botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <ore:runeEnvyB>, <botania:auraringgreater>, <ore:runeEnvyB>, <ore:runeEnvyB>], 250000);
   
   recipes.removeByRecipeName("botanicadds:terra_protector");// Удаление протектора Гайи
-mods.botania.RuneAltar.addRecipe(<botanicadds:terra_protector>,[<ore:blockGaiasteel>, <ore:blockGaiasteel>, <ore:blockGaiasteel>, <ore:ingotTerrasteel>, <ore:runeSpringB>, <ore:ingotTerrasteel>, <ore:runeManaB>, <ore:ingotTerrasteel>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botanicadds:terra_protector>,[<ore:blockGaiasteel>, <ore:blockGaiasteel>, <ore:ingotTerrasteel>, <ore:runeSpringB>, <ore:ingotTerrasteel>, <ore:runeManaB>, <ore:ingotTerrasteel>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:goddesscharm");// Удаление обаяния богини
-mods.botania.RuneAltar.addRecipe(<botania:goddesscharm>.withTag({}),[<ore:petalPink>, <extrabotany:material:10>, <ore:petalPink>, <ore:runeManaB>, <ore:petalPink>, <ore:runeManaB>, <ore:runeWaterB>, <botania:storage:3>, <ore:runeSpringB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:goddesscharm>.withTag({}),[<ore:petalPink>, <extrabotany:material:10>, <ore:petalPink>, <ore:runeManaB>, <ore:petalPink>, <ore:runeManaB>, <ore:runeWaterB>, <botania:storage:3>, <ore:runeSpringB>], 250000);
 
   recipes.removeByRecipeName("botania:manamirror");// Удаление зеркала маны
-mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <ore:livingrock>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <ore:livingrock>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 250000);
 
   recipes.removeByRecipeName("botania:craftinghalo");// Удаление сборачного гало
-mods.botania.RuneAltar.addRecipe(<botania:craftinghalo>.withTag({}),[<botania:tinyplanet>, <botania:storage>, <ore:workbench>, <botania:storage>, <botania:storage>], 100000);
+mods.botania.RuneAltar.addRecipe(<botania:craftinghalo>.withTag({}),[<botania:tinyplanet>, <botania:storage>, <ore:workbench>, <botania:storage>, <botania:storage>], 10000);
 
   recipes.removeByRecipeName("botania:autocraftinghalo");// Удаление манафактурного гало
-mods.botania.RuneAltar.addRecipe(<botania:autocraftinghalo>.withTag({}),[<botania:storage:3>, <ore:slimeball>, <botania:craftinghalo>], 200000);
+mods.botania.RuneAltar.addRecipe(<botania:autocraftinghalo>.withTag({}),[<botania:storage:3>, <ore:slimeball>, <botania:craftinghalo>], 20000);
   
   recipes.removeByRecipeName("botania:flighttiara_0");// Удаление крылатой тиары
-mods.botania.RuneAltar.addRecipe(<botania:flighttiara>,[<ore:ingotGaiasteel>, <extrabotany:material:10>, <ore:ingotGaiasteel>, <botania:storage:2>, <botania:blackholetalisman>, <botania:storage:2>, <botania:tornadorod>, <extrabotany:jingweifeather>, <botania:tornadorod>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:flighttiara>,[<ore:ingotGaiasteel>, <extrabotany:material:10>, <ore:ingotGaiasteel>, <botania:storage:2>, <botania:blackholetalisman>, <botania:storage:2>, <botania:tornadorod>, <extrabotany:jingweifeather>, <botania:tornadorod>], 250000);
 
   recipes.removeByRecipeName("botania:dirtrod");// Удаление жезла земель
-mods.botania.RuneAltar.addRecipe(<botania:dirtrod>,[<botania:grassseeds>, <ore:dirt>, <ore:runeManaB>, <ore:livingwoodTwig>, <botania:grassseeds>, <ore:runeEarthB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:dirtrod>,[<botania:grassseeds>, <ore:dirt>, <ore:runeManaB>, <ore:livingwoodTwig>, <botania:grassseeds>, <ore:runeEarthB>, <ore:runeManaB>], 250000);
   
   recipes.removeByRecipeName("botania:terraformrod");// Удаление жезла терраформирования
-mods.botania.RuneAltar.addRecipe(<botania:terraformrod>,[<ore:runeManaB>, <ore:runeWinterB>, <botania:storage:1>, <ore:runeAutumnB>, <botania:dirtrod>, <ore:runeSpringB>, <botania:grassseeds>, <ore:runeSummerB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:terraformrod>,[<ore:runeManaB>, <ore:runeWinterB>, <botania:storage:1>, <ore:runeAutumnB>, <botania:dirtrod>, <ore:runeSpringB>, <botania:grassseeds>, <ore:runeSummerB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:waterrod");// Удаление жезла морей
-mods.botania.RuneAltar.addRecipe(<botania:waterrod>,[<ore:gemPrismarine>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <ore:runeManaB>, <ore:livingwoodTwig>, <ore:gemPrismarine>, <ore:runeWaterB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:waterrod>,[<ore:gemPrismarine>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <ore:runeManaB>, <ore:livingwoodTwig>, <ore:gemPrismarine>, <ore:runeWaterB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:rainbowrod");// Удаление жезла биврёста
-mods.botania.RuneAltar.addRecipe(<botania:rainbowrod>,[<ore:elvenPixieDust>, <botania:storage:4>, <ore:runeManaB>, <ore:ingotElvenElementium>, <ore:elvenPixieDust>, <ore:ingotElvenElementium>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:rainbowrod>,[<ore:elvenPixieDust>, <botania:storage:4>, <ore:runeManaB>, <ore:ingotElvenElementium>, <ore:elvenPixieDust>, <ore:ingotElvenElementium>, <ore:runeManaB>], 250000);
  
   recipes.removeByRecipeName("botania:tornadorod");// Удаление жезла небес
-mods.botania.RuneAltar.addRecipe(<botania:tornadorod>.withTag({}),[<minecraft:arrow>, <ore:feather>, <ore:runeManaB>, <ore:livingwoodTwig>, <minecraft:arrow>, <ore:runeAirB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:tornadorod>.withTag({}),[<minecraft:arrow>, <ore:feather>, <ore:runeManaB>, <ore:livingwoodTwig>, <minecraft:arrow>, <ore:runeAirB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:firerod");// Удаление жезла ада
-mods.botania.RuneAltar.addRecipe(<botania:firerod>,[<ore:rodBlaze>, <ore:powderBlaze>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:rodBlaze>, <ore:runeFireB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:firerod>,[<ore:rodBlaze>, <ore:powderBlaze>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:rodBlaze>, <ore:runeFireB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:skydirtrod");// Удаление жезла высокогорья
-mods.botania.RuneAltar.addRecipe(<botania:skydirtrod>,[<ore:elvenPixieDust>, <ore:elvenDragonstone>, <ore:runeManaB>, <botania:dirtrod>, <ore:elvenPixieDust>, <ore:runeAirB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:skydirtrod>,[<ore:elvenPixieDust>, <ore:elvenDragonstone>, <ore:runeManaB>, <botania:dirtrod>, <ore:elvenPixieDust>, <ore:runeAirB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:diviningrod");// Удаление жезла волхов
-mods.botania.RuneAltar.addRecipe(<botania:diviningrod>,[<ore:manaPearl>, <ore:manaDiamond>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:manaPearl>, <ore:runeGreedB>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:diviningrod>,[<ore:manaPearl>, <ore:manaDiamond>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:manaPearl>, <ore:runeGreedB>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:gravityrod");// Удаление жезла черной мессы
-mods.botania.RuneAltar.addRecipe(<botania:gravityrod>.withTag({}),[<ore:dreamwoodTwig>, <botania:storage:4>, <ore:runeManaB>, <minecraft:hay_block>, <ore:dreamwoodTwig>, <ore:dreamwoodTwig>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:gravityrod>.withTag({}),[<ore:dreamwoodTwig>, <botania:storage:4>, <ore:runeManaB>, <minecraft:hay_block>, <ore:dreamwoodTwig>, <ore:dreamwoodTwig>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:missilerod");// Удаление жезла нестабильного резервуара
-mods.botania.RuneAltar.addRecipe(<botania:missilerod>,[<ore:gaiaIngot>, <botania:storage:4>, <ore:runeManaB>, <ore:dreamwoodTwig>, <ore:gaiaIngot>, <ore:dreamwoodTwig>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:missilerod>,[<ore:gaiaIngot>, <botania:storage:4>, <ore:runeManaB>, <ore:dreamwoodTwig>, <ore:gaiaIngot>, <ore:dreamwoodTwig>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:cobblerod");// Удаление жезла недр
-mods.botania.RuneAltar.addRecipe(<botania:cobblerod>,[<ore:runeFireB>, <ore:cobblestone>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:runeWaterB>, <ore:livingwoodTwig>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:cobblerod>,[<ore:runeFireB>, <ore:cobblestone>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:runeWaterB>, <ore:livingwoodTwig>, <ore:runeManaB>], 250000);
   
   recipes.removeByRecipeName("botania:smeltrod");// Удаление жезла расплавенного ядра
-mods.botania.RuneAltar.addRecipe(<botania:smeltrod>,[<ore:rodBlaze>, <ore:runeFireB>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:rodBlaze>, <ore:livingwoodTwig>, <ore:runeManaB>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:smeltrod>,[<ore:rodBlaze>, <ore:runeFireB>, <ore:runeManaB>, <ore:livingwoodTwig>, <ore:rodBlaze>, <ore:livingwoodTwig>, <ore:runeManaB>], 250000);
  
   recipes.removeByRecipeName("botania:exchangerod");// Удаление жезла замены блоков(смещения коры)
-mods.botania.RuneAltar.addRecipe(<botania:exchangerod>.withTag({}),[<ore:stone>, <ore:runeSlothB>, <botanicadds:rune_tp>, <ore:livingwoodTwig>, <ore:cobblestone>, <ore:livingwoodTwig>, <botanicadds:rune_tp>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:exchangerod>.withTag({}),[<ore:stone>, <ore:runeSlothB>, <botanicadds:rune_tp>, <ore:livingwoodTwig>, <ore:cobblestone>, <ore:livingwoodTwig>, <botanicadds:rune_tp>], 250000);
 
   recipes.removeByRecipeName("botania:enderhand");// Удаление руки края
-mods.botania.RuneAltar.addRecipe(<botania:enderhand>,[<botanicadds:rune_tp>, <ore:leather>, <botania:endereyeblock>, <ore:leather>, <ore:chest>, <ore:leather>, <botania:endereyeblock>, <ore:leather>, <botanicadds:rune_tp>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:enderhand>,[<botanicadds:rune_tp>, <ore:leather>, <botania:endereyeblock>, <ore:leather>, <ore:chest>, <ore:leather>, <botania:endereyeblock>, <ore:leather>, <botanicadds:rune_tp>], 1000000);
 
   recipes.removeByRecipeName("extrabotany:recipe_minihandbag");// Удаление мини сумки
-mods.botania.RuneAltar.addRecipe(<extrabotany:masterhandbag>,[<ore:leather>, <extrabotany:kinggarden>, <ore:leather>, <ore:leather>, <minecraft:purple_shulker_box>, <ore:leather>, <ore:leather>, <ore:leather>, <ore:leather>], 500000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:masterhandbag>,[<ore:leather>, <extrabotany:kinggarden>, <ore:leather>, <ore:leather>, <minecraft:purple_shulker_box>, <ore:leather>, <ore:leather>, <ore:leather>, <ore:leather>], 250000);
 
   recipes.removeByRecipeName("botania:baublebox");// Удаление кейса для баблов
-mods.botania.RuneAltar.addRecipe(<botania:baublebox>,[<botanicadds:rune_tp>, <botania:storage>, <botanicadds:rune_tp>, <botania:storage>, <ore:chest>, <ore:blockGold>, <botanicadds:rune_tp>, <botania:storage>, <botanicadds:rune_tp>], 500000);
+mods.botania.RuneAltar.addRecipe(<botania:baublebox>,[<botania:storage>, <botania:storage>, <ore:chest>, <minecraft:gold_ingot>, <botania:rune:8>, <botania:storage>, <botania:rune:8>], 250000);
 
   recipes.removeByRecipeName("botanicadds:mana_stealer_sword");// Удаление лезвия кражи маны
 RecipeBuilder.get("mage")
@@ -260,7 +260,7 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("botania:elementiumlegs");
 RecipeBuilder.get("mage")
   .setShaped([
-    [<extrabotany:blockorichalcos>, null, <extrabotany:blockorichalcos>],
+    [<botania:storage:2>, null, <botania:storage:2>],
     [<botania:manaresource:7>, null, <botania:manaresource:7>]])
   .setSecondaryIngredients([<botania:storage:4>])
   .addTool(<ore:artisansHammer>, 200)
@@ -1075,8 +1075,8 @@ RecipeBuilder.get("mage")
   .create();
 RecipeBuilder.get("mage")
   .setShaped([
-    [<extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>],
-    [<extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>, <extrabotany:blockorichalcos>],
+    [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>],
+    [<botania:storage:2>, <botania:storage:2>, <botania:storage:2>],
     [null, <botania:manaresource:3>, null]])
   .addTool(<ore:artisansHammer>, 100)
   .addTool(<ore:artisansPliers>, 100)
@@ -1583,7 +1583,7 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
-    [<minecraft:gold_block>, <botania:petal>, null],
+    [<minecraft:gold_ingot>, <botania:petal>, null],
     [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]])
   .addTool(<ore:artisansGrimoire>, 30)
   .addOutput(<botania:spreader>)
@@ -1593,7 +1593,7 @@ RecipeBuilder.get("mage")
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>],
-    [<botania:storage:2>, <botania:petal:11>, null],
+    [<botania:manaresource:7>, <botania:petal:11>, null],
     [<botania:dreamwood>, <botania:dreamwood>, <botania:dreamwood>]])
   .addTool(<ore:artisansHandsaw>, 50)
   .addTool(<ore:artisansGrimoire>, 60)
@@ -1951,6 +1951,127 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansHammer>, 200)
   .addTool(<ore:artisansGrimoire>, 200)
   .addOutput(<botania:brewery>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:laputashard_o");//Удаление осколка лапута
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:rune:2>, null, <botania:manaresource:5>, null, <botania:rune:3>],
+    [null, <extrabotany:material:7>, <botanicadds:rune_tp>, <extrabotany:material:7>, null],
+    [<botania:manaresource:5>, <botanicadds:rune_tp>, <extrabotany:material:1>, <botanicadds:rune_tp>, <botania:manaresource:5>],
+    [null, <extrabotany:material:7>, <botanicadds:rune_tp>, <extrabotany:material:7>, null],
+    [<botania:rune:3>, null, <botania:manaresource:5>, null, <botania:rune:2>]])
+  .addTool(<ore:artisansGrimoire>, 300)
+  .addTool(<ore:artisansTrowel>, 300)
+  .addTool(<ore:artisansAthame>, 300)
+  .addOutput(<botania:laputashard>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:spark");//Удаление искры  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:petal>, null],
+    [<minecraft:blaze_powder>, <minecraft:gold_nugget>, <minecraft:blaze_powder>],
+    [null, <botania:petal>, null]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<botania:spark>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:openbucket");//Удаление Экстраполированного ведра
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, null, <botania:manaresource:7>],
+    [null, <botania:storage:2>, null]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<botania:openbucket>)
+  .create();
+
+  recipes.removeByRecipeName("botania:keepivy");//Удаление плюща  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:8>],
+    [<botania:manaresource:8>, <minecraft:vine>],
+    [null, <botania:manaresource:15>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addTool(<ore:artisansNeedle>, 50)
+  .addOutput(<botania:keepivy>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:incensestick");//Удаление аромо свечек
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, null, <minecraft:ghast_tear>],
+    [null, <minecraft:blaze_powder>, null],
+    [<botania:manaresource:3>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addTool(<ore:artisansMortar>, 50)
+  .addOutput(<botania:incensestick>.withTag({}))
+  .create();
+
+  recipes.removeByRecipeName("botania:starfield");//Удаление творца созвездий
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:7>, <botania:manaresource:8>, <botania:manaresource:7>],
+    [<botania:storage:2>, <minecraft:obsidian>, <botania:storage:2>]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<botania:starfield>)
+  .create();
+
+  recipes.removeByRecipeName("botania:rfgenerator");//Удаление мана-rf преобразователя
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:livingrock>, <minecraft:redstone_block>, <botania:livingrock>],
+    [<minecraft:redstone_block>, <botania:storage>, <minecraft:redstone_block>],
+    [<botania:livingrock>, <minecraft:redstone_block>, <botania:livingrock>]])
+  .addTool(<ore:artisansGrimoire>, 100)
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<botania:rfgenerator>)
+  .create();
+  
+  recipes.removeByRecipeName("botania:platform_0");//Удаление заумной платформы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:livingwood:4>, null],
+    [<botania:livingwood:4>, <botania:manaresource:1>, <botania:livingwood:4>],
+    [<botania:livingwood>, null, <botania:livingwood>]])
+  .addTool(<ore:artisansGrimoire>, 30)
+  .addTool(<ore:artisansHandsaw>, 30)
+  .addOutput(<botania:platform>)
+  .create();
+
+  recipes.removeByRecipeName("botania:platform_1");//Удаление спектральной платформы  
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:dreamwood:3>, null],
+    [<botania:dreamwood:3>, <botania:manaresource:8>, <botania:dreamwood:3>],
+    [<botania:dreamwood>, null, <botania:dreamwood>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addOutput(<botania:platform:1>)
+  .create();
+
+  recipes.removeByRecipeName("botania:prism");//Удаление манапризмы
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:managlass>, <minecraft:prismarine_shard>, <botania:managlass>],
+    [<minecraft:prismarine_shard>, <botania:platform:1>, <minecraft:prismarine_shard>],
+    [<botania:managlass>, <minecraft:prismarine_shard>, <botania:managlass>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addTool(<ore:artisansRazor>, 50)
+  .addOutput(<botania:prism>)
+  .create();
+ 
+  recipes.removeByRecipeName("botania:opencrate");//Удаление сборочного ящика 
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:dreamwood:1>, <botania:dreamwood:1>, <botania:dreamwood:1>],
+    [<botania:dreamwood:1>, <minecraft:crafting_table>, <botania:dreamwood:1>],
+    [<botania:dreamwood:1>, null, <botania:dreamwood:1>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .addTool(<ore:artisansHandsaw>, 50)
+  .addOutput(<botania:opencrate:1>)
   .create();
   
   recipes.removeByRecipeName("botania:invisibilitycloak");// Удаление плаща невидимки

@@ -160,15 +160,15 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/al
 
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier4");//Алтарь 4-го тира
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:blockaltar:3>, 2000, 10, [ 
-	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}),
+	<astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}),
 	<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
-	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}),
+    <astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}),
 	<astralsorcery:blockstarlightinfuser>, 
 	<astralsorcery:itemperkseal>, 
 	<astralsorcery:blockstarlightinfuser>,
-	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}), 
+	<astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}), 
 	<minecraft:crafting_table>, 
-	<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", collectorType: 1}}),
+    <astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}),
 	<metallurgy:astral_silver_block>, 
 	<metallurgy:astral_silver_block>, 
 	<metallurgy:astral_silver_block>, 
@@ -743,17 +743,17 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/attunementaltar");
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <astralsorcery:blockattunementaltar>, 4500, 100, [
-<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.discidia"}}), 
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 <astralsorcery:itemcraftingcomponent:1>, 
-<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.armara"}}), 
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 <astralsorcery:itemcelestialcrystal>, 
 <astralsorcery:itemperkseal>,
 <astralsorcery:itemcelestialcrystal>, 
 <astralsorcery:itemperkseal>,
-<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}), 
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 <astralsorcery:itemperkseal>,
-<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}), 
-<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.evorsio"}}),
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}),
 <astralsorcery:itemcraftingcomponent:4>, 
 <astralsorcery:itemcraftingcomponent:4>,
 <metallurgy:astral_silver_ingot>, 
@@ -772,8 +772,7 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/s
 <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}),
 <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}})
-],"astralsorcery.constellation.lucerna"
-);
+]);
 
 
 //Рецепт кристальной руды
@@ -795,5 +794,3 @@ recipes.addShaped(<astralsorcery:itemcraftingcomponent>*2,
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:cake>, false);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:iron_ore>, <astralsorcery:blockcustomore:1>, 50);
-
-recipes.addShapeless(<astralsorcery:blockaltar>, [<astralsorcery:blockaltar>]);

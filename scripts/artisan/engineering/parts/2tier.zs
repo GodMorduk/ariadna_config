@@ -411,3 +411,6 @@ RecipeBuilder.get("engineer")
   .create();
 
 mods.mekanism.infuser.addRecipe("DIAMOND", 60, <mekanism:enrichedalloy>, <mekanism:reinforcedalloy>);
+
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>);
+mods.mekanism.infuser.addRecipe("DIAMOND", 60, <ore:dustObsidian> * 4, <mekanism:otherdust:5>);
