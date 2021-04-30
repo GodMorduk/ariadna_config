@@ -286,6 +286,13 @@ RecipeBuilder.get("mason")
   .addOutput(<immersiveengineering:stone_decoration:5>*16)
   .create();
 
+RecipeBuilder.get("mason")
+  .setShapeless([<ore:sand>])
+  .setFluid(<liquid:concrete> * 500)
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<immersiveengineering:stone_decoration:5>*24)
+  .create();
+
 recipes.removeByRecipeName("immersiveengineering:wooden_devices/post");
 RecipeBuilder.get("engineer")
   .setShaped([

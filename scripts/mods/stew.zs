@@ -721,6 +721,15 @@ RecipeBuilder.get("mason")
   .addOutput(<stewblocks:brick_plastered_gray> * 8)
   .create();
 
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:ingotBrick>, <ore:ingotBrick>],
+    [<ore:ingotBrick>, <ore:ingotBrick>]])
+  .setFluid(<liquid:concrete> * 1000)
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<stewblocks:brick_plastered_gray> * 24)
+  .create();
+
 recipes.removeByRecipeName("chisel:factory");
 RecipeBuilder.get("engineer")
   .setShaped([
