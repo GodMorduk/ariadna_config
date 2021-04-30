@@ -1,6 +1,6 @@
 import mods.techguns.ArmorStats;
 
-val weapons = [ 
+val armors = [ 
 "t1_combat_boots", "t1_combat_chestplate", "t1_combat_helmet", "t1_combat_leggings", "t1_miner_boots", "t1_miner_chestplate", 
 "t1_miner_helmet", "t1_miner_leggings", "t1_scout_boots", "t1_scout_chestplate", "t1_scout_helmet", "t1_scout_leggings", 
 "t2_combat_boots", "t2_combat_chestplate", "t2_combat_helmet", "t2_combat_leggings", "t2_commando_boots", "t2_commando_chestplate", 
@@ -11,29 +11,29 @@ val weapons = [
 "t4_praetor_helmet", "t4_praetor_leggings", "t4_power_boots", "t4_power_chestplate", "t4_power_helmet", "t4_power_leggings"
 ] as string[];
 
-for weapon in weapons {
-ArmorStats.setArmorStat(weapon,"SPEED",0);
-ArmorStats.setArmorStat(weapon,"JUMP",0);
-ArmorStats.setArmorStat(weapon,"MINING_SPEED",0);
-ArmorStats.setArmorStat(weapon,"WATER_MINING_SPEED",0);
-ArmorStats.setArmorStat(weapon,"GUN_ACCURACY",0);
-ArmorStats.setArmorStat(weapon,"EXTRA_HEARTS",0);
-ArmorStats.setArmorStat(weapon,"KNOCKBACK_RESITANCE",0);
-ArmorStats.setArmorStat(weapon,"STEP_ASSIST",0);
-ArmorStats.setArmorStat(weapon,"EXTRA_HEARTS",0);
+for armor in armors {
+ArmorStats.setArmorStat(armor,"SPEED",0);
+ArmorStats.setArmorStat(armor,"JUMP",0);
+ArmorStats.setArmorStat(armor,"MINING_SPEED",0);
+ArmorStats.setArmorStat(armor,"WATER_MINING_SPEED",0);
+ArmorStats.setArmorStat(armor,"GUN_ACCURACY",0);
+ArmorStats.setArmorStat(armor,"EXTRA_HEARTS",0);
+ArmorStats.setArmorStat(armor,"KNOCKBACK_RESITANCE",0);
+ArmorStats.setArmorStat(armor,"STEP_ASSIST",0);
+ArmorStats.setArmorStat(armor,"EXTRA_HEARTS",0);
 }
 
 ArmorStats.setMaterialArmorValue("T1_COMBAT", "PHYSICAL", 8.0);
 ArmorStats.setMaterialArmorValue("T1_COMBAT", "PROJECTILE", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "FIRE", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "EXPLOSION", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "ENERGY", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "POISON", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "UNRESISTABLE", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "ICE", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "LIGHTNING", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "RADIATION", 8.0);
-ArmorStats.setMaterialArmorValue("T1_COMBAT", "DARK", 8.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "FIRE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "EXPLOSION", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "ENERGY", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "POISON", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "UNRESISTABLE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "ICE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "LIGHTNING", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "RADIATION", 7.0);
+ArmorStats.setMaterialArmorValue("T1_COMBAT", "DARK", 7.0);
 
 ArmorStats.setMaterialArmorValue("T1_SCOUT", "PHYSICAL", 6.0);
 ArmorStats.setMaterialArmorValue("T1_SCOUT", "PROJECTILE", 6.0);
@@ -47,17 +47,17 @@ ArmorStats.setMaterialArmorValue("T1_SCOUT", "LIGHTNING", 6.0);
 ArmorStats.setMaterialArmorValue("T1_SCOUT", "RADIATION", 6.0);
 ArmorStats.setMaterialArmorValue("T1_SCOUT", "DARK", 6.0);
 
-ArmorStats.setMaterialArmorValue("T1_MINER", "PHYSICAL", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "PROJECTILE", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "FIRE", 14.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "EXPLOSION", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "ENERGY", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "POISON", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "UNRESISTABLE", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "ICE", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "LIGHTNING", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "RADIATION", 10.0);
-ArmorStats.setMaterialArmorValue("T1_MINER", "DARK", 10.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "PHYSICAL", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "PROJECTILE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "FIRE", 8.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "EXPLOSION", 8.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "ENERGY", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "POISON", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "UNRESISTABLE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "ICE", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "LIGHTNING", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "RADIATION", 7.0);
+ArmorStats.setMaterialArmorValue("T1_MINER", "DARK", 7.0);
 
 ArmorStats.setMaterialArmorValue("T2_HAZMAT", "PHYSICAL", 8.0);
 ArmorStats.setMaterialArmorValue("T2_HAZMAT", "PROJECTILE", 8.0);
