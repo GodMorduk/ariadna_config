@@ -207,3 +207,10 @@ for i in 0 to 16 {
     .addOutput(<animania:hamster_ball_colored>.definition.makeStack(i))
     .create();
 }
+
+recipes.removeByRecipeName("animania:milk_conversion");
+recipes.addShapeless(<minecraft:milk_bucket>, [<forge:bucketfilled>.withTag({FluidName: "milk_holstein", Amount: 1000}).noReturn()]);
+recipes.addShapeless(<minecraft:milk_bucket>, [<forge:bucketfilled>.withTag({FluidName: "milk_friesian", Amount: 1000}).noReturn()]);
+recipes.addShapeless(<minecraft:milk_bucket>, [<forge:bucketfilled>.withTag({FluidName: "milk_jersey", Amount: 1000}).noReturn()]);
+recipes.addShapeless(<minecraft:milk_bucket>, [<forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}).noReturn()]);
+recipes.addShapeless(<minecraft:milk_bucket>, [<forge:bucketfilled>.withTag({FluidName: "milk_sheep", Amount: 1000}).noReturn()]);
