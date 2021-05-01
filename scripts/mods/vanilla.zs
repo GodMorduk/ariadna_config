@@ -1,4 +1,5 @@
 import crafttweaker.item.IIngredient;
+import mods.thermalexpansion.Factorizer;
 
 //Удаление ненужных альтернативных рецептов ванильного итема
 recipes.removeByRecipeName("atum:ore_fire_charge");
@@ -32,3 +33,6 @@ for i in 0 to 16 {
     [<ore:hardenedClay>, <ore:hardenedClay>, <ore:hardenedClay>]
   ]);
 }
+
+Factorizer.addRecipeSplit(<minecraft:brick_block>, <minecraft:brick>> * 4);
+Factorizer.addRecipeCombine(<minecraft:brick>> * 4, <minecraft:brick_block>);
