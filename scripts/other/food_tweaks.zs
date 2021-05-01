@@ -243,3 +243,11 @@ Tweaker.changeFoodStats(<brewcraft:swampmerlotitem>, FoodInfo(4, 0.4, true, fals
 Tweaker.changeFoodStats(<brewcraft:tiagapinotnoiritem>, FoodInfo(4, 0.4, true, false));
 Tweaker.changeFoodStats(<brewcraft:totalvodkaitem>, FoodInfo(4, 0.4, true, false));
 Tweaker.changeFoodStats(<brewcraft:uglyavocadoginitem>, FoodInfo(4, 0.4, true, false));
+Tweaker.changeFoodStats(<minecraft:cooked_fish:1>, FoodInfo(3, 0.5, true, false));
+Tweaker.changeFoodStats(<animania:cooked_frog_legs>, FoodInfo(3, 1, true, false));
+Tweaker.changeFoodStats(<animania:cooked_horse>, FoodInfo(4, 0.5, true, false));
+Tweaker.changeFoodStats(<animania:cooked_chevon>, FoodInfo(4, 0.5, true, false));
+Tweaker.changeFoodStats(<harvestcraft:turkeycookeditem>, FoodInfo(3, 0.5, true, false));
+Tweaker.changeFoodStats(<harvestcraft:venisoncookeditem>, FoodInfo(3, 0.5, true, false));
+Tweaker.changeFoodStats(<harvestcraft:duckcookeditem>, FoodInfo(3, 0.5, true, false));
+Tweaker.changeFoodStats(<harvestcraft:cookedgrubitem>, FoodInfo(3, 0.5, true, false));
