@@ -1444,7 +1444,7 @@ RecipeBuilder.get("engineer")
     [<ore:itemPrecientCrystal>, <enderio:item_basic_capacitor:2>, <enderio:block_travel_anchor>, <enderio:item_basic_capacitor:2>, <ore:itemPrecientCrystal>],
     [<ore:plateCarbon>, <ore:itemUnsouledMachineChassi>, <enderio:item_basic_capacitor:2>, <ore:itemUnsouledMachineChassi>, <ore:plateCarbon>],
     [<ore:alloyUltimate>, <ore:plateCarbon>, <ore:itemPrecientCrystal>, <ore:plateCarbon>, <ore:alloyUltimate>]])
-  .setSecondaryIngredients([<ore:gearVibrant> * 10, <ore:gearEnergized> * 20, <ore:gearMithril> * 2, <ore:gearIridium> * 4, <ore:gearPlatinum> * 4, <ore:gearDark> * 10, <ore:plateTitanium> * 10])
+  .setSecondaryIngredients([<ore:gearVibrant> * 10, <ore:gearEnergized> * 20, <ore:gearEnderium> * 2, <ore:gearIridium> * 4, <ore:gearPlatinum> * 4, <ore:gearDark> * 10, <ore:plateTitanium> * 10])
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansSolderer>, 250)
@@ -1590,7 +1590,7 @@ RecipeBuilder.get("engineer")
     [<ore:alloyElite>, <minecraft:skull:2>, <enderio:item_material:53>, <minecraft:skull:4>, <ore:alloyElite>],
     [<ore:ingotSoularium>, <enderio:item_basic_capacitor:1>, <minecraft:skull>, <enderio:item_basic_capacitor:1>, <ore:ingotSoularium>],
     [<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:alloyElite>, <ore:ingotSoularium>, <ore:ingotSoularium>]])
-  .setSecondaryIngredients([<ore:circuitUltimate>, <ore:gearMithril> * 8, <ore:gearEmerald> * 4, <ore:gearDiamond> * 4])
+  .setSecondaryIngredients([<ore:circuitUltimate>, <ore:gearEnderium> * 8, <ore:gearEmerald> * 4, <ore:gearDiamond> * 4])
   .addTool(<ore:artisansDriver>, 250)
   .addTool(<ore:artisansSpanner>, 250)
   .addTool(<ore:artisansSolderer>, 250)

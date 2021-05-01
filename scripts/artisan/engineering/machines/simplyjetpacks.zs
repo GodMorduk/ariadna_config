@@ -186,7 +186,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("simplyjetpacks:recipes9");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:plateMithril>, <ore:plateMithril>, <ore:plateMithril>, <ore:plateMithril>, <ore:plateMithril>],
+    [<ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>],
     [<ore:plateIridium>, <ore:ingotSignalum>, <thermalfoundation:glass:7>, <ore:ingotSignalum>, <ore:plateIridium>],
     [<ore:plateIridium>, <thermalfoundation:glass:7>, null, <thermalfoundation:glass:7>, <ore:plateIridium>],
     [<ore:plateIridium>, <ore:ingotSignalum>, <thermalfoundation:glass:7>, <ore:ingotSignalum>, <ore:plateIridium>],

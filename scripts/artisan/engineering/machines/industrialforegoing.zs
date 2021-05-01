@@ -686,9 +686,9 @@ safeRemoveRecipe("industrialforegoing:petrified_fuel_generator");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
-    [<ore:plateTitanium>, <ore:plateMithril>, <enderio:item_basic_capacitor:1>, <ore:plateMithril>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateEnderium>, <enderio:item_basic_capacitor:1>, <ore:plateEnderium>, <ore:plateTitanium>],
     [null, <ore:gearSignalum>, <ore:itemEnhancedMachineChassi>, <ore:gearSignalum>, null],
-    [<enderio:item_alloy_ingot:6>, <ore:plateMithril>, <industrialforegoing:lava_fabricator>, <ore:plateMithril>, <enderio:item_alloy_ingot:6>],
+    [<enderio:item_alloy_ingot:6>, <ore:plateEnderium>, <industrialforegoing:lava_fabricator>, <ore:plateEnderium>, <enderio:item_alloy_ingot:6>],
     [null, null, <enderio:item_alloy_ingot:6>, null, null]])
   .setFluid(<liquid:lubricant> * 1000)
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>])
@@ -704,7 +704,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
     [<ore:plateTitanium>, <ore:plateLumium>, <enderio:item_basic_capacitor:1>, <ore:plateLumium>, <ore:plateTitanium>],
-    [null, <ore:gearMithril>, <ore:itemEnhancedMachineChassi>, <ore:gearMithril>, null],
+    [null, <ore:gearEnderium>, <ore:itemEnhancedMachineChassi>, <ore:gearEnderium>, null],
     [<ore:ingotDarkSteel>, <ore:plateLumium>, <industrialforegoing:crop_sower>, <ore:plateLumium>, <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <enderio:item_material:68>])
@@ -786,7 +786,7 @@ safeRemoveRecipe("industrialforegoing:material_stonework_factory");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
-    [<ore:plateTitanium>, <ore:plateMithril>, <thermalexpansion:machine>.withTag({Level: 3 as byte}), <ore:plateMithril>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateEnderium>, <thermalexpansion:machine>.withTag({Level: 3 as byte}), <ore:plateEnderium>, <ore:plateTitanium>],
     [null, <thermalexpansion:machine:11>.withTag({Level: 3 as byte}), <ore:itemEnhancedMachineChassi>, <thermalexpansion:machine:1>.withTag({Level: 3 as byte}), null],
     [<ore:ingotDarkSteel>, <ore:gearVibrant>, <thermalexpansion:machine:15>.withTag({Level: 3 as byte}), <ore:gearVibrant>, <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])
@@ -870,7 +870,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
     [<ore:plateTitanium>, <ore:plateLumium>, <industrialforegoing:meat_feeder>, <ore:plateLumium>, <ore:plateTitanium>],
-    [null, <ore:gearMithril>, <ore:itemEnhancedMachineChassi>, <ore:gearMithril>, null],
+    [null, <ore:gearEnderium>, <ore:itemEnhancedMachineChassi>, <ore:gearEnderium>, null],
     [<ore:ingotDarkSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:conveyor_upgrade:6>, <industrialforegoing:pink_slime_ingot>, <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])
   .setFluid(<liquid:meat> * 4000)
@@ -886,7 +886,7 @@ safeRemoveRecipe("industrialforegoing:ore_fermenter");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateTitanium>, null, null],
-    [<ore:plateTitanium>, <ore:plateMithril>, <industrialforegoing:animal_growth_increaser>, <ore:plateMithril>, <ore:plateTitanium>],
+    [<ore:plateTitanium>, <ore:plateEnderium>, <industrialforegoing:animal_growth_increaser>, <ore:plateEnderium>, <ore:plateTitanium>],
     [null, <ore:gearSignalum>, <ore:itemEnhancedMachineChassi>, <ore:gearSignalum>, null],
     [<ore:ingotDarkSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:crop_enrich_material_injector>, <industrialforegoing:pink_slime_ingot>, <ore:ingotDarkSteel>],
     [null, null, <ore:ingotDarkSteel>, null, null]])

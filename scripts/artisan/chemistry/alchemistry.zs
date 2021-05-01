@@ -105,7 +105,7 @@ RecipeBuilder.get("chemist")
 recipes.removeByRecipeName("alchemistry:chemical_combiner");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:gearMithril>, <mekanism:machineblock:2>, <ore:gearMithril>],
+    [<ore:gearEnderium>, <mekanism:machineblock:2>, <ore:gearEnderium>],
     [<ore:plateBrass>, <industrialforegoing:fluid_crafter>, <ore:plateBrass>],
     [<ore:plateBrass>, <industrialforegoing:fluiddictionary_converter>, <ore:plateBrass>]])
   .setSecondaryIngredients([<immersiveengineering:material:27> * 4, <ore:circuitBasic> * 4])
@@ -116,7 +116,7 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<ore:gearMithril>, <mekanism:machineblock:2>, <ore:gearMithril>],
+    [<ore:gearEnderium>, <mekanism:machineblock:2>, <ore:gearEnderium>],
     [<ore:plateBrass>, <industrialforegoing:fluid_crafter>, <ore:plateBrass>],
     [<ore:plateBrass>, <industrialforegoing:fluiddictionary_converter>, <ore:plateBrass>]])
   .setSecondaryIngredients([<immersiveengineering:material:27> * 4, <ore:circuitBasic> * 4])
