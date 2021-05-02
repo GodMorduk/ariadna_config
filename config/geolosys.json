@@ -8401,7 +8401,6 @@
 			"chance": 60,
 			"size": 50,
 			"dimBlacklist": [
-				0,
 				1,
 				50,
 				51,
