@@ -34,5 +34,5 @@ for i in 0 to 16 {
   ]);
 }
 
-Factorizer.addRecipeSplit(<minecraft:brick_block>, <minecraft:brick>> * 4);
-Factorizer.addRecipeCombine(<minecraft:brick>> * 4, <minecraft:brick_block>);
+Factorizer.addRecipeSplit(<minecraft:brick_block>, <minecraft:brick> * 4);
+Factorizer.addRecipeCombine(<minecraft:brick> * 4, <minecraft:brick_block>);
