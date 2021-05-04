@@ -84,7 +84,7 @@
 			],
 			"yMin": 40,
 			"yMax": 128,
-			"chance": 7,
+			"chance": 70,
 			"size": 200,
 			"dimBlacklist": [
 				0,
@@ -139,11 +139,7 @@
 			],
 			"density": 0.025,
 			"biomes": [
-				"abyssalcraft:darklands",
-				"abyssalcraft:darklands_forest",
-				"abyssalcraft:darklands_hills",
-				"abyssalcraft:darklands_mountains",
-				"abyssalcraft:darklands_plains"
+				"SPOOKY", "MAGICAL", "DEAD", "RARE"
 			],
 			"isWhitelist": true
 		},
@@ -229,7 +225,7 @@
 			],
 			"yMin": 4,
 			"yMax": 60,
-			"chance": 5,
+			"chance": 50,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -354,6 +350,74 @@
 				17
 			],
 			"density": 0.02
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abypcorore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcoralium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 35,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.02
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abylcorore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcoralium",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
 		},
 		{
 			"blocks": [
@@ -5113,6 +5177,40 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:abycopore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockcopper",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 40,
+			"chance": 25,
+			"size": 200,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
 				"thermalfoundation:ore_fluid:0",
 				50,
 				"thermalfoundation:ore_fluid:5",
@@ -5699,6 +5797,40 @@
 				53,
 				-1,
 				37,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abytinore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblocktin",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 20,
+			"yMax": 40,
+			"chance": 21,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
 				28885,
 				111,
 				14676,
@@ -6541,6 +6673,40 @@
 		},
 		{
 			"blocks": [
+				"abyssalcraft:abyiroore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockiron",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 40,
+			"yMax": 128,
+			"chance": 40,
+			"size": 250,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.01
+		},
+		{
+			"blocks": [
 				"minecraft:gold_ore",
 				100
 			],
@@ -6737,6 +6903,40 @@
 				53,
 				-1,
 				37,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.025
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abygolore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockgold",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 4,
+			"yMax": 40,
+			"chance": 30,
+			"size": 100,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
 				28885,
 				111,
 				14676,
@@ -7129,7 +7329,7 @@
 			],
 			"density": 0.05,
 			"biomes": [
-				"HILLS", "MOUNTAIN", "HOT", "RARE", "MAGIC", "MESA"
+				"HILLS", "MOUNTAIN", "HOT", "RARE", "MAGICAL", "MESA"
 			],
 			"isWhitelist": true
 		},
@@ -7293,6 +7493,40 @@
 				53,
 				-1,
 				37,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.05
+		},
+		{
+			"blocks": [
+				"abyssalcraft:abydiaore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockdiamond",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 4,
+			"yMax": 20,
+			"chance": 20,
+			"size": 50,
+			"dimBlacklist": [
+				0,
+				1,
+				51,
+				52,
+				53,
+				-1,
+				37,
+				66,
 				28885,
 				111,
 				14676,
@@ -8451,7 +8685,7 @@
 			],
 			"density": 0.05,
 			"biomes": [
-				"HILLS", "MOUNTAIN", "RARE", "MAGIC"
+				"HILLS", "MOUNTAIN", "RARE", "MAGICAL"
 			],
 			"isWhitelist": true
 		}
