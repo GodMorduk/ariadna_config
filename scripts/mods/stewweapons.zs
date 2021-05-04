@@ -310,7 +310,7 @@ RecipeBuilder.get("blacksmith")
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, null, <ore:blockIron>],
-    [<ore:blockIron>, <ore:blockIron>, null],
+    [<ore:blockIron>, <ore:blockIron>, <ore:itemVibrantCrystal>],
     [<spartanweaponry:material>, <ore:blockIron>, null]])
   .addTool(<ore:artisansHammer>, 50)
   .addOutput(<stewweapons:vibroblade>)
@@ -318,8 +318,8 @@ RecipeBuilder.get("blacksmith")
   
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, null, <thermalfoundation:storage:6>],
-    [<thermalfoundation:storage:6>, <thermalfoundation:storage:6>, null],
+    [null, <ore:itemVibrantCrystal>, <thermalfoundation:storage:6>],
+    [<thermalfoundation:storage:6>, <thermalfoundation:storage:6>, <ore:itemVibrantCrystal>],
     [<spartanweaponry:material>, <thermalfoundation:storage:6>, null]])
   .addTool(<ore:artisansHammer>, 100)
   .addTool(<ore:artisansFile>, 100)
