@@ -1953,7 +1953,7 @@ RecipeBuilder.get("mage")
   .addOutput(<botania:brewery>)
   .create();
   
-  recipes.removeByRecipeName("botania:laputashard_o");//Удаление осколка лапута
+  recipes.removeByRecipeName("botania:laputashard_0");//Удаление осколка лапута
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:rune:2>, null, <botania:manaresource:5>, null, <botania:rune:3>],
@@ -2073,6 +2073,21 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansHandsaw>, 50)
   .addOutput(<botania:opencrate:1>)
   .create();
+  
+  mods.botania.Apothecary.removeRecipe("stardustlotus"); //Удаление лотоса звёздной пыли
+mods.botania.Apothecary.addRecipe("stardustlotus", [<botania:rune:15>, <botania:rune:14>, <ore:petalPurple>, <ore:petalPurple>, <ore:petalPurple>, <ore:petalMagenta>, <ore:petalMagenta>, <extrabotany:material:10>, <minecraft:nether_star>]);
+
+  mods.botania.Apothecary.removeRecipe("loonium"); //Удаление лутюльпана
+mods.botania.Apothecary.addRecipe("loonium", [<botania:rune:12>, <botania:manaresource:5>, <botania:manaresource:8>, <extrabotany:material:10>, <botania:manaresource:6>, <botania:rune:14>, <botania:rune:10>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalGray>]);
+
+  mods.botania.Apothecary.removeRecipe("orechid"); // Удаление рудоцвета
+mods.botania.Apothecary.addRecipe("orechid", [<botania:rune:11>, <extrabotany:material:10>, <botania:rune:15>,<ore:petalGray>, <ore:petalGray>, <ore:petalYellow>, <ore:petalGreen>, <ore:petalRed>,<botania:manaresource:6>, <botania:manaresource:8>, <botania:manasteelpick>]);
+
+  mods.botania.Apothecary.removeRecipe("orechidIgnem"); //Удаление адского рудоцвета
+mods.botania.Apothecary.addRecipe("orechidIgnem", [<botania:rune:11>, <extrabotany:material:10>, <botania:rune:15>, <ore:petalRed>, <ore:petalRed>, <ore:petalWhite>, <ore:petalWhite>, <ore:petalPink>, <botania:manaresource:6>, <botania:manaresource:8>, <botania:elementiumpick>]);
+
+  mods.botania.Apothecary.removeRecipe("fallenKanade"); // Удаление павшего Канаде
+mods.botania.Apothecary.addRecipe("fallenKanade", [<ore:petalWhite>, <ore:petalWhite>, <ore:petalYellow>, <ore:petalYellow>, <ore:petalOrange>, <botania:rune:4>, <extrabotany:material:10>]);
   
   recipes.removeByRecipeName("botania:invisibilitycloak");// Удаление плаща невидимки
   recipes.removeByRecipeName("extrabotany:recipe_camera");// Удаление камеры шамеймару
