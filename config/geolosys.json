@@ -1289,7 +1289,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 3,
+			"chance": 24,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1992,7 +1992,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 10,
+			"chance": 80,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -2264,7 +2264,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 3,
+			"chance": 64,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -2544,7 +2544,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 5,
+			"chance": 40,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -2578,7 +2578,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 5,
+			"chance": 40,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -4603,7 +4603,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 30,
+			"chance": 90,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -4814,7 +4814,7 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 15,
+			"chance": 90,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -8492,7 +8492,7 @@
 		{
 			"block": "endreborn:block_lormyte_crystal",
 			"size": 20,
-			"chance": 10,
+			"chance": 60,
 			"yMin": 2,
 			"yMax": 70,
 			"dimBlacklist": [
