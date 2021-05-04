@@ -46,7 +46,7 @@
   "damage": 2,
   "attackSpeed": 1,
   "rangedSpeed": 1,
-  "effectDuration": 5,
+  "effectDuration": 2,
   "effectAmplifier": 0,
   "pierce": 1,
   "sight": 24,

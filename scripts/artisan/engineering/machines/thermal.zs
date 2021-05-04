@@ -1488,7 +1488,7 @@ RecipeBuilder.get("engineer")
   .setShapeless([<thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateSignalum>])
   .addTool(<ore:artisansSpanner>, 5)
   .addTool(<ore:artisansDriver>, 5)
-  .addOutput(<thermaldynamics:duct_0:3>)
+  .addOutput(<thermaldynamics:duct_0:3> * 3)
   .create();
 
 recipes.removeByRecipeName("thermaldynamics:duct_16_4");
@@ -2065,7 +2065,7 @@ RecipeBuilder.get("engineer")
     [null, null, <ore:plateEnderium>, null, null],
     [null, <ore:plateEnderium>, <ore:dustPetrotheum>, <ore:plateEnderium>, null],
     [<ore:plateLumium>, <ore:dustPetrotheum>, <thermalinnovation:saw:3>.withTag({Energy: 0, Mode: 3}), <ore:dustPetrotheum>, <ore:plateLumium>],
-    [<ore:plateLumium>, <ore:gearMithril>, <ore:alloyUltimate>, <ore:gearMithril>, <ore:plateLumium>],
+    [<ore:plateLumium>, <ore:gearEnderium>, <ore:alloyUltimate>, <ore:gearEnderium>, <ore:plateLumium>],
     [<techguns:itemshared:133>, <ore:plateLumium>, <thermalexpansion:capacitor:4>.withTag({Energy: 0}), <ore:plateLumium>, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<ore:gearEnderium> * 6, <ore:gearLumium> * 6])
   .addTool(<ore:artisansDriver>, 100)
@@ -2095,7 +2095,7 @@ RecipeBuilder.get("engineer")
     [null, null, <ore:plateEnderium>, null, null],
     [<ore:plateLumium>, <ore:plateEnderium>, <ore:dustPyrotheum>, <ore:plateEnderium>, <ore:plateLumium>],
     [<ore:plateEnderium>, <ore:dustPyrotheum>, <thermalinnovation:drill:3>.withTag({Energy: 0, Mode: 3}), <ore:dustPyrotheum>, <ore:plateEnderium>],
-    [<ore:plateLumium>, <ore:gearMithril>, <ore:alloyUltimate>, <ore:gearMithril>, <ore:plateLumium>],
+    [<ore:plateLumium>, <ore:gearEnderium>, <ore:alloyUltimate>, <ore:gearEnderium>, <ore:plateLumium>],
     [<techguns:itemshared:133>, <ore:alloyUltimate>, <thermalexpansion:capacitor:4>.withTag({Energy: 0}), <ore:alloyUltimate>, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<ore:gearEnderium> * 6, <ore:gearLumium> * 6])
   .addTool(<ore:artisansDriver>, 100)

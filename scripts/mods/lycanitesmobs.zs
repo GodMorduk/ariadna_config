@@ -689,8 +689,8 @@ RecipeBuilder.get("chef")
 recipes.removeByRecipeName("lycanitesmobs:woodenpaxel");
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}}), <tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}})],
-    [<tconstruct:hatchet>.withTag({TinkerData: {Materials: ["treatedwood", "treatedwood", "treatedwood"]}}), <tconstruct:binding>.withTag({Material: "treatedwood"})]])
+    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}})],
+    [<tconstruct:hatchet>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:binding>.withTag({Material: "firewood"})]])
   .addTool(<ore:artisansHandsaw>, 100)
   .addOutput(<lycanitesmobs:woodenpaxel>)
   .create();
@@ -699,8 +699,8 @@ RecipeBuilder.get("carpenter")
 recipes.removeByRecipeName("lycanitesmobs:woodenrod");
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<harvestcraft:hardenedleatheritem>, <tconstruct:binding>.withTag({Material: "treatedwood"}), <harvestcraft:hardenedleatheritem>],
-    [<harvestcraft:hardenedleatheritem>, <tconstruct:tough_tool_rod>.withTag({Material: "treatedwood"}), <harvestcraft:hardenedleatheritem>],
+    [<harvestcraft:hardenedleatheritem>, <tconstruct:binding>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
+    [<harvestcraft:hardenedleatheritem>, <tconstruct:tough_tool_rod>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
     [<harvestcraft:hardenedleatheritem>, <spartanweaponry:material>, <harvestcraft:hardenedleatheritem>]])
   .addTool(<ore:artisansFile>, 50)
   .addOutput(<lycanitesmobs:woodenrod>)
@@ -710,9 +710,9 @@ RecipeBuilder.get("carpenter")
 recipes.removeByRecipeName("lycanitesmobs:woodenhilt");
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [null, <tconstruct:tough_binding>.withTag({Material: "treatedwood"}), null],
-    [<tconstruct:binding>.withTag({Material: "treatedwood"}), <tconstruct:wide_guard>.withTag({Material: "treatedwood"}), <tconstruct:binding>.withTag({Material: "treatedwood"})],
-    [null, <tconstruct:tough_binding>.withTag({Material: "treatedwood"}), null]])
+    [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null],
+    [<tconstruct:binding>.withTag({Material: "firewood"}), <tconstruct:wide_guard>.withTag({Material: "firewood"}), <tconstruct:binding>.withTag({Material: "firewood"})],
+    [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null]])
   .addTool(<ore:artisansHatchet>, 50)
   .addOutput(<lycanitesmobs:woodenhilt>)
   .create();

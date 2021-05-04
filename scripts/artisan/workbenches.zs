@@ -123,7 +123,7 @@ recipes.addShaped(<artisanworktables:worktable>, [
 
 RecipeBuilder.get("tailor")
   .setShaped([
-    [<atum:linen_cloth>, <atum:spinning_wheel> | <bewitchment:spinning_wheel> | <tg:spinning_wheel>, <quark:rope>],
+    [<atum:linen_cloth>, <atum:spinning_wheel> | <bewitchment:spinning_wheel>, <quark:rope>],
     [<harvestcraft:hardenedleatheritem>, <artisanworktables:worktable>, <artisanworktables:artisans_needle_iron>],
     [<ore:fabricHemp>, <atum:cloth_scrap>, <ore:fabricHemp>]])
   .addTool(<ore:artisansFramingHammer>, 300)
@@ -132,9 +132,9 @@ RecipeBuilder.get("tailor")
 
 RecipeBuilder.get("tailor")
   .setShaped([
-    [<tg:fabric_enchanted>, <bewitchment:pure_filament>, <techguns:itemshared:60>],
+    [<ore:clothManaweave>, <bewitchment:pure_filament>, <techguns:itemshared:60>],
     [<ore:clothManaweave>, <artisanworktables:workstation>, <tconstruct:materials:15>],
-    [<atum:linen_cloth>, <ore:bRedString>, <tg:fabric_decorated>]])
+    [<atum:linen_cloth>, <ore:bRedString>, <ore:bRedString>]])
   .setSecondaryIngredients([<artisanworktables:artisans_needle_steel>, <artisanworktables:artisans_compass_constantan>, <artisanworktables:artisans_knife_bronze>, <artisanworktables:artisans_shears_invar>, <artisanworktables:artisans_punch_lead>, <artisanworktables:artisans_razor_electrum>])
   .addTool(<ore:artisansFramingHammer>, 600)
   .addTool(<ore:artisansDriver>, 600)
@@ -321,7 +321,7 @@ RecipeBuilder.get("farmer")
     [<rustic:fertile_soil>, <rustic:fertile_soil>, <rustic:fertile_soil>],
     [<pyrotech:obsidian_hoe>, <artisanworktables:workstation:10>, <pyrotech:obsidian_shovel>],
     [<bewitchment:mandrake_seeds>, <industrialforegoing:fertilizer>, <bewitchment:wormwood_seeds>]])
-  .setSecondaryIngredients([<betternether:eye_seed> * 32, <embers:seed_dawnstone> * 16, <harvestcraft:sesameseedsitem>.withTag({Rot: {start: 483840 as long, time: 12096000 as long}}) * 16, <thaumicbases:plaxseed> * 32, <tg:shade_rose_bush_seed> * 32, <atum:emmer_seeds> * 32, <botania:grassseeds:2> * 32, <thaumicbases:sweedseed> * 32, <harvestcraft:juteseeditem> * 32])
+  .setSecondaryIngredients([<betternether:eye_seed> * 32, <embers:seed_dawnstone> * 16, <harvestcraft:sesameseedsitem> * 16, <thaumicbases:plaxseed> * 32, <atum:emmer_seeds> * 32, <botania:grassseeds:2> * 32, <thaumicbases:sweedseed> * 32, <harvestcraft:juteseeditem> * 32])
   .addTool(<ore:artisansFramingHammer>, 100)
   .addTool(<ore:artisansDriver>, 100)
   .addOutput(<artisanworktables:workshop:10>)

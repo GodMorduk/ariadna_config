@@ -275,7 +275,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("vehicle:fluid_extractor");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:plateSteel>, <ore:plateSteel>, <ore:gearMithril>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:gearEnderium>],
     [<thermalexpansion:tank>.withTag({Level: 1 as byte}), <thermalexpansion:machine:6>.withTag({Level: 1 as byte}), <techguns:itemshared:72>],
     [<ore:plateSteel>, <immersiveengineering:material:27>, <ore:plateSteel>]])
   .addTool(<ore:artisansSpanner>, 50)
@@ -427,9 +427,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("vehicle:large_engine_gold");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<techguns:itemshared:58>, <ore:gearMithril>, <techguns:itemshared:58>],
+    [<techguns:itemshared:58>, <ore:gearEnderium>, <techguns:itemshared:58>],
     [<ore:itemMachineChassi>, <vehicle:large_engine:2>, <ore:itemMachineChassi>],
-    [<techguns:itemshared:58>, <ore:gearMithril>, <techguns:itemshared:58>]])
+    [<techguns:itemshared:58>, <ore:gearEnderium>, <techguns:itemshared:58>]])
   .setSecondaryIngredients([<ore:plateBrass> * 32])
   .addTool(<ore:artisansSpanner>, 85)
   .addTool(<ore:artisansDriver>, 85)

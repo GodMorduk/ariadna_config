@@ -2,8 +2,7 @@
   "name": "fae",
   "loadDefault": false,
   "buffs": [
-    "minecraft:regeneration",
-    "minecraft:nausea"
+    "lycanitesmobs:rejuvenation"
   ],
   "debuffs": [
     "lycanitesmobs:bleed"

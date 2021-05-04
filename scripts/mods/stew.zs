@@ -721,6 +721,15 @@ RecipeBuilder.get("mason")
   .addOutput(<stewblocks:brick_plastered_gray> * 8)
   .create();
 
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:ingotBrick>, <ore:ingotBrick>],
+    [<ore:ingotBrick>, <ore:ingotBrick>]])
+  .setFluid(<liquid:concrete> * 1000)
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<stewblocks:brick_plastered_gray> * 24)
+  .create();
+
 recipes.removeByRecipeName("chisel:factory");
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -776,32 +785,32 @@ RecipeBuilder.get("basic")
   .addOutput(<stewblocks:warp_dreg> * 4)
   .create();
 
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<ore:dirt>, <ore:dustAsh>, <ore:dirt>],
-    [<ore:dustAsh>, <ore:dirt>, <ore:dustAsh>],
-    [<ore:dirt>, <ore:dustAsh>, <ore:dirt>]])
-  .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<stewblocks:decayed_dirt> * 8)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<ore:dirt>, <ore:dustAsh>, <ore:dirt>],
+//     [<ore:dustAsh>, <ore:dirt>, <ore:dustAsh>],
+//     [<ore:dirt>, <ore:dustAsh>, <ore:dirt>]])
+//   .addTool(<ore:artisansSifter>, 5)
+//   .addOutput(<stewblocks:decayed_dirt> * 8)
+//   .create();
 
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<ore:sand>, <ore:dustAsh>, <ore:sand>],
-    [<ore:dustAsh>, <ore:sand>, <ore:dustAsh>],
-    [<ore:sand>, <ore:dustAsh>, <ore:sand>]])
-  .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<stewblocks:decayed_sand> * 8)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<ore:sand>, <ore:dustAsh>, <ore:sand>],
+//     [<ore:dustAsh>, <ore:sand>, <ore:dustAsh>],
+//     [<ore:sand>, <ore:dustAsh>, <ore:sand>]])
+//   .addTool(<ore:artisansSifter>, 5)
+//   .addOutput(<stewblocks:decayed_sand> * 8)
+//   .create();
 
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<ore:logWood>, <ore:dustAsh>, <ore:logWood>],
-    [<ore:dustAsh>, <ore:logWood>, <ore:dustAsh>],
-    [<ore:logWood>, <ore:dustAsh>, <ore:logWood>]])
-  .addTool(<ore:artisansBurner>, 5)
-  .addOutput(<stewblocks:decayed_log> * 8)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<ore:logWood>, <ore:dustAsh>, <ore:logWood>],
+//     [<ore:dustAsh>, <ore:logWood>, <ore:dustAsh>],
+//     [<ore:logWood>, <ore:dustAsh>, <ore:logWood>]])
+//   .addTool(<ore:artisansBurner>, 5)
+//   .addOutput(<stewblocks:decayed_log> * 8)
+//   .create();
 
 RecipeBuilder.get("carpenter")
   .setShaped([

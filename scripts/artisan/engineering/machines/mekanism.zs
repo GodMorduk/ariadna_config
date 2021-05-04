@@ -1207,11 +1207,11 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("mekanism:tierinstaller_2");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:gearMithril>, <ore:gearLumium>, <ore:plateEnderium>, <ore:gearSignalum>, <ore:gearMithril>],
+    [<ore:gearEnderium>, <ore:gearLumium>, <ore:plateEnderium>, <ore:gearSignalum>, <ore:gearEnderium>],
     [<ore:gearLumium>, <ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>, <ore:gearSignalum>],
     [<ore:plateEnderium>, <enderio:item_basic_capacitor:1>, <refinedstorage:processor:4>, <enderio:item_basic_capacitor:1>, <ore:plateEnderium>],
     [<ore:gearSignalum>, <ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>, <ore:gearLumium>],
-    [<ore:gearMithril>, <ore:gearSignalum>, <ore:plateEnderium>, <ore:gearLumium>, <ore:gearMithril>]])
+    [<ore:gearEnderium>, <ore:gearSignalum>, <ore:plateEnderium>, <ore:gearLumium>, <ore:gearEnderium>]])
   .addTool(<ore:artisansSolderer>, 200)
   .addTool(<ore:artisansDriver>, 200)
   .addTool(<ore:artisansFile>, 200)
@@ -1333,7 +1333,7 @@ RecipeBuilder.get("engineer")
     [<ore:ingotRefinedObsidian>, <ore:blockRefinedGlowstone>, <ore:blockRefinedGlowstone>, <ore:blockRefinedGlowstone>, <ore:ingotRefinedObsidian>],
     [<ore:ingotRefinedObsidian>, <ore:alloyUltimate>, <ore:blockRefinedGlowstone>, <ore:alloyUltimate>, <ore:ingotRefinedObsidian>],
     [<ore:ingotRefinedObsidian>, <ore:ingotRefinedObsidian>, <ore:ingotRefinedObsidian>, <ore:ingotRefinedObsidian>, <ore:ingotRefinedObsidian>]])
-  .setSecondaryIngredients([<ore:gearMithril> * 8, <ore:gearIridium> * 4, <ore:gearPlatinum> * 6, <ore:gearLumium> * 10])
+  .setSecondaryIngredients([<ore:gearEnderium> * 8, <ore:gearIridium> * 4, <ore:gearPlatinum> * 6, <ore:gearLumium> * 10])
   .addTool(<ore:artisansFramingHammer>, 100)
   .addTool(<ore:artisansSpanner>, 100)
   .addTool(<ore:artisansSolderer>, 100)
