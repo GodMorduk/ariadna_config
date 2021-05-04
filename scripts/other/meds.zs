@@ -6,12 +6,7 @@ recipes.removeByRecipeName("firstaid:morphine");
 
 recipes.addShaped(<stewitems:rubbing_alcohol>,[
     [null, <ore:listAllgrain>, null],
-    [<minecraft:potato>, <ore:listAllwater>, <minecraft:potato>],
-    [null, <ore:listAllgrain>, null]]);
-
-recipes.addShaped(<stewitems:rubbing_alcohol>,[
-    [null, <ore:listAllgrain>, null],
-    [<harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <harvestcraft:sweetpotatoitem>],
+    [<minecraft:potato> | <harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <minecraft:potato> | <harvestcraft:sweetpotatoitem>],
     [null, <ore:listAllgrain>, null]]);
 
 recipes.addShaped(<stewitems:laudanum>,[
@@ -34,7 +29,7 @@ recipes.addShaped(<stewitems:medicine_kazachban>,[
     [<ore:bonemeal>, <ore:itemSalt>, <ore:bonemeal>],
     [<pyrotech:strange_tuber>, <pyrotech:strange_tuber>, <ore:wax>]]);
 
-recipes.addShapeless(<firstaid:bandage> * 4, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
+recipes.addShapeless(<firstaid:bandage> * 2, [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>]);
 
 <ore:healPlant>.add(<rustic:cohosh>);
 <ore:healPlant>.add(<rustic:horsetail>);
@@ -83,14 +78,26 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewitems:medicine_serebrolist>)
   .create();
 
-recipes.addShaped(<firstaid:plaster> * 2, [
+recipes.addShaped(<firstaid:plaster>, [
     [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>],
     [<pyrotech:thatch>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <pyrotech:thatch>],
     [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>]]);
   
-recipes.addShaped(<firstaid:plaster> * 2, [
+recipes.addShaped(<firstaid:plaster>, [
     [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
     [<minecraft:string>, <ore:blockWool>, <minecraft:string>]]);
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
+    [<minecraft:string>, <ore:blockWool>, <minecraft:string>]])
+  .addOutput(<firstaid:plaster> * 3)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <stewitems:rubbing_alcohol>])
+  .addOutput(<firstaid:bandage> * 6)
+  .create();
 
 RecipeBuilder.get("chemist")
   .setShaped([

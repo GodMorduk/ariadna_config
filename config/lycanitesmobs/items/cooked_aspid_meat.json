@@ -12,9 +12,9 @@
     "effects": [
       {
         "effectId": "minecraft:regeneration",
-        "duration": 20,
+        "duration": 10,
         "amplifier": 0,
-        "chance": 1.0
+        "chance": 0.5
       }
     ]
   }
