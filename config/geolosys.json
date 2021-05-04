@@ -368,7 +368,41 @@
 			],
 			"yMin": 100,
 			"yMax": 128,
-			"chance": 15,
+			"chance": 65,
+			"size": 150,
+			"dimBlacklist": [
+				0,
+				1,
+				50,
+				51,
+				52,
+				53,
+				-1,
+				66,
+				28885,
+				111,
+				14676,
+				10,
+				4,
+				7,
+				17
+			],
+			"density": 0.001
+		},
+		{
+			"blocks": [
+				"thebetweenlands:octine_ore",
+				100
+			],
+			"samples": [
+				"simpleoresamples:sampleblockoctine",
+				25,
+				"minecraft:air",
+				75
+			],
+			"yMin": 4,
+			"yMax": 70,
+			"chance": 50,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -391,40 +425,6 @@
 		},
 		{
 			"blocks": [
-				"thebetweenlands:octine_ore",
-				100
-			],
-			"samples": [
-				"simpleoresamples:sampleblockoctine",
-				25,
-				"minecraft:air",
-				75
-			],
-			"yMin": 4,
-			"yMax": 70,
-			"chance": 10,
-			"size": 50,
-			"dimBlacklist": [
-				0,
-				1,
-				50,
-				51,
-				52,
-				53,
-				-1,
-				66,
-				28885,
-				111,
-				14676,
-				10,
-				4,
-				7,
-				17
-			],
-			"density": 0.05
-		},
-		{
-			"blocks": [
 				"thebetweenlands:scabyst_ore",
 				100
 			],
@@ -436,8 +436,8 @@
 			],
 			"yMin": 4,
 			"yMax": 70,
-			"chance": 10,
-			"size": 50,
+			"chance": 50,
+			"size": 100,
 			"dimBlacklist": [
 				0,
 				1,
@@ -455,7 +455,7 @@
 				7,
 				17
 			],
-			"density": 0.05
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -470,8 +470,8 @@
 			],
 			"yMin": 20,
 			"yMax": 70,
-			"chance": 10,
-			"size": 50,
+			"chance": 50,
+			"size": 100,
 			"dimBlacklist": [
 				0,
 				1,
@@ -489,7 +489,7 @@
 				7,
 				17
 			],
-			"density": 0.05
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -504,8 +504,8 @@
 			],
 			"yMin": 4,
 			"yMax": 128,
-			"chance": 10,
-			"size": 50,
+			"chance": 50,
+			"size": 100,
 			"dimBlacklist": [
 				0,
 				1,
@@ -523,7 +523,7 @@
 				7,
 				17
 			],
-			"density": 0.05
+			"density": 0.025
 		},
 		{
 			"blocks": [
@@ -538,8 +538,8 @@
 			],
 			"yMin": 20,
 			"yMax": 70,
-			"chance": 10,
-			"size": 50,
+			"chance": 50,
+			"size": 100,
 			"dimBlacklist": [
 				0,
 				1,
@@ -557,7 +557,7 @@
 				7,
 				17
 			],
-			"density": 0.05
+			"density": 0.025
 		},
 		{
 			"blocks": [
