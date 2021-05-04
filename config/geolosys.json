@@ -116,7 +116,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 7,
 			"size": 100,
@@ -158,9 +158,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 5,
+			"chance": 10,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -176,7 +176,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.025
@@ -228,7 +227,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 60,
 			"chance": 5,
 			"size": 100,
@@ -300,9 +299,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 80,
+			"yMin": 4,
 			"yMax": 176,
-			"chance": 5,
+			"chance": 10,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -318,7 +317,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -402,7 +400,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 70,
 			"chance": 10,
 			"size": 50,
@@ -436,7 +434,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 70,
 			"chance": 10,
 			"size": 50,
@@ -504,7 +502,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 10,
 			"size": 50,
@@ -1014,7 +1012,7 @@
 			],
 			"yMin": 10,
 			"yMax": 50,
-			"chance": 10,
+			"chance": 20,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -1030,7 +1028,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -1120,7 +1117,7 @@
 			],
 			"yMin": 10,
 			"yMax": 50,
-			"chance": 10,
+			"chance": 20,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -1136,7 +1133,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -1226,7 +1222,7 @@
 			],
 			"yMin": 10,
 			"yMax": 50,
-			"chance": 10,
+			"chance": 20,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -1242,7 +1238,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -1292,7 +1287,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 3,
 			"size": 10,
@@ -1326,7 +1321,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1364,9 +1359,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1382,7 +1377,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1398,7 +1392,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1436,9 +1430,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1454,7 +1448,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1470,7 +1463,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1508,9 +1501,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1526,7 +1519,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1542,7 +1534,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1580,9 +1572,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1598,7 +1590,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1614,7 +1605,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1652,9 +1643,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1670,7 +1661,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1686,7 +1676,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 2,
 			"size": 10,
@@ -1724,9 +1714,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -1742,7 +1732,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -1798,7 +1787,7 @@
 			],
 			"yMin": 10,
 			"yMax": 246,
-			"chance": 10,
+			"chance": 20,
 			"size": 20,
 			"dimBlacklist": [
 				0,
@@ -1814,7 +1803,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.1
@@ -1870,7 +1858,7 @@
 			],
 			"yMin": 10,
 			"yMax": 246,
-			"chance": 20,
+			"chance": 40,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -1886,7 +1874,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.025
@@ -1902,7 +1889,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 13,
 			"size": 75,
@@ -1936,9 +1923,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 18,
+			"chance": 36,
 			"size": 75,
 			"dimBlacklist": [
 				0,
@@ -1954,7 +1941,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.075
@@ -2004,7 +1990,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 10,
 			"size": 50,
@@ -2174,7 +2160,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 3,
 			"size": 10,
@@ -2276,7 +2262,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 3,
 			"size": 10,
@@ -2310,7 +2296,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 30,
 			"size": 10,
@@ -2344,7 +2330,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 8,
 			"size": 50,
@@ -2382,7 +2368,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 15,
 			"size": 50,
@@ -2556,7 +2542,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 5,
 			"size": 10,
@@ -2590,7 +2576,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 5,
 			"size": 10,
@@ -2624,7 +2610,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 36,
 			"size": 20,
@@ -2658,7 +2644,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 36,
 			"size": 20,
@@ -2692,7 +2678,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 36,
 			"size": 20,
@@ -2726,7 +2712,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2760,7 +2746,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2794,7 +2780,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2828,7 +2814,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2862,7 +2848,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2896,7 +2882,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -2930,7 +2916,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 10,
@@ -3004,7 +2990,7 @@
 			],
 			"yMin": 30,
 			"yMax": 226,
-			"chance": 7,
+			"chance": 14,
 			"size": 200,
 			"dimBlacklist": [
 				0,
@@ -3020,7 +3006,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.005
@@ -3036,7 +3021,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 11,
 			"size": 200,
@@ -3074,9 +3059,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 50,
-			"chance": 7,
+			"chance": 14,
 			"size": 200,
 			"dimBlacklist": [
 				0,
@@ -3092,7 +3077,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.005
@@ -3182,7 +3166,7 @@
 			],
 			"yMin": 30,
 			"yMax": 226,
-			"chance": 7,
+			"chance": 14,
 			"size": 200,
 			"dimBlacklist": [
 				0,
@@ -3198,7 +3182,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.005
@@ -3254,7 +3237,7 @@
 			],
 			"yMin": 30,
 			"yMax": 226,
-			"chance": 7,
+			"chance": 14,
 			"size": 200,
 			"dimBlacklist": [
 				0,
@@ -3270,7 +3253,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.005
@@ -3326,7 +3308,7 @@
 			],
 			"yMin": 30,
 			"yMax": 226,
-			"chance": 25,
+			"chance": 30,
 			"size": 100,
 			"dimBlacklist": [
 				0,
@@ -3342,7 +3324,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.025
@@ -3430,7 +3411,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 5,
 			"size": 20,
@@ -3468,9 +3449,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 256,
-			"chance": 10,
+			"chance": 20,
 			"size": 20,
 			"dimBlacklist": [
 				0,
@@ -3486,7 +3467,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.1
@@ -3502,7 +3482,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 7,
 			"size": 20,
@@ -3540,9 +3520,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 10,
+			"chance": 20,
 			"size": 20,
 			"dimBlacklist": [
 				0,
@@ -3558,7 +3538,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.1
@@ -3608,7 +3587,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 3,
 			"size": 50,
@@ -3646,9 +3625,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 15,
+			"chance": 30,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -3664,7 +3643,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.1
@@ -3714,7 +3692,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -3752,9 +3730,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -3770,7 +3748,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -3820,7 +3797,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -3858,9 +3835,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -3876,7 +3853,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -3926,7 +3902,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -3964,9 +3940,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -3982,7 +3958,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -4032,7 +4007,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -4070,9 +4045,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -4088,7 +4063,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -4138,7 +4112,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -4176,9 +4150,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -4194,7 +4168,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -4244,7 +4217,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -4282,9 +4255,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -4300,7 +4273,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -4350,7 +4322,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 2,
 			"size": 10,
@@ -4388,9 +4360,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 3,
+			"chance": 6,
 			"size": 10,
 			"dimBlacklist": [
 				0,
@@ -4406,7 +4378,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.5
@@ -4456,7 +4427,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 45,
 			"size": 200,
@@ -4630,7 +4601,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 30,
 			"size": 100,
@@ -4664,7 +4635,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 5,
 			"size": 50,
@@ -4702,7 +4673,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
 			"chance": 10,
 			"size": 50,
@@ -4810,7 +4781,7 @@
 			],
 			"yMin": 10,
 			"yMax": 246,
-			"chance": 10,
+			"chance": 20,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -4826,7 +4797,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -4842,7 +4812,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 15,
 			"size": 50,
@@ -4876,7 +4846,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 30,
 			"size": 50,
@@ -4910,7 +4880,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 25,
 			"size": 10,
@@ -4944,7 +4914,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 25,
 			"size": 10,
@@ -5154,7 +5124,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 13,
 			"size": 150,
@@ -5192,7 +5162,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 128,
 			"chance": 7,
 			"size": 150,
@@ -5918,7 +5888,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 10,
 			"size": 50,
@@ -5956,7 +5926,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 15,
 			"size": 50,
@@ -6024,7 +5994,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 4,
 			"size": 50,
@@ -6062,9 +6032,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -6080,7 +6050,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -6130,7 +6099,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 14,
 			"size": 50,
@@ -6168,9 +6137,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -6186,7 +6155,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -6236,7 +6204,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 40,
 			"size": 100,
@@ -6270,7 +6238,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 30,
 			"size": 100,
@@ -6576,7 +6544,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 100,
@@ -6614,7 +6582,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 20,
 			"size": 100,
@@ -6648,7 +6616,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
 			"chance": 15,
 			"size": 100,
@@ -6716,7 +6684,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 7,
 			"size": 100,
@@ -6784,7 +6752,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 100,
@@ -6822,7 +6790,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 20,
 			"size": 100,
@@ -6856,7 +6824,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
 			"chance": 15,
 			"size": 100,
@@ -6924,7 +6892,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 7,
 			"size": 50,
@@ -6962,7 +6930,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 17,
 			"size": 50,
@@ -6996,7 +6964,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 15,
 			"size": 50,
@@ -7064,7 +7032,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 7,
 			"size": 50,
@@ -7132,7 +7100,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 4,
 			"size": 50,
@@ -7170,7 +7138,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 17,
 			"size": 50,
@@ -7204,7 +7172,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 15,
 			"size": 50,
@@ -7272,7 +7240,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 7,
 			"size": 50,
@@ -7340,7 +7308,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 10,
 			"size": 50,
@@ -7378,7 +7346,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 17,
 			"size": 50,
@@ -7412,7 +7380,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 15,
 			"size": 50,
@@ -7480,7 +7448,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 20,
 			"chance": 7,
 			"size": 50,
@@ -7548,7 +7516,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -7586,9 +7554,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -7604,7 +7572,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -7654,7 +7621,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -7692,9 +7659,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -7710,7 +7677,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -7760,7 +7726,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -7798,9 +7764,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -7816,7 +7782,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -7866,7 +7831,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -7904,9 +7869,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -7922,7 +7887,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -7972,7 +7936,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 12,
 			"size": 50,
@@ -8010,9 +7974,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -8028,7 +7992,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -8078,7 +8041,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 7,
 			"size": 50,
@@ -8116,9 +8079,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -8134,7 +8097,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -8184,7 +8146,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -8222,9 +8184,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -8240,7 +8202,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -8290,7 +8251,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 40,
 			"chance": 10,
 			"size": 50,
@@ -8328,9 +8289,9 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 80,
-			"chance": 15,
+			"chance": 25,
 			"size": 50,
 			"dimBlacklist": [
 				0,
@@ -8346,7 +8307,6 @@
 				111,
 				14676,
 				4,
-				7,
 				17
 			],
 			"density": 0.05
@@ -8398,7 +8358,7 @@
 			],
 			"yMin": 20,
 			"yMax": 80,
-			"chance": 60,
+			"chance": 30,
 			"size": 50,
 			"dimBlacklist": [
 				1,
@@ -8462,7 +8422,7 @@
 				"minecraft:air",
 				75
 			],
-			"yMin": 1,
+			"yMin": 4,
 			"yMax": 10,
 			"chance": 4,
 			"size": 50,
