@@ -47,10 +47,10 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:automatedcrossbow");
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:advancedcrossbow");
 
 //выпил тканевой брони. перенесена на аатизанские столы
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:cloth_chest");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:googles");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:cloth_legs");
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:cloth_boots");
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:robechest");
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:goggles");
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:robelegs");
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:robeboots");
 
 //и фрагменты големов
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:redstonerelay");
