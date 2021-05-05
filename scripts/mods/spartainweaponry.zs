@@ -527,7 +527,7 @@ RecipeBuilder.get("blacksmith") // Железные стрелы
     [<ore:stickWood>],
     [<ore:feather>]])
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<spartanweaponry:arrow_iron> * 16)
+  .addOutput(<spartanweaponry:arrow_iron> * 24)
   .create();
 
 RecipeBuilder.get("jeweler") // Алмазные стрелы
@@ -537,7 +537,7 @@ RecipeBuilder.get("jeweler") // Алмазные стрелы
     [<ore:feather>]])
   .addTool(<ore:artisansLens>, 20)
   .addTool(<ore:artisansGemCutter>, 20)
-  .addOutput(<spartanweaponry:arrow_diamond> * 16)
+  .addOutput(<spartanweaponry:arrow_diamond> * 24)
   .setMinimumTier(1)
   .create();
 
@@ -554,7 +554,7 @@ RecipeBuilder.get("blacksmith") // Железные болты
     [null, <ore:nuggetIron>, null],
     [<ore:feather>, null, null]])
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<spartanweaponry:bolt> * 16)
+  .addOutput(<spartanweaponry:bolt> * 24)
   .create();
 
 RecipeBuilder.get("jeweler") // Алмазные болты
@@ -564,7 +564,7 @@ RecipeBuilder.get("jeweler") // Алмазные болты
     [<ore:feather>, null, null]])
   .addTool(<ore:artisansLens>, 20)
   .addTool(<ore:artisansGemCutter>, 20)
-  .addOutput(<spartanweaponry:bolt> * 16)
+  .addOutput(<spartanweaponry:bolt_diamond> * 32)
   .setMinimumTier(1)
   .create();
 
