@@ -172,11 +172,5 @@
     }
   ],
   "sizeScale": 1,
-  "hitboxScale": 1,
-  "flags": [
-    {
-      "name": "healingRate",
-      "value": 10
-    }
-  ]
+  "hitboxScale": 1
 }
