@@ -21,9 +21,9 @@ RecipeBuilder.get("tanner")
   .addOutput(<harvestcraft:hardenedleatheritem>)
   .create();
 
-recipes.removeByRecipeName("harvestcraft:cheesteitem_itemsalt");
-recipes.removeByRecipeName("harvestcraft:cheesteitem_foodsalt");
-recipes.removeByRecipeName("harvestcraft:cheesteitem_dustsalt");
+recipes.removeByRecipeName("harvestcraft:cheeseitem_itemsalt");
+recipes.removeByRecipeName("harvestcraft:cheeseitem_foodsalt");
+recipes.removeByRecipeName("harvestcraft:cheeseitem_dustsalt");
 
 HarvestCraftTweaker.addPressing(<ore:honeycombEmpty>, <harvestcraft:beeswaxitem>, <harvestcraft:beeswaxitem>);
 HarvestCraftTweaker.addPressing(<ore:foodFilledhoneycomb>, <harvestcraft:beeswaxitem>, <harvestcraft:honeyitem>);
