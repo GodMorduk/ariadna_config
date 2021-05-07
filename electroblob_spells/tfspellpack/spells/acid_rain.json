@@ -13,9 +13,9 @@
 	"tier": "advanced",
 	"element": "lightning",
 	"type": "construct",
-	"cost": 50,
+	"cost": 200,
 	"chargeup": 10,
-	"cooldown": 150,
+	"cooldown": 600,
 	"base_properties": {
 		"range": 20,
 		"duration": 600,

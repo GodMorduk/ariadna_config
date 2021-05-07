@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "sorcery",
   "type": "minion",
-  "cost": 175,
+  "cost": 1000,
   "chargeup": 20,
-  "cooldown": 400,
+  "cooldown": 18000,
   "base_properties": {
     "summon_radius": 2
   }

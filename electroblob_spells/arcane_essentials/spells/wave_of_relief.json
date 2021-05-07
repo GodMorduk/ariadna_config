@@ -13,9 +13,9 @@
   "tier": "apprentice",
   "element": "healing",
   "type": "buff",
-  "cost": 45,
+  "cost": 100,
   "chargeup": 0,
-  "cooldown": 65,
+  "cooldown": 1200,
   "base_properties": {
     "effect_radius": 8,
     "health": 4,

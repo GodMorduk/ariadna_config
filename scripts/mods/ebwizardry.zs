@@ -451,3 +451,11 @@ recipes.addShaped("magicstic", <ancientspellcraft:wand_channeling>, [
 	[null, <bewitchment:elder_planks>, null], 
 	[null, <bewitchment:elder_planks>, null]
 ]);
+
+RecipeBuilder.get("mage")
+  .setShaped([[null, <ebwizardry:grand_crystal>, null], 
+	[<ore:gemLapis>, <ebwizardry:blank_scroll>, <minecraft:glowstone_dust>], 
+	[null, <minecraft:gold_ingot>, null]])
+  .addTool(<ore:artisansQuill>, 25)
+  .addOutput(<ebwizardry:identification_scroll>)
+  .create();

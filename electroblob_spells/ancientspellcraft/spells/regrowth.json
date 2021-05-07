@@ -13,9 +13,9 @@
     "tier": "apprentice",
     "element": "earth",
     "type": "buff",
-    "cost": 35,
+    "cost": 100,
     "chargeup": 50,
-    "cooldown": 250,
+    "cooldown": 3600,
     "base_properties": {
         "regeneration_duration": 200,
         "regeneration_strength": 0,

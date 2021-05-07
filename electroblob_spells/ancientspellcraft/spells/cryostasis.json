@@ -13,9 +13,9 @@
     "tier": "master",
     "element": "ice",
     "type": "defence",
-    "cost": 80,
+    "cost": 500,
     "chargeup": 0,
-    "cooldown": 80,
+    "cooldown": 12000,
     "base_properties": {
         "ice_duration": 260,
         "effect_duration": 260,
