@@ -13,9 +13,9 @@
   "tier": "apprentice",
   "element": "earth",
   "type": "minion",
-  "cost": 25,
+  "cost": 300,
   "chargeup": 0,
-  "cooldown": 100,
+  "cooldown": 6000,
   "base_properties": {
     "summon_radius": 2
   }

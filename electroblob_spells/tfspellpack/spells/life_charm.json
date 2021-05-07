@@ -13,9 +13,9 @@
 	"tier": "advanced",
 	"element": "healing",
 	"type": "buff",
-	"cost": 40,
+	"cost": 200,
 	"chargeup": 10,
-	"cooldown": 80,
+	"cooldown": 6000,
 	"base_properties": {
 		"regeneration_duration": 200,
 		"regeneration_strength": 0,

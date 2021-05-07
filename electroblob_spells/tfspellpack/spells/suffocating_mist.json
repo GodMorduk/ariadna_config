@@ -13,9 +13,9 @@
 	"tier": "master",
 	"element": "necromancy",
 	"type": "construct",
-	"cost": 125,
+	"cost": 200,
 	"chargeup": 20,
-	"cooldown": 250,
+	"cooldown": 4800,
 	"base_properties": {
 		"range": 20,
 		"duration": 600,
