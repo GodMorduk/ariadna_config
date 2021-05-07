@@ -13,9 +13,9 @@
 	"tier": "master",
 	"element": "ice",
 	"type": "minion",
-	"cost": 125,
+	"cost": 500,
 	"chargeup": 25,
-	"cooldown": 400,
+	"cooldown": 12000,
 	"base_properties": {
 		"minion_lifetime": 1200,
 		"minion_count": 8,

@@ -13,11 +13,11 @@
   "tier": "advanced",
   "element": "healing",
   "type": "defence",
-  "cost": 35,
+  "cost": 200,
   "chargeup": 10,
-  "cooldown": 150,
+  "cooldown": 12000,
   "base_properties": {
     "effect_radius": 5,
-    "health": 6
+    "health": 12
   }
 }

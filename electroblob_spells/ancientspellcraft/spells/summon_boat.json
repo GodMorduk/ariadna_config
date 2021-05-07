@@ -13,7 +13,7 @@
     "tier": "apprentice",
     "element": "earth",
     "type": "utility",
-    "cost": 50,
+    "cost": 100,
     "chargeup": 0,
     "cooldown": 600,
     "base_properties": {
