@@ -453,9 +453,9 @@ recipes.addShaped("magicstic", <ancientspellcraft:wand_channeling>, [
 ]);
 
 RecipeBuilder.get("mage")
-  .setShaped([[null, <ebwizardry:grand_crystal>, null], 
+  .setShaped([[<ebwizardry:grand_crystal>, <ebwizardry:grand_crystal>, <ebwizardry:grand_crystal>], 
 	[<ore:gemLapis>, <ebwizardry:blank_scroll>, <minecraft:glowstone_dust>], 
-	[null, <minecraft:gold_ingot>, null]])
+	[<minecraft:book>, <minecraft:gold_ingot>, <minecraft:book>]])
   .addTool(<ore:artisansQuill>, 25)
   .addOutput(<ebwizardry:identification_scroll>)
   .create();
