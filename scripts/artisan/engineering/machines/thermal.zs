@@ -167,14 +167,14 @@ RecipeBuilder.get("engineer")
 
 recipes.removeByRecipeName("thermalexpansion:satchel");
 recipes.removeByRecipeName("thermalexpansion:satchel_1");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:leather>, <techguns:itemshared:57>, <ore:leather>],
-    [<ore:plateAluminum>, <ore:wool>, <ore:plateAluminum>],
-    [<ore:leather>, <ore:plateAluminum>, <ore:leather>]])
-  .addTool(<ore:artisansNeedle>, 30)
-  .addOutput(<thermalexpansion:satchel>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [<ore:leather>, <techguns:itemshared:57>, <ore:leather>],
+//     [<ore:plateAluminum>, <ore:wool>, <ore:plateAluminum>],
+//     [<ore:leather>, <ore:plateAluminum>, <ore:leather>]])
+//   .addTool(<ore:artisansNeedle>, 30)
+//   .addOutput(<thermalexpansion:satchel>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:tank");
 RecipeBuilder.get("engineer")
@@ -961,26 +961,26 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:satchel_2");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:fabricHemp>, <techguns:itemshared:57>, <ore:fabricHemp>],
-    [<ore:plateAluminum>, <thermalexpansion:satchel>.withTag({Accessible: 1 as byte}), <ore:plateAluminum>],
-    [<ore:stickAluminum>, <ore:fabricHemp>, <ore:stickAluminum>]])
-  .addTool(<ore:artisansDriver>, 30)
-  .addTool(<ore:artisansNeedle>, 30)
-  .addOutput(<thermalexpansion:satchel:1>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [<ore:fabricHemp>, <techguns:itemshared:57>, <ore:fabricHemp>],
+//     [<ore:plateAluminum>, <thermalexpansion:satchel>.withTag({Accessible: 1 as byte}), <ore:plateAluminum>],
+//     [<ore:stickAluminum>, <ore:fabricHemp>, <ore:stickAluminum>]])
+//   .addTool(<ore:artisansDriver>, 30)
+//   .addTool(<ore:artisansNeedle>, 30)
+//   .addOutput(<thermalexpansion:satchel:1>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:satchel_3");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<techguns:itemshared:60>, <ore:gearElectrum>, <techguns:itemshared:60>],
-    [<ore:plateElectrum>, <thermalexpansion:satchel:1>.withTag({Accessible: 1 as byte}), <ore:plateElectrum>],
-    [<ore:stickSteel>, <techguns:itemshared:60>, <ore:stickSteel>]])
-  .addTool(<ore:artisansDriver>, 50)
-  .addTool(<ore:artisansNeedle>, 50)
-  .addOutput(<thermalexpansion:satchel:2>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [<techguns:itemshared:60>, <ore:gearElectrum>, <techguns:itemshared:60>],
+//     [<ore:plateElectrum>, <thermalexpansion:satchel:1>.withTag({Accessible: 1 as byte}), <ore:plateElectrum>],
+//     [<ore:stickSteel>, <techguns:itemshared:60>, <ore:stickSteel>]])
+//   .addTool(<ore:artisansDriver>, 50)
+//   .addTool(<ore:artisansNeedle>, 50)
+//   .addOutput(<thermalexpansion:satchel:2>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:reservoir_1");
 RecipeBuilder.get("engineer")
@@ -1919,44 +1919,44 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:satchel_7");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:string>, <ore:leather>, <ore:string>],
-    [<ore:plateConstantan>, <minecraft:lava_bucket>, <ore:plateConstantan>],
-    [<ore:leather>, <ore:string>, <ore:leather>]])
-  .addTool(<ore:artisansDriver>, 25)
-  .addTool(<ore:artisansSpanner>, 25)
-  .addTool(<ore:artisansNeedle>, 25)
-  .addOutput(<thermalexpansion:satchel:100>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [<ore:string>, <ore:leather>, <ore:string>],
+//     [<ore:plateConstantan>, <minecraft:lava_bucket>, <ore:plateConstantan>],
+//     [<ore:leather>, <ore:string>, <ore:leather>]])
+//   .addTool(<ore:artisansDriver>, 25)
+//   .addTool(<ore:artisansSpanner>, 25)
+//   .addTool(<ore:artisansNeedle>, 25)
+//   .addOutput(<thermalexpansion:satchel:100>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:satchel_4");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null],
-    [<ore:plateBronze>, <techguns:itemshared:133>, <ore:wireCopper>, <techguns:itemshared:133>, <ore:plateBronze>],
-    [<immersiveengineering:material:8>, <ore:gearInvar>, <thermalexpansion:satchel:2>.withTag({Accessible: 1 as byte}), <ore:gearInvar>, <immersiveengineering:material:8>],
-    [<ore:plateBronze>, <techguns:itemshared:133>, <ore:wireCopper>, <techguns:itemshared:133>, <ore:plateBronze>],
-    [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null]])
-  .addTool(<ore:artisansDriver>, 100)
-  .addTool(<ore:artisansSpanner>, 100)
-  .addTool(<ore:artisansNeedle>, 100)
-  .addOutput(<thermalexpansion:satchel:3>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null],
+//     [<ore:plateBronze>, <techguns:itemshared:133>, <ore:wireCopper>, <techguns:itemshared:133>, <ore:plateBronze>],
+//     [<immersiveengineering:material:8>, <ore:gearInvar>, <thermalexpansion:satchel:2>.withTag({Accessible: 1 as byte}), <ore:gearInvar>, <immersiveengineering:material:8>],
+//     [<ore:plateBronze>, <techguns:itemshared:133>, <ore:wireCopper>, <techguns:itemshared:133>, <ore:plateBronze>],
+//     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null]])
+//   .addTool(<ore:artisansDriver>, 100)
+//   .addTool(<ore:artisansSpanner>, 100)
+//   .addTool(<ore:artisansNeedle>, 100)
+//   .addOutput(<thermalexpansion:satchel:3>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:satchel_5");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null],
-    [<ore:plateLumium>, <techguns:itemshared:133>, <ore:wireGold>, <techguns:itemshared:133>, <ore:plateLumium>],
-    [<immersiveengineering:material:9>, <ore:fiberCarbon>, <thermalexpansion:satchel:3>.withTag({Accessible: 1 as byte}), <ore:fiberCarbon>, <immersiveengineering:material:9>],
-    [<ore:plateLumium>, <techguns:itemshared:133>, <ore:wireGold>, <techguns:itemshared:133>, <ore:plateLumium>],
-    [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null]])
-  .addTool(<ore:artisansDriver>, 150)
-  .addTool(<ore:artisansSpanner>, 150)
-  .addTool(<ore:artisansNeedle>, 150)
-  .addOutput(<thermalexpansion:satchel:4>.withTag({Accessible: 1 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null],
+//     [<ore:plateLumium>, <techguns:itemshared:133>, <ore:wireGold>, <techguns:itemshared:133>, <ore:plateLumium>],
+//     [<immersiveengineering:material:9>, <ore:fiberCarbon>, <thermalexpansion:satchel:3>.withTag({Accessible: 1 as byte}), <ore:fiberCarbon>, <immersiveengineering:material:9>],
+//     [<ore:plateLumium>, <techguns:itemshared:133>, <ore:wireGold>, <techguns:itemshared:133>, <ore:plateLumium>],
+//     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null]])
+//   .addTool(<ore:artisansDriver>, 150)
+//   .addTool(<ore:artisansSpanner>, 150)
+//   .addTool(<ore:artisansNeedle>, 150)
+//   .addOutput(<thermalexpansion:satchel:4>.withTag({Accessible: 1 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:capacitor_3");
 RecipeBuilder.get("engineer")
