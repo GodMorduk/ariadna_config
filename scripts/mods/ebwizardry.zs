@@ -456,6 +456,6 @@ RecipeBuilder.get("mage")
   .setShaped([[null, <ebwizardry:grand_crystal>, null], 
 	[null, <ebwizardry:blank_scroll>, null], 
 	[null, <minecraft:gold_nugget>, null]])
-  .addTool(<ore:artisansQuill>, 15)
+  .addTool(<ore:artisansQuill>, 25)
   .addOutput(<ebwizardry:identification_scroll>)
   .create();
