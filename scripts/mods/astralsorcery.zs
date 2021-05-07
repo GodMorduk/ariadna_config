@@ -170,19 +170,18 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 	<minecraft:crafting_table>, 
     <astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}),
 	<metallurgy:astral_silver_block>, 
-	<metallurgy:astral_silver_ingot>, 
-	<metallurgy:astral_silver_ingot>, 
+	<metallurgy:astral_silver_block>, 
+	<metallurgy:astral_silver_block>, 
 	<metallurgy:astral_silver_block>,
 	<metallurgy:astral_silver_ingot>, 
 	<metallurgy:astral_silver_ingot>,
 	<metallurgy:astral_silver_ingot>, 
 	<metallurgy:astral_silver_ingot>,
-	<metallurgy:astral_silver_block>, 
+	<metallurgy:astral_silver_ingot>, 
 	<metallurgy:astral_silver_ingot>,
 	<metallurgy:astral_silver_ingot>, 
-	<metallurgy:astral_silver_block>
+	<metallurgy:astral_silver_ingot>
 ]);
-
 
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <metallurgy:astral_silver_ingot>, 2000, 10, [ 
 	<astralsorcery:itemrockcrystalsimple>,

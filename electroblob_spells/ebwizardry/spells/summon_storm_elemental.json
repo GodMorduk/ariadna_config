@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "lightning",
   "type": "minion",
-  "cost": 100,
+  "cost": 400,
   "chargeup": 20,
-  "cooldown": 400,
+  "cooldown": 6000,
   "base_properties": {
     "minion_lifetime": 600,
     "minion_count": 1,
