@@ -4,11 +4,6 @@ recipes.removeByRecipeName("firstaid:bandage");
 recipes.removeByRecipeName("firstaid:plaster");
 recipes.removeByRecipeName("firstaid:morphine");
 
-recipes.addShaped(<stewitems:rubbing_alcohol>,[
-    [null, <ore:listAllgrain>, null],
-    [<minecraft:potato> | <harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <minecraft:potato> | <harvestcraft:sweetpotatoitem>],
-    [null, <ore:listAllgrain>, null]]);
-
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:blockGlass>, <minecraft:stone_button>, <ore:blockGlass>],
@@ -325,15 +320,14 @@ RecipeBuilder.get("chemist")
   .setMinimumTier(1)
   .addOutput(<stewitems:medicine_antidepressants>)
   .create();
-  
+
 RecipeBuilder.get("chemist")
   .setShaped([
-    [<industrialforegoing:plastic>, <alchemistry:compound:59>, <industrialforegoing:plastic>],
-    [<industrialforegoing:plastic>, <alchemistry:compound:55>, <industrialforegoing:plastic>],
-    [null, <techguns:itemshared:72>, null]])
+    [null, <stewitems:rubbing_alcohol>, null],
+    [<alchemistry:compound:59>, <stewitems:inhaler_empty>, <alchemistry:compound:55>],
+    [null, <stewitems:rubbing_alcohol>, null]])
   .addTool(<ore:artisansBeaker>, 25)
-  .setMinimumTier(1)
-  .addOutput(<stewitems:medicine_stamina_inhaler>)
+  .addOutput(<stewitems:medicine_inhaler>)
   .create();
   
 RecipeBuilder.get("chemist")
