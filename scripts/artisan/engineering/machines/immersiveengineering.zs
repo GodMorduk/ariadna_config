@@ -229,9 +229,9 @@ RecipeBuilder.get("engineer")
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>],
     [<immersiveengineering:material:4>, <immersiveengineering:material:4>, <immersiveengineering:material:4>],
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 250)
   .addTool(<ore:artisansTrowel>, 10)
-  .addOutput(<immersiveengineering:stone_decoration:4>*4)
+  .addOutput(<immersiveengineering:stone_decoration:4> * 6)
   .create();
 
 RecipeBuilder.get("mason")
@@ -239,9 +239,9 @@ RecipeBuilder.get("mason")
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>],
     [<immersiveengineering:material:4>, <immersiveengineering:material:4>, <immersiveengineering:material:4>],
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
-  .setFluid(<liquid:water> * 500)
+  .setFluid(<liquid:water> * 250)
   .addTool(<ore:artisansTrowel>, 5)
-  .addOutput(<immersiveengineering:stone_decoration:4>*8)
+  .addOutput(<immersiveengineering:stone_decoration:4> * 12)
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/concrete");
