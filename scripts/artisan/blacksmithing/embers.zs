@@ -900,7 +900,7 @@ recipes.removeByRecipeName("embers:alchemy_pedestal");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<embers:plate_dawnstone>, <embers:tinker_lens>, <embers:plate_dawnstone>],
-    [<ore:ingotDawnstone>, <embers:ember_cluster>, <ore:ingotDawnstone>],
+    [<ore:ingotDawnstone>, <embers:crystal_ember>, <ore:ingotDawnstone>],
     [<ore:blockDawnstone>, <ore:blockCopper>, <ore:blockDawnstone>]])
   .setSecondaryIngredients([<embers:wall_caminite_brick> * 8])
   .addTool(<ore:artisansFramingHammer>, 100)
