@@ -11,11 +11,11 @@ Stamper.remove(<embers:aspectus_silver>);
 Stamper.remove(<embers:aspectus_lead>);
 Stamper.remove(<embers:aspectus_copper>);
 Stamper.remove(<embers:aspectus_dawnstone>);
-Stamper.add(<embers:aspectus_copper>, <liquid:copper>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_silver>, <liquid:silver>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_lead>, <liquid:lead>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_iron>, <liquid:iron>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_copper>, <liquid:copper>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_silver>, <liquid:silver>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_lead>, <liquid:lead>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_iron>, <liquid:iron>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
 
 
 ##alchemy recieps
