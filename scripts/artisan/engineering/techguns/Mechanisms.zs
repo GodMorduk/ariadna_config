@@ -208,7 +208,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateInvar>, <immersiveengineering:metal_device1>, <ore:plateInvar>],
     [<ore:gearDark>, <futuremc:blast_furnace>, <ore:gearDark>],
-    [<ore:plateInvar>, <thermalexpansion:machine:3>.withTag({Level: 2 as byte}), <ore:plateInvar>]])
+    [<ore:plateInvar>, <thermalexpansion:machine:3>.withTag({Level: 1 as byte}), <ore:plateInvar>]])
   .setSecondaryIngredients([<ore:circuitAdvanced> * 4])
   .addTool(<ore:artisansDriver>, 150)
   .addTool(<ore:artisansSpanner>, 150)

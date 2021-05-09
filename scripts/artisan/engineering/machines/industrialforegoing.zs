@@ -446,7 +446,7 @@ RecipeBuilder.get("engineer")
 safeRemoveRecipe("industrialforegoing:tree_fluid_extractor");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:plateConstantan>, <techguns:itemshared:39>, <ore:plateConstantan>],
+    [<ore:plateConstantan>, <techguns:itemshared:38>, <ore:plateConstantan>],
     [<ore:gearBronze>, <mekanism:basicblock:8>, <ore:gearBronze>],
     [<techguns:itemshared:72>, <thermalfoundation:material:515>, <techguns:itemshared:72>]])
   .setFluid(<liquid:lubricant> * 100)
