@@ -629,6 +629,7 @@ Carving.addVariation("light_modern", <stewblocks:lamp_old_blinking>);
 Carving.addVariation("light_modern", <stewblocks:lamp_round_blue>);
 Carving.addVariation("light_modern", <stewblocks:lamp_yellow>);
 
+Carving.addVariation("andesite", <minecraft:stone:5>);
 Carving.addVariation("andesite", <minecraft:stone:6>);
 Carving.addVariation("andesite", <stewblocks:schist_dwarven_design>);
 Carving.addVariation("andesite", <stewblocks:schist_dwarven_pillar_decorative>);
