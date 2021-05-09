@@ -808,7 +808,7 @@ RecipeBuilder.get("engineer")
     [null, null, null],
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]])
   .addTool(<ore:artisansSpanner>, 10)
-  .addOutput(<immersiveengineering:metal_device1:6>*4)
+  .addOutput(<immersiveengineering:metal_device1:6>*8)
   .create();
 
 recipes.removeByRecipeName("immersiveengineering:metal_devices/fluid_pump");
