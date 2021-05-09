@@ -77,7 +77,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<artisanworktables:artisans_driver_steel>, <artisanworktables:artisans_solderer_constantan>, <artisanworktables:artisans_hammer_bronze>],
-    [<ore:plateIron>, <thermalexpansion:machine:9>.withTag({Level: 2 as byte}), <ore:plateIron>],
+    [<ore:plateIron>, <thermalexpansion:machine:9>.withTag({Level: 1 as byte}), <ore:plateIron>],
     [<ore:plateIron>, <thermalexpansion:augment:401>, <ore:plateIron>]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSpanner>, 50)
