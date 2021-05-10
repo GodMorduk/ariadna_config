@@ -15,7 +15,7 @@
     "type": "minion",
     "cost": 300,
     "chargeup": 0,
-    "cooldown": 12000,
+    "cooldown": 4200,
     "base_properties": {
         "summon_radius": 2
     }

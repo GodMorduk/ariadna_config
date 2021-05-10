@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "necromancy",
   "type": "alteration",
-  "cost": 100,
+  "cost": 200,
   "chargeup": 15,
-  "cooldown": 300,
+  "cooldown": 2400,
   "base_properties": {
     "range": 8,
     "effect_duration": 600,
