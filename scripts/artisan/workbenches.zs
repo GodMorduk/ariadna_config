@@ -417,8 +417,8 @@ RecipeBuilder.get("mage")
   .setShaped([
     [<bewitchment:pentacle>, <botania:manatablet>, <botania:tinyplanet>],
     [<thaumcraft:infusion_matrix>, <artisanworktables:worktable:7>, <thaumcraft:everfull_urn>],
-    [<thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>, <thaumcraft:mechanism_simple>]])
-  .addTool(<artisanworktables:artisans_grimoire_thaumium>, 300)
+    [<astralsorcery:itemarchitectwand>, <thaumcraft:mechanism_simple>, <botania:craftinghalo>]])
+  .addTool(<artisanworktables:artisans_grimoire_thaumium>, 600)
   .addOutput(<artisanworktables:workstation:7>)
   .create();
   
