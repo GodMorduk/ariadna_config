@@ -13,9 +13,9 @@
     "tier": "advanced",
     "element": "necromancy",
     "type": "alteration",
-    "cost": 200,
+    "cost": 300,
     "chargeup": 40,
-    "cooldown": 6000,
+    "cooldown": 4200,
     "base_properties": {
         "blast_radius": 6,
         "duration": 600,

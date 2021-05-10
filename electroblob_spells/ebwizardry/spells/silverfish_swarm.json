@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "earth",
   "type": "minion",
-  "cost": 80,
+  "cost": 500,
   "chargeup": 20,
-  "cooldown": 300,
+  "cooldown": 3000,
   "base_properties": {
     "minion_lifetime": 600,
     "minion_count": 20,

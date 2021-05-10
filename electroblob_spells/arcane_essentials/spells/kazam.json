@@ -13,7 +13,7 @@
   "tier": "advanced",
   "element": "necromancy",
   "type": "attack",
-  "cost": 65,
+  "cost": 200,
   "chargeup": 15,
   "cooldown": 90,
   "base_properties": {
