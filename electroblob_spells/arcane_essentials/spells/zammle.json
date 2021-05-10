@@ -13,9 +13,9 @@
   "tier": "apprentice",
   "element": "necromancy",
   "type": "attack",
-  "cost": 200,
+  "cost": 150,
   "chargeup": 0,
-  "cooldown": 200,
+  "cooldown": 1200,
   "base_properties": {
     "damage": 9,
     "life_steal": 0.5,

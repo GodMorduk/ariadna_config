@@ -15,10 +15,10 @@
   "type": "attack",
   "cost": 200,
   "chargeup": 15,
-  "cooldown": 90,
+  "cooldown": 1800,
   "base_properties": {
-    "damage": 13,
-    "life_steal": 0.6,
+    "damage": 14,
+    "life_steal": 0.5,
     "range": 25,
     "effect_radius": 1.375,
     "effect_strength": 3,
