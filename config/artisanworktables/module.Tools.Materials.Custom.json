@@ -3,7 +3,7 @@
     {
       "name": "iron",
       "harvestLevel": 2,
-      "maxUses": 250,
+      "maxUses": 350,
       "efficiency": 6.0,
       "damage": 2.0,
       "enchantability": 0,
@@ -16,7 +16,7 @@
     {
       "name": "gold",
       "harvestLevel": 0,
-      "maxUses": 250,
+      "maxUses": 350,
       "efficiency": 12.0,
       "damage": 0.0,
       "enchantability": 0,
@@ -29,7 +29,7 @@
     {
       "name": "diamond",
       "harvestLevel": 3,
-      "maxUses": 1500,
+      "maxUses": 1600,
       "efficiency": 8.0,
       "damage": 3.0,
       "enchantability": 0,
@@ -42,7 +42,7 @@
     {
       "name": "flint",
       "harvestLevel": 1,
-      "maxUses": 75,
+      "maxUses": 45,
       "efficiency": 3.8,
       "damage": 1.0,
       "enchantability": 0,
@@ -55,7 +55,7 @@
     {
       "name": "bone",
       "harvestLevel": 1,
-      "maxUses": 75,
+      "maxUses": 45,
       "efficiency": 3.8,
       "damage": 1.0,
       "enchantability": 0,
@@ -68,7 +68,7 @@
     {
       "name": "aluminum",
       "harvestLevel": 1,
-      "maxUses": 300,
+      "maxUses": 450,
       "efficiency": 10.0,
       "damage": 1.0,
       "enchantability": 0,
@@ -81,7 +81,7 @@
     {
       "name": "bronze",
       "harvestLevel": 2,
-      "maxUses": 600,
+      "maxUses": 700,
       "efficiency": 6.0,
       "damage": 2.0,
       "enchantability": 0,
@@ -94,7 +94,7 @@
     {
       "name": "constantan",
       "harvestLevel": 2,
-      "maxUses": 600,
+      "maxUses": 700,
       "efficiency": 6.0,
       "damage": 1.5,
       "enchantability": 0,
@@ -107,7 +107,7 @@
     {
       "name": "copper",
       "harvestLevel": 1,
-      "maxUses": 250,
+      "maxUses": 350,
       "efficiency": 4.0,
       "damage": 0.75,
       "enchantability": 0,
@@ -120,7 +120,7 @@
     {
       "name": "electrum",
       "harvestLevel": 0,
-      "maxUses": 600,
+      "maxUses": 700,
       "efficiency": 14.0,
       "damage": 0.5,
       "enchantability": 0,
@@ -133,7 +133,7 @@
     {
       "name": "invar",
       "harvestLevel": 2,
-      "maxUses": 600,
+      "maxUses": 700,
       "efficiency": 7.0,
       "damage": 3.0,
       "enchantability": 0,
@@ -146,7 +146,7 @@
     {
       "name": "lead",
       "harvestLevel": 1,
-      "maxUses": 300,
+      "maxUses": 400,
       "efficiency": 5.0,
       "damage": 1.0,
       "enchantability": 0,
@@ -159,7 +159,7 @@
     {
       "name": "nickel",
       "harvestLevel": 2,
-      "maxUses": 300,
+      "maxUses": 400,
       "efficiency": 6.5,
       "damage": 2.5,
       "enchantability": 0,
@@ -185,7 +185,7 @@
     {
       "name": "silver",
       "harvestLevel": 2,
-      "maxUses": 300,
+      "maxUses": 400,
       "efficiency": 6.0,
       "damage": 1.5,
       "enchantability": 0,
@@ -198,7 +198,7 @@
     {
       "name": "steel",
       "harvestLevel": 2,
-      "maxUses": 600,
+      "maxUses": 700,
       "efficiency": 6.5,
       "damage": 2.5,
       "enchantability": 0,
@@ -211,7 +211,7 @@
     {
       "name": "tin",
       "harvestLevel": 1,
-      "maxUses": 250,
+      "maxUses": 350,
       "efficiency": 4.5,
       "damage": 1.0,
       "enchantability": 0,
@@ -224,7 +224,7 @@
     {
       "name": "osmium",
       "harvestLevel": 2,
-      "maxUses": 350,
+      "maxUses": 450,
       "efficiency": 10.0,
       "damage": 4.0,
       "enchantability": 0,
@@ -237,7 +237,7 @@
     {
       "name": "thaumium",
       "harvestLevel": 3,
-      "maxUses": 900,
+      "maxUses": 1000,
       "efficiency": 10.0,
       "damage": 1.5,
       "enchantability": 0,

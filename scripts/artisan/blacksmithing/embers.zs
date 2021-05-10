@@ -11,11 +11,11 @@ Stamper.remove(<embers:aspectus_silver>);
 Stamper.remove(<embers:aspectus_lead>);
 Stamper.remove(<embers:aspectus_copper>);
 Stamper.remove(<embers:aspectus_dawnstone>);
-Stamper.add(<embers:aspectus_copper>, <liquid:copper>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_silver>, <liquid:silver>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_lead>, <liquid:lead>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_iron>, <liquid:iron>*432, <embers:stamp_plate>, <embers:crystal_ember>);
-Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*432, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_copper>, <liquid:copper>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_silver>, <liquid:silver>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_lead>, <liquid:lead>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_iron>, <liquid:iron>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
+Stamper.add(<embers:aspectus_dawnstone>, <liquid:dawnstone>*1440, <embers:stamp_plate>, <embers:crystal_ember>);
 
 
 ##alchemy recieps
@@ -900,7 +900,7 @@ recipes.removeByRecipeName("embers:alchemy_pedestal");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<embers:plate_dawnstone>, <embers:tinker_lens>, <embers:plate_dawnstone>],
-    [<ore:ingotDawnstone>, <embers:ember_cluster>, <ore:ingotDawnstone>],
+    [<ore:ingotDawnstone>, <embers:crystal_ember>, <ore:ingotDawnstone>],
     [<ore:blockDawnstone>, <ore:blockCopper>, <ore:blockDawnstone>]])
   .setSecondaryIngredients([<embers:wall_caminite_brick> * 8])
   .addTool(<ore:artisansFramingHammer>, 100)
