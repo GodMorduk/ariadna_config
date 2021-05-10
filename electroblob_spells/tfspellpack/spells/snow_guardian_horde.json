@@ -15,7 +15,7 @@
 	"type": "minion",
 	"cost": 500,
 	"chargeup": 25,
-	"cooldown": 12000,
+	"cooldown": 6000,
 	"base_properties": {
 		"minion_lifetime": 1200,
 		"minion_count": 8,
