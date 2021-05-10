@@ -5,7 +5,7 @@ recipes.removeByRecipeName("cyberware:scanner");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:gearElectrum>, <cyberware:cybereyes>, <ore:gearElectrum>],
-    [<thermalfoundation:glass_alloy:6>, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 2 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <thermalfoundation:glass_alloy:6>],
+    [<thermalfoundation:glass_alloy:6>, <artisanautomation:automator>, <thermalfoundation:glass_alloy:6>],
     [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>]])
   .setSecondaryIngredients([<ore:alloyAdvanced> * 10, <ore:circuitElite> * 4])
   .addTool(<ore:artisansDriver>, 75)
@@ -28,7 +28,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:oc:pistonUpgrade>, <immersiveengineering:material:9>, <ore:oc:pistonUpgrade>],
     [<ore:scaffoldingSteel>, <ore:blockSteel>, <ore:scaffoldingSteel>],
-    [<immersiveengineering:metal_decoration0:5>, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 2 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <immersiveengineering:metal_decoration0:5>]])
+    [<immersiveengineering:metal_decoration0:5>, <artisanautomation:automator>, <immersiveengineering:metal_decoration0:5>]])
   .setSecondaryIngredients([<immersiveengineering:metal_decoration0:4> * 10, <ore:alloyElite> * 10, <ore:circuitElite> * 6, <ore:circuitAdvanced> * 4, <immersiveengineering:metal_decoration0:3> * 4])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansFramingHammer>, 100)
@@ -95,7 +95,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:blockSteel>, <ore:alloyElite>, <ore:blockSteel>],
-    [<ore:circuitElite>, <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 2 as byte, Creative: 0 as byte, Energy: 0, Level: 2 as byte, Augments: [], SideCache: [1, 1, 0, 2, 2, 2] as byte[] as byte[]}), <ore:circuitElite>],
+    [<ore:circuitElite>, <artisanautomation:automator>, <ore:circuitElite>],
     [<ore:blockSteel>, <ore:alloyElite>, <ore:blockSteel>]])
   .setSecondaryIngredients([<cyberware:component> * 32, <cyberware:component:2> * 32, <cyberware:component:3> * 32, <cyberware:component:4> * 32, <cyberware:component:5> * 32, <cyberware:component:8> * 32, <cyberware:component:9> * 32, <cyberware:component:7> * 16, <cyberware:component:6> * 16])
   .addTool(<ore:artisansDriver>, 300)
@@ -113,4 +113,3 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 75)
   .addOutput(<cyberware:charger>)
   .create();
-
