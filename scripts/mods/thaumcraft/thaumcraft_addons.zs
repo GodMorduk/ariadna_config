@@ -34,7 +34,8 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumadditions:adaminite_jar");
 mods.thaumcraft.Infusion.registerRecipe("thaumadditions:adaminite_jar", "TAR_ADAMINITE_JAR", <thaumadditions:jar_adaminite>, 80, [<aspect:aqua>*10000, <aspect:vacuos>*10000, <aspect:alienis>*10000], <thaumadditions:jar_mithrillium>, [<ore:blockAdaminite>, <ore:blockAdaminite>, <ore:blockAdaminite>]);
 mods.thaumcraft.Infusion.removeRecipe("thaumadditions:mithminite_jar");
 mods.thaumcraft.Infusion.registerRecipe("thaumadditions:mithminite_jar", "TAR_MITHMINITE_JAR", <thaumadditions:jar_mithminite>, 100, [<aspect:aqua>*15000, <aspect:vacuos>*15000, <aspect:alienis>*15000], <thaumadditions:jar_adaminite>, [<ore:blockMithminite>, <ore:blockMithminite>, <ore:blockMithminite>]);
-
+mods.thaumcraft.Infusion.removeRecipe("thaumadditions:puriflower");
+mods.thaumcraft.Infusion.registerRecipe("thaumadditions:puriflower", "TAR_PURIFLOWER", <thaumadditions:puriflower>, 50, [<aspect:auram>*100, <aspect:coralos>*100, <aspect:exitium>*100], <thaumcraft:shimmerleaf>, [<thaumcraft:filter>, <thaumcraft:filter>, <thaumcraft:filter>, <thaumicbases:quicksilverblock>, <thaumicbases:quicksilverblock>, <ore:blockDiamond>]);
 
 
 //thaumic bases
@@ -60,4 +61,5 @@ mods.thaumcraft.Crucible.registerRecipe("thaumicaugmentation:impetus_jewel", "IM
 
 //thaumic tinkerer
 recipes.removeByRecipeName("thaumictinkerer:share_book");
-
+mods.thaumcraft.Infusion.removeRecipe("thaumictinkerer:repairer");
+mods.thaumcraft.Infusion.registerRecipe("thaumictinkerer:repairer", "TT_REPAIRER", <thaumictinkerer:repairer>, 75, [<aspect:fabrico>*200, <aspect:instrumentum>*200, <aspect:praecantatio>*200, <aspect:fluctus>*200], <ore:blockThaumium>, [<ore:blockSteel>, <ore:blockDiamond>, <ore:blockGold>, <tconstruct:toolforge>, <thaumcraft:arcane_workbench_charger>]);
