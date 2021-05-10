@@ -327,7 +327,7 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:59>, <stewitems:inhaler_empty>, <alchemistry:compound:55>],
     [null, <stewitems:rubbing_alcohol>, null]])
   .addTool(<ore:artisansBeaker>, 25)
-  .addOutput(<stewitems:stamina_inhaler>)
+  .addOutput(<stewitems:medicine_stamina_inhaler>)
   .create();
   
 RecipeBuilder.get("chemist")
