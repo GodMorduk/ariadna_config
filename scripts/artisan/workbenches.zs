@@ -421,6 +421,18 @@ RecipeBuilder.get("mage")
   .addTool(<artisanworktables:artisans_grimoire_thaumium>, 300)
   .addOutput(<artisanworktables:workstation:7>)
   .create();
+  
+  RecipeBuilder.get("mage")
+  .setShaped([
+    [<extrabotany:material:6>, <astralsorcery:blockstarlightinfuser>, <thaumadditions:adaminite_ingot>],
+    [<botania:astrolabe>.withTag({}), <artisanworktables:workstation:7>, <botania:enderdagger>],
+    [<thaumcraft:smelter_void>, <abyssalcraft:necronomicon_cor>.withTag({PotEnergy: 0.0 as float}), <thaumcraft:curio:6>]])
+  .setFluid(<liquid:liquid_death> * 8000)
+  .setSecondaryIngredients([<ore:blockAstralSilver> * 10, <ore:ingotAstralStarmetal> * 32, <ore:blockVoid> * 10, <thaumcraft:metal_alchemical_advanced> * 3, <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), <botanicadds:terra_catalyst> * 16, <thaumcraft:causality_collapser> * 8, <ore:plateMithrillium> * 32, <thaumicaugmentation:material:5> * 16])
+  .addTool(<ore:artisansGrimoire>, 1500)
+  .addTool(<ore:artisansQuill>, 1500)
+  .addOutput(<artisanworktables:workshop:7>)
+  .create();
 
 ##Дизайнерские верстаки
 recipes.addShaped(<artisanworktables:worktable:12>,[
