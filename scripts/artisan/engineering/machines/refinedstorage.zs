@@ -27,7 +27,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("refinedstorage:controller");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<refinedstorage:quartz_enriched_iron>, <refinedstorage:processor:5>, <refinedstorage:quartz_enriched_iron>],
+    [<refinedstorage:quartz_enriched_iron>, <refinedstorage:processor:4>, <refinedstorage:quartz_enriched_iron>],
     [<ore:itemSilicon>, <refinedstorage:machine_casing>, <ore:itemSilicon>],
     [<refinedstorage:quartz_enriched_iron>, <ore:itemSilicon>, <refinedstorage:quartz_enriched_iron>]])
   .addTool(<ore:artisansDriver>, 100)
