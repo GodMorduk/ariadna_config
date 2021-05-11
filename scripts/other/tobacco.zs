@@ -58,6 +58,7 @@ RecipeBuilder.get("farmer")
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>],
     [<stewitems:tobacco_pile_2>, <minecraft:paper>, <minecraft:paper>],
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>]])
+  .setSecondaryIngredients([<minecraft:paper> * 6])
   .addTool(<ore:artisansRazor>, 5)
   .addOutput(<stewitems:papirosa_pack_1>)
   .create();
@@ -67,6 +68,7 @@ RecipeBuilder.get("farmer")
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>],
     [<stewitems:tobacco_pile_2>, <stewitems:tobacco_pile_2>, <ore:blockWool>],
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>]])
+  .setSecondaryIngredients([<minecraft:paper> * 8])
   .addTool(<ore:artisansRazor>, 5)
   .addOutput(<stewitems:cigarette_pack_1>)
   .create();
@@ -76,6 +78,7 @@ RecipeBuilder.get("farmer")
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>],
     [<stewitems:tobacco_pile_1>, <stewitems:tobacco_pile_1>, <ore:blockWool>],
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>]])
+  .setSecondaryIngredients([<minecraft:paper> * 8])
   .addTool(<ore:artisansRazor>, 5)
   .addOutput(<stewitems:cigarette_pack_2>)
   .create();
@@ -85,6 +88,7 @@ RecipeBuilder.get("farmer")
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>],
     [<stewitems:tobacco_pile_3>, <stewitems:tobacco_pile_3>, <ore:blockWool>],
     [<stewitems:rolling_paper>, <stewitems:rolling_paper>, <stewitems:rolling_paper>]])
+  .setSecondaryIngredients([<minecraft:paper> * 8])
   .addTool(<ore:artisansRazor>, 5)
   .addOutput(<stewitems:cigarette_pack_3>)
   .create();
@@ -94,8 +98,10 @@ RecipeBuilder.get("farmer")
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>],
     [<stewitems:tobacco_pile_2>, <stewitems:tobacco_pile_2>, <stewitems:tobacco_pile_2>],
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>]])
-  .setSecondaryIngredients([<stewitems:tobacco_leaves_6> * 2])
+  .setFluid(<liquid:water> * 250)
+  .setSecondaryIngredients([<stewitems:tobacco_leaves_6> * 2, <minecraft:paper> * 4, <immersiveengineering:treated_wood> * 8])
   .addTool(<ore:artisansRazor>, 20)
+  .addTool(<ore:artisansHandsaw>, 10)
   .addOutput(<stewitems:cigar_box_1>)
   .create();
   
@@ -104,8 +110,10 @@ RecipeBuilder.get("farmer")
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>],
     [<stewitems:tobacco_pile_1>, <stewitems:tobacco_pile_1>, <stewitems:tobacco_pile_1>],
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>]])
-  .setSecondaryIngredients([<stewitems:tobacco_leaves_6> * 2])
+  .setFluid(<liquid:water> * 250)
+  .setSecondaryIngredients([<stewitems:tobacco_leaves_6> * 2, <minecraft:paper> * 4, <immersiveengineering:treated_wood> * 8])
   .addTool(<ore:artisansRazor>, 20)
+  .addTool(<ore:artisansHandsaw>, 10)
   .addOutput(<stewitems:cigar_box_2>)
   .create();
   
@@ -114,8 +122,10 @@ RecipeBuilder.get("farmer")
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>],
     [<stewitems:tobacco_pile_3>, <stewitems:tobacco_pile_3>, <stewitems:tobacco_pile_3>],
     [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>]])
-  .setSecondaryIngredients([<stewitems:tobacco_leaves_7> * 2])
+  .setFluid(<liquid:water> * 250)
+  .setSecondaryIngredients([<stewitems:tobacco_leaves_7> * 2, <minecraft:paper> * 4, <immersiveengineering:treated_wood> * 8])
   .addTool(<ore:artisansRazor>, 20)
+  .addTool(<ore:artisansHandsaw>, 10)
   .addOutput(<stewitems:cigar_box_3>)
   .create();
 	
@@ -126,15 +136,4 @@ RecipeBuilder.get("farmer")
     [<minecraft:paper>, null, <minecraft:paper>]])
   .addTool(<ore:artisansRazor>, 5)
   .addOutput(<stewitems:rolling_paper> * 4)
-  .create();
-  
-
-RecipeBuilder.get("farmer")
-  .setShaped([
-    [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>],
-    [<stewitems:tobacco_pile_2>, <stewitems:tobacco_pile_2>, <stewitems:tobacco_pile_2>],
-    [<stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>, <stewitems:tobacco_leaves_5>]])
-  .setSecondaryIngredients([<stewitems:tobacco_leaves_6> * 2])
-  .addTool(<artisanworktables:artisans_razor_voidmetal>, 1)
-  .addOutput(<stewitems:cigar_box_1>)
   .create();
