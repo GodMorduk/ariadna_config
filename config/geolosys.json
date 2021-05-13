@@ -8587,38 +8587,6 @@
 		},
 		{
 			"blocks": [
-				"vs_world:valkyrium_ore",
-				100
-			],
-			"samples": [
-				"simpleoresamples:sampleblockvalkyrium",
-				25,
-				"minecraft:air",
-				75
-			],
-			"yMin": 20,
-			"yMax": 80,
-			"chance": 30,
-			"size": 50,
-			"dimBlacklist": [
-				1,
-				50,
-				51,
-				52,
-				53,
-				-1,
-				37,
-				66,
-				28885,
-				111,
-				14676,
-				10,
-				17
-			],
-			"density": 0.05
-		},
-		{
-			"blocks": [
 				"atum:relic_ore",
 				100
 			],
