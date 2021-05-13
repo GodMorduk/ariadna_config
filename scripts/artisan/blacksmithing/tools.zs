@@ -3,10 +3,10 @@ import mods.artisanworktables.builder.RecipeBuilder;
 recipes.removeByRecipeName("immersiveengineering:tool/steel_pickaxe");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_shovel");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_axe");
-recipes.removeByRecipeName("thebetweenlands:weedwood_sword");
-recipes.removeByRecipeName("thebetweenlands:weedwood_shovel");
-recipes.removeByRecipeName("thebetweenlands:weedwood_axe");
-recipes.removeByRecipeName("thebetweenlands:weedwood_pickaxe");
+// recipes.removeByRecipeName("thebetweenlands:weedwood_sword");
+// recipes.removeByRecipeName("thebetweenlands:weedwood_shovel");
+// recipes.removeByRecipeName("thebetweenlands:weedwood_axe");
+// recipes.removeByRecipeName("thebetweenlands:weedwood_pickaxe");
 recipes.removeByRecipeName("embers:blockelectrum_axe");
 recipes.removeByRecipeName("embers:blockaluminium_axe");
 recipes.removeByRecipeName("embers:blocknickel_axe");
@@ -20,17 +20,17 @@ recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_axe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_hoe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_pickaxe");
 recipes.removeByRecipeName("bewitchment:equipment/tool/cold_iron_shovel");
-recipes.removeByRecipeName("thebetweenlands:octine_axe");
-recipes.removeByRecipeName("thebetweenlands:octine_pickaxe");
-recipes.removeByRecipeName("thebetweenlands:octine_shovel");
+// recipes.removeByRecipeName("thebetweenlands:octine_axe");
+// recipes.removeByRecipeName("thebetweenlands:octine_pickaxe");
+// recipes.removeByRecipeName("thebetweenlands:octine_shovel");
 recipes.removeByRecipeName("embers:ingotdawnstone_hoe");
 recipes.removeByRecipeName("embers:ingotdawnstone_pickaxe");
 recipes.removeByRecipeName("embers:ingotdawnstone_axe");
 recipes.removeByRecipeName("embers:ingotdawnstone_shovel");
-recipes.removeByRecipeName("thebetweenlands:valonite_pickaxe");
-recipes.removeByRecipeName("thebetweenlands:valonite_greataxe");
-recipes.removeByRecipeName("thebetweenlands:valonite_axe");
-recipes.removeByRecipeName("thebetweenlands:valonite_shovel");
+// recipes.removeByRecipeName("thebetweenlands:valonite_pickaxe");
+// recipes.removeByRecipeName("thebetweenlands:valonite_greataxe");
+// recipes.removeByRecipeName("thebetweenlands:valonite_axe");
+// recipes.removeByRecipeName("thebetweenlands:valonite_shovel");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_axe");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_pickaxe");
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_hoe");
@@ -124,35 +124,35 @@ RecipeBuilder.get("blacksmith") // Лопата из холодного желе
   .addOutput(<bewitchment:cold_iron_shovel>)
   .create();
 
-RecipeBuilder.get("blacksmith") // Октиновый топор
-  .setShaped([
-    [<thebetweenlands:octine_block>, <thebetweenlands:octine_block>],
-    [<thebetweenlands:octine_block>, <thebetweenlands:items_misc:20>],
-    [null, <thebetweenlands:items_misc:20>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansPunch>, 100)
-  .addOutput(<thebetweenlands:octine_axe>)
-  .create();
+// RecipeBuilder.get("blacksmith") // Октиновый топор
+//   .setShaped([
+//     [<thebetweenlands:octine_block>, <thebetweenlands:octine_block>],
+//     [<thebetweenlands:octine_block>, <thebetweenlands:items_misc:20>],
+//     [null, <thebetweenlands:items_misc:20>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addTool(<ore:artisansPunch>, 100)
+//   .addOutput(<thebetweenlands:octine_axe>)
+//   .create();
 
-RecipeBuilder.get("blacksmith") // Октиновая кирка
-  .setShaped([
-    [<ore:blockOctine>, <ore:blockOctine>, <ore:blockOctine>],
-    [null, <thebetweenlands:items_misc:20>, null],
-    [null, <thebetweenlands:items_misc:20>, null]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansPunch>, 100)
-  .addOutput(<thebetweenlands:octine_pickaxe>)
-  .create();
+// RecipeBuilder.get("blacksmith") // Октиновая кирка
+//   .setShaped([
+//     [<ore:blockOctine>, <ore:blockOctine>, <ore:blockOctine>],
+//     [null, <thebetweenlands:items_misc:20>, null],
+//     [null, <thebetweenlands:items_misc:20>, null]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addTool(<ore:artisansPunch>, 100)
+//   .addOutput(<thebetweenlands:octine_pickaxe>)
+//   .create();
 
-RecipeBuilder.get("blacksmith") // Октиновая лопата
-  .setShaped([
-    [<ore:blockOctine>],
-    [<ore:blockOctine>],
-    [<thebetweenlands:items_misc:20>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addTool(<ore:artisansPunch>, 100)
-  .addOutput(<thebetweenlands:octine_pickaxe>)
-  .create();
+// RecipeBuilder.get("blacksmith") // Октиновая лопата
+//   .setShaped([
+//     [<ore:blockOctine>],
+//     [<ore:blockOctine>],
+//     [<thebetweenlands:items_misc:20>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addTool(<ore:artisansPunch>, 100)
+//   .addOutput(<thebetweenlands:octine_pickaxe>)
+//   .create();
 
 RecipeBuilder.get("blacksmith") // Золотитовая мотыга
   .setShaped([
@@ -194,46 +194,46 @@ RecipeBuilder.get("blacksmith") // Золотитовая лопата
   .addOutput(<embers:shovel_dawnstone>)
   .create();
 
-RecipeBuilder.get("jeweler") // Валонитовая лопата
-  .setShaped([
-    [<thebetweenlands:valonite_block>],
-    [<thebetweenlands:valonite_block>],
-    [<thebetweenlands:items_misc:20>]])
-  .addTool(<ore:artisansLens>, 150)
-  .addTool(<ore:artisansGemCutter>, 350)
-  .addOutput(<thebetweenlands:valonite_shovel>)
-  .create();
+// RecipeBuilder.get("jeweler") // Валонитовая лопата
+//   .setShaped([
+//     [<thebetweenlands:valonite_block>],
+//     [<thebetweenlands:valonite_block>],
+//     [<thebetweenlands:items_misc:20>]])
+//   .addTool(<ore:artisansLens>, 150)
+//   .addTool(<ore:artisansGemCutter>, 350)
+//   .addOutput(<thebetweenlands:valonite_shovel>)
+//   .create();
 
-RecipeBuilder.get("jeweler") // Валонитовая  кирка
-  .setShaped([
-    [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
-    [null, <thebetweenlands:items_misc:20>, null],
-    [null, <thebetweenlands:items_misc:20>, null]])
-  .addTool(<ore:artisansLens>, 150)
-  .addTool(<ore:artisansGemCutter>, 350)
-  .addOutput(<thebetweenlands:valonite_pickaxe>)
-  .create();
+// RecipeBuilder.get("jeweler") // Валонитовая  кирка
+//   .setShaped([
+//     [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
+//     [null, <thebetweenlands:items_misc:20>, null],
+//     [null, <thebetweenlands:items_misc:20>, null]])
+//   .addTool(<ore:artisansLens>, 150)
+//   .addTool(<ore:artisansGemCutter>, 350)
+//   .addOutput(<thebetweenlands:valonite_pickaxe>)
+//   .create();
 
-RecipeBuilder.get("jeweler") // Валонитовый топор
-  .setShaped([
-    [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
-    [<thebetweenlands:valonite_block>, <thebetweenlands:items_misc:20>],
-    [null, <thebetweenlands:items_misc:20>]])
-  .addTool(<ore:artisansLens>, 150)
-  .addTool(<ore:artisansGemCutter>, 350)
-  .addOutput(<thebetweenlands:valonite_axe>)
-  .create();
+// RecipeBuilder.get("jeweler") // Валонитовый топор
+//   .setShaped([
+//     [<thebetweenlands:valonite_block>, <thebetweenlands:valonite_block>],
+//     [<thebetweenlands:valonite_block>, <thebetweenlands:items_misc:20>],
+//     [null, <thebetweenlands:items_misc:20>]])
+//   .addTool(<ore:artisansLens>, 150)
+//   .addTool(<ore:artisansGemCutter>, 350)
+//   .addOutput(<thebetweenlands:valonite_axe>)
+//   .create();
 
-RecipeBuilder.get("jeweler") // Валонитовый великий топор
-  .setShaped([
-    [null, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_axe>],
-    [null, <thebetweenlands:items_misc:20>, <thebetweenlands:valonite_block>],
-    [<thebetweenlands:items_misc:20>, null, null]])
-  .addTool(<ore:artisansLens>, 250)
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addTool(<ore:artisansSolderer>, 300)
-  .addOutput(<thebetweenlands:valonite_greataxe>)
-  .create();
+// RecipeBuilder.get("jeweler") // Валонитовый великий топор
+//   .setShaped([
+//     [null, <thebetweenlands:valonite_block>, <thebetweenlands:valonite_axe>],
+//     [null, <thebetweenlands:items_misc:20>, <thebetweenlands:valonite_block>],
+//     [<thebetweenlands:items_misc:20>, null, null]])
+//   .addTool(<ore:artisansLens>, 250)
+//   .addTool(<ore:artisansGemCutter>, 500)
+//   .addTool(<ore:artisansSolderer>, 300)
+//   .addOutput(<thebetweenlands:valonite_greataxe>)
+//   .create();
 
 RecipeBuilder.get("blacksmith") // Железнодревесная лопата
   .setShaped([

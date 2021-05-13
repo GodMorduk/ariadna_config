@@ -684,7 +684,7 @@ Carving.addVariation("brick_stone_window", <stewblocks:wallgap_stonebrick_arch>)
 var ingotBrick = <ore:ingotBrick>;
 ingotBrick.add(<tconstruct:materials:2>);
 ingotBrick.add(<tconstruct:materials:1>);
-ingotBrick.add(<thebetweenlands:items_misc:10>);
+// ingotBrick.add(<thebetweenlands:items_misc:10>);
 ingotBrick.add(<embers:brick_caminite>);
 ingotBrick.add(<biomesoplenty:mud_brick>);
 
@@ -704,7 +704,7 @@ dyeBlack.add(<thermalfoundation:material:768>);
 dyeBlack.add(<thermalfoundation:material:769>);
 
 var firefly = <ore:firefly>;
-firefly.add(<thebetweenlands:critter>.withTag({Entity: {id: "thebetweenlands:firefly"}}));
+// firefly.add(<thebetweenlands:critter>.withTag({Entity: {id: "thebetweenlands:firefly"}}));
 firefly.add(<twilightforest:firefly>);
 
 var flintAndSteel = <ore:flintAndSteel>;
@@ -729,7 +729,7 @@ for item in itemUtils.getItemsByRegexRegistryName(".*candle.*") {
 var foodFrograw = <ore:foodFrograw>;
 foodFrograw.add(<animania:raw_frog_legs>);
 foodFrograw.add(<quark:frog_leg>);
-foodFrograw.add(<thebetweenlands:frog_legs_raw>);
+// foodFrograw.add(<thebetweenlands:frog_legs_raw>);
 
 var shardGlass = <ore:shardGlass>;
 shardGlass.add(<pyrotech:material:32>);
