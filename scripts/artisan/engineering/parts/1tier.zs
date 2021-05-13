@@ -149,7 +149,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateLead>, <techguns:itemshared:61>, <ore:plateLead>],
     [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]])
   .addTool(<ore:artisansNeedle>, 25)
-  .addOutput(<techguns:itemshared:60>)
+  .addOutput(<techguns:itemshared:60> * 2)
   .create();
 
 RecipeBuilder.get("tailor")
@@ -158,7 +158,7 @@ RecipeBuilder.get("tailor")
     [<ore:plateLead>, <techguns:itemshared:61>, <ore:plateLead>],
     [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]])
   .addTool(<ore:artisansNeedle>, 5)
-  .addOutput(<techguns:itemshared:60>)
+  .addOutput(<techguns:itemshared:60> * 4)
   .create();
 
 recipes.removeByRecipeName("enderio:simple_chassis_parts");

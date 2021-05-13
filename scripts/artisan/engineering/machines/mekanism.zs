@@ -238,15 +238,6 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("mekanism:jetpack");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>],
-    [<ore:plateTin>, <mekanism:gastank>.withTag({tier: 0}), <ore:plateTin>],
-    [<ore:alloyAdvanced>, <ore:plateTin>, <ore:alloyAdvanced>]])
-  .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansSpanner>, 50)
-  .addOutput(<mekanism:jetpack>)
-  .create();
 
 recipes.removeByRecipeName("mekanism:scubatank");
 RecipeBuilder.get("engineer")
@@ -1106,17 +1097,6 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("mekanism:armoredjetpack");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:itemEnrichedAlloy>, null, null, null, <ore:itemEnrichedAlloy>],
-    [<ore:blockSteel>, <ore:alloyElite>, <ore:blockRefinedObsidian>, <ore:alloyElite>, <ore:blockSteel>],
-    [<ore:itemEnrichedAlloy>, <ore:plateBronze>, <mekanism:jetpack>, <ore:plateBronze>, <ore:itemEnrichedAlloy>],
-    [null, null, <ore:blockRefinedObsidian>, null, null]])
-  .addTool(<ore:artisansDriver>, 100)
-  .addTool(<ore:artisansSpanner>, 100)
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addOutput(<mekanism:armoredjetpack>)
-  .create();
 
 recipes.removeByRecipeName("mekanism:basicblock2_3_alt");
 RecipeBuilder.get("engineer")
