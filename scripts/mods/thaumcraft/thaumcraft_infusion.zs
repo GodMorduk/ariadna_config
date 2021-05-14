@@ -13,6 +13,11 @@ mods.thaumcraft.Infusion.removeRecipe("thaumcraft:mirroressentia");
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:mirroressentia", "MIRRORESSENTIA", <thaumcraft:mirror_essentia>, 15, [<aspect:motus>*75, <aspect:aqua>*75, <aspect:permutatio>*75], <thaumcraft:mirrored_glass>, [<minecraft:stick>, <minecraft:dirt>]);
 mods.thaumcraft.Infusion.removeRecipe("thaumcraft:mirrorhand");
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:mirrorhand", "MIRRORHAND", <thaumcraft:hand_mirror>, 20, [<aspect:motus>*100, <aspect:instrumentum>*100], <thaumcraft:mirror>, [<minecraft:compass>, <minecraft:map>, <minecraft:clock>]);
+mods.thaumcraft.Infusion.removeRecipe("thaumcraft:sealbreak");
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:sealbreak", "SEALBREAK", <thaumcraft:seal:12>, 60, [<aspect:imperium>*50, <aspect:praecantatio>*75], <thaumcraft:seal>, [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <thaumcraft:metal_alchemical>, <thaumcraft:metal_alchemical>, <ore:blockBrass>, <ore:blockBrass>]);
+mods.thaumcraft.Infusion.removeRecipe("thaumcraft:sealharvest");
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:sealharvest", "SEALHARVEST", <thaumcraft:seal:7>, 40, [<aspect:herba>*50, <aspect:sensus>*50], <thaumcraft:seal>, [<thaumcraft:thaumium_hoe>, <thaumcraft:thaumium_hoe>, <thaumcraft:thaumium_hoe>]);
+
 
 //пашол нахуй амулет бессметрия
 mods.thaumcraft.Infusion.removeRecipe("thaumcraft:charmundying");

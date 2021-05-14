@@ -66,18 +66,18 @@ recipes.removeByRecipeName("techguns:advanced_shield");
 recipes.removeByRecipeName("techguns:ballistic_shield");
 recipes.removeByRecipeName("techguns:itemshared_129_shieldedtitaniumbarrel");
 recipes.removeByRecipeName("techguns:riot_shield");
-recipes.removeByRecipeName("thebetweenlands:bone_shield");
-recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_green");
-recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_green_polished");
-recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_orange");
-recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_orange_polished");
-recipes.removeByRecipeName("thebetweenlands:lurker_skin_shield");
-recipes.removeByRecipeName("thebetweenlands:octine_shield");
-recipes.removeByRecipeName("thebetweenlands:syrmorite_shield");
-recipes.removeByRecipeName("thebetweenlands:valonite_shield");
-recipes.removeByRecipeName("thebetweenlands:weedwood_shield");
+// recipes.removeByRecipeName("thebetweenlands:bone_shield");
+// recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_green");
+// recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_green_polished");
+// recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_orange");
+// recipes.removeByRecipeName("thebetweenlands:dentrothyst_shield_orange_polished");
+// recipes.removeByRecipeName("thebetweenlands:lurker_skin_shield");
+// recipes.removeByRecipeName("thebetweenlands:octine_shield");
+// recipes.removeByRecipeName("thebetweenlands:syrmorite_shield");
+// recipes.removeByRecipeName("thebetweenlands:valonite_shield");
+// recipes.removeByRecipeName("thebetweenlands:weedwood_shield");
 recipes.removeByRecipeName("twilightforest:equipment/knightmetal_shield");
-recipes.removeByRecipeName("thebetweenlands:living_weedwood_shield");
+// recipes.removeByRecipeName("thebetweenlands:living_weedwood_shield");
 
 RecipeBuilder.get("carpenter")
   .setShaped([

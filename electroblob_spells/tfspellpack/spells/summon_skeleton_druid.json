@@ -13,7 +13,7 @@
 	"tier": "apprentice",
 	"element": "necromancy",
 	"type": "minion",
-	"cost": 100,
+	"cost": 150,
 	"chargeup": 0,
 	"cooldown": 2400,
 	"base_properties": {

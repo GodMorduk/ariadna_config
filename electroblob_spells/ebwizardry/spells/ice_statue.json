@@ -13,9 +13,9 @@
   "tier": "apprentice",
   "element": "ice",
   "type": "attack",
-  "cost": 15,
+  "cost": 50,
   "chargeup": 0,
-  "cooldown": 40,
+  "cooldown": 600,
   "base_properties": {
     "range": 10,
     "effect_duration": 400

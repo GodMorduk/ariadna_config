@@ -126,21 +126,21 @@ Sawmill.addRecipe(<thaumadditions:taintwood_planks> * 4, <thaumcraft:taint_log>,
 Sawmill.addRecipe(<thaumicbases:goldenplanks> * 4, <thaumicbases:goldenlogs>, 1000, <thermalfoundation:material:800>, 100);
 Sawmill.addRecipe(<thaumicbases:enderplanks> * 4, <thaumicbases:enderlogs>, 1000, <thermalfoundation:material:800>, 100);
 Sawmill.addRecipe(<thaumicbases:netherplanks> * 4, <thaumicbases:netherlogs>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:weedwood_planks> * 4, <thebetweenlands:log_weedwood:0>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:weedwood_planks> * 4, <thebetweenlands:log_weedwood:12>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:rubber_tree_planks> * 4, <thebetweenlands:log_rubber>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:giant_root_planks> * 4, <thebetweenlands:giant_root>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:1>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:5>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:3>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:7>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:nibbletwig_planks> * 4, <thebetweenlands:log_nibbletwig:0>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:nibbletwig_planks> * 4, <thebetweenlands:log_nibbletwig:12>, 1000, <thermalfoundation:material:800>, 100);
-Sawmill.addRecipe(<thebetweenlands:weedwood_plank_slab> * 2, <thebetweenlands:weedwood_planks>, 1000);
-Sawmill.addRecipe(<thebetweenlands:rubber_tree_plank_slab> * 2, <thebetweenlands:rubber_tree_planks>, 1000);
-Sawmill.addRecipe(<thebetweenlands:giant_root_plank_slab> * 2, <thebetweenlands:giant_root_planks>, 1000);
-Sawmill.addRecipe(<thebetweenlands:hearthgrove_plank_slab> * 2, <thebetweenlands:hearthgrove_planks>, 1000);
-Sawmill.addRecipe(<thebetweenlands:nibbletwig_plank_slab> * 2, <thebetweenlands:nibbletwig_planks>, 1000);
+// Sawmill.addRecipe(<thebetweenlands:weedwood_planks> * 4, <thebetweenlands:log_weedwood:0>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:weedwood_planks> * 4, <thebetweenlands:log_weedwood:12>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:rubber_tree_planks> * 4, <thebetweenlands:log_rubber>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:giant_root_planks> * 4, <thebetweenlands:giant_root>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:1>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:5>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:3>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:hearthgrove_planks> * 4, <thebetweenlands:log_hearthgrove:7>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:nibbletwig_planks> * 4, <thebetweenlands:log_nibbletwig:0>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:nibbletwig_planks> * 4, <thebetweenlands:log_nibbletwig:12>, 1000, <thermalfoundation:material:800>, 100);
+// Sawmill.addRecipe(<thebetweenlands:weedwood_plank_slab> * 2, <thebetweenlands:weedwood_planks>, 1000);
+// Sawmill.addRecipe(<thebetweenlands:rubber_tree_plank_slab> * 2, <thebetweenlands:rubber_tree_planks>, 1000);
+// Sawmill.addRecipe(<thebetweenlands:giant_root_plank_slab> * 2, <thebetweenlands:giant_root_planks>, 1000);
+// Sawmill.addRecipe(<thebetweenlands:hearthgrove_plank_slab> * 2, <thebetweenlands:hearthgrove_planks>, 1000);
+// Sawmill.addRecipe(<thebetweenlands:nibbletwig_plank_slab> * 2, <thebetweenlands:nibbletwig_planks>, 1000);
 
 //Удаление ненужных механизмов
 recipes.removeByRecipeName("thermalexpansion:dynamo_5");
