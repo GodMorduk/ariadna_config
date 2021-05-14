@@ -49,12 +49,27 @@ RecipeBuilder.get("mage")
 
 // Blood Summoning Staff
 recipes.removeByRecipeName("lycanitesmobs:bloodsummoningstaff");
+// RecipeBuilder.get("mage")
+//   .setShaped([
+//     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>],
+//     [<quark:biotite>, <tconstruct:edible:33>, <erebus:materials:39>, <tconstruct:edible:33>, <quark:biotite>],
+//     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
+//     [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
+//     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
+//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
+//   .addTool(<ore:artisansGrimoire>, 500)
+//   .addTool(<ore:artisansAthame>, 500)
+//   .addTool(<ore:artisansQuill>, 500)
+//   .addOutput(<lycanitesmobs:bloodsummoningstaff>)
+//   .create();
+
 RecipeBuilder.get("mage")
   .setShaped([
     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>],
     [<quark:biotite>, <tconstruct:edible:33>, <erebus:materials:39>, <tconstruct:edible:33>, <quark:biotite>],
     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
-    [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
+    [<quark:biotite>, <tconstruct:edible:33>, <erebus:life_blood>, <tconstruct:edible:33>, <quark:biotite>],
     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
   .setFluid(<liquid:xpjuice> * 16000)
   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
@@ -373,6 +388,21 @@ RecipeBuilder.get("mage")
 
 // Bloodlech Scepter
 recipes.removeByRecipeName("lycanitesmobs:bloodleechscepter");
+// RecipeBuilder.get("mage")
+//   .setShaped([
+//     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:wargskull>, <lycanitesmobs:bloodleechcharge>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+//     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
+//   .addTool(<ore:artisansGrimoire>, 300)
+//   .addTool(<ore:artisansAthame>, 300)
+//   .addTool(<ore:artisansQuill>, 300)
+//   .addOutput(<lycanitesmobs:bloodleechscepter>)
+//   .create();
+
 RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
@@ -381,7 +411,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
   .setFluid(<liquid:xpjuice> * 16000)
-  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <erebus:life_blood> * 16])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
   .addTool(<ore:artisansQuill>, 300)

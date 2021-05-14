@@ -1081,15 +1081,6 @@
   },
   {
     "item": {
-      "name": "thebetweenlands:nettle_soup",
-      "metadata": 0
-    },
-    "thirst": 2,
-    "hydration": 0.2,
-    "poisonChance": 0.2
-  },
-  {
-    "item": {
       "name": "rewired:energydrink",
       "metadata": 0
     },

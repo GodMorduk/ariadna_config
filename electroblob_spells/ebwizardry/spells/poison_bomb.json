@@ -13,7 +13,7 @@
   "tier": "apprentice",
   "element": "earth",
   "type": "projectile",
-  "cost": 15,
+  "cost": 20,
   "chargeup": 0,
   "cooldown": 25,
   "base_properties": {
