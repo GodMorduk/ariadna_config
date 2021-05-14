@@ -13,7 +13,7 @@
   "tier": "apprentice",
   "element": "fire",
   "type": "projectile",
-  "cost": 15,
+  "cost": 50,
   "chargeup": 0,
   "cooldown": 25,
   "base_properties": {
