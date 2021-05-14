@@ -13,7 +13,7 @@
   "tier": "apprentice",
   "element": "lightning",
   "type": "projectile",
-  "cost": 15,
+  "cost": 70,
   "chargeup": 0,
   "cooldown": 25,
   "base_properties": {

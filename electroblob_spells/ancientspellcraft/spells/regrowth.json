@@ -15,9 +15,9 @@
     "type": "buff",
     "cost": 100,
     "chargeup": 50,
-    "cooldown": 3600,
+    "cooldown": 6000,
     "base_properties": {
-        "regeneration_duration": 200,
+        "regeneration_duration": 400,
         "regeneration_strength": 0,
         "range": 10
     }
