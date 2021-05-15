@@ -247,7 +247,29 @@ val weapons = [
 	"spartanweaponryarcana:spear_elementium", "spartanweaponryarcana:spear_manasteel", "spartanweaponryarcana:spear_terrasteel",
 	"spartanweaponryarcana:throwing_axe_elementium", "spartanweaponryarcana:throwing_axe_manasteel", "spartanweaponryarcana:throwing_axe_terrasteel",
 	"spartanweaponryarcana:throwing_knife_elementium", "spartanweaponryarcana:throwing_knife_manasteel", "spartanweaponryarcana:throwing_knife_terrasteel",
-	"spartanweaponryarcana:warhammer_elementium", "spartanweaponryarcana:warhammer_manasteel", "spartanweaponryarcana:warhammer_terrasteel"
+	"spartanweaponryarcana:warhammer_elementium", "spartanweaponryarcana:warhammer_manasteel", "spartanweaponryarcana:warhammer_terrasteel",
+	"spartanweaponryarcana:battleaxe_dawnstone",
+	"spartanweaponryarcana:boomerang_dawnstone",
+	"spartanweaponryarcana:crossbow_dawnstone",
+	"spartanweaponryarcana:dagger_dawnstone",
+	"spartanweaponryarcana:glaive_dawnstone",
+	"spartanweaponryarcana:greatsword_dawnstone",
+	"spartanweaponryarcana:halberd_dawnstone",
+	"spartanweaponryarcana:hammer_dawnstone",
+	"spartanweaponryarcana:javelin_dawnstone",
+	"spartanweaponryarcana:katana_dawnstone",
+	"spartanweaponryarcana:lance_dawnstone",
+	"spartanweaponryarcana:longbow_dawnstone",
+	"spartanweaponryarcana:longsword_dawnstone",
+	"spartanweaponryarcana:mace_dawnstone",
+	"spartanweaponryarcana:pike_dawnstone",
+	"spartanweaponryarcana:staff_dawnstone",
+	"spartanweaponryarcana:rapier_dawnstone",
+	"spartanweaponryarcana:saber_dawnstone",
+	"spartanweaponryarcana:spear_dawnstone",
+	"spartanweaponryarcana:throwing_axe_dawnstone", 
+	"spartanweaponryarcana:throwing_knife_dawnstone",
+	"spartanweaponryarcana:warhammer_dawnstone"
 ] as string[];
 
 for weapon in weapons {
