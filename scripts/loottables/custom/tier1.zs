@@ -23,8 +23,6 @@ function add_1_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<betterrecords:record>, 25);
 	pool.addItemEntry(<minecraft:coal>, 75);
 	pool.addItemEntry(<minecraft:iron_ore>, 50);
-	pool.addItemEntry(<firstaid:morphine>, 40);
-	pool.addItemEntry(<firstaid:bandage>, 40);
 	pool.addItemEntry(<minecraft:gunpowder>, 75);
 	pool.addItemEntry(<minecraft:redstone>, 50);
 	pool.addItemEntry(<minecraft:bone>, 75);
