@@ -162,9 +162,6 @@ function add_2_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<botania:manabottle>, 30);
 	pool.addItemEntry(<minecraft:quartz>, 30);
 	pool.addItemEntry(<minecraft:nether_wart>, 20);
-	pool.addItemEntry(<firstaid:bandage>, 35);
-	pool.addItemEntry(<firstaid:plaster>, 35);
-	pool.addItemEntry(<firstaid:morphine>, 35);
 	pool.addItemEntry(<stewitems:food_canned_berries>, 35);
 	pool.addItemEntry(<stewitems:food_canned_bugs>, 35);
 	pool.addItemEntry(<stewitems:food_canned_cuicari>, 35);
