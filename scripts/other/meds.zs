@@ -41,7 +41,7 @@ RecipeBuilder.get("chemist")
     [null, <ore:listAllgrain>, null],
     [<minecraft:potato> | <harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <minecraft:potato> | <harvestcraft:sweetpotatoitem>],
     [null, <ore:listAllgrain>, null]])
-  .addTool(<artisanworktables:artisans_beaker_iron>, 15)
+  .addTool(<ore:artisansBeaker>, 15)
   .addOutput(<stewitems:rubbing_alcohol>)
   .create();
 
@@ -50,7 +50,7 @@ RecipeBuilder.get("chemist")
     [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
     [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
     [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]])
-  .addTool(<artisanworktables:artisans_beaker_iron>, 15)
+  .addTool(<ore:artisansBeaker>, 15)
   .addOutput(<stewitems:laudanum>)
   .create();
 
@@ -91,7 +91,7 @@ RecipeBuilder.get("chemist")
 <ore:healPlant>.add(<rustic:chamomile>);
 <ore:healPlant>.add(<rustic:marsh_mallow>);
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(15), <ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<ore:artisansMortar>.anyDamage().reuse().transformDamage(15), <ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>])
@@ -99,7 +99,7 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
   .create();
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<ore:artisansMortar>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([ <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
@@ -107,7 +107,7 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 3)
   .create();
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
+recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<ore:artisansMortar>.anyDamage().reuse().transformDamage(5), <ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
