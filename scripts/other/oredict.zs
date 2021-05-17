@@ -30,15 +30,6 @@ oreSorceryCrystal.add(<ancientspellcraft:crystal_ore_sorcery>);
 var oreDevoritium = <ore:oreDevoritium>;
 oreDevoritium.add(<ancientspellcraft:devoritium_ore>);
 
-var itemSalt = <ore:itemSalt>;
-itemSalt.add(<alchemistry:mineral_salt>);
-
-var dustSalt = <ore:dustSalt>;
-dustSalt.add(<alchemistry:mineral_salt>);
-
-var foodSalt = <ore:foodSalt>;
-foodSalt.add(<alchemistry:mineral_salt>);
-
 var orePhosphorite = <ore:orePhosphorite>;
 orePhosphorite.add(<metallurgy:phosphorite_ore>);
 
