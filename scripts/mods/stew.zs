@@ -673,6 +673,8 @@ Carving.addVariation("brick_stone_window", <stewblocks:wallgap_stonebrick_rhombu
 Carving.addVariation("brick_stone_window", <stewblocks:stonearch_window>);
 Carving.addVariation("brick_stone_window", <stewblocks:wallgap_stonebrick_arch>);
 
+Carving.addVariation("stonebrick", <rustic:stone_pillar>);
+
 //Carving.addVariation("factory", <stewblocks:scrap_hardware_core>);
 //Carving.addVariation("factory", <stewblocks:scrap_hardware_battery>);
 //Carving.addVariation("factory", <stewblocks:scrap_hardware_clono>);
