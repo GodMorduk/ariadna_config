@@ -183,11 +183,11 @@ RecipeBuilder.get("blacksmith")
   
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <vs_control:compacted_valkyrium>, null, null, null],
-    [<metallurgy:atlarus_block>, <metallurgy:atlarus_block>, <vs_control:compacted_valkyrium>, null, null],
+    [<metallurgy:atlarus_block>, <metallurgy:atlarus_block>, <enderio:block_alloy:2>, null, null],
+    [<enderio:block_alloy:2>, <ore:blockOureclase>, <metallurgy:atlarus_block>, null, null],
+    [<metallurgy:atlarus_block>, <metallurgy:atlarus_block>, <ore:blockOureclase>, null, null],
     [<metallurgy:atlarus_block>, <metallurgy:atlarus_block>, <tconstruct:tough_tool_rod>.withTag({Material: "refinedobsidian"}), null, null],
-    [null, null, null, <tconstruct:tough_tool_rod>.withTag({Material: "refinedobsidian"}), null],
-    [null, null, null, null, <metallurgy:atlarus_block>]])
+    [null, null, null, <tconstruct:tough_tool_rod>.withTag({Material: "refinedobsidian"}), null]])
   .addTool(<ore:artisansHammer>, 250)
   .addTool(<ore:artisansFile>, 250)
   .addTool(<ore:artisansSpanner>, 250)

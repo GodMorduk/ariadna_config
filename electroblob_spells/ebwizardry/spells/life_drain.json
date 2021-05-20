@@ -13,12 +13,12 @@
   "tier": "apprentice",
   "element": "necromancy",
   "type": "attack",
-  "cost": 10,
+  "cost": 150,
   "chargeup": 0,
   "cooldown": 0,
   "base_properties": {
     "range": 10,
     "damage": 2,
-    "heal_factor": 0.35
+    "heal_factor": 1
   }
 }

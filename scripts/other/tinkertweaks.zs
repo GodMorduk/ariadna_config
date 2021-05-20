@@ -1,10 +1,13 @@
 //фиксы свойств материалов
 
 val osgloglas = <ticmat:osgloglas>;
-osgloglas.attackHead = 7.5;
+osgloglas.attackHead = 8;
 
 val refinedobsidian = <ticmat:refinedobsidian>;
-osgloglas.attackHead = 7.5;
+refinedobsidian.attackHead = 7;
+
+val refinedglowstone = <ticmat:refinedglowstone>;
+refinedglowstone.attackHead = 7.5;
 
 val infuscolium = <ticmat:infuscolium>;
 infuscolium.miningSpeedHead = 14.5;

@@ -13,9 +13,9 @@
 	"tier": "advanced",
 	"element": "necromancy",
 	"type": "minion",
-	"cost": 65,
+	"cost": 300,
 	"chargeup": 15,
-	"cooldown": 300,
+	"cooldown": 3000,
 	"base_properties": {
 		"minion_lifetime": 600,
 		"minion_count": 1,

@@ -13,9 +13,9 @@
   "tier": "advanced",
   "element": "healing",
   "type": "construct",
-  "cost": 40,
+  "cost": 200,
   "chargeup": 15,
-  "cooldown": 175,
+  "cooldown": 36000,
   "base_properties": {
     "range": 8,
     "duration": 600,

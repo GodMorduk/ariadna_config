@@ -13,13 +13,13 @@
     "tier": "novice",
     "element": "healing",
     "type": "projectile",
-    "cost": 10,
+    "cost": 100,
     "chargeup": 0,
-    "cooldown": 40,
+    "cooldown": 1200,
     "base_properties": {
         "range": 18,
         "damage": 2,
         "seeking_strength": 10,
-        "health": 2
+        "health": 6
     }
 }

@@ -578,7 +578,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<abyssalcraft:engraver>)
   .create();
   
-  recipes.removeByRecipeName("abyssalcraft:engraver");//Удаление материализатора
+  recipes.removeByRecipeName("abyssalcraft:materializer");//Удаление материализатора
 RecipeBuilder.get("mage")
   .setShaped([
     [<abyssalcraft:ethaxiumingot>, <abyssalcraft:ethaxiumingot>, <abyssalcraft:ethaxiumingot>],

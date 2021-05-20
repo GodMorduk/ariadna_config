@@ -13,9 +13,9 @@
     "tier": "master",
     "element": "necromancy",
     "type": "minion",
-    "cost": 150,
+    "cost": 500,
     "chargeup": 0,
-    "cooldown": 300,
+    "cooldown": 6000,
     "base_properties": {
         "minion_lifetime": 600,
         "minion_count": 1,

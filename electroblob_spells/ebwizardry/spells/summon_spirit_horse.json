@@ -13,9 +13,9 @@
   "tier": "advanced",
   "element": "earth",
   "type": "minion",
-  "cost": 50,
+  "cost": 500,
   "chargeup": 10,
-  "cooldown": 150,
+  "cooldown": 36000,
   "base_properties": {
     "summon_radius": 2
   }

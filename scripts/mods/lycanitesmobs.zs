@@ -49,12 +49,27 @@ RecipeBuilder.get("mage")
 
 // Blood Summoning Staff
 recipes.removeByRecipeName("lycanitesmobs:bloodsummoningstaff");
+// RecipeBuilder.get("mage")
+//   .setShaped([
+//     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>],
+//     [<quark:biotite>, <tconstruct:edible:33>, <erebus:materials:39>, <tconstruct:edible:33>, <quark:biotite>],
+//     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
+//     [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
+//     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
+//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
+//   .addTool(<ore:artisansGrimoire>, 500)
+//   .addTool(<ore:artisansAthame>, 500)
+//   .addTool(<ore:artisansQuill>, 500)
+//   .addOutput(<lycanitesmobs:bloodsummoningstaff>)
+//   .create();
+
 RecipeBuilder.get("mage")
   .setShaped([
     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>],
     [<quark:biotite>, <tconstruct:edible:33>, <erebus:materials:39>, <tconstruct:edible:33>, <quark:biotite>],
     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
-    [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
+    [<quark:biotite>, <tconstruct:edible:33>, <erebus:life_blood>, <tconstruct:edible:33>, <quark:biotite>],
     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
   .setFluid(<liquid:xpjuice> * 16000)
   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
@@ -373,6 +388,21 @@ RecipeBuilder.get("mage")
 
 // Bloodlech Scepter
 recipes.removeByRecipeName("lycanitesmobs:bloodleechscepter");
+// RecipeBuilder.get("mage")
+//   .setShaped([
+//     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:wargskull>, <lycanitesmobs:bloodleechcharge>],
+//     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
+//     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
+//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
+//   .addTool(<ore:artisansGrimoire>, 300)
+//   .addTool(<ore:artisansAthame>, 300)
+//   .addTool(<ore:artisansQuill>, 300)
+//   .addOutput(<lycanitesmobs:bloodleechscepter>)
+//   .create();
+
 RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>],
@@ -381,7 +411,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
   .setFluid(<liquid:xpjuice> * 16000)
-  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <erebus:life_blood> * 16])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
   .addTool(<ore:artisansQuill>, 300)
@@ -687,158 +717,158 @@ RecipeBuilder.get("chef")
 
 // Wooden Paxel
 recipes.removeByRecipeName("lycanitesmobs:woodenpaxel");
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}})],
-    [<tconstruct:hatchet>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:binding>.withTag({Material: "firewood"})]])
-  .addTool(<ore:artisansHandsaw>, 100)
-  .addOutput(<lycanitesmobs:woodenpaxel>)
-  .create();
+// RecipeBuilder.get("carpenter")
+//   .setShaped([
+//     [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}})],
+//     [<tconstruct:hatchet>.withTag({TinkerData: {Materials: ["firewood", "firewood", "firewood"]}}), <tconstruct:binding>.withTag({Material: "firewood"})]])
+//   .addTool(<ore:artisansHandsaw>, 100)
+//   .addOutput(<lycanitesmobs:woodenpaxel>)
+//   .create();
 
 // Wooden Rod
 recipes.removeByRecipeName("lycanitesmobs:woodenrod");
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<harvestcraft:hardenedleatheritem>, <tconstruct:binding>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
-    [<harvestcraft:hardenedleatheritem>, <tconstruct:tough_tool_rod>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
-    [<harvestcraft:hardenedleatheritem>, <spartanweaponry:material>, <harvestcraft:hardenedleatheritem>]])
-  .addTool(<ore:artisansFile>, 50)
-  .addOutput(<lycanitesmobs:woodenrod>)
-  .create();
+// RecipeBuilder.get("carpenter")
+//   .setShaped([
+//     [<harvestcraft:hardenedleatheritem>, <tconstruct:binding>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
+//     [<harvestcraft:hardenedleatheritem>, <tconstruct:tough_tool_rod>.withTag({Material: "firewood"}), <harvestcraft:hardenedleatheritem>],
+//     [<harvestcraft:hardenedleatheritem>, <spartanweaponry:material>, <harvestcraft:hardenedleatheritem>]])
+//   .addTool(<ore:artisansFile>, 50)
+//   .addOutput(<lycanitesmobs:woodenrod>)
+//   .create();
 
 // Wooden Guard
 recipes.removeByRecipeName("lycanitesmobs:woodenhilt");
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null],
-    [<tconstruct:binding>.withTag({Material: "firewood"}), <tconstruct:wide_guard>.withTag({Material: "firewood"}), <tconstruct:binding>.withTag({Material: "firewood"})],
-    [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null]])
-  .addTool(<ore:artisansHatchet>, 50)
-  .addOutput(<lycanitesmobs:woodenhilt>)
-  .create();
+// RecipeBuilder.get("carpenter")
+//   .setShaped([
+//     [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null],
+//     [<tconstruct:binding>.withTag({Material: "firewood"}), <tconstruct:wide_guard>.withTag({Material: "firewood"}), <tconstruct:binding>.withTag({Material: "firewood"})],
+//     [null, <tconstruct:tough_binding>.withTag({Material: "firewood"}), null]])
+//   .addTool(<ore:artisansHatchet>, 50)
+//   .addOutput(<lycanitesmobs:woodenhilt>)
+//   .create();
 
 // Iron Axe Head
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironaxehead");
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null],
-    [<tconstruct:tough_binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:tough_binding>.withTag({Material: "iron"})],
-    [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null]])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 50)
-  .addOutput(<lycanitesmobs:ironaxehead>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null],
+//     [<tconstruct:tough_binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:tough_binding>.withTag({Material: "iron"})],
+//     [null, <tconstruct:large_plate>.withTag({Material: "iron"}), null]])
+//   .setFluid(<liquid:lava> * 1000)
+//   .addTool(<ore:artisansHammer>, 50)
+//   .addOutput(<lycanitesmobs:ironaxehead>)
+//   .create();
 
 // Iron Guard
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironhilt");
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
-    [<tconstruct:wide_guard>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:wide_guard>.withTag({Material: "iron"})]])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 50)
-  .addOutput(<lycanitesmobs:ironhilt>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+//     [<tconstruct:wide_guard>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:wide_guard>.withTag({Material: "iron"})]])
+//   .setFluid(<liquid:lava> * 1000)
+//   .addTool(<ore:artisansHammer>, 50)
+//   .addOutput(<lycanitesmobs:ironhilt>)
+//   .create();
 
 // Iron Rod
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironrod");
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
-    [<tconstruct:large_plate>.withTag({Material: "iron"}), <lycanitesmobs:woodenrod>, <tconstruct:large_plate>.withTag({Material: "iron"})],
-    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 50)
-  .addOutput(<lycanitesmobs:ironrod>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+//     [<tconstruct:large_plate>.withTag({Material: "iron"}), <lycanitesmobs:woodenrod>, <tconstruct:large_plate>.withTag({Material: "iron"})],
+//     [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
+//   .setFluid(<liquid:lava> * 1000)
+//   .addTool(<ore:artisansHammer>, 50)
+//   .addOutput(<lycanitesmobs:ironrod>)
+//   .create();
 
 // Iron Pike Joint
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironpikejoint");
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
-    [<tconstruct:binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:binding>.withTag({Material: "iron"})],
-    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 50)
-  .addOutput(<lycanitesmobs:ironpikejoint>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
+//     [<tconstruct:binding>.withTag({Material: "iron"}), <lycanitesmobs:woodenhilt>, <tconstruct:binding>.withTag({Material: "iron"})],
+//     [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"}), null]])
+//   .setFluid(<liquid:lava> * 1000)
+//   .addTool(<ore:artisansHammer>, 50)
+//   .addOutput(<lycanitesmobs:ironpikejoint>)
+//   .create();
 
 // Iron Paxel
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_ironpaxel");
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:hatchet>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}})],
-    [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:tough_binding>.withTag({Material: "iron"})],
-    [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"})]])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<lycanitesmobs:ironpaxel>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [<tconstruct:pickaxe>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:hatchet>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}})],
+//     [<tconstruct:shovel>.withTag({TinkerData: {Materials: ["iron", "iron", "iron"]}}), <tconstruct:tough_binding>.withTag({Material: "iron"})],
+//     [null, <tconstruct:tough_tool_rod>.withTag({Material: "iron"})]])
+//   .setFluid(<liquid:lava> * 1000)
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<lycanitesmobs:ironpaxel>)
+//   .create();
 
 // Gold Scepter Head
 recipes.removeByRecipeName("lycanitesmobs:equipmentpart_goldscepterhead");
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [null, <ore:blockGold>, null],
-    [<ore:blockGold>, <lycanitesmobs:ironhilt>, <ore:blockGold>],
-    [null, <ore:blockGold>, null]])
-  .addTool(<ore:artisansGemCutter>, 50)
-  .addOutput(<lycanitesmobs:goldscepterhead>)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [null, <ore:blockGold>, null],
+//     [<ore:blockGold>, <lycanitesmobs:ironhilt>, <ore:blockGold>],
+//     [null, <ore:blockGold>, null]])
+//   .addTool(<ore:artisansGemCutter>, 50)
+//   .addOutput(<lycanitesmobs:goldscepterhead>)
+//   .create();
 
 // Equipment Workshops
 
 // Lesser Equipment Forge (lvl 1)
 recipes.removeByRecipeName("lycanitesmobs:equipmentforge_lesser");
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<artisanworktables:artisans_athame_iron>, <artisanworktables:artisans_knife_iron>, <artisanworktables:artisans_hatchet_iron>],
-    [<artisanworktables:worktable:3>, <artisanworktables:worktable:5>, <artisanworktables:worktable:11>],
-    [<tconstruct:sharpening_kit>.withTag({Material: "iron"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:iron_block"}}), <tconstruct:sharpening_kit>.withTag({Material: "iron"})]])
-  .addTool(<ore:artisansFramingHammer>, 50)
-  .addOutput(<lycanitesmobs:equipmentforge_lesser>)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<artisanworktables:artisans_athame_iron>, <artisanworktables:artisans_knife_iron>, <artisanworktables:artisans_hatchet_iron>],
+//     [<artisanworktables:worktable:3>, <artisanworktables:worktable:5>, <artisanworktables:worktable:11>],
+//     [<tconstruct:sharpening_kit>.withTag({Material: "iron"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:iron_block"}}), <tconstruct:sharpening_kit>.withTag({Material: "iron"})]])
+//   .addTool(<ore:artisansFramingHammer>, 50)
+//   .addOutput(<lycanitesmobs:equipmentforge_lesser>)
+//   .create();
 
 // Greater Equipment Forge (lvl 2)
 recipes.removeByRecipeName("lycanitesmobs:equipmentforge_greater");
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<artisanworktables:artisans_athame_steel>, <artisanworktables:workstation:4>, <artisanworktables:artisans_hatchet_steel>],
-    [<artisanworktables:workstation:3>, <lycanitesmobs:equipmentforge_lesser>, <artisanworktables:workstation:11>],
-    [<tconstruct:sharpening_kit>.withTag({Material: "steel"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy"}}), <tconstruct:sharpening_kit>.withTag({Material: "steel"})]])
-  .setSecondaryIngredients([<artisanworktables:artisans_knife_steel>, <artisanworktables:artisans_gemcutter_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_file_steel>])
-  .addTool(<ore:artisansFramingHammer>, 100)
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<lycanitesmobs:equipmentforge_greater>)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<artisanworktables:artisans_athame_steel>, <artisanworktables:workstation:4>, <artisanworktables:artisans_hatchet_steel>],
+//     [<artisanworktables:workstation:3>, <lycanitesmobs:equipmentforge_lesser>, <artisanworktables:workstation:11>],
+//     [<tconstruct:sharpening_kit>.withTag({Material: "steel"}), <tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy"}}), <tconstruct:sharpening_kit>.withTag({Material: "steel"})]])
+//   .setSecondaryIngredients([<artisanworktables:artisans_knife_steel>, <artisanworktables:artisans_gemcutter_steel>, <artisanworktables:artisans_razor_steel>, <artisanworktables:artisans_file_steel>])
+//   .addTool(<ore:artisansFramingHammer>, 100)
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<lycanitesmobs:equipmentforge_greater>)
+//   .create();
 
 // Master Equipment Forge (lvl 3)
 recipes.removeByRecipeName("lycanitesmobs:equipmentforge_master");
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<tconstruct:sharpening_kit>.withTag({Material: "osgloglas"}), <artisanworktables:workshop:4>, <tconstruct:sharpening_kit>.withTag({Material: "mirion"})],
-    [<artisanworktables:workshop:3>, <lycanitesmobs:equipmentforge_greater>, <artisanworktables:workshop:11>],
-    [<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal"}}), <artisanworktables:workshop:7>, <tconstruct:toolforge>.withTag({textureBlock: {id: "twilightforest:block_storage"}})]])
-  .setSecondaryIngredients([<artisanworktables:artisans_handsaw_diamond>, <artisanworktables:artisans_gemcutter_diamond>, <artisanworktables:artisans_hatchet_diamond>, <artisanworktables:artisans_knife_diamond>, <artisanworktables:artisans_razor_diamond>, <artisanworktables:artisans_athame_diamond>, <artisanworktables:artisans_grimoire_diamond>])
-  .addTool(<ore:artisansHammer>, 500)
-  .addTool(<ore:artisansFramingHammer>, 500)
-  .addTool(<ore:artisansHandsaw>, 500)
-  .addOutput(<lycanitesmobs:equipmentforge_master>)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<tconstruct:sharpening_kit>.withTag({Material: "osgloglas"}), <artisanworktables:workshop:4>, <tconstruct:sharpening_kit>.withTag({Material: "mirion"})],
+//     [<artisanworktables:workshop:3>, <lycanitesmobs:equipmentforge_greater>, <artisanworktables:workshop:11>],
+//     [<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal"}}), <artisanworktables:workshop:7>, <tconstruct:toolforge>.withTag({textureBlock: {id: "twilightforest:block_storage"}})]])
+//   .setSecondaryIngredients([<artisanworktables:artisans_handsaw_diamond>, <artisanworktables:artisans_gemcutter_diamond>, <artisanworktables:artisans_hatchet_diamond>, <artisanworktables:artisans_knife_diamond>, <artisanworktables:artisans_razor_diamond>, <artisanworktables:artisans_athame_diamond>, <artisanworktables:artisans_grimoire_diamond>])
+//   .addTool(<ore:artisansHammer>, 500)
+//   .addTool(<ore:artisansFramingHammer>, 500)
+//   .addTool(<ore:artisansHandsaw>, 500)
+//   .addOutput(<lycanitesmobs:equipmentforge_master>)
+//   .create();
 
 // Equipment Infuser
 recipes.removeByRecipeName("lycanitesmobs:equipmentforge_infuser");
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<apotheosis:hellshelf>, <apotheosis:hellshelf>, <apotheosis:hellshelf>],
-    [<mekanism:machineblock:8>, <lycanitesmobs:equipmentforge_greater>, <thermalexpansion:machine:9>.withTag({Level: 2 as byte})],
-    [<thaumicrestoration:block_infuser>, <thebetweenlands:infuser>, <thaumcraft:infusion_matrix>]])
-  .setSecondaryIngredients([<lycanitesmobs:demoncrystal> * 32, <lycanitesmobs:shadowcrystal> * 32, <lycanitesmobs:lushcrystal> * 32, <lycanitesmobs:desertcrystal> * 32, <lycanitesmobs:aberrantcrystal> * 32])
-  .addTool(<ore:artisansFramingHammer>, 150)
-  .addTool(<ore:artisansGrimoire>, 150)
-  .addOutput(<lycanitesmobs:equipment_infuser>)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [<apotheosis:hellshelf>, <apotheosis:hellshelf>, <apotheosis:hellshelf>],
+//     [<mekanism:machineblock:8>, <lycanitesmobs:equipmentforge_greater>, <thermalexpansion:machine:9>.withTag({Level: 2 as byte})],
+//     [<thaumicrestoration:block_infuser>, <thebetweenlands:infuser>, <thaumcraft:infusion_matrix>]])
+//   .setSecondaryIngredients([<lycanitesmobs:demoncrystal> * 32, <lycanitesmobs:shadowcrystal> * 32, <lycanitesmobs:lushcrystal> * 32, <lycanitesmobs:desertcrystal> * 32, <lycanitesmobs:aberrantcrystal> * 32])
+//   .addTool(<ore:artisansFramingHammer>, 150)
+//   .addTool(<ore:artisansGrimoire>, 150)
+//   .addOutput(<lycanitesmobs:equipment_infuser>)
+//   .create();
 
 // Treats
 

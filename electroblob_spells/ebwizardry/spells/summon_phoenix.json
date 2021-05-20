@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "fire",
   "type": "minion",
-  "cost": 150,
+  "cost": 500,
   "chargeup": 20,
-  "cooldown": 400,
+  "cooldown": 3000,
   "base_properties": {
     "minion_lifetime": 600,
     "minion_count": 1,

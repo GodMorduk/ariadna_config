@@ -81,25 +81,25 @@ recipes.removeByRecipeName("harvestcraft:hardenedleatherleggingsitem");
 recipes.removeByRecipeName("harvestcraft:hardenedleatherhelmitem");
 
 
-recipes.removeByRecipeName("thebetweenlands:lurker_skin_boots");
-recipes.removeByRecipeName("thebetweenlands:lurker_skin_leggings");
-recipes.removeByRecipeName("thebetweenlands:lurker_skin_chestplate");
-recipes.removeByRecipeName("thebetweenlands:lurker_skin_helmet");
+// recipes.removeByRecipeName("thebetweenlands:lurker_skin_boots");
+// recipes.removeByRecipeName("thebetweenlands:lurker_skin_leggings");
+// recipes.removeByRecipeName("thebetweenlands:lurker_skin_chestplate");
+// recipes.removeByRecipeName("thebetweenlands:lurker_skin_helmet");
 
-recipes.removeByRecipeName("thebetweenlands:bone_leggings");
-recipes.removeByRecipeName("thebetweenlands:bone_boots");
-recipes.removeByRecipeName("thebetweenlands:bone_chestplate");
-recipes.removeByRecipeName("thebetweenlands:bone_helmet");
+// recipes.removeByRecipeName("thebetweenlands:bone_leggings");
+// recipes.removeByRecipeName("thebetweenlands:bone_boots");
+// recipes.removeByRecipeName("thebetweenlands:bone_chestplate");
+// recipes.removeByRecipeName("thebetweenlands:bone_helmet");
 
-recipes.removeByRecipeName("thebetweenlands:syrmorite_helmet");
-recipes.removeByRecipeName("thebetweenlands:syrmorite_chestplate");
-recipes.removeByRecipeName("thebetweenlands:syrmorite_boots");
-recipes.removeByRecipeName("thebetweenlands:syrmorite_leggings");
+// recipes.removeByRecipeName("thebetweenlands:syrmorite_helmet");
+// recipes.removeByRecipeName("thebetweenlands:syrmorite_chestplate");
+// recipes.removeByRecipeName("thebetweenlands:syrmorite_boots");
+// recipes.removeByRecipeName("thebetweenlands:syrmorite_leggings");
 
-recipes.removeByRecipeName("thebetweenlands:valonite_helmet");
-recipes.removeByRecipeName("thebetweenlands:valonite_boots");
-recipes.removeByRecipeName("thebetweenlands:valonite_leggings");
-recipes.removeByRecipeName("thebetweenlands:valonite_chestplate");
+// recipes.removeByRecipeName("thebetweenlands:valonite_helmet");
+// recipes.removeByRecipeName("thebetweenlands:valonite_boots");
+// recipes.removeByRecipeName("thebetweenlands:valonite_leggings");
+// recipes.removeByRecipeName("thebetweenlands:valonite_chestplate");
 
 
 recipes.removeByRecipeName("twilightforest:equipment/ironwood_leggings");
@@ -559,39 +559,39 @@ RecipeBuilder.get("blacksmith")
   
 // Syrmorite Set
 
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
-    [<ore:blockSyrmorite>, null, <ore:blockSyrmorite>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<thebetweenlands:syrmorite_boots>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
+//     [<ore:blockSyrmorite>, null, <ore:blockSyrmorite>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<thebetweenlands:syrmorite_boots>)
+//   .create();
   
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockSyrmorite>, <ore:blockSyrmorite>, <ore:blockSyrmorite>],
-    [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
-    [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<thebetweenlands:syrmorite_leggings>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [<ore:blockSyrmorite>, <ore:blockSyrmorite>, <ore:blockSyrmorite>],
+//     [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
+//     [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<thebetweenlands:syrmorite_leggings>)
+//   .create();
  
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
-    [<ore:blockSyrmorite>, <ore:ingotSyrmorite>, <ore:blockSyrmorite>],
-    [<ore:blockSyrmorite>, <ore:blockSyrmorite>, <ore:blockSyrmorite>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<thebetweenlands:syrmorite_chestplate>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>],
+//     [<ore:blockSyrmorite>, <ore:ingotSyrmorite>, <ore:blockSyrmorite>],
+//     [<ore:blockSyrmorite>, <ore:blockSyrmorite>, <ore:blockSyrmorite>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<thebetweenlands:syrmorite_chestplate>)
+//   .create();
 
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:blockSyrmorite>, <ore:ingotSyrmorite>, <ore:blockSyrmorite>],
-    [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>]])
-  .addTool(<ore:artisansHammer>, 100)
-  .addOutput(<thebetweenlands:syrmorite_helmet>)
-  .create();
+// RecipeBuilder.get("blacksmith")
+//   .setShaped([
+//     [<ore:blockSyrmorite>, <ore:ingotSyrmorite>, <ore:blockSyrmorite>],
+//     [<ore:ingotSyrmorite>, null, <ore:ingotSyrmorite>]])
+//   .addTool(<ore:artisansHammer>, 100)
+//   .addOutput(<thebetweenlands:syrmorite_helmet>)
+//   .create();
   
 // Diamond Gem Set
 
@@ -636,43 +636,43 @@ RecipeBuilder.get("jeweler")
 
 // Valonite Gem Set
 
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemValonite>, null, <ore:gemValonite>],
-    [<ore:blockValonite>, null, <ore:blockValonite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<thebetweenlands:valonite_boots>)
-  .setMinimumTier(1)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [<ore:gemValonite>, null, <ore:gemValonite>],
+//     [<ore:blockValonite>, null, <ore:blockValonite>]])
+//   .addTool(<ore:artisansGemCutter>, 500)
+//   .addOutput(<thebetweenlands:valonite_boots>)
+//   .setMinimumTier(1)
+//   .create();
   
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>],
-    [<ore:gemValonite>, null, <ore:gemValonite>],
-    [<ore:gemValonite>, null, <ore:gemValonite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<thebetweenlands:valonite_leggings>)
-  .setMinimumTier(1)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>],
+//     [<ore:gemValonite>, null, <ore:gemValonite>],
+//     [<ore:gemValonite>, null, <ore:gemValonite>]])
+//   .addTool(<ore:artisansGemCutter>, 500)
+//   .addOutput(<thebetweenlands:valonite_leggings>)
+//   .setMinimumTier(1)
+//   .create();
  
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:gemValonite>, null, <ore:gemValonite>],
-    [<ore:blockValonite>, <ore:gemValonite>, <ore:blockValonite>],
-    [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<thebetweenlands:valonite_chestplate>)
-  .setMinimumTier(1)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [<ore:gemValonite>, null, <ore:gemValonite>],
+//     [<ore:blockValonite>, <ore:gemValonite>, <ore:blockValonite>],
+//     [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>]])
+//   .addTool(<ore:artisansGemCutter>, 500)
+//   .addOutput(<thebetweenlands:valonite_chestplate>)
+//   .setMinimumTier(1)
+//   .create();
 
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:blockValonite>, <ore:gemValonite>, <ore:blockValonite>],
-    [<ore:gemValonite>, null, <ore:gemValonite>]])
-  .addTool(<ore:artisansGemCutter>, 500)
-  .addOutput(<thebetweenlands:valonite_helmet>)
-  .setMinimumTier(1)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [<ore:blockValonite>, <ore:gemValonite>, <ore:blockValonite>],
+//     [<ore:gemValonite>, null, <ore:gemValonite>]])
+//   .addTool(<ore:artisansGemCutter>, 500)
+//   .addOutput(<thebetweenlands:valonite_helmet>)
+//   .setMinimumTier(1)
+//   .create();
 
 // Jade Gem Set
 

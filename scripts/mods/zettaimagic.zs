@@ -1,1 +1,1 @@
-recipes.removeByMod("zettaimagic");
+recipes.removeByMod("zettaimagic"); 

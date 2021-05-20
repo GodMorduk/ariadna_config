@@ -13,9 +13,9 @@
   "tier": "master",
   "element": "healing",
   "type": "defence",
-  "cost": 75,
+  "cost": 400,
   "chargeup": 20,
-  "cooldown": 300,
+  "cooldown": 30000,
   "base_properties": {
     "absorption_duration": 1200,
     "absorption_strength": 1,

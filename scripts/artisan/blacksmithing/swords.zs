@@ -16,9 +16,9 @@ recipes.removeByRecipeName("embers:ingotdawnstone_sword");
 recipes.removeByRecipeName("extrabotany:recipe_elementiumhammer");
 recipes.removeByRecipeName("endreborn:tools/ender_sword");
 recipes.removeByRecipeName("immersiveengineering:tool/steel_sword");
-recipes.removeByRecipeName("thebetweenlands:valonite_sword");
-recipes.removeByRecipeName("thebetweenlands:octine_sword");
-recipes.removeByRecipeName("thebetweenlands:bone_sword");
+// recipes.removeByRecipeName("thebetweenlands:valonite_sword");
+// recipes.removeByRecipeName("thebetweenlands:octine_sword");
+// recipes.removeByRecipeName("thebetweenlands:bone_sword");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_lead");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_aluminum");
 recipes.removeByRecipeName("thermalfoundation:tool.sword_invar");
@@ -196,26 +196,26 @@ RecipeBuilder.get("blacksmith") // Вольфрамовый меч
   .addOutput(<endreborn:tool_sword_wolframium>)
   .create();
 
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [null, <ore:blockValonite>, null],
-    [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>],
-    [null, <spartanweaponry:material>, null]])
-  .addTool(<ore:artisansGemCutter>, 250)
-  .addTool(<ore:artisansLens>, 100)
-  .setMinimumTier(1)
-  .addOutput(<thebetweenlands:valonite_sword>)
-  .create();
+// RecipeBuilder.get("jeweler")
+//   .setShaped([
+//     [null, <ore:blockValonite>, null],
+//     [<ore:blockValonite>, <ore:blockValonite>, <ore:blockValonite>],
+//     [null, <spartanweaponry:material>, null]])
+//   .addTool(<ore:artisansGemCutter>, 250)
+//   .addTool(<ore:artisansLens>, 100)
+//   .setMinimumTier(1)
+//   .addOutput(<thebetweenlands:valonite_sword>)
+//   .create();
 
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <ore:blockBone>, null],
-    [<ore:blockBone>, <ore:blockBone>, <ore:blockBone>],
-    [null, <spartanweaponry:material>, null]])
-  .addTool(<ore:artisansSolderer>, 200)
-  .setMinimumTier(1)
-  .addOutput(<thebetweenlands:bone_sword>)
-  .create();
+// RecipeBuilder.get("basic")
+//   .setShaped([
+//     [null, <ore:blockBone>, null],
+//     [<ore:blockBone>, <ore:blockBone>, <ore:blockBone>],
+//     [null, <spartanweaponry:material>, null]])
+//   .addTool(<ore:artisansSolderer>, 200)
+//   .setMinimumTier(1)
+//   .addOutput(<thebetweenlands:bone_sword>)
+//   .create();
 
 
 
@@ -259,7 +259,8 @@ for sword in swords_reverse_2_tier {
 }
 
 
-val swords_1_tier = ["minecraft:iron_sword", "bewitchment:silver_sword", "thebetweenlands:octine_sword"] as string[];
+//val swords_1_tier = ["minecraft:iron_sword", "bewitchment:silver_sword", "thebetweenlands:octine_sword"] as string[];
+val swords_1_tier = ["minecraft:iron_sword", "bewitchment:silver_sword"] as string[];
 for sword in swords_1_tier {
 	val material_lowercase = sword.split(":")[1].split("_")[0];
 	val material = material_lowercase.substring(0,1).toUpperCase() ~ material_lowercase.substring(1).toLowerCase();
