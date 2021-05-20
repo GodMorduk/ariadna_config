@@ -96,7 +96,6 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<stewitems:medicine_antidepressants>, 20);
 	pool.addItemEntry(<stewitems:medicine_stamina_inhaler>, 20);
 	pool.addItemEntry(<stewitems:medicine_stimpack>, 20);
-	pool.addItemEntry(<stewitems:medicine_elixir>, 20);
 	pool.addItemEntry(<stewitems:medicine_neuropozine>, 20);
 	pool.addItemEntry(<stewitems:medicine_protein_pill>, 20);
 	pool.addItemEntry(<stewitems:medicine_inner_light>, 20);
@@ -105,8 +104,6 @@ function add_3_tier_stuff (loot_table as string, min_value as int, max_value as 
 	pool.addItemEntry(<stewitems:medicine_freezing_powder>, 20);
 	pool.addItemEntry(<stewitems:medicine_sunscreen_spray>, 20);
 	pool.addItemEntry(<stewitems:medicine_grox>, 20);
-	pool.addItemEntry(<stewitems:medicine_twyrine>, 20);
-	pool.addItemEntry(<stewitems:medicine_karusto_perfume>, 20);
 	pool.addItemEntry(<stewitems:medicine_strong_pheromones>, 20);
 	pool.addItemEntry(<stewitems:laudanum>, 20);
 	pool.addItemEntry(<stewitems:rubbing_alcohol>, 20);
