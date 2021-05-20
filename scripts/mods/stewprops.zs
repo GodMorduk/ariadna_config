@@ -226,3 +226,57 @@ RecipeBuilder.get("basic")
     [<techguns:itemshared:55>, <techguns:itemshared:55>]])
   .addOutput(<stewprops:random_packet_00>.withTag({display: {Name: "Пакет"}}))
   .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:plankWood>, <ore:stickWood>],
+    [<ore:plankWood>, <ore:wireCopper>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, null]])
+  .addTool(<ore:artisansHandsaw>, 5)
+  .addOutput(<stewitems:guitar>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:plankWood>, <ore:stickWood>],
+    [<ore:plankWood>, <ore:wireCopper>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, null]])
+  .addTool(<ore:artisansHandsaw>, 5)
+  .addOutput(<stewitems:violin>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:ingotGold>, null, <ore:ingotGold>],
+    [<ore:ingotGold>, <ore:wireAluminum>, <ore:ingotGold>],
+    [null, <ore:ingotGold>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewitems:harp>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, null, <ore:plateBrass>],
+    [<ore:ingotBrass>, null, <ore:ingotBrass>],
+    [null, <ore:ingotBrass>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewitems:horn>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:nuggetIron>, <ore:hardenedClay>],
+    [<ore:nuggetIron>, <ore:hardenedClay>, <ore:nuggetIron>],
+    [<ore:hardenedClay>, <ore:nuggetIron>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewitems:flute>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, null, <ore:stickWood>],
+    [<ore:plankWood>, <ore:wireCopper>, null],
+    [<ore:plankWood>, <ore:plankWood>, null]])
+  .addTool(<ore:artisansHandsaw>, 5)
+  .addOutput(<stewitems:banjo>)
+  .create();
