@@ -188,7 +188,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 	<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 	<astralsorcery:itemrockcrystalsimple>,
 	<astralsorcery:itemcraftingcomponent:2>, 
-	<metallurgy:silver_ingot>, 
+	<ore:ingotSilver>, 
 	<astralsorcery:itemcraftingcomponent:2>,
 	<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}), 
 	<astralsorcery:itemcraftingcomponent:2>, 
