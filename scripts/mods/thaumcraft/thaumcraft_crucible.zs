@@ -37,3 +37,19 @@ mods.thaumcraft.Crucible.removeRecipe("thaumcraft:focus_1");
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:focus_1", "UNLOCKAUROMANCY", <thaumcraft:focus_1>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), [<aspect:vitreus>*100, <aspect:praecantatio>*100, <aspect:vinculum>*40]);
 mods.thaumcraft.Crucible.removeRecipe("thaumcraft:sanesoap");
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:sanesoap", "SANESOAP", <thaumcraft:sanity_soap>, <thaumcraft:flesh_block>, [<aspect:alienis>*150, <aspect:cognitio>*150, <aspect:ordo>*200, <aspect:auram>*50]);
+
+//кластеры remastered directors cut GOTY edition
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_iron");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_iron", "METALPURIFICATION", <thaumcraft:cluster>, <ore:oreIron>, [<aspect:ordo>*30, <aspect:metallum>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_gold");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_gold", "METALPURIFICATION", <thaumcraft:cluster:1>, <ore:oreGold>, [<aspect:ordo>*30, <aspect:metallum>*30, <aspect:desiderium>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_copper");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_copper", "METALPURIFICATION", <thaumcraft:cluster:2>, <ore:oreCopper>, [<aspect:ordo>*30, <aspect:metallum>*30, <aspect:permutatio>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_tin");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_tin", "METALPURIFICATION", <thaumcraft:cluster:3>, <ore:oreTin>, [<aspect:ordo>*30, <aspect:metallum>*30, <aspect:vitreus>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_silver");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_silver", "METALPURIFICATION", <thaumcraft:cluster:4>, <ore:oreSilver>, [<aspect:ordo>*30, <aspect:metallum>*30, <aspect:desiderium>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_lead");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_lead", "METALPURIFICATION", <thaumcraft:cluster:5>, <ore:oreLead>, [<aspect:ordo>*30, <aspect:metallum>*30]);
+mods.thaumcraft.Crucible.removeRecipe("thaumcraft:metal_purification_cinnabar");
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:metal_purification_cinnabar", "METALPURIFICATION", <thaumcraft:cluster:6>, <ore:oreSilver>, [<aspect:ordo>*30, <aspect:metallum>*30, <aspect:alkimia>*30, <aspect:mortuus>*30]);
