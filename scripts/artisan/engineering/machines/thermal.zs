@@ -340,7 +340,7 @@ recipes.removeByRecipeName("thermalcultivation:watering_can");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<thermaldynamics:duct_16>, <ore:plateCopper>, <ore:plateCopper>],
-    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalexpansion:tank>, <ore:plateCopper>],
     [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]])
   .addTool(<ore:artisansFramingHammer>, 25)
   .addOutput(<thermalcultivation:watering_can>)
