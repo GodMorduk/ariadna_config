@@ -8,14 +8,6 @@ RecipeBuilder.get("basic")
   .create();
 
 recipes.removeByRecipeName("davincisvessels:tile.davincis.marker0");
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<pyrotech:planks_tarred>, <ore:stickTreatedWood>, <pyrotech:planks_tarred>],
-    [<ore:stickTreatedWood>, <ore:gearStone>, <ore:stickTreatedWood>],
-    [<pyrotech:planks_tarred>, <ore:stickTreatedWood>, <pyrotech:planks_tarred>]])
-  .addTool(<ore:artisansFramingHammer>, 50)
-  .addOutput(<davincisvessels:marker>)
-  .create();
 
 recipes.removeByRecipeName("davincisvessels:tile.davincis.floater12");
 RecipeBuilder.get("carpenter")

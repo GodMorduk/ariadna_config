@@ -2131,7 +2131,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <immersiveengineering:toolupgrade>, <immersiveengineering:material:13>],
     [null, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:material:13>],
-    [<immersiveengineering:metal_device1:6>, <thermalexpansion:reservoir>.withTag({}), null]])
+    [<immersiveengineering:metal_device1:6>, <thermalexpansion:reservoir>, null]])
   .addTool(<ore:artisansDriver>, 30)
   .addTool(<ore:artisansSpanner>, 30)
   .addOutput(<immersiveengineering:chemthrower>)
@@ -2275,8 +2275,8 @@ recipes.removeByRecipeName("immersiveengineering:toolupgrades/drill_capacity");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:9>, <ore:plateSteel>, null],
-    [<ore:plateSteel>, <thermalexpansion:reservoir>.withTag({}), <ore:alloyAdvanced>],
-    [null, <ore:alloyAdvanced>, <thermalexpansion:reservoir>.withTag({})]])
+    [<ore:plateSteel>, <thermalexpansion:reservoir>, <ore:alloyAdvanced>],
+    [null, <ore:alloyAdvanced>, <thermalexpansion:reservoir>]])
   .addTool(<ore:artisansFramingHammer>, 25)
   .addTool(<ore:artisansSpanner>, 25)
   .addOutput(<immersiveengineering:toolupgrade:3>)
@@ -2318,8 +2318,8 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("immersiveengineering:toolupgrades/drill_waterproof");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalexpansion:reservoir>.withTag({}), <ore:plateAluminum>, null],
-    [<ore:plateAluminum>, <thermalexpansion:reservoir>.withTag({}), <ore:plateAluminum>],
+    [<thermalexpansion:reservoir>, <ore:plateAluminum>, null],
+    [<ore:plateAluminum>, <thermalexpansion:reservoir>, <ore:plateAluminum>],
     [null, <ore:plateAluminum>, <immersiveengineering:material:8>]])
   .addTool(<ore:artisansFramingHammer>, 25)
   .addTool(<ore:artisansSpanner>, 25)

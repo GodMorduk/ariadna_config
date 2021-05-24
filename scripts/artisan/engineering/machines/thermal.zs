@@ -340,7 +340,7 @@ recipes.removeByRecipeName("thermalcultivation:watering_can");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<thermaldynamics:duct_16>, <ore:plateCopper>, <ore:plateCopper>],
-    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalexpansion:tank>, <ore:plateCopper>],
     [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]])
   .addTool(<ore:artisansFramingHammer>, 25)
   .addOutput(<thermalcultivation:watering_can>)
@@ -561,26 +561,26 @@ RecipeBuilder.get("farmer")
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlag>])
   .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<thermalfoundation:fertilizer> * 4)
+  .addOutput(<thermalfoundation:fertilizer> * 3)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:fertilizer_1");
 RecipeBuilder.get("engineer")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
   .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<thermalfoundation:fertilizer> * 4)
+  .addOutput(<thermalfoundation:fertilizer> * 2)
   .create();
 
 RecipeBuilder.get("farmer")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
   .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<thermalfoundation:fertilizer> * 8)
+  .addOutput(<thermalfoundation:fertilizer> * 3)
   .create();
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlag>])
   .addTool(<ore:artisansMortar>, 5)
-  .addOutput(<thermalfoundation:fertilizer> * 16)
+  .addOutput(<thermalfoundation:fertilizer> * 4)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:bait");
@@ -1673,7 +1673,7 @@ RecipeBuilder.get("chemist")
   .setShapeless([<ore:dustWood>, <ore:dustWood>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
   .addTool(<ore:artisansMortar>, 5)
   .addTool(<ore:artisansBeaker>, 5)
-  .addOutput(<thermalfoundation:fertilizer:1> * 4)
+  .addOutput(<thermalfoundation:fertilizer:1> * 3)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:fertilizer_3");
@@ -1681,21 +1681,21 @@ RecipeBuilder.get("engineer")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
   .addTool(<ore:artisansMortar>, 5)
   .addTool(<ore:artisansBeaker>, 5)
-  .addOutput(<thermalfoundation:fertilizer:1> * 4)
+  .addOutput(<thermalfoundation:fertilizer:1> * 2)
   .create();
 
 RecipeBuilder.get("farmer")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
   .addTool(<ore:artisansMortar>, 5)
   .addTool(<ore:artisansBeaker>, 5)
-  .addOutput(<thermalfoundation:fertilizer:1> * 8)
+  .addOutput(<thermalfoundation:fertilizer:1> * 3)
   .create();
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:dustCharcoal>, <ore:dustSaltpeter>, <ore:itemSlagRich>])
   .addTool(<ore:artisansMortar>, 5)
   .addTool(<ore:artisansBeaker>, 5)
-  .addOutput(<thermalfoundation:fertilizer:1> * 16)
+  .addOutput(<thermalfoundation:fertilizer:1> * 4)
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:bait_2");

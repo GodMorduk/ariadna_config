@@ -1,9 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.removeByRecipeName("firstaid:bandage");
-recipes.removeByRecipeName("firstaid:plaster");
-recipes.removeByRecipeName("firstaid:morphine");
-
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:blockGlass>, <minecraft:stone_button>, <ore:blockGlass>],
@@ -45,7 +41,7 @@ RecipeBuilder.get("chemist")
     [null, <ore:listAllgrain>, null],
     [<minecraft:potato> | <harvestcraft:sweetpotatoitem>, <ore:listAllwater>, <minecraft:potato> | <harvestcraft:sweetpotatoitem>],
     [null, <ore:listAllgrain>, null]])
-  .addTool(<artisanworktables:artisans_beaker_iron>, 15)
+  .addTool(<ore:artisansBeaker>, 15)
   .addOutput(<stewitems:rubbing_alcohol>)
   .create();
 
@@ -54,7 +50,7 @@ RecipeBuilder.get("chemist")
     [<rustic:wind_thistle>, <minecraft:dye:15>, <rustic:chamomile>],
     [<minecraft:dye:15>, <stewitems:rubbing_alcohol>, <minecraft:dye:15>],
     [<rustic:chamomile>, <minecraft:dye:15>, <rustic:wind_thistle>]])
-  .addTool(<artisanworktables:artisans_beaker_iron>, 15)
+  .addTool(<ore:artisansBeaker>, 15)
   .addOutput(<stewitems:laudanum>)
   .create();
 
@@ -87,7 +83,7 @@ RecipeBuilder.get("chemist")
     [<stewitems:rubbing_alcohol>, <stewprops:paste_herbal>, <stewitems:rubbing_alcohol>],
     [<ore:materialCloth>, <ore:materialCloth>, <ore:materialCloth>]])
   .addTool(<ore:artisansNeedle>, 15)
-  .addOutput(<firstaid:bandage> * 4)
+  .addOutput(<stewitems:medicine_bandage_1> * 4)
   .create();
 
 <ore:healPlant>.add(<rustic:cohosh>);
@@ -95,7 +91,7 @@ RecipeBuilder.get("chemist")
 <ore:healPlant>.add(<rustic:chamomile>);
 <ore:healPlant>.add(<rustic:marsh_mallow>);
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(15), <ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
+//recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}), [<ore:artisansMortar>.reuse().transformDamage(15), <ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:healPlant>, <ore:healPlant>, <ore:dye>, <ore:dye>, <pyrotech:material:12>, <pyrotech:material:12>])
@@ -103,7 +99,7 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}))
   .create();
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
+//recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<ore:artisansMortar>.anyDamage().reuse().transformDamage(5), <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([ <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <rustic:aloe_vera>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
@@ -111,7 +107,7 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 3)
   .create();
 
-recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<artisanworktables:artisans_mortar_flint>.anyDamage().reuse().transformDamage(5), <ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
+//recipes.addShapeless(<stewprops:paste_herbal>.withTag({display: {Name: "§rЦелебная паста"}, craftOnly: true}) * 2, [<ore:artisansMortar>.anyDamage().reuse().transformDamage(5), <ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>]);
 
 RecipeBuilder.get("chemist")
   .setShapeless([<ore:healPlant>, <ore:listAllhoney>, <pyrotech:material:12>, <pyrotech:material:12>])
@@ -137,12 +133,12 @@ RecipeBuilder.get("chemist")
   .addOutput(<stewitems:medicine_serebrolist>)
   .create();  
 
-recipes.addShaped(<firstaid:plaster>, [
+recipes.addShaped(<stewitems:medicine_bandage_2>, [
     [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>],
     [<pyrotech:thatch>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <pyrotech:thatch>],
     [<ore:twine>, <harvestcraft:wovencottonitem>, <ore:twine>]]);
   
-recipes.addShaped(<firstaid:plaster>, [
+recipes.addShaped(<stewitems:medicine_bandage_2>, [
     [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
     [<minecraft:string>, <ore:blockWool>, <minecraft:string>]]);
 
@@ -150,17 +146,7 @@ RecipeBuilder.get("chemist")
   .setShaped([
     [<harvestcraft:wovencottonitem>, <stewprops:paste_herbal>.withTag({craftOnly: true}).onlyWithTag({craftOnly: true}), <harvestcraft:wovencottonitem>],
     [<minecraft:string>, <ore:blockWool>, <minecraft:string>]])
-  .addOutput(<firstaid:plaster> * 3)
-  .create();
-
-RecipeBuilder.get("chemist")
-  .setShaped([
-    [null, <thermalfoundation:material:771>, null],
-    [<stewitems:laudanum>, <stewitems:rubbing_alcohol>, <stewitems:laudanum>],
-    [null, <thermalfoundation:material:771>, null]])
-  .addTool(<ore:artisansBeaker>, 25)
-  .setMinimumTier(1)
-  .addOutput(<firstaid:morphine>)
+  .addOutput(<stewitems:medicine_bandage_2> * 3)
   .create();
   
 RecipeBuilder.get("chemist")
@@ -178,15 +164,6 @@ RecipeBuilder.get("chemist")
     [null, <stewitems:rubbing_alcohol>, null]])
   .addTool(<ore:artisansBeaker>, 25)
   .addOutput(<stewitems:medicine_inhaler>)
-  .create();
-  
-RecipeBuilder.get("chemist")
-  .setShaped([
-    [<alchemistry:compound:26>, <stewprops:paste_herbal>, <alchemistry:compound:26>],
-    [<ore:materialCloth>, <ore:materialCloth>, <ore:materialCloth>]])
-  .addTool(<ore:artisansNeedle>, 15)
-  .setMinimumTier(1)
-  .addOutput(<stewitems:medicine_bandage>)
   .create();
   
 RecipeBuilder.get("chemist")
@@ -327,7 +304,7 @@ RecipeBuilder.get("chemist")
     [<alchemistry:compound:59>, <stewitems:inhaler_empty>, <alchemistry:compound:55>],
     [null, <stewitems:rubbing_alcohol>, null]])
   .addTool(<ore:artisansBeaker>, 25)
-  .addOutput(<stewitems:stamina_inhaler>)
+  .addOutput(<stewitems:medicine_stamina_inhaler>)
   .create();
   
 RecipeBuilder.get("chemist")
