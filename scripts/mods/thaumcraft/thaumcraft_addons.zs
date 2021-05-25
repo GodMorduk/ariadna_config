@@ -18,7 +18,8 @@ mods.thaumcraft.Infusion.removeRecipe("crimsonrevelations:praetor_greaves");
 mods.thaumcraft.Infusion.removeRecipe("crimsonrevelations:eldritchcrab");
 mods.thaumcraft.Infusion.removeRecipe("crimsonrevelations:crimsonblade");
 
-
+mods.thaumcraft.Crucible.removeRecipe("crimsonrevelations:quartzcluster");
+mods.thaumcraft.Crucible.registerRecipe("crimsonrevelations:quartzcluster", "QUARTZ_PURIFICATION", <thaumcraft:cluster:7>, <ore:oreQuartz>, [<aspect:ordo>*30, <aspect:vitreus>*30]);
 
 //thaumic additions
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumadditions:knowledge_tome");
@@ -36,12 +37,19 @@ mods.thaumcraft.Infusion.removeRecipe("thaumadditions:mithminite_jar");
 mods.thaumcraft.Infusion.registerRecipe("thaumadditions:mithminite_jar", "TAR_MITHMINITE_JAR", <thaumadditions:jar_mithminite>, 100, [<aspect:aqua>*15000, <aspect:vacuos>*15000, <aspect:alienis>*15000], <thaumadditions:jar_adaminite>, [<ore:blockMithminite>, <ore:blockMithminite>, <ore:blockMithminite>]);
 mods.thaumcraft.Infusion.removeRecipe("thaumadditions:puriflower");
 mods.thaumcraft.Infusion.registerRecipe("thaumadditions:puriflower", "TAR_PURIFLOWER", <thaumadditions:puriflower>, 50, [<aspect:auram>*100, <aspect:coralos>*100, <aspect:exitium>*100], <thaumcraft:shimmerleaf>, [<thaumcraft:filter>, <thaumcraft:filter>, <thaumcraft:filter>, <thaumicbases:quicksilverblock>, <thaumicbases:quicksilverblock>, <ore:blockDiamond>]);
-
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumadditions:seal");
+mods.thaumcraft.Infusion.removeRecipe("thaumadditions:shadow_enchanter");
 
 //thaumic bases
 mods.thaumcraft.Infusion.removeRecipe("minecraft:tb.overchanter");
 mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.thauminite");
 mods.thaumcraft.Crucible.registerRecipe("minecraft:tb.thauminite", "TB.ALCHEMY", <thaumicbases:thauminite_ingot>, <ore:ingotVoid>, [<aspect:terra>*200, <aspect:praecantatio>*200, <aspect:imperium>*200]);
+mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.doubleironcluster");
+mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.doublegoldcluster");
+mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.doublecinnabarcluster");
+mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.doublequartzcluster");
+mods.thaumcraft.Crucible.removeRecipe("minecraft:tb.doublequartzcluster1");
+
 
 
 
