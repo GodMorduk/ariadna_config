@@ -190,7 +190,7 @@ recipes.removeByRecipeName("thermalexpansion:reservoir");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <thermalfoundation:material:512>, null],
-    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateCopper>],
     [null, <ore:plateTin>, null]])
   .addTool(<ore:artisansDriver>, 25)
   .addOutput(<thermalexpansion:reservoir>)
@@ -311,7 +311,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <thermalfoundation:material:656>, null],
     [<ore:plateSilver>, <thermalfoundation:material:640>, <ore:plateSilver>],
-    [<ore:plateTin>, <thermalexpansion:capacitor>.withTag({Energy: 0}), <ore:plateTin>]])
+    [<ore:plateTin>, <thermalexpansion:capacitor>, <ore:plateTin>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<thermalinnovation:drill>.withTag({Energy: 0, Mode: 1}))
   .create();
@@ -321,7 +321,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <thermalfoundation:material:657>, null],
     [<ore:plateSilver>, <thermalfoundation:material:640>, <ore:plateSilver>],
-    [<ore:plateTin>, <thermalexpansion:capacitor>.withTag({Energy: 0}), <ore:plateTin>]])
+    [<ore:plateTin>, <thermalexpansion:capacitor>, <ore:plateTin>]])
   .addTool(<ore:artisansSpanner>, 50)
   .addOutput(<thermalinnovation:saw>.withTag({Energy: 0, Mode: 1}))
   .create();
@@ -771,7 +771,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:machine_8");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), null],
+    [null, <thermalexpansion:tank>.withTag({Level: 0 as byte}), null],
     [<immersiveengineering:material:8>, <thermalexpansion:frame>, <immersiveengineering:material:8>],
     [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]])
   .setSecondaryIngredients([<ore:plateAluminum> * 10])
@@ -856,7 +856,7 @@ recipes.removeByRecipeName("thermalexpansion:machine_7");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:8>, <ore:gearNickel>, <immersiveengineering:material:8>],
-    [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <thermalexpansion:frame>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte})],
+    [<thermalexpansion:tank>.withTag({Level: 0 as byte}), <thermalexpansion:frame>, <thermalexpansion:tank>.withTag({Level: 0 as byte})],
     [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]])
   .setSecondaryIngredients([<ore:plateAluminum> * 10])
   .addTool(<ore:artisansDriver>, 50)
@@ -867,7 +867,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_5");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:cache>.withTag({Facing: 3 as byte, Level: 0 as byte}), null],
+    [null, <thermalexpansion:cache>.withTag({Level: 0 as byte}), null],
     [<techguns:itemshared:57>, <thermalexpansion:frame:64>, <techguns:itemshared:57>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])
@@ -879,7 +879,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_6");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:plateInvar>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateInvar>],
     [<immersiveengineering:material:8>, <thermalexpansion:frame:64>, <immersiveengineering:material:8>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])
@@ -927,7 +927,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_3");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}), null],
+    [null, <thermalexpansion:tank>.withTag({Level: 0 as byte}), null],
     [<immersiveengineering:material:8>, <thermalexpansion:frame:64>, <immersiveengineering:material:8>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])
@@ -1008,7 +1008,7 @@ recipes.removeByRecipeName("thermalexpansion:capacitor_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateInvar>, <techguns:itemshared:68>, <ore:plateInvar>],
-    [<ore:plateInvar>, <thermalexpansion:capacitor>.withTag({Energy: 0}), <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalexpansion:capacitor>, <ore:plateInvar>],
     [<ore:circuitBasic>, <ore:blockRedstone>, <ore:circuitBasic>]])
   .addTool(<ore:artisansDriver>, 30)
   .addTool(<ore:artisansSolderer>, 30)
@@ -1019,7 +1019,7 @@ recipes.removeByRecipeName("thermalexpansion:capacitor_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateElectrum>, <ore:blockRedstone>, <ore:plateElectrum>],
-    [<ore:plateElectrum>, <thermalexpansion:capacitor:1>.withTag({Energy: 0}), <ore:plateElectrum>],
+    [<ore:plateElectrum>, <thermalexpansion:capacitor:1>, <ore:plateElectrum>],
     [<ore:blockRedstone>, <ore:blockGlassHardened>, <ore:blockRedstone>]])
   .addTool(<ore:artisansSolderer>, 50)
   .addTool(<ore:artisansDriver>, 50)
@@ -1030,7 +1030,7 @@ recipes.removeByRecipeName("thermalinnovation:magnet_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateInvar>, <immersiveengineering:material:8>, <ore:plateInvar>],
-    [<ore:plateInvar>, <thermalinnovation:magnet>.withTag({Energy: 0}), <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalinnovation:magnet>, <ore:plateInvar>],
     [null, <ore:circuitBasic>, null]])
   .addTool(<ore:artisansDriver>, 30)
   .addTool(<ore:artisansSolderer>, 30)
@@ -1041,7 +1041,7 @@ recipes.removeByRecipeName("thermalinnovation:magnet_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<thermalfoundation:material:515>, <immersiveengineering:material:9>, <thermalfoundation:material:515>],
-    [<ore:plateElectrum>, <thermalinnovation:magnet:1>.withTag({Energy: 0}), <ore:plateElectrum>],
+    [<ore:plateElectrum>, <thermalinnovation:magnet:1>, <ore:plateElectrum>],
     [null, <ore:circuitBasic>, null]])
   .addTool(<ore:artisansDriver>, 50)
   .addTool(<ore:artisansSolderer>, 50)
@@ -1052,8 +1052,8 @@ recipes.removeByRecipeName("thermalinnovation:drill_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:8>, <ore:plateInvar>, <immersiveengineering:material:8>],
-    [<ore:plateInvar>, <thermalinnovation:drill>.withTag({Energy: 0, Mode: 1}), <ore:plateInvar>],
-    [<ore:plateBronze>, <thermalexpansion:capacitor:1>.withTag({Energy: 0}), <ore:plateBronze>]])
+    [<ore:plateInvar>, <thermalinnovation:drill>, <ore:plateInvar>],
+    [<ore:plateBronze>, <thermalexpansion:capacitor:1>, <ore:plateBronze>]])
   .addTool(<ore:artisansFramingHammer>, 75)
   .addTool(<ore:artisansSpanner>, 75)
   .addOutput(<thermalinnovation:drill:1>.withTag({Energy: 0, Mode: 2}))
@@ -1063,8 +1063,8 @@ recipes.removeByRecipeName("thermalinnovation:drill_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:9>, <ore:fiberCarbon>, <immersiveengineering:material:9>],
-    [<ore:fiberCarbon>, <thermalinnovation:drill:1>.withTag({Energy: 0, Mode: 2}), <ore:fiberCarbon>],
-    [<ore:plateElectrum>, <thermalexpansion:capacitor:2>.withTag({Energy: 0}), <ore:plateElectrum>]])
+    [<ore:fiberCarbon>, <thermalinnovation:drill:1>, <ore:fiberCarbon>],
+    [<ore:plateElectrum>, <thermalexpansion:capacitor:2>, <ore:plateElectrum>]])
   .setSecondaryIngredients([<ore:gearSteel> * 5, <ore:gearElectrum> * 4])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)
@@ -1075,8 +1075,8 @@ recipes.removeByRecipeName("thermalinnovation:saw_1");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:8>, <ore:plateInvar>, <immersiveengineering:material:8>],
-    [<ore:plateInvar>, <thermalinnovation:saw>.withTag({Energy: 0, Mode: 1}), <ore:plateInvar>],
-    [<ore:plateBronze>, <thermalexpansion:capacitor:1>.withTag({Energy: 0}), <ore:plateBronze>]])
+    [<ore:plateInvar>, <thermalinnovation:saw>, <ore:plateInvar>],
+    [<ore:plateBronze>, <thermalexpansion:capacitor:1>, <ore:plateBronze>]])
   .addTool(<ore:artisansFramingHammer>, 75)
   .addTool(<ore:artisansSpanner>, 75)
   .addOutput(<thermalinnovation:saw:1>.withTag({Energy: 0, Mode: 2}))
@@ -1086,8 +1086,8 @@ recipes.removeByRecipeName("thermalinnovation:saw_2");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:9>, <ore:fiberCarbon>, <immersiveengineering:material:9>],
-    [<ore:fiberCarbon>, <thermalinnovation:saw:1>.withTag({Energy: 0, Mode: 2}), <ore:fiberCarbon>],
-    [<ore:plateElectrum>, <thermalexpansion:capacitor:2>.withTag({Energy: 0}), <ore:plateElectrum>]])
+    [<ore:fiberCarbon>, <thermalinnovation:saw:1>, <ore:fiberCarbon>],
+    [<ore:plateElectrum>, <thermalexpansion:capacitor:2>, <ore:plateElectrum>]])
   .setSecondaryIngredients([<ore:gearSteel> * 5, <ore:gearElectrum> * 4])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)
@@ -1963,7 +1963,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null],
     [<ore:plateSignalum>, <ore:dustCryotheum>, <ore:blockRedstone>, <ore:dustCryotheum>, <ore:plateSignalum>],
-    [<immersiveengineering:material:8>, <ore:gearGold>, <thermalexpansion:capacitor:2>.withTag({Energy: 0}), <ore:gearGold>, <immersiveengineering:material:8>],
+    [<immersiveengineering:material:8>, <ore:gearGold>, <thermalexpansion:capacitor:2>, <ore:gearGold>, <immersiveengineering:material:8>],
     [<ore:plateSignalum>, <ore:blockRedstone>, <ore:dustCryotheum>, <ore:blockRedstone>, <ore:plateSignalum>],
     [null, <ore:plateSignalum>, <immersiveengineering:material:8>, <ore:plateSignalum>, null]])
   .setSecondaryIngredients([<ore:wireGold> * 10, <ore:gearEnergized> * 4, <thermalfoundation:material:515> * 4])
@@ -1978,7 +1978,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null],
     [<ore:plateEnderium>, <ore:dustPyrotheum>, <ore:blockRedstone>, <ore:dustPyrotheum>, <ore:plateEnderium>],
-    [<immersiveengineering:material:9>, <ore:gearLumium>, <thermalexpansion:capacitor:3>.withTag({Energy: 0}), <ore:gearLumium>, <immersiveengineering:material:9>],
+    [<immersiveengineering:material:9>, <ore:gearLumium>, <thermalexpansion:capacitor:3>, <ore:gearLumium>, <immersiveengineering:material:9>],
     [<ore:plateEnderium>, <ore:blockRedstone>, <ore:dustPyrotheum>, <ore:blockRedstone>, <ore:plateEnderium>],
     [null, <ore:plateEnderium>, <immersiveengineering:material:9>, <ore:plateEnderium>, null]])
   .setSecondaryIngredients([<enderio:item_basic_capacitor:2>, <ore:gearDark> * 4, <thermalfoundation:material:515> * 8])
@@ -2021,7 +2021,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSignalum>, null, null, null, <ore:plateSignalum>],
     [<ore:plateSignalum>, <ore:alloyAdvanced>, null, <ore:alloyAdvanced>, <ore:plateSignalum>],
-    [<ore:plateSignalum>, <ore:wireGold>, <thermalinnovation:magnet:2>.withTag({Energy: 0}), <ore:wireGold>, <ore:plateSignalum>],
+    [<ore:plateSignalum>, <ore:wireGold>, <thermalinnovation:magnet:2>, <ore:wireGold>, <ore:plateSignalum>],
     [null, <ore:gearElectrum>, <ore:circuitAdvanced>, <ore:gearElectrum>, null],
     [null, null, <ore:alloyAdvanced>, null, null]])
   .addTool(<ore:artisansDriver>, 50)
@@ -2035,7 +2035,7 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateEnderium>, null, null, null, <ore:plateEnderium>],
     [<ore:plateEnderium>, <ore:alloyElite>, null, <ore:alloyElite>, <ore:plateEnderium>],
-    [<ore:plateEnderium>, <ore:dustPyrotheum>, <thermalinnovation:magnet:3>.withTag({Energy: 0}), <ore:dustPyrotheum>, <ore:plateEnderium>],
+    [<ore:plateEnderium>, <ore:dustPyrotheum>, <thermalinnovation:magnet:3>, <ore:dustPyrotheum>, <ore:plateEnderium>],
     [null, <ore:gearLumium>, <mekanism:controlcircuit:1>, <ore:gearLumium>, null],
     [null, null, <ore:alloyElite>, null, null]])
   .addTool(<ore:artisansDriver>, 75)
@@ -2049,9 +2049,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateSignalum>, null, null],
     [null, <ore:plateSignalum>, <ore:dustAerotheum>, <ore:plateSignalum>, null],
-    [<ore:plateSteel>, <ore:dustAerotheum>, <thermalinnovation:saw:2>.withTag({Energy: 0, Mode: 2}), <ore:dustAerotheum>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:dustAerotheum>, <thermalinnovation:saw:2>, <ore:dustAerotheum>, <ore:plateSteel>],
     [<ore:plateSteel>, <ore:gearSignalum>, <ore:alloyElite>, <ore:gearSignalum>, <ore:plateSteel>],
-    [<techguns:itemshared:60>, <ore:plateSteel>, <thermalexpansion:capacitor:3>.withTag({Energy: 0}), <ore:plateSteel>, <techguns:itemshared:60>]])
+    [<techguns:itemshared:60>, <ore:plateSteel>, <thermalexpansion:capacitor:3>, <ore:plateSteel>, <techguns:itemshared:60>]])
   .setSecondaryIngredients([<ore:gearDiamond> * 4, <ore:gearEmerald> * 4])
   .addTool(<ore:artisansDriver>, 75)
   .addTool(<ore:artisansSpanner>, 75)
@@ -2064,9 +2064,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateEnderium>, null, null],
     [null, <ore:plateEnderium>, <ore:dustPetrotheum>, <ore:plateEnderium>, null],
-    [<ore:plateLumium>, <ore:dustPetrotheum>, <thermalinnovation:saw:3>.withTag({Energy: 0, Mode: 3}), <ore:dustPetrotheum>, <ore:plateLumium>],
+    [<ore:plateLumium>, <ore:dustPetrotheum>, <thermalinnovation:saw:3>, <ore:dustPetrotheum>, <ore:plateLumium>],
     [<ore:plateLumium>, <ore:gearEnderium>, <ore:alloyUltimate>, <ore:gearEnderium>, <ore:plateLumium>],
-    [<techguns:itemshared:133>, <ore:plateLumium>, <thermalexpansion:capacitor:4>.withTag({Energy: 0}), <ore:plateLumium>, <techguns:itemshared:133>]])
+    [<techguns:itemshared:133>, <ore:plateLumium>, <thermalexpansion:capacitor:4>, <ore:plateLumium>, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<ore:gearEnderium> * 6, <ore:gearLumium> * 6])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)
@@ -2079,9 +2079,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateSignalum>, null, null],
     [<ore:plateSteel>, <ore:plateSignalum>, <ore:dustPetrotheum>, <ore:plateSignalum>, <ore:plateSteel>],
-    [<ore:plateSignalum>, <ore:dustPetrotheum>, <thermalinnovation:drill:2>.withTag({Energy: 0, Mode: 2}), <ore:dustPetrotheum>, <ore:plateSignalum>],
+    [<ore:plateSignalum>, <ore:dustPetrotheum>, <thermalinnovation:drill:2>, <ore:dustPetrotheum>, <ore:plateSignalum>],
     [<ore:plateSteel>, <ore:gearSignalum>, <ore:alloyElite>, <ore:gearSignalum>, <ore:plateSteel>],
-    [<techguns:itemshared:60>, <ore:alloyElite>, <thermalexpansion:capacitor:3>.withTag({Energy: 0}), <ore:alloyElite>, <techguns:itemshared:60>]])
+    [<techguns:itemshared:60>, <ore:alloyElite>, <thermalexpansion:capacitor:3>, <ore:alloyElite>, <techguns:itemshared:60>]])
   .setSecondaryIngredients([<ore:gearDiamond> * 4, <ore:gearEmerald> * 4])
   .addTool(<ore:artisansDriver>, 75)
   .addTool(<ore:artisansSpanner>, 75)
@@ -2094,9 +2094,9 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, null, <ore:plateEnderium>, null, null],
     [<ore:plateLumium>, <ore:plateEnderium>, <ore:dustPyrotheum>, <ore:plateEnderium>, <ore:plateLumium>],
-    [<ore:plateEnderium>, <ore:dustPyrotheum>, <thermalinnovation:drill:3>.withTag({Energy: 0, Mode: 3}), <ore:dustPyrotheum>, <ore:plateEnderium>],
+    [<ore:plateEnderium>, <ore:dustPyrotheum>, <thermalinnovation:drill:3>, <ore:dustPyrotheum>, <ore:plateEnderium>],
     [<ore:plateLumium>, <ore:gearEnderium>, <ore:alloyUltimate>, <ore:gearEnderium>, <ore:plateLumium>],
-    [<techguns:itemshared:133>, <ore:alloyUltimate>, <thermalexpansion:capacitor:4>.withTag({Energy: 0}), <ore:alloyUltimate>, <techguns:itemshared:133>]])
+    [<techguns:itemshared:133>, <ore:alloyUltimate>, <thermalexpansion:capacitor:4>, <ore:alloyUltimate>, <techguns:itemshared:133>]])
   .setSecondaryIngredients([<ore:gearEnderium> * 6, <ore:gearLumium> * 6])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)
