@@ -47,7 +47,7 @@ mods.botania.RuneAltar.addRecipe(<botania:magnetring>.withTag({}),[<botania:lens
 mods.botania.RuneAltar.addRecipe(<botania:waterring>.withTag({}),[<ore:runeWaterB>, <botania:manaresource>, <minecraft:fish:3>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <minecraft:fish:1>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:miningring");// Удаление кольца шахтера
-mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:manaresource>, <minecraft:golden_pickaxe>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:manaresource>, <minecraft:gold_block>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:divacharm");// Удаление шарма дивы
 mods.botania.RuneAltar.addRecipe(<botania:divacharm>.withTag({}),[<botania:manaresource:14>, <botania:storage>, <botania:tinyplanet>, <botania:manaresource:14>, <ore:runePrideB>, <ore:blockGold>, <ore:runeManaB>, <botania:storage>, <botania:manaresource:14>], 250000);
