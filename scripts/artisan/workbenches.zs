@@ -213,7 +213,7 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 3, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 0, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "unnatural", color: -9671572, level: 1}, {identifier: "enderference", color: -9671572, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["unnatural", "enderference", "toolleveling"]}), <enderio:block_dark_steel_anvil>, <artisanworktables:artisans_pliers_diamond>],
+    [<tconstruct:hammer>.withTag({TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"]}}), <enderio:block_dark_steel_anvil>, <artisanworktables:artisans_pliers_diamond>],
     [<embers:catalyzer>, <artisanworktables:workstation:3>, <embers:alchemy_tablet>],
     [<embers:reactor>, <embers:inferno_forge>, <embers:reactor>]])
   .setSecondaryIngredients([<immersiveengineering:graphite_electrode> * 8, <immersiveengineering:graphite_electrode> * 8, <mekanism:basicblock2:5> * 10, <mekanism:basicblock2:6> * 5, <ore:gearConstantan> * 32, <enderio:item_power_conduit:1> * 32, <immersiveengineering:metal_decoration0:5> * 10, <mekanism:machineblock3:6>, <mekanism:machineblock3:4>.withTag({mekData: {}})])
@@ -225,7 +225,7 @@ RecipeBuilder.get("blacksmith")
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<embers:auto_hammer>, <embers:dawnstone_anvil>, <embers:ember_activator>],
-    [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.3025 as float, FreeModifiers: 3, Durability: 2, HarvestLevel: 4, Attack: 3.15 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.3025 as float, FreeModifiers: 0, Durability: 2, HarvestLevel: 4, Attack: 3.15 as float}, Special: {Categories: ["harvest", "weapon", "tool", "aoe"]}, TinkerData: {Materials: ["obsidian", "obsidian", "obsidian", "obsidian"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "duritos", color: -10478396, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["duritos", "toolleveling"]}), <artisanworktables:worktable:3>, <embers:alchemy_tablet>],
+    [<tconstruct:hammer>.withTag({TinkerData: {Materials: ["obsidian", "obsidian", "obsidian", "obsidian"]}}), <artisanworktables:worktable:3>, <embers:alchemy_tablet>],
     [<tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}}), <pyrotech:wither_forge>, <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}})]])
   .addTool(<ore:artisansFramingHammer>, 600)
   .addOutput(<artisanworktables:workstation:3>)
@@ -233,7 +233,7 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 3, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 0, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "unnatural", color: -9671572, level: 1}, {identifier: "enderference", color: -9671572, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["unnatural", "enderference", "toolleveling"]}), <thaumadditions:void_anvil>, <artisanworktables:artisans_pliers_diamond>],
+    [<tconstruct:hammer>.withTag({TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"]}}), <thaumadditions:void_anvil>, <artisanworktables:artisans_pliers_diamond>],
     [<embers:catalyzer>, <artisanworktables:workstation:3>, <embers:alchemy_tablet>],
     [<embers:reactor>, <embers:inferno_forge>, <embers:reactor>]])
   .setSecondaryIngredients([<thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "ignis"}]}), <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "metallum"}]}), <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "praemunio"}]}), <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "aversio"}]}), <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "instrumentum"}]}), <thaumcraft:smelter_thaumium>, <botania:specialflower>.withTag({type: "thermalily"}) * 32, <botania:spreader:2> * 16, <astralsorcery:itemcraftingcomponent:4> * 16])
@@ -396,8 +396,8 @@ RecipeBuilder.get("basic")
 
 RecipeBuilder.get("basic")
   .setShaped([
-    [<thermalinnovation:magnet:2>.withTag({Energy: 0}), <immersiveengineering:connector:7>, <tconstruct:hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 3, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.25 as float, FreeModifiers: 0, Durability: 1212, HarvestLevel: 4, Attack: 4.5 as float}, Special: {Categories: ["aoe", "tool", "harvest", "weapon"]}, TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "unnatural", color: -9671572, level: 1}, {identifier: "enderference", color: -9671572, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["unnatural", "enderference", "toolleveling"]})],
-    [<thermalinnovation:saw:2>.withTag({Energy: 0, Mode: 2}), <artisanworktables:workstation:5>, <thermalinnovation:drill:2>.withTag({Energy: 0, Mode: 2})],
+    [<thermalinnovation:magnet:2>.withTag({Energy: 0}), <immersiveengineering:connector:7>, <tconstruct:hammer>.withTag({TinkerData: {Materials: ["dark_steel", "dark_steel", "dark_steel", "dark_steel"]}})],
+    [<thermalinnovation:saw:2>, <artisanworktables:workstation:5>, <thermalinnovation:drill:2>],
     [<techguns:basicmachine:1>, <immersiveengineering:toolbox>, <techguns:simplemachine:9>]])
   .setSecondaryIngredients([<artisanworktables:artisans_file_iron>, <artisanworktables:artisans_driver_iron>, <artisanworktables:artisans_spanner_iron>, <artisanworktables:artisans_burner_iron>, <artisanworktables:artisans_carver_iron>, <artisanworktables:artisans_solderer_iron>])
   .addTool(<ore:artisansFramingHammer>, 100)
