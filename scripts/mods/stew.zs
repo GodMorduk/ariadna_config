@@ -598,19 +598,19 @@ Carving.addVariation("plasteel", <stewblocks:plasteel_cell_ocherus>);
 Carving.addVariation("railing_glass", <stewblocks:railing_glass>);
 Carving.addVariation("railing_glass", <stewblocks:plasteel_window>);
 
-Carving.addVariation("factory", <stewblocks:metal_rough_ornament>);
-Carving.addVariation("factory", <stewblocks:metal_rough_piston>);
-Carving.addVariation("factory", <stewblocks:metal_rough_plate_protective>);
-Carving.addVariation("factory", <stewblocks:metal_rough_ventilation_tube>);
-Carving.addVariation("factory", <stewblocks:metal_rough_plate_double>);
-Carving.addVariation("factory", <stewblocks:metal_rough_tank>);
-Carving.addVariation("factory", <stewblocks:metal_rough_tile_small>);
-Carving.addVariation("factory", <stewblocks:metal_oxidized_riveted_01>);
-Carving.addVariation("factory", <stewblocks:metal_oxidized_riveted_02>);
-Carving.addVariation("factory", <stewblocks:old_metal_rivet_02>);
-Carving.addVariation("factory", <stewblocks:old_metal_scaffolding_ocher>);
-Carving.addVariation("factory", <stewblocks:old_metal_flor_scarlet>);
-Carving.addVariation("factory", <stewblocks:old_metal_rivet_01>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_ornament>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_piston>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_plate_protective>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_ventilation_tube>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_plate_double>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_tank>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_tile_small>);
+Carving.addVariation("metal_block", <stewblocks:metal_oxidized_riveted_01>);
+Carving.addVariation("metal_block", <stewblocks:metal_oxidized_riveted_02>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_rivet_02>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_scaffolding_ocher>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_flor_scarlet>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_rivet_01>);
 
 Carving.addVariation("brick_plastered_window", <stewblocks:brick_plastered_window_blue>);
 Carving.addVariation("brick_plastered_window", <stewblocks:brick_plastered_window_orange>);
@@ -799,6 +799,42 @@ RecipeBuilder.get("basic")
     [<ore:plateIron>, <ore:blockSheetmetalIron>, <ore:plateIron>]])
   .addTool(<ore:artisansFramingHammer>, 5)
   .addOutput(<chisel:factory> * 24)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 32)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 28)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 26)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 24)
   .create();
 
 RecipeBuilder.get("mason")
