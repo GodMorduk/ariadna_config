@@ -239,6 +239,16 @@ Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_05>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_06>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_dark>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin>);
+Carving.addVariation("sandstoneyellow", <stewblocks:polychrome_capital_corinthian>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_cornice>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_dorian_base>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_polished>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_brick>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_blue>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_gold>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_red>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_dorian>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_inscribed>);
 
 Carving.addVariation("railing_wood", <stewblocks:railing_wooden_baluster>);
 Carving.addVariation("railing_wood", <stewblocks:railing_reed>);
