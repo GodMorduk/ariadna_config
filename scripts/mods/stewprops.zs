@@ -240,7 +240,7 @@ RecipeBuilder.get("basic")
   .setShaped([
     [null, <ore:plankWood>, <ore:stickWood>],
     [<ore:plankWood>, <ore:wireCopper>, <ore:plankWood>],
-    [<ore:plankWood>, <ore:plankWood>, null]])
+    [<ore:slabWood>, <ore:plankWood>, null]])
   .addTool(<ore:artisansHandsaw>, 5)
   .addOutput(<stewitems:violin>)
   .create();

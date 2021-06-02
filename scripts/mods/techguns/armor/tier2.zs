@@ -219,7 +219,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<thermalexpansion:frame:64>, <techguns:itemshared:45>, <thermalexpansion:frame:64>],
-    [<thermalexpansion:reservoir:2>.withTag({}), <techguns:hazmat_chestplate>, <thermalexpansion:reservoir:2>.withTag({})],
+    [<thermalexpansion:reservoir:2>, <techguns:hazmat_chestplate>, <thermalexpansion:reservoir:2>],
     [<techguns:itemshared:72>, <techguns:itemshared:45>, <techguns:itemshared:72>]])
   .setSecondaryIngredients([<techguns:itemshared:45> * 15, <thermaldynamics:duct_16:5> * 10, <thermalexpansion:augment:576> * 2, <thermalexpansion:augment:673> * 2, <thermalexpansion:augment:672> * 4, <thermalexpansion:augment:400> * 4, <thermalexpansion:augment:128> * 2])
   .addTool(<ore:artisansSolderer>, 150)

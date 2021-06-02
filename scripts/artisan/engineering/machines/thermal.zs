@@ -190,7 +190,7 @@ recipes.removeByRecipeName("thermalexpansion:reservoir");
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <thermalfoundation:material:512>, null],
-    [<ore:plateCopper>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateCopper>],
+    [<ore:plateCopper>, <thermalexpansion:tank>, <ore:plateCopper>],
     [null, <ore:plateTin>, null]])
   .addTool(<ore:artisansDriver>, 25)
   .addOutput(<thermalexpansion:reservoir>)
