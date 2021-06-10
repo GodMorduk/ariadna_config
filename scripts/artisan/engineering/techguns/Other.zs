@@ -279,7 +279,7 @@ recipes.removeByRecipeName("techguns:itemshared_122_powerhammerhead_carbon");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateCarbon>, null, null],
-    [<ore:plateCarbon>, <techguns:itemshared:122>, <ore:blockDarkSteel>],
+    [<ore:plateCarbon>, <techguns:itemshared:121>, <ore:blockDarkSteel>],
     [<ore:plateCarbon>, null, null]])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)

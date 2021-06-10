@@ -239,6 +239,16 @@ Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_05>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_06>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin_dark>);
 Carving.addVariation("sandstoneyellow", <stewblocks:wall_sindarin>);
+Carving.addVariation("sandstoneyellow", <stewblocks:polychrome_capital_corinthian>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_cornice>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_dorian_base>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_polished>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_brick>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_blue>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_gold>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_red>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_pillar_dorian>);
+Carving.addVariation("sandstoneyellow", <stewblocks:sandstone_inscribed>);
 
 Carving.addVariation("railing_wood", <stewblocks:railing_wooden_baluster>);
 Carving.addVariation("railing_wood", <stewblocks:railing_reed>);
@@ -296,6 +306,7 @@ Carving.addVariation("railing_water", <stewblocks:effect_water_flowing>);
 Carving.addVariation("metal_barrel", <immersiveengineering:metal_device0:4>);
 Carving.addVariation("metal_barrel", <stewblocks:object_toxic_waste>);
 Carving.addVariation("metal_barrel", <stewblocks:object_barrel_green>);
+Carving.addVariation("metal_barrel", <stewblocks:metal_rusty_barrel>);
 
 Carving.addVariation("vase", <stewblocks:object_porcelain_vase>);
 Carving.addVariation("vase", <stewblocks:object_vase>);
@@ -588,19 +599,27 @@ Carving.addVariation("plasteel", <stewblocks:plasteel_cell_ocherus>);
 Carving.addVariation("railing_glass", <stewblocks:railing_glass>);
 Carving.addVariation("railing_glass", <stewblocks:plasteel_window>);
 
-Carving.addVariation("factory", <stewblocks:metal_rough_ornament>);
-Carving.addVariation("factory", <stewblocks:metal_rough_piston>);
-Carving.addVariation("factory", <stewblocks:metal_rough_plate_protective>);
-Carving.addVariation("factory", <stewblocks:metal_rough_ventilation_tube>);
-Carving.addVariation("factory", <stewblocks:metal_rough_plate_double>);
-Carving.addVariation("factory", <stewblocks:metal_rough_tank>);
-Carving.addVariation("factory", <stewblocks:metal_rough_tile_small>);
-Carving.addVariation("factory", <stewblocks:metal_oxidized_riveted_01>);
-Carving.addVariation("factory", <stewblocks:metal_oxidized_riveted_02>);
-Carving.addVariation("factory", <stewblocks:old_metal_rivet_02>);
-Carving.addVariation("factory", <stewblocks:old_metal_scaffolding_ocher>);
-Carving.addVariation("factory", <stewblocks:old_metal_flor_scarlet>);
-Carving.addVariation("factory", <stewblocks:old_metal_rivet_01>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_ornament>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_piston>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_plate_protective>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_ventilation_tube>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_plate_double>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_tank>);
+Carving.addVariation("metal_block", <stewblocks:metal_rough_tile_small>);
+Carving.addVariation("metal_block", <stewblocks:metal_oxidized_riveted_01>);
+Carving.addVariation("metal_block", <stewblocks:metal_oxidized_riveted_02>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_rivet_02>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_scaffolding_ocher>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_flor_scarlet>);
+Carving.addVariation("metal_block", <stewblocks:old_metal_rivet_01>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_beam>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_cladding>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_riveted_metal>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_tile>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_pipe_pillar>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_round_grate>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_tubing>);
+Carving.addVariation("metal_block", <stewblocks:metal_rusty_scaffolding>);
 
 Carving.addVariation("brick_plastered_window", <stewblocks:brick_plastered_window_blue>);
 Carving.addVariation("brick_plastered_window", <stewblocks:brick_plastered_window_orange>);
@@ -675,13 +694,43 @@ Carving.addVariation("brick_stone_window", <stewblocks:wallgap_stonebrick_arch>)
 
 Carving.addVariation("stonebrick", <rustic:stone_pillar>);
 
-//Carving.addVariation("factory", <stewblocks:scrap_hardware_core>);
-//Carving.addVariation("factory", <stewblocks:scrap_hardware_battery>);
-//Carving.addVariation("factory", <stewblocks:scrap_hardware_clono>);
-//Carving.addVariation("factory", <stewblocks:scrap_hardware_processor>);
-//Carving.addVariation("factory", <stewblocks:scrap_hardware_coil>);
-//Carving.addVariation("factory", <stewblocks:scrap_wires>);
-//Carving.addVariation("factory", <stewblocks:scrap_accelerator_base>);
+Carving.addVariation("hardware", <stewblocks:scrap_generator>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_control_panel_big>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_control_panel_blue>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_control_panel_green>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_control_panel_lime>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_control_panel_red>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_counter>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_electrical_panel>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_energy_relay>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_geiger_counter>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_holoproectop>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_blue>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_blue_small>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_green>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitors_round>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_phone>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_system_unit>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_selector>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_serwer>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_sheath>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_speaker>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_switches>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_tape_computer>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_tv>);
+Carving.addVariation("hardware", <stewblocks:scrap_mechanism_part>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_security_camera>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_observer>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_hazard>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_planner>);
+Carving.addVariation("hardware", <stewblocks:scrap_oven>);
+Carving.addVariation("hardware", <stewblocks:scrap_spotlight>);
+Carving.addVariation("hardware", <stewblocks:scrap_hardware_chip>);
+
+Carving.addVariation("blood", <stewblocks:effect_blood_splashes>);
+Carving.addVariation("blood", <stewblocks:effect_blood_footprints>);
+Carving.addVariation("blood", <stewblocks:effect_blood_trail>);
+Carving.addVariation("blood", <stewblocks:effect_blood_trail_turn>);
 
 var ingotBrick = <ore:ingotBrick>;
 ingotBrick.add(<tconstruct:materials:2>);
@@ -789,6 +838,42 @@ RecipeBuilder.get("basic")
     [<ore:plateIron>, <ore:blockSheetmetalIron>, <ore:plateIron>]])
   .addTool(<ore:artisansFramingHammer>, 5)
   .addOutput(<chisel:factory> * 24)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 32)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 28)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 26)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:blockSheetmetalIron>, <ore:plateIron>, <ore:blockSheetmetalIron>]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewblocks:metal_rough_plate_double> * 24)
   .create();
 
 RecipeBuilder.get("mason")
@@ -1675,6 +1760,55 @@ RecipeBuilder.get("mason")
   .addTool(<ore:artisansTrowel>, 5)
   .addOutput(<stewblocks:wallgap_stonebrick_rhombus> * 4)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:itemConduitBinder>, <ore:plateIron>, <ore:itemConduitBinder>],
+    [<ore:plateIron>, <techguns:itemshared:57>, <ore:plateIron>],
+    [<ore:itemConduitBinder>, <ore:plateIron>, <ore:itemConduitBinder>]])
+  .addTool(<ore:artisansDriver>, 5)
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<stewblocks:scrap_generator> * 4)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:plankWood>, null],
+    [<ore:plankWood>, <ore:dustSilver> | <ore:quicksilver>, <ore:plankWood>],
+    [null, <ore:paneGlass>, null]])
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addTool(<ore:artisansGemCutter>, 5)
+  .addOutput(<stewblocks:furniture_mirror_wooden>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:stained_hardened_clay>, null, null],
+    [<minecraft:stained_hardened_clay>, <minecraft:stained_hardened_clay>, <minecraft:stained_hardened_clay>],
+    [<immersiveengineering:metal_device1:6> | <embers:pipe> | <enderio:item_liquid_conduit>, <minecraft:stained_hardened_clay>, null]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewblocks:furniture_toilet>)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:hardenedClay>, <immersiveengineering:metal_device1:6> | <embers:pipe> | <enderio:item_liquid_conduit>, <ore:hardenedClay>],
+    [<ore:hardenedClay>, <ore:hardenedClay>, <ore:hardenedClay>],
+    [null, <ore:hardenedClay>, null]])
+  .addTool(<ore:artisansSpanner>, 5)
+  .addTool(<ore:artisansFramingHammer>, 5)
+  .addOutput(<stewblocks:furniture_sink>)
+  .create();
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:stickWood>, <ore:plankWood>]])
+  .addTool(<ore:artisansKnife>, 5)
+  .addOutput(<stewblocks:furniture_wooden_tankard>)
+  .create();
+
+recipes.addShapeless(<stewblocks:effect_blood_splashes> * 4, [<tconstruct:edible:3>]);
 
 // Refactoring crafts
 

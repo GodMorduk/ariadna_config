@@ -1,7 +1,68 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
-recipes.removeByMod("metallurgy");
+var materials = [
+  "amordrine",
+  "haderoth",
+  "platinum",
+  "vulcanite",
+  "ignatius",
+  "etherium",
+  "quicksilver",
+  "brass",
+  "astral_silver",
+  "hepatizon",
+  "bronze",
+  "sanguinite",
+  "eximite",
+  "silver",
+  "desichalkos",
+  "celenegil",
+  "steel",
+  "shadow_iron",
+  "mithril",
+  "carmot",
+  "ceruclase",
+  "deep_iron",
+  "angmallen",
+  "kalendrite",
+  "damascus_steel",
+  "prometheum",
+  "copper",
+  "adamantine",
+  "electrum",
+  "tartarite",
+  "atlarus",
+  "black_steel",
+  "vyroxeres",
+  "lutetium",
+  "osmium",
+  "oureclase",
+  "inolashite",
+  "orichalcum",
+  "shadow_steel",
+  "midasium",
+  "krik"
+] as string[];
 
+for material in materials {
+  recipes.removeByRecipeName("metallurgy:generated/item/tool/sword_" + material);
+  recipes.removeByRecipeName("metallurgy:generated/item/armor/helmet_" + material);
+  recipes.removeByRecipeName("metallurgy:generated/item/armor/leggings_" + material);
+  recipes.removeByRecipeName("metallurgy:generated/item/armor/chestplate_" + material);
+  recipes.removeByRecipeName("metallurgy:generated/item/armor/boots_" + material);
+}
+
+recipes.removeByRecipeName("metallurgy:gadget/rubracium_gauntlet");
+recipes.removeByRecipeName("metallurgy:gadget/electrum_magnet");
+recipes.removeByRecipeName("metallurgy:gadget/brass_knuckles");
+recipes.removeByRecipeName("metallurgy:gadget/lemurite_shield");
+recipes.removeByRecipeName("metallurgy:gadget/zinc_buckler");
+recipes.removeByRecipeName("metallurgy:gadget/vulcanite_buckler");
+recipes.removeByRecipeName("metallurgy:gadget/ceruclase_shield");
+recipes.removeByRecipeName("metallurgy:gadget/orichalcum_buckler");
+recipes.removeByRecipeName("metallurgy:gadget/wiki");
+
+recipes.removeByRecipeName("metallurgy:gadget/thermite_dust");
 RecipeBuilder.get("chemist")
   .setShaped([
     [<metallurgy:potash>, <metallurgy:potash>, <metallurgy:potash>],
@@ -14,6 +75,7 @@ RecipeBuilder.get("chemist")
   .setExtraOutputThree(<thermalfoundation:material:771>, 0.05)
   .create();
 
+recipes.removeByRecipeName("metallurgy:block/road");
 RecipeBuilder.get("basic")
   .setShaped([
     [<metallurgy:bitumen>, <metallurgy:bitumen>, <metallurgy:bitumen>],
@@ -22,7 +84,8 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansSifter>, 5)
   .addOutput(<metallurgy:road_block> * 16)
   .create();
-  
+
+recipes.removeByRecipeName("metallurgy:block/striped_road");
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:dustBitumen>, <ore:dyeWhite>, <ore:dustBitumen>],
@@ -31,16 +94,8 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansSifter>, 5)
   .addOutput(<metallurgy:striped_road_block> * 16)
   .create();
-  
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<ore:dustBitumen>, <ore:dustBitumen>],
-    [<ore:dustBitumen>, <ore:dustBitumen>]])
-  .addTool(<ore:artisansSifter>, 5)
-  .addOutput(<metallurgy:bitumen_block>)
-  .create();
-  
-  
+
+recipes.removeByRecipeName("metallurgy:block/sublimation_chamber");
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:ingotMithril>, null, null, null, <ore:ingotMithril>],
@@ -55,6 +110,7 @@ RecipeBuilder.get("basic")
   .addOutput(<metallurgy:sublimation_chamber>)
   .create();
   
+recipes.removeByRecipeName("metallurgy:block/crusher");
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:ingotOureclase>, <ore:blockOureclase>, <ore:ingotOureclase>],
@@ -65,7 +121,8 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansSpanner>, 250)
   .addOutput(<metallurgy:crusher>)
   .create();
-  
+
+recipes.removeByRecipeName("metallurgy:block/alloyer");
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:ingotAtlarus>, <ore:blockAtlarus>, <ore:ingotAtlarus>],
@@ -76,7 +133,8 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansSpanner>, 250)
   .addOutput(<metallurgy:alloyer>)
   .create();
-  
+
+recipes.removeByRecipeName("metallurgy:gadget/phosphorus_lamp");
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:blockGlassHardened>, <ore:blockIron>, <ore:blockGlassHardened>],
@@ -89,7 +147,8 @@ RecipeBuilder.get("basic")
   .setExtraOutputOne(<minecraft:glowstone_dust>, 0.1)
   .setExtraOutputTwo(<metallurgy:phosphorus>, 0.1)
   .create();
-  
+
+recipes.removeByRecipeName("metallurgy:gadget/flint_and_vulcanite");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<metallurgy:vulcanite_ingot>, <metallurgy:vulcanite_ingot>],
@@ -99,6 +158,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<metallurgy:flint_and_vulcanite>)
   .create();
   
+recipes.removeByRecipeName("metallurgy:gadget/flint_and_ignatius");
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<metallurgy:ignatius_ingot>, <metallurgy:ignatius_ingot>],
@@ -107,7 +167,8 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 5)
   .addOutput(<metallurgy:flint_and_ignatius>)
   .create();
-  
+
+recipes.removeByRecipeName("metallurgy:gadget/ore_detector");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotBronze>, <ore:ingotAngmallen>, null],
@@ -116,4 +177,14 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
   .addOutput(<metallurgy:ore_detector>)
+  .create();
+
+recipes.removeByRecipeName("metallurgy:block/scaffolding");
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:ingotTin>, <ore:ingotIron>, <ore:ingotTin>],
+    [<ore:ingotIron>, null, <ore:ingotIron>],
+    [<ore:ingotTin>, <ore:ingotIron>, <ore:ingotTin>]])
+  .addTool(<ore:artisansHammer>, 5)
+  .addOutput(<metallurgy:bimetal_structure_block>)
   .create();
