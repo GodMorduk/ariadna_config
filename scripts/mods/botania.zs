@@ -131,7 +131,7 @@ mods.botania.RuneAltar.addRecipe(<botania:holycloak>.withTag({}),[<ore:wool>, <o
 mods.botania.RuneAltar.addRecipe(<botania:balancecloak>,[<ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:gemEmerald>, <ore:ingotGaiasteel>, <ore:gemEmerald>, <extrabotany:material:1>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_walkingcane");// Удаление трости для ходьбы
-mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<ore:livingrock>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <ore:livingrock>, <ore:runeManaB>, <ore:dreamwoodTwig>], 250000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<botania:livingrock:1>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <botania:livingrock:1>, <ore:runeManaB>, <ore:dreamwoodTwig>], 250000);
  
   recipes.removeByRecipeName("botanicadds:ring_aura_gaia");// Удаление кольца ауры Гайи
 mods.botania.RuneAltar.addRecipe(<botanicadds:ring_aura_gaia>,[<botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <ore:runeEnvyB>, <botania:auraringgreater>, <ore:runeEnvyB>, <ore:runeEnvyB>], 250000);
@@ -143,7 +143,7 @@ mods.botania.RuneAltar.addRecipe(<botanicadds:terra_protector>,[<ore:blockGaiast
 mods.botania.RuneAltar.addRecipe(<botania:goddesscharm>.withTag({}),[<ore:petalPink>, <extrabotany:material:10>, <ore:petalPink>, <ore:runeManaB>, <ore:petalPink>, <ore:runeManaB>, <ore:runeWaterB>, <botania:storage:3>, <ore:runeSpringB>], 250000);
 
   recipes.removeByRecipeName("botania:manamirror");// Удаление зеркала маны
-mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <ore:livingrock>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <botania:livingrock:1>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 250000);
 
   recipes.removeByRecipeName("botania:craftinghalo");// Удаление сборачного гало
 mods.botania.RuneAltar.addRecipe(<botania:craftinghalo>.withTag({}),[<botania:tinyplanet>, <botania:storage>, <ore:workbench>, <botania:storage>, <botania:storage>], 10000);
