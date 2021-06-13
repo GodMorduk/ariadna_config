@@ -183,7 +183,7 @@ RecipeBuilder.get("engineer")
     [<ore:blockGlass>, null, <ore:blockGlass>],
     [<ore:plateCopper>, <thermalfoundation:material:512>, <ore:plateCopper>]])
   .addTool(<ore:artisansSpanner>, 25)
-  .addOutput(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}))
+  .addOutput(<thermalexpansion:tank>)
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:reservoir");
@@ -771,7 +771,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:machine_8");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:tank>.withTag({Level: 0 as byte}), null],
+    [null, <thermalexpansion:tank>, null],
     [<immersiveengineering:material:8>, <thermalexpansion:frame>, <immersiveengineering:material:8>],
     [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]])
   .setSecondaryIngredients([<ore:plateAluminum> * 10])
@@ -856,7 +856,7 @@ recipes.removeByRecipeName("thermalexpansion:machine_7");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:material:8>, <ore:gearNickel>, <immersiveengineering:material:8>],
-    [<thermalexpansion:tank>.withTag({Level: 0 as byte}), <thermalexpansion:frame>, <thermalexpansion:tank>.withTag({Level: 0 as byte})],
+    [<thermalexpansion:tank>, <thermalexpansion:frame>, <thermalexpansion:tank>],
     [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]])
   .setSecondaryIngredients([<ore:plateAluminum> * 10])
   .addTool(<ore:artisansDriver>, 50)
@@ -879,7 +879,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_6");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:plateInvar>, <thermalexpansion:tank>.withTag({Level: 0 as byte}), <ore:plateInvar>],
+    [<ore:plateInvar>, <thermalexpansion:tank>, <ore:plateInvar>],
     [<immersiveengineering:material:8>, <thermalexpansion:frame:64>, <immersiveengineering:material:8>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])
@@ -927,7 +927,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_3");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:tank>.withTag({Level: 0 as byte}), null],
+    [null, <thermalexpansion:tank>, null],
     [<immersiveengineering:material:8>, <thermalexpansion:frame:64>, <immersiveengineering:material:8>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])
