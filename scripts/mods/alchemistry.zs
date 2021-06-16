@@ -1,5 +1,12 @@
 import mods.alchemistry.Dissolver;
 
+mods.alchemistry.Combiner.removeRecipe(<minecraft:nether_star>);
+
+mods.alchemistry.Combiner.addRecipe(<minecraft:nether_star>,
+    [<alchemistry:element:71>*64,<alchemistry:element:111>*64,<alchemistry:element:22>*64,
+     <alchemistry:element:94>*64,<alchemistry:element:86>*64,<alchemistry:element:94>*64,
+     <alchemistry:element:66>*64,<alchemistry:element:111>*64,<alchemistry:element:101>*64,]);
+
 Dissolver.removeRecipe(<ore:dyeBlack>);
 
 Dissolver.addRecipe(<ore:dustCoal>, false, 1,
