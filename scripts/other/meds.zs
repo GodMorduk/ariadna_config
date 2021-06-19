@@ -83,7 +83,7 @@ RecipeBuilder.get("chemist")
     [<stewitems:rubbing_alcohol>, <stewprops:paste_herbal>, <stewitems:rubbing_alcohol>],
     [<ore:materialCloth>, <ore:materialCloth>, <ore:materialCloth>]])
   .addTool(<ore:artisansNeedle>, 15)
-  .addOutput(<stewitems:medicine_bandage_1> * 4)
+  .addOutput(<stewitems:medicine_bandage_1> * 2)
   .create();
 
 <ore:healPlant>.add(<rustic:cohosh>);
