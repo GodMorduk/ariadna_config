@@ -5,7 +5,17 @@ mods.alchemistry.Combiner.removeRecipe(<minecraft:nether_star>);
 mods.alchemistry.Combiner.addRecipe(<minecraft:nether_star>,
     [<alchemistry:element:71>*64,<alchemistry:element:111>*64,<alchemistry:element:22>*64,
      <alchemistry:element:94>*64,<alchemistry:element:86>*64,<alchemistry:element:94>*64,
-     <alchemistry:element:66>*64,<alchemistry:element:111>*64,<alchemistry:element:101>*64,]);
+     <alchemistry:element:66>*64,<alchemistry:element:111>*64,<alchemistry:element:101>*64]);
+
+mods.alchemistry.Combiner.removeRecipe(<minecraft:prismarine_shard>);
+
+mods.alchemistry.Combiner.addRecipe(<minecraft:prismarine_shard>,
+    [<alchemistry:compound:18> * 2,<alchemistry:compound:23> * 1,null]);
+
+Dissolver.removeRecipe(<minecraft:prismarine_shard>);
+
+Dissolver.addRecipe(<minecraft:prismarine_shard>, false, 1,
+[[100, <alchemistry:compound:18> * 2,<alchemistry:compound:23> * 1]]);
 
 Dissolver.removeRecipe(<ore:dyeBlack>);
 
