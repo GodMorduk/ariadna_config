@@ -120,8 +120,20 @@ Carving.addVariation("chair_wooden", <stewblocks:stool_light_brown>);
 Carving.addVariation("chair_wooden", <stewblocks:stool_ocher>);
 Carving.addVariation("chair_wooden", <stewblocks:stool_purple>);
 Carving.addVariation("chair_wooden", <stewblocks:stool_wood>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_wooden_stool>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_darkbrown_sofa>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_darkred_sofa>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_darkblue_sofa>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_white_sofa>);
+Carving.addVariation("chair_wooden", <stewblocks:furniture_black_wooden_stool>);
 
 Carving.addVariation("table_wooden", <stewblocks:table_wooden>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_wooden_table>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_blue_cloth_table>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_red_cloth_table>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_white_cloth_table>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_darkblue_cloth_table>);
+Carving.addVariation("table_wooden", <stewblocks:furniture_garden_wooden_table>);
 
 Carving.addVariation("table_metal", <stewblocks:table_bronze>);
 Carving.addVariation("table_metal", <stewblocks:table_iron_ornament>);
@@ -184,6 +196,13 @@ Carving.addVariation("bookshelf", <stewblocks:locker_wooden_glass>);
 Carving.addVariation("bookshelf", <stewblocks:locker_wooden_grid>);
 Carving.addVariation("bookshelf", <stewblocks:locker_wooden_rich>);
 Carving.addVariation("bookshelf", <stewblocks:locker_wooden_rustic>);
+Carving.addVariation("bookshelf", <stewblocks:furniture_cabinet_wooden_01>);
+Carving.addVariation("bookshelf", <stewblocks:furniture_cabinet_wooden_02>);
+Carving.addVariation("bookshelf", <stewblocks:furniture_cabinet_wooden_03>);
+Carving.addVariation("bookshelf", <stewblocks:furniture_white_luggage>);
+
+Carving.addVariation("basket", <stewblocks:box_wicker>);
+Carving.addVariation("basket", <stewblocks:furniture_wooden_basket>);
 
 Carving.addVariation("metal_shelf", <stewblocks:locker_file>);
 Carving.addVariation("metal_shelf", <stewblocks:locker_iron>);
@@ -332,6 +351,7 @@ Carving.addVariation("brass_object", <stewblocks:object_sextant>);
 Carving.addVariation("bottle", <stewblocks:object_bottle>);
 Carving.addVariation("bottle", <stewblocks:object_bottle_broken>);
 Carving.addVariation("bottle", <stewblocks:object_bottle_colored>);
+Carving.addVariation("bottle", <stewblocks:furniture_food_beer>);
 
 Carving.addVariation("chain", <futuremc:chain>);
 Carving.addVariation("chain", <stewblocks:object_chain_fancy>);
@@ -349,6 +369,8 @@ Carving.addVariation("lantern", <stewblocks:object_lamp_02>);
 Carving.addVariation("lantern", <stewblocks:object_lamp_03>);
 Carving.addVariation("lantern", <stewblocks:object_lamp_04>);
 Carving.addVariation("lantern", <stewblocks:object_paperlamp>);
+Carving.addVariation("lantern", <stewblocks:furniture_brown_wooden_tablelamp>);
+Carving.addVariation("lantern", <stewblocks:furniture_white_starlamp>);
 
 Carving.addVariation("nostradamus", <stewblocks:object_nostradamus_01>);
 Carving.addVariation("nostradamus", <stewblocks:object_nostradamus_02>);
@@ -356,6 +378,7 @@ Carving.addVariation("nostradamus", <stewblocks:object_nostradamus_02>);
 Carving.addVariation("pan", <stewblocks:object_pan_01>);
 Carving.addVariation("pan", <stewblocks:object_pan_02>);
 Carving.addVariation("pan", <stewblocks:object_pan_03>);
+Carving.addVariation("pan", <stewblocks:furniture_silver_kettle>);
 
 Carving.addVariation("vine", <minecraft:vine>);
 Carving.addVariation("vine", <stewblocks:object_vine>);
@@ -379,15 +402,20 @@ Carving.addVariation("paper_object", <stewblocks:object_flat_star_chart_3x3>);
 Carving.addVariation("paper_object", <stewblocks:object_flat_star_chart_2x2>);
 Carving.addVariation("paper_object", <stewblocks:pile_books>);
 Carving.addVariation("paper_object", <stewblocks:furniture_books>);
+Carving.addVariation("paper_object", <stewblocks:furniture_hanging_photo>);
 
 Carving.addVariation("game_object", <stewblocks:object_flat_cards>);
 Carving.addVariation("game_object", <stewblocks:object_flat_chessboard>);
 
 Carving.addVariation("cloth_object", <stewblocks:object_flat_flags>);
 Carving.addVariation("cloth_object", <stewblocks:object_flat_cloth_02>);
+Carving.addVariation("cloth_object", <stewblocks:furniture_hanging_clothes>);
 
 Carving.addVariation("plate_object", <stewblocks:object_flat_ashtray>);
 Carving.addVariation("plate_object", <stewblocks:object_flat_food>);
+Carving.addVariation("plate_object", <stewblocks:object_flat_food>);
+Carving.addVariation("plate_object", <stewblocks:furniture_organic_hanging_flowers>);
+Carving.addVariation("plate_object", <stewblocks:furniture_organic_hanging_plant>);
 
 Carving.addVariation("garbage_object", <stewblocks:object_flat_garbage>);
 Carving.addVariation("garbage_object", <stewblocks:garbage>);
@@ -414,6 +442,9 @@ Carving.addVariation("barrel_gold", <stewblocks:packed_gold_02>);
 Carving.addVariation("barrel_wheat", <stewblocks:packed_wheat>);
 Carving.addVariation("barrel_wheat", <stewblocks:packed_grain>);
 
+Carving.addVariation("wooden_barrel", <futuremc:barrel>);
+Carving.addVariation("wooden_barrel", <stewblocks:furniture_wooden_barrel>);
+
 Carving.addVariation("carboard_box", <mekanism:cardboardbox>);
 Carving.addVariation("carboard_box", <stewblocks:box_cardboard>);
 
@@ -425,6 +456,13 @@ Carving.addVariation("hologram", <stewblocks:force_field_fog>);
 Carving.addVariation("hologram", <stewblocks:force_field_matrix>);
 Carving.addVariation("hologram", <stewblocks:force_field_beams>);
 Carving.addVariation("hologram", <stewblocks:laser_barrier>);
+Carving.addVariation("hologram", <stewblocks:effect_lightning>);
+Carving.addVariation("hologram", <stewblocks:effect_beam>);
+
+Carving.addVariation("smoke", <stewblocks:effect_smoke_black>);
+Carving.addVariation("smoke", <stewblocks:effect_rising_steam>);
+Carving.addVariation("smoke", <stewblocks:effect_cloud>);
+Carving.addVariation("smoke", <stewblocks:effect_smoke_white>);
 
 Carving.addVariation("gold_object", <stewblocks:gold_coins>);
 Carving.addVariation("gold_object", <stewblocks:object_flat_coins>);
@@ -647,6 +685,8 @@ Carving.addVariation("light_modern", <stewblocks:lamp_neon_blue>);
 Carving.addVariation("light_modern", <stewblocks:lamp_old_blinking>);
 Carving.addVariation("light_modern", <stewblocks:lamp_round_blue>);
 Carving.addVariation("light_modern", <stewblocks:lamp_yellow>);
+Carving.addVariation("light_modern", <stewblocks:object_flat_lamp_lime>);
+Carving.addVariation("light_modern", <stewblocks:furniture_string_lamp>);
 
 Carving.addVariation("andesite", <minecraft:stone:5>);
 Carving.addVariation("andesite", <minecraft:stone:6>);
@@ -726,6 +766,13 @@ Carving.addVariation("hardware", <stewblocks:scrap_hardware_monitor_planner>);
 Carving.addVariation("hardware", <stewblocks:scrap_oven>);
 Carving.addVariation("hardware", <stewblocks:scrap_spotlight>);
 Carving.addVariation("hardware", <stewblocks:scrap_hardware_chip>);
+Carving.addVariation("hardware", <stewblocks:furniture_retro_range_white>);
+Carving.addVariation("hardware", <stewblocks:furniture_future_metal_shelf>);
+Carving.addVariation("hardware", <stewblocks:furniture_old_camera>);
+Carving.addVariation("hardware", <stewblocks:furniture_alarm_clock>);
+
+Carving.addVariation("computer", <stewblocks:furniture_old_terminal>);
+Carving.addVariation("computer", <stewblocks:furniture_old_register>);
 
 Carving.addVariation("blood", <stewblocks:effect_blood_splashes>);
 Carving.addVariation("blood", <stewblocks:effect_blood_footprints>);
@@ -1071,9 +1118,10 @@ recipes.addShapeless(<stewblocks:effect_smoke_black> * 4, [<ore:dyeBlack>]);
 recipes.addShapeless(<stewblocks:effect_fireflies> * 4, [<ore:firefly>]);
 recipes.addShapeless(<stewblocks:effect_flies> * 4, [<ore:listAllRotten>]);
 recipes.addShapeless(<stewblocks:effect_matrix> * 4, [<immersivepetroleum:schematic>.reuse(), <ore:oc:materialTransistor>]);
-recipes.addShapeless(<stewblocks:effect_rising_steam> * 4, [<ore:toolPot>.reuse(), <ore:listAllwater>]);
-recipes.addShapeless(<stewblocks:effect_smoke_white> * 4, [<harvestcraft:potitem>, <minecraft:water_bucket>, <minecraft:water_bucket>]);
 recipes.addShapeless(<stewblocks:effect_water_calm> * 4, [<ore:listAllwater>]);
+recipes.addShapeless(<stewblocks:furniture_wooden_cart>, [<astikorcarts:cargocart>]);
+recipes.addShapeless(<astikorcarts:cargocart>, [<stewblocks:furniture_wooden_cart>]);
+recipes.addShapeless(<stewblocks:furniture_black_candleholders>, [<rustic:candle>]);
 
 for item in <ore:flintAndSteel>.items {
   recipes.addShapeless(<stewblocks:effect_fire> * 4, [item.anyDamage().reuse().transformDamage()]);

@@ -341,7 +341,7 @@ RecipeBuilder.get("engineer")
     [<ore:blockVibrantAlloy>, null, null],
     [null, <ore:blockVibrantAlloy>, null],
     [null, null, <ore:blockVibrantAlloy>]])
-  .setSecondaryIngredients([<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}})])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}})])
   .addTool(<ore:artisansDriver>, 100) 
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<stewweapons:negotiator>)
@@ -352,7 +352,7 @@ RecipeBuilder.get("engineer")
     [null, <tconstruct:large_plate>.withTag({Material: "dark_steel"}), <ore:blockEnergeticAlloy>],
     [null, <tconstruct:tough_tool_rod>.withTag({Material: "dark_steel"}), <tconstruct:large_plate>.withTag({Material: "dark_steel"})],
     [<tconstruct:tough_tool_rod>.withTag({Material: "dark_steel"}), null, null]])
-  .setSecondaryIngredients([<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}})])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}})])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<stewweapons:energy_glavie>)
@@ -385,7 +385,7 @@ RecipeBuilder.get("engineer")
     [null, <ore:alloyElite>, <tconstruct:hammer_head>.withTag({Material: "constantan"})],
     [null, <tconstruct:tough_tool_rod>.withTag({Material: "constantan"}), <ore:alloyElite>],
     [<tconstruct:tough_tool_rod>.withTag({Material: "constantan"}), null, null]])
-  .setSecondaryIngredients([<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}})])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}})])
   .addTool(<ore:artisansDriver>, 125)
   .addTool(<ore:artisansSolderer>, 125)
   .addOutput(<stewweapons:positron_opressor>)
@@ -396,7 +396,7 @@ RecipeBuilder.get("engineer")
     [null, <techguns:itemshared:124>, <ore:plateCarbon>],
     [null, <ore:plateCarbon>, <ore:alloyUltimate>],
     [<ore:plateCarbon>, null, null]])
-  .setSecondaryIngredients([<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}}), <ore:alloyUltimate>, <ore:plateTitanium> * 8, <ore:plateCarbon> * 8])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}}), <ore:alloyUltimate>, <ore:plateTitanium> * 8, <ore:plateCarbon> * 8])
   .addTool(<ore:artisansDriver>, 125)
   .addTool(<ore:artisansSolderer>, 125)
   .addOutput(<stewweapons:electroaxe>)
@@ -407,7 +407,7 @@ RecipeBuilder.get("engineer")
     [null, <immersiveengineering:metal_decoration0:2>, <immersiveengineering:metal_decoration0:2>],
     [null, <tconstruct:cross_guard>.withTag({Material: "dark_steel"}), <immersiveengineering:metal_decoration0:2>],
     [<tconstruct:tool_rod>.withTag({Material: "dark_steel"}), null, null]])
-  .setSecondaryIngredients([<thermalexpansion:augment:512>, <thermalexpansion:augment:514>, <thermalexpansion:augment:128>, <enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}})])
+  .setSecondaryIngredients([<thermalexpansion:augment:512>, <thermalexpansion:augment:514>, <thermalexpansion:augment:128>, <enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}})])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<stewweapons:shock_baton>)
@@ -418,7 +418,7 @@ RecipeBuilder.get("engineer")
     [null, null, <tconstruct:sword_blade>.withTag({Material: "constantan"})],
     [<mekanism:machineblock3:4>, <tconstruct:hand_guard>.withTag({Material: "constantan"}), null],
     [<tconstruct:tool_rod>.withTag({Material: "constantan"}), <immersiveengineering:metal_device1:1>, null]])
-  .setSecondaryIngredients([<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 25000000}}), <immersiveengineering:metal_device1:1> * 4])
+  .setSecondaryIngredients([<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 5000000}}), <immersiveengineering:metal_device1:1> * 4])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSolderer>, 100)
   .addOutput(<stewweapons:thermal_blade>)
