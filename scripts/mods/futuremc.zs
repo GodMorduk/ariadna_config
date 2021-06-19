@@ -99,3 +99,14 @@ recipes.addShaped(<futuremc:soul_fire_torch> * 2, [
   [<ore:stickWood>],
   [<ore:soulSand>]
 ]);
+
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:dustPrismarine>, <ore:blockIron>, <ore:dustPrismarine>],
+    [<ore:gemPrismarine>, <spartanweaponry:material:1>, <ore:gemPrismarine>],
+    [<ore:gemPrismarine>, <spartanweaponry:material:1>, <ore:gemPrismarine>]])
+  .addTool(<ore:artisansFile>, 100)
+  .addTool(<ore:artisansHammer>, 100)
+  .addOutput(<futuremc:trident>)
+  .create();
