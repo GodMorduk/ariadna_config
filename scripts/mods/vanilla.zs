@@ -40,6 +40,11 @@ Factorizer.addRecipeCombine(<minecraft:brick> * 4, <minecraft:brick_block>);
 
 recipes.removeByRecipeName("minecraft:ender_chest");
 
+recipes.addShaped(<minecraft:coal_block>,[
+    [<ore:coal>, <ore:coal>, <ore:coal>],
+    [<ore:coal>, <ore:coal>, <ore:coal>],
+    [<ore:coal>, <ore:coal>, <ore:coal>]]);
+
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, null, <ore:ingotIron>],
