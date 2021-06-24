@@ -1,14 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
 
-RecipeBuilder.get("basic") // Крафт бутылки
-  .setShaped([
-    [<ore:plankWood>, <minecraft:glass>, null],
-    [<minecraft:glass>, null, <minecraft:glass>],
-    [null, <minecraft:glass>, <minecraft:glass>]])
-  .addOutput(<stewprops:bottle_blue_01>.withTag({display: {Name: "Бутылка"}}))
-  .create();
-
 RecipeBuilder.get("basic") // Крафт ящика
   .setShaped([
     [<minecraft:log>, <minecraft:planks>, <minecraft:log>],
@@ -279,4 +271,424 @@ RecipeBuilder.get("basic")
     [<ore:plankWood>, <ore:plankWood>, null]])
   .addTool(<ore:artisansHandsaw>, 5)
   .addOutput(<stewitems:banjo>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:nuggetGold>, <ore:itemEmptyBottle>, <ore:dyeBrown>])
+  .addOutput(<stewprops:bottle_big_brown>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:nuggetGold>, <ore:itemEmptyBottle>, <ore:dyePurple>])
+  .addOutput(<stewprops:bottle_big_purple>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:nuggetGold>, <ore:itemEmptyBottle>, <ore:dyeRed>])
+  .addOutput(<stewprops:bottle_big_red>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:slimeballBlood>])
+  .addOutput(<stewprops:bottle_blood>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeBlue>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_blue_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeGreen>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_green_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeBrown>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_brown>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeWhite>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_white>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeYellow>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_yellow_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyePurple>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_purple_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeRed>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_red>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<bewitchment:empty_jar>, <ore:dyePurple>])
+  .addOutput(<stewprops:bottle_closed_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<bewitchment:empty_jar>, <ore:dyeRed>])
+  .addOutput(<stewprops:bottle_closed_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<bewitchment:empty_jar>, <ore:dyeBrown>])
+  .addOutput(<stewprops:bottle_small>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:string>, <ore:itemEmptyBottle>, <ore:dyeRed>])
+  .addOutput(<stewprops:bottle_red_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:string>, <ore:itemEmptyBottle>, <ore:dyePurple>])
+  .addOutput(<stewprops:bottle_purple_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeGreen>, <ore:blockGlass>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_green_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeGreen>, <ore:dyeGreen>, <ore:blockGlass>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_green_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeBlue>, <ore:blockGlass>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_blue_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeYellow>, <ore:blockGlass>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_yellow_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:nuggetIron>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_blue_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:shardGlass>, <ore:itemEmptyBottle>])
+  .addOutput(<stewprops:bottle_strange>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyePink>])
+  .addOutput(<stewprops:bottle_pink>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<alchemistry:periodic_diagram>.reuse(), <minecraft:glass_bottle>])
+  .addOutput(<stewprops:bottle_chem>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeYellow>, <ore:itemEmptyBottle>, <ore:blockGlass>])
+  .addOutput(<stewprops:bottle_yellow_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeOrange>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyePurple>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeLightBlue>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeGreen>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeBrown>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_04>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeRed>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_05>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemEmptyBottle>, <ore:dyeBlue>, <minecraft:tripwire_hook>])
+  .addOutput(<stewprops:medicine_inhaler_06>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<vampirism:injection>, <ore:itemRubber>])
+  .addOutput(<stewprops:medicine_injector>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeRed>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyePink>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeGreen>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeWhite>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeLime>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_04>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyePurple>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_05>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeLightBlue>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_06>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeOrange>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_07>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <ore:dyeBlue>, <ore:blockWool>])
+  .addOutput(<stewprops:medicine_pills_pouch_08>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeOrange>])
+  .addOutput(<stewprops:medicine_pill_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeYellow>])
+  .addOutput(<stewprops:medicine_pill_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeLime>])
+  .addOutput(<stewprops:medicine_pill_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeGreen>])
+  .addOutput(<stewprops:medicine_pill_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeBlue>])
+  .addOutput(<stewprops:medicine_pill_04>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyePurple>])
+  .addOutput(<stewprops:medicine_pill_05>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeMagenta>])
+  .addOutput(<stewprops:medicine_pill_06>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeRed>])
+  .addOutput(<stewprops:medicine_pill_07>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeLightGray>])
+  .addOutput(<stewprops:medicine_pill_08>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeGray>])
+  .addOutput(<stewprops:medicine_pill_09>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<industrialforegoing:tinydryrubber>, <ore:dyeBlack>])
+  .addOutput(<stewprops:medicine_pill_10>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeOrange>])
+  .addOutput(<stewprops:medicine_pill_container_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeYellow>])
+  .addOutput(<stewprops:medicine_pill_container_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeLime>])
+  .addOutput(<stewprops:medicine_pill_container_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeGreen>])
+  .addOutput(<stewprops:medicine_pill_container_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeBlue>])
+  .addOutput(<stewprops:medicine_pill_container_04>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyePurple>])
+  .addOutput(<stewprops:medicine_pill_container_05>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeMagenta>])
+  .addOutput(<stewprops:medicine_pill_container_06>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeRed>])
+  .addOutput(<stewprops:medicine_pill_container_07>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeLightGray>])
+  .addOutput(<stewprops:medicine_pill_container_08>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeGray>])
+  .addOutput(<stewprops:medicine_pill_container_09>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<stewblocks:object_pills>, <ore:dyeBlack>])
+  .addOutput(<stewprops:medicine_pill_container_10>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemRubber>, <stewprops:medicine_pill_container_07>])
+  .addOutput(<stewprops:medicine_pill_container_red>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemRubber>, <stewprops:medicine_pill_container_04>])
+  .addOutput(<stewprops:medicine_pill_container_special>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:listAllseed>, <stewprops:medicine_pill_container_07>])
+  .addOutput(<stewprops:medicine_rad_x>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeYellow>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_10>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeBlue>, <ore:dyeBlack>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_11>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeRed>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeGreen>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeYellow>, <ore:dyeWhite>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyePink>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeLime>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_04>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeOrange>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_05>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyePink>, <ore:dyeRed>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_06>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeLightBlue>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_07>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyePurple>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_08>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:dyeBlue>, <stewprops:medicine_injector>])
+  .addOutput(<stewprops:medicine_syringe_09>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<extraalchemy:vial_break>, <ore:dyeBlue>])
+  .addOutput(<stewprops:medicine_vial_00>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<extraalchemy:vial_break>, <ore:dyeWhite>])
+  .addOutput(<stewprops:medicine_vial_01>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<extraalchemy:vial_break>, <ore:dyeRed>])
+  .addOutput(<stewprops:medicine_vial_02>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<extraalchemy:vial_break>, <ore:dyeBrown>])
+  .addOutput(<stewprops:medicine_vial_03>)
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<extraalchemy:vial_break>, <ore:dyeOrange>])
+  .addOutput(<stewprops:medicine_vial_04>)
   .create();
