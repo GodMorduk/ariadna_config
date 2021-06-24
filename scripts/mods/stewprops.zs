@@ -174,9 +174,9 @@ RecipeBuilder.get("basic")
 
 RecipeBuilder.get("basic")
   .setShaped([
-    [null, null, <ore:stickWood>],
-    [null, <minecraft:string>, null],
-    [<ore:logWood>, null, null]])
+    [null, <ore:itemRubber>, <ore:stickWood>],
+    [<ore:itemRubber>, <ore:wireCopper>, <ore:itemRubber>],
+    [<ore:logWood>, <ore:itemRubber>, null]])
   .addOutput(<stewprops:random_guitar>.withTag({display: {Name: "Гитара"}}))
   .create();
 
