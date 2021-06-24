@@ -133,7 +133,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateTitanium>, <ore:circuitElite>, <thermalexpansion:device:8>, <ore:circuitElite>, <ore:plateTitanium>],
     [<ore:gearVibrant>, <enderio:block_dark_steel_anvil>, <techguns:simplemachine:9>, <enderio:block_dark_steel_anvil>, <ore:gearVibrant>],
     [<ore:plateTitanium>, <ore:plateTitanium>, <ore:gearVibrant>, <ore:plateTitanium>, <ore:plateTitanium>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<enderio:item_basic_capacitor:2> * 8, <ore:alloyUltimate> * 8])
   .addTool(<ore:artisansSpanner>, 500)
   .addTool(<ore:artisansDriver>, 500)

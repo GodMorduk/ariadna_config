@@ -11,7 +11,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:soulgazer>],
     [<spartanweaponry:staff_gold>],
     [<minecraft:skull:1>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 75)
   .addOutput(<lycanitesmobs:summoningstaff>)
   .create();
@@ -25,7 +25,7 @@ RecipeBuilder.get("mage")
     [<tconstruct:large_plate>.withTag({Material: "iron"})],
     [<lycanitesmobs:summoningstaff>],
     [<ore:blockDeepIron>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<minecraft:obsidian> * 16])
   .addTool(<ore:artisansGrimoire>, 200)
   .addTool(<ore:artisansAthame>, 200)
@@ -39,7 +39,7 @@ RecipeBuilder.get("mage")
     [<botania:storage:3>],
     [<lycanitesmobs:summoningstaff>],
     [<minecraft:golden_apple:1>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .addTool(<ore:artisansGrimoire>, 200)
   .addTool(<ore:artisansAthame>, 200)
   .addOutput(<lycanitesmobs:stablesummoningstaff>)
@@ -56,7 +56,7 @@ recipes.removeByRecipeName("lycanitesmobs:bloodsummoningstaff");
 //     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
 //     [<quark:biotite>, <tconstruct:edible:33>, <thebetweenlands:crimson_middle_gem>, <tconstruct:edible:33>, <quark:biotite>],
 //     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
-//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setFluid(<liquid:experience> * 16000)
 //   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
 //   .addTool(<ore:artisansGrimoire>, 500)
 //   .addTool(<ore:artisansAthame>, 500)
@@ -71,7 +71,7 @@ RecipeBuilder.get("mage")
     [<quark:biotite>, <bewitchment:athame>, <lycanitesmobs:stablesummoningstaff>, <twilightforest:fiery_blood>, <quark:biotite>],
     [<quark:biotite>, <tconstruct:edible:33>, <erebus:life_blood>, <tconstruct:edible:33>, <quark:biotite>],
     [<quark:biotite>, <quark:biotite>, <vampirism:blood_infused_enhanced_iron_ingot>, <quark:biotite>, <quark:biotite>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<botania:superlavapendant>, <rustic:blood_orchid> * 16, <botania:specialflower>.withTag({type: "bloodyenchantress"}), <extrabotany:material:10>])
   .addTool(<ore:artisansGrimoire>, 500)
   .addTool(<ore:artisansAthame>, 500)
@@ -88,7 +88,7 @@ RecipeBuilder.get("mage")
     [<industrialforegoing:pink_slime_ingot>, <twilightforest:charm_of_life_1>, <lycanitesmobs:sturdysummoningstaff>, <twilightforest:charm_of_life_1>, <industrialforegoing:pink_slime_ingot>],
     [<metallurgy:hepatizon_ingot>, <erebus:glow_gem_active>, <twilightforest:charm_of_life_1>, <erebus:glow_gem_active>, <metallurgy:hepatizon_ingot>],
     [<metallurgy:etherium_ingot>, <botania:manaresource:7>, <botania:manaresource:7>, <botania:manaresource:7>, <metallurgy:etherium_ingot>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<minecraft:ghast_tear> * 16])
   .addTool(<ore:artisansGrimoire>, 500)
   .addTool(<ore:artisansAthame>, 500)
@@ -107,7 +107,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:icefireballcharge>, <lycanitesmobs:icefireballcharge>, <lycanitesmobs:icefireballcharge>],
     [<lycanitesmobs:icefireballcharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:icefireballcharge>],
     [<lycanitesmobs:icefireballcharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:icefireballcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:icefirescepter>)
   .create();
@@ -119,7 +119,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:geonachfist>, <lycanitesmobs:boulderblastcharge>, <lycanitesmobs:geonachspear>],
     [<lycanitesmobs:boulderblastcharge>, <ebwizardry:apprentice_earth_wand>, <lycanitesmobs:boulderblastcharge>],
     [<lycanitesmobs:boulderblastcharge>, <spartanweaponry:staff_nickel>, <lycanitesmobs:boulderblastcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:boulderblastscepter>)
   .create();
@@ -131,7 +131,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:frostwebcharge>, <lycanitesmobs:frostwebcharge>, <lycanitesmobs:frostwebcharge>],
     [<lycanitesmobs:frostwebcharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:frostwebcharge>],
     [<lycanitesmobs:frostwebcharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:frostwebcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:frostwebscepter>)
   .create();
@@ -143,7 +143,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:poopcharge>, <lycanitesmobs:poopcharge>, <lycanitesmobs:poopcharge>],
     [<lycanitesmobs:poopcharge>, <ebwizardry:apprentice_sorcery_wand>, <lycanitesmobs:poopcharge>],
     [<lycanitesmobs:poopcharge>, <spartanweaponry:staff_lead>, <lycanitesmobs:poopcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:poopscepter>)
   .create();
@@ -155,7 +155,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:mudshotcharge>, <lycanitesmobs:mudshotcharge>, <lycanitesmobs:mudshotcharge>],
     [<lycanitesmobs:mudshotcharge>, <ebwizardry:apprentice_earth_wand>, <lycanitesmobs:mudshotcharge>],
     [<lycanitesmobs:mudshotcharge>, <spartanweaponry:staff_nickel>, <lycanitesmobs:mudshotcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:mudshotscepter>)
   .create();
@@ -167,7 +167,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:scorchfireballcharge>, <lycanitesmobs:scorchfireballcharge>, <lycanitesmobs:scorchfireballcharge>],
     [<lycanitesmobs:scorchfireballcharge>, <ebwizardry:apprentice_fire_wand>, <lycanitesmobs:scorchfireballcharge>],
     [<lycanitesmobs:scorchfireballcharge>, <spartanweaponry:staff_steel>, <lycanitesmobs:scorchfireballcharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:scorchfirescepter>)
   .create();
@@ -179,7 +179,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:aquapulsecharge>, <lycanitesmobs:aquapulsecharge>, <lycanitesmobs:aquapulsecharge>],
     [<lycanitesmobs:aquapulsecharge>, <ebwizardry:apprentice_ice_wand>, <lycanitesmobs:aquapulsecharge>],
     [<lycanitesmobs:aquapulsecharge>, <spartanweaponry:staff_platinum>, <lycanitesmobs:aquapulsecharge>]])
-  .setFluid(<liquid:xpjuice> * 4000)
+  .setFluid(<liquid:experience> * 4000)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<lycanitesmobs:aquapulsescepter>)
   .create();
@@ -194,7 +194,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostboltcharge>],
     [<lycanitesmobs:frostboltcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:frostboltcharge>],
     [<lycanitesmobs:frostboltcharge>, <lycanitesmobs:frostwebscepter>, <lycanitesmobs:frostboltcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -208,7 +208,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:bansheeeye>, <lycanitesmobs:spectralboltcharge>, <lycanitesmobs:bansheeeye>],
     [<lycanitesmobs:spectralboltcharge>, <ebwizardry:advanced_necromancy_wand>, <lycanitesmobs:spectralboltcharge>],
     [<lycanitesmobs:spectralboltcharge>, <spartanweaponry:staff_tin>, <lycanitesmobs:spectralboltcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -222,7 +222,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:quillcharge>, <lycanitesmobs:quillcharge>, <lycanitesmobs:quillcharge>],
     [<lycanitesmobs:quillcharge>, <ebwizardry:advanced_wand>, <lycanitesmobs:quillcharge>],
     [<lycanitesmobs:quillcharge>, <lycanitesmobs:boulderblastscepter>, <lycanitesmobs:quillcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -236,7 +236,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:blizzardcharge>, <lycanitesmobs:blizzardcharge>, <lycanitesmobs:blizzardcharge>],
     [<lycanitesmobs:blizzardcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:blizzardcharge>],
     [<lycanitesmobs:blizzardcharge>, <lycanitesmobs:frostwebscepter>, <lycanitesmobs:blizzardcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -250,7 +250,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:waterjetcharge>, <lycanitesmobs:waterjetcharge>, <lycanitesmobs:waterjetcharge>],
     [<lycanitesmobs:waterjetcharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:waterjetcharge>],
     [<lycanitesmobs:waterjetcharge>, <lycanitesmobs:aquapulsescepter>, <lycanitesmobs:waterjetcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -264,7 +264,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:tundracharge>, <lycanitesmobs:wendigoantler>, <lycanitesmobs:tundracharge>],
     [<lycanitesmobs:tundracharge>, <ebwizardry:advanced_ice_wand>, <lycanitesmobs:tundracharge>],
     [<lycanitesmobs:tundracharge>, <lycanitesmobs:icefirescepter>, <lycanitesmobs:tundracharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<lycanitesmobs:frostyfur> * 16, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -278,7 +278,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:doomfireballcharge>, <lycanitesmobs:doomfireballcharge>, <lycanitesmobs:doomfireballcharge>],
     [<lycanitesmobs:doomfireballcharge>, <ebwizardry:advanced_fire_wand>, <lycanitesmobs:doomfireballcharge>],
     [<lycanitesmobs:doomfireballcharge>, <lycanitesmobs:scorchfirescepter>, <lycanitesmobs:doomfireballcharge>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -292,7 +292,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:poisongland>, <lycanitesmobs:poisongland>, <lycanitesmobs:poisongland>],
     [<lycanitesmobs:poisongland>, <ebwizardry:advanced_sorcery_wand>, <lycanitesmobs:poisongland>],
     [<lycanitesmobs:poisongland>, <lycanitesmobs:mudshotscepter>, <lycanitesmobs:poisongland>]])
-  .setFluid(<liquid:xpjuice> * 8000)
+  .setFluid(<liquid:experience> * 8000)
   .setSecondaryIngredients([<minecraft:fermented_spider_eye> * 16])
   .addTool(<ore:artisansGrimoire>, 150)
   .addTool(<ore:artisansAthame>, 150)
@@ -310,7 +310,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:magmacharge>, <tconstruct:materials:11>, <lycanitesmobs:magmacharge>],
     [<lycanitesmobs:magmacharge>, <lycanitesmobs:doomfirescepter>, <lycanitesmobs:magmacharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<minecraft:magma> * 16, <minecraft:magma_cream> * 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -327,7 +327,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:hellfireballcharge>, <lycanitesmobs:wraithskull>, <lycanitesmobs:hellfireballcharge>],
     [<lycanitesmobs:hellfireballcharge>, <lycanitesmobs:doomfirescepter>, <lycanitesmobs:hellfireballcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 32, <minecraft:fire_charge> * 32, <lycanitesmobs:embercharge> * 8])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -344,7 +344,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:arcanelaserstormcharge>, <lycanitesmobs:sutiramustinger>, <lycanitesmobs:arcanelaserstormcharge>],
     [<lycanitesmobs:arcanelaserstormcharge>, <lycanitesmobs:boulderblastscepter>, <lycanitesmobs:arcanelaserstormcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <ebwizardry:master_wand>])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -361,7 +361,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:demonicblastcharge>, <lycanitesmobs:zephyrblade>, <lycanitesmobs:demonicblastcharge>],
     [<lycanitesmobs:demonicblastcharge>, <lycanitesmobs:poisonrayscepter>, <lycanitesmobs:demonicblastcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <bewitchment:demon_heart>])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -378,7 +378,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:lifedraincharge>, <lycanitesmobs:sprigganheart>, <lycanitesmobs:lifedraincharge>],
     [<lycanitesmobs:lifedraincharge>, <lycanitesmobs:aquapulsescepter>, <lycanitesmobs:lifedraincharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 32, <botania:terraformrod>])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -395,7 +395,7 @@ recipes.removeByRecipeName("lycanitesmobs:bloodleechscepter");
 //     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:wargskull>, <lycanitesmobs:bloodleechcharge>],
 //     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
 //     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-//   .setFluid(<liquid:xpjuice> * 16000)
+//   .setFluid(<liquid:experience> * 16000)
 //   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <thebetweenlands:items_misc>])
 //   .addTool(<ore:artisansGrimoire>, 300)
 //   .addTool(<ore:artisansAthame>, 300)
@@ -410,7 +410,7 @@ RecipeBuilder.get("mage")
     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:wargskull>, <lycanitesmobs:bloodleechcharge>],
     [<lycanitesmobs:bloodleechcharge>, <lycanitesmobs:quillscepter>, <lycanitesmobs:bloodleechcharge>],
     [<minecraft:blaze_rod>, <minecraft:blaze_rod>, <minecraft:blaze_rod>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 32, <erebus:life_blood> * 16])
   .addTool(<ore:artisansGrimoire>, 300)
   .addTool(<ore:artisansAthame>, 300)
@@ -529,7 +529,7 @@ RecipeBuilder.get("jeweler")
     [<minecraft:diamond_block>, <minecraft:diamond_block>, <minecraft:diamond_block>],
     [<minecraft:diamond_block>, <lycanitesmobs:soulkey>, <minecraft:diamond_block>],
     [<minecraft:diamond_block>, <atum:loot_diamond_ring>, <minecraft:diamond_block>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .addTool(<ore:artisansGemCutter>, 500)
   .addTool(<ore:artisansGrimoire>, 500)
   .addTool(<ore:artisansAthame>, 500)
@@ -543,7 +543,7 @@ RecipeBuilder.get("jeweler")
     [<ore:blockEmerald>, <ore:blockEmerald>, <ore:blockEmerald>],
     [<ore:blockEmerald>, <lycanitesmobs:soulkey>, <ore:blockEmerald>],
     [<ore:blockEmerald>, <atum:loot_emerald_ring>, <ore:blockEmerald>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .addTool(<ore:artisansGemCutter>, 500)
   .addTool(<ore:artisansAthame>, 500)
   .addTool(<ore:artisansGrimoire>, 500)
@@ -1032,7 +1032,7 @@ RecipeBuilder.get("chef")
     [<ore:bone>, <ore:bone>, <lycanitesmobs:brutetreat>, <ore:blockGold>, <ore:ingotGold>],
     [<ore:ingotGold>, <ore:ingotGold>, <ore:blockEmerald>, <ore:blockGold>, <ore:ingotGold>],
     [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]])
-  .setFluid(<liquid:xpjuice> * 2000)
+  .setFluid(<liquid:experience> * 2000)
   .setSecondaryIngredients([<endreborn:dragon_scales>, <lycanitesmobs:scorchfireballcharge> * 4])
   .addTool(<ore:artisansGemCutter>, 100)
   .addTool(<ore:artisansAthame>, 100)
