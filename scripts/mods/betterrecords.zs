@@ -101,7 +101,7 @@ recipes.removeByRecipeName("betterrecords:large_speaker");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:logWood>, <ore:logWood>, <ore:blockWool>],
-    [<immersiveengineering:material:27>, <betterrecords:speaker:2>, <ore:blockWool>],
+    [<immersiveengineering:material:27>, <betterrecords:speaker:1>, <ore:blockWool>],
     [<ore:logWood>, <ore:logWood>, <ore:blockWool>]])
   .addTool(<ore:artisansDriver>, 50)
   .addOutput(<betterrecords:speaker:2>)

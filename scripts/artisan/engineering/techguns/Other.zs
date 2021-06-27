@@ -97,7 +97,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:72>, <thermaldynamics:duct_16:5>, <techguns:itemshared:72>],
-    [<thermalexpansion:reservoir:2>.withTag({}), <techguns:itemshared:55>, <thermalexpansion:reservoir:2>.withTag({})],
+    [<thermalexpansion:reservoir:2>, <techguns:itemshared:55>, <thermalexpansion:reservoir:2>],
     [<techguns:itemshared:55>, <techguns:itemshared:58>, <techguns:itemshared:55>]])
   .setSecondaryIngredients([<techguns:itemshared:55> * 8, <thermaldynamics:duct_16:5> * 4, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 150)
@@ -107,7 +107,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalexpansion:reservoir:2>.withTag({}), <ore:plateCarbon>, <thermalexpansion:reservoir:2>.withTag({})],
+    [<thermalexpansion:reservoir:2>, <ore:plateCarbon>, <thermalexpansion:reservoir:2>],
     [<thermaldynamics:duct_16:5>, <techguns:itemshared:90>, <thermaldynamics:duct_16:5>],
     [<techguns:itemshared:72>, <techguns:itemshared:58>, <techguns:itemshared:72>]])
   .setSecondaryIngredients([<ore:plateCarbon> * 6, <thermaldynamics:duct_16:5> * 6, <techguns:itemshared:58> * 4])

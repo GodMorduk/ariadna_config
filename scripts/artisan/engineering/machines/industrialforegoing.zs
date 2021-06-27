@@ -757,7 +757,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateObsidianSteel>, <industrialforegoing:fortune_addon>, <ore:itemEnhancedMachineChassi>, <industrialforegoing:fortune_addon>, <ore:plateObsidianSteel>],
     [<ore:ingotDarkSteel>, <ore:gearLumium>, <thermalinnovation:drill:3>, <ore:gearLumium>, <ore:ingotDarkSteel>],
     [<ore:plateSignalum>, <ore:plateObsidianSteel>, <ore:ingotDarkSteel>, <ore:plateObsidianSteel>, <ore:plateSignalum>]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<industrialforegoing:plastic> * 32, <techguns:itemshared:66>, <ore:itemEnhancedChassiParts>, <mekanism:controlcircuit:2>])
   .addTool(<ore:artisansSolderer>, 80)
   .addTool(<ore:artisansSpanner>, 80)
@@ -1035,7 +1035,7 @@ RecipeBuilder.get("engineer")
     [<ore:alloyUltimate>, <ore:itemPrecientCrystal>, <ore:itemUnsouledMachineChassi>, <ore:itemPrecientCrystal>, <ore:alloyUltimate>],
     [<ore:plateEnderium>, <techguns:itemshared:69>, <enderio:block_experience_obelisk>, <techguns:itemshared:69>, <ore:plateEnderium>],
     [null, null, <ore:plateEnderium>, null, null]])
-  .setFluid(<liquid:xpjuice> * 16000)
+  .setFluid(<liquid:experience> * 16000)
   .setSecondaryIngredients([<ore:circuitUltimate>, <enderio:item_basic_capacitor:2> * 4])
   .addTool(<ore:artisansSolderer>, 250)
   .addTool(<ore:artisansSpanner>, 250)
