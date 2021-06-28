@@ -76,7 +76,7 @@ RecipeBuilder.get("engineer")
     [<ore:blockRedstone>, <thermalexpansion:frame:128>, <ore:blockRedstone>],
     [<ore:ingotLead>, <thermalfoundation:material:513>, <ore:ingotLead>]])
   .addTool(<ore:artisansDriver>, 35)
-  .addOutput(<thermalexpansion:cell>.withTag({Recv: 1000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 1000}))
+  .addOutput(<thermalexpansion:cell>.withTag({Level: 0 as byte}))
   .create();
 
 recipes.removeByRecipeName("thermalfoundation:wrench");
