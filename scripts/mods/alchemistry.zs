@@ -1,4 +1,5 @@
 import mods.alchemistry.Dissolver;
+import mods.alchemistry.Atomizer;
 
 mods.alchemistry.Combiner.removeRecipe(<minecraft:nether_star>);
 
@@ -72,3 +73,5 @@ Dissolver.addRecipe(<ore:dyeMagenta>, false, 1,
 Dissolver.removeRecipe(<ore:dyeOrange>);
 Dissolver.addRecipe(<ore:dyeOrange>, false, 1,
 [[10, <alchemistry:compound:40>]]);
+
+Atomizer.addRecipe(<alchemistry:element:3> * 16, <liquid:liquidlithium> * 100);
