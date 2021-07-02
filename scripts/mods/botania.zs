@@ -47,7 +47,7 @@ mods.botania.RuneAltar.addRecipe(<botania:magnetring>.withTag({}),[<botania:lens
 mods.botania.RuneAltar.addRecipe(<botania:waterring>.withTag({}),[<ore:runeWaterB>, <botania:manaresource>, <minecraft:fish:3>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <minecraft:fish:1>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:miningring");// Удаление кольца шахтера
-mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:manaresource>, <minecraft:golden_pickaxe>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:miningring>.withTag({}),[<ore:runeEarthB>, <botania:manaresource>, <minecraft:gold_block>, <botania:manaresource>, <extrabotany:material:10>, <botania:manaresource>, <ore:runeManaB>, <botania:storage>, <ore:runeManaB>], 250000);
 
   recipes.removeByRecipeName("botania:divacharm");// Удаление шарма дивы
 mods.botania.RuneAltar.addRecipe(<botania:divacharm>.withTag({}),[<botania:manaresource:14>, <botania:storage>, <botania:tinyplanet>, <botania:manaresource:14>, <ore:runePrideB>, <ore:blockGold>, <ore:runeManaB>, <botania:storage>, <botania:manaresource:14>], 250000);
@@ -131,7 +131,7 @@ mods.botania.RuneAltar.addRecipe(<botania:holycloak>.withTag({}),[<ore:wool>, <o
 mods.botania.RuneAltar.addRecipe(<botania:balancecloak>,[<ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:blockWoolLightGray>, <extrabotany:material:1>, <ore:gemEmerald>, <ore:ingotGaiasteel>, <ore:gemEmerald>, <extrabotany:material:1>], 250000);
 
   recipes.removeByRecipeName("extrabotany:recipe_walkingcane");// Удаление трости для ходьбы
-mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<ore:livingrock>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <ore:livingrock>, <ore:runeManaB>, <ore:dreamwoodTwig>], 250000);
+mods.botania.RuneAltar.addRecipe(<extrabotany:walkingcane>,[<botania:livingrock:1>, <ore:blockGold>, <ore:dreamwoodTwig>, <botania:tornadorod>, <botania:livingrock:1>, <ore:runeManaB>, <ore:dreamwoodTwig>], 250000);
  
   recipes.removeByRecipeName("botanicadds:ring_aura_gaia");// Удаление кольца ауры Гайи
 mods.botania.RuneAltar.addRecipe(<botanicadds:ring_aura_gaia>,[<botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <botanicadds:gaiasteel_ingot>, <ore:runeEnvyB>, <botania:auraringgreater>, <ore:runeEnvyB>, <ore:runeEnvyB>], 250000);
@@ -143,7 +143,7 @@ mods.botania.RuneAltar.addRecipe(<botanicadds:terra_protector>,[<ore:blockGaiast
 mods.botania.RuneAltar.addRecipe(<botania:goddesscharm>.withTag({}),[<ore:petalPink>, <extrabotany:material:10>, <ore:petalPink>, <ore:runeManaB>, <ore:petalPink>, <ore:runeManaB>, <ore:runeWaterB>, <botania:storage:3>, <ore:runeSpringB>], 250000);
 
   recipes.removeByRecipeName("botania:manamirror");// Удаление зеркала маны
-mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <ore:livingrock>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:manamirror>.withTag({}),[<botania:enderhand>, <botania:livingrock:1>, <ore:dreamwoodTwig>, <botania:storage:1>, <botania:manatablet>, <extrabotany:material:10>], 250000);
 
   recipes.removeByRecipeName("botania:craftinghalo");// Удаление сборачного гало
 mods.botania.RuneAltar.addRecipe(<botania:craftinghalo>.withTag({}),[<botania:tinyplanet>, <botania:storage>, <ore:workbench>, <botania:storage>, <botania:storage>], 10000);
@@ -152,7 +152,7 @@ mods.botania.RuneAltar.addRecipe(<botania:craftinghalo>.withTag({}),[<botania:ti
 mods.botania.RuneAltar.addRecipe(<botania:autocraftinghalo>.withTag({}),[<botania:storage:3>, <ore:slimeball>, <botania:craftinghalo>], 20000);
   
   recipes.removeByRecipeName("botania:flighttiara_0");// Удаление крылатой тиары
-mods.botania.RuneAltar.addRecipe(<botania:flighttiara>,[<ore:ingotGaiasteel>, <extrabotany:material:10>, <ore:ingotGaiasteel>, <botania:storage:2>, <botania:blackholetalisman>, <botania:storage:2>, <botania:tornadorod>, <extrabotany:jingweifeather>, <botania:tornadorod>], 250000);
+mods.botania.RuneAltar.addRecipe(<botania:flighttiara>,[<ore:ingotGaiasteel>, <extrabotany:material:10>, <ore:ingotGaiasteel>, <botania:storage:2>, <botania:blackholetalisman>, <botania:storage:2>, <botania:tornadorod>, <botania:supercloudpendant>, <botania:tornadorod>], 250000);
 
   recipes.removeByRecipeName("botania:dirtrod");// Удаление жезла земель
 mods.botania.RuneAltar.addRecipe(<botania:dirtrod>,[<botania:grassseeds>, <ore:dirt>, <ore:runeManaB>, <ore:livingwoodTwig>, <botania:grassseeds>, <ore:runeEarthB>, <ore:runeManaB>], 250000);
@@ -305,6 +305,7 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("botania:terrasteelchest");
   recipes.removeByRecipeName("botania:terrasteelhelm");
   recipes.removeByRecipeName("botania:terrasteellegs");
+  recipes.removeByRecipeName("botania:terrasteelhelmreveal");
 RecipeBuilder.get("mage")
   .setShaped([
     [<botania:manaresource:9>, null, <botania:rune:11>, null, <botania:manaresource:9>],
@@ -364,6 +365,22 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansPliers>, 200)
   .addTool(<ore:artisansGrimoire>, 200)
   .addOutput(<botania:terrasteelhelm>.withTag({}))
+  .setExtraOutputOne(<botania:worldseed>, 1.0)
+  .setExtraOutputTwo(<botania:worldseed>, 0.5)
+  .setExtraOutputThree(<botania:worldseed>, 0.1)
+  .create();
+
+  RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:9>, null, <botania:rune:13>, null, <botania:manaresource:9>],
+    [<botania:worldseed>, <botania:manaresource:3>, <botania:rune:4>, <botania:manaresource:3>, <botania:worldseed>],
+    [null, <botania:storage:1>, <botania:manasteelhelmreveal>, <botania:storage:1>, null],
+    [null, <botania:manaresource:9>, <botania:storage:1>, <botania:manaresource:9>, null],
+    [<botania:manaresource:9>, null, <botania:worldseed>, null, <botania:manaresource:9>]])
+  .addTool(<ore:artisansHammer>, 200)
+  .addTool(<ore:artisansPliers>, 200)
+  .addTool(<ore:artisansGrimoire>, 200)
+  .addOutput(<botania:terrasteelhelmreveal>.withTag({}))
   .setExtraOutputOne(<botania:worldseed>, 1.0)
   .setExtraOutputTwo(<botania:worldseed>, 0.5)
   .setExtraOutputThree(<botania:worldseed>, 0.1)
@@ -1912,34 +1929,51 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("extrabotany:recipe_flyingboatmanasteel");//Удаление летающей лодки из манастали
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:storage>, null, <botania:manatablet>.withTag({}), null, <botania:storage>],
-    [<minecraft:dragon_breath>, <botania:storage>, <botania:storage>, <botania:storage>, <minecraft:dragon_breath>]])
-  .addTool(<ore:artisansHammer>, 200)
-  .addTool(<ore:artisansPliers>, 200)
-  .addTool(<ore:artisansGrimoire>, 200)
+    [<botania:storage>, null, <botania:storage>],
+    [<botania:storage>, <botania:storage>, <botania:storage>]])
+  .setSecondaryIngredients([<extrabotany:material:10> * 2, <botania:tornadorod>.withTag({}), <botania:cloudpendant>, <botania:sextant>, <botania:lightrelay>, <botania:pump>])
+  .addTool(<ore:artisansHammer>, 250)
+  .addTool(<ore:artisansCarver>, 250)
   .addOutput(<extrabotany:flyingboat>)
   .create();
-  
+
   recipes.removeByRecipeName("extrabotany:recipe_flyingboatelementium");//Удаление летающей лодки из элементния
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:storage:2>, <botania:manaresource:9>, <extrabotany:flyingboat>, <botania:manaresource:9>, <botania:storage:2>],
-    [null, <botania:storage:2>, <botania:storage:2>, <botania:storage:2>, null]])
-  .addTool(<ore:artisansHammer>, 300)
-  .addTool(<ore:artisansPliers>, 300)
-  .addTool(<ore:artisansGrimoire>, 300)
+    [<botania:storage:2>, <extrabotany:flyingboat>, <botania:storage:2>],
+    [<extrabotany:blockshadowium>, <botania:storage:4>, <extrabotany:blockphotonium>]])
+  .setSecondaryIngredients([<botania:reachring>, <botania:goddesscharm>, <extrabotany:natureorb>.withTag({xp: 500000}), <botania:starfield>])
+  .addTool(<ore:artisansCarver>, 400)
+  .addTool(<ore:artisansHammer>, 400)
   .addOutput(<extrabotany:flyingboat:1>)
   .create();
   
   recipes.removeByRecipeName("extrabotany:recipe_flyingboatterrasteel");//Удаление летающей лодки из террастали
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:storage:1>, <botania:manaresource:2>, <extrabotany:flyingboat:1>, <botania:manaresource:2>, <botania:storage:1>],
-    [null, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, null]])
-  .addTool(<ore:artisansHammer>, 400)
-  .addTool(<ore:artisansPliers>, 400)
-  .addTool(<ore:artisansGrimoire>, 400)
+    [<botania:storage:1>, null, <extrabotany:flyingboat:1>, null, <botania:storage:1>],
+    [null, <extrabotany:dimensioncatalyst>, <botanicadds:gaiasteel_block>, <extrabotany:quantummanabuffer>, null]])
+  .setSecondaryIngredients([<botania:supercloudpendant>, <extrabotany:natureorb>.withTag({xp: 500000}), <botania:flighttiara>, <botania:bloodpendant>.withTag({brewKey: "floating"})])
+  .addTool(<ore:artisansHammer>, 600)
+  .addTool(<ore:artisansCarver>, 600)
+  .addTool(<ore:artisansGrimoire>, 600)
   .addOutput(<extrabotany:flyingboat:2>)
+  .create();
+
+//Выпил регена с варочной стойки
+mods.botania.Brew.removeRecipe("regen");
+mods.botania.Brew.removeRecipe("regenWeak");
+
+
+//добавление крафта улучшенной лексики потому что с ней там багуля
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <botania:manaresource:9>, null],
+    [<botania:manaresource:7>, <botania:lexicon>.withTag({}), <botania:manaresource:8>],
+    [null, <botania:dreamwood>, null]])
+  .addTool(<ore:artisansQuill>, 25)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<botania:lexicon>.withTag({"knowledge.minecraft": 1 as byte, "knowledge.alfheim": 1 as byte, "knowledge.dream": 1 as byte, "knowledge.relic": 1 as byte}))
   .create();
 
   recipes.removeByRecipeName("botania:brewery");//Удаление варочной стойки из ботании
