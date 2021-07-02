@@ -39,6 +39,13 @@ recipes.removeByRecipeName("conarm:travel_sneak");
 recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
 recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
 
+recipes.removeByRecipeName("tconstruct:gadgets/brownstone/block/rough_bricks");
+recipes.addShaped(<tconstruct:brownstone:1> * 6, [
+  [null, <ore:sandstone>, null],
+  [<ore:dustRedstone>, <ore:sandstone>, <ore:dustRedstone>],
+  [null, <ore:sandstone>, null]
+]);
+
 // раскрафт банок
 Melting.addRecipe(<liquid:aluminum> * 16, <stewprops:random_empty_can>);
 
@@ -565,7 +572,7 @@ RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, <techguns:itemshared:103>, <techguns:itemshared:103>, <techguns:itemshared:103>, null],
     [null, <refinedstorage:quartz_enriched_iron_block>, <erebus:materials:64>, <refinedstorage:quartz_enriched_iron_block>, <techguns:itemshared:103>],
-    [<techguns:itemshared:103>, <ore:blockValonite>, <conarm:gauntlet_mat>, <ore:blockValonite>, null],
+    [<techguns:itemshared:103>, <ore:blockOureclase>, <conarm:gauntlet_mat>, <ore:blockOureclase>, null],
     [null, <refinedstorage:quartz_enriched_iron_block>, <erebus:materials:64>, <refinedstorage:quartz_enriched_iron_block>, null]])
   .addTool(<ore:artisansHammer>, 250)
   .addTool(<ore:artisansGemCutter>, 250)

@@ -578,7 +578,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<abyssalcraft:engraver>)
   .create();
   
-  recipes.removeByRecipeName("abyssalcraft:engraver");//Удаление материализатора
+  recipes.removeByRecipeName("abyssalcraft:materializer");//Удаление материализатора
 RecipeBuilder.get("mage")
   .setShaped([
     [<abyssalcraft:ethaxiumingot>, <abyssalcraft:ethaxiumingot>, <abyssalcraft:ethaxiumingot>],
@@ -796,4 +796,14 @@ RecipeBuilder.get("blacksmith")
     [null, <ore:stickWood>]])
   .addTool(<ore:artisansHammer>, 10)
   .addOutput(<abyssalcraft:dreadiumhoe>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}), <ore:nuggetAbyssalnite>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})],
+    [<ore:nuggetAbyssalnite>, <abyssalcraft:stone>, <ore:nuggetAbyssalnite>],
+    [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}), <ore:nuggetAbyssalnite>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]])
+  .addTool(<ore:artisansGemCutter>, 10)
+  .addTool(<ore:artisansGrimoire>, 10)
+  .addOutput(<abyssalcraft:shadowgem>)
   .create();

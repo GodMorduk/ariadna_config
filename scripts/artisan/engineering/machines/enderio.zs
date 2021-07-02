@@ -13,13 +13,13 @@ for i in 0 to 10 {
   RecipeBuilder.get("engineer")
     .setShapeless([block])
     .addTool(<ore:artisansFile>, 50)
-    .addOutput(ball)
+    .addOutput(ball * 4)
     .create();
 
   RecipeBuilder.get("blacksmith")
     .setShapeless([block])
     .addTool(<ore:artisansHammer>, 25)
-    .addOutput(ball)
+    .addOutput(ball * 4)
     .create();
 }
 
@@ -36,13 +36,13 @@ for i in 57 to 60 {
   RecipeBuilder.get("engineer")
     .setShapeless([blocks[ball]])
     .addTool(<ore:artisansFile>, 50)
-    .addOutput(ball)
+    .addOutput(ball * 4)
     .create();
   
   RecipeBuilder.get("blacksmith")
     .setShapeless([blocks[ball]])
     .addTool(<ore:artisansHammer>, 25)
-    .addOutput(ball)
+    .addOutput(ball * 4)
     .create();
 }
 

@@ -2119,7 +2119,7 @@ recipes.removeByRecipeName("immersiveengineering:tool/shield");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>],
-    [<ore:blockSteel>, <minecraft:shield>, <ore:blockSteel>],
+    [<ore:blockSteel>, <spartanshields:shield_tower_wood>, <ore:blockSteel>],
     [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]])
   .addTool(<ore:artisansFramingHammer>, 50)
   .addTool(<ore:artisansSpanner>, 50)

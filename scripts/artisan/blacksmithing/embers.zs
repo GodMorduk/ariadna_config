@@ -34,7 +34,7 @@ Alchemy.add(<embers:adhesive>, [<ore:clay>, <ore:bonemeal>, <ore:bonemeal>, <ore
 Alchemy.add(<embers:seed_dawnstone>, [<ore:ingotDawnstone>, <ore:ingotDawnstone>, <minecraft:quartz>, <embers:shard_ember>, <embers:shard_ember>], {"iron":(48 to 64), "dawnstone":(48 to 64)});
 
 Alchemy.remove(<embers:focal_lens>);
-Alchemy.add(<embers:focal_lens>, [<embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateSilver>, <embers:block_dawnstone>, <ore:plateSilver>], {"copper":(32 to 50),"silver":(48 to 96)});
+Alchemy.add(<embers:focal_lens>, [<embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateSilver>, <embers:block_dawnstone>, <ore:plateSilver>], {"copper":(32 to 50),"silver":(48 to 64)});
 
 Alchemy.remove(<embers:wildfire_core>);
 Alchemy.add(<embers:wildfire_core>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:ember_cluster>, <embers:block_dawnstone>, <ore:plateCopper>], {"iron":(16 to 40),"silver":(24 to 32)});
@@ -43,22 +43,22 @@ Alchemy.remove(<embers:ember_cluster>);
 Alchemy.add(<embers:ember_cluster>, [<minecraft:quartz_block>, <embers:crystal_ember>, <embers:shard_ember>, <embers:crystal_ember>, <embers:shard_ember>], {"copper":(10 to 20),"dawnstone":(16 to 32)});
 
 Alchemy.remove(<embers:glimmer_shard>);
-Alchemy.add(<embers:glimmer_shard>, [<minecraft:glowstone>, <minecraft:gunpowder>, <minecraft:quartz>, <embers:crystal_ember>, <embers:crystal_ember>], {"dawnstone":(48 to 128)});
+Alchemy.add(<embers:glimmer_shard>, [<minecraft:glowstone>, <minecraft:gunpowder>, <minecraft:quartz>, <embers:crystal_ember>, <embers:crystal_ember>], {"dawnstone":(24 to 64)});
 
 Alchemy.remove(<embers:flame_barrier>);
-Alchemy.add(<embers:flame_barrier>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:beam_cannon>, <embers:block_dawnstone>, <ore:plateSilver>], {"silver":(64 to 128),"dawnstone":(48 to 96)});
+Alchemy.add(<embers:flame_barrier>, [<embers:ancient_motive_core>, <embers:block_dawnstone>, <embers:beam_cannon>, <embers:block_dawnstone>, <ore:plateSilver>], {"silver":(32 to 64),"dawnstone":(48 to 64)});
 
 Alchemy.remove(<embers:blasting_core>);
-Alchemy.add(<embers:blasting_core>, [<minecraft:tnt>, <embers:seed_lead>, <ore:blockLead>, <embers:seed_lead>, <embers:ember_cluster>], {"lead":(96 to 128)});
+Alchemy.add(<embers:blasting_core>, [<minecraft:tnt>, <embers:seed_lead>, <ore:blockLead>, <embers:seed_lead>, <embers:ember_cluster>], {"lead":(32 to 64)});
 
 Alchemy.remove(<embers:shifting_scales>);
-Alchemy.add(<embers:shifting_scales>, [<embers:ashen_cloth>, <ore:blockLead>, <embers:wildfire_core>, <ore:blockLead>, <embers:seed_lead>], {"lead":(96 to 128),"iron":(48 to 96)});
+Alchemy.add(<embers:shifting_scales>, [<embers:ashen_cloth>, <ore:blockLead>, <embers:wildfire_core>, <ore:blockLead>, <embers:seed_lead>], {"lead":(32 to 64),"iron":(48 to 64)});
 
 Alchemy.remove(<embers:winding_gears>);
-Alchemy.add(<embers:winding_gears>, [<embers:inflictor_gem>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper":(96 to 128),"dawnstone":(48 to 96)});
+Alchemy.add(<embers:winding_gears>, [<embers:inflictor_gem>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper":(32 to 64),"dawnstone":(48 to 64)});
 
 Alchemy.remove(<embers:eldritch_insignia>);
-Alchemy.add(<embers:eldritch_insignia>, [<embers:archaic_circuit>, <embers:ancient_motive_core>, <embers:resonating_bell>, <embers:ancient_motive_core>, <ore:blockCoal>], {"lead":(64 to 128),"dawnstone":(80 to 96)});
+Alchemy.add(<embers:eldritch_insignia>, [<embers:archaic_circuit>, <embers:ancient_motive_core>, <embers:resonating_bell>, <embers:ancient_motive_core>, <ore:blockCoal>], {"lead":(32 to 64),"dawnstone":(32 to 64)});
 
 Alchemy.remove(<embers:tyrfing>);
 RecipeBuilder.get("blacksmith")

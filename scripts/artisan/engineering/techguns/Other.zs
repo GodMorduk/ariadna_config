@@ -97,7 +97,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<techguns:itemshared:72>, <thermaldynamics:duct_16:5>, <techguns:itemshared:72>],
-    [<thermalexpansion:reservoir:2>.withTag({}), <techguns:itemshared:55>, <thermalexpansion:reservoir:2>.withTag({})],
+    [<thermalexpansion:reservoir:2>, <techguns:itemshared:55>, <thermalexpansion:reservoir:2>],
     [<techguns:itemshared:55>, <techguns:itemshared:58>, <techguns:itemshared:55>]])
   .setSecondaryIngredients([<techguns:itemshared:55> * 8, <thermaldynamics:duct_16:5> * 4, <techguns:itemshared:58> * 2])
   .addTool(<ore:artisansSpanner>, 150)
@@ -107,7 +107,7 @@ RecipeBuilder.get("engineer")
   
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<thermalexpansion:reservoir:2>.withTag({}), <ore:plateCarbon>, <thermalexpansion:reservoir:2>.withTag({})],
+    [<thermalexpansion:reservoir:2>, <ore:plateCarbon>, <thermalexpansion:reservoir:2>],
     [<thermaldynamics:duct_16:5>, <techguns:itemshared:90>, <thermaldynamics:duct_16:5>],
     [<techguns:itemshared:72>, <techguns:itemshared:58>, <techguns:itemshared:72>]])
   .setSecondaryIngredients([<ore:plateCarbon> * 6, <thermaldynamics:duct_16:5> * 6, <techguns:itemshared:58> * 4])
@@ -279,7 +279,7 @@ recipes.removeByRecipeName("techguns:itemshared_122_powerhammerhead_carbon");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateCarbon>, null, null],
-    [<ore:plateCarbon>, <techguns:itemshared:122>, <ore:blockDarkSteel>],
+    [<ore:plateCarbon>, <techguns:itemshared:121>, <ore:blockDarkSteel>],
     [<ore:plateCarbon>, null, null]])
   .addTool(<ore:artisansDriver>, 100)
   .addTool(<ore:artisansSpanner>, 100)
@@ -312,7 +312,7 @@ recipes.removeByRecipeName("techguns:itemshared_125_redstone_battery");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<immersiveengineering:wirecoil:6>, <ore:ingotRedstoneAlloy>, <immersiveengineering:wirecoil:6>],
-    [<ore:plateBrass>, <better_diving:battery>.withTag({"better_diving:energy_storage": 1000000}), <ore:plateBrass>],
+    [<ore:plateBrass>, <mekanism:energytablet>.withTag({mekData: {energyStored: 1000000.0}}), <ore:plateBrass>],
     [<ore:plateBrass>, <ore:blockRedstone>, <ore:plateBrass>]])
   .addTool(<ore:artisansDriver>, 25)
   .addTool(<ore:artisansSolderer>, 25)
@@ -330,7 +330,7 @@ RecipeBuilder.get("engineer")
     [null, <techguns:itemshared:133>, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, <techguns:itemshared:133>, <techguns:itemshared:133>],
     [<techguns:itemshared:133>, <techguns:itemshared:133>, <techguns:itemshared:133>]])
-  .setSecondaryIngredients([<ore:itemRawRubber> * 8, <better_diving:silicone_rubber> * 8])
+  .setSecondaryIngredients([<ore:itemRawRubber> * 16])
   .addTool(<ore:artisansNeedle>, 50)
   .addTool(<ore:artisansRazor>, 50)
   .addOutput(<techguns:itemshared:132>)

@@ -156,6 +156,58 @@ RecipeBuilder.get("tanner")
   .addOutput(<atum:dusty_bone>)
   .create();
 
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:blockIron>, <ore:blockIron>, <ore:ingotIron>],
+    [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<atum:desert_wolf_iron_armor>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:blockGold>, <ore:blockGold>, <ore:ingotGold>],
+    [<ore:ingotGold>, <harvestcraft:hardenedleatheritem>, <ore:ingotGold>]])
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<atum:desert_wolf_gold_armor>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:ingotIron>, <ore:ingotIron>],
+    [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>],
+    [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addOutput(<atum:camel_iron_armor>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:ingotGold>, <ore:ingotGold>],
+    [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>],
+    [<ore:ingotGold>, <harvestcraft:hardenedleatheritem>, <ore:ingotGold>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addOutput(<atum:camel_gold_armor>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<ore:blockDiamond>, <ore:blockDiamond>, <ore:gemDiamond>],
+    [<ore:gemDiamond>, null, <ore:gemDiamond>]])
+  .addTool(<ore:artisansGemCutter>, 20)
+  .addOutput(<atum:desert_wolf_diamond_armor>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <ore:gemDiamond>, <ore:gemDiamond>],
+    [<ore:blockDiamond>, <ore:blockDiamond>, <ore:blockDiamond>],
+    [<ore:gemDiamond>, null, <ore:gemDiamond>]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<atum:camel_diamond_armor>)
+  .create();
+
 ## 2 Tier
 
 recipes.removeByRecipeName("atum:trap_burning");
