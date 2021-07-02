@@ -1,3 +1,4 @@
+import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IIngredient;
 import mods.thermalexpansion.Factorizer;
 
@@ -38,3 +39,35 @@ Factorizer.addRecipeSplit(<minecraft:brick_block>, <minecraft:brick> * 4);
 Factorizer.addRecipeCombine(<minecraft:brick> * 4, <minecraft:brick_block>);
 
 recipes.removeByRecipeName("minecraft:ender_chest");
+
+recipes.addShaped(<minecraft:coal_block>,[
+    [<ore:coal>, <ore:coal>, <ore:coal>],
+    [<ore:coal>, <ore:coal>, <ore:coal>],
+    [<ore:coal>, <ore:coal>, <ore:coal>]]);
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, null, <ore:ingotIron>],
+    [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>],
+    [<ore:ingotIron>, <harvestcraft:hardenedleatheritem>, <ore:ingotIron>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addOutput(<minecraft:iron_horse_armor>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, null, <ore:ingotGold>],
+    [<ore:blockGold>, <ore:blockGold>, <ore:blockGold>],
+    [<ore:ingotGold>, <harvestcraft:hardenedleatheritem>, <ore:ingotGold>]])
+  .addTool(<ore:artisansHammer>, 25)
+  .addOutput(<minecraft:golden_horse_armor>)
+  .create();
+
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, null, <ore:gemDiamond>],
+    [<ore:blockDiamond>, <ore:blockDiamond>, <ore:blockDiamond>],
+    [<ore:gemDiamond>, null, <ore:gemDiamond>]])
+  .addTool(<ore:artisansGemCutter>, 25)
+  .addOutput(<minecraft:diamond_horse_armor>)
+  .create();

@@ -391,9 +391,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("vehicle:small_engine_iron");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:itemEnhancedChassiParts>, <ore:gearPlatinum>, <ore:itemEnhancedChassiParts>],
+    [<ore:itemChassiParts>, <ore:gearPlatinum>, <ore:itemChassiParts>],
     [<immersiveengineering:metal_decoration0:5>, <vehicle:small_engine:1>, <immersiveengineering:metal_decoration0:5>],
-    [<ore:itemEnhancedChassiParts>, <ore:gearPlatinum>, <ore:itemEnhancedChassiParts>]])
+    [<ore:itemChassiParts>, <ore:gearPlatinum>, <ore:itemChassiParts>]])
   .setSecondaryIngredients([<ore:plateBrass> * 16])
   .addTool(<ore:artisansSpanner>, 50)
   .addTool(<ore:artisansDriver>, 50)
@@ -415,9 +415,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("vehicle:large_engine_iron");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:itemEnhancedChassiParts>, <ore:gearIridium>, <ore:itemEnhancedChassiParts>],
+    [<ore:itemChassiParts>, <ore:gearIridium>, <ore:itemChassiParts>],
     [<immersiveengineering:metal_decoration0:5>, <vehicle:large_engine:1>, <immersiveengineering:metal_decoration0:5>],
-    [<ore:itemEnhancedChassiParts>, <ore:gearIridium>, <ore:itemEnhancedChassiParts>]])
+    [<ore:itemChassiParts>, <ore:gearIridium>, <ore:itemChassiParts>]])
   .setSecondaryIngredients([<ore:plateBrass> * 16])
   .addTool(<ore:artisansSpanner>, 65)
   .addTool(<ore:artisansDriver>, 65)
@@ -439,9 +439,9 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("vehicle:electric_engine_iron");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<ore:itemEnhancedChassiParts>, <ore:gearSignalum>, <ore:itemEnhancedChassiParts>],
+    [<ore:itemChassiParts>, <ore:gearSignalum>, <ore:itemChassiParts>],
     [<immersiveengineering:metal_decoration0:6>, <vehicle:electric_engine:1>, <immersiveengineering:metal_decoration0:6>],
-    [<ore:itemEnhancedChassiParts>, <ore:gearSignalum>, <ore:itemEnhancedChassiParts>]])
+    [<ore:itemChassiParts>, <ore:gearSignalum>, <ore:itemChassiParts>]])
   .setSecondaryIngredients([<ore:plateBrass> * 16])
   .addTool(<ore:artisansSpanner>, 50)
   .addTool(<ore:artisansDriver>, 50)

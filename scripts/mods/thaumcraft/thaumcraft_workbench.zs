@@ -1,6 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
- RecipeBuilder.get("tailor")
+ RecipeBuilder.get("mage")
   .setShaped([
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:fabric>],
@@ -11,7 +11,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
   .addOutput(<thaumcraft:cloth_chest>)
   .create();
   
- RecipeBuilder.get("tailor")
+ RecipeBuilder.get("mage")
   .setShaped([
     [<thaumcraft:fabric>, <thaumcraft:fabric>, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
@@ -22,7 +22,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
   .addOutput(<thaumcraft:cloth_legs>)
   .create();
   
-  RecipeBuilder.get("tailor")
+  RecipeBuilder.get("mage")
   .setShaped([
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>]])
@@ -34,9 +34,9 @@ import mods.artisanworktables.builder.RecipeBuilder;
   
   RecipeBuilder.get("mage")
   .setShaped([
-    [<thaumcraft:fabric>, <thaumcraft:ingot:2>, <thaumcraft:fabric>],
+    [<thaumcraft:fabric>, <ore:ingotBrass>, <thaumcraft:fabric>],
     [<thaumcraft:fabric>, null, <thaumcraft:fabric>],
-    [<thaumcraft:thaumometer>, <thaumcraft:ingot:2>, <thaumcraft:thaumometer>]])
+    [<thaumcraft:thaumometer>, <ore:ingotBrass>, <thaumcraft:thaumometer>]])
   .addTool(<artisanworktables:artisans_needle_thaumium>, 50)
   .addTool(<ore:artisansGrimoire>, 50)
   .addOutput(<thaumcraft:goggles>)

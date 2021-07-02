@@ -1,0 +1,51 @@
+{
+	"food": {
+		"oredict": [],
+		"items": [
+			"stewitems:laudanum",
+			"stewitems:medicine_blood",
+			"stewitems:medicine_bandage_1",
+			"stewitems:medicine_inhaler",
+			"stewitems:medicine_bandage_2",
+			"stewitems:medicine_nanits",
+			"stewitems:medicine_valkyrine",
+			"stewitems:medicine_nictogenic",
+			"stewitems:medicine_antidote",
+			"stewitems:medicine_phenophasine",
+			"stewitems:medicine_corpideks",
+			"stewitems:medicine_grox",
+			"stewitems:medicine_nicotine_gum",
+			"stewitems:medicine_yoln_tear",
+			"stewitems:medicine_twyrine",
+			"stewitems:medicine_tranquilizer",
+			"stewitems:medicine_painkillers",
+			"stewitems:medicine_medx",
+			"stewitems:medicine_nanite_injection",
+			"stewitems:medicine_antidepressants",
+			"stewitems:medicine_stamina_inhaler",
+			"stewitems:medicine_stimpack",
+			"stewitems:medicine_karusto_perfume",
+			"stewitems:medicine_strong_pheromones",
+			"stewitems:medicine_elixir",
+			"stewitems:medicine_neuropozine",
+			"stewitems:medicine_protein_pill",
+			"stewitems:medicine_inner_light",
+			"stewitems:medicine_ironskin_pills",
+			"stewitems:medicine_heating_paste",
+			"stewitems:medicine_freezing_powder",
+			"stewitems:medicine_sunscreen_spray",
+			"stewitems:medicine_contegal_joy",
+			"stewitems:medicine_kazachban",
+			"stewitems:medicine_sotocvet",
+			"stewitems:medicine_sweetleaf"
+		]
+	},
+	"exclude": {
+		"items": []
+	},
+	"name": "Medicine",
+	"enabled": true,
+	"blacklist": true,
+	"hidden": false,
+	"color": "dark_green"
+}
