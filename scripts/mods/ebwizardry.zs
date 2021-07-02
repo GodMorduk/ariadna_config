@@ -460,6 +460,7 @@ RecipeBuilder.get("mage")
   .addOutput(<ebwizardry:identification_scroll>)
   .create();
 
+recipes.removeByRecipeName("ebwizardry:blank_scroll");
 RecipeBuilder.get("mage")
   .setShaped([
     [<minecraft:redstone>, <minecraft:ender_pearl>, <minecraft:redstone>],
