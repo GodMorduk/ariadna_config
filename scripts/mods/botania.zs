@@ -1929,9 +1929,9 @@ RecipeBuilder.get("mage")
   recipes.removeByRecipeName("extrabotany:recipe_flyingboatmanasteel");//Удаление летающей лодки из манастали
 RecipeBuilder.get("mage")
   .setShaped([
-    [<botania:storage>, null, <botania:storage>],
+    [<botania:storage>, <botanicadds:pool_dreaming>, <botania:storage>],
     [<botania:storage>, <botania:storage>, <botania:storage>]])
-  .setSecondaryIngredients([<extrabotany:material:10> * 2, <botania:tornadorod>.withTag({}), <botania:cloudpendant>, <botania:sextant>, <botania:lightrelay>, <botania:pump>])
+  .setSecondaryIngredients([<extrabotany:material:10> * 2, <botania:tornadorod>.withTag({}), <botania:cloudpendant>, <botania:sextant>, <botania:bellows>, <botania:pump>])
   .addTool(<ore:artisansHammer>, 250)
   .addTool(<ore:artisansCarver>, 250)
   .addOutput(<extrabotany:flyingboat>)
