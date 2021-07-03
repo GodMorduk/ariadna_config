@@ -454,8 +454,20 @@ recipes.addShaped("magicstic", <ancientspellcraft:wand_channeling>, [
 
 RecipeBuilder.get("mage")
   .setShaped([[<ebwizardry:grand_crystal>, <ebwizardry:grand_crystal>, <ebwizardry:grand_crystal>], 
-	[<ore:gemLapis>, <ebwizardry:blank_scroll>, <minecraft:glowstone_dust>], 
+	[<ore:gemLapis>, <minecraft:paper>, <minecraft:glowstone_dust>], 
 	[<minecraft:book>, <minecraft:gold_ingot>, <minecraft:book>]])
   .addTool(<ore:artisansQuill>, 25)
   .addOutput(<ebwizardry:identification_scroll>)
+  .create();
+
+recipes.removeByRecipeName("ebwizardry:blank_scroll");
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:redstone>, <minecraft:ender_pearl>, <minecraft:redstone>],
+    [<minecraft:blaze_powder>, <minecraft:paper>, <minecraft:blaze_powder>],
+    [<minecraft:glowstone_dust>, <minecraft:diamond>, <minecraft:glowstone_dust>]])
+  .setSecondaryIngredients([<ebwizardry:large_mana_flask>])
+  .addTool(<artisanworktables:artisans_quill_gold>, 100)
+  .addTool(<artisanworktables:artisans_grimoire_iron>, 100)
+  .addOutput(<ebwizardry:blank_scroll>)
   .create();
