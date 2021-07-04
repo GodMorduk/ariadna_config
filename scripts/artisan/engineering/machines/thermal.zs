@@ -1472,7 +1472,7 @@ RecipeBuilder.get("engineer")
   .setShapeless([<thermaldynamics:duct_0:6>, <thermaldynamics:duct_0:6>, <thermaldynamics:duct_0:6>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:plateSignalum>])
   .addTool(<ore:artisansSpanner>, 5)
   .addTool(<ore:artisansDriver>, 5)
-  .addOutput(<thermaldynamics:duct_0:7>)
+  .addOutput(<thermaldynamics:duct_0:7> * 3)
   .create();
 
 recipes.removeByRecipeName("thermaldynamics:duct_0_3");
