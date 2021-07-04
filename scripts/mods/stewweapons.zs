@@ -99,7 +99,7 @@ RecipeBuilder.get("jeweler")
     [null, null, <botania:storage:3>],
     [<botania:storage:3>, <botania:storage:3>, null],
     [<spartanweaponryarcana:material>, <botania:storage:3>, null]])
-  .addTool(<artisanworktables:artisans_gemcutter_iron>, 100)
+  .addTool(<ore:artisansGemCutter>, 100)
   .addTool(<ore:artisansGrimoire>, 100)
   .addOutput(<stewweapons:crystal_sword>)
   .create();
