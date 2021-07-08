@@ -1,6 +1,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.atum.SpinningWheel;
+import mods.atum.Kiln;
 
 //убираем ненужные штуки
 recipes.removeByRecipeName("atum:limestone_chest");
@@ -18,6 +19,8 @@ recipes.removeByRecipeName("atum:deadwood_slab");
 ## Banned stuff
 recipes.removeByRecipeName("atum:linen_bandage");
 
+## Fixing stuff
+Kiln.removeRecipe("atum:redstone_ore_redstone");
 
 <ore:stoneAtumLimestone>.add(<atum:limestone>);
 <ore:stoneLimestone>.remove(<atum:limestone>);
