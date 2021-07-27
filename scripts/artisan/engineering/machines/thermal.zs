@@ -136,14 +136,14 @@ RecipeBuilder.get("engineer")
   .create();
 
 recipes.removeByRecipeName("thermalexpansion:cache");
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [null, <ore:plateLead>, null],
-    [<ore:plateLead>, <ore:chest>, <ore:plateLead>],
-    [null, <thermalfoundation:material:512>, null]])
-  .addTool(<ore:artisansDriver>, 15)
-  .addOutput(<thermalexpansion:cache>.withTag({Facing: 3 as byte, Level: 0 as byte}))
-  .create();
+// RecipeBuilder.get("engineer")
+//   .setShaped([
+//     [null, <ore:plateLead>, null],
+//     [<ore:plateLead>, <ore:chest>, <ore:plateLead>],
+//     [null, <thermalfoundation:material:512>, null]])
+//   .addTool(<ore:artisansDriver>, 15)
+//   .addOutput(<thermalexpansion:cache>.withTag({Facing: 3 as byte, Level: 0 as byte}))
+//   .create();
 
 recipes.removeByRecipeName("thermalexpansion:capacitor");
 RecipeBuilder.get("engineer")
@@ -867,7 +867,7 @@ RecipeBuilder.get("engineer")
 recipes.removeByRecipeName("thermalexpansion:device_5");
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <thermalexpansion:cache>.withTag({Level: 0 as byte}), null],
+    [null, <ore:drawerBasic>, null],
     [<techguns:itemshared:57>, <thermalexpansion:frame:64>, <techguns:itemshared:57>],
     [<ore:gearIron>, <thermalfoundation:material:512>, <ore:gearIron>]])
   .setSecondaryIngredients([<ore:plateTin> * 10])

@@ -362,7 +362,7 @@ recipes.removeByRecipeName("enderio:filter_advanced");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:dustRedstone>, <ore:paperBlack>, <ore:dustRedstone>],
-    [<ore:paperBlack>, <ore:skullZombieController>, <ore:paperBlack>],
+    [<ore:paperBlack>, <ore:oc:circuitChip2>, <ore:paperBlack>],
     [<ore:dustRedstone>, <ore:paperBlack>, <ore:dustRedstone>]])
   .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<enderio:item_advanced_item_filter>)
@@ -380,7 +380,7 @@ recipes.removeByRecipeName("enderio:filter_big");
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:dustObsidian>, <ore:paperBlack>, <ore:dustObsidian>],
-    [<ore:paperBlack>, <ore:skullSkeletalContractor>, <ore:paperBlack>],
+    [<ore:paperBlack>, <ore:oc:circuitChip3>, <ore:paperBlack>],
     [<ore:dustObsidian>, <ore:paperBlack>, <ore:dustObsidian>]])
   .addTool(<ore:artisansSolderer>, 5)
   .addOutput(<enderio:item_big_item_filter>)
